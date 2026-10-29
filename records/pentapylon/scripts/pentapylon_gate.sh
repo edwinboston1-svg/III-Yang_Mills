@@ -494,7 +494,7 @@ SRC13="$B/g18_mad_lemma.pl"; SRV13="$B/g17_mixed_survey.2026-10-29a.txt"; LIVE13
 REC13M="$B/g18_m1.2026-10-29b.txt"; REC13A="$B/g18_axis.2026-10-29b.txt"; REC13N="$B/g18_mono.2026-10-29b.txt"
 for f in "$SRC13" "$SRV13" "$REC13M" "$REC13A" "$REC13N"; do [ -f "$f" ] || dk_red "ARM 13: missing $f"; done
 for s in 0_1 1_2 2_4 4_8 8_20; do [ -f "$B/g18_direct_b${s}.2026-10-29b.txt" ] || dk_red "ARM 13: missing the direct strip b$s"; done
-dk_have "$SRV13" "G18-SIGN dF/dkappa_1 >= 0 at 0 cells (F falls along kappa_1 at every cell read)"
+dk_have "$SRV13" "G17-SIGN dF/dkappa_1 >= 0 at 0 cells (F falls along kappa_1 at every cell read)"
 dk_have "$SRV13" "G17-MAX  F over 255 cells: 0.42441212 at k1=0 k2=0.01  (BELOW 4/(3 pi) = 0.42441318)"
 rm -f "$LIVE13M" "$LIVE13A" "$LIVE13N"
 perl "$SRC13" m1 20 40000 2>&1 | tr -d '\r' | sed 's/ ([0-9]* s)$//' > "$LIVE13M" || dk_red "ARM 13: the m1 mode refused"
@@ -514,13 +514,14 @@ g13cc(){ perl -c "$1" > /dev/null 2>&1 && cp "$1" "$2"; }
 g13arun(){ perl "$1" axis 0.03 1 2000 1e-3 2>&1 | tr -d '\r' | sed 's/  ([0-9]* s)$//'; }
 g13mrun(){ perl "$1" m1 20 20000 2>&1 | tr -d '\r' | sed 's/ ([0-9]* s)$//'; }
 g13nrun(){ perl "$1" mono 0.5 1 2000 1e-2 2>&1 | tr -d '\r' | sed 's/  ([0-9]* s)$//'; }
+FAST13A="$B/g_g18axisfast.txt"; g13arun "$SRC13" > "$FAST13A" || dk_red "ARM 13: the fast axis base refused"   # the control compares against a base made by ITS OWN runner (run v: the 8000-cell base against a 2000-cell control read MOVED)
 export DK_BASE_RUN="$LIVE13A"
 dk_tooth "$SRC13" "$MUT" mboundbend 'my \$M = 2 \* \$m4 + 9 \* \$Vh \* \$Vh + 4 \* \$n3 \* \$Hh' 'my $M = 2 * $m4 + 900 * $Vh * $Vh + 4 * $n3 * $Hh' 13 'HAND-LEMMA-ADMITTED' g13cc g13arun
 export DK_BASE_RUN="$LIVE13M"
 dk_tooth "$SRC13" "$MUT" varboundbend 'my \$bound = sqrt(1 - \$mlo \* \$mlo);' 'my $bound = 2 * sqrt(1 - $mlo * $mlo);' 13 '[BELOW 4/(3 pi) = 0.424413]' g13cc g13mrun
 export DK_BASE_RUN="$LIVE13N"
 dk_tooth "$SRC13" "$MUT" monobend '\$E->{V}\[0\] \* \$E->{thi}{P}\[0\] \* (1 - 4 \* \$EPS); \$ok = \$val < 0 }' '$E->{V}[0] * $E->{thi}{P}[0] * 0.5 * (1 - 4 * $EPS); $ok = $val < 0 }' 13 'MONOTONE-CERTIFIED' g13cc g13nrun
-dk_control "$SRC13" "$MUT" 'A rectangle that does not certify is bisected on its relatively wider side' 'A rectangle that does not certify is bisected on its relatively wider side (a comment control)' "$LIVE13A" g13cc g13arun
+dk_control "$SRC13" "$MUT" 'A rectangle that does not certify is bisected on its relatively wider side' 'A rectangle that does not certify is bisected on its relatively wider side (a comment control)' "$FAST13A" g13cc g13arun
 
 # ---- ARM 14: RESULTS 15, THE CERTIFIED DESCENT AND THE TUBE (2026-10-28 23:5x - 2026-10-29 00:5x EDT, the desktop seat) -- mkflow.awk's ----
 # known answer LIVE (the exact GMP rational contained, the nearest-rounded liar escaping), its beta = 2.3 flow re-derived LIVE and compared
@@ -542,7 +543,10 @@ dk_have "$B/mkflow_b10.2026-10-29d.txt" "reached c1 <= 0.131 at step K*=37 with 
 perl "$SRC14T" 0.2 1 40 6 2>&1 | tr -d '\r' | sed 's/  ([0-9]* s)$//' > "$LIVE14T" || dk_red "ARM 14: the tube at beta_3 = 0.2 refused"
 dk_have "$LIVE14T" "G20-KAT operators  [ALL MET]"
 grep '^G20-SPECTRUM beta=0.2 ' "$REC14T" | sed 's/  (Lanczos.*//' | cmp -s - <(grep '^G20-SPECTRUM beta=0.2 ' "$LIVE14T" | sed 's/  (Lanczos.*//') || dk_red "ARM 14: the live tube spectrum at 0.2 parts from record b"
-grep '^G20-LUMP beta=0.2 ' "$REC14T" | cmp -s - <(grep '^G20-LUMP beta=0.2 ' "$LIVE14T") || dk_red "ARM 14: the live tube's lumping line at 0.2 parts from record b"
+LIVE14U="$B/g_tube23.txt"; perl "$SRC14T" 2.3 1 60 8 2>&1 | tr -d '' | sed 's/  ([0-9]* s)$//' > "$LIVE14U" || dk_red "ARM 14: the tube at beta_3 = 2.3 refused"
+grep '^G20-SPECTRUM beta=2.3 ' "$REC14T" | sed 's/  (Lanczos.*//' | cmp -s - <(grep '^G20-SPECTRUM beta=2.3 ' "$LIVE14U" | sed 's/  (Lanczos.*//') || dk_red "ARM 14: the live tube spectrum at 2.3 parts from record b"
+grep '^G20-LUMP beta=2.3 ' "$REC14T" | cmp -s - <(grep '^G20-LUMP beta=2.3 ' "$LIVE14U") || dk_red "ARM 14: the live tube's lumping line at 2.3 parts from record b"
+dk_have "$LIVE14U" "the 0++ gap in the zero-flux sector = 2.771287; the torelon (flux (1,0) top against lambda_0) = 1.018863; the full gap 1.018863 IS the torelon"
 dk_have "$LIVE14T" "strong-coupling -4 ln c_{1/2}=11.9896 ratio=0.9994 monotone-K=YES torelon-below-0++=YES"
 dk_say "ARM 14: RESULTS 15 -- the flow's known answer contains the exact rational and refuses the liar, the 2.3 flow re-derived step for step, K* = 7/7/18/37 of record; the tube's operator known answers met and its strong-coupling gap re-derived against record b"
 g14cc(){ cp "$1" "$2"; }
@@ -555,6 +559,160 @@ export DK_BASE_RUN="$LIVE14T"
 dk_tooth "$SRC14T" "$MUT" cornerbend '\$s\[2\] => { legs => \[\[3, +1\], \[1, -1\]\], srule => 2 }' '$s[2] => { legs => [[3, -1], [1, -1]], srule => 2 }' 14 'G20-KAT operators  [ALL MET]' g14tcc g14trun
 dk_control "$SRC14F" "$MUT" 'no rounding is priced by hand and no radius compounds through a centre.' 'no rounding is priced by hand and no radius compounds through a centre (a comment control).' "$LIVE14K" g14cc g14krun
 
-dk_teeth_pin 32
+# ---- ARM 15: RESULTS 16.7, THE ONE-FACE CONSTANTS AND THE DECIMATION'S LEMMAS CERTIFIED (2026-10-29 02:2x-03:0x EDT, the desktop seat) ----
+# g19_vmf.awk re-run LIVE (gawk -M, 256 bits, every endpoint under its own rounding mode, ~100 s) and compared byte for byte with record b (MPFR is
+# deterministic under a fixed rounding mode): the corner enclosures and the sup of |D| at the corner; (E1) Var_par <= 1/4 for all kappa; (E2a) the
+# sup over all r of 3|(m/r)'|; (E2) the sup over r <= 6 beta of T = |phi'''| + 3|D|/r; (E2DIR) the directional third cumulant's sup; the known
+# answers (iii-43's Monte Carlo met, the 3m/kappa liar escaping, isotropy at kappa -> 0) and the hand lemma's margins pinned.
+SRC15="$B/g19_vmf.awk"; REC15="$B/g19_vmf.2026-10-29b.txt"; LIVE15="$B/g_g19vmf.txt"
+for f in "$SRC15" "$REC15"; do [ -f "$f" ] || dk_red "ARM 15: missing $f"; done
+rm -f "$LIVE15"
+gawk -M -v betas="0.30 0.32 0.34 0.35 0.36 0.38 0.40" -f "$SRC15" 2>&1 | tr -d '\r' > "$LIVE15" || dk_red "ARM 15: the live g19 refused"
+cmp -s "$REC15" "$LIVE15" || dk_red "ARM 15: the live g19 parts from record b"
+dk_have "$LIVE15" "G19-VERDICT known answers MET, the liar escapes at 3 of 3, isotropy MET, cells GREEN, the corner sup certified at every beta in range: yes  [G19-GREEN]"
+dk_have "$LIVE15" "G19-SUP beta=0.35: |D(5beta, 5beta)| in [0.0117499725971583475, 0.0117499725971583476]"
+dk_have "$LIVE15" "G19-CELLS2D [0.5, 2]^2 in 1048576 cells: (C) -D increasing in each variable failed 0"
+dk_have "$LIVE15" "G19-CELLS1D [0.5, 2] in 1024 cells: (B1) by hand 341, failed 0"
+dk_have "$LIVE15" "G19-HAND kappa=0.5 R<=0.000165239001692047378: (B1)/k^3 >= 0.0195312499999999999  (B2)/k^3 >= 0.0473065159819260149  (B3)/k^3 >= 0.0257915700601175061  [POSITIVE]"
+dk_have "$LIVE15" "G19-KAT beta=0.5 kappa=5beta=2.5: |D| in [0.0306482860740691014, 0.0306482860740691015] against the Monte Carlo 0.0306 +- 3e-4: MET; the liar (3m/kappa) |D~| in [-0.0869913001104351624, -0.0869913001104351623]: ESCAPES"
+dk_have "$LIVE15" "G19-BASE D(0.5, 0.5) in [-0.00012908018074613158, -0.000129080180746131579]: negative at the square's base corner"
+dk_have "$LIVE15" "=> Var_par(kappa) <= 1/4 for all kappa >= 0  [E1-CERTIFIED]"
+dk_have "$LIVE15" "(E2b) mu_4 - 3V^2 < 0 failed 0, worst upper bound -0.00758804885828730195; (E2c) chi = kappa A' - A > 0 failed 0"
+dk_have "$LIVE15" "G19-E2A sup over r >= 0 of 3A/r = 3|(m/r)'|: the cells' largest upper bound 0.0828270202550751984 at the cell starting r = 2.394"
+dk_have "$LIVE15" "G19-E2DIR beta=0.244: the sup over r in [0, 6beta] and over directions u of |kappa_3(<U,u>)| = |phi'''(6beta)| in [0.0604147765896044774, 0.0604147765896044775]"
+dk_have "$LIVE15" "=> sup over r in [0, 6beta] of T(r) = T(6beta) <= 0.131795771876738304  [E2-CERTIFIED]"
+dk_say "ARM 15: RESULTS 16.7 -- the one-face anisotropy certified at 256 bits with its sup at the corner, and the decimation's lemmas: Var_par <= 1/4 for all kappa (E1), sup 3|(m/r)'| <= 0.082827 (E2a), T(6 beta) <= 0.131796 at beta = 0.244 (E2), the directional third cumulant |phi'''(6 beta)| (E2DIR); live and equal to record b"
+g15cc(){ cp "$1" "$2"; }
+g15run(){ gawk -M -v betas="0.30 0.32 0.34 0.35 0.36 0.38 0.40" -f "$1" 2>&1 | tr -d '\r'; }
+export DK_BASE_RUN="$LIVE15"
+dk_tooth "$SRC15" "$MUT" h3bend 'dn(); h3 = 1 \/ 6 + 1 \/ 2 - t1' 'dn(); h3 = 1 / 6 + 1 / 3 - t1' 15 'cells GREEN, the corner sup certified at every beta in range: yes  [G19-GREEN]' g15cc g15run
+dk_tooth "$SRC15" "$MUT" liarbend 'up(); t = 3 \* MHI \/ x; dn(); ptl = 1 - t; dn(); t = 3 \* MLO \/ x; up(); pth = 1 - t;' 'up(); t = 4 * MHI / x; dn(); ptl = 1 - t; dn(); t = 4 * MLO / x; up(); pth = 1 - t;' 15 'the liar escapes at 3 of 3' g15cc g15run
+dk_tooth "$SRC15" "$MUT" kurtbend 'dn(); KURTL = mu4l - 3 \* VH2 \* VH2; up(); KURTH = mu4h - 3 \* VL2 \* VL2' 'dn(); KURTL = mu4l - 3 * VH2 * VH2; up(); KURTH = mu4h - 2 * VL2 * VL2' 15 '(E2b) mu_4 - 3V^2 < 0 failed 0' g15cc g15run
+dk_tooth "$SRC15" "$MUT" e1tailbend 'dn(); tail = 2 \* (1 - MHI); up(); tail = 2 \* (1 - MLO);' 'dn(); tail = 2 * (1 - MHI); up(); tail = 2 * (1 - MLO) + 0.05;' 15 'E1-CERTIFIED' g15cc g15run
+dk_control "$SRC15" "$MUT" 'so no rounding is priced by hand.' 'so no rounding is priced by hand (a comment control).' "$LIVE15" g15cc g15run
 
-dk_green "PENTAPYLON-GATE GREEN: 15 arms, 32 teeth bled in named arms, the comment controls silent -- RESULTS 14: the sharp one-link lemma of record in every direction (0.131 = 3 pi/72 a theorem); RESULTS 15: the hierarchical descent certified at 256 bits (K* = 7/7/18/37), the tube's known answers and its strong-coupling gap of record; RESULTS 13: the cone's fixed point 1/3600 predicted and met, the exact bridge's action flat to seven digits with its control deviating at O(s); RESULTS 12: the transform is Dobrushin's coefficient (two known answers MET against the inertia road's certified cells, a third against the dual road's reading), the chain lemma's inequalities hold on every two-scale cell, the hierarchical step's spectrum is 4^{2-d}(1 + O(t)) about the heat-kernel line, claim (A) certified at 99 of 100 exact starts and the descent to the kernel's threshold certified from q = 7/10 and 8/10; G6-b: the tube gap's strong-coupling series is a ratio of exponential moments of the fundamental character, the moments integers and SU(2)'s the Catalan numbers; a shadow of design strength t shares SU(2)'s moments through n = t and its gap series parts at b^(t-1) -- Q8 at b^2 by -4/3, 2T at b^4 by -1/30, 2O at b^6 by -1/1260, 2I at b^10 by -1/9979200 -- the mass gap's leading term tracked through the ladder as exact rationals, t composed from ΑΠΕΡΑΝΤΟΝ's tables; THE LADDER (STAKE 4): SU(2)'s tube coefficient enclosed and the defect column certified -- the magnitude falling strictly along Q8 > 2T > 2O > 2I at every y with the intervals separated, every defect negative, the two roads meeting at y = 1/2; THE BOXES (STAKE 5): the 2x4 cell read through ΣΤΡΟΦΙΓΞ's cap-reading door -- the three-length string test ALIVE at NEITHER prediction, the sqrt-area window DIED, the ordered side of the Ising point entered at y = 1/5, the 60-bit wall named; the box exe built and the quick cells re-derived live here; THE DUAL-SPIN ROAD (ARM 6): the second road meets every certified Z2 cell, reads the 3x4 and 4x4 boxes, and the Ising anchor fixes the infinite-lattice series through u^12; GATE 3 (ARM 7): the Cayley gaps of Q8, 2T, 2O, 2I are 6, 4, 6 - 3 sqrt2 and 12 - 6 phi, the fundamental's at each with nothing below, the desk's seven factorizations met, the dihedral nearest shells refused by name; STAKE 8 (ARM 8): the inertia road brackets every certified Z2 cell by sign counts alone, the dual road's lambdas inside and ΤΟΜΕΥΣ' intervals met, 14 of 14"
+# ---- ARM 16: RESULTS 16.6, THE CUBE AT THE CERTIFIED FLOW'S RUNG WEIGHT (2026-10-29 02:1x EDT, the desktop seat) -- g14_su2_cube.pl's weight ----
+# mode LIVE in its fast form (MODE=dlink: the one-link Delta alone): the Wilson law at beta = 0.5 equal to the delta record's line (Delta_link =
+# 0.163334), and the TRUNCATED law at rung 7 of the flow from 2.2 (c_1 = 0.0468246..., beta_eff = 0.187573, Delta_link = 0.032318) re-derived.
+SRC16="$B/g14_su2_cube.pl"; LIVE16W="$B/g_g14dlink05.txt"; LIVE16R="$B/g_g14dlinkk7.txt"; REC16D="$B/g14_su2_cube_b0.5_delta.2026-10-29a.txt"
+for f in "$SRC16" "$REC16D"; do [ -f "$f" ] || dk_red "ARM 16: missing $f"; done
+rm -f "$LIVE16W" "$LIVE16R"
+perl "$SRC16" 0.5 dlink 0 8 20 11 2>&1 | tr -d '\r' > "$LIVE16W" || dk_red "ARM 16: the fast mode at 0.5 refused"
+grep '^G14D beta=0.5000' "$REC16D" | tr -d '\r' | cmp -s - <(grep '^G14D beta=0.5000' "$LIVE16W") || dk_red "ARM 16: the live one-link Delta at 0.5 parts from the delta record"
+dk_have "$LIVE16W" "Delta_link (one link, two of six staples moved, the rest 1) = 0.163334  [Lemma T's 8 beta/(3 pi) = 0.424413]"
+G14_C1=0.0468246472731963236484524 G14_C2=0.000382029255316772489943254 G14_RUNG=7 G14_FROM=2.2 perl "$SRC16" 0.5 dlink 0 8 20 11 2>&1 | tr -d '\r' > "$LIVE16R" || dk_red "ARM 16: the fast mode at rung 7 refused"
+dk_have "$LIVE16R" "G14W rung 7 of the certified flow from beta=2.2: c_1=0.0468246472732 c_2=0.000382029255317 beta_eff(c_1)=0.187573"
+dk_have "$LIVE16R" "G14D-WEIGHT rung 7 of the certified flow from beta=2.2: Delta_link below is the TRUNCATED weight's one-link law"
+dk_have "$LIVE16R" "Delta_link (one link, two of six staples moved, the rest 1) = 0.032318"
+dk_say "ARM 16: RESULTS 16.6 -- the cube's weight mode live: the Wilson one-link Delta at 0.5 equal to the delta record's, the truncated law at rung 7 of the certified flow from 2.2 (c_1 = 0.0468, beta_eff 0.1876) re-derived"
+g16cc(){ perl -c "$1" > /dev/null 2>&1 && cp "$1" "$2"; }
+g16run(){ G14_C1=0.0468246472731963236484524 G14_C2=0.000382029255316772489943254 G14_RUNG=7 G14_FROM=2.2 perl "$1" 0.5 dlink 0 8 20 11 2>&1 | tr -d '\r'; }
+export DK_BASE_RUN="$LIVE16R"
+dk_tooth "$SRC16" "$MUT" trunclawbend 'qtr(\$U, \[1, 0, 0, 0\])) \*\* 4 \* (1 + 2 \* \$A1 \* qtr(\$U, \$g))' 'qtr($U, [1, 0, 0, 0])) ** 3 * (1 + 2 * $A1 * qtr($U, $g))' 16 'Delta_link (one link, two of six staples moved, the rest 1) = 0.032318' g16cc g16run
+dk_tooth "$SRC16" "$MUT" overridebend '\$A1 = \$ENV{G14_C1} + 0; \$A2 = (\$ENV{G14_C2} \/\/ 0) + 0;' '$A1 = $ENV{G14_C1} * 2; $A2 = ($ENV{G14_C2} // 0) + 0;' 16 'c_1=0.0468246472732 c_2=0.000382029255317 beta_eff(c_1)=0.187573' g16cc g16run
+dk_control "$SRC16" "$MUT" 'the truncation keeps c_1 alone, so the rung enters as' 'the truncation keeps c_1 alone (a comment control), so the rung enters as' "$LIVE16R" g16cc g16run
+
+# ---- ARM 17: RESULTS 16.11-16.12, THE PERFECT DECIMATION'S ROW SUM ON A SECOND ROAD, THE CUBE COVER'S OBSTRUCTION, THE BLOCK SPLIT ----
+# (2026-10-29 03:1x-03:3x EDT, the desktop seat).  g24_rowsum.awk LIVE (gawk -M, 256 bits, directed rounding; 3 s) byte-compared with its record:
+# the plan seat's row certified below 1 on [0, 0.2414] (proved constants) and [0, 0.2452] (sharp), its known answers met, the half-tilt liar above 1.
+# g25_cubecover.pl LIVE: the single-link perfect decimation FOUND at period 2 (its known answer) and NO unit-3-cube cover at period 3 (the local
+# obstruction, 37 nodes).  g27_blocksplit.pl LIVE byte-compared with its record: the in-block incidence fractions on the period-2 cover.
+SRC17A="$B/g24_rowsum.awk"; REC17A="$B/g24_rowsum.2026-10-29a.txt"; LIVE17A="$B/g_g24.txt"
+SRC17B="$B/g25_cubecover.pl"; LIVE17B="$B/g_g25link.txt"; LIVE17C="$B/g_g25cube.txt"
+SRC17D="$B/g27_blocksplit.pl"; REC17D="$B/g27_blocksplit.2026-10-29a.txt"; LIVE17D="$B/g_g27.txt"
+C17="0.26:0.0352538364247406:0.00835049469130599 0.28:0.0409087584062936:0.00990616778613137 0.30:0.0470291702042949:0.0116466012617517"
+for f in "$SRC17A" "$REC17A" "$SRC17B" "$SRC17D" "$REC17D"; do [ -f "$f" ] || dk_red "ARM 17: missing $f"; done
+rm -f "$LIVE17A" "$LIVE17B" "$LIVE17C" "$LIVE17D"
+gawk -M -f "$SRC17A" 2>&1 | tr -d '\r' > "$LIVE17A" || dk_red "ARM 17: the live row sum refused"
+cmp -s "$REC17A" "$LIVE17A" || dk_red "ARM 17: the live row sum parts from its record"
+dk_have "$LIVE17A" "the row is certified below 1 on [0, 0.2414] and above 1 from 0.2415"
+dk_have "$LIVE17A" "the row is certified below 1 on [0, 0.2452] and above 1 from 0.2453"
+dk_have "$LIVE17A" "G24-KAT PROVED at beta = 0.2410: ROW in [0.996296731179099, 0.9962967311791] against the plan seat's ROW_hi = 0.996297: MET"
+dk_have "$LIVE17A" "the liar fails where the plan seat said it does"
+dk_have "$LIVE17A" "the liar refused at 0.2410: yes; the row certified below 1 to beta = 0.2414 (proved) and 0.2452 (sharp)  [G24-GREEN]"
+perl "$SRC17B" 2 2 2 2 link 2>&1 | tr -d '\r' | sed 's/ ([0-9]* s)//' > "$LIVE17B" || dk_red "ARM 17: the link cover refused"
+dk_have "$LIVE17B" "AN EXACT COVER by 16 candidates after 17 nodes; the independent count: 0 plaquettes touched not exactly once  [COVER-VERIFIED]"
+perl "$SRC17B" 3 3 3 3 cube 3e6 2>&1 | tr -d '\r' | sed 's/ ([0-9]* s)//' > "$LIVE17C" || dk_red "ARM 17: the cube cover refused"
+dk_have "$LIVE17C" "G25-RESULT period (3,3,3,3) kind=cube: NO EXACT COVER EXISTS after 37 nodes"
+perl "$SRC17D" $C17 2>&1 | tr -d '\r' > "$LIVE17D" || dk_red "ARM 17: the block split refused"
+cmp -s "$REC17D" "$LIVE17D" || dk_red "ARM 17: the live block split parts from its record"
+dk_have "$LIVE17D" "G27-CLASS intra kept links: 24 classes; per link TYPE I 12.00 (in-block 6.00, fraction 0.500), TYPE II 90.00 (in-block 22.00, fraction 0.244)"
+dk_have "$LIVE17D" "G27-ROW beta=0.28 intra: the full row 12 C_dir + 90 C_med = 1.382460; with the in-block incidences removed 0.919072  [BELOW-1]"
+dk_say "ARM 17: RESULTS 16.11-16.12 -- the decimation's row certified below 1 to 0.2414 (proved) and 0.2452 (sharp) on the second road, the plan seat's known answers met and the liar refused; the single-link cover found at period 2 and no unit-3-cube cover at period 3; the block split of record"
+g17cc(){ cp "$1" "$2"; }
+g17arun(){ gawk -M -f "$1" 2>&1 | tr -d '\r'; }
+g17pcc(){ perl -c "$1" > /dev/null 2>&1 && cp "$1" "$2"; }
+g17brun(){ perl "$1" 2 2 2 2 link 2>&1 | tr -d '\r' | sed 's/ ([0-9]* s)//'; }
+g17drun(){ perl "$1" $C17 2>&1 | tr -d '\r'; }
+export DK_BASE_RUN="$LIVE17A"
+dk_tooth "$SRC17A" "$MUT" tiltbend 'crossing("proved", 1 \/ 4, "PROVED' 'crossing("proved", 1 / 3, "PROVED' 17 'the row is certified below 1 on [0, 0.2414] and above 1 from 0.2415' g17cc g17arun
+dk_tooth "$SRC17A" "$MUT" incidencebend 'dn(); RL = 12 \* cdl + 90 \* cml; up(); RH = 12 \* cdh + 90 \* cmh' 'dn(); RL = 11 * cdl + 90 * cml; up(); RH = 11 * cdh + 90 * cmh' 17 'the row is certified below 1 on [0, 0.2414] and above 1 from 0.2415' g17cc g17arun
+dk_tooth "$SRC17A" "$MUT" rhobend 'dn(); rhol = (3 \* exp(oml) - 1) \/ 2; up(); rhoh = (3 \* exp(omh) - 1) \/ 2;' 'dn(); rhol = (2 * exp(oml) - 1) / 2; up(); rhoh = (2 * exp(omh) - 1) / 2;' 17 'the row is certified below 1 on [0, 0.2414] and above 1 from 0.2415' g17cc g17arun
+dk_control "$SRC17A" "$MUT" 'every term rises with beta (m increasing;' 'every term rises with beta (a comment control; m increasing;' "$LIVE17A" g17cc g17arun
+export DK_BASE_RUN="$LIVE17B"
+dk_tooth "$SRC17B" "$MUT" plaqbend 'push @p, pid($x, $a, $b), pid(vshift($x, $e, -1), $a, $b)' 'push @p, pid($x, $a, $b)' 17 'AN EXACT COVER by 16 candidates after 17 nodes' g17pcc g17brun
+dk_control "$SRC17B" "$MUT" 'the first cover found is printed with its cubes and VERIFIED' 'the first cover found is printed with its cubes (a comment control) and VERIFIED' "$LIVE17B" g17pcc g17brun
+export DK_BASE_RUN="$LIVE17D"
+dk_tooth "$SRC17D" "$MUT" intrabend 'sub intra { my ($x, $d) = @_; return ($x->\[$d\] % 2 + 2) % 2 == 0 }' 'sub intra { my ($x, $d) = @_; return ($x->[$d] % 2 + 2) % 2 == 1 }' 17 'in-block 6.00, fraction 0.500' g17pcc g17drun
+dk_control "$SRC17D" "$MUT" 'A READING of the bound' 'A READING (a comment control) of the bound' "$LIVE17D" g17pcc g17drun
+
+# ---- ARM 18: RESULTS 16.12-16.13, THE CUBE AT SPINS <= 1 AND THE CLOSED RECORDS (2026-10-29 03:2x-03:3x EDT, the desktop seat) -- ----
+# g26_cube_spin1.pl LIVE in kat mode (RULE12's moments, the spin-1 homomorphism, the truncated weight's positivity at 2.2; 2 s) and in its spin-1/2
+# restriction at 0.5 (40 s), which must reproduce g14's delta record for the same pair (Delta = 0.005857 at the quarter turn); the rung records'
+# sup lines and the inertia record's gap line pinned, the inertia reader's digest checked against the record's header.
+SRC18="$B/g26_cube_spin1.pl"; LIVE18K="$B/g_g26kat.txt"; LIVE18H="$B/g_g26half.txt"; REC18I="$B/g6_inertia_3x4.2026-10-28a.txt"
+for f in "$SRC18" "$REC18I" "$B/g6_inertia.pl"; do [ -f "$f" ] || dk_red "ARM 18: missing $f"; done
+for k in 5 6 7; do [ -f "$B/g14_su2_cube_flow2.2_k${k}_delta.2026-10-29a.txt" ] || dk_red "ARM 18: missing the rung record $k"; done
+rm -f "$LIVE18K" "$LIVE18H"
+perl "$SRC18" 2.2 kat 2>&1 | tr -d '\r' > "$LIVE18K" || dk_red "ARM 18: the kat mode refused"
+dk_have "$LIVE18K" "R(q1 q2) = R(q1) R(q2) and tr R = 4w^2 - 1: MET  [KAT-GREEN]"
+dk_have "$LIVE18K" "the truncated weight's minimum over V = 0.071034 (positive)"
+perl "$SRC18" 0.5 spinhalf 1,2,4,6,8,9,24,26 2>&1 | tr -d '\r' | sed 's/  ([0-9]* s)$//' > "$LIVE18H" || dk_red "ARM 18: the spin-1/2 restriction refused"
+dk_have "$LIVE18H" "Delta_cube=0.005857 argmax-g'=(-0.707,0.707,0.000,0.000)"
+grep -q 'G14D-PAIR beta=0.5000 datum=symmetric pair=b0:near -> t0:near u=0,0,-1,0:3 u.=0,0,1,0:3 Delta=0.005857 argmax-g.=(-0.707,0.707,0.000,0.000)' "$B/g14_su2_cube_b0.5_delta.2026-10-29a.txt" || dk_red "ARM 18: g14's record no longer carries the pair line the restriction must reproduce"
+dk_have "$B/g14_su2_cube_flow2.2_k5_delta.2026-10-29a.txt" "G14D-SUP beta=1.0059 Delta_cube over 3 data and 10 pairs = 0.074256 at symmetric/b0:near -> t0:near; Delta_link = 0.609402; ratio = 0.1219"
+dk_have "$B/g14_su2_cube_flow2.2_k6_delta.2026-10-29a.txt" "G14D-SUP beta=0.5919 Delta_cube over 3 data and 10 pairs = 0.010786 at symmetric/b0:near -> t0:near; Delta_link = 0.213332; ratio = 0.0506"
+dk_have "$B/g14_su2_cube_flow2.2_k7_delta.2026-10-29a.txt" "G14D-SUP beta=0.1876 Delta_cube over 3 data and 10 pairs = 0.000098 at symmetric/b0:near -> t0:near; Delta_link = 0.032318; ratio = 0.0030"
+dk_have "$REC18I" "G6I-GAP L=3x4 u=1/2 gap in [2.288153115629533, 2.288153115653228] width=2.369e-11 dual-road-lambdas=CONTAINS"
+grep -qF "$(sha256sum "$B/g6_inertia.pl" | cut -c1-64)" "$REC18I" || dk_red "ARM 18: the inertia reader's digest is not the one its record names"
+dk_say "ARM 18: RESULTS 16.12-16.13 -- the spins-<=-1 cube's known answers live (RULE12 exact to degree 12, the spin-1 homomorphism, positivity at 2.2) and its spin-1/2 restriction equal to g14's record; the rung records and the inertia-certified 3x4 gap of record"
+g18cc(){ perl -c "$1" > /dev/null 2>&1 && cp "$1" "$2"; }
+g18run(){ perl "$1" 2.2 kat 2>&1 | tr -d '\r'; }
+export DK_BASE_RUN="$LIVE18K"
+dk_tooth "$SRC18" "$MUT" rulebend 'for my $k (1 .. 7) { my $th = $k \* $PI \/ 8;' 'for my $k (1 .. 6) { my $th = $k * $PI / 7;' 18 '[KAT-GREEN]' g18cc g18run
+dk_tooth "$SRC18" "$MUT" rotbend '2\*($x\*$y - $w\*$z)' '2*($x*$y + $w*$z)' 18 '[KAT-GREEN]' g18cc g18run
+dk_control "$SRC18" "$MUT" 'A READING of a TRUNCATED model, said so' 'A READING of a TRUNCATED model (a comment control), said so' "$LIVE18K" g18cc g18run
+
+# ---- ARM 19: RESULTS 16.15-16.16, THE W_1 CONSTANT, THE LAW'S FIVE COUPLINGS, THE GRIFFITHS READING (2026-10-29 03:4x-04:0x EDT, the desktop ----
+# seat) -- g28_w1mad.pl's exact part LIVE (the anti-monotone cost along the axis and Var_perp across it at six concentrations, 1 s): L(0) = 1/4
+# pinned, the kappa = 1 values, the consistency verdicts; the fourth-order law's record lines at 0.3/0.7/0.9/1.0 pinned by content (a reading
+# of record, the band staked first); g20_tube.pl's Griffiths reading at beta_3 = 0.5 re-run LIVE and its verdict line pinned (a reading's
+# regression guard, not a theorem: the negatives sit at the truncation's scale).
+SRC19="$B/g28_w1mad.pl"; LIVE19="$B/g_g28exact.txt"; LIVE19G="$B/g_g20griff05.txt"; SRC19T="$B/g20_tube.pl"
+for f in "$SRC19" "$SRC19T" "$B/g14_su2_cube_b0.3_delta.2026-10-29a.txt" "$B/g14_su2_cube_b0.7_delta.2026-10-29a.txt" "$B/g14_su2_cube_b0.9_delta.2026-10-29a.txt" "$B/g14_su2_cube_b1.0_delta.2026-10-29a.txt" "$B/g20_griff_b0.5.2026-10-29a.txt"; do [ -f "$f" ] || dk_red "ARM 19: missing $f"; done
+rm -f "$LIVE19" "$LIVE19G"
+perl "$SRC19" "0 0.5 1 1.5 2 3" 40000 0 2>&1 | tr -d '\r' > "$LIVE19" || dk_red "ARM 19: the W_1 constant's exact part refused"
+dk_have "$LIVE19" "G28 kappa=0: m=0.00000000 Var_par=0.25000000 Var_perp=0.25000000 (grid var 0.25000000, masses nu+ 0.21220659 nu- 0.21220659); AXIAL L_par = anti-monotone cost 0.25000000 (the monotone plan 0.26240834, the linear f 0.25000000) [CONSISTENT]; PERPENDICULAR L_perp = Var_perp = 0.25000000 exactly; sup over u in {par, perp} = 0.25000000  [AT-OR-BELOW-1/4]"
+dk_have "$LIVE19" "G28-KAT kappa=0: the anti-monotone (reflection) cost 0.2500000000 against 1/4: MET"
+dk_have "$LIVE19" "G28 kappa=1: m=0.24019372 Var_par=0.22172580 Var_perp=0.24019372 (grid var 0.22172580, masses nu+ 0.19646824 nu- 0.19646824); AXIAL L_par = anti-monotone cost 0.22518103 (the monotone plan 0.23596319, the linear f 0.22172580) [CONSISTENT]"
+dk_have "$LIVE19" "G28 kappa=3: m=0.56792365 Var_par=0.10953908 Var_perp=0.18930788 (grid var 0.10953908, masses nu+ 0.12927326 nu- 0.12927326); AXIAL L_par = anti-monotone cost 0.12409260"
+[ "$(grep -c 'AT-OR-BELOW-1/4' "$LIVE19")" -eq 6 ] || dk_red "ARM 19: not every concentration's sup over the symmetric directions is at or below 1/4"
+dk_have "$B/g14_su2_cube_b0.3_delta.2026-10-29a.txt" "G14D-SUP beta=0.3000 Delta_cube over 1 data and 10 pairs = 0.000804 at symmetric/b0:near -> t0:near; Delta_link = 0.075707; ratio = 0.0106"
+dk_have "$B/g14_su2_cube_b0.7_delta.2026-10-29a.txt" "G14D-SUP beta=0.7000 Delta_cube over 1 data and 10 pairs = 0.019204 at symmetric/b0:near -> t0:near; Delta_link = 0.240848; ratio = 0.0797"
+dk_have "$B/g14_su2_cube_b0.9_delta.2026-10-29a.txt" "G14D-SUP beta=0.9000 Delta_cube over 1 data and 10 pairs = 0.049049 at symmetric/b0:near -> t0:near; Delta_link = 0.323567; ratio = 0.1516"
+dk_have "$B/g14_su2_cube_b1.0_delta.2026-10-29a.txt" "G14D-SUP beta=1.0000 Delta_cube over 3 data and 10 pairs = 0.072649 at symmetric/b0:near -> t0:near; Delta_link = 0.362908; ratio = 0.2002"
+G20_GRIFF=1 perl "$SRC19T" 0.5 1 60 8 2>&1 | tr -d '\r' | sed 's/  ([0-9]* s)$//' > "$LIVE19G" || dk_red "ARM 19: the Griffiths reading at 0.5 refused"
+dk_have "$LIVE19G" "G20-GRIFF-VERDICT beta=0.5 JMAX=1: 8 negative connected plaquette-loop correlations below -1e-09 among 180 (J = 1/2 and 1, the 10 pairs, d = 0..8); the worst -3.928e-04; <tr U_p> = 0.248387  [GKS-II-FAILS-IN-THE-TRUNCATED-MODEL]"
+dk_have "$LIVE19G" "G20-GRIFF beta=0.5 J=0.5 p=0 q=1 d=0 <W_p W_q>_c = +2.995031e-03"
+grep '^G20-GRIFF-VERDICT' "$B/g20_griff_b0.5.2026-10-29a.txt" | tr -d '\r' | cmp -s - <(grep '^G20-GRIFF-VERDICT' "$LIVE19G") || dk_red "ARM 19: the live Griffiths verdict at 0.5 parts from its record"
+dk_say "ARM 19: RESULTS 16.15-16.16 -- the W_1 constant's exact part live (L(0) = 1/4 by the reflection plan, the anti-monotone cost along the axis and Var_perp across it at or below 1/4 at every concentration); the fourth-order law's lines of record at four couplings; the Griffiths reading at 0.5 re-derived and equal to its record (a reading: the loop traces positive beyond the truncation's scale, the J = 1 negatives at it)"
+g19cc(){ perl -c "$1" > /dev/null 2>&1 && cp "$1" "$2"; }
+g19run(){ perl "$1" "0 0.5 1 1.5 2 3" 40000 0 2>&1 | tr -d '\r'; }
+export DK_BASE_RUN="$LIVE19"
+dk_tooth "$SRC19" "$MUT" costbend '\$anti += \$rp\[\$i\] \* 2 \* sin(abs(\$tj - \$th\[\$i\]) \/ 2) } }' '$anti += $rp[$i] * 2 * sin(abs($tj - $th[$i]) / 3) } }' 19 'AXIAL L_par = anti-monotone cost 0.25000000 (the monotone plan 0.26240834, the linear f 0.25000000) [CONSISTENT]' g19cc g19run
+dk_tooth "$SRC19" "$MUT" monobend 'while (\$j < \$N - 1 && \$Fm\[\$j\] < \$level) { \$j++ }' 'while ($j < $N - 1 && $Fm[$j] < $level / 2) { $j++ }' 19 'AXIAL L_par = anti-monotone cost 0.25000000 (the monotone plan 0.26240834, the linear f 0.25000000) [CONSISTENT]' g19cc g19run
+dk_control "$SRC19" "$MUT" 'THE REDUCTION.  By Kantorovich-Rubinstein' 'THE REDUCTION (a comment control).  By Kantorovich-Rubinstein' "$LIVE19" g19cc g19run
+
+dk_teeth_pin 47
+
+dk_green "PENTAPYLON-GATE GREEN: 20 arms, 47 teeth bled in named arms, the comment controls silent -- RESULTS 16: beta_P on two roads (the decimation row certified below 1 to 0.2414 proved and 0.2452 sharp), no perfect cube decimation, the block split, the spins-<=-1 cube built with its known answers, the W_1 constant exact in the symmetric directions (L(0) = 1/4), the fourth-order law of record at five couplings, the Griffiths reading; the decimation lemmas certified at 256 bits (Var_par <= 1/4 for all kappa; sup 3|(m/r)'| <= 0.082827; T(6 beta) <= 0.131796 at beta = 0.244; the directional third cumulant) and the one-face anisotropy with its sup at the corner, the cube read at the certified flow's rung weight; RESULTS 14: the sharp one-link lemma of record in every direction (0.131 = 3 pi/72 a theorem); RESULTS 15: the hierarchical descent certified at 256 bits (K* = 7/7/18/37), the tube's known answers and its strong-coupling gap of record; RESULTS 13: the cone's fixed point 1/3600 predicted and met, the exact bridge's action flat to seven digits with its control deviating at O(s); RESULTS 12: the transform is Dobrushin's coefficient (two known answers MET against the inertia road's certified cells, a third against the dual road's reading), the chain lemma's inequalities hold on every two-scale cell, the hierarchical step's spectrum is 4^{2-d}(1 + O(t)) about the heat-kernel line, claim (A) certified at 99 of 100 exact starts and the descent to the kernel's threshold certified from q = 7/10 and 8/10; G6-b: the tube gap's strong-coupling series is a ratio of exponential moments of the fundamental character, the moments integers and SU(2)'s the Catalan numbers; a shadow of design strength t shares SU(2)'s moments through n = t and its gap series parts at b^(t-1) -- Q8 at b^2 by -4/3, 2T at b^4 by -1/30, 2O at b^6 by -1/1260, 2I at b^10 by -1/9979200 -- the mass gap's leading term tracked through the ladder as exact rationals, t composed from ΑΠΕΡΑΝΤΟΝ's tables; THE LADDER (STAKE 4): SU(2)'s tube coefficient enclosed and the defect column certified -- the magnitude falling strictly along Q8 > 2T > 2O > 2I at every y with the intervals separated, every defect negative, the two roads meeting at y = 1/2; THE BOXES (STAKE 5): the 2x4 cell read through ΣΤΡΟΦΙΓΞ's cap-reading door -- the three-length string test ALIVE at NEITHER prediction, the sqrt-area window DIED, the ordered side of the Ising point entered at y = 1/5, the 60-bit wall named; the box exe built and the quick cells re-derived live here; THE DUAL-SPIN ROAD (ARM 6): the second road meets every certified Z2 cell, reads the 3x4 and 4x4 boxes, and the Ising anchor fixes the infinite-lattice series through u^12; GATE 3 (ARM 7): the Cayley gaps of Q8, 2T, 2O, 2I are 6, 4, 6 - 3 sqrt2 and 12 - 6 phi, the fundamental's at each with nothing below, the desk's seven factorizations met, the dihedral nearest shells refused by name; STAKE 8 (ARM 8): the inertia road brackets every certified Z2 cell by sign counts alone, the dual road's lambdas inside and ΤΟΜΕΥΣ' intervals met, 14 of 14"

@@ -143,10 +143,10 @@ printf "G14-CUBE beta=%.4f a_1=%.6f a_2=%.6f (the dropped spin-1 weight 3a_2 aga
 }
 # ---- the reading at the symmetric data: for every orbit representative j, the max over g in 2O of tv(mu | d0, mu | d0 with V_j = g)
 my @d0 = map { [1, 0, 0, 0] } 1 .. $NOUT; my $m0 = marginal(\@d0); my $sum = 0; my @rows;
-for my $r (@REPS) { my ($j, $size) = @$r; my ($best, $bg, $second, $sg) = (0, 0, 0, 0); for my $gi (1 .. 47) { my @d = map { [@$_] } @d0; $d[$j] = $DES[$gi]; my $t = tv($m0, marginal(\@d)); if ($t > $best) { ($second, $sg) = ($best, $bg); ($best, $bg) = ($t, $gi) } elsif ($t > $second) { ($second, $sg) = ($t, $gi) } }
+for my $r ($MODE eq 'dlink' ? () : @REPS) { my ($j, $size) = @$r; my ($best, $bg, $second, $sg) = (0, 0, 0, 0); for my $gi (1 .. 47) { my @d = map { [@$_] } @d0; $d[$j] = $DES[$gi]; my $t = tv($m0, marginal(\@d)); if ($t > $best) { ($second, $sg) = ($best, $bg); ($best, $bg) = ($t, $gi) } elsif ($t > $second) { ($second, $sg) = ($t, $gi) } }
   $sum += $size * $best; my $g = $DES[$bg]; my $g2 = $DES[$sg]; push @rows, sprintf("j=%s size=%d rho=%.6f argmax-g=(%.3f,%.3f,%.3f,%.3f) second-best=%.6f at g=(%.3f,%.3f,%.3f,%.3f) gap=%.2e", $OUTKEYS[$j], $size, $best, @$g, $second, @$g2, $best - $second);
   printf "G14-ORBIT %s\n", $rows[-1] }
-printf "G14-SYM beta=%.4f DS-sum/|V| = sum_j rho_xj = %.6f (criterion holds iff < 1) [%s]  (12 x this is the cube's double sum against |V| = 12)\n", $beta, $sum, ($sum < 1) ? 'DS-HOLDS' : 'DS-FAILS';
+$MODE eq 'dlink' or printf "G14-SYM beta=%.4f DS-sum/|V| = sum_j rho_xj = %.6f (criterion holds iff < 1) [%s]  (12 x this is the cube's double sum against |V| = 12)\n", $beta, $sum, ($sum < 1) ? 'DS-HOLDS' : 'DS-FAILS';
 if ($MODE eq 'random') { srand($SEED); my ($bestsum, $bestdesc) = ($sum, 'symmetric');                       # random data: does any beat the symmetric one on the worst orbit?
   my ($jw) = map { $_->[0] } sort { $b->[1] <=> $a->[1] } map { my ($j) = @$_; my $rr = (grep { $_ =~ /^j=\Q$OUTKEYS[$j]\E / } @rows)[0]; $rr =~ /rho=([0-9.]+)/; [$j, $1] } @REPS;
   for my $trial (1 .. $NRAND) { my @d = map { $DES[int(rand(48))] } 1 .. $NOUT; my $mr = marginal(\@d); my ($best, $bg) = (0, 0);
@@ -165,7 +165,7 @@ if ($MODE eq "randomall") { srand($SEED); for my $trial (1 .. $NRAND) { my @d = 
 # and NRAND random data; beside it the SINGLE LINK's Delta_link by the same sampling (four staples at 1, two moved; Z_1(s) = 2 I_1(beta s)/(beta s)),
 # and the ratio.  The cube's Z is the design average of N_d(U) (exact for the spin-1/2 weight); the quantity is the mixed second difference of the
 # block's free energy that THE GROUND's first tilt lemma turns into C(y, y') <= 1 - exp(-Delta).
-if ($MODE eq "delta") { srand($SEED); my @GP = (1, 2, 4, 6, 8, 9, 24, 26);
+if ($MODE eq "delta" || $MODE eq "dlink") { srand($SEED); my @GP = (1, 2, 4, 6, 8, 9, 24, 26);                      # MODE=dlink (02:4x EDT): the one-link Delta alone, for the gate's live arm; exits after its line
   my $b0 = $EDGE{b0}; my $t = sub { my ($name, $which) = @_; my $e = $EDGE{$name}; my ($p, $d) = ($e->{base}, $e->{dir}); my $s = ($p->[2] == 1) ? 1 : -1; my $pd = vadd($p, $d, 1);
     return $which eq 'par' ? okey(vadd($p, 3, $s), $d) : ($s > 0 ? okey($p, 3) : okey(vadd($p, 3, -1), 3)) };                    # the parallel link outside the face, or the near vertical
   my @pairs; for my $uw ('par', 'near') { my $u = $t->('b0', $uw); for my $j (0 .. 3) { push @pairs, [$u, $t->("t$j", 'par'), "b0:$uw -> t$j:par"] } push @pairs, [$u, $t->('t0', 'near'), "b0:$uw -> t0:near"] }
@@ -176,7 +176,7 @@ if ($MODE eq "delta") { srand($SEED); my @GP = (1, 2, 4, 6, 8, 9, 24, 26);
   my $dlink = 0; { my @F; for my $gi (0 .. 47) { for my $gp (0, @GP) { $F[$gi]{$gp} = -($WFLOW ? logZ1t($DES[$gi], $DES[$gp]) : logZ1($DES[$gi], $DES[$gp])) } }
     printf "G14D-WEIGHT %s: Delta_link below is the TRUNCATED weight's one-link law (not the vMF law), the same truncation as the cube's\n", $WFLOW if $WFLOW;
     for my $gp (@GP) { my ($mx, $mn) = (-1e9, 1e9); for my $gi (0 .. 47) { my $m = $F[$gi]{$gp} - $F[$gi]{0}; $mx = $m if $m > $mx; $mn = $m if $m < $mn } $dlink = $mx - $mn if $mx - $mn > $dlink } }
-  printf "G14D beta=%.4f a_1=%.6f (the dropped spin-1 weight 3a_2/2a_1 = %.3f) Delta_link (one link, two of six staples moved, the rest 1) = %.6f  [Lemma T's 8 beta/(3 pi) = %.6f]\n", $beta, $A1, 3 * $A2 / (2 * $A1), $dlink, 8 * $beta / (3 * $PI);
+  printf "G14D beta=%.4f a_1=%.6f (the dropped spin-1 weight 3a_2/2a_1 = %.3f) Delta_link (one link, two of six staples moved, the rest 1) = %.6f  [Lemma T's 8 beta/(3 pi) = %.6f]\n", $beta, $A1, 3 * $A2 / (2 * $A1), $dlink, 8 * $beta / (3 * $PI); exit 0 if $MODE eq 'dlink';
   my $t0 = time; my $supall = 0; my $suparg = '';
   for my $trial (0 .. $NRAND) { my @d = $trial == 0 ? (map { [1, 0, 0, 0] } 1 .. $NOUT) : (map { $DES[int(rand(48))] } 1 .. $NOUT); my $dname = $trial == 0 ? 'symmetric' : "random$trial"; my $supd = 0; my $arg = '';
     for my $pr (@pairs) { my ($u, $up, $lab) = @$pr; my %F;

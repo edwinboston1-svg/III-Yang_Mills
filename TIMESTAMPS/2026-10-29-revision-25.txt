@@ -1,0 +1,24 @@
+THE GROUND, revision 25 and the OPEN pages through 030b929 (Edwin Boston III)
+Manifest written 2026-10-29T11:16:52Z.
+
+  030b92974e306ea393ae7be9b179bb7cdf1f02a5  2026-10-29T07:16:47-04:00  THE GROUND, revision 25 (Edwin Boston III, 2026-10-29 07:16 EDT): Dou
+  5c91383fb88ebd9c9be96fcaa70005c6e416b876  2026-10-29T07:08:35-04:00  OPEN: condition (c) of the one-block foothold proved for every beta, 
+  2cf337cd807471d75cd8968402edcd0fdf85f50c  2026-10-29T07:06:51-04:00  OPEN: three more of Balaban's papers in hand (CMP 96, CMP 102 x2); hi
+  d4bea414e145f43cc17f754bfa23f95e1fe6cada  2026-10-29T06:56:50-04:00  OPEN: the plan seat's ledger re-posted at its author's new digest (sh
+  ccd54e59988dd581636a2e2c4b88a05c51aa9fff  2026-10-29T06:56:29-04:00  OPEN: the one-loop lemma's objects located in Balaban's papers (the f
+  e5899345192795fad4e0871ebb891f6c9f15e1f6  2026-10-29T06:54:52-04:00  OPEN: the distance's unit corrected -- about 260 renormalisation step
+
+  c697a0aa13f7f420750189141e8a46f7988d6aba29f3c05833f9c49bd483f347 *THE-GROUND-Edwin-Boston-III.pdf
+  461e014243f6043a40ca3388f6b04442a3fe6300902b4f263697766001f1bb13 *THE-GROUND-Edwin-Boston-III.docx
+  ddeb44036fe1f74088a7e60bc105334ce0243ee27d4f26569fe0848de9760bd6 *README.md
+  2b9dec810c0267802a967e347f94ce44bcc530e484fb712f078036818d3ae6b9 *OPEN/the-crossing.md
+  bd13e221cac889f08d732ab9be792979482dbece7b6fdc0f367f718de0267b56 *OPEN/ledger/beta-uv-the-reading.md
+  a4de25fd2c328a142aaf90338f83cc9e9098d4883c439bd7e3a134a00e1409a3 *OPEN/ledger/c3-the-three-dimensional-rehearsal.md
+  f2ab2c84dab6f9220c16f091820aa2a1f226ec0d3d06eae9283f131c6816bfaa *OPEN/ledger/claimants-gitton-and-zenodo-23001803.md
+  e5729c6c5532fc0988e94c26d3fa595ad3ddcd9b6698386c38d71b9f5bbbfafa *OPEN/ledger/d1-the-renormalisation-step.md
+  8142376b0dd377d7a78cd4c306277a0ebeb84745a834027f09ca3bd1d84215b8 *OPEN/ledger/d2-the-centre-route.md
+  178b3b72aab7b4d486399f95b6762fbd07dc6839dce02586ef0065d19cb41f93 *OPEN/ledger/d4-balaban-the-pages.md
+  29f389cfd37e3187f9ee87a5d0ddd9afb9c71f5a8572898b3772d0e4ce508cde *OPEN/ledger/d4-the-fourth-seat-ledger.md
+  6b3e18aac77df8477a6e3c223b0d8652b395495f5fe28a2f90665ebda7372d99 *OPEN/ledger/one-block-the-unit-s90-s92.md
+  4c879556a92d1347676db69e912e0d4bd053391f368eade3550780183ac0dab1 *OPEN/ledger/typical-boundary.md
+  d24ea66684a8fdc49b8ae6c02b09ac35b70ca7eb862d2f5df2c8217b098a5970 *OPEN/ledger/wasserstein-widening.md

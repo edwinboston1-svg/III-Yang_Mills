@@ -12,6 +12,8 @@ On the lattice at strong coupling the same picture is exact. Expanding each plaq
 
 ## 2. The polymer representation and three lemmas
 
+**What is classical here (W = 0).** The polymer representation, Lemma S1 and the surface weight of Lemma S2 are the classical strong-coupling expansion: K. Osterwalder and E. Seiler, "Gauge field theories on a lattice", Ann. Phys. 110 (1978) 440–471; the d_r^{χ} weight of a closed surface is in J.-M. Drouffe and J.-B. Zuber, "Strong coupling and mean field methods in lattice gauge theories", Phys. Rep. 102 (1983) 1–119. Lemmas S3 and S4 are a standard gauge-invariance argument made explicit and quantitative. What this page earns is the rest: the exact enumeration met on two roads, the closing-tree bound N(F) ≤ 5^{F−1}, the explicit Kotecký–Preiss reach, and the composite-tree bound of §4b. A search on 29 October found no explicit rigorous convergence radius for the four-dimensional SU(2) strong-coupling expansion in print; the classical theorems state "sufficiently small β".
+
 Write f(U) = e^{(β/2) tr U}/c₀(β) − 1, with c₀ = 2I₁(β)/β. Then f = Σ_{j ≥ ½} d_j a_j χ_j with d_j = 2j + 1 and a_j = I_{2j+1}(β)/I₁(β), and a_{1/2} = u. On a finite torus,
 
 Z/c₀^{|P|} = Σ_{X ⊂ P} Π_{Y} W(Y),  W(Y) = ∫ Π_{p∈Y} f(U_p) Π_{ℓ∈L(Y)} dU_ℓ,
@@ -84,6 +86,9 @@ What it needs, each to be done and posted:
 - **S2.** The proved-tail reach with F₀ = 22 lies in [0.565, 0.62].
 - **S3.** (R1) lowers the proved-tail reach by less than ten per cent: the smallest irreducible branched pieces have F ≥ 11, and gluings along forests are free.
 - **S4.** The decay rate of Theorem S at β = 0.2 exceeds 8.7's by a factor above ten. Physically the rate is near −4 log u ≈ 12 there, while 8.7 gives below 0.25.
+- **Clarification of S2, and S2′ (written 10:2x, before the F = 20 and 22 counts exist).** S2 bets on the quantity it was written against, the branch-free reach of §4's first row. The composite-included reach of §4b is a different quantity and gets its own stake. **S2′:** with F₀ = 22 and the proved tail, the composite-included reach lies in [0.546, 0.60].
+
+**R1 at its true difficulty (10:2x).** Every crude bound on the irreducible branched pieces tried here fails asymptotically. Counting closed plaquette sets as lattice animals gives about 54^F, and with any weight per plaquette near u the sum diverges at every β above about 0.4. Counting them by the closing tree with restarts makes the restart locations grow with the size, which is superexponential. An untyped potential on the closing tree cannot certify a growth below 4.76 (iii-38's 16.49). This is the classical reason rigorous strong-coupling radii are small. The bound R1 needs is structural: it must charge only gluings along cycles, which the cut formula prices at a constant, and it must count the constituents of a gluing without paying for the location of a long shared cycle. That argument does not yet exist here. The realistic next increment on the tail is iii-38's alive-node bound (16.49), which moves the proved-tail reach toward 0.6, not to 0.88.
 
 ## 6. Where this leaves the crossing
 

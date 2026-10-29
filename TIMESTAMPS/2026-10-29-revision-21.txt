@@ -1,0 +1,12 @@
+THE GROUND, revision 21 and the OPEN pages through a102f84 (Edwin Boston III)
+Manifest written 2026-10-29T09:34:01Z.
+
+  a102f8477880fe9593e6298a5953dcc79f26a41e  2026-10-29T05:33:54-04:00  THE GROUND, revision 21 (Edwin Boston III, 2026-10-29 05:33 EDT): the proof of 
+  041e87bcd8059554a0c9caca3fb024bda1268137  2026-10-29T05:30:56-04:00  TIMESTAMPS: an OpenTimestamps proof of revision 20 and the OPEN pages through c
+  c35aae159bc021a22ccda3b066ba6fc88d3698f7  2026-10-29T05:30:49-04:00  THE GROUND, revision 20 (Edwin Boston III, 2026-10-29 05:30 EDT): Balaban's fou
+  a461a1a57751cbee8248646a1f40afa02f5b8db9  2026-10-29T05:27:45-04:00  LABELS: the hour labels that came from the seats' own estimates corrected to th
+
+  71e5707934f0ea6d00115dfa99cabe2abb1d0b2fab640ef9f36d3ac367139ac1 *THE-GROUND-Edwin-Boston-III.pdf
+  e822e80b232060cf02f38e781c0629b66c9d4213b8d13a045dbc4f3b4e5f9151 *THE-GROUND-Edwin-Boston-III.docx
+  5fe3b0e10b614c082dd0bf3e9741186ac3e7c0d4e9cc62343c47a21d5b1dcebf *README.md
+  745a49ea8c428c91c1ed2c7ab31abe8911d4c12392ce7a044c3133f0fe33fbdf *OPEN/ledger/d4-balaban-the-pages.md

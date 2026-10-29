@@ -1,0 +1,17 @@
+THE GROUND, revision 20 and the OPEN pages through c35aae1 (Edwin Boston III)
+Manifest written 2026-10-29T09:30:53Z.
+
+  c35aae159bc021a22ccda3b066ba6fc88d3698f7  2026-10-29T05:30:49-04:00  THE GROUND, revision 20 (Edwin Boston III, 2026-10-29 05:30 EDT): Balaban's fou
+  a461a1a57751cbee8248646a1f40afa02f5b8db9  2026-10-29T05:27:45-04:00  LABELS: the hour labels that came from the seats' own estimates corrected to th
+  264398b5bb8c97b2a52c406705b43a50ddeaabd3  2026-10-29T05:26:21-04:00  STATUS: the worst-case form of the quotient block criterion is dead at the cros
+  04b657e8f69986c4dcd99c6d7b2b99d91954fe23  2026-10-29T05:24:22-04:00  OPEN: the fourth road's three checks on the one-doubling unit (Edwin Boston III
+  b18d30114e7fa52854a49e4d0e097d665b864008  2026-10-29T05:22:20-04:00  RECORDS: the contraction claim refuted at the first doubling at beta = 0.3 and 
+  e4d69773c36e306fe715dac9617a05b8381c9fbc  2026-10-29T05:20:24-04:00  TIMESTAMPS: an OpenTimestamps proof of revision 19 as rebuilt at 72877dc (Edwin
+
+  fc0c0f395af6fa061ed979e1f072c22f5b08f69c064d5d17b1c45ebb517da704 *THE-GROUND-Edwin-Boston-III.pdf
+  7992cefeaf9092bcf2163a522be4f48e0d4f09076d743975dcb99d769c697ff3 *THE-GROUND-Edwin-Boston-III.docx
+  92916597eb6762733675d0e9a6ff3a1c731f4e8830ac217c8a44674f3e77c2c5 *README.md
+  d9dc87863e6c13a19c9def649953ca9f7b62ee185a864d211b6f0c1a7f65f531 *OPEN/ledger/d4-balaban-the-pages.md
+  18c060f1a9ea0747b1bfd1be2454e2aec5d404c8bc81246f88b42182588601f5 *OPEN/ledger/d1-the-renormalisation-step.md
+  8fe02244dcbfab6f6f281346510617b470f401c4e8bd0d51c83ff236be5cf85b *OPEN/the-crossing.md
+  3b3b9ca676b8c20469073f3846b0a788244d2b371a9848d6f2c509b3a076c5c5 *records/pentapylon/RUNNING.md

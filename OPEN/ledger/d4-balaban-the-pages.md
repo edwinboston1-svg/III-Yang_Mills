@@ -1,4 +1,4 @@
-> Posted by Edwin Boston III at 05:05 EDT on 29 October 2026 as written by the fourth seat from the two papers the operator downloaded (CMP 109 complete; Large Field Renormalization I); part II is being fetched. Read and checked here: the normalisation map β = 1/g² follows from the normalised trace of (0.2) and the density (0.22) as stated.
+> Posted by Edwin Boston III at 05:29 EDT on 29 October 2026 as written by the fourth seat from the four papers the operator downloaded (CMP 109; CMP 116; Large Field Renormalization I and II). Read and checked here. The seat's own hour labels run about an hour ahead of the clock. §6 is the theorem of record and its author's own sentence on the hypothesis.
 
 # D4 — β_UV ON BAŁABAN'S OWN PAGES (the seat iii-3a, 2026-10-29 05:3x EDT)
 Read: CMP 109 (1987) 249–301, complete (the operator's download, 54 pp., text layer plus rendered pages 252–260);
@@ -85,3 +85,24 @@ coupling of the sequence from the cutoff to the unit lattice, binding at the uni
 uncomputed on every page, "depends on all other constants". The distance of record stays [0.2452, 1/γ²], its top a
 symbol. The quantifier question is closed; the identity of the paper that proves Theorem 2, and part II's Theorem 1,
 remain to be read.
+
+## 6. Large Field Renormalization II (CMP 122 (1989) 355–392; the operator's fourth download; 06:3x) — THE THEOREM OF RECORD
+
+p. 355, verbatim: "Theorem 1. If the sequence of the effective coupling constants is contained in an interval ]0, γ] with a
+sufficiently small positive γ, then the effective densities ρ_k have the form, and satisfy all the conditions and bounds,
+described in Sect. 2 [III]."
+"This is the main result of the whole sequence of papers of the present author on non-Abelian gauge field theories.
+Theorem 2 of [I] allows us to remove the assumption on the effective coupling constants in the above theorem, because
+this assumption follows from the basic inequality (0.31) [II], which is the result of Theorem 2. The proof of Theorem 2,
+which is based on second order perturbative calculations, is very awkward and long in the context of the renormalization
+group approach to lattice gauge field theories, and has not been published yet, so we have Theorem 1 with the
+assumption. As an immediate consequence of this theorem, we get the ultraviolet stability bounds of the same type as for
+superrenormalizable models in [16]:   χ_k exp[−(1/g_k²)A(U_k) − E₋|T_η|] ≤ ρ_k ≤ exp E₊|T_η|   (0.1),
+with the constants E₋, E₊ independent of k, T_η, U_k." ((0.31) is CMP 109's (0.31); "[II]" as printed.)
+References: [I] CMP 109; [II] CMP 116; [III] CMP 119; [IV] CMP 122 I. No paper proving Theorem 2 is named.
+
+VERDICT: the four-dimensional ultraviolet stability theorem of record is CONDITIONAL on the sequence hypothesis
+0 < g_k ≤ γ for all k (the quantifier of §1), and its author states in 1989 that the proof of the statement removing the
+hypothesis (CMP 109's Theorem 2, the two-sided bound (0.31), asymptotic freedom inside the construction) "has not been
+published yet". β_UV = 1/γ² is unchanged; the standing of the UV end is "stability under the sequence hypothesis" until a
+later publication of Theorem 2's proof is found (searched next).

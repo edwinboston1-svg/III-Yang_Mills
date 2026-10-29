@@ -1,0 +1,32 @@
+THE GROUND, revisions 16 and 17, OPEN/the-crossing.md and the records through 11ba677 (Edwin Boston III)
+Repository: https://github.com/edwinboston1-svg/III-Yang_Mills
+Manifest written 2026-10-29T08:36:11Z by the local clock.
+
+git commits (SHA-1 object names):
+  11ba677b5a0a9aae8fd973ca291f27dd9fdf0235  2026-10-29T04:36:06-04:00  THE GROUND, revision 17 (Edwin Boston III, 2026-10-29 04:36 EDT): a second read
+  cd1082ae7ff3ab66a5820ff0394e5b934ee9a082  2026-10-29T04:33:38-04:00  RECORDS AND STATUS: the Wasserstein search closed below one; the first four-dim
+  90c910ced66edbaf986d62f276d25a269e281445  2026-10-29T04:20:23-04:00  OPEN: the running of the coupling staked on Z^4 before its reading; the Yang-Mi
+  688425af1e307751c5e1c6f5149775b6d0ccd3c0  2026-10-29T04:17:23-04:00  RUNNING: the launched digest of the spins-at-most-1 cube, and the fifth-order p
+  93904352a51d072268a27fa5156290bce4b6c769  2026-10-29T04:16:36-04:00  RUNNING: the instruments in flight with their stakes, posted at their start (Ed
+  31b0998168786221768e2f39f004a241c9ba2299  2026-10-29T04:14:28-04:00  RECORDS: the Wasserstein one-link constant, exact in the symmetric directions, 
+  7825d1d56302d6642c295de273f2b50fe34993fe  2026-10-29T04:13:35-04:00  THE GROUND, revision 16 (Edwin Boston III, 2026-10-29 04:13 EDT): the three roa
+  1a7e2b0b424b47123dab84b729f5d8dfde5df89d  2026-10-29T04:10:24-04:00  LEAN DRAFTS: the six chain files and the cover, posted while they compile (Edwi
+  f4f9ac48e2d752cc4d5a6c6d62600b4fbb70f1ef  2026-10-29T04:08:38-04:00  RECORDS: run x GREEN, the run of record for the enclosed constants of Theorem 8
+  f9fe987364c7b21670cb94d7d4a6f81da3579f85  2026-10-29T04:07:28-04:00  TIMESTAMPS: an OpenTimestamps proof of revision 15 and of OPEN/the-crossing.md 
+  b90869c060bad7a5695aa8745eed3bf14dd8ebfd  2026-10-29T04:07:17-04:00  THE GROUND, revision 15 (Edwin Boston III, 2026-10-29 04:07 EDT): the open part
+  fb6c629e653e044696f209748ba4f4c06350dbfe  2026-10-29T04:00:54-04:00  OPEN: the crossing stated at its sharpest, with its measurement staked before t
+
+SHA-256 of the files at commit 11ba677b5a0a9aae8fd973ca291f27dd9fdf0235:
+  1e182b525a2532e906a5f85cae9aaa436626221df6681f3b20fd1b70f00f9796 *THE-GROUND-Edwin-Boston-III.pdf
+  602b10763caf36299ede4cc4ae5eb25b1bc85e4f7cb33ce1c4e0839f90f3d2e7 *THE-GROUND-Edwin-Boston-III.docx
+  c6e3a9d90abbf91afe0107eef7b96b703268b89ad928d704eb97bd8cf1c6e519 *README.md
+  8e55dfaff340846c47e916ba315100864579f11e818c39e11a0bde4a16e6c632 *SOURCES.md
+  82eb1ac38e554ad9c068f1a4a94deb77334f298ec3d2829bbcf4a1589f4b8cb7 *ARXIV.md
+  dec7740254651cef337b1bb45a1ad33ed48af870aacbd155a4e58f5217abc0f8 *OPEN/the-crossing.md
+  79136615afe93ef73ad2bc4c32e4b7af97c1eaac1e5017324677ff3afbfd652f *OPEN/ledger/wasserstein-widening.md
+  4c879556a92d1347676db69e912e0d4bd053391f368eade3550780183ac0dab1 *OPEN/ledger/typical-boundary.md
+  2e16bacd6b998f48082fe4bd5781599283df04bde5f7e929d034f91c65d8305c *records/pentapylon/RUNNING.md
+  2585c5d7fbf34524f892f005d2c35a45dcdcbbaba37f3b3a087f78a3cb08dfbe *records/pentapylon/MANIFEST.md
+  c3ad6239576b421b2494ac14d41a9544323b01dd82d89d8d27abd19dcbf336fc *records/aperanton/MANIFEST.md
+  ec391149e5d3f65d0fc28e8763d161437d51b0530edbadc86927d73caf65121c *records/lean-drafts/MANIFEST.md
+  a5ac92064edba143fefe30df5d32509a8d23a04bb15740063d9125539e177973 *records/second-road/verify73ter.out

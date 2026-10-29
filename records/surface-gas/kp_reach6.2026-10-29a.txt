@@ -1,0 +1,12 @@
+# kp_reach6 readings, 2026-10-29 18:17 EDT (the junction theorem v1's graded rates; page dressing, MU = 5, KTREE = 4)
+## graded, F0 = 20
+# kp_reach6: F0 = 20, MU = 5.00, KTREE = 4, GTABLE = [3.0, 1.7321, 3.4641, 5.6577, 6.7349, 7.8103, 8.6101, 9.2673]
+KP holds to beta = 0.4709   u = 0.1166  a1 = 0.00911  alpha = 0.0030  kappa_dress = 0.1402
+## graded, F0 = 22
+KP holds to beta = 0.4759   u = 0.1179  a1 = 0.00930  alpha = 0.0024  kappa_dress = 0.1550
+## uniform 9.2673, F0 = 20
+KP holds to beta = 0.3589   u = 0.0893  a1 = 0.00532  alpha = 0.0008  kappa_dress = 0.3660
+## sensitivity (NOT proved): gamma(s>=5) = 15 / 25 / 35
+KP holds to beta = 0.3747   u = 0.0931  a1 = 0.00580  alpha = 0.0002  kappa_dress = 0.2610
+KP holds to beta = 0.2935   u = 0.0731  a1 = 0.00357  alpha = 0.0002  kappa_dress = 0.5004
+KP holds to beta = 0.2490   u = 0.0621  a1 = 0.00257  alpha = 0.0002  kappa_dress = 0.6604

@@ -1,0 +1,82 @@
+[pentapylon] provenance: prereg c8f58b1a strictly precedes organ aea98a3a
+[pentapylon] ARM 0: the pinned lines exact rationals; the page before the instrument; the record bound to the instrument and to ΑΠΕΡΑΝΤΟΝ's awk by sha256; the pins named by the record's sha256
+[pentapylon] ARM 1: the known answers live -- the Catalan numbers to C_7, every shadow's class sizes summing to |G| with m_2 = 1, the hand's even moments at n = 4..12, the parting orders 2, 4, 6, 10 -- misses 0
+[pentapylon] frozen pins: 35 of 35 from g6_pins.txt present in g_rec.txt
+[pentapylon] ARM 2: the record re-derived whole and its pins read back; the moments at n = 4, 6, 8, 12 as the page's hand wrote them (SU(2) the Catalan numbers 2, 5, 14, 132; Q8 4, 16, 64, 1024; 2T 2, 6, 22, 342; 2O 2, 5, 15, 187; 2I 2, 5, 14, 133); the gap series' parting coefficients pinned from the record -- Q8 -4/3 at b^2, 2T -1/30 at b^4, 2O -1/1260 at b^6, 2I -1/9979200 at b^10 (UNGUESSED on the page, regression guards now)
+[pentapylon] ARM 3: Q8 -- design strength t = 3 from the quaternion table, the gap series parting at b^2 = t - 1
+[pentapylon] ARM 3: 2T -- design strength t = 5 from the quaternion table, the gap series parting at b^4 = t - 1
+[pentapylon] ARM 3: 2O -- design strength t = 7 from the quaternion table, the gap series parting at b^6 = t - 1
+[pentapylon] ARM 3: 2I -- design strength t = 11 from the quaternion table, the gap series parting at b^10 = t - 1
+[pentapylon] ARM 3: THE DESIGN LADDER -- the tube gap's strong-coupling series parts from SU(2)'s at b^(t-1) at every rung, t = 3, 5, 7, 11 derived from the tables, the parting coefficients -4/3, -1/30, -1/1260, -1/9979200 falling seven million-fold from Q8 to 2I
+[pentapylon] provenance: prereg c8f58b1a strictly precedes organ c3847938
+[pentapylon] frozen pins: 57 of 57 from g6_ladder_pins.txt present in g_lrec.txt
+[pentapylon] ARM 4: THE LADDER -- SU(2)'s tube coefficient I2(2b)/I1(2b) enclosed at y = 1/2 .. 1/16 (0.1699, 0.3218, 0.4459, 0.5418) and the defect column delta_G = -4 ln(c_G/c_SU2) certified: at every y the magnitude FALLS strictly along Q8 > 2T > 2O > 2I with the intervals separated (y = 1/2: 0.151, 4.6e-4, 1.3e-6, 2.4e-12; y = 1/16: 1.150, 0.0733, 0.00323, 1.5e-6), every defect NEGATIVE (the shadow's tube gap below SU(2)'s), the two roads meeting at y = 1/2 within 3.1e-10, 1.7e-11, 1.4e-12, 2.8e-15; 20 known answers, every interval under 1e-30; the gate's own awk reads the same order and signs from the intervals
+[pentapylon] frozen pins: 60 of 60 from g7_pins.txt present in g_boxrec.txt
+[pentapylon] ARM 5: THE BOXES -- ΣΤΡΟΦΙΓΞ's door reading its caps and ΤΟΜΕΥΣ' box mode give the 2x4 cell at y = 1/2, 1/3, 1/4, 1/5 and the 2x2, 2x3 cells at 1/3 and 1/5; E(4 | perp 2) = 4.216358 at y = 1/2 is ALIVE in [4.20, 4.26] and at NEITHER prediction (the two-point law 4.228543, Luscher 4.230996-4.238008), the three-point solve leaving 0.1218 at L = 2; the 2x4 gap ratio to the tube 0.871776; m sqrt(8) = 4.101342 at y = 1/4 -- the scaling window DIED; the strip m(2 x L) = 2.291106, 1.788305, 1.450043; the ordered side at y = 1/5: 2.599763, 2.171204, 1.919771; (1,0)/(0,1) parted on every box without the swap; the y = 1/5 electric sectors on 2x4 refused by the 60-bit entry (thirteen blocks); the reader's three known answers met
+[pentapylon] ARM 5 (live): the box exe built here from the chain, ΣΤΡΟΦΙΓΞ, ΤΟΜΕΥΣ and the harness; the eight quick cells re-derived live and byte-identical to their records; the 4x4 box and the 1x2 control refused by name -- the harness's x mode and the cap-reading door tested by an engine they do not own
+[pentapylon] ARM 6: THE DUAL-SPIN ROAD -- the second road meets ΤΟΜΕΥΣ on all fourteen certified Z2 cells and all six certified string cells live (G6D-KAT misses=0 checks=14; G6D-STRING misses=0 checks=6), reads the 3x4 box and its strings past the organ's walls and the 4x4 box beyond its reach, its series points read u^2 and u^4 as 1 and -15/2, and the Ising anchor meets Arisue-Tabata's ten published coefficients, solving u^6 .. u^12 for the infinite lattice
+[pentapylon] tooth ordbend bled at arm 1 (pin left the run)
+[pentapylon] tooth catalanbend bled at arm 1 (pin left the run)
+[pentapylon] tooth partbend bled at arm 1 (pin left the run)
+[pentapylon] comment control silent (3 teeth, 3 bled, each in its named arm)
+[pentapylon] tooth lnbend bled at arm 4 (pin left the run)
+[pentapylon] tooth tailbend bled at arm 4 (pin left the run)
+[pentapylon] tooth fourbend bled at arm 4 (pin left the run)
+[pentapylon] comment control silent (6 teeth, 6 bled, each in its named arm)
+[pentapylon] tooth logbend bled at arm 5 (pin left the run)
+[pentapylon] tooth tubebend bled at arm 5 (pin left the run)
+[pentapylon] tooth stringbend bled at arm 5 (pin left the run)
+[pentapylon] comment control silent (9 teeth, 9 bled, each in its named arm)
+[pentapylon] tooth windbend bled at arm 6 (pin left the run)
+[pentapylon] tooth discbend: mutant fails to compile -- counted as bled (arm 6)
+[pentapylon] tooth complbend bled at arm 6 (pin left the run)
+[pentapylon] tooth deflbend: mutant fails to compile -- counted as bled (arm 6)
+[pentapylon] tooth anchorbend bled at arm 6 (pin left the run)
+[pentapylon] comment control silent (14 teeth, 14 bled, each in its named arm)
+[pentapylon] ARM 7: GATE 3 -- the Cayley gaps of Q8, 2T, 2O, 2I are 6, 4, 6 - 3 sqrt2, 12 - 6 phi, each the fundamental's with multiplicity four and nothing below it; the desk's seven factorizations MET; the three dihedral controls refused by name
+[pentapylon] tooth crtbend bled at arm 7 (pin left the run)
+[pentapylon] tooth hessbend bled at arm 7 (pin left the run)
+[pentapylon] tooth deskbend bled at arm 7 (pin left the run)
+[pentapylon] comment control silent (17 teeth, 17 bled, each in its named arm)
+[pentapylon] ARM 8: STAKE 8 -- the inertia road brackets every certified Z2 cell by sign counts alone, the dual road's lambdas inside and ΤΟΜΕΥΣ' intervals met, 14 of 14 (ten live, four from record b)
+[pentapylon] tooth signbend bled at arm 8 (pin left the run)
+[pentapylon] tooth bisectbend bled at arm 8 (pin left the run)
+[pentapylon] comment control silent (19 teeth, 19 bled, each in its named arm)
+[pentapylon] ARM 9: RESULTS 12 -- the transform is Dobrushin's coefficient (two known answers MET against the inertia road's certified cells and a third against the dual road's reading, the Gelfand bound holding at every k) and the chain lemma's two inequalities hold on every two-scale cell (2x4 and 4x3 by decimation), its four rung quantities read
+[pentapylon] tooth g9cplbend bled at arm 9 (pin left the run)
+[pentapylon] tooth g9tvbend bled at arm 9 (pin left the run)
+[pentapylon] comment control silent (21 teeth, 21 bled, each in its named arm)
+[pentapylon] ARM 10: RESULTS 12.3 -- the step's spectrum about the heat-kernel line is 4^{2-d}(1 + O(t)): the width marginal at 1 + t/2, the quartic at 1/16, the line normally attracting; T(t) - t = t^2/4 + t^3/12 read to 2e-7 at t = 0.05; the absolute matrix's root 1.35 the shadowing wall
+[pentapylon] tooth g10cgbend bled at arm 10 (pin left the run)
+[pentapylon] tooth g10jacbend bled at arm 10 (pin left the run)
+[pentapylon] comment control silent (23 teeth, 23 bled, each in its named arm)
+[pentapylon] ARM 11: RESULTS 12.4 -- the ball arithmetic's known answer CONTAINS the exact recursion; claim (A) HOLDS at 99 of 100 exact starts with the hundredth refused by its priced tail; the descent to the kernel's threshold CERTIFIED from q = 7/10 in three steps and from 8/10 in six
+[pentapylon] tooth mkepsbend bled at arm 11 (pin left the run)
+[pentapylon] tooth g11tailbend bled at arm 11 (pin left the run)
+[pentapylon] comment control silent (25 teeth, 25 bled, each in its named arm)
+[pentapylon] ARM 12: RESULTS 13 -- the cone's fixed point 1/3600 predicted and met on the exact recursion (the excess over it contracting by the predicted 1/16 per step), the exact S^3 bridge's action on theta^4 the flat formula to seven digits while its sighted control deviates at O(s) through the same quadrature
+[pentapylon] tooth quarticbend bled at arm 12 (pin left the run)
+[pentapylon] tooth bridgebend bled at arm 12 (pin left the run)
+[pentapylon] comment control silent (27 teeth, 27 bled, each in its named arm)
+[pentapylon] ARM 13: RESULTS 14 -- the sharp one-link lemma's four pieces of record: m_1(20) and the hand lemma's constants re-derived live, 5434 + 9104 rectangles certified in records b, the live sub-square certified; 0.131 = 3 pi/72 a theorem
+[pentapylon] tooth mboundbend bled at arm 13 (pin left the run)
+[pentapylon] tooth varboundbend bled at arm 13 (pin left the run)
+[pentapylon] tooth monobend bled at arm 13 (pin left the run)
+[pentapylon] comment control silent (30 teeth, 30 bled, each in its named arm)
+[pentapylon] ARM 14: RESULTS 15 -- the flow's known answer contains the exact rational and refuses the liar, the 2.3 flow re-derived step for step, K* = 7/7/18/37 of record; the tube's operator known answers met and its strong-coupling gap re-derived against record b
+[pentapylon] tooth decimationbend bled at arm 14 (pin left the run)
+[pentapylon] tooth cornerbend bled at arm 14 (pin left the run)
+[pentapylon] comment control silent (32 teeth, 32 bled, each in its named arm)
+[pentapylon] ARM 15: RESULTS 16.7 -- the one-face anisotropy certified at 256 bits with its sup at the corner, and the decimation's lemmas: Var_par <= 1/4 for all kappa (E1), sup 3|(m/r)'| <= 0.082827 (E2a), T(6 beta) <= 0.131796 at beta = 0.244 (E2), the directional third cumulant |phi'''(6 beta)| (E2DIR); live and equal to record b
+[pentapylon] tooth h3bend bled at arm 15 (pin left the run)
+[pentapylon] tooth liarbend bled at arm 15 (pin left the run)
+[pentapylon] tooth kurtbend bled at arm 15 (pin left the run)
+[pentapylon] tooth e1tailbend bled at arm 15 (pin left the run)
+[pentapylon] comment control silent (36 teeth, 36 bled, each in its named arm)
+[pentapylon] ARM 16: RESULTS 16.6 -- the cube's weight mode live: the Wilson one-link Delta at 0.5 equal to the delta record's, the truncated law at rung 7 of the certified flow from 2.2 (c_1 = 0.0468, beta_eff 0.1876) re-derived
+[pentapylon] tooth trunclawbend bled at arm 16 (pin left the run)
+[pentapylon] tooth overridebend bled at arm 16 (pin left the run)
+[pentapylon] comment control silent (38 teeth, 38 bled, each in its named arm)
+[pentapylon] DOKIMASIA: 38 teeth, all bled, count pinned against the literal 38
+[pentapylon] RECORD run=STDLIB/build/runs/pentapylon_gate.2026-10-29x.run manifest=STDLIB/build/runs/pentapylon_gate.2026-10-29x.manifest paths=65
+[pentapylon] GATE_RC=0  PENTAPYLON-GATE GREEN: 17 arms, 38 teeth bled in named arms, the comment controls silent -- RESULTS 16: the decimation lemmas certified at 256 bits (Var_par <= 1/4 for all kappa; sup 3|(m/r)'| <= 0.082827; T(6 beta) <= 0.131796 at beta = 0.244; the directional third cumulant) and the one-face anisotropy with its sup at the corner, the cube read at the certified flow's rung weight; RESULTS 14: the sharp one-link lemma of record in every direction (0.131 = 3 pi/72 a theorem); RESULTS 15: the hierarchical descent certified at 256 bits (K* = 7/7/18/37), the tube's known answers and its strong-coupling gap of record; RESULTS 13: the cone's fixed point 1/3600 predicted and met, the exact bridge's action flat to seven digits with its control deviating at O(s); RESULTS 12: the transform is Dobrushin's coefficient (two known answers MET against the inertia road's certified cells, a third against the dual road's reading), the chain lemma's inequalities hold on every two-scale cell, the hierarchical step's spectrum is 4^{2-d}(1 + O(t)) about the heat-kernel line, claim (A) certified at 99 of 100 exact starts and the descent to the kernel's threshold certified from q = 7/10 and 8/10; G6-b: the tube gap's strong-coupling series is a ratio of exponential moments of the fundamental character, the moments integers and SU(2)'s the Catalan numbers; a shadow of design strength t shares SU(2)'s moments through n = t and its gap series parts at b^(t-1) -- Q8 at b^2 by -4/3, 2T at b^4 by -1/30, 2O at b^6 by -1/1260, 2I at b^10 by -1/9979200 -- the mass gap's leading term tracked through the ladder as exact rationals, t composed from ΑΠΕΡΑΝΤΟΝ's tables; THE LADDER (STAKE 4): SU(2)'s tube coefficient enclosed and the defect column certified -- the magnitude falling strictly along Q8 > 2T > 2O > 2I at every y with the intervals separated, every defect negative, the two roads meeting at y = 1/2; THE BOXES (STAKE 5): the 2x4 cell read through ΣΤΡΟΦΙΓΞ's cap-reading door -- the three-length string test ALIVE at NEITHER prediction, the sqrt-area window DIED, the ordered side of the Ising point entered at y = 1/5, the 60-bit wall named; the box exe built and the quick cells re-derived live here; THE DUAL-SPIN ROAD (ARM 6): the second road meets every certified Z2 cell, reads the 3x4 and 4x4 boxes, and the Ising anchor fixes the infinite-lattice series through u^12; GATE 3 (ARM 7): the Cayley gaps of Q8, 2T, 2O, 2I are 6, 4, 6 - 3 sqrt2 and 12 - 6 phi, the fundamental's at each with nothing below, the desk's seven factorizations met, the dihedral nearest shells refused by name; STAKE 8 (ARM 8): the inertia road brackets every certified Z2 cell by sign counts alone, the dual road's lambdas inside and ΤΟΜΕΥΣ' intervals met, 14 of 14

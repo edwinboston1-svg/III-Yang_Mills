@@ -1,0 +1,8 @@
+G23 beta=0.27 the decimated specification's coefficients searched: quadrature 2304 points, 60 starts x 60 refinements per type (seed 1)
+G23-KAT tv(f, f) = 0.00e+00 (must be 0)
+G23-KAT the tilt-free TYPE I at |w_p| = 0.01, antipodal: tv = 7.728e-05 against the sharp one-link bound (2 beta/3pi) x 0.02 = 1.146e-03  [WITHIN]
+G23-KAT the tilt-free TYPE I at |w_p| = 5, antipodal: tv = 0.036003
+G23-START beta=0.27 type=II start=25 tv=0.007328 best=0.007559 (151 s)
+G23-START beta=0.27 type=II start=50 tv=0.007235 best=0.007559 (339 s)
+G23-SUP beta=0.27 type=II searched sup C_II >= 0.007559 at |w_p|=0.322 |w'_p|=2.128 |w_p-w'_p|=1.990 the five |w|: 3.28 4.20 0.58 2.97 4.98
+G23-ROW beta=0.27 the row sum's searched value 12 C_I + 90 C_II >= 0.680301 (12 x 0.000000 + 90 x 0.007559) -- a LOWER estimate of the decimation's best constant under independent w's  [BELOW-1]  (406 s)

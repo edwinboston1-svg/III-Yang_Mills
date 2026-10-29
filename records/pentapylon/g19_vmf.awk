@@ -22,7 +22,21 @@
 # THE KNOWN ANSWER: iii-43's Monte Carlo |D(5 beta, 5 beta)| = 0.0072 / 0.0306 / 0.0588 at beta = 0.3 / 0.5 / 0.7 (third digit) must lie within
 # 3e-4 of the enclosure; THE LIAR: the same D with 3m/kappa in place of 4m/kappa must MISS at least one of them; and D(0.01, 0.01) must enclose
 # below 1e-6 (isotropy at kappa -> 0).  The planted liar of the cells: the claim "Var_par INCREASING" (-phi > 0) must be REFUSED on every cell.
-# usage: gawk -M -v betas="0.30 0.32 0.34 0.35 0.36 0.38 0.40" [-v K0=0.5] [-v NC=192] -f g19_vmf.awk     (NC cells on [K0, 2], dyadic grid)
+# THE PLAN SEAT'S TWO LEMMAS (02:4x EDT, its §73 THE PERFECT DECIMATION; with phi(r) = log(I_1(r)/r): phi' = m, phi'' = Var_par, phi''' = mu_3):
+# (E1) Var_par(kappa) <= 1/4 for ALL kappa >= 0 -- (B2) carried by cells to kappa = 14 (NC1 cells on [K0, 14]) and past it by Var(u) <= E[(1-u)^2]
+# <= 2(1 - m) with m increasing and m(14) > 7/8; (E2) T(r) := |phi'''(r)| + 3|phi''(r) - phi'(r)/r|/r = |mu_3| + 3A/r, the two scalar invariants of
+# the third-derivative tensor of phi(|v|), and its sup over r in [0, 6 beta]: mu_3 = E(u-m)^3 = Var_par' = -phi/kappa^2 <= 0 by (B2), |mu_3| rises
+# in kappa iff mu_3' = mu_4 - 3V^2 < 0 (E2b), and A/kappa rises iff chi := 5P + 2 kappa m - 11 m^2 - 2 kappa m^3 > 0 (E2c; kappa A' - A = chi), so
+# sup T over [0, 6 beta] = T(6 beta) when both hold on [KE0, 6 beta] and the hand bound on [0, KE0] is below it.  The moments by the recursion
+# E[u^{n+2}] = E[u^n] + (n/kappa)(E[u^{n-1}] - E[u^{n+1}]) - (3/kappa) E[u^{n+1}] (integrate d/du[u^n (1-u^2)^{3/2} e^{kappa u}]): E[u^2] = 1 - 3Q,
+# E[u^3] = m - 3P/kappa, E[u^4] = 1 - 6Q + 15 P/kappa^2 with Q = m/kappa, P = 1 - 4Q.  THE SMALL-r TRAP (iii-43, 03:0x): P = kappa^2/24 - r cancels
+# to second order, so a ball on m loses the quotient; the cells use MONOTONE brackets -- m increasing, Q = m/kappa decreasing (B1), P increasing --
+# whose widths are O(kappa h), and below r_0 = KH = 0.3 the hand lemma's series (m = (kappa/4)(1 - kappa^2/24 + r), 0 <= r <= R) directly; on
+# [0, KE0 = 0.05] by hand: |mu_3| <= kappa (1/16 + R/2 + 3 kappa^2/64) and 3A/kappa <= kappa/16 + 3R(1 + kappa^2/4)/kappa (A <= kappa^2/48 + R(1 + kappa^2 (2 + R)/16) <= kappa^2/48 + R(1 + kappa^2/4)).
+# (E2a, iii-43's 03:0x) sup over ALL r >= 0 of 3A/r = 3|(m/r)'| = 3|Var_par - Var_perp|/r: the max over the cells of [KE0, 1.5] and [K0, 14] of the
+# cell's upper bound 3 A_hi/a (printed with its cell), the hand bound on [0, KE0], and past 14 the tail 3A/r <= 3 Var_perp/r <= 3/r^2 <= 3/196
+# (Var_perp = m/r <= 1/4 is Amos's bound I_2/I_1 <= r/4, cited; here (B1) gives it as Var_perp decreasing from 1/4, a second road).
+# usage: gawk -M -v betas="0.30 0.32 0.34 0.35 0.36 0.38 0.40" [-v K0=0.5] [-v NC=1024] [-v KMAX1=14 -v NC1=2700] [-v KE0=0.05 -v NCE=10000] [-v tbetas="0.20 0.22 0.24 0.25"] -f g19_vmf.awk
 function dn() { ROUNDMODE = "D" }
 function up() { ROUNDMODE = "U" }
 function fl(x) { ROUNDMODE = "D"; return sprintf("%.18g", x) }
@@ -48,6 +62,29 @@ function imul(al, ah, bl, bh,   p1, p2, p3, p4) { dn(); p1 = al * bl; p2 = al * 
   up(); p1 = al * bl; p2 = al * bh; p3 = ah * bl; p4 = ah * bh; RH = p1; if (p2 > RH) RH = p2; if (p3 > RH) RH = p3; if (p4 > RH) RH = p4 }
 # D(a, b) = P_a P_b - m_a^2 m_b^2 from the two corners' intervals (PA*, M2A*, PB*, M2B*) -> DL, DH; and c_1 -> C1L, C1H
 function dint(pal, pah, m2al, m2ah, pbl, pbh, m2bl, m2bh,   ppl, pph, mml, mmh) { imul(pal, pah, pbl, pbh); ppl = RL; pph = RH; imul(m2al, m2ah, m2bl, m2bh); mml = RL; mmh = RH; dn(); DL = ppl - mmh; up(); DH = pph - mml }
+# the moments on a cell [a, b] with m in [ml, mh]: by the hand road (hand = 1, needs b <= 1) or the direct road; sets the globals
+#   M3L/M3H (mu_3), AM3L (|mu_3| lower), TWOAK (2A/kappa upper), AL2/AH2 (A), VL2/VH2 (V), KURTL/KURTH (mu_4 - 3V^2)
+function moments(a, b, ml, mh, hand, mha, mlb,   R, pl, ph, ql, qh, s2l, s2h, pkl, pkh, s3l, s3h, pk2l, pk2h, s4l, s4h, m2l, m2h, m3l, m3h, m4l, m4h, mu4l, mu4h, t) {
+  # ml = m_lo(a), mh = m_hi(b) bracket m (increasing); mha = m_hi(a), mlb = m_lo(b) bracket Q = m/kappa (DEcreasing, by (B1)) as [mlb/b, mha/a] and
+  # P = 1 - 4Q (increasing) as [1 - 4 mha/a, 1 - 4 mlb/b] -- the monotone brackets, whose widths are O(kappa h), against O(h/kappa) for the naive ones
+  if (hand) { up(); R = b ^ 4 / (384 * (1 - 0.06 * b * b)); dn(); t = a * a / 24; ml = a / 4 * (1 - t); pl = t - R; if (pl < 0) pl = 0
+    up(); t = b * b / 24; mh = b / 4 * (1 - b * b / 24 + R); ph = t
+    dn(); pkl = a / 24 - R / a; if (pkl < 0) pkl = 0; pk2l = 1 / 24 - R / (a * a); if (pk2l < 0) pk2l = 0; up(); pkh = b / 24; pk2h = 1 / 24 }
+  else { dn(); ql = mlb / b; up(); qh = mha / a; dn(); pl = 1 - 4 * qh; if (pl < 0) pl = 0; up(); ph = 1 - 4 * ql
+    dn(); pkl = pl / b; pk2l = pl / (b * b); up(); pkh = ph / a; pk2h = ph / (a * a) }
+  dn(); ql = (1 - ph) / 4; up(); qh = (1 - pl) / 4
+  dn(); s2l = 1 - 3 * qh; up(); s2h = 1 - 3 * ql
+  dn(); s3l = ml - 3 * pkh; up(); s3h = mh - 3 * pkl; if (s3l < 0) s3l = 0
+  dn(); s4l = 1 - 6 * qh + 15 * pk2l; up(); s4h = 1 - 6 * ql + 15 * pk2h
+  dn(); m2l = ml * ml; m3l = m2l * ml; m4l = m2l * m2l; up(); m2h = mh * mh; m3h = m2h * mh; m4h = m2h * m2h
+  dn(); VL2 = s2l - m2h; if (VL2 < 0) VL2 = 0; up(); VH2 = s2h - m2l
+  dn(); M3L = s3l - 3 * mh * s2h + 2 * m3l; up(); M3H = s3h - 3 * ml * s2l + 2 * m3h
+  dn(); AM3L = 0 - M3H; if (AM3L < 0) AM3L = 0                                                           # mu_3 <= 0 here (Var_par decreasing): |mu_3| >= -M3H
+  dn(); AL2 = m2l - ph; if (AL2 < 0) AL2 = 0; up(); AH2 = m2h - pl; TWOAK = 2 * AH2 / a
+  dn(); mu4l = s4l - 4 * mh * s3h + 6 * m2l * s2l - 3 * m4h; up(); mu4h = s4h - 4 * ml * s3l + 6 * m2h * s2h - 3 * m4l
+  dn(); KURTL = mu4l - 3 * VH2 * VH2; up(); KURTH = mu4h - 3 * VL2 * VL2
+  dn(); CHIL = 5 * pl + 2 * a * ml - 11 * m2h - 2 * b * m3h                                               # chi = kappa A' - A, its lower bound on the cell
+  up(); TH = 0 - M3L + 3 * AH2 / a; dn(); TL = AM3L + 3 * AL2 / b }                                        # T = |mu_3| + 3A/kappa on the cell
 BEGIN { PREC = 256; KB = 160; if (betas == "") betas = "0.30 0.32 0.34 0.35 0.36 0.38 0.40"; K0 = (K0 == "") ? 0.5 : K0 + 0; NC = (NC == "") ? 1024 : NC + 0
   dn(); a = exp(1); b = 1 / 3; c = log(3); up(); A = exp(1); B = 1 / 3; C = log(3); if (!(A > a && B > b && C > c)) { print "G19-REFUSED directed rounding not in force"; exit 3 }
   printf "G19-LOAD PREC=256 directed rounding in force (U > D on exp, 1/3, log); Bessel series K=%d; cells on [%g, 2] NC=%d; the hand lemma on [0, %g]\n", KB, K0, NC, K0
@@ -85,6 +122,42 @@ BEGIN { PREC = 256; KB = 160; if (betas == "") betas = "0.30 0.32 0.34 0.35 0.36
   for (i = 0; i < NC; i++) for (j = 0; j < NC; j++) { dn(); L = LA[i] * MLB2[j]; up(); Rr = PPH[i] * PHJ[j]; dn(); cc = L - Rr; if (cc < 0) fc++; if (cc < worstc) worstc = cc }
   printf "G19-CELLS2D [%g, 2]^2 in %d cells: (C) -D increasing in each variable failed %d, worst lower bound %s  [%s]\n", K0, NC * NC, fc, fl(worstc), (fc == 0) ? "CELLS2D-GREEN" : "CELLS2D-RED"
   cellsok = (f1 == 0 && f2 == 0 && f3 == 0 && liar == 0 && fc == 0)
+  # ---- (E1) Var_par decreasing carried to KMAX1 by (B2)'s direct road on NC1 cells of [K0, KMAX1], then the tail past KMAX1
+  KMAX1 = (KMAX1 == "") ? 14 : KMAX1 + 0; NC1 = (NC1 == "") ? 27000 : NC1 + 0; dn(); H1 = (KMAX1 - K0) / NC1; fe1 = 0; worste1 = 1e9      # h = 0.0005: the kappa^2 terms' cell error 8 kappa h m stays under phi ~ 3/kappa
+  for (i = 0; i <= NC1; i++) { x = K0 + i * H1; mint(x, x); ML1[i] = MLO; MH1[i] = MHI }
+  for (i = 0; i < NC1; i++) { a = K0 + i * H1; b = a + H1; mla = ML1[i]; mhb = MH1[i + 1]; ok2 = 0
+    if (b <= 1) { up(); R = b ^ 4 / (384 * (1 - 0.06 * b * b)); r1 = (1 + R) ^ 2; r2 = (1 + R) ^ 3; bb = b * b; up(); t1 = bb / 48 + 9 * r1 / 16 + bb * r2 / 32 + 3 * R / bb; dn(); h2 = 1 / 8 + 1 / 2 - t1; if (h2 > 0) ok2 = 1 }
+    dn(); p1 = 3 * a; p2 = 2 * a * a * mla; up(); n1 = 12 * mhb; n2 = 9 * b * mhb * mhb; n3 = 2 * b * b * mhb * mhb * mhb; dn(); e2 = p1 + p2 - n1 - n2 - n3; if (e2 > 0) ok2 = 1; if (!ok2) fe1++; if (e2 < worste1) worste1 = e2 }
+  mint(KMAX1, KMAX1); dn(); tail = 2 * (1 - MHI); up(); tail = 2 * (1 - MLO); e1ok = (fe1 == 0 && tail < 0.25)
+  printf "G19-E1 Var_par decreasing on [%g, %g] by %d cells ((B2) failed %d, worst %s) and on [0, %g] by the hand lemma; past %g Var(u) <= E[(1-u)^2] <= 2(1 - m) <= 2(1 - m(%g)) = %s < 1/4 with m(%g) in [%s, %s]  => Var_par(kappa) <= 1/4 for all kappa >= 0  [%s]\n", K0, KMAX1, NC1, fe1, fl(worste1), K0, KMAX1, KMAX1, fh(tail), KMAX1, fl(MLO), fh(MHI), e1ok ? "E1-CERTIFIED" : "E1-RED"
+  if (!e1ok) cellsok = 0
+  # ---- (E2) the third cumulant's oscillation: the cells on [KE0, 2] for (E2a) |mu_3| >= 2A/kappa and (E2b) mu_4 - 3V^2 < 0
+  KE0 = (KE0 == "") ? 0.05 : KE0 + 0; KE1 = (KE1 == "") ? 1.5 : KE1 + 0; NCE = (NCE == "") ? 7500 : NCE + 0; dn(); HE = (KE1 - KE0) / NCE; fe2a = 0; fe2b = 0; fe2c = 0; worst2a = 1e9; worst2b = -1e9; worst2c = 1e9   # the kurtosis crosses zero near kappa = 1.56, so (E2b) holds to KE1 = 1.5 = 6 x 0.25 and no further
+  for (i = 0; i <= NCE; i++) { x = KE0 + i * HE; mint(x, x); MLE[i] = MLO; MHE[i] = MHI }
+  KH = (KH == "") ? 0.3 : KH + 0
+  for (i = 0; i < NCE; i++) { a = KE0 + i * HE; b = a + HE; moments(a, b, MLE[i], MHE[i + 1], (b <= KH), MHE[i], MLE[i + 1])
+    dn(); e2a = AM3L - TWOAK; if (e2a <= 0) fe2a++; if (e2a < worst2a) worst2a = e2a
+    if (KURTH >= 0) fe2b++; if (KURTH > worst2b) worst2b = KURTH
+    if (CHIL <= 0) fe2c++; if (CHIL < worst2c) worst2c = CHIL }
+  up(); R0 = KE0 ^ 4 / (384 * (1 - 0.06 * KE0 * KE0)); hb = KE0 * (1 / 16 + R0 / 2 + 3 * KE0 * KE0 / 64) + KE0 / 16 + 3 * R0 * (1 + KE0 * KE0 / 4) / KE0
+  e2ok = (fe2b == 0 && fe2c == 0)
+  printf "G19-E2CELLS [%g, %g] in %d cells: (E2b) mu_4 - 3V^2 < 0 failed %d, worst upper bound %s; (E2c) chi = kappa A' - A > 0 failed %d, worst %s; (E2a) |mu_3| >= 2A/kappa failed %d, worst %s (information: the axis carries the direction-sup where it holds); on [0, %g] by hand T <= %s  [%s]\n", KE0, KE1, NCE, fe2b, fh(worst2b), fe2c, fl(worst2c), fe2a, fl(worst2a), KE0, fh(hb), e2ok ? "E2CELLS-GREEN" : "E2CELLS-RED"
+  if (!e2ok) cellsok = 0
+  # ---- (E2a) the sup over all r >= 0 of 3A/r: the cells of [KE0, KE1] (the E2 grid, A_hi from moments) and of [K0, KMAX1] (the E1 grid, the monotone brackets), the hand bound below KE0, the tail past KMAX1
+  supA = 0; supAat = 0
+  for (i = 0; i < NCE; i++) { a = KE0 + i * HE; b = a + HE; moments(a, b, MLE[i], MHE[i + 1], (b <= KH), MHE[i], MLE[i + 1]); up(); t = 3 * AH2 / a; if (t > supA) { supA = t; supAat = a } }
+  for (i = 0; i < NC1; i++) { a = K0 + i * H1; b = a + H1; up(); qh = MH1[i + 1] / a; ah = 4 * qh - 1 + MH1[i + 1] * MH1[i + 1]; dn(); ql = ML1[i] / b; al = 4 * ql - 1 + ML1[i] * ML1[i]; up(); if (0 - al > ah) ah = 0 - al; t = 3 * ah / a; if (t > supA) { supA = t; supAat = a } }
+  up(); hA = KE0 / 16 + 3 * R0 * (1 + KE0 * KE0 / 4) / KE0; tailA = 3 / (KMAX1 * KMAX1); supAall = supA; if (hA > supAall) supAall = hA; if (tailA > supAall) supAall = tailA
+  printf "G19-E2A sup over r >= 0 of 3A/r = 3|(m/r)'|: the cells' largest upper bound %s at the cell starting r = %s; below %g by hand <= %s; past %g the tail <= 3/r^2 <= %s  => sup <= %s  [E2A-CERTIFIED]\n", fh(supA), fn(supAat), KE0, fh(hA), KMAX1, fh(tailA), fh(supAall)
+  # ---- (E2) at the corners r = 6 beta for the decimation's betas: T(6 beta) and the sup of T over [0, 6 beta]
+  if (tbetas == "") tbetas = "0.20 0.22 0.24 0.244 0.25"; ntb = split(tbetas, TB, " ")
+  for (ib = 1; ib <= ntb; ib++) { bs = TB[ib]; split(bs, bq, "."); bp = (bq[1] bq[2]) + 0; bQ = 10 ^ length(bq[2]); dn(); xl = 6 * bp / bQ; up(); xh = 6 * bp / bQ; mint(xl, xh)
+    moments(xl, xh, MLO, MHI, 0, MHI, MLO); inr = (xh <= KE1 + 0.0000001); tok = (e2ok && inr && hb <= TL)
+    up(); hm3 = KE0 * (1 / 16 + R0 / 2 + 3 * KE0 * KE0 / 64); dn(); am3 = 0 - M3H; up(); am3h = 0 - M3L; dok = (tok && fe2a == 0 && hm3 <= am3)
+    printf "G19-E2DIR beta=%s: the sup over r in [0, 6beta] and over directions u of |kappa_3(<U,u>)| = |phi'''(6beta)| in [%s, %s] -- the axis carries the direction-sup wherever |mu_3| >= 2A/r ((E2a) on every cell), |mu_3| rises ((E2b)), and below %g by hand |mu_3| <= %s  [%s]\n", bs, fl(am3), fh(am3h), KE0, fh(hm3), dok ? "E2DIR-CERTIFIED" : "E2DIR-NOT-CERTIFIED"
+    if (!dok) cellsok = 0
+    printf "G19-E2 beta=%s r=6beta=%s: mu_3 = phi''' in [%s, %s]; A = Var_perp - Var_par in [%s, %s]; 3A/r <= %s; T(r) = |mu_3| + 3A/r in [%s, %s]; mu_4 - 3V^2 in [%s, %s]; chi in [%s, ..]  => sup over r in [0, 6beta] of T(r) = T(6beta) <= %s  [%s]\n", bs, fn(xh), fl(M3L), fh(M3H), fl(AL2), fh(AH2), fh(3 * AH2 / xl), fl(TL), fh(TH), fl(KURTL), fh(KURTH), fl(CHIL), fh(TH), tok ? "E2-CERTIFIED" : "E2-NOT-CERTIFIED"
+    if (!tok) cellsok = 0 }
   # the strip's crude bound needs m(K0) and P(K0)
   mint(K0, K0); mK0l = MLO; mK0h = MHI; derive(K0, K0, mK0l, mK0h); pK0h = PH; up(); m2K0h = mK0h * mK0h
   dint(PL, PH, M2L, M2H, PL, PH, M2L, M2H); dK0h = DH; printf "G19-BASE D(%g, %g) in [%s, %s]: %s at the square's base corner, so -D >= 0 on [%g, 2]^2 by (C) and |D| = -D there  [%s]\n", K0, K0, fl(DL), fh(DH), (dK0h < 0) ? "negative" : "NOT NEGATIVE", K0, (dK0h < 0) ? "BASE-OK" : "BASE-RED"

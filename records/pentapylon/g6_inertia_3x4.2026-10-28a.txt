@@ -1,0 +1,5 @@
+# G6I THE INERTIA ROAD record, the 3x4 cell at u = 1/2 (tag 2026-10-28a): reader g6_inertia.pl sha256 d66ecb01b26c8dd75f7beed7e6637a44aa4caf7d8d6ed10e067968712053dc6d; 88 orbits, 40 bits, the dual road's lambdas of record c compared exactly
+G6I table=g6_dual_3x4.tab L=3x4 u=1/2 n=88 kmax=32 bits=40 counts=84 nudges=0 seconds=33078
+G6I-LAM0 L=3x4 u=1/2 in (1.2501797658133, 1.25017976581603) width=2.728e-12
+G6I-LAM1 L=3x4 u=1/2 in (0.12683531554103, 0.126835315543758) width=2.728e-12
+G6I-GAP L=3x4 u=1/2 gap in [2.288153115629533, 2.288153115653228] width=2.369e-11 dual-road-lambdas=CONTAINS

@@ -1,0 +1,17 @@
+P=2 links=64 plaquettes=96 nodes=17 result=FOUND |L1|=16
+  link (0,0,0,0) dir 1
+  link (0,0,1,0) dir 2
+  link (0,1,0,0) dir 4
+  link (0,0,0,1) dir 3
+  link (1,0,0,1) dir 2
+  link (0,1,0,1) dir 4
+  link (1,0,1,0) dir 4
+  link (0,0,1,1) dir 3
+  link (0,1,1,1) dir 1
+  link (1,0,1,1) dir 4
+  link (1,1,0,0) dir 3
+  link (0,1,1,0) dir 2
+  link (1,1,0,1) dir 2
+  link (1,1,1,0) dir 3
+  link (1,0,0,0) dir 1
+  link (1,1,1,1) dir 1

@@ -1,0 +1,17 @@
+THE GROUND, revision 19 and the OPEN pages through 608e3e3 (Edwin Boston III)
+Manifest written 2026-10-29T09:17:45Z by the local clock.
+
+  608e3e35ff996c01a70a96fbec35ee2a5ec88ff0  2026-10-29T05:17:41-04:00  THE GROUND, revision 19 (Edwin Boston III, 2026-10-29 05:17 EDT): Section 6.6 r
+  59a1f94c4e42c027dee25d43f0165fdb6c4b24f4  2026-10-29T05:10:12-04:00  RECORDS: the kill experiment on the contraction claim at beta = 0.5, exact, wit
+  51c7b9835ee8dd7daf38ec4cd61938bb80fc706c  2026-10-29T05:08:22-04:00  RECORDS: the cube's law is fifth order and the fourth-order rows are corrected 
+  aebf2683a77ca3e6f002bf3ba58dd22f45b994bd  2026-10-29T05:06:55-04:00  TIMESTAMPS: an OpenTimestamps proof of revision 18 and the OPEN pages through 9
+  918d4ad378d6510bb97055c27a3d4f58b1b4d40c  2026-10-29T05:06:43-04:00  THE GROUND, revision 18 (Edwin Boston III, 2026-10-29 05:06 EDT): the ultraviol
+  c67dc571301b535dbfd7da302ff05f2e3f75a6e4  2026-10-29T04:56:05-04:00  STATUS: six of the seven chain files compile clean; gate run ae launched at 04:
+
+SHA-256 at commit 608e3e35ff996c01a70a96fbec35ee2a5ec88ff0:
+  1ba8561ff6c57dfd6c4aa6b7ad0c5810736e15a84d988f45789143d6899a6f07 *THE-GROUND-Edwin-Boston-III.pdf
+  9c1bdbad70ab66cfcdd28251a04644a51871ebddf56cc7e22e64e8caad995ee6 *THE-GROUND-Edwin-Boston-III.docx
+  60122f7f5b9cac8d0d963ca253b91783f77dff2cf37d4a5658cc77fb0a0ecead *README.md
+  f2ab2c84dab6f9220c16f091820aa2a1f226ec0d3d06eae9283f131c6816bfaa *OPEN/ledger/claimants-gitton-and-zenodo-23001803.md
+  a979b6ed326c41221839a3624ee68bf12a780e11b3150e9b2e865998365b8dcc *OPEN/ledger/d1-the-renormalisation-step.md
+  9abf9593e29e5520330b8bbdf8bf6e7fcbc70b6b0f14bc36b97b4fe99c74f9e8 *records/fourth-road/MANIFEST.md

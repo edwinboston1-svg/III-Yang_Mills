@@ -1,0 +1,17 @@
+EVERY CROSS-SCALE COUPLING COMPARISON IN BAŁABAN'S FOUR-DIMENSIONAL CORPUS (OPEN/ledger/d4b-the-cross-scale-comparisons.md), Edwin Boston III
+Manifest written 2026-10-29 11:15:28 EDT for the repository state at commit 249d9139a919a6174d21d7e70ba73450beb196f9
+
+sha256 of the page, its pointer and its records at that commit:
+16433ca755d72fe6c54a693771f1ac784e16a8b3c4ab3238dc5285c208a79fa0 *OPEN/ledger/d4b-the-cross-scale-comparisons.md
+9d4168b9f2f156c8dc7643d12c3783058b8d1db1a172ad75bca48cf41cc2082b *OPEN/ledger/d4-balaban-the-pages.md
+78fdc4de935a35babe9b9b990df8695388a58ebb93bca746269302a65ac2135e *records/cross-scale/reading-log.md
+d74319a8bab3192bf0ae91e017b8b69252545f75587a2eec80623638488d2ff1 *records/cross-scale/scan_cross.py
+57d00103921d781ed70ffb50db4d9b39201c81936de736c12f5f093166a6a175 *records/cross-scale/scan_pages.py
+963bff3f88b052c8df2209e0e8c8343efcce3728fbe5bae01dfe7ac00c494552 *records/cross-scale/show_hits.py
+
+sha256 of the five papers read (the operator's downloads of 29 October, not redistributed here):
+1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a  CMP 109 (1987) 249-301
+ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc  CMP 116 (1988) 1-22
+c629e6280329cca4e038fece68e6c225b82f3f31e61c47596997db82b72ef1df  CMP 119 (1988) 243-285
+4002290ab2d69bd425a767c46f3f1403768433d753a7649cdfaf528f45a15fd2  CMP 122 (1989) 175-202
+80ab1ee09fff0a5b6840a568b72c400a812858425da3200bc5c1c9e2d6941482  CMP 122 (1989) 355-392

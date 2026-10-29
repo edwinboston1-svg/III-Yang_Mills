@@ -6,7 +6,7 @@ A proof that quantum Yang–Mills theory has a mass gap must stand on a construc
 
 | File | Content |
 |---|---|
-| `THE-GROUND-Edwin-Boston-III.docx` | The paper, Word format, 41 pages. |
+| `THE-GROUND-Edwin-Boston-III.docx` | The paper, Word format, 42 pages. |
 | `THE-GROUND-Edwin-Boston-III.pdf` | The same, rendered. |
 | `SOURCES.md` | The evidence register: every quotation with its document, page and the manner of its reading; the records of the computations of Edwin Boston III with their runs of record. |
 | `source/ground/` | The generator of the paper. `node build.js out.docx` builds it (`docx` 9.5.1); `render.ps1` updates the contents and exports the PDF through Word; `raster.py` renders pages for inspection. |

@@ -1,0 +1,27 @@
+G14-CUBE beta=0.1000 a_1=0.024990 a_2=0.000416 (the dropped spin-1 weight 3a_2 against 2a_1: 0.025) outside-links=88 orbits-under-stab(t0)=23 quadrature=4320 points
+G14-ANCHOR tv(d,d)=0.000e+00 (must be 0)
+G14-ANCHOR direct sign flip of a staple link of t0 at symmetric data: tv=0.042067 against the single-link law (4/3pi)beta=0.042441 (ratio 0.9912; equal only as beta -> 0)
+G14-ORBIT j=-1,1,0,0:1 size=2 rho=0.000000 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000000 at g=(-0.707,0.000,-0.707,0.000) gap=1.67e-09
+G14-ORBIT j=-1,0,0,0:2 size=4 rho=0.000000 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000000 at g=(-0.707,-0.707,0.000,0.000) gap=1.03e-09
+G14-ORBIT j=-1,0,0,0:1 size=4 rho=0.000010 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000009 at g=(-0.707,0.000,0.707,0.000) gap=7.51e-07
+G14-ORBIT j=0,1,-1,0:3 size=4 rho=0.000000 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000000 at g=(-0.707,-0.707,0.000,0.000) gap=1.62e-09
+G14-ORBIT j=0,0,-1,0:2 size=4 rho=0.000000 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000000 at g=(-0.707,-0.707,0.000,0.000) gap=1.03e-09
+G14-ORBIT j=0,0,-1,0:3 size=4 rho=0.000010 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000009 at g=(-0.707,0.000,-0.707,0.000) gap=7.50e-07
+G14-ORBIT j=0,1,0,0:4 size=4 rho=0.000000 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000000 at g=(-0.707,0.000,-0.707,0.000) gap=2.22e-09
+G14-ORBIT j=0,0,0,1:2 size=8 rho=0.000000 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000000 at g=(-0.707,-0.707,0.000,0.000) gap=1.03e-09
+G14-ORBIT j=0,0,0,0:4 size=8 rho=0.000015 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000013 at g=(-0.707,0.000,0.707,0.000) gap=2.26e-06
+G14-ORBIT j=2,0,1,0:2 size=4 rho=0.000010 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000009 at g=(-0.707,0.000,-0.707,0.000) gap=7.50e-07
+G14-ORBIT j=1,0,1,0:1 size=2 rho=0.000020 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000019 at g=(-0.707,0.000,-0.707,0.000) gap=1.50e-06
+G14-ORBIT j=1,1,1,0:3 size=4 rho=0.000015 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000013 at g=(-0.707,0.000,-0.707,0.000) gap=2.26e-06
+G14-ORBIT j=1,0,2,0:2 size=4 rho=0.000010 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000009 at g=(-0.707,0.000,-0.707,0.000) gap=7.50e-07
+G14-ORBIT j=1,0,1,0:3 size=4 rho=0.042067 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.038842 at g=(-0.707,0.000,0.707,0.000) gap=3.23e-03
+G14-ORBIT j=1,0,1,1:2 size=8 rho=0.000010 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000009 at g=(-0.707,0.000,-0.707,0.000) gap=7.50e-07
+G14-ORBIT j=1,0,1,0:4 size=4 rho=0.042077 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.038851 at g=(-0.707,0.000,0.707,0.000) gap=3.23e-03
+G14-ORBIT j=0,2,1,0:1 size=2 rho=0.000010 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000009 at g=(-0.707,0.000,0.707,0.000) gap=7.49e-07
+G14-ORBIT j=0,1,2,0:1 size=2 rho=0.000010 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000009 at g=(-0.707,0.000,0.707,0.000) gap=7.49e-07
+G14-ORBIT j=0,1,1,1:1 size=4 rho=0.000010 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000009 at g=(-0.707,0.000,0.707,0.000) gap=7.49e-07
+G14-ORBIT j=0,-1,1,0:1 size=2 rho=0.042056 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.038832 at g=(-0.707,0.000,-0.707,0.000) gap=3.22e-03
+G14-ORBIT j=0,0,1,1:1 size=2 rho=0.042056 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.038832 at g=(-0.707,0.000,-0.707,0.000) gap=3.22e-03
+G14-ORBIT j=0,2,0,0:1 size=2 rho=0.000000 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000000 at g=(-0.707,0.000,-0.707,0.000) gap=3.63e-10
+G14-ORBIT j=0,1,0,1:1 size=2 rho=0.000000 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000000 at g=(-0.707,0.000,-0.707,0.000) gap=3.63e-10
+G14-SYM beta=0.1000 DS-sum/|V| = sum_j rho_xj = 0.505345 (criterion holds iff < 1) [DS-HOLDS]  (12 x this is the cube's double sum against |V| = 12)

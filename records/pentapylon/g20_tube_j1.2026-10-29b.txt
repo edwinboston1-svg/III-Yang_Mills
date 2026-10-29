@@ -1,0 +1,313 @@
+G20-SPACE beta=0.2 JMAX=1: 2018 gauge-invariant spin-network states on the 2x2 torus (spins 0..1 on 8 links), 81 distinct vertex invariant spaces
+G20-BUILD plaquette 0: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (0 s)
+G20-BUILD plaquette 1: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 2: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (4 s)
+G20-BUILD plaquette 3: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (5 s)
+G20-KAT symmetry of every W_J(p): max |W_ik - W_ki| = 1.89e-15 over 83452 entries  [SYMMETRIC]
+G20-KAT ||W_{1/2}(p=0)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=0)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=1)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=1)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=2)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=2)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=3)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=3)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_{1/2}(p) W_{1/2}(p')|0> = 0 for all p != p'  [MET]
+G20-KAT operators  [ALL MET]
+G20-SPECTRUM beta=0.2 JMAX=1 lambda_0=1.01004195628 lambda_1/lambda_0=0.002504224698 lambda_2/lambda_0=0.002504224698  full gap -ln(l1/l0)=5.989776  (Lanczos 60 steps, 12 s)
+G20-SECTOR beta=0.2 flux=(00) states=622 top=1.01004195628 second=0.000125716032016  gap-in-sector=-ln(second/top)=8.991477  (against lambda_0: -ln(top/lambda_0)=0.000000)
+G20-SECTOR beta=0.2 flux=(10) states=488 top=0.00252937201334 second=0.00250416345781  gap-in-sector=-ln(second/top)=0.010016  (against lambda_0: -ln(top/lambda_0)=5.989776)
+G20-SECTOR beta=0.2 flux=(01) states=488 top=0.00252937201334 second=0.00250416345781  gap-in-sector=-ln(second/top)=0.010016  (against lambda_0: -ln(top/lambda_0)=5.989776)
+G20-SECTOR beta=0.2 flux=(11) states=420 top=7.43217790644e-06 second=6.93473586388e-06  gap-in-sector=-ln(second/top)=0.069276  (against lambda_0: -ln(top/lambda_0)=11.819683)
+G20-LUMP beta=0.2 the 0++ gap in the zero-flux sector = 8.991477; the torelon (flux (1,0) top against lambda_0) = 5.989776; the full gap 5.989776 IS the torelon
+G20-GROUND lambda_0=1.01004195628 residual=1.79e-15; the electric weight of the first dropped spin c_{1.5}=0.00004 (truncation's size)
+G20-K beta=0.2 <O>=0.04994799 K(0)=Var(O)=6.23002168e-02
+G20-K beta=0.2 d=1 K(d)=3.874923e-07 K(d)/K(d-1)=0.00000622 m_eff=11.987780
+G20-K beta=0.2 d=2 K(d)=2.421935e-12 K(d)/K(d-1)=0.00000625 m_eff=11.982884
+G20-VERDICT beta=0.2 JMAX=1 states=2018 full-gap=5.989776 0++rate(d=2)=11.982884 0++gap(sector)=8.991477 strong-coupling -4 ln c_{1/2}=11.9896 ratio=0.9994 monotone-K=YES torelon-below-0++=YES (41 s)
+G20-SPACE beta=0.5 JMAX=1: 2018 gauge-invariant spin-network states on the 2x2 torus (spins 0..1 on 8 links), 81 distinct vertex invariant spaces
+G20-BUILD plaquette 0: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (1 s)
+G20-BUILD plaquette 1: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 2: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (4 s)
+G20-BUILD plaquette 3: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (6 s)
+G20-KAT symmetry of every W_J(p): max |W_ik - W_ki| = 1.89e-15 over 83452 entries  [SYMMETRIC]
+G20-KAT ||W_{1/2}(p=0)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=0)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=1)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=1)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=2)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=2)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=3)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=3)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_{1/2}(p) W_{1/2}(p')|0> = 0 for all p != p'  [MET]
+G20-KAT operators  [ALL MET]
+G20-SPECTRUM beta=0.5 JMAX=1 lambda_0=1.06419901281 lambda_1/lambda_0=0.01580066597 lambda_2/lambda_0=0.01580066597  full gap -ln(l1/l0)=4.147703  (Lanczos 60 steps, 13 s)
+G20-SECTOR beta=0.5 flux=(00) states=622 top=1.06419901281 second=0.000290295096285  gap-in-sector=-ln(second/top)=8.206835  (against lambda_0: -ln(top/lambda_0)=0.000000)
+G20-SECTOR beta=0.5 flux=(10) states=488 top=0.0168150531308 second=0.0157873011456  gap-in-sector=-ln(second/top)=0.063069  (against lambda_0: -ln(top/lambda_0)=4.147703)
+G20-SECTOR beta=0.5 flux=(01) states=488 top=0.0168150531308 second=0.0157873011456  gap-in-sector=-ln(second/top)=0.063069  (against lambda_0: -ln(top/lambda_0)=4.147703)
+G20-SECTOR beta=0.5 flux=(11) states=420 top=0.000375854673097 second=0.000321273017983  gap-in-sector=-ln(second/top)=0.156911  (against lambda_0: -ln(top/lambda_0)=7.948530)
+G20-LUMP beta=0.5 the 0++ gap in the zero-flux sector = 8.206835; the torelon (flux (1,0) top against lambda_0) = 4.147703; the full gap 4.147703 IS the torelon
+G20-GROUND lambda_0=1.06419901281 residual=1.83e-15; the electric weight of the first dropped spin c_{1.5}=0.00064 (truncation's size)
+G20-K beta=0.5 <O>=0.12419356 K(0)=Var(O)=6.11150846e-02
+G20-K beta=0.5 d=1 K(d)=1.444824e-05 K(d)/K(d-1)=0.00023641 m_eff=8.349942
+G20-K beta=0.5 d=2 K(d)=3.512006e-09 K(d)/K(d-1)=0.00024308 m_eff=8.322140
+G20-K beta=0.5 d=3 K(d)=8.749303e-13 K(d)/K(d-1)=0.00024913 m_eff=8.297554
+G20-VERDICT beta=0.5 JMAX=1 states=2018 full-gap=4.147703 0++rate(d=3)=8.297554 0++gap(sector)=8.206835 strong-coupling -4 ln c_{1/2}=8.3590 ratio=0.9926 monotone-K=YES torelon-below-0++=YES (41 s)
+G20-SPACE beta=1 JMAX=1: 2018 gauge-invariant spin-network states on the 2x2 torus (spins 0..1 on 8 links), 81 distinct vertex invariant spaces
+G20-BUILD plaquette 0: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 1: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (3 s)
+G20-BUILD plaquette 2: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (5 s)
+G20-BUILD plaquette 3: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (7 s)
+G20-KAT symmetry of every W_J(p): max |W_ik - W_ki| = 1.89e-15 over 83452 entries  [SYMMETRIC]
+G20-KAT ||W_{1/2}(p=0)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=0)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=1)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=1)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=2)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=2)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=3)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=3)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_{1/2}(p) W_{1/2}(p')|0> = 0 for all p != p'  [MET]
+G20-KAT operators  [ALL MET]
+G20-SPECTRUM beta=1 JMAX=1 lambda_0=1.28076796321 lambda_1/lambda_0=0.06565795557 lambda_2/lambda_0=0.06565795557  full gap -ln(l1/l0)=2.723297  (Lanczos 60 steps, 15 s)
+G20-SECTOR beta=1 flux=(00) states=622 top=1.28076796321 second=0.00544949160165  gap-in-sector=-ln(second/top)=5.459693  (against lambda_0: -ln(top/lambda_0)=0.000000)
+G20-SECTOR beta=1 flux=(10) states=488 top=0.0840926060254 second=0.0651382235282  gap-in-sector=-ln(second/top)=0.255407  (against lambda_0: -ln(top/lambda_0)=2.723297)
+G20-SECTOR beta=1 flux=(01) states=488 top=0.0840926060254 second=0.0651382235282  gap-in-sector=-ln(second/top)=0.255407  (against lambda_0: -ln(top/lambda_0)=2.723297)
+G20-SECTOR beta=1 flux=(11) states=420 top=0.00912013167323 second=0.00707319210792  gap-in-sector=-ln(second/top)=0.254172  (against lambda_0: -ln(top/lambda_0)=4.944731)
+G20-LUMP beta=1 the 0++ gap in the zero-flux sector = 5.459693; the torelon (flux (1,0) top against lambda_0) = 2.723297; the full gap 2.723297 IS the torelon
+G20-GROUND lambda_0=1.28076796321 residual=1.51e-15; the electric weight of the first dropped spin c_{1.5}=0.00484 (truncation's size)
+G20-K beta=1 <O>=0.24366602 K(0)=Var(O)=5.54726580e-02
+G20-K beta=1 d=1 K(d)=1.860856e-04 K(d)/K(d-1)=0.00335455 m_eff=5.697439
+G20-K beta=1 d=2 K(d)=6.799112e-07 K(d)/K(d-1)=0.00365375 m_eff=5.612000
+G20-K beta=1 d=3 K(d)=2.640882e-09 K(d)/K(d-1)=0.00388416 m_eff=5.550849
+G20-K beta=1 d=4 K(d)=1.066815e-11 K(d)/K(d-1)=0.00403962 m_eff=5.511605
+G20-VERDICT beta=1 JMAX=1 states=2018 full-gap=2.723297 0++rate(d=4)=5.511605 0++gap(sector)=5.459693 strong-coupling -4 ln c_{1/2}=5.7052 ratio=0.9661 monotone-K=YES torelon-below-0++=YES (45 s)
+G20-SPACE beta=1.5 JMAX=1: 2018 gauge-invariant spin-network states on the 2x2 torus (spins 0..1 on 8 links), 81 distinct vertex invariant spaces
+G20-BUILD plaquette 0: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 1: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (4 s)
+G20-BUILD plaquette 2: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (5 s)
+G20-BUILD plaquette 3: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (6 s)
+G20-KAT symmetry of every W_J(p): max |W_ik - W_ki| = 1.89e-15 over 83452 entries  [SYMMETRIC]
+G20-KAT ||W_{1/2}(p=0)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=0)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=1)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=1)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=2)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=2)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=3)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=3)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_{1/2}(p) W_{1/2}(p')|0> = 0 for all p != p'  [MET]
+G20-KAT operators  [ALL MET]
+G20-SPECTRUM beta=1.5 JMAX=1 lambda_0=1.75100787772 lambda_1/lambda_0=0.1558456173 lambda_2/lambda_0=0.1558456173  full gap -ln(l1/l0)=1.858889  (Lanczos 60 steps, 12 s)
+G20-SECTOR beta=1.5 flux=(00) states=622 top=1.75100787772 second=0.0319324469913  gap-in-sector=-ln(second/top)=4.004324  (against lambda_0: -ln(top/lambda_0)=0.000000)
+G20-SECTOR beta=1.5 flux=(10) states=488 top=0.272886903664 second=0.155065403651  gap-in-sector=-ln(second/top)=0.565210  (against lambda_0: -ln(top/lambda_0)=1.858889)
+G20-SECTOR beta=1.5 flux=(01) states=488 top=0.272886903664 second=0.155065403651  gap-in-sector=-ln(second/top)=0.565210  (against lambda_0: -ln(top/lambda_0)=1.858889)
+G20-SECTOR beta=1.5 flux=(11) states=420 top=0.0679720122991 second=0.0507265836309  gap-in-sector=-ln(second/top)=0.292646  (against lambda_0: -ln(top/lambda_0)=3.248851)
+G20-LUMP beta=1.5 the 0++ gap in the zero-flux sector = 4.004324; the torelon (flux (1,0) top against lambda_0) = 1.858889; the full gap 1.858889 IS the torelon
+G20-GROUND lambda_0=1.75100787772 residual=1.13e-15; the electric weight of the first dropped spin c_{1.5}=0.01501 (truncation's size)
+G20-K beta=1.5 <O>=0.35331856 K(0)=Var(O)=4.35692938e-02
+G20-K beta=1.5 d=1 K(d)=5.684859e-04 K(d)/K(d-1)=0.01304786 m_eff=4.339131
+G20-K beta=1.5 d=2 K(d)=8.606369e-06 K(d)/K(d-1)=0.01513911 m_eff=4.190474
+G20-K beta=1.5 d=3 K(d)=1.427944e-07 K(d)/K(d-1)=0.01659171 m_eff=4.098852
+G20-K beta=1.5 d=4 K(d)=2.489429e-09 K(d)/K(d-1)=0.01743367 m_eff=4.049352
+G20-K beta=1.5 d=5 K(d)=4.446640e-11 K(d)/K(d-1)=0.01786209 m_eff=4.025075
+G20-K beta=1.5 d=6 K(d)=8.029272e-13 K(d)/K(d-1)=0.01805694 m_eff=4.014225
+G20-VERDICT beta=1.5 JMAX=1 states=2018 full-gap=1.858889 0++rate(d=6)=4.014225 0++gap(sector)=4.004324 strong-coupling -4 ln c_{1/2}=4.2668 ratio=0.9408 monotone-K=YES torelon-below-0++=YES (31 s)
+G20-SPACE beta=2 JMAX=1: 2018 gauge-invariant spin-network states on the 2x2 torus (spins 0..1 on 8 links), 81 distinct vertex invariant spaces
+G20-BUILD plaquette 0: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 1: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (4 s)
+G20-BUILD plaquette 2: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (6 s)
+G20-BUILD plaquette 3: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (9 s)
+G20-KAT symmetry of every W_J(p): max |W_ik - W_ki| = 1.89e-15 over 83452 entries  [SYMMETRIC]
+G20-KAT ||W_{1/2}(p=0)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=0)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=1)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=1)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=2)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=2)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=3)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=3)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_{1/2}(p) W_{1/2}(p')|0> = 0 for all p != p'  [MET]
+G20-KAT operators  [ALL MET]
+G20-SPECTRUM beta=2 JMAX=1 lambda_0=2.75556616426 lambda_1/lambda_0=0.2815735801 lambda_2/lambda_0=0.2815735801  full gap -ln(l1/l0)=1.267361  (Lanczos 60 steps, 19 s)
+G20-SECTOR beta=2 flux=(00) states=622 top=2.75556616426 second=0.116815313428  gap-in-sector=-ln(second/top)=3.160784  (against lambda_0: -ln(top/lambda_0)=0.000000)
+G20-SECTOR beta=2 flux=(10) states=488 top=0.77589463017 second=0.302854440417  gap-in-sector=-ln(second/top)=0.940764  (against lambda_0: -ln(top/lambda_0)=1.267361)
+G20-SECTOR beta=2 flux=(01) states=488 top=0.77589463017 second=0.302854440417  gap-in-sector=-ln(second/top)=0.940764  (against lambda_0: -ln(top/lambda_0)=1.267361)
+G20-SECTOR beta=2 flux=(11) states=420 top=0.304966560395 second=0.228384672893  gap-in-sector=-ln(second/top)=0.289171  (against lambda_0: -ln(top/lambda_0)=2.201176)
+G20-LUMP beta=2 the 0++ gap in the zero-flux sector = 3.160784; the torelon (flux (1,0) top against lambda_0) = 1.267361; the full gap 1.267361 IS the torelon
+G20-GROUND lambda_0=2.75556616426 residual=3.02e-15; the electric weight of the first dropped spin c_{1.5}=0.03189 (truncation's size)
+G20-K beta=2 <O>=0.44417729 K(0)=Var(O)=2.70509064e-02
+G20-K beta=2 d=1 K(d)=6.991663e-04 K(d)/K(d-1)=0.02584632 m_eff=3.655587
+G20-K beta=2 d=2 K(d)=2.271873e-05 K(d)/K(d-1)=0.03249403 m_eff=3.426699
+G20-K beta=2 d=3 K(d)=8.469941e-07 K(d)/K(d-1)=0.03728175 m_eff=3.289251
+G20-K beta=2 d=4 K(d)=3.392844e-08 K(d)/K(d-1)=0.04005747 m_eff=3.217440
+G20-K beta=2 d=5 K(d)=1.404462e-09 K(d)/K(d-1)=0.04139484 m_eff=3.184599
+G20-K beta=2 d=6 K(d)=5.895795e-11 K(d)/K(d-1)=0.04197902 m_eff=3.170585
+G20-K beta=2 d=7 K(d)=2.488426e-12 K(d)/K(d-1)=0.04220680 m_eff=3.165174
+G20-K beta=2 d=8 K(d)=1.039446e-13 K(d)/K(d-1)=0.04177123 m_eff=3.175547
+G20-VERDICT beta=2 JMAX=1 states=2018 full-gap=1.267361 0++rate(d=8)=3.175547 0++gap(sector)=3.160784 strong-coupling -4 ln c_{1/2}=3.3469 ratio=0.9488 monotone-K=YES torelon-below-0++=YES (47 s)
+G20-SPACE beta=2.3 JMAX=1: 2018 gauge-invariant spin-network states on the 2x2 torus (spins 0..1 on 8 links), 81 distinct vertex invariant spaces
+G20-BUILD plaquette 0: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (1 s)
+G20-BUILD plaquette 1: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 2: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 3: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (3 s)
+G20-KAT symmetry of every W_J(p): max |W_ik - W_ki| = 1.89e-15 over 83452 entries  [SYMMETRIC]
+G20-KAT ||W_{1/2}(p=0)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=0)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=1)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=1)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=2)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=2)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=3)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=3)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_{1/2}(p) W_{1/2}(p')|0> = 0 for all p != p'  [MET]
+G20-KAT operators  [ALL MET]
+G20-SPECTRUM beta=2.3 JMAX=1 lambda_0=3.86580133221 lambda_1/lambda_0=0.36100513 lambda_2/lambda_0=0.36100513  full gap -ln(l1/l0)=1.018863  (Lanczos 60 steps, 8 s)
+G20-SECTOR beta=2.3 flux=(00) states=622 top=3.86580133221 second=0.241927218129  gap-in-sector=-ln(second/top)=2.771287  (against lambda_0: -ln(top/lambda_0)=0.000000)
+G20-SECTOR beta=2.3 flux=(10) states=488 top=1.39557411267 second=0.433383724209  gap-in-sector=-ln(second/top)=1.169438  (against lambda_0: -ln(top/lambda_0)=1.018863)
+G20-SECTOR beta=2.3 flux=(01) states=488 top=1.39557411267 second=0.433383724209  gap-in-sector=-ln(second/top)=1.169438  (against lambda_0: -ln(top/lambda_0)=1.018863)
+G20-SECTOR beta=2.3 flux=(11) states=420 top=0.646546481104 second=0.490575956087  gap-in-sector=-ln(second/top)=0.276065  (against lambda_0: -ln(top/lambda_0)=1.788279)
+G20-LUMP beta=2.3 the 0++ gap in the zero-flux sector = 2.771287; the torelon (flux (1,0) top against lambda_0) = 1.018863; the full gap 1.018863 IS the torelon
+G20-GROUND lambda_0=3.86580133221 residual=4.12e-15; the electric weight of the first dropped spin c_{1.5}=0.04501 (truncation's size)
+G20-K beta=2.3 <O>=0.48459942 K(0)=Var(O)=1.75690779e-02
+G20-K beta=2.3 d=1 K(d)=5.361153e-04 K(d)/K(d-1)=0.03051471 m_eff=3.489547
+G20-K beta=2.3 d=2 K(d)=2.213298e-05 K(d)/K(d-1)=0.04128399 m_eff=3.187281
+G20-K beta=2.3 d=3 K(d)=1.097216e-06 K(d)/K(d-1)=0.04957383 m_eff=3.004292
+G20-K beta=2.3 d=4 K(d)=5.986364e-08 K(d)/K(d-1)=0.05455955 m_eff=2.908462
+G20-K beta=2.3 d=5 K(d)=3.406567e-09 K(d)/K(d-1)=0.05690544 m_eff=2.866364
+G20-K beta=2.3 d=6 K(d)=1.971581e-10 K(d)/K(d-1)=0.05787591 m_eff=2.849454
+G20-K beta=2.3 d=7 K(d)=1.148684e-11 K(d)/K(d-1)=0.05826206 m_eff=2.842804
+G20-K beta=2.3 d=8 K(d)=6.737944e-13 K(d)/K(d-1)=0.05865794 m_eff=2.836032
+G20-VERDICT beta=2.3 JMAX=1 states=2018 full-gap=1.018863 0++rate(d=8)=2.836032 0++gap(sector)=2.771287 strong-coupling -4 ln c_{1/2}=2.9419 ratio=0.9640 monotone-K=YES torelon-below-0++=YES (28 s)
+G20-SPACE beta=2.5 JMAX=1: 2018 gauge-invariant spin-network states on the 2x2 torus (spins 0..1 on 8 links), 81 distinct vertex invariant spaces
+G20-BUILD plaquette 0: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (1 s)
+G20-BUILD plaquette 1: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 2: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (3 s)
+G20-BUILD plaquette 3: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (4 s)
+G20-KAT symmetry of every W_J(p): max |W_ik - W_ki| = 1.89e-15 over 83452 entries  [SYMMETRIC]
+G20-KAT ||W_{1/2}(p=0)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=0)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=1)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=1)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=2)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=2)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=3)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=3)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_{1/2}(p) W_{1/2}(p')|0> = 0 for all p != p'  [MET]
+G20-KAT operators  [ALL MET]
+G20-SPECTRUM beta=2.5 JMAX=1 lambda_0=4.95650725474 lambda_1/lambda_0=0.4098683255 lambda_2/lambda_0=0.4098683255  full gap -ln(l1/l0)=0.891919  (Lanczos 60 steps, 8 s)
+G20-SECTOR beta=2.5 flux=(00) states=622 top=4.95650725474 second=0.389537061122  gap-in-sector=-ln(second/top)=2.543498  (against lambda_0: -ln(top/lambda_0)=-0.000000)
+G20-SECTOR beta=2.5 flux=(10) states=488 top=2.03151532879 second=0.544717384555  gap-in-sector=-ln(second/top)=1.316270  (against lambda_0: -ln(top/lambda_0)=0.891919)
+G20-SECTOR beta=2.5 flux=(01) states=488 top=2.03151532879 second=0.544717384555  gap-in-sector=-ln(second/top)=1.316270  (against lambda_0: -ln(top/lambda_0)=0.891919)
+G20-SECTOR beta=2.5 flux=(11) states=420 top=1.01857580768 second=0.781297728577  gap-in-sector=-ln(second/top)=0.265204  (against lambda_0: -ln(top/lambda_0)=1.582296)
+G20-LUMP beta=2.5 the 0++ gap in the zero-flux sector = 2.543498; the torelon (flux (1,0) top against lambda_0) = 0.891919; the full gap 0.891919 IS the torelon
+G20-GROUND lambda_0=4.95650725474 residual=2.00e-15; the electric weight of the first dropped spin c_{1.5}=0.05482 (truncation's size)
+G20-K beta=2.5 <O>=0.50480027 K(0)=Var(O)=1.23656906e-02
+G20-K beta=2.5 d=1 K(d)=3.859505e-04 K(d)/K(d-1)=0.03121140 m_eff=3.466972
+G20-K beta=2.5 d=2 K(d)=1.750520e-05 K(d)/K(d-1)=0.04535609 m_eff=3.093211
+G20-K beta=2.5 d=3 K(d)=9.929649e-07 K(d)/K(d-1)=0.05672398 m_eff=2.869558
+G20-K beta=2.5 d=4 K(d)=6.325271e-08 K(d)/K(d-1)=0.06370085 m_eff=2.753557
+G20-K beta=2.5 d=5 K(d)=4.230252e-09 K(d)/K(d-1)=0.06687859 m_eff=2.704876
+G20-K beta=2.5 d=6 K(d)=2.881652e-10 K(d)/K(d-1)=0.06812009 m_eff=2.686483
+G20-K beta=2.5 d=7 K(d)=1.976214e-11 K(d)/K(d-1)=0.06857920 m_eff=2.679766
+G20-K beta=2.5 d=8 K(d)=1.360079e-12 K(d)/K(d-1)=0.06882245 m_eff=2.676225
+G20-VERDICT beta=2.5 JMAX=1 states=2018 full-gap=0.891919 0++rate(d=8)=2.676225 0++gap(sector)=2.543498 strong-coupling -4 ln c_{1/2}=2.7154 ratio=0.9856 monotone-K=YES torelon-below-0++=YES (28 s)
+G20-SPACE beta=3 JMAX=1: 2018 gauge-invariant spin-network states on the 2x2 torus (spins 0..1 on 8 links), 81 distinct vertex invariant spaces
+G20-BUILD plaquette 0: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (1 s)
+G20-BUILD plaquette 1: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 2: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (3 s)
+G20-BUILD plaquette 3: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (4 s)
+G20-KAT symmetry of every W_J(p): max |W_ik - W_ki| = 1.89e-15 over 83452 entries  [SYMMETRIC]
+G20-KAT ||W_{1/2}(p=0)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=0)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=1)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=1)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=2)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=2)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=3)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=3)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_{1/2}(p) W_{1/2}(p')|0> = 0 for all p != p'  [MET]
+G20-KAT operators  [ALL MET]
+G20-SPECTRUM beta=3 JMAX=1 lambda_0=9.70217918983 lambda_1/lambda_0=0.5055464034 lambda_2/lambda_0=0.5055464034  full gap -ln(l1/l0)=0.682115  (Lanczos 60 steps, 9 s)
+G20-SECTOR beta=3 flux=(00) states=622 top=9.70217918983 second=1.13857858873  gap-in-sector=-ln(second/top)=2.142570  (against lambda_0: -ln(top/lambda_0)=0.000000)
+G20-SECTOR beta=3 flux=(10) states=488 top=4.90490179412 second=0.94015132041  gap-in-sector=-ln(second/top)=1.651950  (against lambda_0: -ln(top/lambda_0)=0.682115)
+G20-SECTOR beta=3 flux=(01) states=488 top=4.90490179412 second=0.94015132041  gap-in-sector=-ln(second/top)=1.651950  (against lambda_0: -ln(top/lambda_0)=0.682115)
+G20-SECTOR beta=3 flux=(11) states=420 top=2.78826669376 second=2.20148183852  gap-in-sector=-ln(second/top)=0.236289  (against lambda_0: -ln(top/lambda_0)=1.246930)
+G20-LUMP beta=3 the 0++ gap in the zero-flux sector = 2.142570; the torelon (flux (1,0) top against lambda_0) = 0.682115; the full gap 0.682115 IS the torelon
+G20-GROUND lambda_0=9.70217918983 residual=1.05e-14; the electric weight of the first dropped spin c_{1.5}=0.08239 (truncation's size)
+G20-K beta=3 <O>=0.53441398 K(0)=Var(O)=4.33875775e-03
+G20-K beta=3 d=1 K(d)=1.016548e-04 K(d)/K(d-1)=0.02342948 m_eff=3.753760
+G20-K beta=3 d=2 K(d)=5.139939e-06 K(d)/K(d-1)=0.05056266 m_eff=2.984542
+G20-K beta=3 d=3 K(d)=3.713442e-07 K(d)/K(d-1)=0.07224681 m_eff=2.627667
+G20-K beta=3 d=4 K(d)=3.152193e-08 K(d)/K(d-1)=0.08488601 m_eff=2.466446
+G20-K beta=3 d=5 K(d)=2.825008e-09 K(d)/K(d-1)=0.08962043 m_eff=2.412172
+G20-K beta=3 d=6 K(d)=2.573218e-10 K(d)/K(d-1)=0.09108708 m_eff=2.395939
+G20-K beta=3 d=7 K(d)=2.355116e-11 K(d)/K(d-1)=0.09152417 m_eff=2.391152
+G20-K beta=3 d=8 K(d)=2.160661e-12 K(d)/K(d-1)=0.09174327 m_eff=2.388761
+G20-VERDICT beta=3 JMAX=1 states=2018 full-gap=0.682115 0++rate(d=8)=2.388761 0++gap(sector)=2.142570 strong-coupling -4 ln c_{1/2}=2.2631 ratio=1.0555 monotone-K=YES torelon-below-0++=YES (31 s)
+G20-SPACE beta=4 JMAX=1: 2018 gauge-invariant spin-network states on the 2x2 torus (spins 0..1 on 8 links), 81 distinct vertex invariant spaces
+G20-BUILD plaquette 0: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (1 s)
+G20-BUILD plaquette 1: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 2: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (3 s)
+G20-BUILD plaquette 3: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (4 s)
+G20-KAT symmetry of every W_J(p): max |W_ik - W_ki| = 1.89e-15 over 83452 entries  [SYMMETRIC]
+G20-KAT ||W_{1/2}(p=0)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=0)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=1)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=1)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=2)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=2)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=3)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=3)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_{1/2}(p) W_{1/2}(p')|0> = 0 for all p != p'  [MET]
+G20-KAT operators  [ALL MET]
+G20-SPECTRUM beta=4 JMAX=1 lambda_0=37.9890879874 lambda_1/lambda_0=0.5883398231 lambda_2/lambda_0=0.5883398231  full gap -ln(l1/l0)=0.530451  (Lanczos 60 steps, 9 s)
+G20-SECTOR beta=4 flux=(00) states=622 top=37.9890879874 second=6.35654133633  gap-in-sector=-ln(second/top)=1.787815  (against lambda_0: -ln(top/lambda_0)=0.000000)
+G20-SECTOR beta=4 flux=(10) states=488 top=22.3504933079 second=4.19778755425  gap-in-sector=-ln(second/top)=1.672291  (against lambda_0: -ln(top/lambda_0)=0.530451)
+G20-SECTOR beta=4 flux=(01) states=488 top=22.3504933079 second=4.19778755425  gap-in-sector=-ln(second/top)=1.672291  (against lambda_0: -ln(top/lambda_0)=0.530451)
+G20-SECTOR beta=4 flux=(11) states=420 top=13.8871261111 second=11.492478737  gap-in-sector=-ln(second/top)=0.189269  (against lambda_0: -ln(top/lambda_0)=1.006337)
+G20-LUMP beta=4 the 0++ gap in the zero-flux sector = 1.787815; the torelon (flux (1,0) top against lambda_0) = 0.530451; the full gap 0.530451 IS the torelon
+G20-GROUND lambda_0=37.9890879874 residual=2.26e-13; the electric weight of the first dropped spin c_{1.5}=0.14512 (truncation's size)
+G20-K beta=4 <O>=0.54364576 K(0)=Var(O)=2.25094692e-03
+G20-K beta=4 d=1 K(d)=2.189898e-06 K(d)/K(d-1)=0.00097288 m_eff=6.935251
+G20-K beta=4 d=2 K(d)=4.073962e-08 K(d)/K(d-1)=0.01860344 m_eff=3.984409
+G20-K beta=4 d=3 K(d)=1.883691e-09 K(d)/K(d-1)=0.04623731 m_eff=3.073968
+G20-K beta=4 d=4 K(d)=1.743833e-10 K(d)/K(d-1)=0.09257537 m_eff=2.379732
+G20-K beta=4 d=5 K(d)=2.007078e-11 K(d)/K(d-1)=0.11509573 m_eff=2.161991
+G20-K beta=4 d=6 K(d)=2.406131e-12 K(d)/K(d-1)=0.11988229 m_eff=2.121245
+G20-K beta=4 d=7 K(d)=2.878253e-13 K(d)/K(d-1)=0.11962164 m_eff=2.123422
+G20-K beta=4 d=8 K(d)=3.258505e-14 K(d)/K(d-1)=0.11321119 m_eff=2.178500
+G20-VERDICT beta=4 JMAX=1 states=2018 full-gap=0.530451 0++rate(d=8)=2.178500 0++gap(sector)=1.787815 strong-coupling -4 ln c_{1/2}=1.6739 ratio=1.3014 monotone-K=YES torelon-below-0++=YES (28 s)
+G20-SPACE beta=6 JMAX=1: 2018 gauge-invariant spin-network states on the 2x2 torus (spins 0..1 on 8 links), 81 distinct vertex invariant spaces
+G20-BUILD plaquette 0: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 1: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (2 s)
+G20-BUILD plaquette 2: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (3 s)
+G20-BUILD plaquette 3: Q_p = sum_{J<=2} d_J c''_J W_J(p) with 20868 nonzeros (4 s)
+G20-KAT symmetry of every W_J(p): max |W_ik - W_ki| = 1.89e-15 over 83452 entries  [SYMMETRIC]
+G20-KAT ||W_{1/2}(p=0)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=0)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=1)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=1)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=2)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=2)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT ||W_{1/2}(p=3)|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_1(p=3)|0> = 0.00e+00 (must be 0), ||W_1|0>||^2 = 1.000000000000 (must be 1)
+G20-KAT <0|W_{1/2}(p) W_{1/2}(p')|0> = 0 for all p != p'  [MET]
+G20-KAT operators  [ALL MET]
+G20-SPECTRUM beta=6 JMAX=1 lambda_0=347.955437884 lambda_1/lambda_0=0.580305307 lambda_2/lambda_0=0.580305307  full gap -ln(l1/l0)=0.544201  (Lanczos 60 steps, 7 s)
+G20-SECTOR beta=6 flux=(00) states=622 top=347.955437884 second=63.7226205551  gap-in-sector=-ln(second/top)=1.697535  (against lambda_0: -ln(top/lambda_0)=0.000000)
+G20-SECTOR beta=6 flux=(10) states=488 top=201.920387188 second=43.2381643013  gap-in-sector=-ln(second/top)=1.541150  (against lambda_0: -ln(top/lambda_0)=0.544201)
+G20-SECTOR beta=6 flux=(01) states=488 top=201.920387188 second=43.2381643013  gap-in-sector=-ln(second/top)=1.541150  (against lambda_0: -ln(top/lambda_0)=0.544201)
+G20-SECTOR beta=6 flux=(11) states=420 top=123.931563797 second=106.642969299  gap-in-sector=-ln(second/top)=0.150243  (against lambda_0: -ln(top/lambda_0)=1.032345)
+G20-LUMP beta=6 the 0++ gap in the zero-flux sector = 1.697535; the torelon (flux (1,0) top against lambda_0) = 0.544201; the full gap 0.544201 IS the torelon
+G20-GROUND lambda_0=347.955437884 residual=7.95e-13; the electric weight of the first dropped spin c_{1.5}=0.27121 (truncation's size)
+G20-K beta=6 <O>=0.52442813 K(0)=Var(O)=8.36295367e-03
+G20-K beta=6 d=1 K(d)=1.240952e-05 K(d)/K(d-1)=0.00148387 m_eff=6.513103
+G20-K beta=6 d=2 K(d)=1.476301e-07 K(d)/K(d-1)=0.01189652 m_eff=4.431510
+G20-K beta=6 d=3 K(d)=7.946418e-09 K(d)/K(d-1)=0.05382656 m_eff=2.921988
+G20-K beta=6 d=4 K(d)=9.013109e-10 K(d)/K(d-1)=0.11342355 m_eff=2.176626
+G20-K beta=6 d=5 K(d)=1.158872e-10 K(d)/K(d-1)=0.12857626 m_eff=2.051233
+G20-K beta=6 d=6 K(d)=1.513251e-11 K(d)/K(d-1)=0.13057963 m_eff=2.035772
+G20-K beta=6 d=7 K(d)=1.979916e-12 K(d)/K(d-1)=0.13083862 m_eff=2.033791
+G20-K beta=6 d=8 K(d)=2.576273e-13 K(d)/K(d-1)=0.13012028 m_eff=2.039296
+G20-VERDICT beta=6 JMAX=1 states=2018 full-gap=0.544201 0++rate(d=8)=2.039296 0++gap(sector)=1.697535 strong-coupling -4 ln c_{1/2}=1.0834 ratio=1.8823 monotone-K=YES torelon-below-0++=YES (25 s)

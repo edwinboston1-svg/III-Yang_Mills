@@ -1,0 +1,113 @@
+G14R-GEOMETRY 88 outside links by face distance from t_0: d=0: 12  d=1: 46  d=2: 30
+G14R-RECORD g14_su2_cube_b0.1.2026-10-29a.txt: beta=0.1000 a_1=0.024990 rho_1(measured direct)=0.042067 (law (4/3pi)beta=0.042441) DS-sum/|V|=0.505345; 23 orbits
+G14R-ORBIT beta=0.10 d=0 j=1,0,1,0:4  size=4 rho=0.042077  a_1^d rho_1=0.042067  f_0 = rho/(a_1^d rho_1) = 1.0002
+G14R-ORBIT beta=0.10 d=0 j=1,0,1,0:3  size=4 rho=0.042067  a_1^d rho_1=0.042067  f_0 = rho/(a_1^d rho_1) = 1.0000
+G14R-ORBIT beta=0.10 d=0 j=0,-1,1,0:1 size=2 rho=0.042056  a_1^d rho_1=0.042067  f_0 = rho/(a_1^d rho_1) = 0.9997
+G14R-ORBIT beta=0.10 d=0 j=0,0,1,1:1  size=2 rho=0.042056  a_1^d rho_1=0.042067  f_0 = rho/(a_1^d rho_1) = 0.9997
+G14R-ORBIT beta=0.10 d=1 j=1,0,1,0:1  size=2 rho=0.000020  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0190
+G14R-ORBIT beta=0.10 d=1 j=0,0,0,0:4  size=8 rho=0.000015  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0143
+G14R-ORBIT beta=0.10 d=1 j=1,1,1,0:3  size=4 rho=0.000015  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0143
+G14R-ORBIT beta=0.10 d=1 j=-1,0,0,0:1 size=4 rho=0.000010  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0095
+G14R-ORBIT beta=0.10 d=1 j=0,0,-1,0:3 size=4 rho=0.000010  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0095
+G14R-ORBIT beta=0.10 d=1 j=2,0,1,0:2  size=4 rho=0.000010  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0095
+G14R-ORBIT beta=0.10 d=1 j=1,0,2,0:2  size=4 rho=0.000010  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0095
+G14R-ORBIT beta=0.10 d=1 j=1,0,1,1:2  size=8 rho=0.000010  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0095
+G14R-ORBIT beta=0.10 d=1 j=0,2,1,0:1  size=2 rho=0.000010  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0095
+G14R-ORBIT beta=0.10 d=1 j=0,1,2,0:1  size=2 rho=0.000010  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0095
+G14R-ORBIT beta=0.10 d=1 j=0,1,1,1:1  size=4 rho=0.000010  a_1^d rho_1=0.001051  f_1 = rho/(a_1^d rho_1) = 0.0095
+G14R-ORBIT beta=0.10 d=2 j=-1,1,0,0:1 size=2 rho=0.000000  a_1^d rho_1=0.000026  f_2 = rho/(a_1^d rho_1) = 0.0000
+G14R-ORBIT beta=0.10 d=2 j=-1,0,0,0:2 size=4 rho=0.000000  a_1^d rho_1=0.000026  f_2 = rho/(a_1^d rho_1) = 0.0000
+G14R-ORBIT beta=0.10 d=2 j=0,1,-1,0:3 size=4 rho=0.000000  a_1^d rho_1=0.000026  f_2 = rho/(a_1^d rho_1) = 0.0000
+G14R-ORBIT beta=0.10 d=2 j=0,0,-1,0:2 size=4 rho=0.000000  a_1^d rho_1=0.000026  f_2 = rho/(a_1^d rho_1) = 0.0000
+G14R-ORBIT beta=0.10 d=2 j=0,1,0,0:4  size=4 rho=0.000000  a_1^d rho_1=0.000026  f_2 = rho/(a_1^d rho_1) = 0.0000
+G14R-ORBIT beta=0.10 d=2 j=0,0,0,1:2  size=8 rho=0.000000  a_1^d rho_1=0.000026  f_2 = rho/(a_1^d rho_1) = 0.0000
+G14R-ORBIT beta=0.10 d=2 j=0,2,0,0:1  size=2 rho=0.000000  a_1^d rho_1=0.000026  f_2 = rho/(a_1^d rho_1) = 0.0000
+G14R-ORBIT beta=0.10 d=2 j=0,1,0,1:1  size=2 rho=0.000000  a_1^d rho_1=0.000026  f_2 = rho/(a_1^d rho_1) = 0.0000
+G14R-CLASS beta=0.10 d=0 links=12 nonzero=12 sum_j rho=0.504800 (share of the DS sum 0.9989)  f_0 in [0.9997, 1.0002]  (one-face bound a_1^d rho_1 x links = 0.504804)
+G14R-CLASS beta=0.10 d=1 links=46 nonzero=46 sum_j rho=0.000540 (share of the DS sum 0.0011)  f_1 in [0.0095, 0.0190]  (one-face bound a_1^d rho_1 x links = 0.048358)
+G14R-CLASS beta=0.10 d=2 links=30 nonzero=0 sum_j rho=0.000000 (share of the DS sum 0.0000)  f_2 in [0.0000, 0.0000]  (one-face bound a_1^d rho_1 x links = 0.000788)
+G14R-STEP beta=0.10 the effective next-link count per step: C_1 = sum_{d=1} rho / (a_1 rho_1) = 0.5137 against 18 (the path bound's)  C_2 = sum_{d=2} rho / (a_1^2 rho_1) = 0.0000; the certified radius of the propagation series by C_1: 1/(C_1 a_1) = 1 at beta where C_1 a_1 = 1 (here C_1 a_1 = 0.0128)
+G14R-RECORD g14_su2_cube_b0.3.2026-10-29a.txt: beta=0.3000 a_1=0.074720 rho_1(measured direct)=0.118935 (law (4/3pi)beta=0.127324) DS-sum/|V|=1.458555; 23 orbits
+G14R-ORBIT beta=0.30 d=0 j=1,0,1,0:4  size=4 rho=0.119536  a_1^d rho_1=0.118935  f_0 = rho/(a_1^d rho_1) = 1.0051
+G14R-ORBIT beta=0.30 d=0 j=1,-1,1,0:2 size=4 rho=0.118935  a_1^d rho_1=0.118935  f_0 = rho/(a_1^d rho_1) = 1.0000
+G14R-ORBIT beta=0.30 d=0 j=0,-1,1,0:1 size=2 rho=0.118334  a_1^d rho_1=0.118935  f_0 = rho/(a_1^d rho_1) = 0.9949
+G14R-ORBIT beta=0.30 d=0 j=0,0,1,1:1  size=2 rho=0.118334  a_1^d rho_1=0.118935  f_0 = rho/(a_1^d rho_1) = 0.9949
+G14R-ORBIT beta=0.30 d=1 j=-1,0,1,0:1 size=2 rho=0.001143  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.1286
+G14R-ORBIT beta=0.30 d=1 j=1,1,1,0:4  size=8 rho=0.000873  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.0982
+G14R-ORBIT beta=0.30 d=1 j=1,1,1,0:3  size=4 rho=0.000868  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.0977
+G14R-ORBIT beta=0.30 d=1 j=1,1,1,0:1  size=4 rho=0.000577  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.0649
+G14R-ORBIT beta=0.30 d=1 j=1,1,1,0:2  size=4 rho=0.000575  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.0647
+G14R-ORBIT beta=0.30 d=1 j=-1,0,0,0:3 size=4 rho=0.000571  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.0643
+G14R-ORBIT beta=0.30 d=1 j=0,-1,0,0:3 size=4 rho=0.000571  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.0643
+G14R-ORBIT beta=0.30 d=1 j=0,0,0,1:3  size=8 rho=0.000571  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.0643
+G14R-ORBIT beta=0.30 d=1 j=0,2,1,0:1  size=2 rho=0.000568  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.0639
+G14R-ORBIT beta=0.30 d=1 j=0,1,2,0:1  size=2 rho=0.000568  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.0639
+G14R-ORBIT beta=0.30 d=1 j=0,1,1,1:1  size=4 rho=0.000568  a_1^d rho_1=0.008887  f_1 = rho/(a_1^d rho_1) = 0.0639
+G14R-ORBIT beta=0.30 d=2 j=1,1,0,0:4  size=4 rho=0.000017  a_1^d rho_1=0.000664  f_2 = rho/(a_1^d rho_1) = 0.0256
+G14R-ORBIT beta=0.30 d=2 j=1,1,0,0:1  size=2 rho=0.000014  a_1^d rho_1=0.000664  f_2 = rho/(a_1^d rho_1) = 0.0211
+G14R-ORBIT beta=0.30 d=2 j=1,1,0,0:2  size=4 rho=0.000013  a_1^d rho_1=0.000664  f_2 = rho/(a_1^d rho_1) = 0.0196
+G14R-ORBIT beta=0.30 d=2 j=2,1,0,0:3  size=4 rho=0.000008  a_1^d rho_1=0.000664  f_2 = rho/(a_1^d rho_1) = 0.0120
+G14R-ORBIT beta=0.30 d=2 j=1,2,0,0:3  size=4 rho=0.000008  a_1^d rho_1=0.000664  f_2 = rho/(a_1^d rho_1) = 0.0120
+G14R-ORBIT beta=0.30 d=2 j=1,1,0,1:3  size=8 rho=0.000008  a_1^d rho_1=0.000664  f_2 = rho/(a_1^d rho_1) = 0.0120
+G14R-ORBIT beta=0.30 d=2 j=0,2,0,0:1  size=2 rho=0.000006  a_1^d rho_1=0.000664  f_2 = rho/(a_1^d rho_1) = 0.0090
+G14R-ORBIT beta=0.30 d=2 j=0,1,0,1:1  size=2 rho=0.000006  a_1^d rho_1=0.000664  f_2 = rho/(a_1^d rho_1) = 0.0090
+G14R-CLASS beta=0.30 d=0 links=12 nonzero=12 sum_j rho=1.427220 (share of the DS sum 0.9785)  f_0 in [0.9949, 1.0051]  (one-face bound a_1^d rho_1 x links = 1.427220)
+G14R-CLASS beta=0.30 d=1 links=46 nonzero=46 sum_j rho=0.031030 (share of the DS sum 0.0213)  f_1 in [0.0639, 0.1286]  (one-face bound a_1^d rho_1 x links = 0.408794)
+G14R-CLASS beta=0.30 d=2 links=30 nonzero=30 sum_j rho=0.000300 (share of the DS sum 0.0002)  f_2 in [0.0090, 0.0256]  (one-face bound a_1^d rho_1 x links = 0.019921)
+G14R-STEP beta=0.30 the effective next-link count per step: C_1 = sum_{d=1} rho / (a_1 rho_1) = 3.4917 against 18 (the path bound's)  C_2 = sum_{d=2} rho / (a_1^2 rho_1) = 0.4518; the certified radius of the propagation series by C_1: 1/(C_1 a_1) = 1 at beta where C_1 a_1 = 1 (here C_1 a_1 = 0.2609)
+G14R-RECORD g14_su2_cube_b0.5.2026-10-29a.txt: beta=0.5000 a_1=0.123718 rho_1(measured direct)=0.179117 (law (4/3pi)beta=0.212207) DS-sum/|V|=2.287657; 23 orbits
+G14R-ORBIT beta=0.50 d=0 j=1,0,1,0:4  size=4 rho=0.181995  a_1^d rho_1=0.179117  f_0 = rho/(a_1^d rho_1) = 1.0161
+G14R-ORBIT beta=0.50 d=0 j=1,-1,1,0:2 size=4 rho=0.179117  a_1^d rho_1=0.179117  f_0 = rho/(a_1^d rho_1) = 1.0000
+G14R-ORBIT beta=0.50 d=0 j=0,-1,1,0:1 size=2 rho=0.176266  a_1^d rho_1=0.179117  f_0 = rho/(a_1^d rho_1) = 0.9841
+G14R-ORBIT beta=0.50 d=0 j=0,0,1,1:1  size=2 rho=0.176266  a_1^d rho_1=0.179117  f_0 = rho/(a_1^d rho_1) = 0.9841
+G14R-ORBIT beta=0.50 d=1 j=1,0,1,0:1  size=2 rho=0.005006  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.2259
+G14R-ORBIT beta=0.50 d=1 j=0,1,1,0:4  size=8 rho=0.003754  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.1694
+G14R-ORBIT beta=0.50 d=1 j=1,-1,0,0:2 size=4 rho=0.003692  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.1666
+G14R-ORBIT beta=0.50 d=1 j=0,1,1,0:2  size=4 rho=0.002528  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.1141
+G14R-ORBIT beta=0.50 d=1 j=-1,1,1,0:1 size=4 rho=0.002521  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.1138
+G14R-ORBIT beta=0.50 d=1 j=2,0,0,0:3  size=4 rho=0.002492  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.1125
+G14R-ORBIT beta=0.50 d=1 j=1,-1,0,0:3 size=4 rho=0.002492  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.1125
+G14R-ORBIT beta=0.50 d=1 j=1,0,0,1:3  size=8 rho=0.002492  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.1125
+G14R-ORBIT beta=0.50 d=1 j=0,-1,0,0:1 size=2 rho=0.002448  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.1105
+G14R-ORBIT beta=0.50 d=1 j=0,0,-1,0:1 size=2 rho=0.002448  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.1105
+G14R-ORBIT beta=0.50 d=1 j=0,0,0,1:1  size=4 rho=0.002448  a_1^d rho_1=0.022160  f_1 = rho/(a_1^d rho_1) = 0.1105
+G14R-ORBIT beta=0.50 d=2 j=0,1,0,0:4  size=4 rho=0.000207  a_1^d rho_1=0.002742  f_2 = rho/(a_1^d rho_1) = 0.0755
+G14R-ORBIT beta=0.50 d=2 j=-1,1,0,0:1 size=2 rho=0.000165  a_1^d rho_1=0.002742  f_2 = rho/(a_1^d rho_1) = 0.0602
+G14R-ORBIT beta=0.50 d=2 j=0,1,0,0:2  size=4 rho=0.000154  a_1^d rho_1=0.002742  f_2 = rho/(a_1^d rho_1) = 0.0562
+G14R-ORBIT beta=0.50 d=2 j=-1,1,0,0:3 size=4 rho=0.000095  a_1^d rho_1=0.002742  f_2 = rho/(a_1^d rho_1) = 0.0347
+G14R-ORBIT beta=0.50 d=2 j=0,2,0,0:3  size=4 rho=0.000095  a_1^d rho_1=0.002742  f_2 = rho/(a_1^d rho_1) = 0.0347
+G14R-ORBIT beta=0.50 d=2 j=0,1,0,1:3  size=8 rho=0.000095  a_1^d rho_1=0.002742  f_2 = rho/(a_1^d rho_1) = 0.0347
+G14R-ORBIT beta=0.50 d=2 j=0,2,0,0:1  size=2 rho=0.000094  a_1^d rho_1=0.002742  f_2 = rho/(a_1^d rho_1) = 0.0343
+G14R-ORBIT beta=0.50 d=2 j=0,1,0,1:1  size=2 rho=0.000094  a_1^d rho_1=0.002742  f_2 = rho/(a_1^d rho_1) = 0.0343
+G14R-CLASS beta=0.50 d=0 links=12 nonzero=12 sum_j rho=2.149512 (share of the DS sum 0.9396)  f_0 in [0.9841, 1.0161]  (one-face bound a_1^d rho_1 x links = 2.149404)
+G14R-CLASS beta=0.50 d=1 links=46 nonzero=46 sum_j rho=0.134464 (share of the DS sum 0.0588)  f_1 in [0.1105, 0.2259]  (one-face bound a_1^d rho_1 x links = 1.019360)
+G14R-CLASS beta=0.50 d=2 links=30 nonzero=30 sum_j rho=0.003670 (share of the DS sum 0.0016)  f_2 in [0.0343, 0.0755]  (one-face bound a_1^d rho_1 x links = 0.082248)
+G14R-STEP beta=0.50 the effective next-link count per step: C_1 = sum_{d=1} rho / (a_1 rho_1) = 6.0679 against 18 (the path bound's)  C_2 = sum_{d=2} rho / (a_1^2 rho_1) = 1.3386; the certified radius of the propagation series by C_1: 1/(C_1 a_1) = 1 at beta where C_1 a_1 = 1 (here C_1 a_1 = 0.7507)
+G14R-RECORD g14_su2_cube_b0.7.2026-10-29a.txt: beta=0.7000 a_1=0.171533 rho_1(measured direct)=0.234116 (law (4/3pi)beta=0.297089) DS-sum/|V|=3.129651; 23 orbits
+G14R-ORBIT beta=0.70 d=0 j=1,0,1,0:4  size=4 rho=0.239524  a_1^d rho_1=0.234116  f_0 = rho/(a_1^d rho_1) = 1.0231
+G14R-ORBIT beta=0.70 d=0 j=1,-1,1,0:2 size=4 rho=0.234116  a_1^d rho_1=0.234116  f_0 = rho/(a_1^d rho_1) = 1.0000
+G14R-ORBIT beta=0.70 d=0 j=0,-1,1,0:1 size=2 rho=0.228803  a_1^d rho_1=0.234116  f_0 = rho/(a_1^d rho_1) = 0.9773
+G14R-ORBIT beta=0.70 d=0 j=0,0,1,1:1  size=2 rho=0.228803  a_1^d rho_1=0.234116  f_0 = rho/(a_1^d rho_1) = 0.9773
+G14R-ORBIT beta=0.70 d=1 j=1,0,1,0:1  size=2 rho=0.012083  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.3009
+G14R-ORBIT beta=0.70 d=1 j=1,1,1,0:4  size=8 rho=0.007880  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.1962
+G14R-ORBIT beta=0.70 d=1 j=1,1,1,0:3  size=4 rho=0.007669  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.1910
+G14R-ORBIT beta=0.70 d=1 j=1,1,1,0:2  size=4 rho=0.006064  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.1510
+G14R-ORBIT beta=0.70 d=1 j=2,0,1,0:2  size=4 rho=0.006001  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.1494
+G14R-ORBIT beta=0.70 d=1 j=1,0,2,0:2  size=4 rho=0.006001  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.1494
+G14R-ORBIT beta=0.70 d=1 j=1,0,1,1:2  size=8 rho=0.006001  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.1494
+G14R-ORBIT beta=0.70 d=1 j=1,1,1,0:1  size=4 rho=0.005903  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.1470
+G14R-ORBIT beta=0.70 d=1 j=0,2,1,0:1  size=2 rho=0.005781  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.1440
+G14R-ORBIT beta=0.70 d=1 j=0,1,2,0:1  size=2 rho=0.005781  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.1440
+G14R-ORBIT beta=0.70 d=1 j=0,1,1,1:1  size=4 rho=0.005781  a_1^d rho_1=0.040159  f_1 = rho/(a_1^d rho_1) = 0.1440
+G14R-ORBIT beta=0.70 d=2 j=0,1,0,0:4  size=4 rho=0.000652  a_1^d rho_1=0.006889  f_2 = rho/(a_1^d rho_1) = 0.0947
+G14R-ORBIT beta=0.70 d=2 j=-1,1,0,0:1 size=2 rho=0.000510  a_1^d rho_1=0.006889  f_2 = rho/(a_1^d rho_1) = 0.0740
+G14R-ORBIT beta=0.70 d=2 j=0,1,-1,0:3 size=4 rho=0.000483  a_1^d rho_1=0.006889  f_2 = rho/(a_1^d rho_1) = 0.0701
+G14R-ORBIT beta=0.70 d=2 j=0,2,0,0:1  size=2 rho=0.000435  a_1^d rho_1=0.006889  f_2 = rho/(a_1^d rho_1) = 0.0631
+G14R-ORBIT beta=0.70 d=2 j=0,1,0,1:1  size=2 rho=0.000435  a_1^d rho_1=0.006889  f_2 = rho/(a_1^d rho_1) = 0.0631
+G14R-ORBIT beta=0.70 d=2 j=-1,0,0,0:2 size=4 rho=0.000285  a_1^d rho_1=0.006889  f_2 = rho/(a_1^d rho_1) = 0.0414
+G14R-ORBIT beta=0.70 d=2 j=0,0,-1,0:2 size=4 rho=0.000285  a_1^d rho_1=0.006889  f_2 = rho/(a_1^d rho_1) = 0.0414
+G14R-ORBIT beta=0.70 d=2 j=0,0,0,1:2  size=8 rho=0.000285  a_1^d rho_1=0.006889  f_2 = rho/(a_1^d rho_1) = 0.0414
+G14R-CLASS beta=0.70 d=0 links=12 nonzero=12 sum_j rho=2.809772 (share of the DS sum 0.8978)  f_0 in [0.9773, 1.0231]  (one-face bound a_1^d rho_1 x links = 2.809392)
+G14R-CLASS beta=0.70 d=1 links=46 nonzero=46 sum_j rho=0.308014 (share of the DS sum 0.0984)  f_1 in [0.1440, 0.3009]  (one-face bound a_1^d rho_1 x links = 1.847297)
+G14R-CLASS beta=0.70 d=2 links=30 nonzero=30 sum_j rho=0.011860 (share of the DS sum 0.0038)  f_2 in [0.0414, 0.0947]  (one-face bound a_1^d rho_1 x links = 0.206656)
+G14R-STEP beta=0.70 the effective next-link count per step: C_1 = sum_{d=1} rho / (a_1 rho_1) = 7.6699 against 18 (the path bound's)  C_2 = sum_{d=2} rho / (a_1^2 rho_1) = 1.7217; the certified radius of the propagation series by C_1: 1/(C_1 a_1) = 1 at beta where C_1 a_1 = 1 (here C_1 a_1 = 1.3156)

@@ -1,0 +1,125 @@
+#!/usr/bin/perl
+# g18_mad_lemma.pl -- THE SHARP ONE-LINK LEMMA, EVERY DIRECTION, AS A CERTIFIED ENCLOSURE (ΠΕΝΤΑΠΥΛΟΝ G18, 2026-10-28 23:2x EDT, the desktop
+# seat; the plan's B4).  THE LEMMA: for U ~ vMF(kappa) on S^3 (density ∝ e^{kappa <U, e_1>} against Haar) and any unit vector e, the mean
+# absolute deviation of u = <U, e> is at most its value at the uniform law, MAD <= 4/(3 pi); hence (the seat's reduction) the single-link
+# heat-bath kernel obeys TV(HB_beta(S), HB_beta(S')) <= (2 beta / 3 pi) |S - S'|, the constant 0.131 = 3 pi / 72 a theorem.
+# THE OBJECT (the Yang-Mills seat's rotation reduction): with kappa_1 = kappa cos alpha, kappa_2 = kappa sin alpha, u has the exact density
+#   f(u) ∝ e^{kappa_1 u} w_2(u),  w_2(u) = sqrt(1-u^2) phi(kappa_2 sqrt(1-u^2)),  phi(z) = sinh z / z,  u = cos theta on [0, pi], dtheta-measure (2/pi) sin^2.
+# F(kappa_1, kappa_2) := E|u - m|.  By symmetry kappa_1, kappa_2 >= 0.  THE PROOF IN FOUR PIECES, three of them computed here and one on the page:
+#   (iii) kappa >= 20: MAD <= sqrt(Var u) <= sqrt(1 - m_1(kappa)^2) <= sqrt(1 - m_1(20)^2), m_1 increasing (m_1' = Var x_1);  mode m1 encloses m_1(20).
+#   (ii)  the direct enclosure: F_hi < 4/(3 pi) on every rectangle of a tiling of the quarter disk of radius 20 minus the square [0, K]^2;  mode direct.
+#   (i)   the square [0, K]^2: F falls along kappa_1 (dF/dkappa_1 = 2 D_1, D_1 = A - V p < 0) on [k, K] x [0, K]  (mode mono), and on (0, k] by the
+#         hand lemma D_1(kappa_1) = kappa_1 D_1'(0) + kappa_1^2 D_1''(xi)/2 with D_1'(0; kappa_2) = nu_3/2 - 3 V nu_1/2 + V^2 f(0) < 0 and |D_1''| <= M(kappa_2)
+#         from the base law's enclosed moments (mode axis certifies D_1'(0) < 0 and k <= 2|D_1'(0)|/M on every kappa_2-cell of [0, K]);
+#         so F(kappa_1, kappa_2) <= F(0, kappa_2) <= 4/(3 pi), the last by Chebyshev's association inequality on the symmetric axis (the page).
+# THE ENCLOSURE on a rectangle [a1, a2] x [b1, b2]: the theta-midpoint rule with every weight e^{kappa_1 (cos theta - 1)} phi(kappa_2 sin theta)/phi(kappa_2)
+# bracketed by its two monotone corners (decreasing in both parameters, term by term); thresholds t in {m_lo, m_hi} with grids ALIGNED to acos t
+# so every integrand is smooth on its grid; the midpoint rule's error priced CELL BY CELL from an explicit bound on the integrand's second
+# theta-derivative (psi = coth - 1/z in [0,1), psi' <= min(1/3, 1/z^2)); every sum inflated by (n+20) ulps; the verdict on the upper endpoint.
+# A rectangle that does not certify is bisected on its relatively wider side down to a minimum width, then reported UNDECIDED by name.
+# STAKED BEFORE THE RUN (from the survey g17): m_1(20) in [0.925, 0.927]; the direct region certifies with K = 1 (its least margin 1.0e-2 at (0, 1));
+# mono certifies on [0.03, 1] x [0, 1]; axis: D_1'(0; kappa_2) in [-0.0345, -0.0305] on [0, 1] and k = 0.03 admitted on every cell (M below 2).
+# usage: perl g18_mad_lemma.pl m1 [Kd=20] [N]  |  direct [K=1] [Kd=20] [N=10000] [minw=1e-3] [B1 B2: a kappa_2 strip]  |  mono [k=0.03] [K=1] [N=4000] [minw=1e-4]  |  axis [k=0.03] [K=1] [N=4000] [minw=1e-4]
+use strict; use warnings; use POSIX qw(ceil);
+my $PI = 3.141592653589793; my $EPS = 2.220446049250313e-16; my $MAD0 = 4 / (3 * $PI);
+my $mode = shift @ARGV // die "usage: m1|direct|mono|axis ...";
+sub phi { my $z = shift; return $z < 1e-4 ? 1 + $z * $z / 6 + $z ** 4 / 120 : (exp($z) - exp(-$z)) / (2 * $z) }
+sub psib { my $z = shift; return $z / 3 < 1 ? $z / 3 : 1 }                                                         # an upper bound on psi(z) = coth z - 1/z: min(1, z/3)
+# grid: theta in [ta, tb], n cells -> arrays c, s, w0 (the (2/pi) sin^2 h weight), S (max sin on the cell), Slo (min sin), Cab (max |cos|), cp (max cos), h
+sub grid { my ($ta, $tb, $n) = @_; my $h = ($tb - $ta) / $n; my (@c, @s, @w0, @S, @Slo, @Cab, @cp);
+  for my $i (0 .. $n - 1) { my $th = $ta + ($i + 0.5) * $h; my ($c, $s) = (cos($th), sin($th)); push @c, $c; push @s, $s; push @w0, (2 / $PI) * $s * $s * $h;
+    my $sm = $s + $h / 2; $sm = 1 if $sm > 1; push @S, $sm; my $sl = $s - $h / 2; $sl = 0 if $sl < 0; push @Slo, $sl; my $ca = abs($c) + $h / 2; $ca = 1 if $ca > 1; push @Cab, $ca; my $cpp = $c + $h / 2; $cpp = 1 if $cpp > 1; push @cp, $cpp }
+  return { n => $n, h => $h, c => \@c, s => \@s, w0 => \@w0, S => \@S, Slo => \@Slo, Cab => \@Cab, cp => \@cp } }
+# the weights and the cell error factors of a grid on the rectangle: wlo, whi per cell; R, L1, L2 per cell
+sub weigh { my ($g, $a1, $a2, $b1, $b2) = @_; my $n = $g->{n}; my ($c, $s, $w0, $S, $Slo, $Cab, $cp) = @{$g}{qw(c s w0 S Slo Cab cp)}; my (@wlo, @whi, @R, @L1, @L2);
+  my $pb1 = phi($b1); my $pb2 = phi($b2);
+  for my $i (0 .. $n - 1) { my ($ci, $si) = ($c->[$i], $s->[$i]);
+    my $z2 = $b2 * $si; my $f2 = $z2 < 1e-4 ? 1 + $z2 * $z2 / 6 : (exp($z2) - exp(-$z2)) / (2 * $z2); my $z1 = $b1 * $si; my $f1 = $z1 < 1e-4 ? 1 + $z1 * $z1 / 6 : (exp($z1) - exp(-$z1)) / (2 * $z1);
+    $wlo[$i] = exp($a2 * ($ci - 1)) * $f2 / $pb2 * $w0->[$i]; $whi[$i] = exp($a1 * ($ci - 1)) * $f1 / $pb1 * $w0->[$i];
+    my $zS = $b1 * $S->[$i]; my $fS = $zS < 1e-4 ? 1 + $zS * $zS / 6 : (exp($zS) - exp(-$zS)) / (2 * $zS);
+    $R[$i] = exp($a1 * ($cp->[$i] - 1)) * $fS / $pb1;                                                                  # max of the weight density over the cell and the rectangle
+    my $pz = psib($b2 * $S->[$i]); $L1[$i] = $a2 * $S->[$i] + $b2 * $Cab->[$i] * $pz;
+    my $pp = $b2 * $b2 / 3; if ($Slo->[$i] > 0) { my $q = 1 / ($Slo->[$i] * $Slo->[$i]); $pp = $q if $q < $pp } $L2[$i] = $a2 * $Cab->[$i] + $b2 * $S->[$i] * $pz + $Cab->[$i] * $Cab->[$i] * $pp }
+  return { wlo => \@wlo, whi => \@whi, R => \@R, L1 => \@L1, L2 => \@L2 } }
+# an integral of g(theta) = (sgn (cos theta - t))^j times the weight over a grid: returns [lo, hi] including the discretisation error and rounding
+sub integ { my ($g, $W, $j, $t, $sgn) = @_; my $n = $g->{n}; my ($c, $S, $Cab) = @{$g}{qw(c S Cab)}; my ($wlo, $whi, $R, $L1, $L2) = @{$W}{qw(wlo whi R L1 L2)}; my ($lo, $hi, $err) = (0, 0, 0); my $h3 = $g->{h} ** 3 / 24;
+  for my $i (0 .. $n - 1) { my $u = $sgn * ($c->[$i] - $t); my $gv = $j == 0 ? 1 : $j == 1 ? $u : $u * $u;                       # u >= 0 on the grid by construction
+    $lo += $gv * $wlo->[$i]; $hi += $gv * $whi->[$i];
+    my $U = abs($c->[$i] - $t) + $g->{h} / 2; my $Si = $S->[$i]; my ($G0, $G1, $G2);
+    if ($j == 0) { ($G0, $G1, $G2) = ($Si * $Si, 2 * $Si, 2) } elsif ($j == 1) { ($G0, $G1, $G2) = ($U * $Si * $Si, $Si ** 3 + 2 * $U * $Si, 5 * $Si * $Si + 2 * $U) } else { ($G0, $G1, $G2) = ($U * $U * $Si * $Si, 2 * $U * $Si ** 3 + 2 * $U * $U * $Si, 2 * $Si ** 4 + 10 * $U * $Si * $Si + 2 * $U * $U) }
+    $err += $h3 * $R->[$i] * ($G2 + 2 * $G1 * $L1->[$i] + $G0 * ($L2->[$i] + $L1->[$i] * $L1->[$i])) }
+  my $r = ($n + 20) * $EPS; return [ $lo * (1 - $r) - $err, $hi * (1 + $r) + $err ] }
+# the normalisation, the signed first moment and the second moment on the full grid
+sub moments { my ($g, $W) = @_; my $n = $g->{n}; my ($c, $S, $Cab) = @{$g}{qw(c S Cab)}; my ($wlo, $whi, $R, $L1, $L2) = @{$W}{qw(wlo whi R L1 L2)}; my ($Zl, $Zh, $M1l, $M1h, $M2l, $M2h, $e0, $e1, $e2) = (0) x 9; my $h3 = $g->{h} ** 3 / 24;
+  for my $i (0 .. $n - 1) { my $ci = $c->[$i]; $Zl += $wlo->[$i]; $Zh += $whi->[$i]; $M2l += $ci * $ci * $wlo->[$i]; $M2h += $ci * $ci * $whi->[$i];
+    if ($ci >= 0) { $M1l += $ci * $wlo->[$i]; $M1h += $ci * $whi->[$i] } else { $M1l += $ci * $whi->[$i]; $M1h += $ci * $wlo->[$i] }
+    my $U = $Cab->[$i]; my $Si = $S->[$i]; my $Q = $L2->[$i] + $L1->[$i] * $L1->[$i]; my $Ri = $R->[$i];
+    $e0 += $h3 * $Ri * (2 + 2 * (2 * $Si) * $L1->[$i] + $Si * $Si * $Q); $e1 += $h3 * $Ri * ((5 * $Si * $Si + 2 * $U) + 2 * ($Si ** 3 + 2 * $U * $Si) * $L1->[$i] + $U * $Si * $Si * $Q);
+    $e2 += $h3 * $Ri * ((2 * $Si ** 4 + 10 * $U * $Si * $Si + 2 * $U * $U) + 2 * (2 * $U * $Si ** 3 + 2 * $U * $U * $Si) * $L1->[$i] + $U * $U * $Si * $Si * $Q) }
+  my $r = ($n + 20) * $EPS; return ([ $Zl * (1 - $r) - $e0, $Zh * (1 + $r) + $e0 ], [ $M1l - abs($M1l) * $r - $e1, $M1h + abs($M1h) * $r + $e1 ], [ $M2l * (1 - $r) - $e2, $M2h * (1 + $r) + $e2 ]) }
+sub half {                                                                                                               # the threshold integrals at t: P(t), A(t), I(t) = E|u - t| as intervals over Z
+  my ($t, $a1, $a2, $b1, $b2, $N, $Z) = @_; my $tt = atan2(sqrt(1 - $t * $t), $t); my $nA = ceil($N * $tt / $PI); $nA = 2 if $nA < 2; my $nB = ceil($N * ($PI - $tt) / $PI); $nB = 2 if $nB < 2;
+  my $gA = grid(0, $tt, $nA); my $WA = weigh($gA, $a1, $a2, $b1, $b2); my $gB = grid($tt, $PI, $nB); my $WB = weigh($gB, $a1, $a2, $b1, $b2);
+  my $P = integ($gA, $WA, 0, $t, 1); my $A = integ($gA, $WA, 2, $t, 1); my $Ip = integ($gA, $WA, 1, $t, 1); my $Im = integ($gB, $WB, 1, $t, -1);
+  for ($P, $A, $Ip, $Im) { $_->[0] = 0 if $_->[0] < 0 }
+  return { P => [ $P->[0] / $Z->[1], $P->[1] / $Z->[0] ], A => [ $A->[0] / $Z->[1], $A->[1] / $Z->[0] ], I => [ ($Ip->[0] + $Im->[0]) / $Z->[1], ($Ip->[1] + $Im->[1]) / $Z->[0] ] } }
+sub enc {                                                                                                                # the rectangle's enclosure: Z, m, V, and the threshold quantities at m_lo and m_hi
+  my ($a1, $a2, $b1, $b2, $N) = @_; my $g = grid(0, $PI, $N); my $W = weigh($g, $a1, $a2, $b1, $b2); my ($Z, $M1, $M2) = moments($g, $W); die "Z not positive" unless $Z->[0] > 0;
+  my $mlo = $M1->[0] >= 0 ? $M1->[0] / $Z->[1] : $M1->[0] / $Z->[0]; my $mhi = $M1->[1] >= 0 ? $M1->[1] / $Z->[0] : $M1->[1] / $Z->[1]; $mlo = -1 if $mlo < -1; $mhi = 1 if $mhi > 1;      # a loose bracket on a wide rectangle may leave [-1, 1]; m never does
+  my $m2max = $mlo * $mlo > $mhi * $mhi ? $mlo * $mlo : $mhi * $mhi; my $m2min = ($mlo <= 0 && $mhi >= 0) ? 0 : ($mlo * $mlo < $mhi * $mhi ? $mlo * $mlo : $mhi * $mhi);
+  my $Vlo = $M2->[0] / $Z->[1] - $m2max; $Vlo = 0 if $Vlo < 0; my $Vhi = $M2->[1] / $Z->[0] - $m2min;
+  my $Hlo = half($mlo, $a1, $a2, $b1, $b2, $N, $Z); my $Hhi = half($mhi, $a1, $a2, $b1, $b2, $N, $Z);
+  return { Z => $Z, m => [$mlo, $mhi], V => [$Vlo, $Vhi], tlo => $Hlo, thi => $Hhi } }
+sub integ3 { my ($g, $W, $sgn) = @_; my $n = $g->{n}; my ($c, $S, $Cab) = @{$g}{qw(c S Cab)}; my ($wlo, $whi, $R, $L1, $L2) = @{$W}{qw(wlo whi R L1 L2)}; my ($lo, $hi, $err) = (0, 0, 0); my $h3 = $g->{h} ** 3 / 24;   # (sgn cos)^3: |g| <= U^3 S^2, |g'| <= 3U^2 S^3 + 2U^3 S, |g''| <= 6U S^4 + 15 U^2 S^2 + 2U^3
+  for my $i (0 .. $n - 1) { my $u = $sgn * $c->[$i]; my $gv = $u ** 3; $lo += $gv * $wlo->[$i]; $hi += $gv * $whi->[$i]; my $U = $Cab->[$i]; my $Si = $S->[$i];
+    $err += $h3 * $R->[$i] * ((6 * $U * $Si ** 4 + 15 * $U * $U * $Si * $Si + 2 * $U ** 3) + 2 * (3 * $U * $U * $Si ** 3 + 2 * $U ** 3 * $Si) * $L1->[$i] + $U ** 3 * $Si * $Si * ($L2->[$i] + $L1->[$i] ** 2)) }
+  my $r = ($n + 20) * $EPS; return [ $lo * (1 - $r) - $err, $hi * (1 + $r) + $err ] }
+sub integ4 { my ($g, $W) = @_; my $n = $g->{n}; my ($c, $S, $Cab) = @{$g}{qw(c S Cab)}; my ($wlo, $whi, $R, $L1, $L2) = @{$W}{qw(wlo whi R L1 L2)}; my ($lo, $hi, $err) = (0, 0, 0); my $h3 = $g->{h} ** 3 / 24;   # cos^4: |g''| <= 12U^2 S^4 + 20 U^3 S^2 + 2U^4, |g'| <= 4U^3 S^3 + 2U^4 S
+  for my $i (0 .. $n - 1) { my $u = $c->[$i]; my $gv = $u ** 4; $lo += $gv * $wlo->[$i]; $hi += $gv * $whi->[$i]; my $U = $Cab->[$i]; my $Si = $S->[$i];
+    $err += $h3 * $R->[$i] * ((12 * $U * $U * $Si ** 4 + 20 * $U ** 3 * $Si * $Si + 2 * $U ** 4) + 2 * (4 * $U ** 3 * $Si ** 3 + 2 * $U ** 4 * $Si) * $L1->[$i] + $U ** 4 * $Si * $Si * ($L2->[$i] + $L1->[$i] ** 2)) }
+  my $r = ($n + 20) * $EPS; return [ $lo * (1 - $r) - $err, $hi * (1 + $r) + $err ] }
+sub axisenc {                                                                                                            # kappa_1 = 0, the symmetric base on [b1, b2]: nu_j = E|u|^j, f(0), D_1'(0), M, k_min
+  my ($b1, $b2, $N, $k) = @_; $N += $N % 2; my $g = grid(0, $PI, $N); my $W = weigh($g, 0, 0, $b1, $b2); my ($Z) = moments($g, $W); die "Z not positive" unless $Z->[0] > 0;
+  my $gA = grid(0, $PI / 2, $N / 2); my $WA = weigh($gA, 0, 0, $b1, $b2); my $gB = grid($PI / 2, $PI, $N / 2); my $WB = weigh($gB, 0, 0, $b1, $b2); my %nu;
+  for my $j (1 .. 4) {                                                                                                   # |u|^j on each half-grid, where it is smooth: cos^j on [0, pi/2], (-cos)^j on [pi/2, pi]
+    my $IA = $j == 1 ? integ($gA, $WA, 1, 0, 1) : $j == 2 ? integ($gA, $WA, 2, 0, 1) : $j == 3 ? integ3($gA, $WA, 1) : integ4($gA, $WA);
+    my $IB = $j == 1 ? integ($gB, $WB, 1, 0, -1) : $j == 2 ? integ($gB, $WB, 2, 0, -1) : $j == 3 ? integ3($gB, $WB, -1) : integ4($gB, $WB);
+    $nu{$j} = [ ($IA->[0] + $IB->[0]) / $Z->[1], ($IA->[1] + $IB->[1]) / $Z->[0] ]; $nu{$j}[0] = 0 if $nu{$j}[0] < 0 }
+  my $f0 = [ (2 / $PI) / $Z->[1], (2 / $PI) / $Z->[0] ];                                                                # the density of u at 0 under the base: (2/pi) sin^2(pi/2) / sin(pi/2) / Z~, Phi(pi/2) = 1
+  my $V = $nu{2}; my $Dp_hi = $nu{3}[1] / 2 - 1.5 * $V->[0] * $nu{1}[0] + $V->[1] * $V->[1] * $f0->[1]; my $Dp_lo = $nu{3}[0] / 2 - 1.5 * $V->[1] * $nu{1}[1] + $V->[0] * $V->[0] * $f0->[0];
+  my $e = exp(2 * $k); my $Vh = $e * ($nu{2}[1] + 2 * $k * $nu{1}[1] + $k * $k); my $n3 = $e * ($nu{3}[1] + 3 * $k * $nu{2}[1] + 3 * $k * $k * $nu{1}[1] + $k ** 3);
+  my $m4 = $e * ($nu{4}[1] + 4 * $k * $nu{3}[1] + 6 * $k * $k * $nu{2}[1] + 4 * $k ** 3 * $nu{1}[1] + $k ** 4); my $Hh = sqrt($Vh); my $fh = $e * $f0->[1]; my $cc = $k + $k / (1 - $k * $k) + $b2 * $k / sqrt(1 - $k * $k);
+  my $M = 2 * $m4 + 9 * $Vh * $Vh + 4 * $n3 * $Hh + 3 * $n3 * $Vh * $fh + $Vh ** 3 * $fh * $cc; my $kmin = $Dp_hi < 0 ? 2 * (-$Dp_hi) / $M : 0;
+  return { nu => \%nu, f0 => $f0, Dp => [$Dp_lo, $Dp_hi], M => $M, kmin => $kmin, Z => $Z } }
+my $t0 = time;
+if ($mode eq 'm1') { my ($Kd, $N) = @ARGV; $Kd //= 20; $N //= 20000; my $E = enc($Kd, $Kd, 0, 0, $N); my ($mlo, $mhi) = @{$E->{m}}; my $bound = sqrt(1 - $mlo * $mlo);
+  printf "G18-M1 m_1(%g) in [%.9f, %.9f]; for kappa >= %g every direction's MAD <= sqrt(1 - m_1^2) <= %.6f  [%s 4/(3 pi) = %.6f]  N=%d (%d s)\n", $Kd, $mlo, $mhi, $Kd, $bound, $bound < $MAD0 ? 'BELOW' : 'NOT BELOW', $MAD0, $N, time - $t0; exit }
+if ($mode eq 'axis') { my ($k, $K, $N, $minw) = @ARGV; $k //= 0.03; $K //= 1; $N //= 4000; $minw //= 1e-4; my @stack = ([0, $K]); my ($cells, $und, $worstDp, $worstk, $argD, $argk, $maxM) = (0, 0, -9, 9, '', '', 0);
+  printf "G18-AXIS kappa_1 = 0, kappa_2 in [0, %g], k = %g: D_1'(0; kappa_2) < 0 and k <= k_min = 2|D_1'(0)|/M on every cell (N=%d, min width %g)\n", $K, $k, $N, $minw;
+  while (@stack) { my ($b1, $b2) = @{pop @stack}; my $X = axisenc($b1, $b2, $N, $k); my $ok = $X->{Dp}[1] < 0 && $X->{kmin} >= $k;
+    if (!$ok && $b2 - $b1 > $minw) { my $mid = ($b1 + $b2) / 2; push @stack, [$mid, $b2], [$b1, $mid]; next }
+    $cells++; if (!$ok) { $und++; printf "G18-AXIS-CELL [%.6f, %.6f] UNDECIDED: D_1'(0) in [%.4e, %.4e] k_min=%.4f M=%.3f\n", $b1, $b2, @{$X->{Dp}}, $X->{kmin}, $X->{M} }
+    elsif ($cells % 10 == 1) { printf "G18-AXIS-CELL [%.6f, %.6f] D_1'(0) in [%.6e, %.6e] nu1=[%.6f,%.6f] V=[%.6f,%.6f] nu3=[%.6f,%.6f] nu4=[%.6f,%.6f] f0=[%.5f,%.5f] M=%.4f k_min=%.4f\n", $b1, $b2, @{$X->{Dp}}, @{$X->{nu}{1}}, @{$X->{nu}{2}}, @{$X->{nu}{3}}, @{$X->{nu}{4}}, @{$X->{f0}}, $X->{M}, $X->{kmin} }
+    if ($X->{Dp}[1] > $worstDp) { $worstDp = $X->{Dp}[1]; $argD = sprintf("[%.5f, %.5f]", $b1, $b2) } if ($X->{kmin} < $worstk) { $worstk = $X->{kmin}; $argk = sprintf("[%.5f, %.5f]", $b1, $b2) } $maxM = $X->{M} if $X->{M} > $maxM }
+  printf "G18-AXIS-VERDICT %d cells, %d UNDECIDED; the largest upper endpoint of D_1'(0) = %.6e at %s; the least k_min = %.5f at %s (k = %g); the largest M = %.4f  [%s]  (%d s)\n", $cells, $und, $worstDp, $argD, $worstk, $argk, $k, $maxM, $und ? 'NOT-CERTIFIED' : 'HAND-LEMMA-ADMITTED', time - $t0; exit }
+# the rectangle modes: mono (D_1 < 0 on [k, K] x [0, K]) and direct (F < 4/(3 pi) on the quarter disk of radius Kd minus [0, K]^2)
+my ($isdirect, @stack, $N, $minw, $Kd);
+if ($mode eq 'mono') { my ($k, $K); ($k, $K, $N, $minw) = @ARGV; $k //= 0.03; $K //= 1; $N //= 4000; $minw //= 1e-4; $isdirect = 0; @stack = ([$k, $K, 0, $K]); $Kd = 1e9;
+  printf "G18-MONO D_1 = A - V p < 0 on [%g, %g] x [0, %g] (N=%d, min width %g): the verdict per rectangle A(m_lo)_hi - V_lo P(m_hi)_lo < 0\n", $k, $K, $K, $N, $minw }
+elsif ($mode eq "direct") { my ($K, $B1, $B2); ($K, $Kd, $N, $minw, $B1, $B2) = @ARGV; $K //= 1; $Kd //= 20; $N //= 10000; $minw //= 1e-3; $isdirect = 1;
+  my @a = ($K); while ($a[-1] < $Kd) { push @a, ($a[-1] * 2 > $Kd ? $Kd : $a[-1] * 2) } my @b = (0, 1); while ($b[-1] < $Kd) { push @b, ($b[-1] * 2 > $Kd ? $Kd : $b[-1] * 2) }
+  for my $i (0 .. $#a - 1) { for my $j (0 .. $#b - 1) { push @stack, [$a[$i], $a[$i + 1], $b[$j], $b[$j + 1]] } }                                 # [K, Kd] x [0, Kd] in dyadic strips
+  my @bb = ($K); while ($bb[-1] < $Kd) { push @bb, ($bb[-1] * 2 > $Kd ? $Kd : $bb[-1] * 2) } for my $j (0 .. $#bb - 1) { push @stack, [0, $K, $bb[$j], $bb[$j + 1]] }
+  if (defined $B1) { @stack = grep { $_->[3] > $B1 && $_->[2] < $B2 } @stack; for (@stack) { $_->[2] = $B1 if $_->[2] < $B1; $_->[3] = $B2 if $_->[3] > $B2 } }                               # a kappa_2 strip [B1, B2] of the region, for parallel runs   # [0, K] x [K, Kd]
+  printf "G18-DIRECT F = E|u - m| < 4/(3 pi) = %.8f on the quarter disk of radius %g minus [0, %g]^2 (N=%d, min width %g): the verdict per rectangle I(m_lo)_hi + (m_hi - m_lo) < 4/(3 pi)\n", $MAD0, $Kd, $K, $N, $minw }
+else { die "unknown mode $mode" }
+my ($cells, $und, $skipped, $worst, $argw, $maxm) = (0, 0, 0, -9, '', 0);
+while (@stack) { my ($a1, $a2, $b1, $b2) = @{pop @stack}; if ($a1 * $a1 + $b1 * $b1 > $Kd * $Kd) { $skipped++; next }
+  my $E = enc($a1, $a2, $b1, $b2, $N); my ($mlo, $mhi) = @{$E->{m}}; my ($val, $ok);
+  if ($isdirect) { $val = $E->{tlo}{I}[1] + ($mhi - $mlo); $ok = $val < $MAD0 } else { $val = $E->{tlo}{A}[1] - $E->{V}[0] * $E->{thi}{P}[0]; $ok = $val < 0 }
+  if (!$ok) { my ($w1, $w2) = ($a2 - $a1, $b2 - $b1); my $r1 = $w1 / (0.1 + $a1); my $r2 = $w2 / (0.1 + $b1);
+    if ($w1 > $minw || $w2 > $minw) { if (($r1 >= $r2 && $w1 > $minw) || $w2 <= $minw) { my $mid = ($a1 + $a2) / 2; push @stack, [$mid, $a2, $b1, $b2], [$a1, $mid, $b1, $b2] } else { my $mid = ($b1 + $b2) / 2; push @stack, [$a1, $a2, $mid, $b2], [$a1, $a2, $b1, $mid] } next }
+    $und++; $cells++; printf "G18-CELL [%.6f, %.6f] x [%.6f, %.6f] UNDECIDED: value_hi=%.4e m in [%.6f, %.6f] V in [%.6f, %.6f]\n", $a1, $a2, $b1, $b2, $val, $mlo, $mhi, @{$E->{V}}; next }
+  $cells++; my $w = $isdirect ? $MAD0 - $val : -$val; if ($val > $worst) { $worst = $val; $argw = sprintf("[%.5f, %.5f] x [%.5f, %.5f]", $a1, $a2, $b1, $b2) } $maxm = ($mhi - $mlo) if ($mhi - $mlo) > $maxm;
+  printf "G18-CELL [%.6f, %.6f] x [%.6f, %.6f] value_hi=%.4e margin=%.3e m in [%.6f, %.6f] V in [%.6f, %.6f] P(m_hi) in [%.5f, %.5f]\n", $a1, $a2, $b1, $b2, $val, $w, $mlo, $mhi, @{$E->{V}}, @{$E->{thi}{P}} if $cells % 200 == 1 }
+printf "G18-%s-VERDICT %d rectangles certified, %d UNDECIDED, %d outside the disk skipped; the largest upper endpoint %.6e at %s; the widest m-interval %.2e  [%s]  (%d s)\n", $isdirect ? 'DIRECT' : 'MONO', $cells - $und, $und, $skipped, $worst, $argw, $maxm, $und ? 'NOT-CERTIFIED' : ($isdirect ? 'DIRECT-CERTIFIED' : 'MONOTONE-CERTIFIED'), time - $t0;

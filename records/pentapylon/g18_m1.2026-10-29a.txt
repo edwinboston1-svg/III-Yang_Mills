@@ -1,0 +1,1 @@
+G18-M1 m_1(20) in [0.925987598, 0.925987899]; for kappa >= 20 every direction's MAD <= sqrt(1 - m_1^2) <= 0.377554  [BELOW 4/(3 pi) = 0.424413]  N=40000 (0 s)

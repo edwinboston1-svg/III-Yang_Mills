@@ -1,0 +1,50 @@
+# Records of the computations of Edwin Boston III, 28–29 October 2026 (pentapylon)
+
+Status, in these words: instruments and records on disk; their gate run (`pentapylon_gate.sh` run u, launched 2026-10-29 00:53:40 EDT) is pending; *The Ground* cites only runs that have landed GREEN, so nothing here is cited by the paper until its run lands. Each file is reproduced byte for byte from the III tree (`STDLIB/build/pentapylon/` unless the tree path says otherwise), with its SHA-256 computed at the copy; the first 24 hexadecimal digits were supplied by the seat that produced them and were checked against the copy.
+
+- `mkflow.awk`, `mkflow_b*.2026-10-29d.txt`, `mkflow_b*.2026-10-29e.txt`: the hierarchical (Migdal–Kadanoff) descent of the SU(2) Wilson weight certified at 256 bits with directed rounding (every lower endpoint under rounding down, every upper under rounding up), from β = 2.2, 2.3, 5 and 10, the records d to the kernel's finite-group threshold c₁ ≤ 0.131 (reached at K* = 7, 7, 18, 37) and the records e three steps further; the page's RESULTS 15. On the hierarchical model, not on ℤ⁴.
+- `g17_mixed_survey.pl`, `g18_mad_lemma.pl` (and its first copy `.a`, before the rounding repair), the records `g18_*.2026-10-29a/b.txt`: the enclosure certifying the sharp one-link lemma, that the mean absolute deviation of a coordinate of a von Mises–Fisher law on S³ is at most 4/(3π), whence the heat-bath kernel's Lipschitz constant 2β/(3π) and the single-link Dobrushin disk β < 3π/72; records b are the certificate (9104 rectangles, 0 undecided); the page's RESULTS 14.
+- `g20_tube.pl`, `g20_tube_j1.2026-10-29a/b.txt`: the transfer matrix of SU(2) Wilson theory on the 2×2 spatial torus in 2+1 dimensions in the spin-network basis (spins ≤ 1, 2018 states), its gaps and the decay of the block covariance functional along the tube at β₃ from 0.2 to 6, with the centre-flux sectors; the page's RESULTS 15.
+- `g14_su2_cube.pl`, `g14_ratios.pl`, the `g14_*.2026-10-29a.txt` records: the SU(2) cube's exact readings at β = 0.1 and 0.5, the propagation ratios, and the random-boundary-data read at 0.5.
+- `scripts/pentapylon_gate.sh`: the gate carrying the arms for RESULTS 14 and 15, as launched for run u.
+
+| File here | SHA-256 | Tree path |
+|---|---|---|
+| `mkflow.awk` | da860b5dfc260923f011459fb1a05d523108dd2fb875edbe7aeadaf8ab52e697 | `STDLIB/build/pentapylon/mkflow.awk` |
+| `mkflow_b2.2.2026-10-29d.txt` | 2eba95ec1193692ab9263b971d0e3ff746673d57320e46ef80ad5186b7354227 | `STDLIB/build/pentapylon/mkflow_b2.2.2026-10-29d.txt` |
+| `mkflow_b2.3.2026-10-29d.txt` | def8c84291aca62eca16fe0f7876a8d95b1bf62cf6b499084be92b9b4803f859 | `STDLIB/build/pentapylon/mkflow_b2.3.2026-10-29d.txt` |
+| `mkflow_b5.2026-10-29d.txt` | b28cfd63b5a1829ddbfdb84f680a61b8b001125d93daaf340aa5c0f59b2329dc | `STDLIB/build/pentapylon/mkflow_b5.2026-10-29d.txt` |
+| `mkflow_b10.2026-10-29d.txt` | 6871aa41d69fb9b221e2ee340b897cd5bae21e85cb4df0e50fefcc7cd4e33c07 | `STDLIB/build/pentapylon/mkflow_b10.2026-10-29d.txt` |
+| `mkflow_b2.2.2026-10-29e.txt` | eef0d1c38f5a88ae8509b8955e8eac29fe2aa8ed4ba1d26f79e3a4df7a962725 | `STDLIB/build/pentapylon/mkflow_b2.2.2026-10-29e.txt` |
+| `mkflow_b2.3.2026-10-29e.txt` | cf4d91a55092e16c3b4614272aa3fb3a2d8d1c376f185cf675130240624702ed | `STDLIB/build/pentapylon/mkflow_b2.3.2026-10-29e.txt` |
+| `mkflow_b5.2026-10-29e.txt` | b719bed57b43310e307ecc3f497357dd88f819ad0027c8590042f3f003202a08 | `STDLIB/build/pentapylon/mkflow_b5.2026-10-29e.txt` |
+| `mkflow_b10.2026-10-29e.txt` | e04c36e54e35cb3060ecc8e332cdf2b97dc5139192a879d638db25ab919964c0 | `STDLIB/build/pentapylon/mkflow_b10.2026-10-29e.txt` |
+| `g18_mad_lemma.pl` | aa441e1a0ea36d5459c97d2bc512b403dbf076eeee53c76a8f3cbfe57d74aaa6 | `STDLIB/build/pentapylon/g18_mad_lemma.pl` |
+| `g18_mad_lemma.pl.a` | 906a7563df0ae908b795de5645bcdeeb5a266986fffdb8f5605730f70c8cc12b | `STDLIB/build/pentapylon/g18_mad_lemma.pl.a` |
+| `g17_mixed_survey.pl` | 5d3c84268d09d99ed4791407f2e89e1f99e3603cfab92435d9bec7bb1cd98f5b | `STDLIB/build/pentapylon/g17_mixed_survey.pl` |
+| `g17_mixed_survey.2026-10-29a.txt` | b52c952040a1d396420e8e37acec633d1e5dedd3f66cc2b2f744b086edfdab74 | `STDLIB/build/pentapylon/g17_mixed_survey.2026-10-29a.txt` |
+| `g18_m1.2026-10-29a.txt` | 77117fef65ae352ff42acd2d25dda24ea0ba0f15db33ff79a9aa18b3f3453f22 | `STDLIB/build/pentapylon/g18_m1.2026-10-29a.txt` |
+| `g18_axis.2026-10-29a.txt` | e155af547de6e4cfe3748cf953b0b33fd4f931b7c11aab862011cc70ee08cf72 | `STDLIB/build/pentapylon/g18_axis.2026-10-29a.txt` |
+| `g18_mono.2026-10-29a.txt` | 00f5e7ce14d1e9252f628522c0968441da32da54ebc1ce24d0bef9031bcd6125 | `STDLIB/build/pentapylon/g18_mono.2026-10-29a.txt` |
+| `g18_direct_b0_1.2026-10-29a.txt` | 18ef4d0c198bf85e4c3492ecca707ed9f4a533fffbf506aa65221eabe2581516 | `STDLIB/build/pentapylon/g18_direct_b0_1.2026-10-29a.txt` |
+| `g18_direct_b1_2.2026-10-29a.txt` | ceaf193ba7fc0abe6f0d162973a3c0502124c8fe5df2587c7300f6d536bbf4e8 | `STDLIB/build/pentapylon/g18_direct_b1_2.2026-10-29a.txt` |
+| `g18_direct_b2_4.2026-10-29a.txt` | 014bcb3c35c0397fc3676506cfc3e6cd2c889769634f316e8ee820d9813e40dd | `STDLIB/build/pentapylon/g18_direct_b2_4.2026-10-29a.txt` |
+| `g18_direct_b4_8.2026-10-29a.txt` | 2d1a893dd1f584e5022334280ae2c11cbcff7dfd17aafdf49be70f651a0955d4 | `STDLIB/build/pentapylon/g18_direct_b4_8.2026-10-29a.txt` |
+| `g18_direct_b8_20.2026-10-29a.txt` | 778afb0960b7146d659251f0e09b3e55caf246cba336256d3314ef78ef2f6104 | `STDLIB/build/pentapylon/g18_direct_b8_20.2026-10-29a.txt` |
+| `g18_m1.2026-10-29b.txt` | 4961410801c99b25241633e3d816da74f2a8e6bc6e0d7304e466ee09631ccfa7 | `STDLIB/build/pentapylon/g18_m1.2026-10-29b.txt` |
+| `g18_axis.2026-10-29b.txt` | e155af547de6e4cfe3748cf953b0b33fd4f931b7c11aab862011cc70ee08cf72 | `STDLIB/build/pentapylon/g18_axis.2026-10-29b.txt` |
+| `g18_mono.2026-10-29b.txt` | bf0600d9145a56b0dbb22c4189ddf2ee94efd143b67a702b8eead49b1ae36999 | `STDLIB/build/pentapylon/g18_mono.2026-10-29b.txt` |
+| `g18_direct_b0_1.2026-10-29b.txt` | 57e5a652cd63c61c0ddc9bc1377e994ff4673bb1015a2b120048f4c127a36aba | `STDLIB/build/pentapylon/g18_direct_b0_1.2026-10-29b.txt` |
+| `g18_direct_b1_2.2026-10-29b.txt` | fd50a84380d47e465515598339e5363200f0665d737fd9573c021f7b76ef6df6 | `STDLIB/build/pentapylon/g18_direct_b1_2.2026-10-29b.txt` |
+| `g18_direct_b2_4.2026-10-29b.txt` | dbd5e685fee35c8418f862d5fc0b1cec3d14f8077fe3adf389b854b3da629d33 | `STDLIB/build/pentapylon/g18_direct_b2_4.2026-10-29b.txt` |
+| `g18_direct_b4_8.2026-10-29b.txt` | 5b5293076fa4f3d92c1b9b3e390a11477c2ea0ed0c4703850c88147890e92a34 | `STDLIB/build/pentapylon/g18_direct_b4_8.2026-10-29b.txt` |
+| `g18_direct_b8_20.2026-10-29b.txt` | 27e68653263d31e76346e22bd8980ee9601bb1a9cfbc94b313f9163746a9c0e7 | `STDLIB/build/pentapylon/g18_direct_b8_20.2026-10-29b.txt` |
+| `g20_tube.pl` | e7f83fe336927858e00404489c910f3b1a1223a50e730af65872b4dfe896c166 | `STDLIB/build/pentapylon/g20_tube.pl` |
+| `g20_tube_j1.2026-10-29a.txt` | 6d5ff89448662dd7667adfbec025448b9f7784eb5ea03e871264af602067eaef | `STDLIB/build/pentapylon/g20_tube_j1.2026-10-29a.txt` |
+| `g20_tube_j1.2026-10-29b.txt` | ced063ecf4d8c94970ff2561d8f55e1dc6d54830d189a95895a7417bef8cdc08 | `STDLIB/build/pentapylon/g20_tube_j1.2026-10-29b.txt` |
+| `g14_su2_cube.pl` | 0f4cfd607172817752ee79d84193f1131d6c769cd86de9ea35c4daadefe00a35 | `STDLIB/build/pentapylon/g14_su2_cube.pl` |
+| `g14_ratios.pl` | 3e61baf060e786c5766349a889db07cdf217e12cc984895acb0e377e574adbb1 | `STDLIB/build/pentapylon/g14_ratios.pl` |
+| `g14_ratios.2026-10-29a.txt` | 078bb595b4f9e49431555d21b77f3d6dd74c9948f0d5d85cffb20b924b858338 | `STDLIB/build/pentapylon/g14_ratios.2026-10-29a.txt` |
+| `g14_su2_cube_b0.1.2026-10-29a.txt` | 10884567f4fb3fe8870e4579077c7a577b2db8e281fcd4d0f5e73858ea79c578 | `STDLIB/build/pentapylon/g14_su2_cube_b0.1.2026-10-29a.txt` |
+| `g14_su2_cube_b0.5_random.2026-10-29a.txt` | 06155a1600537051a2a07665d530cadc2e74e96425dcebf9bb8f6ce1c271aa85 | `STDLIB/build/pentapylon/g14_su2_cube_b0.5_random.2026-10-29a.txt` |
+| `scripts/pentapylon_gate.sh` | f26dd78aad638e9ea2c02e079ea0f94340e3820ab18641839d3f95835ee462da | `STDLIB/scripts/pentapylon_gate.sh` |

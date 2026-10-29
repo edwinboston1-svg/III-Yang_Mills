@@ -1,0 +1,18 @@
+G29 beta=0.27 the decimated specification's W_1 coefficients searched from below: quadrature 2304 points, 60 starts x 60 refinements per type, test family 96 functions + 6 per configuration (seed 1)
+G29-KAT identical configurations: bound = 0.00e+00 (must be 0)
+G29-KAT the tilt-free TYPE I at |w_p| = 0.01, antipodal: W_1 lower bound 9.0849e-05 against the linear response 0.25 x 0.02 x beta = 1.3500e-03 (ratio 0.067) [OFF]
+G29-START beta=0.27 type=I start=10 coef=0.021162 best=0.021179 (85 s)
+G29-START beta=0.27 type=I start=20 coef=0.021075 best=0.021179 (174 s)
+G29-START beta=0.27 type=I start=30 coef=0.021053 best=0.021181 (288 s)
+G29-START beta=0.27 type=I start=40 coef=0.021131 best=0.021181 (388 s)
+G29-START beta=0.27 type=I start=50 coef=0.021122 best=0.021181 (495 s)
+G29-START beta=0.27 type=I start=60 coef=0.011047 best=0.021181 (647 s)
+G29-SUP beta=0.27 type=I searched sup of the W_1 coefficient C^W_I >= 0.021181 at |w_p|=5.000 |w'_p|=5.000 |w_p-w'_p|=4.412 the five |w|: 1.54 4.97 4.77 4.23 3.25
+G29-START beta=0.27 type=II start=10 coef=0.004465 best=0.004512 (769 s)
+G29-START beta=0.27 type=II start=20 coef=0.004440 best=0.004512 (930 s)
+G29-START beta=0.27 type=II start=30 coef=0.004433 best=0.004512 (1085 s)
+G29-START beta=0.27 type=II start=40 coef=0.004343 best=0.004512 (1221 s)
+G29-START beta=0.27 type=II start=50 coef=0.004375 best=0.004521 (1348 s)
+G29-START beta=0.27 type=II start=60 coef=0.004401 best=0.004521 (1488 s)
+G29-SUP beta=0.27 type=II searched sup of the W_1 coefficient C^W_II >= 0.004521 at |w_p|=1.362 |w'_p|=0.884 |w_p-w'_p|=1.718 the five |w|: 1.68 4.25 2.45 4.93 4.03
+G29-ROW beta=0.27 the Wasserstein row's searched value 12 C_I + 90 C_II >= 0.661056 (12 x 0.021181 + 90 x 0.004521) -- a LOWER estimate under independent w's  [BELOW-1]  (1488 s)

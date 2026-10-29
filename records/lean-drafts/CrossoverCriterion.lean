@@ -298,7 +298,7 @@ theorem interdep_tilt [Nonempty G] (W : (S → G) → ℝ) (hW : ∀ ω, 0 < W �
     intro g g'
     have := hΔ s t ω h g g'
     simp only [hρ₁, hρ₂]
-    rw [abs_sub_comm] at this ⊢
+    rw [← abs_neg]
     convert this using 2
     ring
   -- the triangle: tv(p^ρ₁, q^ρ₂) ≤ tv(p^ρ₁, q^ρ₁) + tv(q^ρ₁, (q^ρ₁)^{ρ₂−ρ₁})
@@ -482,7 +482,7 @@ theorem interdep_tilt_sharp [Nonempty G] (W : (S → G) → ℝ) (hW : ∀ ω, 0
     intro g g'
     have := hΔ s t ω h g g'
     simp only [hρ₁, hρ₂]
-    rw [abs_sub_comm] at this ⊢
+    rw [← abs_neg]
     convert this using 2
     ring
   have htri : tv (ptilt p ρ₁) (ptilt q ρ₂) ≤ tv (ptilt p ρ₁) (ptilt q ρ₁) + tv (ptilt q ρ₁) (ptilt q ρ₂) := by

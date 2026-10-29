@@ -1,0 +1,11 @@
+G26-KAT RULE12 637 points: E w^2=0.249999999999998(0.250000000000000) E w^4=0.124999999999999(0.125000000000000) E w^6=0.078125000000000(0.078125000000000) E w^8=0.054687500000000(0.054687500000000) E w^10=0.041015625000000(0.041015625000000) E w^12=0.032226562500000(0.032226562500000) E x^4y^4z^4=8.371e-05(8.371e-05); R(q1 q2) = R(q1) R(q2) and tr R = 4w^2 - 1: MET  [KAT-GREEN]
+G26 beta=2.2 MODE=delta a_1=0.464479 a_2=0.155493 a_3=0.040408; the truncated weight's minimum over V = 0.071034 (positive); the dropped spin-3/2 term's size against the kept: 16 a_3 / (1 + 4 a_1 + 9 a_2) = 0.152
+G26-LINK beta=2.2 MODE=delta Delta_link (one link, two of six staples moved by g and g' in {1}, the rest 1) under the truncated law = 0.260030
+G26-Z0 beta=2.2 MODE=delta Z at the symmetric datum = 1.981803036018e+16 (20 s)
+G26-PROGRESS g=8 of 48 (306 s)
+G26-PROGRESS g=16 of 48 (581 s)
+G26-PROGRESS g=24 of 48 (963 s)
+G26-PROGRESS g=32 of 48 (1433 s)
+G26-PROGRESS g=40 of 48 (1860 s)
+G26-PROGRESS g=48 of 48 (2248 s)
+G26-DELTA beta=2.2 MODE=delta datum=symmetric pair=b0:near -> t0:near u=0,0,-1,0:3 u'=0,0,1,0:3 Delta_cube=0.010741 argmax-g'=(-1.000,0.000,0.000,0.000) Delta_link=0.260030 ratio=0.0413 (a_1^4 = 4.6544e-02; Delta/a_1^4 = 0.23)  (2248 s)

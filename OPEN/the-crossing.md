@@ -39,7 +39,9 @@ What the reading decides: the side L* at which the weighted sum of SU(2) at the 
 
 No gap is claimed above β = 0.2452. The measurements of §3 are readings. The theorem named in (B) is not proved; the conjecture named in (C) is not proved; the mechanism named in (D) is not made rigorous here.
 
-## 3b. The running of the coupling under blocking, measured on ℤ⁴ where it must act (staked 04:3x EDT, before the run)
+## 3b. WITHDRAWN at 04:3x EDT before any run: the operator refused the launch (a sampling reading of known physics, Creutz 1980, is evidence only and never a result; no sampler is launched without the operator's word). The stake below is kept as written and was never tested.
+
+### 3b (withdrawn). The running of the coupling under blocking, measured on ℤ⁴ where it must act (staked 04:3x EDT, not run)
 
 The refinement of §2 (B) says the missing object is a renormalisation step, and the mechanism it must carry is the one the hierarchical model gets wrong: under blocking the SU(2) coupling runs toward strong coupling, the U(1) coupling in its Coulomb phase does not. The instrument `records/second-road/wilsonloops.py` (Monte Carlo on a periodic lattice of side 8; a reading, not a certificate) measures the Wilson loops W(R, T), R, T ≤ 4, the Creutz ratios χ(I, I) = −log[W(I,I)W(I−1,I−1)/(W(I,I−1)W(I−1,I))], and the one-step blocked coupling obtained by matching the I × I loop to one plaquette of the blocked lattice, c₁(β_eff(I a)) = W(I, I), which is the hierarchical model's own matching read on the true lattice.
 

@@ -1,0 +1,22 @@
+THE GROUND, revision 14 (Edwin Boston III)
+Repository: https://github.com/edwinboston1-svg/III-Yang_Mills
+Manifest written 2026-10-29T07:40:47Z by the local clock; GitHub's record of the push of 1a41672: pushed_at 2026-10-29T07:40:18Z (api.github.com).
+
+git commits (SHA-1 object names):
+  1a41672e980c8adbfc320a9568d402aec6342cd0  2026-10-29T03:40:14-04:00  THE GROUND, revision 14 (Edwin Boston III, 2026-10-29 03:4x EDT): Section 6.6 reads the t
+  ce53e4ebd8372737b509e1ce5a1342c828aab872  2026-10-29T03:34:35-04:00  TIMESTAMPS: an OpenTimestamps proof of revision 13 and the records of Theorem 8.7 (Edwin 
+  af03ccf51db8a677afd1dfa7340d27a3abf8a601  2026-10-29T03:25:11-04:00  THE GROUND, revision 13 (Edwin Boston III, 2026-10-29 03:4x EDT): a lattice mass gap in i
+  0df7986a2882533a8807a8379d7edd9e8e4f3f81  2026-10-29T03:13:22-04:00  RECORDS: a lattice mass gap for SU(2) on Z^4 at beta <= 0.241, certified on two roads (Ed
+
+SHA-256 of the files at commit 1a41672e980c8adbfc320a9568d402aec6342cd0:
+  812a78e8bc43de613637d716a9e77bad9476c12bff1308c3b5c13cfd478adc81 *THE-GROUND-Edwin-Boston-III.pdf
+  8e9f13cb45d9c3d062ee84e459ed0c75b0df2a8d41faec2495237126a667692a *THE-GROUND-Edwin-Boston-III.docx
+  f7cee8b1df78db6769a28755c3b18266c51f69c5ab160793c1aee7ede864f420 *README.md
+  8e55dfaff340846c47e916ba315100864579f11e818c39e11a0bde4a16e6c632 *SOURCES.md
+  e7b2af48208da8b41cf3c4f90b4d769991fd32af3ed27aeaf87088aa548b6143 *ARXIV.md
+  4379007faa13adaa181acf8e6ec6b40888969e0572d8548c0b1dc4b4e22e1ced *source/ground/content2.js
+  c799bfee3cb8eccd0c57ec0065c195e4fb547da85578edf0abb89479bd74f4f6 *source/ground/content4.js
+  dc0538180903df0ad6189adf509bc3f7aca16ca2db4aa970bb66440457e9bb4b *TIMESTAMPS/2026-10-29-revision-13.txt
+  6514de2ff1c355ff888b2d4a7a22cc271a251106fd97301eb7f1b0345c2bd64b *TIMESTAMPS/2026-10-29-revision-13.txt.ots
+
+To verify: compute the SHA-256 of this file and check it against the OpenTimestamps proof beside it (ots verify).

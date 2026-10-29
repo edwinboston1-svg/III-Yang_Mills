@@ -1,0 +1,11 @@
+THE GROUND, revision 19 as rebuilt at 72877dc (Edwin Boston III); the earlier manifest of revision 19 describes 608e3e3, whose document was revision 18's
+Manifest written 2026-10-29T09:20:21Z.
+
+  72877dc4eb850db9af8337c23929da15dd0cf9e0  2026-10-29T05:20:15-04:00  THE GROUND, revision 19 REBUILT (Edwin Boston III, 2026-10-29 05:20 EDT): commi
+  781fc9d6f9e3bfc3bd8cbe01a8907ce6764998fb  2026-10-29T05:17:48-04:00  TIMESTAMPS: an OpenTimestamps proof of revision 19 and the OPEN pages through 6
+  608e3e35ff996c01a70a96fbec35ee2a5ec88ff0  2026-10-29T05:17:41-04:00  THE GROUND, revision 19 (Edwin Boston III, 2026-10-29 05:17 EDT): Section 6.6 r
+
+  7b4897b71012bcb27b9d740f8234bce4e50b40114b24a4076586ff72b3741c63 *THE-GROUND-Edwin-Boston-III.pdf
+  053ed7c6be5c6b3417577197a757517e46a8d07198b9219e921e4f801fed346e *THE-GROUND-Edwin-Boston-III.docx
+  72b5bb18c0f5eee6d0e9d62535e2ed4c2c77a0c23140fc2812b97d76c4bfa572 *README.md
+  abd7d0cc8d0e4bf77c931779479509acac202348fbb1f7b6896bfb59925bfa13 *source/ground/content2.js

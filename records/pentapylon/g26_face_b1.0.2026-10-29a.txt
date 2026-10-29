@@ -1,0 +1,16 @@
+G26-KAT RULE12 637 points: E w^2=0.249999999999998(0.250000000000000) E w^4=0.124999999999999(0.125000000000000) E w^6=0.078125000000000(0.078125000000000) E w^8=0.054687500000000(0.054687500000000) E w^10=0.041015625000000(0.041015625000000) E w^12=0.032226562500000(0.032226562500000) E x^4y^4z^4=8.371e-05(8.371e-05); R(q1 q2) = R(q1) R(q2) and tr R = 4w^2 - 1: MET  [KAT-GREEN]
+G26 beta=1 MODE=faceresp a_1=0.240194 a_2=0.039225 a_3=0.004843; the truncated weight's minimum over V = 0.392251 (positive); the dropped spin-3/2 term's size against the kept: 16 a_3 / (1 + 4 a_1 + 9 a_2) = 0.033
+G26-LINK beta=1 MODE=faceresp Delta_link (one link, two of six staples moved by g and g' in {1}, the rest 1) under the truncated law = 0.257081
+G26-FACE beta=1 datum=symmetric E[tr U_top] = 0.796555 (Z = 1.179790e+06; the sector shares Z_top(0,1/2,1)/Z = 0.8331 0.3380 0.0388) (44 s)
+G26-FACE-PROGRESS 0,0,-1,0:3 g=8 of 47 |dE|=0.001169 (283 s)
+G26-FACE-PROGRESS 0,0,-1,0:3 g=16 of 47 |dE|=0.004426 (521 s)
+G26-FACE-PROGRESS 0,0,-1,0:3 g=24 of 47 |dE|=0.000650 (749 s)
+G26-FACE-PROGRESS 0,0,-1,0:3 g=32 of 47 |dE|=0.000650 (958 s)
+G26-FACE-PROGRESS 0,0,-1,0:3 g=40 of 47 |dE|=0.002648 (1160 s)
+G26-FACE beta=1 link=0,0,-1,0:3 (u: the near vertical under b0 (far from the top face)): sup over the 47 changes of |E[tr U_top | d_g] - E[tr U_top | d]| = 0.006131 at g=(-1.000,0.000,0.000,0.000); the mean over changes 0.002842  (1327 s)
+G26-FACE-PROGRESS 0,0,1,0:3 g=8 of 47 |dE|=0.019326 (1530 s)
+G26-FACE-PROGRESS 0,0,1,0:3 g=16 of 47 |dE|=0.088811 (1723 s)
+G26-FACE-PROGRESS 0,0,1,0:3 g=24 of 47 |dE|=0.010385 (1900 s)
+G26-FACE-PROGRESS 0,0,1,0:3 g=32 of 47 |dE|=0.010385 (2052 s)
+G26-FACE-PROGRESS 0,0,1,0:3 g=40 of 47 |dE|=0.047994 (2165 s)
+G26-FACE beta=1 link=0,0,1,0:3 (u': the near vertical above t0 (at the top face's corner)): sup over the 47 changes of |E[tr U_top | d_g] - E[tr U_top | d]| = 0.136517 at g=(-1.000,0.000,0.000,0.000); the mean over changes 0.054902  (2267 s)

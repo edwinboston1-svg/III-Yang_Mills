@@ -238,3 +238,36 @@ This is the calibration of §5 (two cubes sharing a face, 12a₁u^{10} = 3a₁ �
 - **(W3)** No chamber or patch reads above √c(b₁) times its lone-wall value.
 
 A reading outside (W1)–(W3) refutes the corresponding lemma or its proof. As before, nothing above β = 0.2452 is claimed.
+
+## 12. The weight table read; walls interfere through the rest's homology; Lemma S8 staked (12:54 EDT, read from `date`)
+
+**iii-38's exact weights (g50_weights, a tensor-network Haar integrator checked modulo two primes and in floating point; records as that seat reports them: F ≤ 16, F = 18 `5a933d43`, the vertex split `0b1f44d5`).** In the normalisation ρ = W/(u^{F−|Y|}(3a₁)^{|Y|}):
+
+| Stake | Verdict | The reading |
+|---|---|---|
+| W1 | HELD | all 5,074 single-wall chambers to F = 18 read ±2^{χ(S)}: 5,006 read +4 on sphere rests, 68 read +1 on Clifford-torus rests (a lone wall on a non-separating cycle, the "two curves" case). |
+| W2 | HELD at 4 | all 576 pinches at F = 18 read W/u^{18} = 4: a sphere crossing itself along one link, χ(X̂) = 2. |
+| W3 | not refuted | nothing reads above √c(b₁) times its lone-wall value. |
+| the patch law | HELD, n = 1..4 | a disc patch of n plaquettes reads 4·3^{1−n}, that is 3·a₁^n·W(S), as §11 proved. The tripod (three plaquettes on one off-rest link) reads 8/9, twice the 3-disc. |
+| the F = 16 waist | equality | W/u^{16} = 32 = 2·W(box)·W(cube)/u^{16}, as §10 stated. |
+
+**The new fact, exact.** Two lone walls on one rest, sharing no link, do not multiply:
+- on a sphere rest, ratio 4 = the product (the walls are independent);
+- on a torus rest, on parallel non-separating cycles, ratio +1 = the product;
+- on a torus rest, on crossing non-separating cycles, ratio **−1/3**: the cut-open rest is a disc with holonomy [z₁, z₂], and ∫χ_½([x,y])χ₁(x)χ₁(y) = −1/6 against ∫χ_½([x,y]) = 1/2;
+- two 2-plaquette discs on a sphere rest: 4/9 with no vertex contact, 4/81 with exactly two (16.63, the vertex split held exactly).
+
+So walls that share no link still couple through the rest's holonomies: adjoint flux patches on a surface with non-trivial topology interfere, and the interference is destructive. iii-38's sentence that patches interact only through shared-link factors is withdrawn on its page; the count bounds of 16.58 stand.
+
+**Lemma S8 (the interference number; STAKED, not proved).** Let S be a branch-free closed surface at spin ½ and w₁, …, w_k lone walls on S (integer-spin plaquettes off S with boundaries in S), with T = ⋃∂w_i. Then
+
+  W(S ∪ {w_i}) = u^{|S|}(3a₁)^k · 2^{χ(S)} · r(S; T),  r(S; T) = ∫_T Π_b χ_½(z_b) Π_i χ₁(z_{∂w_i}) / ∫_T Π_b χ_½(z_b),
+
+a spin-network evaluation on T embedded in S, at leading order in the spins. Stakes, written before the F = 20 table is read:
+- **(S8a)** |r| ≤ 1 for every S and every T; r = 1 when the ∂w_i are pairwise disjoint and null-homologous in S.
+- **(S8b)** r is multiplicative over the components of T ∪ (the homology classes the walls span): walls in different components of T on a sphere rest multiply exactly.
+- **(S8c)** UNGUESSED: whether the crossing cost is a per-crossing law (−1/3 per crossing of non-separating cycles, 1/9 per two boundary crossings on a sphere), or depends on the whole configuration.
+
+(S8a) is what the KP fold-in needs. It replaces the √C of §10 for lone walls by 1, and leaves §10's √C only for touching clusters. A chamber reading |ρ| above 2^{χ(S)} refutes (S8a).
+
+**Why this is the physics, read back.** The strong-coupling picture is flux on closed surfaces. A wall is a unit of adjoint flux stitched across such a surface. On a sphere every stitch is independent; on a torus two stitches on crossing cycles feel the non-commutativity of the two holonomies and cancel by a third. That is a non-abelian effect with no counterpart in the counting: it lowers R1's weight exactly where a sup-norm bound would raise it.

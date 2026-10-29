@@ -1,0 +1,11 @@
+# kp_reach5 runs of record, 2026-10-29 14:08:33 EDT; each line the script's own print
+# kp_reach5: F0 = 20 (all leaves enumerated to F0), MU = 5.00, KTREE = 4, GAMMA = 2.50
+KP holds to beta = 0.4929   u = 0.1220  a1 = 0.00997  alpha = 0.0046  kappa_dress = 0.1012
+# kp_reach5: F0 = 20 (all leaves enumerated to F0), MU = 5.00, KTREE = 4, GAMMA = 3.00
+KP holds to beta = 0.4875   u = 0.1207  a1 = 0.00976  alpha = 0.0044  kappa_dress = 0.1116
+# kp_reach5: F0 = 20 (all leaves enumerated to F0), MU = 5.00, KTREE = 4, GAMMA = 6.00
+KP holds to beta = 0.4266   u = 0.1058  a1 = 0.00750  alpha = 0.0020  kappa_dress = 0.2275
+# kp_reach5: F0 = 22 (all leaves enumerated to F0), MU = 5.00, KTREE = 4, GAMMA = 2.50
+KP holds to beta = 0.5032   u = 0.1245  a1 = 0.01039  alpha = 0.0042  kappa_dress = 0.1083
+# kp_reach5: F0 = 20 (all leaves enumerated to F0), MU = 4.33, KTREE = 4, GAMMA = 2.50
+KP holds to beta = 0.5415   u = 0.1337  a1 = 0.01200  alpha = 0.0042  kappa_dress = 0.1450

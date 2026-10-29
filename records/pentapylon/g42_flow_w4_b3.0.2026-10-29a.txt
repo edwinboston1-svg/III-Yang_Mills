@@ -1,0 +1,11 @@
+G42-KAT representations to spin 5/2 (GENINV=1) [MET]
+G42-KAT RULE29 (6750 points) [MET]
+G42 beta=3 MODE=flow WMAX=4 caps loop=4 face0=5; a_1=0.567924 a_2=0.242768; the truncated weight's minimum 0.003721
+G42-FLOW WMAX=4 step 1: beta_in 3.000000 -> beta_eff 2.621972 (ratio 0.8740; W(2,2) 0.523160713; chars 1.000000,1.046321,0.534168,0.158093,0.028680) (2.1 s)
+G42-FLOW WMAX=4 step 2: beta_in 2.621972 -> beta_eff 2.295389 (ratio 0.8754; W(2,2) 0.478609233; chars 1.000000,0.957218,0.422315,0.102381,0.014483) (6.6 s)
+G42-FLOW WMAX=4 step 3: beta_in 2.295389 -> beta_eff 1.984282 (ratio 0.8645; W(2,2) 0.430562526; chars 1.000000,0.861125,0.319690,0.061312,0.006492) (10.0 s)
+G42-FLOW WMAX=4 step 4: beta_in 1.984282 -> beta_eff 1.659875 (ratio 0.8365; W(2,2) 0.374263739; chars 1.000000,0.748527,0.221482,0.031315,0.002284) (14.8 s)
+G42-FLOW WMAX=4 step 5: beta_in 1.659875 -> beta_eff 1.289661 (ratio 0.7770; W(2,2) 0.302162791; chars 1.000000,0.604326,0.127039,0.011433,0.000485) (19.0 s)
+G42-FLOW WMAX=4 step 6: beta_in 1.289661 -> beta_eff 0.828563 (ratio 0.6425; W(2,2) 0.201458606; chars 1.000000,0.402917,0.045160,0.001819,0.000030) (21.8 s)
+G42-FLOW WMAX=4 step 7: beta_in 0.828563 -> beta_eff 0.258424 (ratio 0.3119; W(2,2) 0.064427023; chars 1.000000,0.128854,0.002872,0.000017,0.000000) (24.2 s)
+G42-FLOW WMAX=4 step 8: beta_in 0.258424 -> beta_eff 0.000457 (ratio 0.0018; W(2,2) 0.000114197; chars 1.000000,0.000228,0.000000,0.000000,0.000000) (26.3 s)

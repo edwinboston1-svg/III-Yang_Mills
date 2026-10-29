@@ -1,0 +1,9 @@
+G42-KAT representations to spin 5/2 (GENINV=1) [MET]
+G42-KAT RULE29 (6750 points) [MET]
+G42 beta=2.2 MODE=flow WMAX=4 caps loop=4 face0=5; a_1=0.464479 a_2=0.155493; the truncated weight's minimum 0.086769
+G42-FLOW WMAX=4 step 1: beta_in 2.200000 -> beta_eff 1.887861 (ratio 0.8581; W(2,2) 0.414501106; chars 1.000000,0.829002,0.289332,0.051052,0.004880) (1.8 s)
+G42-FLOW WMAX=4 step 2: beta_in 1.887861 -> beta_eff 1.553336 (ratio 0.8228; W(2,2) 0.354366143; chars 1.000000,0.708732,0.192073,0.024159,0.001530) (2.7 s)
+G42-FLOW WMAX=4 step 3: beta_in 1.553336 -> beta_eff 1.160811 (ratio 0.7473; W(2,2) 0.275168470; chars 1.000000,0.550337,0.099825,0.007416,0.000251) (5.0 s)
+G42-FLOW WMAX=4 step 4: beta_in 1.160811 -> beta_eff 0.662144 (ratio 0.5704; W(2,2) 0.162592433; chars 1.000000,0.325185,0.026434,0.000717,0.000008) (6.2 s)
+G42-FLOW WMAX=4 step 5: beta_in 0.662144 -> beta_eff 0.109195 (ratio 0.1649; W(2,2) 0.027285186; chars 1.000000,0.054570,0.000412,0.000001,0.000000) (7.3 s)
+G42-FLOW WMAX=4 step 6: beta_in 0.109195 -> beta_eff 0.000003 (ratio 0.0000; W(2,2) 0.000000700; chars 1.000000,0.000001,0.000000,0.000000,0.000000) (8.4 s)

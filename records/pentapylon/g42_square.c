@@ -44,7 +44,7 @@ static const char *ENAME[12] = { "X00", "X01", "X02", "X10", "X11", "X12", "Y00"
 static int EB[12][4], ED[12];
 static int eidx(const char *n) { for (int i = 0; i < 12; i++) if (!strcmp(ENAME[i], n)) return i; fprintf(stderr, "no edge %s\n", n); exit(1); }
 static int FACE[4][4], FSG[4][4]; static int SPOKE[4]; static int LOOPE[8], LOOPS[8];
-static int NOUT = 0; static int OUTB[200][4], OUTD[200];
+static int DLAT = 4; static int NOUT = 0; static int OUTB[200][4], OUTD[200];
 static int okey(int *b, int d) { for (int i = 0; i < NOUT; i++) if (OUTD[i] == d && !memcmp(OUTB[i], b, sizeof(int) * 4)) return i; memcpy(OUTB[NOUT], b, sizeof(int) * 4); OUTD[NOUT] = d; return NOUT++; }
 static int NDANG[12], DANG[12][6][3][2];
 static int SLOTF[12][2], SLOTM[12][2], SLOTS[12][2];   /* face index 0..3, or 4 = the loop */
@@ -64,14 +64,14 @@ static void build_square(void) {
     LSEQ[i][0] = outer[0]; LSEQ[i][1] = outer[1]; }
   /* the staples in g34's okey order: edges in sorted order, k = 1..4 (k != d); sides: k >= 3: (1, -1); in-plane: the outer side only (c = 0: -1; c = 2: +1) */
   for (int e = 0; e < 12; e++) { int *p = EB[e], d = ED[e]; int pd[4]; memcpy(pd, p, sizeof pd); pd[d - 1] += 1; int ns = 0;
-    for (int k = 1; k <= 4; k++) { if (k == d) continue; int sides[2], nsd = 0; if (k >= 3) { sides[0] = 1; sides[1] = -1; nsd = 2; } else { int c = p[k - 1]; if (c == 0) { sides[0] = -1; nsd = 1; } else if (c == 2) { sides[0] = 1; nsd = 1; } }
+    for (int k = 1; k <= DLAT; k++) { if (k == d) continue; int sides[2], nsd = 0; if (k >= 3) { sides[0] = 1; sides[1] = -1; nsd = 2; } else { int c = p[k - 1]; if (c == 0) { sides[0] = -1; nsd = 1; } else if (c == 2) { sides[0] = 1; nsd = 1; } }
       for (int si = 0; si < nsd; si++) { int s = sides[si]; int q[4];
         if (s > 0) { DANG[e][ns][0][0] = okey(pd, k); DANG[e][ns][0][1] = 1; } else { memcpy(q, pd, sizeof q); q[k - 1] -= 1; DANG[e][ns][0][0] = okey(q, k); DANG[e][ns][0][1] = -1; }
         memcpy(q, p, sizeof q); q[k - 1] += s; DANG[e][ns][1][0] = okey(q, d); DANG[e][ns][1][1] = -1;
         if (s > 0) { DANG[e][ns][2][0] = okey(p, k); DANG[e][ns][2][1] = -1; } else { memcpy(q, p, sizeof q); q[k - 1] -= 1; DANG[e][ns][2][0] = okey(q, k); DANG[e][ns][2][1] = 1; }
         ns++; } }
     NDANG[e] = ns; }
-  if (NOUT != 104) { fprintf(stderr, "outside links: %d, not 104\n", NOUT); exit(1); }
+  if (DLAT == 4 && NOUT != 104) { fprintf(stderr, "outside links: %d, not 104\n", NOUT); exit(1); }
   CAP[0] = S0MAX; CAP[1] = CAP[2] = CAP[3] = WMAX; CAP[4] = LMAX; }
 static quat staple(int e, int k, quat *dat) { quat T = { 1, 0, 0, 0 }; for (int j = 0; j < 3; j++) { quat V = dat[DANG[e][k][j][0]]; if (DANG[e][k][j][1] < 0) V = qinv(V); T = qmul(T, V); } return T; }
 static int FREE = 0;
@@ -126,7 +126,7 @@ static double now(void) { return (double)clock() / CLOCKS_PER_SEC; }
 static int readquats(const char *path, quat *out, int n) { FILE *f = fopen(path, "r"); if (!f) { fprintf(stderr, "cannot read %s\n", path); exit(1); } for (int i = 0; i < n; i++) { if (fscanf(f, "%lf %lf %lf %lf", &out[i].w, &out[i].x, &out[i].y, &out[i].z) != 4) { fprintf(stderr, "%s: %d quaternions, not %d\n", path, i, n); exit(1); } } fclose(f); return n; }
 int main(int argc, char **argv) {
   if (argc < 6) { fprintf(stderr, "usage: g42_square beta MODE WMAX LMAX S0MAX [args]\n"); return 1; }
-  BETA = atof(argv[1]); const char *MODE = argv[2]; WMAX = atoi(argv[3]); LMAX = atoi(argv[4]); S0MAX = atoi(argv[5]);
+  if (getenv("G4X_D")) DLAT = atoi(getenv("G4X_D")); if (DLAT != 3 && DLAT != 4) { fprintf(stderr, "G4X_D must be 3 or 4\n"); return 1; } BETA = atof(argv[1]); const char *MODE = argv[2]; WMAX = atoi(argv[3]); LMAX = atoi(argv[4]); S0MAX = atoi(argv[5]);
   SMAX = WMAX; if (LMAX > SMAX) SMAX = LMAX; if (S0MAX > SMAX) SMAX = S0MAX; if (SMAX > 15) return 1; if (S0MAX <= WMAX) { fprintf(stderr, "face0 cap must exceed WMAX\n"); return 1; }
   FACT[0] = 1; for (int i = 1; i < 40; i++) FACT[i] = FACT[i - 1] * i;
   for (int s = 0; s < 40; s++) { A[s] = bessel(s + 1, BETA) / bessel(1, BETA); DIM[s] = s + 1; FAC[s] = (s <= WMAX) ? (s + 1) * A[s] : 0; }
@@ -139,9 +139,21 @@ int main(int argc, char **argv) {
   { double cat = 1, wsum = 0; int bad = 0; for (int i = 0; i < NPT; i++) wsum += RW[i]; if (fabs(wsum - 1) > 1e-13) bad++; for (int k = 1; k <= deg / 2; k++) { cat = cat * 2 * (2 * k - 1) / (k + 1); double m = 0; for (int i = 0; i < NPT; i++) m += RW[i] * pow(RU[i].w, 2 * k); if (fabs(m - cat / pow(4, k)) > 1e-13 * (1 + cat / pow(4, k))) bad++; }
     printf("G42-KAT RULE%d (%d points) [%s]\n", deg, NPT, bad ? "FAILED" : "MET"); if (bad) return 1; }
   double minw = 1e9; for (int k = 0; k <= 4000; k++) { double th = PI * k / 4000; quat V = { cos(th), sin(th), 0, 0 }; double v = wgt(V); if (v < minw) minw = v; }
-  printf("G42 beta=%g MODE=%s WMAX=%d caps loop=%d face0=%d; a_1=%.6f a_2=%.6f; the truncated weight's minimum %.6f%s\n", BETA, MODE, WMAX, LMAX, S0MAX, A[1], A[2], minw, minw > 0 ? "" : " NOT POSITIVE"); if (minw <= 0) return 3;
+  printf("G42 D=%d (%d outside links) beta=%g MODE=%s WMAX=%d caps loop=%d face0=%d; a_1=%.6f a_2=%.6f; the truncated weight's minimum %.6f%s\n", DLAT, NOUT, BETA, MODE, WMAX, LMAX, S0MAX, A[1], A[2], minw, minw > 0 ? "" : " NOT POSITIVE"); if (minw <= 0) return 3;
   for (int i = 0; i < NOUT; i++) { quat one = {1, 0, 0, 0}; DATA[i] = one; }
   const char *df = getenv("G42_DATAFILE"); if (df) readquats(df, DATA, NOUT);
+  /* G42_RANDOM=SEED: every outside link Haar-random (a portable xorshift so the draw is the same on every machine); G42_GAUGE=SEED: a Haar-random gauge
+   * transformation at the nine square vertices applied on top (an outside link p -> p + e_d becomes g_p U g_{p+e_d}^-1 where an endpoint is a square vertex);
+   * every loop of the square must read the same under the gauge -- the instrument's covariance check at non-symmetric data */
+  { unsigned long long st = 0; const char *rs = getenv("G42_RANDOM"), *gs = getenv("G42_GAUGE");
+    #define XS() (st ^= st << 13, st ^= st >> 7, st ^= st << 17, st)
+    #define UNI() ((double)((XS() >> 11) + 1) / 9007199254740993.0)
+    if (rs) { st = 0x9E3779B97F4A7C15ULL ^ (unsigned long long)atoll(rs); for (int i = 0; i < 20; i++) XS(); for (int i = 0; i < NOUT; i++) { double g[4], n = 0; for (int j = 0; j < 4; j++) { double u1 = UNI(), u2 = UNI(); g[j] = sqrt(-2 * log(u1)) * cos(2 * PI * u2); n += g[j] * g[j]; } n = sqrt(n); quat q = { g[0] / n, g[1] / n, g[2] / n, g[3] / n }; DATA[i] = q; } }
+    if (gs) { st = 0xD1B54A32D192ED03ULL ^ (unsigned long long)atoll(gs); for (int i = 0; i < 20; i++) XS(); quat G[3][3]; for (int x = 0; x < 3; x++) for (int y = 0; y < 3; y++) { double g[4], n = 0; for (int j = 0; j < 4; j++) { double u1 = UNI(), u2 = UNI(); g[j] = sqrt(-2 * log(u1)) * cos(2 * PI * u2); n += g[j] * g[j]; } n = sqrt(n); quat q = { g[0] / n, g[1] / n, g[2] / n, g[3] / n }; G[x][y] = q; }
+      int moved = 0; for (int i = 0; i < NOUT; i++) { int p[4], q[4]; memcpy(p, OUTB[i], sizeof p); memcpy(q, p, sizeof q); q[OUTD[i] - 1]++;
+        if (p[2] == 0 && p[3] == 0 && p[0] >= 0 && p[0] <= 2 && p[1] >= 0 && p[1] <= 2) { DATA[i] = qmul(G[p[0]][p[1]], DATA[i]); moved++; }
+        if (q[2] == 0 && q[3] == 0 && q[0] >= 0 && q[0] <= 2 && q[1] >= 0 && q[1] <= 2) { DATA[i] = qmul(DATA[i], qinv(G[q[0]][q[1]])); moved++; } }
+      printf("G42-GAUGE a random gauge at the nine square vertices moved %d outside-link ends\n", moved); } }
   double t0 = now();
   if (!strcmp(MODE, "kat")) { FREE = 1; compute(DATA); FREE = 0; int bad = 0; for (int l = 0; l <= LMAX; l++) for (int s = 0; s <= S0MAX; s++) { double ex = (l == s && l <= WMAX) ? pow(FAC[l], 3) / pow(DIM[l], 3) : 0; if (fabs(ZRES[l][s] - ex) > 1e-10 * (1 + ex)) bad++; }
     double Z = Zof(), ew = Eloop(1), ep = Eplaq(1); if (fabs(Z - 1) > 1e-10 || fabs(ew - 2 * pow(A[1], 4)) > 1e-10 || fabs(ep - 2 * A[1]) > 1e-10) bad++;
@@ -154,4 +166,28 @@ int main(int argc, char **argv) {
     for (int ai = 6; ai < argc; ai++) { double eps = atof(argv[ai]); quat dd[200]; for (int i = 0; i < NOUT; i++) { double r = sqrt(nv[i][0] * nv[i][0] + nv[i][1] * nv[i][1] + nv[i][2] * nv[i][2]); double a = eps * r; quat q = { cos(a), r > 0 ? sin(a) * nv[i][0] / r : 0, r > 0 ? sin(a) * nv[i][1] / r : 0, r > 0 ? sin(a) * nv[i][2] / r : 0 }; dd[i] = q; }
       compute(dd); double w11 = Eplaq(1) / 2, w22 = Eloop(1) / 2; printf("G42-NEAR eps=%g dW(1,1) = %+.6e (/eps^2 %+.6f) dW(2,2) = %+.6e (/eps^2 %+.6f) (sector traces real to %.1e) (%.1f s)\n", eps, w11 - w11o, (w11 - w11o) / (eps * eps), w22 - w22o, (w22 - w22o) / (eps * eps), RELIM, now() - t0); fflush(stdout); }
     return 0; }
+  if (!strcmp(MODE, "flow")) { /* the one-step map iterated at the ordered datum: beta <- beta_eff(2a), each step at the same caps (the weight re-made at the new beta) */
+    int nstep = argc > 6 ? atoi(argv[6]) : 8; double b = BETA;
+    for (int k = 1; k <= nstep; k++) { BETA = b; for (int s = 0; s < 40; s++) { A[s] = bessel(s + 1, BETA) / bessel(1, BETA); FAC[s] = (s <= WMAX) ? (s + 1) * A[s] : 0; }
+      double mw = 1e9; for (int j = 0; j <= 4000; j++) { double th = PI * j / 4000; quat V = { cos(th), sin(th), 0, 0 }; double v = wgt(V); if (v < mw) mw = v; } if (mw <= 0) { printf("G42-FLOW step %d at beta %.6f: the truncated weight is not positive -- stop\n", k, b); break; }
+      compute(DATA); double w22 = Eloop(1) / 2, nb = beff(w22); printf("G42-FLOW WMAX=%d step %d: beta_in %.6f -> beta_eff %.6f (ratio %.4f; W(2,2) %.9f; chars", WMAX, k, b, nb, nb / b, w22); for (int a = 0; a <= LMAX; a++) printf("%s%.6f", a ? "," : " ", Eloop(a)); printf(") (%.1f s)\n", now() - t0); fflush(stdout); b = nb; if (b < 0.02) break; }
+    return 0; }
+  if (!strcmp(MODE, "blockrow")) { /* g34's blockrow: the 104 outside links in classes under the square's 64-element group, one representative per class, rotations g = (cos a, sin a, 0, 0) on a grid */
+    int ops[64][5], no = 0; for (int rot = 0; rot < 4; rot++) for (int sw = 0; sw < 2; sw++) for (int sz = -1; sz <= 1; sz += 2) for (int st = -1; st <= 1; st += 2) for (int zt = 0; zt < 2; zt++) { if (DLAT == 3 && (st < 0 || zt)) continue; ops[no][0] = rot; ops[no][1] = sw; ops[no][2] = sz; ops[no][3] = st; ops[no][4] = zt; no++; }
+    long long key[200]; for (int i = 0; i < NOUT; i++) { int p[4], q[4]; memcpy(p, OUTB[i], sizeof p); memcpy(q, p, sizeof q); q[OUTD[i] - 1]++; long long best = -1;
+      for (int o = 0; o < no; o++) { int a[2][4]; int *src[2] = { p, q }; for (int t = 0; t < 2; t++) { int x = src[t][0], y = src[t][1], z = src[t][2], w = src[t][3]; if (ops[o][1]) { int tt = x; x = y; y = tt; } for (int r = 0; r < ops[o][0]; r++) { int nx = 2 - y, ny = x; x = nx; y = ny; } z *= ops[o][2]; w *= ops[o][3]; if (ops[o][4]) { int tt = z; z = w; w = tt; } a[t][0] = x; a[t][1] = y; a[t][2] = z; a[t][3] = w; }
+        long long k1 = ((a[0][0] + 4) * 16 + (a[0][1] + 4)) * 256 + (a[0][2] + 4) * 16 + (a[0][3] + 4), k2 = ((a[1][0] + 4) * 16 + (a[1][1] + 4)) * 256 + (a[1][2] + 4) * 16 + (a[1][3] + 4); long long k = k1 < k2 ? k1 * 100000 + k2 : k2 * 100000 + k1; if (best < 0 || k < best) best = k; }
+      key[i] = best; }
+    int ncls = 0; long long ck[200]; int csz[200], crep[200]; for (int i = 0; i < NOUT; i++) { int c; for (c = 0; c < ncls; c++) if (ck[c] == key[i]) break; if (c == ncls) { ck[ncls] = key[i]; csz[ncls] = 0; crep[ncls] = i; ncls++; } csz[c]++; }
+    printf("G42-BROW-CENSUS beta=%g WMAX=%d: the %d outside links in %d classes (sizes", BETA, WMAX, NOUT, ncls); for (int c = 0; c < ncls; c++) printf("%s%d", c ? "," : " ", csz[c]); printf(")\n");
+    compute(DATA); double w22o = Eloop(1) / 2, w11o = Eplaq(1) / 2; double c0[16]; for (int a = 0; a <= LMAX; a++) c0[a] = Eloop(a);
+    int nang = argc - 6; double ang[64]; for (int i = 0; i < nang; i++) ang[i] = atof(argv[6 + i]); if (nang == 0) { nang = 12; for (int i = 0; i < 12; i++) ang[i] = 15 * (i + 1); }
+    double R22 = 0, R11 = 0, T22 = 0;
+    for (int c = 0; c < ncls; c++) { int lk = crep[c]; double m22 = 0, m11 = 0, t22 = 0, a22 = 0;
+      for (int ai = 0; ai < nang; ai++) { double a = ang[ai] * PI / 180; quat g = { cos(a), sin(a), 0, 0 }; quat dd[200]; memcpy(dd, DATA, sizeof(quat) * NOUT); dd[lk] = qmul(g, DATA[lk]); compute(dd);
+        double w22 = Eloop(1) / 2, w11 = Eplaq(1) / 2; double tv = 0; int NQ2 = 720; for (int qq = 0; qq < NQ2; qq++) { double th = PI * (qq + 0.5) / NQ2, s = 0; for (int l = 0; l <= LMAX; l++) s += (Eloop(l) - c0[l]) * sin((l + 1) * th) / sin(th); tv += fabs(s * (2 / PI) * sin(th) * sin(th)); } tv *= 0.5 * PI / NQ2;
+        if (fabs(w22 - w22o) > m22) { m22 = fabs(w22 - w22o); a22 = ang[ai]; } if (fabs(w11 - w11o) > m11) m11 = fabs(w11 - w11o); if (tv > t22) t22 = tv; }
+      R22 += csz[c] * m22; R11 += csz[c] * m11; T22 += csz[c] * t22;
+      printf("G42-BROW-CLASS beta=%g WMAX=%d class %d (%d links, rep %d = (%d,%d,%d,%d:%d)): sup |dW(2,2)| %.6f at %g deg, TV(loop law) %.6f; sup |dW(1,1)| %.6f (%.1f s)\n", BETA, WMAX, c, csz[c], lk, OUTB[lk][0], OUTB[lk][1], OUTB[lk][2], OUTB[lk][3], OUTD[lk], m22, a22, t22, m11, now() - t0); fflush(stdout); }
+    printf("G42-BROW-ROW beta=%g WMAX=%d datum=ordered: THE BLOCKED LOOP'S ROW sum |class| x sup |dW(2,2)| = %.6f, in TV %.6f; THE PLAQUETTE'S ROW (first moment) %.6f; W(2,2) = %.6f, W(1,1) = %.6f (%.1f s)\n", BETA, WMAX, R22, T22, R11, w22o, w11o, now() - t0); return 0; }
   fprintf(stderr, "unknown mode %s\n", MODE); return 1; }

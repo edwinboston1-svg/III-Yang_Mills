@@ -1,0 +1,13 @@
+G42-KAT representations to spin 5/2 (GENINV=1) [MET]
+G42-KAT RULE29 (6750 points) [MET]
+G42 beta=2.2 MODE=blockrow WMAX=4 caps loop=4 face0=5; a_1=0.464479 a_2=0.155493; the truncated weight's minimum 0.086769
+G42-BROW-CENSUS beta=2.2 WMAX=4: the 104 outside links in 8 classes (sizes 4,8,8,16,32,16,4,16)
+G42-BROW-CLASS beta=2.2 WMAX=4 class 0 (4 links, rep 0 = (1,-1,0,0:2)): sup |dW(2,2)| 0.038368 at 150 deg, TV(loop law) 0.037632; sup |dW(1,1)| 0.022530 (34.6 s)
+G42-BROW-CLASS beta=2.2 WMAX=4 class 1 (8 links, rep 1 = (0,-1,0,0:1)): sup |dW(2,2)| 0.021927 at 135 deg, TV(loop law) 0.021716; sup |dW(1,1)| 0.022639 (74.0 s)
+G42-BROW-CLASS beta=2.2 WMAX=4 class 2 (8 links, rep 2 = (0,-1,0,0:2)): sup |dW(2,2)| 0.021927 at 135 deg, TV(loop law) 0.021716; sup |dW(1,1)| 0.022639 (112.0 s)
+G42-BROW-CLASS beta=2.2 WMAX=4 class 3 (16 links, rep 3 = (1,0,0,0:3)): sup |dW(2,2)| 0.041736 at 150 deg, TV(loop law) 0.040843; sup |dW(1,1)| 0.044821 (155.2 s)
+G42-BROW-CLASS beta=2.2 WMAX=4 class 4 (32 links, rep 4 = (0,0,1,0:1)): sup |dW(2,2)| 0.021927 at 135 deg, TV(loop law) 0.021716; sup |dW(1,1)| 0.022639 (190.7 s)
+G42-BROW-CLASS beta=2.2 WMAX=4 class 5 (16 links, rep 5 = (0,0,0,0:3)): sup |dW(2,2)| 0.036885 at 150 deg, TV(loop law) 0.036186; sup |dW(1,1)| 0.038416 (212.6 s)
+G42-BROW-CLASS beta=2.2 WMAX=4 class 6 (4 links, rep 15 = (1,1,0,0:3)): sup |dW(2,2)| 0.011253 at 165 deg, TV(loop law) 0.011117; sup |dW(1,1)| 0.050716 (236.3 s)
+G42-BROW-CLASS beta=2.2 WMAX=4 class 7 (16 links, rep 16 = (0,1,1,0:1)): sup |dW(2,2)| 0.003054 at 150 deg, TV(loop law) 0.003034; sup |dW(1,1)| 0.029142 (252.2 s)
+G42-BROW-ROW beta=2.2 WMAX=4 datum=ordered: THE BLOCKED LOOP'S ROW sum |class| x sup |dW(2,2)| = 2.557799, in TV 2.518368; THE PLAQUETTE'S ROW (first moment) 3.177693; W(2,2) = 0.414501, W(1,1) = 0.705066 (252.2 s)

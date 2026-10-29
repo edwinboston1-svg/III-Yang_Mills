@@ -83,6 +83,8 @@ YMM2 p. 1: title "Curvature observables, dynamics, and conditional confinement i
 
 Arisue–Tabata: arXiv hep-lat/9407023, *Nucl. Phys.* B435 (1995) 555–566 (journal reference read from the arXiv record). The remaining classical references (Lüscher 1977, Jentzsch 1912, Dobrushin 1956, Gelfand 1941, Sylvester 1852, Wegner 1971, Glimm–Jaffe 1987) are cited by their standard bibliographic data.
 
+Section 8.3 (revision 6, 29 October 2026) cites Dobrushin's comparison theorem: R. L. Dobrushin, "Prescribing a system of random variables by conditional distributions", *Theory Probab. Appl.* 15 (1970), 458–486, in the form of Theorem 8.20 of H.-O. Georgii, *Gibbs Measures and Phase Transitions*, 2nd ed., de Gruyter, 2011. Theorems 8.4 and 8.6 and Proposition 8.5 are proved on the page from that theorem and rest on no record.
+
 ## 9. Records of Edwin Boston III
 
 | Result in *The Ground* | Record | Run of record | Commit |

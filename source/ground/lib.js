@@ -121,11 +121,11 @@ function Thm(label, title, statementParas) {
 }
 
 // Proof: paragraphs; the first begins with "Proof." and the last ends with the tombstone.
-function Proof(paras, label = 'Proof') {
+function Proof(paras, label = 'Proof', open = false) {
   const list = Array.isArray(paras) ? paras : [paras];
   return list.map((m, k) => {
     const head = k === 0 ? [new TextRun({ text: label + '. ', italics: true, size: BODY, font: FONT })] : [];
-    const tail = k === list.length - 1 ? [new TextRun({ text: ' ∎', size: BODY, font: FONT })] : [];
+    const tail = (k === list.length - 1 && !open) ? [new TextRun({ text: ' ∎', size: BODY, font: FONT })] : [];
     return new Paragraph({
       children: [...head, ...runs(m), ...tail],
       alignment: AlignmentType.JUSTIFIED,

@@ -1,0 +1,40 @@
+# THE CROSSING — the open part of the four-dimensional mass gap, stated at its sharpest
+
+Edwin Boston III · 29 October 2026, 04:0x EDT · a working page of the repository, dated before its measurements were taken.
+
+THE GROUND proves (Theorem 8.5) that the mass gap of every limit point of a construction of the corpus's kind follows from two finite statements about one block at a fixed physical scale: Hypothesis I, that the blocked measure's coarse variables satisfy Dobrushin's condition with an exponential weight, and Hypothesis II, that the field inside a block clusters at the block scale. It proves (Theorem 8.7) that at strong coupling, β ≤ 0.2452 for the SU(2) Wilson theory on ℤ⁴, the lattice theory has a mass gap in infinite volume. Between 0.2452 and the crossover, where the blocked measure of the construction has effective coupling near 2.3, nothing is proved. This page states exactly what is missing and prices the roads to it.
+
+## 1. The inequality is group-blind, and that is correct; the group enters through the evaluation
+
+Dobrushin's uniqueness theorem and its finite-volume forms (Dobrushin–Shlosman) hold for every compact single-spin space and every finite-range specification. Theorem 8.5 is of that kind. A test stated in §8.3 of the paper (the U(1) test) rules out any *inequality* that would produce a gap from group-blind data, because the four-dimensional U(1) theory has no gap at weak coupling (Guth; Fröhlich–Spencer). The resolution is that Hypothesis I is not group-blind data: it is a quantity *evaluated* on the measure, and the evaluation sees the group.
+
+The weight is what makes it see the gap. Write b_V(x, y) for the influence of one outside variable y on the marginal at x of the block measure on V. In the U(1) Coulomb phase the field-strength response decays as |x − y|⁻⁴, so the unweighted block sum Σ_{x∈V} Σ_{y∉V} b_V(x, y) is of order L³ log L against the block's volume L⁴: the unweighted finite-volume criterion holds there for large L, and it yields what the Coulomb phase has, a unique Gibbs measure with power-law correlations. The weighted sums Σ_{y} b(x, y) e^{κ|x−y|} diverge for every κ > 0. Hypothesis I carries the weight; that is why it is a hypothesis about the gap and why its evaluation separates SU(2) from U(1).
+
+Consequently the open problem is not a missing inequality. It is the evaluation of Hypothesis I, with certification, at a coupling where no expansion converges.
+
+## 2. The price of a certified evaluation at the crossover
+
+The only certified evaluations in reach expand each plaquette weight in characters, exp((β/2) tr U) = Σ_j (2j+1) (2/β) I_{2j+1}(β) χ_j(U), truncate at a spin j_max with a certified tail, and integrate the block's interior links by orthogonality in the spin-network basis. The relative weights (2j+1) I_{2j+1}(β)/I₁(β) at β = 2.3 are 1, 0.93, 0.47, 0.16, 0.042, 0.0085, 0.0014 for 2j = 0, …, 6; a block of side 4 has 1,536 plaquettes, so a relative truncation error of 10⁻⁵ per plaquette, j_max ≈ 5, is needed before the block's weight is known to one per cent. A cut through a side-4 block crosses 64 links; with eleven spins per link the cut carries of the order of 10⁶⁶ states before the gauge constraint, and the constraint does not bring it within reach. For the block of side 2 at j ≤ 1 the cut state space is of the order of 10⁶ (sized by the ΠΕΝΤΑΠΥΛΟΝ seat from the 3-cube's 504 cut states at j ≤ 1), and at β = 2.3 the truncation j ≤ 1 discards 0.16 of the first plaquette's weight: that block is certifiable only up to β ≈ 1.
+
+So the brute-force certification of Hypothesis I at the crossover is out of reach by a factor that no arithmetic closes, and the crossing requires a reduction. The reductions on the table, each with what it costs:
+
+- **(A) The quotient form.** The block's gauge-invariant marginals (its boundary holonomies) are fewer variables than its links, and Dobrushin–Shlosman's criterion on them is the form with room (the link-marginal block criterion, read exactly on the 3-cube, loses to the decimation of Theorem 8.7). It does not change the state count by more than the gauge group's dimension per boundary site.
+- **(B) Typical boundary in place of the worst.** Every finite-volume criterion that implies the gap takes a supremum over outside data. A criterion averaged over typical outside data is what a computation can read, but "weak mixing implies strong mixing" is false in general (the three-dimensional Ising model below its critical temperature has exponential decay with a plus boundary and an interface with a mixed one). What would make it true for a compact gauge field in a phase with no symmetry to break is the missing theorem: a finite-volume, typical-boundary-to-decay theorem for non-abelian gauge theory, without correlation inequalities, with U(1) at weak coupling as its falsifier. It is named here as the object, not claimed.
+- **(C) A correlation inequality.** For abelian groups Ginibre's inequalities give GKS-II for Wilson loops; for SU(2) GKS-II is not known (Conjecture G of the Yang–Mills seat's ledger, falsifiable on an exact finite lattice). Even granted, no Simon–Lieb finite-volume criterion for *truncated* correlations of composite observables follows from it: in the U(1) Coulomb phase the truncated plaquette correlation decays as r⁻⁸ while the boundary sum of any box vanishes with its side, so such a criterion would fire and conclude falsely there. An inequality route must be stated for untruncated loop expectations and checked against U(1) before it is written.
+- **(D) The centre.** The one mechanism that exists for SU(2) and not for U(1) is the centre ℤ₂ (Mack–Petkova; Tomboulis–Yaffe). Every rigorous use of it to date gives bounds at strong coupling or at finite temperature, and the one every-coupling argument (Tomboulis 2007) was found by Ito and Seiler to rest on a matching step provable only where the high-temperature expansion converges. A rigorous centre mechanism at the crossover would be the discovery.
+
+## 3. The measurement: where Hypothesis I holds in truth, and by how much
+
+What can be read tonight is not a certificate but the size of the object the certificate must cover. The instrument `records/second-road/blockresponse.py` (Monte Carlo, Kennedy–Pendleton heat bath for SU(2), the exact von Mises heat bath for U(1); not a certified computation) reads, in a box of side L with its boundary links frozen to a typical configuration of the periodic measure, the linear response of every interior plaquette near the centre to a rotation of every boundary link, J(x, y) = ‖Cov(P_x, ∂_y S)‖, and prints the profile R(r) of J against the distance, the fitted decay, and the weighted row sums Σ_y J(x, y) e^{κ d(x,y)} at the centre for κ = 0, 1/2, 1.
+
+**Staked before the run (04:0x EDT):**
+- S1. SU(2) at β = 2.3: R(r) decays exponentially; the fitted rate lies in [1.0, 1.8] per lattice spacing (the scalar glueball at this coupling has mass ≈ 1.4 a⁻¹).
+- S2. U(1) at β = 1.2: R(r) decays as a power; the fitted exponent lies in [3, 5] (the photon's field-strength response, r⁻⁴).
+- S3. Known answers: the periodic plaquette ⟨½ tr U_p⟩ at β = 2.3 lies in [0.59, 0.61]; ⟨cos φ_p⟩ at β = 1.2 lies in [0.75, 0.82].
+- S4. The weighted row sums at the centre: UNGUESSED; printed as read.
+
+What the reading decides: the side L* at which the weighted sum of SU(2) at the crossover falls below one is the size of the certified computation the crossing needs; the largest block certifiable tonight is side 2 at β ≤ 1. The distance between the two is the crossing, measured in the only honest unit.
+
+## 4. What is not claimed
+
+No gap is claimed above β = 0.2452. The measurements of §3 are readings. The theorem named in (B) is not proved; the conjecture named in (C) is not proved; the mechanism named in (D) is not made rigorous here.

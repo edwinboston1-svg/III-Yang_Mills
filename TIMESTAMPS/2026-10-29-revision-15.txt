@@ -1,0 +1,21 @@
+THE GROUND, revision 15, and OPEN/the-crossing.md (Edwin Boston III)
+Repository: https://github.com/edwinboston1-svg/III-Yang_Mills
+Manifest written 2026-10-29T08:07:24Z by the local clock.
+
+git commits (SHA-1 object names):
+  b90869c060bad7a5695aa8745eed3bf14dd8ebfd  2026-10-29T04:07:17-04:00  THE GROUND, revision 15 (Edwin Boston III, 2026-10-29 04:07 EDT): the open part
+  fb6c629e653e044696f209748ba4f4c06350dbfe  2026-10-29T04:00:54-04:00  OPEN: the crossing stated at its sharpest, with its measurement staked before t
+  78bb107b5997386dee14d645ad05034de15f9e39  2026-10-29T03:56:18-04:00  RECORDS: the fourth-order law of the cube held at all five staked couplings (Ed
+  af2c2499d45d155d2c627df539bcd3125f55f6e2  2026-10-29T03:46:33-04:00  RECORDS: the falsifier of Theorem 8.7 from below held at both coefficients; the
+  6710e05bec0dd0909edf97d1fa848771ca670807  2026-10-29T03:40:52-04:00  TIMESTAMPS: an OpenTimestamps proof of revision 14 (Edwin Boston III, 2026-10-2
+  1a41672e980c8adbfc320a9568d402aec6342cd0  2026-10-29T03:40:14-04:00  THE GROUND, revision 14 (Edwin Boston III, 2026-10-29 03:4x EDT): Section 6.6 r
+
+SHA-256 of the files at commit b90869c060bad7a5695aa8745eed3bf14dd8ebfd:
+  6ab294f731767a04b13d1be474f743e8d1e1e53a3c79075e6f17a2000a9dd142 *THE-GROUND-Edwin-Boston-III.pdf
+  3ec326afba101c7661ac73b954ccc212b17eb49222b8c4e288bb7456e3e7db66 *THE-GROUND-Edwin-Boston-III.docx
+  036eefeee9ef2224f85b56323c98ba5939bb3548f571cf672d6d82537aee29d9 *README.md
+  8e55dfaff340846c47e916ba315100864579f11e818c39e11a0bde4a16e6c632 *SOURCES.md
+  e1c653201f5670836f974d6a66d2a5639d37c1afdc51ab69b1efeeb8fa1b2401 *ARXIV.md
+  ad9746cae83196f970cac738afd9141fa8cf0210302e1a428b21c1c0a5b97bde *OPEN/the-crossing.md
+  574eea279eb7fa48694284bf1d9577eb7091836629bff2a95eae5e4f46fa2e43 *source/ground/content4.js
+  64a40e1749747f962f059710067738d3e377615564aa9628783cdf2857e8093a *records/second-road/blockresponse.py

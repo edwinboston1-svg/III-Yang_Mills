@@ -1,0 +1,6 @@
+G39-U1 beta=0.5 ordered W(1,1) W(1,2) W(2,1) W(2,2) = 0.491729258 0.305342911 0.305342911 0.180243940; the largest W(near datum) - W(ordered) over 48 data: -1.262e-04 -1.979e-04 -1.805e-04 -2.080e-04 [ORDERED-MAXIMAL]
+G39-U1 beta=1.0 ordered W(1,1) W(1,2) W(2,1) W(2,2) = 0.760504555 0.635473769 0.635473769 0.512543679; the largest W(near datum) - W(ordered) over 48 data: -5.538e-05 -1.131e-04 -1.035e-04 -1.829e-04 [ORDERED-MAXIMAL]
+G39-U1 beta=2.0 ordered W(1,1) W(1,2) W(2,1) W(2,2) = 0.883753822 0.814206085 0.814206085 0.736073386; the largest W(near datum) - W(ordered) over 48 data: -2.538e-05 -5.741e-05 -4.957e-05 -1.177e-04 [ORDERED-MAXIMAL]
+G39-SU2 beta=0.5 ordered W(1,1) W(2,2) = 0.171006356 0.006800851; the largest W(near datum) - W(ordered) over 48 data: -1.760e-04 -4.255e-05 [ORDERED-MAXIMAL]
+G39-SU2 beta=1.0 ordered W(1,1) W(2,2) = 0.412047272 0.100350355; the largest W(near datum) - W(ordered) over 48 data: -2.709e-04 -2.793e-04 [ORDERED-MAXIMAL]
+G39-SU2 beta=2.2 ordered W(1,1) W(2,2) = 0.647959890 0.315339750; the largest W(near datum) - W(ordered) over 48 data: 1.053e-04 1.968e-05 [A-DATUM-BEATS-ORDERED]

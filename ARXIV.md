@@ -8,7 +8,7 @@ The paper is ready to post as a PDF submission; its content is complete at every
 
 **Primary category.** math-ph (Mathematical Physics). **Cross-lists.** hep-lat (High Energy Physics – Lattice), math.PR (Probability).
 
-**Comments field.** 40 pages (revision 15 of 29 October 2026; the page count follows the current PDF). The generator of the document, the evidence register, the kernel record and the records of the computations are at https://github.com/edwinboston1-svg/III-Yang_Mills.
+**Comments field.** 40 pages (revision 16 of 29 October 2026; the page count follows the current PDF). The generator of the document, the evidence register, the kernel record and the records of the computations are at https://github.com/edwinboston1-svg/III-Yang_Mills.
 
 **Abstract.** The abstract is the paragraph on the paper's title page (also the second paragraph of README.md); paste it as it stands.
 

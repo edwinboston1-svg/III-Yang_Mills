@@ -1,6 +1,6 @@
-# ΑΠΕΡΑΝΤΟΝ ledger §74 bis, §83 quater–quinquies, §90–§92 septies — the one-doubling unit, candidate B's refutation, Fontes's constants re-derived
+# ΑΠΕΡΑΝΤΟΝ ledger §74 bis, §83 quater–quinquies, §90–§95 — the one-doubling unit, candidate B's refutation, Fontes's constants re-derived, Σ1b, the fixed-point log lemma, the distance in renormalisation steps
 
-Extracted verbatim from STDLIB/data/paraggelma/project_iii_aperanton_master_plan_after_the_reboot_of_2026_10_27.md on 2026-10-29 05:52 (the desktop seat b10e8d4b). Time labels are this machine's `date +%H:%M` (EDT). Instruments: STDLIB/scripts/aperanton_fontes_{hessian,peierls,christoffel}.awk with records STDLIB/build/aperanton/fontes_*.2026-10-29a.txt; the KP balance kp_floor.awk in the seat's scratchpad.
+Extracted verbatim from STDLIB/data/paraggelma/project_iii_aperanton_master_plan_after_the_reboot_of_2026_10_27.md on 2026-10-29 06:55 (the desktop seat b10e8d4b). Time labels are this machine's `date +%H:%M` (EDT). The ledger is append-only: §92 quinquies' "8.2 doublings of β" stands as written and is corrected by §95 (≈ 261 renormalisation steps from β ≈ 70).
 
 §83 quater — BAŁABAN FROM THE PAGE (iii-3a, two readings, 05:18; file D4-BALABAN-THE-PAGES.md in that seat's scratchpad). THE
 MAP IS EXACT: CMP 109 p. 252, (0.2): "A^ε(U) = Σ_p ε^{d−4}[1 − Re tr U(∂p)], where tr is the normalized trace, i.e. tr 1 = 1",
@@ -287,3 +287,130 @@ z) and the free choice of θ* — both his, used right.
 §92 sexies — (b) READ AT ITS PROOF: THE ACTIVITY BOUND IS ASYMPTOTIC, NOT A BOUND (05:50; ym_v65.tex lines 5236–5340). His Lemma (Activity bound) is proved in O-notation: the first cumulant "O(g²) per link (parity kills the cubic, leaving quartic at O(1/β))", the second "O(θ*²/(βλ³))", the remainder R₃ "O(g⁶) per link" with an explicit factor e^{O(βθ*)} = e^{O(β^{1/2})} declared "absorbed because g⁶/g⁴ = g² decays faster", the off-diagonal propagator by a Combes–Thomas estimate (1.451/β)e^{−γd}, γ ≥ 0.81; the total "z ≤ C₀θ*²/(βλ_min) + O(1/β^{3/2})" with C₀ = 32/3 said to dominate two sampled vertex terms. No constant in any O(·) is named, and the remainder exponent at the corrected floor is βθ* = 70 × 0.38 = 27 — nothing there is small. So (b) stands as: the KP threshold from a per-link activity z is a theorem (§92 quinquies), the activity bound z = C₀θ*²/(βλ_min) is an ASYMPTOTIC STATEMENT at β → ∞ with every remainder unquantified; at β ≈ 70 it is a conjecture about the block, and the floor ≈ 70 is conditional on it in that strong sense (the remainder could move it far up). THE ANSWER TO THE OPERATOR'S QUESTION, whole: as printed the constants do not work (§92 (6): his own β₀ fails his own Peierls condition); corrected and used right, the one-block split's hypotheses are met at β ≈ 70 PROVIDED the activity bound's remainder and the chessboard constant are quantified — two theorems nobody has written, (c) in iii-3a's hands, (b) a cumulant expansion with constants, days of work; and none of it is a gap (§74). What was done that predecessors had not: the block's true spectrum, the two defects with numbers, the floor as a function of θ* with its balance point.
 
 §92 septies — BOTH CONDITIONS BIND AT θ* = 0.38 (the plan seat, 05:52): the Peierls side of the balance is the one-plaquette marginal μ₁(β, θ*), the OPTIMISTIC reading of the chessboard factor (§92 quater: μ₁ ≤ ρ_μν), so "≈ 70" rests on (c) in BOTH floors, not only in the large-field weight; and at θ* = 0.38 rad the quadratic model's error constant C₀ = 32/3 is used at a plaquette angle fifteen times his 0.025 — (b)'s activity bound as stated must hold at that angle, which §92 sexies found asserted asymptotically and nowhere quantified. The coordinate [0.2452, ≈70] carries both: "(b) at θ* = 0.38 and (c) in both floors outstanding".
+
+§93 — THE STATUS COLUMN CHANGES, THE FACT DOES NOT: BAŁABAN'S THEOREM 2 IS BUILD Σ1b, OURS (06:03; the operator: "The 4D
+gauge paper IS THE PROOF WE'RE MAKING"). The fact of §83 quinquies stands at its strength: LFR II's Theorem 1 (CMP 122, p. 355)
+is ultraviolet stability under the hypothesis 0 < g_k ≤ γ at every scale, and the hypothesis's discharge, CMP 109's Theorem 2,
+was announced in 1987, called "not published yet" in 1989, and is absent from the author's record. What was wrong was the
+column it sat in: not a defect of the citation chain to report, but a theorem of the chain we are writing. Σ1 SPLITS: Σ1a
+Bałaban's Theorem 1, CITED (stability under the sequence hypothesis); Σ1b THEOREM 2, OURS; Σ1c γ EXPLICIT, OURS (the coupling
+at which the ultraviolet half hands over to Σ2 — β_UV = 1/γ² stops being a named unknown and becomes a number this build
+produces). Σ1b IN TWO HALVES. (1) THE EASY HALF — Theorem 2 ⟸ (0.31): with x_k = 1/g_k² and the per-step shift b_{k+1} in
+[c₁, c₂], c₁ > 0, whenever the history stays ≥ 1/γ², truncate b outside that region (every argument replaced by its max with
+1/γ²); the truncated flow is continuous in x₀ and decreases by c₁ to c₂ per step, so the intermediate value theorem on
+x₀ ∈ [X + Kc₁, X + Kc₂] gives x_K = X = 1/g²; monotonicity puts every x_j ≥ X ≥ 1/γ², where the truncation is inactive, so the
+true flow equals it — and 1/g₀² ≥ 1/g² + Kc₁, the bare coupling vanishing as the cutoff goes: ASYMPTOTIC FREEDOM is the
+conclusion's second clause. The shift depends on the whole effective action, not on g_k alone, so the lemma is stated with
+history dependence (b_{k+1} a continuous function of the sequence, bounded where every entry is ≥ 1/γ² — implied by Bałaban's
+causal form); kernel draft LEAN/aperanton/Aperanton/CouplingSequence.lean, compiled when ae releases the slot (after
+VmfBounds). (2) THE HARD HALF — (0.31) itself, in his scheme: (i) the one-loop coefficient per step is 2b₀ ln L + δ_k with δ_k
+→ δ_∞ geometrically (the k-th step's fluctuation covariance is scale-covariant up to the bare action's irrelevant terms), so
+positivity is a statement for L ≥ L₀ and L₀ IS THE FIRST NUMBER THIS BUILD MUST PRODUCE (the asymptotic value per doubling is in
+the tree: Δβ = 4·2b₀ ln 2 = 0.258 in Wilson units, Fontes's δβ and §90's); (ii) the higher-order remainder ≤ C g_k² uniformly in
+k, by Cauchy estimates on Theorem 1's analytic small-field action. Both need his exact objects — the normalization condition
+that defines g_{k+1} from ρ_{k+1}, (0.18) and (0.20) of CMP 109, (0.31) of CMP 116 (iii-3a's two descriptions of (0.31) — "pinning
+1/g_K² = 1/g²" and "the basic inequality of [II]" — reconciled from the page first), Theorem 1's analyticity domain and the norm
+on the remainder, the averaging operator Q — requested from iii-3a, who holds the pages. Bałaban's own word for (0.31)'s proof
+was "awkward and long": the honest cost is days to weeks. THE TWO STANDING FALSIFIERS BESIDE Σ1b: U(1) has ZERO one-loop
+coefficient, so (0.31)'s c₁ > 0 fails there and Theorem 2's conclusion with it — the chain separates the groups exactly at Σ1b,
+the right place; the free massless field has no coupling to run, so (0.31) is vacuous for it. THE SAME REFRAMING THROUGH THE
+CHAIN — every "open piece named, not claimed" becomes a build row with a statement and a falsifier: Σ1d THE CONVERGENCE of the
+gauge-invariant correlation functions as n → ∞ at fixed physical distance (OURS: compactness from Σ1a's uniform bounds plus
+Σ3's uniform decay, uniqueness of the limit by the decay's uniformity; falsifier: two subsequential limits parting on a
+Wilson-loop correlation); Σ5′ EUCLIDEAN INVARIANCE of the limit (OURS: the hypercubic-breaking operators are irrelevant, their
+coefficients O(a²) along the scaling sequence under Σ1a's bounds; falsifier: a rotation-odd correlation surviving the limit);
+Σ1c as above. CORRECTION, dated: §83 quinquies wrote of Magnen–Rivasseau–Sénéor (CMP 155, 1993) "whose completeness the
+literature disputes" — there is no source for that sentence; struck. MRS is UNREAD, a candidate ultraviolet road that may not
+carry a sequence hypothesis of Bałaban's kind, to be read at the page before anything about it enters.
+
+§94 — Σ1b's HARD HALF (i) REDUCED: THE FIXED-POINT LOG LEMMA, AND THE INSTRUMENT AGAINST ITS KNOWN ANSWER (06:36).
+THE INSTRUMENT (STDLIB/scripts/aperanton_oneloop_bg.awk; records oneloop_bg.2026-10-29a/b.txt; the stake in its header written
+before the run). The one-loop background dependence of the SU(2) Wilson fluctuation determinant, unconstrained, on N⁴ with
+antiperiodic fluctuations, background a₂ = ε cos(2πx₁/N), background-covariant Feynman gauge. THE QUADRATIC FORM DERIVED
+(BCH on U_p = e^{iq₁}e^{iq̃₂}e^{−iq̃₃}e^{−iq̃₄}V_p with every fluctuation transported to the base point, V_p = e^{iΦT³}, T = σ/2):
+½Re Tr U_p = cos(Φ/2) − ½ sin(Φ/2)S³ − ⅛cos(Φ/2)|S|² + ¼ sin(Φ/2) Σ_{i<j}(p_i × p_j)³ + O(3), so the quadratic part of
+β(1 − ½Re Tr U_p) is β/8 [cos(Φ/2)(|S³|² + |s|²) − 2 sin(Φ/2) Σ_{i<j} Im(p̄_i p_j)] (s = S¹ + iS², the charged transported
+components p_i), the linear term the background's own source, dropped at one loop. READINGS: the Feynman identity
+M_vec = M_gh ⊗ 1₄ at ε = 0 to 1.8 × 10⁻¹⁵; Δ_N (= β_eff − β) = −1.2099 / −1.3636 / −1.4740 / −1.5595 / −1.6291 at N = 4 / 6 /
+8 / 10 / 12; per doubling 0.2642 (4→8), 0.2655 (6→12), 0.2657 (8→10), 0.2645 (10→12) against the stake 8b₀ ln 2 = 0.2575;
+the ghost part 0.0249 → 0.0239 against its share 0.0234 (one eleventh), the vector part 0.2408 → 0.2406 against 0.2341 (ten
+elevenths); the neutral sector −0.250000 at EVERY N — no charge, no log, the U(1) line exactly. A three-point fit
+A + B ln N + C/N² on N = 8, 10, 12 reads B = −0.3783 against −8b₀ = −0.3715 (1.8 %): the slope sits 2.7 % above the stake
+at N ≤ 12 and has not yet bent toward it; N = 16 running decides whether this is a slow lattice correction (a²p² ln(ap)
+terms) or a defect in the vector sector — the ghost's convergence to its one-eleventh points at the vector's spin term
+if it is a defect. THE STAKE IS NOT YET MET; it is not refuted either.
+
+THE FIXED-POINT LOG LEMMA (the structural reduction, scheme-independent). Let β_{k+1}(0) be the one-loop marginal coefficient
+of the k-th block-spin step (the decrease of 1/g² over the step at zero coupling). (H1) ADDITIVITY: the extraction (0.28)
+assigns zero second moment to the irrelevant remainders V^(j), and at one loop a remainder carried to a coarser scale enters
+no later Gaussian (its Hessian is O(g²) against the classical one), so the K-step one-loop marginal change is exactly
+Σ_{k<K} β_{k+1}(0). (H2) GEOMETRIC CONVERGENCE: the k-th step's free problem is the free Wilson action at spacing ε blocked k
+times, and the Gaussian block-spin map contracts its irrelevant deviations by L^{−2} per step, so β_{k+1}(0) = β_∞ + δ_k with
+|δ_k| ≤ D L^{−2k}. (H3) UNIVERSALITY: the one-loop running between the bare lattice and the unit lattice is
+8b₀ ln(1/ε) + C + o(1) with the universal coefficient (8b₀ = 11/(3π²) for SU(2) in Wilson's — Bałaban's — units; C the two
+ends' scheme constants). THEN β_∞ = 8b₀ ln L EXACTLY: (1/K)Σ_{k<K} β_{k+1}(0) = (1/K)(8b₀ K ln L + C + o(1)) → 8b₀ ln L, and
+the Cesàro mean of a convergent sequence is its limit; and Σ_k δ_k = C. So the hard half's part (i) is NOT "compute β₀(L)":
+its asymptotic value is universal and known, 0.2575 at L = 2; what remains is the TRANSIENT BOUND — inf_k β_{k+1}(0) ≥
+8b₀ ln L − sup_k max(0, −δ_k) > 0, decided by the first step's δ₀(L) (the scheme constant between Wilson's lattice and the
+block scale, bounded uniformly in L as L → ∞) and D L^{−2} for the rest. THE SIGN THE UNCONSTRAINED READING SUGGESTS:
+−Δ_N = 8b₀ ln N + 0.70 + O(N⁻²) — the decrease of 1/g² from Wilson's cutoff to the box scale EXCEEDS the bare log by a
+positive constant, i.e. Wilson's lattice coupling is weak against an infrared scheme (Λ_W small, as Hasenfratz–Hasenfratz
+found for MS-bar); if the block scheme's δ₀(L) has the same sign, β₁(0) > 8b₀ ln L and positivity holds at EVERY L ≥ 2 — a
+reading by analogy, not the block scheme's number, which the constrained instrument computes next (log Z = −log det M −
+log det(Q̃M⁻¹Q̃†) + const for the charged field, the ghost restricted to zero block averages). THE FALSIFIERS: U(1) has
+b₀ = 0, so β_∞ = 0 and c₁ > 0 fails — the chain refuses U(1) at Σ1b by the lemma itself; the free massless field has no
+coupling to run. WHERE THE ONE-LOOP DETERMINANT SITS IN HIS BOOKKEEPING — inside β_{j+1} through E^(j+1), or in the
+log Z^(j) brackets of (1.3) — is to be read from the page (the plan seat): the lemma concerns the total marginal change per
+step, which (0.31) requires to be logarithmic, so it must reach β_{j+1}.
+
+§94 bis — THE INSTRUMENT AT N = 16, ITS APPROACH STAKED, AND (c) CONVERTED (06:39). N = 16: Δ = −1.738271 (vector −1.445118,
+ghost −0.043153, neutral −0.25). Per doubling 12→16: total 0.2630, vector 0.2396, ghost 0.0234 — THE GHOST MEETS ITS SHARE
+0.0234 EXACTLY. The total and the vector approach their stakes as the standard lattice artifact (a + b ln N)/N²: with the
+asymptote FIXED at the stake and the two parameters fitted on 8→10 and 10→12, the fit PREDICTED 12→16 at 0.2629 (total) and
+0.2396 (vector) and the run read 0.2630 and 0.2396; the free three-point fit puts the asymptote at 0.2579 against 0.2575.
+THE STAKE FOR N = 20, written before the run: 16→20 per doubling 0.2615 total (in [0.2605, 0.2625]) and 0.2384 vector (in
+[0.2374, 0.2394]); the ghost 0.0234 ± 0.0005. A miss outside the bands reopens the vector sector's spin term.
+
+(c), THE CHESSBOARD CONSTANT, iii-3a'S (its scripts c_jd.py, c_kcheck.py, c_klimit.py on that seat): (α) EXACT and free of θ*:
+ρ_A(β,θ*) ≤ e^{−s}K_A(β), s = β(1 − cos θ*), K_A(β) = (e^{β|A|}Z_{Λ∖A}/Z)^{1/|A|} = exp ∫₀^β E_A(t)dt ≥ 1 — on the disseminated
+event every A-plaquette has cos θ_p ≤ cos θ*, so Z_bad(A) ≤ e^{β|A| cos θ*}Z_{Λ∖A}; (β) the Gaussian-limit value K_∞ =
+exp[(3/2)(J₄ − J₂)] = 3.4911 (J₄ = 1.9997076, J₂ = 4G/π met to twelve digits), degree ZERO in βθ*² — the event is realised by
+the free ρσ-constant flux mode, so no s^{1/2} prefactor; (γ) the rigorous upper half PROVED (temporal gauge outside (μν):
+Z_{Λ∖A}e^{−β(N−|A|)} ≤ I(β)^{3|Λ|(1−1/L)}, I(β) = 2I₁(β)e^{−β}/β), the lower half Z e^{−βN} ≥ (the Gaussian value per site)
+(1 − o(1)) THE RESISTING LINE (a tree-gauge Gaussian trial has variances growing along the tree; a Lorenz-type trial needs the
+SU(2) gauge-orbit entropy with explicit constants); if attained, K ≤ e^{3J₄}·1.0006 = 403 for the full class, 403⁴ for an
+index-4 orbit. Fontes's K = 1 is unreachable (K_A ≥ 1, → 3.49): his proof compares with the vacuum weight and drops the
+entropy. CONVERTED, with the KP balance of §92 quinquies (β > 473θ*², Peierls β > s_c/(1 − cos θ*), s_c = ln(20e·K), θ* below
+the Christoffel edge 0.5636): K = 1 (his eq. chess, refuted) 61.8 at θ* = 0.362; K = 3.49 (the Gaussian limit) β_SF = 70.9 at
+θ* = 0.387; K = 403 (the full class, the ceiling route) 98.1 at 0.455; K = 403⁴ (an index-4 orbit) 181.0 at the edge 0.5636.
+THE ONE-BLOCK FLOOR OF RECORD: β_SF ∈ [70.9, 98.1] for the full (μν) class (iii-3a's orbit construction, even L, site-plane
+reflections in-plane and link-plane reflections transverse), 181 for an index-4 orbit — each conditional on the lower half of
+(γ) and on (b) at that θ*; the earlier 69.9 (the marginal μ₁ as the Peierls factor) is superseded by the chessboard form.
+
+§95 — THE DISTANCE CORRECTED: ≈ 260 RENORMALISATION STEPS, NOT "8.2 DOUBLINGS", AND WHAT THE COUNT DECIDES ABOUT THE PROOF'S
+SHAPE (06:54; the operator relayed a side agent's note: "The crossing is about 260 zoom steps, not 8"; law 18 on §92
+quinquies and §92 bis, whose "[0.2452, ≈ 70] — 8.2 doublings of β" stands as written above and is corrected here). THE
+CORRECTION: 8.2 = log₂(70/0.2452) counts doublings of the coupling VALUE. The proof's unit is the renormalisation step (the
+lattice spacing doubles), and its count is the integral over the β-function: dβ/d ln(1/a) = 8b₀ + 32b₁/β = 0.3715 + 0.058/β
+for SU(2) in Wilson's units (b₀ = 11/(24π²), b₁ = 17/(96π⁴)·… — the two-loop term 6 % at β = 2.5, negligible at 70), so
+the perturbative stretch [2.5, β_UV] is (β_UV − 2.5)/0.2575 steps to within that correction: ≈ 262 from the conditional
+one-block floor 70, ≈ 689 from 180, ≈ 111 from 31 — a length-scale ratio 2^262 ≈ 10^79 from 70. Below β ≈ 2.5 the
+effective coupling falls into the strong-coupling disk in 2–4 steps (iii-38's matched c₁ ≈ 0.6 one step below 2.2, ≈ 0.12
+two steps below). THE COUNT AND THE ARCHITECTURE: (1) A per-step CONTRACTION (candidate B, every sup-metric block criterion)
+must keep ∏ρ_k bounded over the steps; in the perturbative region the coarse correlation length ξ_k ≫ 1 in coarse units, so
+every Dobrushin-type coefficient is order one or larger there BY PHYSICS — §91's ×1.8–2.1 per step is the expected reading,
+and a sup-metric contraction is the wrong shape for that stretch entirely. (2) An INVARIANT-preserving argument (Bałaban's
+inductive bounds) is indifferent to the count: the irrelevant remainder obeys E_{k+1} ≤ L^{−α}E_k + c g_k², a stationary
+balance E_k ≤ cγ²/(1 − L^{−α}) at every k; the marginal coupling is a sum, and CouplingSequence.lean's profile (0.31) holds
+for any K. Errors do not compound. (3) The wall is therefore the COUPLING at which the invariant's hypotheses fail, not the
+number of steps: the large-field regions must stay dilute per cell at each scale — per-plaquette Peierls with entropy
+e·20 = 54.4 and chessboard factor K ≥ 1 needs β_k(1 − cos θ*) > ln(54.4K) ≈ 5.25 with θ* below the Christoffel edge 0.5636,
+i.e. β_k ≳ 34 at best (the edge), 70–98 at the KP balance; physically the large fields (center vortices) become dense near
+β_k ≈ 2.5, where confinement sets in, so ANY dilute-large-field method stops above that and the description must change in
+[2.5, ~30]. (4) THE TWO STRETCHES MEET ONE MISSING OBJECT: in the perturbative tail (Σ2P, [~2.5, β_UV], hundreds of steps) the
+large-field regions must be weighed by their probability when they are no longer exponentially rare; in the strong bridge
+(Σ2N, [0.2452, ~2.5], 2–4 steps, where a per-step factor ≤ ~3 is affordable) the frustrated boundary data must be weighed by
+their measure rather than their supremum (iii-38's 0.649 at the cancelling datum, 11× the symmetric response). Stated once:
+a multi-scale treatment of large fields by probability, valid from dilute to dense. Every candidate from here states which
+stretch it addresses, beside its U(1) line and its free-field line. The ε-test of the instrument (§94): Δ₈ identical to six
+digits at ε = 0.005, 0.01, 0.02 — no odd-order bias in the Richardson step.

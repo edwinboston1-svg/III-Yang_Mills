@@ -1,0 +1,23 @@
+THE GROUND, revision 18, and the OPEN pages through 918d4ad (Edwin Boston III)
+Repository: https://github.com/edwinboston1-svg/III-Yang_Mills
+Manifest written 2026-10-29T09:06:49Z by the local clock.
+
+  918d4ad378d6510bb97055c27a3d4f58b1b4d40c  2026-10-29T05:06:43-04:00  THE GROUND, revision 18 (Edwin Boston III, 2026-10-29 05:06 EDT): the ultraviol
+  c67dc571301b535dbfd7da302ff05f2e3f75a6e4  2026-10-29T04:56:05-04:00  STATUS: six of the seven chain files compile clean; gate run ae launched at 04:
+  dd54269f09bb0fc09c434cf9da40405409607e07  2026-10-29T04:46:54-04:00  OPEN: the centre route read at the page level (Tomboulis, Ito-Seiler, the reply
+  ab2c8bc0206c040514d46b51a00bf1fd50f1a805  2026-10-29T04:45:35-04:00  OPEN: D1, the one-step inequality stated with its two checks -- the resolvent b
+  b051f136bc657b9b390e8b70564bd70fbf480947  2026-10-29T04:39:04-04:00  RECORDS: the crude certificate for the kernel closes at beta = 0.160, refuting 
+  ea7ffa3a7fe3ca05a0f98ed3e0662102aa30a22e  2026-10-29T04:37:25-04:00  OPEN: the boundary-response sampler cannot resolve its own stakes (its noise fl
+  d8a225ccd680470f4e018771ed7fffdd1cc7e9f2  2026-10-29T04:36:14-04:00  TIMESTAMPS: an OpenTimestamps proof of revisions 16 and 17 and of every record 
+  11ba677b5a0a9aae8fd973ca291f27dd9fdf0235  2026-10-29T04:36:06-04:00  THE GROUND, revision 17 (Edwin Boston III, 2026-10-29 04:36 EDT): a second read
+
+SHA-256 at commit 918d4ad378d6510bb97055c27a3d4f58b1b4d40c:
+  0c2937d8359ff5797f86158207de3d093335bc679c780a17a50c58fd5c316ed8 *THE-GROUND-Edwin-Boston-III.pdf
+  69a38664d20b27b9543de16a721fe354255f1c3b89977ba42a45c02f6bb01687 *THE-GROUND-Edwin-Boston-III.docx
+  f7c64a6d11a46b85595894fc0ee98abb76025b5e3d323c93aee6840648324066 *README.md
+  96b3636ab6e5280b38f49abe08519b7e5845ba2c3856a6aeb92799921b426e3f *OPEN/the-crossing.md
+  eabdb87ff74c50694a8b274bd6926bc4ee9e8075f70cb7d93e2ad7b209ebd6c5 *OPEN/ledger/d1-the-renormalisation-step.md
+  8142376b0dd377d7a78cd4c306277a0ebeb84745a834027f09ca3bd1d84215b8 *OPEN/ledger/d2-the-centre-route.md
+  b1380437261acb34d24be1698fd92e6d1db477b5b49405e7fa037f86aa807965 *OPEN/ledger/d4-balaban-the-pages.md
+  bd13e221cac889f08d732ab9be792979482dbece7b6fdc0f367f718de0267b56 *OPEN/ledger/beta-uv-the-reading.md
+  70b24c03eaf88d77654d0ff4daf88e19311169df81f69f56ea0423e7905b6129 *records/pentapylon/RUNNING.md

@@ -73,9 +73,9 @@ theorem selfDual_refuses_strong : ¬ ((13 : ℝ) / 15 < selfDual) := by
 theorem selfDual_refuses_weak : ¬ ((17 : ℝ) / 19 < dualVar selfDual) := by
   rw [dualVar_selfDual]
   unfold selfDual
-  have h : (1.4 : ℝ) < Real.sqrt 2 := by
-    rw [show (1.4 : ℝ) = Real.sqrt (1.96) by
-      rw [show (1.96 : ℝ) = 1.4 ^ 2 by norm_num, Real.sqrt_sq (by norm_num)]]
+  have h : Real.sqrt 2 < 1.5 := by
+    rw [show (1.5 : ℝ) = Real.sqrt (2.25) by
+      rw [show (2.25 : ℝ) = 1.5 ^ 2 by norm_num, Real.sqrt_sq (by norm_num)]]
     exact Real.sqrt_lt_sqrt (by norm_num) (by norm_num)
   intro hc
   linarith

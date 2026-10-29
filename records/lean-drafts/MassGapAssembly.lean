@@ -1,7 +1,7 @@
 /-
   APERANTON -- THE BOUNDLESS, THE ASSEMBLY WITH THE FIBRE (THE GROUND revision 7's Theorem 8.5 in the kernel's finite form;
-  2026-10-29 01:2x). The fine measure W on the fine configurations (Sf → G) is carried by the block map Π to the coarse
-  configurations (Sc → V): the COARSE WEIGHT is the pushforward Σ_{Π ω = v} W ω, the FIBRE MEAN of f over v is the fibre's own
+  2026-10-29 01:2x). The fine measure W on the fine configurations (Sf → G) is carried by the block map blk to the coarse
+  configurations (Sc → V): the COARSE WEIGHT is the pushforward Σ_{blk ω = v} W ω, the FIBRE MEAN of f over v is the fibre's own
   Gibbs average, and THE LAW OF TOTAL COVARIANCE holds exactly (`cov_total`): Cov_W(f, g) = ⟨fibre covariance⟩_coarse +
   Cov_coarse(fibre mean of f, fibre mean of g). THE TWO HYPOTHESES OF Σ2, SEPARATE AND NAMED: (I) `CoarseCriterion` -- Dobrushin's
   interdependence of the COARSE weight with row sums ≤ α < 1 and range one in the sup metric (the blocked measure's bound,
@@ -32,41 +32,41 @@ variable {Sf Sc : Type*} [Fintype Sf] [DecidableEq Sf] [Fintype Sc] [DecidableEq
 variable {G V : Type*} [Fintype G] [DecidableEq G] [Nonempty G] [Fintype V] [DecidableEq V] [Nonempty V]
 
 /-- THE COARSE WEIGHT: the fine weight pushed forward along the block map -/
-noncomputable def coarseW (W : (Sf → G) → ℝ) (Π : (Sf → G) → (Sc → V)) (v : Sc → V) : ℝ :=
-  ∑ ω ∈ univ.filter (fun ω => Π ω = v), W ω
+noncomputable def coarseW (W : (Sf → G) → ℝ) (blk : (Sf → G) → (Sc → V)) (v : Sc → V) : ℝ :=
+  ∑ ω ∈ univ.filter (fun ω => blk ω = v), W ω
 
 /-- THE FIBRE MEAN of f over the coarse configuration v -/
-noncomputable def fibreMean (W : (Sf → G) → ℝ) (Π : (Sf → G) → (Sc → V)) (f : (Sf → G) → ℝ) (v : Sc → V) : ℝ :=
-  (∑ ω ∈ univ.filter (fun ω => Π ω = v), W ω * f ω) / coarseW W Π v
+noncomputable def fibreMean (W : (Sf → G) → ℝ) (blk : (Sf → G) → (Sc → V)) (f : (Sf → G) → ℝ) (v : Sc → V) : ℝ :=
+  (∑ ω ∈ univ.filter (fun ω => blk ω = v), W ω * f ω) / coarseW W blk v
 
 /-- THE FIBRE COVARIANCE of f and g over v -/
-noncomputable def fibreCov (W : (Sf → G) → ℝ) (Π : (Sf → G) → (Sc → V)) (f g : (Sf → G) → ℝ) (v : Sc → V) : ℝ :=
-  fibreMean W Π (fun ω => f ω * g ω) v - fibreMean W Π f v * fibreMean W Π g v
+noncomputable def fibreCov (W : (Sf → G) → ℝ) (blk : (Sf → G) → (Sc → V)) (f g : (Sf → G) → ℝ) (v : Sc → V) : ℝ :=
+  fibreMean W blk (fun ω => f ω * g ω) v - fibreMean W blk f v * fibreMean W blk g v
 
-theorem coarseW_pos (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (Π : (Sf → G) → (Sc → V)) (hΠ : Function.Surjective Π)
-    (v : Sc → V) : 0 < coarseW W Π v := by
+theorem coarseW_pos (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (blk : (Sf → G) → (Sc → V)) (hblk : Function.Surjective blk)
+    (v : Sc → V) : 0 < coarseW W blk v := by
   unfold coarseW
-  obtain ⟨ω₀, hω₀⟩ := hΠ v
+  obtain ⟨ω₀, hω₀⟩ := hblk v
   apply sum_pos (fun ω _ => hW ω)
   exact ⟨ω₀, mem_filter.mpr ⟨mem_univ _, hω₀⟩⟩
 
 /-- the fibre sum of W · f is the coarse weight times the fibre mean -/
-theorem fibre_sum_eq (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (Π : (Sf → G) → (Sc → V)) (hΠ : Function.Surjective Π)
+theorem fibre_sum_eq (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (blk : (Sf → G) → (Sc → V)) (hblk : Function.Surjective blk)
     (f : (Sf → G) → ℝ) (v : Sc → V) :
-    ∑ ω ∈ univ.filter (fun ω => Π ω = v), W ω * f ω = coarseW W Π v * fibreMean W Π f v := by
+    ∑ ω ∈ univ.filter (fun ω => blk ω = v), W ω * f ω = coarseW W blk v * fibreMean W blk f v := by
   unfold fibreMean
-  rw [mul_div_cancel₀ _ (coarseW_pos W hW Π hΠ v).ne']
+  rw [mul_div_cancel₀ _ (coarseW_pos W hW blk hblk v).ne']
 
 /-- THE TOWER PROPERTY: the fine Gibbs average of f is the coarse Gibbs average of its fibre mean -/
-theorem gibbs_eq_coarse (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (Π : (Sf → G) → (Sc → V)) (hΠ : Function.Surjective Π)
-    (f : (Sf → G) → ℝ) : gibbs W f = gibbs (coarseW W Π) (fibreMean W Π f) := by
+theorem gibbs_eq_coarse (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (blk : (Sf → G) → (Sc → V)) (hblk : Function.Surjective blk)
+    (f : (Sf → G) → ℝ) : gibbs W f = gibbs (coarseW W blk) (fibreMean W blk f) := by
   unfold gibbs
-  have hnum : ∑ ω, W ω * f ω = ∑ v, coarseW W Π v * fibreMean W Π f v := by
-    rw [← Finset.sum_fiberwise univ Π (fun ω => W ω * f ω)]
-    exact sum_congr rfl (fun v _ => fibre_sum_eq W hW Π hΠ f v)
-  have hden : ∑ ω, W ω = ∑ v, coarseW W Π v := by
+  have hnum : ∑ ω, W ω * f ω = ∑ v, coarseW W blk v * fibreMean W blk f v := by
+    rw [← Finset.sum_fiberwise univ blk (fun ω => W ω * f ω)]
+    exact sum_congr rfl (fun v _ => fibre_sum_eq W hW blk hblk f v)
+  have hden : ∑ ω, W ω = ∑ v, coarseW W blk v := by
     unfold coarseW
-    exact (Finset.sum_fiberwise univ Π W).symm
+    exact (Finset.sum_fiberwise univ blk W).symm
   rw [hnum, hden]
 
 /-- the coarse Gibbs average is additive in the observable -/
@@ -80,15 +80,15 @@ theorem gibbs_add (W : (Sc → V) → ℝ) (F H : (Sc → V) → ℝ) :
 
 /-- THE LAW OF TOTAL COVARIANCE, exactly: the fine covariance is the coarse average of the fibre covariance plus the coarse
 covariance of the fibre means -/
-theorem cov_total (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (Π : (Sf → G) → (Sc → V)) (hΠ : Function.Surjective Π)
+theorem cov_total (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (blk : (Sf → G) → (Sc → V)) (hblk : Function.Surjective blk)
     (f g : (Sf → G) → ℝ) :
     gibbs W (fun ω => f ω * g ω) - gibbs W f * gibbs W g
-      = gibbs (coarseW W Π) (fibreCov W Π f g)
-        + (gibbs (coarseW W Π) (fun v => fibreMean W Π f v * fibreMean W Π g v)
-            - gibbs (coarseW W Π) (fibreMean W Π f) * gibbs (coarseW W Π) (fibreMean W Π g)) := by
-  rw [gibbs_eq_coarse W hW Π hΠ (fun ω => f ω * g ω), gibbs_eq_coarse W hW Π hΠ f, gibbs_eq_coarse W hW Π hΠ g]
-  have hsplit : fibreMean W Π (fun ω => f ω * g ω)
-      = fun v => fibreCov W Π f g v + fibreMean W Π f v * fibreMean W Π g v := by
+      = gibbs (coarseW W blk) (fibreCov W blk f g)
+        + (gibbs (coarseW W blk) (fun v => fibreMean W blk f v * fibreMean W blk g v)
+            - gibbs (coarseW W blk) (fibreMean W blk f) * gibbs (coarseW W blk) (fibreMean W blk g)) := by
+  rw [gibbs_eq_coarse W hW blk hblk (fun ω => f ω * g ω), gibbs_eq_coarse W hW blk hblk f, gibbs_eq_coarse W hW blk hblk g]
+  have hsplit : fibreMean W blk (fun ω => f ω * g ω)
+      = fun v => fibreCov W blk f g v + fibreMean W blk f v * fibreMean W blk g v := by
     funext v; unfold fibreCov; ring
   rw [hsplit, gibbs_add]
   ring
@@ -116,44 +116,44 @@ structure CoarseCriterion (Wc : (Sc → V) → ℝ) (C : Sc → Sc → ℝ) (α 
 /-- HYPOTHESIS II, FIBRE CLUSTERING, in the range form the kernel takes: the fibre covariance of f and g bounded by ε at every
 coarse configuration, f's fibre mean of oscillation d along the coarse sites with d = 0 beyond the level a, and g's fibre mean
 free of the coarse sites it does not read -/
-structure FibreClustering (W : (Sf → G) → ℝ) (Π : (Sf → G) → (Sc → V)) (f g : (Sf → G) → ℝ) (ε : ℝ)
+structure FibreClustering (W : (Sf → G) → ℝ) (blk : (Sf → G) → (Sc → V)) (f g : (Sf → G) → ℝ) (ε : ℝ)
     (d : Sc → ℝ) (φ : Sc → ℕ) (a : ℕ) (reads : Sc → Prop) : Prop where
-  fibreCov_le : ∀ v, |fibreCov W Π f g v| ≤ ε
-  oscBound : OscBound (fibreMean W Π f) d
+  fibreCov_le : ∀ v, |fibreCov W blk f g v| ≤ ε
+  oscBound : OscBound (fibreMean W blk f) d
   range : ∀ t, a < φ t → d t = 0
-  free : ∀ s, ¬ reads s → ∀ v x, fibreMean W Π g (Function.update v s x) = fibreMean W Π g v
+  free : ∀ s, ¬ reads s → ∀ v x, fibreMean W blk g (Function.update v s x) = fibreMean W blk g v
 
 /-- the fibre mean of a positive observable is positive -/
-theorem fibreMean_pos (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (Π : (Sf → G) → (Sc → V)) (hΠ : Function.Surjective Π)
-    (g : (Sf → G) → ℝ) (hg : ∀ ω, 0 < g ω) (v : Sc → V) : 0 < fibreMean W Π g v := by
+theorem fibreMean_pos (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (blk : (Sf → G) → (Sc → V)) (hblk : Function.Surjective blk)
+    (g : (Sf → G) → ℝ) (hg : ∀ ω, 0 < g ω) (v : Sc → V) : 0 < fibreMean W blk g v := by
   unfold fibreMean
-  apply div_pos _ (coarseW_pos W hW Π hΠ v)
-  obtain ⟨ω₀, hω₀⟩ := hΠ v
+  apply div_pos _ (coarseW_pos W hW blk hblk v)
+  obtain ⟨ω₀, hω₀⟩ := hblk v
   apply sum_pos (fun ω _ => mul_pos (hW ω) (hg ω))
   exact ⟨ω₀, mem_filter.mpr ⟨mem_univ _, hω₀⟩⟩
 
 /-- THE ASSEMBLY: the coarse criterion and the fibre clustering give the fine covariance's bound -- the fibre term plus
 Dobrushin's comparison on the coarse weight applied to the fibre means -/
-theorem cov_le_assembly (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (Π : (Sf → G) → (Sc → V)) (hΠ : Function.Surjective Π)
-    (C : Sc → Sc → ℝ) (α : ℝ) (φ : Sc → ℕ) (hI : CoarseCriterion (coarseW W Π) C α φ)
+theorem cov_le_assembly (W : (Sf → G) → ℝ) (hW : ∀ ω, 0 < W ω) (blk : (Sf → G) → (Sc → V)) (hblk : Function.Surjective blk)
+    (C : Sc → Sc → ℝ) (α : ℝ) (φ : Sc → ℕ) (hI : CoarseCriterion (coarseW W blk) C α φ)
     (f g : (Sf → G) → ℝ) (hg : ∀ ω, 0 < g ω) (ε : ℝ) (d : Sc → ℝ) (a R : ℕ) (reads : Sc → Prop) [DecidablePred reads]
-    (hII : FibreClustering W Π f g ε d φ a reads) (hreads : ∀ t, φ t < a + R → ¬ reads t) :
+    (hII : FibreClustering W blk f g ε d φ a reads) (hreads : ∀ t, φ t < a + R → ¬ reads t) :
     |gibbs W (fun ω => f ω * g ω) - gibbs W f * gibbs W g|
-      ≤ ε + gibbs (coarseW W Π) (fibreMean W Π g)
+      ≤ ε + gibbs (coarseW W blk) (fibreMean W blk g)
           * ((∑ t, if reads t then (1 : ℝ) else 0) * (∑ t, d t) * α ^ R / (1 - α)) := by
-  rw [cov_total W hW Π hΠ f g]
-  have hWc : ∀ v, 0 < coarseW W Π v := coarseW_pos W hW Π hΠ
-  have h1 : |gibbs (coarseW W Π) (fibreCov W Π f g)| ≤ ε :=
-    abs_gibbs_le_of_abs_le (coarseW W Π) hWc _ ε hII.fibreCov_le
-  have h2 := cov_le (coarseW W Π) hWc C hI.nonneg hI.interdep α hI.α_nonneg hI.α_lt_one hI.row φ hI.rangeOne
-    (fibreMean W Π f) d hII.oscBound a R hII.range (fibreMean W Π g) (fibreMean_pos W hW Π hΠ g hg) reads hII.free hreads
-  calc |gibbs (coarseW W Π) (fibreCov W Π f g)
-        + (gibbs (coarseW W Π) (fun v => fibreMean W Π f v * fibreMean W Π g v)
-            - gibbs (coarseW W Π) (fibreMean W Π f) * gibbs (coarseW W Π) (fibreMean W Π g))|
-      ≤ |gibbs (coarseW W Π) (fibreCov W Π f g)|
-        + |gibbs (coarseW W Π) (fun v => fibreMean W Π f v * fibreMean W Π g v)
-            - gibbs (coarseW W Π) (fibreMean W Π f) * gibbs (coarseW W Π) (fibreMean W Π g)| := abs_add_le _ _
-    _ ≤ ε + gibbs (coarseW W Π) (fibreMean W Π g)
+  rw [cov_total W hW blk hblk f g]
+  have hWc : ∀ v, 0 < coarseW W blk v := coarseW_pos W hW blk hblk
+  have h1 : |gibbs (coarseW W blk) (fibreCov W blk f g)| ≤ ε :=
+    abs_gibbs_le_of_abs_le (coarseW W blk) hWc _ ε hII.fibreCov_le
+  have h2 := cov_le (coarseW W blk) hWc C hI.nonneg hI.interdep α hI.α_nonneg hI.α_lt_one hI.row φ hI.rangeOne
+    (fibreMean W blk f) d hII.oscBound a R hII.range (fibreMean W blk g) (fibreMean_pos W hW blk hblk g hg) reads hII.free hreads
+  calc |gibbs (coarseW W blk) (fibreCov W blk f g)
+        + (gibbs (coarseW W blk) (fun v => fibreMean W blk f v * fibreMean W blk g v)
+            - gibbs (coarseW W blk) (fibreMean W blk f) * gibbs (coarseW W blk) (fibreMean W blk g))|
+      ≤ |gibbs (coarseW W blk) (fibreCov W blk f g)|
+        + |gibbs (coarseW W blk) (fun v => fibreMean W blk f v * fibreMean W blk g v)
+            - gibbs (coarseW W blk) (fibreMean W blk f) * gibbs (coarseW W blk) (fibreMean W blk g)| := abs_add_le _ _
+    _ ≤ ε + gibbs (coarseW W blk) (fibreMean W blk g)
           * ((∑ t, if reads t then (1 : ℝ) else 0) * (∑ t, d t) * α ^ R / (1 - α)) := add_le_add h1 h2
 
 end Aperanton

@@ -1,0 +1,6 @@
+G33 beta=1 MODE=quotworst N=10: the face weights I_n(beta)/I_0: n=1 0.446390, n=2 0.107220, n=11 9.87e-12 (the truncation's size)
+G33-BASE beta=1 datum=symmetric Z = 2.456420244255e+14 E[cos Phi_top] = 0.758759580 (6 s)
+G33-QWORST-KAT the staple sum of t0 at d_c = (1.2e-16, 2.2e-16) [CANCELLED]
+G33-QWORST beta=1 E[cos Phi_top]: symmetric 0.758759580, cancelling d_c(t0) 0.585739594 (TV between the two class laws 0.141593) (15 s)
+G33-QWORST-SERIES beta=1 link=0,-1,1,0:1 (the un-cancelling rotation of t0's first middle link) at d_c: sup |dE[cos Phi_top]| = 0.487771591 at 180 deg; sup TV = 0.333975940 at 180 deg; profile 15:-0.006414/0.04621 30:-0.025452/0.09145 45:-0.056499/0.13482 60:-0.098520/0.17543 75:-0.150009/0.21248 90:-0.208863/0.24528 105:-0.272179/0.27322 120:-0.336019/0.29587 135:-0.395307/0.31306 150:-0.444091/0.32490 165:-0.476424/0.33175 180:-0.487772/0.33398 (138 s)
+G33-QWORST-SERIES beta=1 link=1,0,1,0:3 (the z-near above (1,0,1), outside t0's staples) at d_c: sup |dE[cos Phi_top]| = 0.116132133 at 180 deg; sup TV = 0.173755311 at 90 deg; profile 15:+0.000880/0.05101 30:+0.003690/0.09631 45:+0.008827/0.13201 60:+0.016660/0.15655 75:+0.027332/0.17013 90:+0.040668/0.17376 105:+0.056127/0.16860 120:+0.072739/0.15589 135:+0.089036/0.13730 150:+0.103071/0.11579 165:+0.112693/0.09707 180:+0.116132/0.08930 (266 s)

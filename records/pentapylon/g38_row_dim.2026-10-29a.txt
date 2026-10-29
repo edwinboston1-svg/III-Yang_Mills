@@ -1,0 +1,4 @@
+G38-KAT D=4 beta=0.2410: ROW_hi = 0.996296731 against the cert's 0.996297 [MET]
+G38-CROSS D=2: the row (4 direct + 6 mediated per kept link) stays below 1 to beta0 = 0.8252 (ROW_hi = 0.999970888 = 0.394687 direct + 0.605284 mediated; omega 0.078918); first grid beta above: 0.8253 (ROW_hi 1.000297)
+G38-CROSS D=3: the row (8 direct + 36 mediated per kept link) stays below 1 to beta0 = 0.3739 (ROW_hi = 0.999546695 = 0.366825 direct + 0.632722 mediated; omega 0.018597); first grid beta above: 0.3740 (ROW_hi 1.000148)
+G38-CROSS D=4: the row (12 direct + 90 mediated per kept link) stays below 1 to beta0 = 0.2414 (ROW_hi = 0.999866075 = 0.364745 direct + 0.635122 mediated; omega 0.009432); first grid beta above: 0.2415 (ROW_hi 1.000760)

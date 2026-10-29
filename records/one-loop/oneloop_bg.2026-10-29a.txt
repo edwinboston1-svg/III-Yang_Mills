@@ -1,0 +1,6 @@
+FEYNMAN-IDENTITY N=4 max|M_vec - M_gh x 1_4| = 0.000e+00
+ONELOOP-BG N=4 eps=0.01 Delta_vec=-0.977878 Delta_gh=0.018017 Delta_neu=-0.250000 Delta=-1.209861
+FEYNMAN-IDENTITY N=6 max|M_vec - M_gh x 1_4| = 1.776e-15
+ONELOOP-BG N=6 eps=0.01 Delta_vec=-1.106268 Delta_gh=-0.007349 Delta_neu=-0.250000 Delta=-1.363617
+FEYNMAN-IDENTITY N=8 max|M_vec - M_gh x 1_4| = 0.000e+00
+ONELOOP-BG N=8 eps=0.01 Delta_vec=-1.204884 Delta_gh=-0.019129 Delta_neu=-0.250000 Delta=-1.474013

@@ -1,0 +1,9 @@
+FEYNMAN-IDENTITY N=10 max|M_vec - M_gh x 1_4| = 0.000e+00
+ONELOOP-BG N=10 eps=0.01 Delta_vec=-1.282389 Delta_gh=-0.027149 Delta_neu=-0.250000 Delta=-1.559539
+N=10 took 38s
+FEYNMAN-IDENTITY N=12 max|M_vec - M_gh x 1_4| = 0.000e+00
+ONELOOP-BG N=12 eps=0.01 Delta_vec=-1.345682 Delta_gh=-0.033433 Delta_neu=-0.250000 Delta=-1.629115
+N=12 took 96s
+FEYNMAN-IDENTITY N=16 max|M_vec - M_gh x 1_4| = 0.000e+00
+ONELOOP-BG N=16 eps=0.01 Delta_vec=-1.445118 Delta_gh=-0.043153 Delta_neu=-0.250000 Delta=-1.738271
+N=16 took 576s

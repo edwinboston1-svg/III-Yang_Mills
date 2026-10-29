@@ -1,0 +1,3 @@
+G33 beta=1.2 MODE=delta N=10: the face weights I_n(beta)/I_0: n=1 0.512782, n=2 0.145363, n=11 6.72e-11 (the truncation's size)
+G33-BASE beta=1.2 datum=symmetric Z = 3.709993841724e+18 E[cos Phi_top] = 0.801916398 (14 s)
+G33-DELTA beta=1.2 pair=far:near Delta_cube = 0.097996935 (argmax g' = 105 deg) Delta_link = 0.367252856 ratio = 0.2668; the single-link weight (I_1/I_0)(beta) = 0.512782 (1983 s)

@@ -1,0 +1,5 @@
+# enumerated through F0 = 18
+tail mu = 5.0 : KP (branch-free part) holds to beta = 0.5652  u = 0.1394  alpha = 0.0234  S = 2.340e-02
+tail mu = 4.0 : KP (branch-free part) holds to beta = 0.7024  u = 0.1721  alpha = 0.0244  S = 2.440e-02
+tail mu = 3.0 : KP (branch-free part) holds to beta = 0.9237  u = 0.2231  alpha = 0.0296  S = 2.960e-02
+tail mu = 2.5 : KP (branch-free part) holds to beta = 1.0741  u = 0.2565  alpha = 0.0408  S = 4.080e-02

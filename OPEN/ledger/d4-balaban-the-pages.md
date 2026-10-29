@@ -1,0 +1,87 @@
+> Posted by Edwin Boston III at 05:05 EDT on 29 October 2026 as written by the fourth seat from the two papers the operator downloaded (CMP 109 complete; Large Field Renormalization I); part II is being fetched. Read and checked here: the normalisation map β = 1/g² follows from the normalised trace of (0.2) and the density (0.22) as stated.
+
+# D4 — β_UV ON BAŁABAN'S OWN PAGES (the seat iii-3a, 2026-10-29 05:3x EDT)
+Read: CMP 109 (1987) 249–301, complete (the operator's download, 54 pp., text layer plus rendered pages 252–260);
+Large Field Renormalization I, CMP 122 (1989) 175–202, complete. NOT in hand: Large Field Renormalization II, CMP 122
+(1989) 355–392 (doi 10.1007/BF01238433), where the four-dimensional theorem of record is stated ("as formulated in
+Theorem 1", part II's abstract). Every quotation below is verbatim from the page named.
+
+## 1. The quantifier (Theorem 1's)
+
+CMP 109 p. 259: "The ultraviolet stability concept has two aspects. The first concerns the effective actions generated
+by the renormalization group transformations, their description and the bounds they satisfy. The second concerns the
+behavior of the sequence of the effective coupling constants g_k generated from the bare coupling constant g₀ by the
+renormalization group equations (0.18), (0.20). In this paper we prove a theorem concerning the first aspect. To
+formulate this theorem we introduce small field domains. For the k-th action such a domain is determined by the
+condition |∂U_k(V) − 1| < ε₀η² on T_η, for ε₀ sufficiently small. … Now the main result can be formulated in a general
+way as follows:
+  **Theorem 1.** If the sequence of the effective coupling constants is contained in an interval ]0, γ] with a
+  sufficiently small positive γ, then the effective actions for small fields are given by the formulas (0.22)–(0.24),
+  with terms satisfying (0.29)."
+p. 267 (the precise form): "**Theorem 3.** There exist positive constants κ₀, M(κ), γ, ε₀, ε₁, α₀, α₁ such, that if
+κ ≥ κ₀, M ≥ M(κ), 0 < g_k ≤ γ for k = 0, 1, …, K, then the sequence of actions A_k, defined inductively by the small
+field renormalization transformations (0.17)–(0.20), satisfy all the inductive assumptions described between
+(1.1)–(1.22). The constants ε₀, ε₁, α₀, α₁ depend on M and satisfy numerous restrictions, which will become clear in
+the proof. The constant γ depends on all other constants."
+So: EXISTENTIAL in γ ("depends on all other constants", none computed), UNIVERSAL over the whole sequence g_0, …, g_K.
+p. 256: "We continue the calculation of the effective actions until we reach the unit lattice, or rather until we
+reach a scale which we define as the unit scale. Let us denote the corresponding index by K, hence ε = L^{−K}, and the
+sequence of actions and coupling constants is defined for k = 0, 1, …, K." The recursion, p. 256:
+  1/g_k² = 1/g²_{k+1} + β_{k+1}(g_k)   (0.20),
+"a finite difference approximation, corresponding to two consecutive lattice spacings (on a logarithmic scale) of the
+differential equation (d/ds)(1/g²) = −β(g)" (p. 257, on (0.18)); with β > 0 the coupling GROWS from the bare g₀ at
+spacing ε to g_K at the unit scale, so the sequence's maximum is g_K and "0 < g_k ≤ γ for all k" binds at the unit
+lattice. Theorem 2, p. 259–260 (d = 4, SU(2)): "let γ be a sufficiently small positive constant, then for a
+sufficiently small positive g there exists a bare coupling constant g₀ = g₀(ε, g) such that the sequence of the
+effective coupling constants g_k is contained in the interval ]0, γ], and g_K = g. Moreover, there exist constants
+β, β′, 0 < β ≤ β′, such that g_k satisfy the inequality
+  1/g² + β log(L^kε)⁻¹ ≤ 1/g_k² ≤ 1/g² + β′ log(L^kε)⁻¹   (0.31)."
+At k = K (L^Kε = 1) this reads 1/g_K² = 1/g²; at k = 0, 1/g₀² = 1/g² + (β…β′) log ε⁻¹ — Large Field Renormalization I
+p. 175: "For d = 4 the bare coupling constant behaves asymptotically as (a + b log ε⁻¹)^{−1/2}, for ε → 0, with some
+positive constants a, b" — a is 1/g² at the unit scale, b the one-loop coefficient.
+VERDICT ON THE INFERENCE MARKED IN §83 bis: confirmed by the page. The condition is on the whole sequence, pinned at
+its coarse end by the renormalised (unit-scale) coupling g = g_K ≤ γ, the bare coupling then chosen by Theorem 2.
+
+## 2. The map onto the road's single-lattice β
+
+CMP 109 p. 252: "An action for gauge field models was proposed by Wilson [73], and is given by
+  A^ε(U) = Σ_{p∈T_ε} ε^{d−4}[1 − Re tr U(∂p)]   (0.2),
+where tr is the normalized trace, i.e. tr 1 = 1." The density is exp A_k with A_k = −(1/g_k²)A(U_k) + … (0.22),
+(1.3), so at the unit scale (d = 4, the factor ε^{d−4} = 1) each plaquette weighs exp(−(1/g²)[1 − ½ Re Tr U_p]) ∝
+exp((1/g²)·½ Tr U_p) for SU(2). THE GROUND's Theorem 8.7 weighs each plaquette by exp(½β Tr U_p). Hence
+  β = 1/g²   (exactly, no factor),   and   β_UV = 1/γ².
+The road's certified edge β = 0.2452 is g² = 4.08 in Bałaban's normalisation — far from "sufficiently small".
+
+## 3. The small-field restrictions (CMP 109)
+
+p. 259: the k-th small field domain is |∂U_k(V) − 1| < ε₀η² on T_η (η = L^{−k}), "for ε₀ sufficiently small"; p. 260,
+(1.2): U_k(ε₀) is the set of configurations with |U(∂p) − 1| = |(∂U)(p) − 1| < ε₀η², |J| < ε₀, "with ε₀ sufficiently
+small"; Theorem 3 lists ε₀, ε₁, α₀, α₁ as depending on M and "numerous restrictions, which will become clear in the
+proof". Large Field Renormalization I p. 175: the large-field threshold in the first step is |U(∂p) − 1| ≥ g₀ p₀(g₀),
+p₀(g₀) = A₀(log g₀⁻²)^{p₀}, the Wilson term then giving exp(−(1/g₀²)[1 − Re tr U(∂p)]) ≤ exp(−p₀(g₀)) =
+g₀^{A₀(log g₀⁻²)^{p₀−1}} (0.1); "for d = 4 … the bound does not give any positive power of ε. It is still small for ε
+small, and it controls a large number of steps, but this number is a small fraction of the total number of steps" —
+the reason for the ℝ operation. No constant among ε₀, A₀, p₀, M, κ₀ is given a value on any page read.
+
+## 4. Two facts for the record
+
+(i) THEOREM 2 IS DEFERRED. p. 260: "A proof of this theorem, based on perturbative calculations, will be given in a
+separate paper, where more precise asymptotic behavior will be proved. The restriction to the group SU(2) is
+superficial and is done only to simplify calculations." Also p. 251: "The analysis of the Callan–Symanzik equations,
+based on perturbative calculations, will be discussed in another paper." CMP 109 proves the effective-action theorem
+GIVEN a small sequence; the four-dimensional statement that the sequence can be kept small (asymptotic freedom in the
+construction) is referred to a paper not identified in the bibliography of either download. Which later paper, if
+any, proves Theorem 2 is the next thing to establish — the CMP 116, 119 and 122 abstracts do not say so, and part II
+is the only candidate in hand by title.
+(ii) LARGE FIELD RENORMALIZATION I STATES NO THEOREM. Its only "Theorem 1 [16]" (p. 191) borrows a constant B₃ from
+[16] = Bałaban, "Ultraviolet stability of three-dimensional lattice pure gauge field theories", CMP 102 (1985) (CMP
+109's reference 16). The four-dimensional theorem "as formulated in Theorem 1" is in part II (CMP 122, 355–392),
+pending.
+
+## 5. For §8.3
+
+β_UV = 1/γ², γ the existential constant of CMP 109's Theorem 3 (equivalently Theorem 1), the bound on EVERY effective
+coupling of the sequence from the cutoff to the unit lattice, binding at the unit lattice where it is the road's β;
+uncomputed on every page, "depends on all other constants". The distance of record stays [0.2452, 1/γ²], its top a
+symbol. The quantifier question is closed; the identity of the paper that proves Theorem 2, and part II's Theorem 1,
+remain to be read.

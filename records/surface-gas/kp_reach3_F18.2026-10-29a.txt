@@ -1,0 +1,4 @@
+tail mu = 5.0 : KP with composite shift holds to beta = 0.5465  u = 0.1350  alpha = 0.0120
+tail mu = 4.0 : KP with composite shift holds to beta = 0.6777  u = 0.1663  alpha = 0.0128
+tail mu = 3.0 : KP with composite shift holds to beta = 0.8815  u = 0.2136  alpha = 0.0168
+tail mu = 2.5 : KP with composite shift holds to beta = 1.0035  u = 0.2410  alpha = 0.0248

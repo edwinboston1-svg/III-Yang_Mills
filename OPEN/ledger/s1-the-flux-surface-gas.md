@@ -196,3 +196,45 @@ The torus's figure-eight T (a meridian and a longitude at one vertex) also reads
 - **(F)** `kp_reach3` re-run with u → u·e^{ε(β)}, where ε comes from the proved wall weights times iii-38's proved counts.
 
 **A projection, not a result.** With a uniform factor 2 per wall, 2|S| single-wall sites, and 4·5^{n−1} patches of n ≥ 2 per site, ε(0.475) ≈ 0.18. The composite reach of §8 (u = 0.1424) then moves to about β ≈ 0.47. Nothing above 0.2452 is claimed: (B), (D), (E) and (F) are owed, and the projection is not even a reading.
+
+## 11. Two exact lemmas by gauge fixing: the lone wall and the acyclic contact (12:01 EDT, read from `date`)
+
+Gauge fixing is exact on any forest of links: set every forest link to 1 by gauge transformations at its vertices, and the Haar measure on the remaining links is unchanged. Applied where Cauchy–Schwarz loses, it gives two exact values.
+
+**Lemma S6 (acyclic contacts; proved).** Let X be an all-½ closed set whose links of multiplicity at least 4 form a forest F; this covers the pinches and the acyclic double contacts of Lemma P. Then
+
+  W(X) = u^{|X|} · 2^{χ(X̂)},
+
+where X̂ is X cut open along F, with every resulting boundary curve capped by a disc.
+
+*Proof.* Gauge-fix F to 1. Every other link has multiplicity 2, so the rest is a branch-free surface with boundary, X cut along F. Its integral is (2u)^{|X|} d^{χ−|X|} Π_b χ_½(z_b). Every boundary curve runs along F only, so z_b = 1 and χ_½(z_b) = 2. Hence W = u^{|X|} 2^{χ + n_b} = u^{|X|} 2^{χ(X̂)}. ∎
+
+So an irreducible pinch weighs at most 4u^F when X̂ is connected, the same as a sphere: a contact along a forest costs nothing beyond the surface's own d^χ.
+
+**Lemma S7 (the lone wall; proved).** Let S be a branch-free surface at spin ½, and w a plaquette not in S whose four links lie in S, its boundary meeting no other wall. Then, exactly,
+
+  |W(S ∪ w)| = 3a₁ · W(S),
+
+and only spin 1 on w contributes.
+
+*Proof.*
+1. Gauge-fix three links of ∂w. What remains of ∂w is one link, the chord, carrying the wall's holonomy z.
+2. Cut S along ∂w. Since ∂w is a cycle (no turning points), its two sides give either two boundary curves, each going round once, or one curve going round twice in the same direction (a one-sided curve).
+3. In the first case S's integral is ∝ χ_½(z)², and ∫χ_½²χ_j / ∫χ_½² = δ_{j1}.
+4. In the second it is ∝ χ_½(z²) = χ₁(z) − 1, and the ratio is −δ_{j1}.
+5. With the weight 3a₁χ₁ on w, |W(S ∪ w)| = 3a₁ W(S). ∎
+
+This is the calibration of §5 (two cubes sharing a face, 12a₁u^{10} = 3a₁ · W(box)), now general. The Cauchy–Schwarz bound of §10 is needed only where walls touch.
+
+**Patches and clusters.**
+- A disc-shaped patch of n spin-1 plaquettes spanning one cycle of S integrates over its inner links to 3^{1−n}(3a₁)^n χ₁(z) = 3a₁^n χ₁(z). So it weighs exactly 3a₁^n · W(S) when it meets no other wall: a factor a₁ below a lone wall for each extra plaquette.
+- Walls whose boundaries touch form a component K of T. They are priced by §10, at most √c(b₁(K)) per component.
+
+**Projection (not a result).** Feed these exact weights into the site counts: 2|S| lone-wall sites, at most 4·5^{n−1} patches per site, and touching clusters at √c. Then ε(β) ≈ 6a₁ + 120a₁² + (clusters, about 0.016), and the composite reach of §8 moves to about β ≈ 0.52.
+
+**Stakes for iii-38's weight table, written before it exists.**
+- **(W1)** Every single-wall chamber with a branch-free rest S reads W/(u^{F−1}·3a₁) = ±2^{χ(S)} exactly, at leading order. That is +4 for a sphere rest, with the sign − only when the wall's boundary is one-sided in S.
+- **(W2)** Every pinch reads W/u^F = 2^{χ(X̂)}, with X̂ connected, so 4, 2 or 1.
+- **(W3)** No chamber or patch reads above √c(b₁) times its lone-wall value.
+
+A reading outside (W1)–(W3) refutes the corresponding lemma or its proof. As before, nothing above β = 0.2452 is claimed.

@@ -239,3 +239,7 @@ The Yang–Mills seat's page check (ledger §102 bis and §102 ter): is E^(k+1)'
 - **No line found needs per-step positivity of the β-function.**
 - Two mis-citations: [III] Theorem 1's "(I.0.33)", and [V]'s "(0.31) [II]".
 - All of it is conditional on the transient, that is, on Lemma B in the bounded-transient form, which is open.
+
+## 7. Correction (11:16:36 EDT, by `date`)
+
+The commit title of 249d913 says "11:2x EDT", and §15 of the D4 page says "11:2x by the clock". Both labels ran ahead of the clock. The page was committed at 11:15:05 EDT (git records the instant) and its manifest written at 11:15:28. This page's own header, "11:1x", is the true one. No content changed.

@@ -1,0 +1,4 @@
+G34-KAT representations (GENINV=1): s=3: hom 2.8e-17 tr-chi 1.1e-16; [MET]
+G34-KAT RULE15 (8 x 8 x 16 = 1024 points): the even moments to degree 14 [MET]
+G34 beta=2.2 MODE=base caps loop=2 face0=3 (others 2) rule degree 15; a_1=0.464479 a_2=0.155493; 180 cut states; 104 outside links; datum symmetric
+G34-BASE beta=2.2 datum=symmetric Z = 6.907352078e+19 (imag 6.3e+01); W(1,1) = E[tr P_0]/2 = 0.647959890; W(2,2) = E[tr W]/2 = 0.315339750; the loop's characters 1.000000,0.630680,0.136696; BLOCKED COUPLING beta_eff(2a) = 1.354280 against beta = 2.2 (ratio 0.6156); the one-plaquette law's value at beta, I_2/I_1 = 0.464479 (6 s)

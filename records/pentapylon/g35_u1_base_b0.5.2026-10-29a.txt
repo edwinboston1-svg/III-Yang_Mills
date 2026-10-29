@@ -1,0 +1,2 @@
+G35 beta=0.5 MODE=base N=10: 104 outside links, 56 staples (the eight outer links five each, the four spokes four); I_1/I_0 = 0.242500, I_{11}/I_0 = 5.65e-15
+G35-BASE beta=0.5 datum=symmetric Z = 8.149193522e+05; W(1,1) = 0.491729258 W(1,2) = 0.305342911 W(2,1) = 0.305342911 W(2,2) = 0.180243940; CREUTZ chi(2,2) = 0.050631459 (the free-plaquette value -log(I_1/I_0) = 1.416755); BLOCKED COUPLING beta_eff(2a) = 0.366507 against beta = 0.5 (ratio 0.7330) (1 s)

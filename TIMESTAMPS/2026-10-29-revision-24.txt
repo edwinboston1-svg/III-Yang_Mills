@@ -1,0 +1,23 @@
+THE GROUND, revision 24 and the OPEN pages through 1e6e3b9 (Edwin Boston III)
+Manifest written 2026-10-29T10:41:16Z.
+
+  1e6e3b977c7f42760b079e744aac7150d45c6b86  2026-10-29T06:41:10-04:00  THE GROUND, revision 24 (Edwin Boston III, 2026-10-29 06:41 EDT): The
+  630a78384ae90bc650cd653eff7860f80adc1e8c  2026-10-29T06:37:59-04:00  OPEN and RECORDS: Theorem 2's hard half is two statements, both ours;
+  1f3e1611782c0682ac6030ad640b49aceecd0da8  2026-10-29T06:24:38-04:00  OPEN and RECORDS: Theorem 8.7 in three dimensions on two roads (SU(2)
+  78e2f92dc7ae5d2ea737b0d1bffb45c0ddc15911  2026-10-29T06:21:58-04:00  ARXIV.md: the page count of revision 23, 42, restored; and the record
+  fb265a2bc61d16f5dcdf77421cf8c776539e2ceb  2026-10-29T06:17:48-04:00  TIMESTAMPS: an OpenTimestamps proof of revision 23 and the OPEN pages
+  4ffecaeaf831cfc3649e6264cd9f292442507699  2026-10-29T06:17:37-04:00  THE GROUND, revision 23 (Edwin Boston III, 2026-10-29 06:17 EDT): the
+
+  328c7b89a30858c81d922082c93f865a58218a47d070dd5e461764747c415066 *THE-GROUND-Edwin-Boston-III.pdf
+  9c3abbe441e412614586d9477a8d69313e37c2ae9a89ebe492e0a8086bdbe0de *THE-GROUND-Edwin-Boston-III.docx
+  318e9ba004d89666d13c1076f25a8b4043592d6e7520249af812fe425f967a74 *README.md
+  b29100aceb0fb4b82c2e2498f58413b4e5d22f77f80592d7388812163014afd2 *OPEN/the-crossing.md
+  bd13e221cac889f08d732ab9be792979482dbece7b6fdc0f367f718de0267b56 *OPEN/ledger/beta-uv-the-reading.md
+  26d41d1e46e695a0200ed59f36c74dbcde8d4c029846ee3bbb3c270af9624d63 *OPEN/ledger/c3-the-three-dimensional-rehearsal.md
+  f2ab2c84dab6f9220c16f091820aa2a1f226ec0d3d06eae9283f131c6816bfaa *OPEN/ledger/claimants-gitton-and-zenodo-23001803.md
+  c9cf1e3688da904b1079b3f228ca1b01a8330b6a869826af39e6a7a02c40958a *OPEN/ledger/d1-the-renormalisation-step.md
+  8142376b0dd377d7a78cd4c306277a0ebeb84745a834027f09ca3bd1d84215b8 *OPEN/ledger/d2-the-centre-route.md
+  d369bb73343bd6b9e3391aff7538ec01cb51dbcae0c4670bece7f917f4c557ac *OPEN/ledger/d4-balaban-the-pages.md
+  555a6b090086a90b16f2e5f7e68650ac0901ccf2d35204d3515cccb6917d0a46 *OPEN/ledger/one-block-the-unit-s90-s92.md
+  4c879556a92d1347676db69e912e0d4bd053391f368eade3550780183ac0dab1 *OPEN/ledger/typical-boundary.md
+  79136615afe93ef73ad2bc4c32e4b7af97c1eaac1e5017324677ff3afbfd652f *OPEN/ledger/wasserstein-widening.md

@@ -1,0 +1,16 @@
+THE GROUND, revision 22 and the OPEN pages through 86d8a66 (Edwin Boston III)
+Manifest written 2026-10-29T10:00:19Z.
+
+  86d8a66a746fb1fcd3a747ba92b2f41b65756be2  2026-10-29T06:00:15-04:00  THE GROUND, revision 22 (Edwin Boston III, 2026-10-29 06:00 EDT): a c
+  456c8b0616d7e005149d97f7f686c62945368068  2026-10-29T05:51:58-04:00  OPEN: the one-block floor corrected by its author before the paper ca
+  787d07069c89086d99a5e491949c73250cbf99ae  2026-10-29T05:49:10-04:00  TIMESTAMPS: the OpenTimestamps proofs of revisions 14 and 15 upgraded
+  db186a887bc89a7ab1fa63fd837a929d2084b8b3  2026-10-29T05:46:55-04:00  OPEN: the one-block unit's constants re-derived by three readers; a c
+  17bf51183d9261d087d013bea1e468ebd249e277  2026-10-29T05:35:36-04:00  OPEN: the free massless field as the second falsifier of every anneal
+  7865d01f8187cbd3e63f12ddc2793c0f00874c04  2026-10-29T05:34:08-04:00  TIMESTAMPS: an OpenTimestamps proof of revision 21 (Edwin Boston III,
+
+  4325f68dc95363a9be86456b7636f483c5421cd75fb1eb5f8ec99c71824ee267 *THE-GROUND-Edwin-Boston-III.pdf
+  9498eb8241f375e32041b6938eb115fed31c9eac89c1a320cbfd91d5d964dbf7 *THE-GROUND-Edwin-Boston-III.docx
+  8783a6e2591b92be47dc945d67a991d545d9c3de6c298e219349d75840c7a839 *README.md
+  c9cf1e3688da904b1079b3f228ca1b01a8330b6a869826af39e6a7a02c40958a *OPEN/ledger/d1-the-renormalisation-step.md
+  555a6b090086a90b16f2e5f7e68650ac0901ccf2d35204d3515cccb6917d0a46 *OPEN/ledger/one-block-the-unit-s90-s92.md
+  0fe3252c638a0e1e0b7d4f973eed8199fd2f3409412da21e384eff504f00c6c5 *OPEN/the-crossing.md

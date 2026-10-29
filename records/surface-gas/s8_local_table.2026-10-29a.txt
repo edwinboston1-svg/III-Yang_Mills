@@ -1,0 +1,33 @@
+s8_local.py:31:A, B, C = np.meshgrid(a, b, c, indexing='ij'); W = (np.broadcast_to(w[None, :, None], A.shape)*(2*np.pi/n
+13:24:02
+touching: den = 0.250000 (1/2)  num = 0.250000 (1/2)  ratio = 1.000000 (expected 1)
+crossing: den = 0.250000 (1/2)  num = -0.083333 (-1/6)  ratio = -0.333333 (expected -1/3)
+link projectors: rank one, eigenvalue 1 (numerator and denominator); iota = sigma_c/sqrt6 up to phase: True
+m = 1  pattern aa       crossings 0 : c_num = +1.000000+0.000000i  c_den = 1.000000  r = +1.000000 
+m = 2  pattern aabb     crossings 0 : c_num = +0.500000-0.000000i  c_den = 0.500000  r = +1.000000 
+m = 2  pattern abab     crossings 1 : c_num = -0.166667-0.000000i  c_den = 0.500000  r = -0.333333 
+m = 3  pattern aabbcc   crossings 0 : c_num = +0.250000+0.000000i  c_den = 0.250000  r = +1.000000 
+m = 3  pattern aabcbc   crossings 1 : c_num = -0.083333+0.000000i  c_den = 0.250000  r = -0.333333 
+m = 3  pattern aabccb   crossings 0 : c_num = +0.250000-0.000000i  c_den = 0.250000  r = +1.000000 
+m = 3  pattern abacbc   crossings 2 : c_num = +0.027778+0.000000i  c_den = 0.250000  r = +0.111111 
+m = 3  pattern abcabc   crossings 3 : c_num = +0.138889+0.000000i  c_den = 0.250000  r = +0.555556 
+m = 4  pattern aabbccdd crossings 0 : c_num = +0.125000+0.000000i  c_den = 0.125000  r = +1.000000 
+m = 4  pattern aabbcdcd crossings 1 : c_num = -0.041667+0.000000i  c_den = 0.125000  r = -0.333333 
+m = 4  pattern aabbcddc crossings 0 : c_num = +0.125000-0.000000i  c_den = 0.125000  r = +1.000000 
+m = 4  pattern aabcbdcd crossings 2 : c_num = +0.013889-0.000000i  c_den = 0.125000  r = +0.111111 
+m = 4  pattern aabcbddc crossings 1 : c_num = -0.041667+0.000000i  c_den = 0.125000  r = -0.333333 
+m = 4  pattern aabcdbcd crossings 3 : c_num = +0.069444-0.000000i  c_den = 0.125000  r = +0.555556 
+m = 4  pattern aabcdbdc crossings 2 : c_num = +0.013889-0.000000i  c_den = 0.125000  r = +0.111111 
+m = 4  pattern aabcdcdb crossings 1 : c_num = -0.041667+0.000000i  c_den = 0.125000  r = -0.333333 
+m = 4  pattern aabcddbc crossings 1 : c_num = -0.041667+0.000000i  c_den = 0.125000  r = -0.333333 
+m = 4  pattern aabcddcb crossings 0 : c_num = +0.125000-0.000000i  c_den = 0.125000  r = +1.000000 
+m = 4  pattern ababcdcd crossings 2 : c_num = +0.013889+0.000000i  c_den = 0.125000  r = +0.111111 
+m = 4  pattern abacbdcd crossings 3 : c_num = -0.004630-0.000000i  c_den = 0.125000  r = -0.037037 
+m = 4  pattern abacdbcd crossings 4 : c_num = -0.023148-0.000000i  c_den = 0.125000  r = -0.185185 
+m = 4  pattern abacdbdc crossings 3 : c_num = -0.004630-0.000000i  c_den = 0.125000  r = -0.037037 
+m = 4  pattern abcadbcd crossings 5 : c_num = +0.032407+0.000000i  c_den = 0.125000  r = +0.259259 
+m = 4  pattern abcadcbd crossings 4 : c_num = +0.050926+0.000000i  c_den = 0.125000  r = +0.407407 
+m = 4  pattern abcdabcd crossings 6 : c_num = -0.060185+0.000000i  c_den = 0.125000  r = -0.481481 
+13:37:10
+
+[exited with code 0]

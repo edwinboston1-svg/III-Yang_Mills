@@ -1,0 +1,2 @@
+touching: den = 0.500000 (1/2)  num = 0.500000 (1/2)  ratio = 1.000000 (expected 1)
+crossing: den = 0.500000 (1/2)  num = -0.166667 (-1/6)  ratio = -0.333333 (expected -1/3)

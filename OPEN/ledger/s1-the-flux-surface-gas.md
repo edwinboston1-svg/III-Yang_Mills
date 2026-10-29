@@ -271,3 +271,62 @@ a spin-network evaluation on T embedded in S, at leading order in the spins. Sta
 (S8a) is what the KP fold-in needs. It replaces the √C of §10 for lone walls by 1, and leaves §10's √C only for touching clusters. A chamber reading |ρ| above 2^{χ(S)} refutes (S8a).
 
 **Why this is the physics, read back.** The strong-coupling picture is flux on closed surfaces. A wall is a unit of adjoint flux stitched across such a surface. On a sphere every stitch is independent; on a torus two stitches on crossing cycles feel the non-commutativity of the two holonomies and cancel by a third. That is a non-abelian effect with no counterpart in the counting: it lowers R1's weight exactly where a sup-norm bound would raise it.
+
+## 13. The vertex law proved on three roads; the bridge theorem; the piece bound; two stakes corrected (13:44 EDT, read from `date`)
+
+**Corrections first (law 18: the prediction is corrected, never the measurement).**
+- §12's stake (S8c) in the form "r = (−1/3)^{crossings}" is REFUTED at a triple point: three walls pairwise interlaced at one vertex read 5/9, not (−1/3)³ (the Yang–Mills seat's T6, `aperanton_s8_check.awk`; iii-38's Pauli trace; this seat's table below). The law is the product of a VERTEX TABLE, below; the per-crossing power is its two-wall case.
+- The plan's A3 stake "3^{χ}·Π_ℓ R_{m_ℓ}·a₁^n for branched pieces" is REFUTED by the tripod: R₃ = dim Inv(1^{⊗3}) = 1 gives 3a₁³, the exact weight is 6a₁³ (iii-38, 80 chambers, `g50_weights6`). The factor at a multiplicity-3 link is 2; what is proved for branched pieces is the bound of Lemma S10 below.
+
+**The orientability census (iii-38, B6).** Every branch-free closed surface through a plaquette of ℤ⁴ with F ≤ 20 is orientable (27,472 at F ≤ 18; 80,480 at F = 20; records `5a933d43`, `cde192a9`). F = 22 is running. The tail (F > 22) assumes nothing: Lemma S11.
+
+**Lemma S8 (THE VERTEX LAW; proved on three roads).** Let S be an orientable branch-free closed surface at spin ½ and w₁, …, w_k lone walls whose boundary cycles C_i ⊂ S are pairwise link-disjoint. Then
+
+  W(S ∪ {w_i}) = (3a₁)^k · W(S) · Π_{v} c(D_v),
+
+the product over the vertices of S at which two or more of the C_i meet, where D_v is the chord diagram of the walls through v (the T-links at v in the order of S's vertex cycle, a wall's two spokes one chord) and, for a diagram of m chords,
+
+  c(D) = ½ · 3^{−m} · Σ_{μ ∈ {1,2,3}^m} tr( Π_{p=1}^{2m} σ_{μ(chord at spoke p)} ),
+
+the trace of the Pauli product around the vertex cycle with each chord's adjoint index summed (the Yang–Mills seat's form, ledger §112 bis). Three facts follow at once: (a) |c(D)| ≤ 1 for EVERY diagram, since each Pauli product is unitary and |tr| ≤ 2 on ℂ² — this is (S8a), proved for all m, not read off a table; (b) c depends only on the diagram's intersection graph, and on a forest c = (−1/3)^{edges} — the per-crossing law of §12 is exactly the forest case; (c) at complete crossing c = ½[3^{1−m} − (−1)^m]. The map D ↦ c(D) is the sl₂ weight system in the defining representation, normalised to 1 on one chord (classical, W = 0: Bar-Natan 1995; Chmutov–Lando); the earning is its identification as the wall interference of the flux-surface gas and the complete lattice table. With m ≤ 4 walls at a vertex (a vertex of ℤ⁴ has eight links), the table up to rotation and reflection is:
+
+| m | pattern (cyclic order of the walls' spokes) | crossings | c(v) |
+|---|---|---|---|
+| 1 | aa | 0 | 1 |
+| 2 | aabb (touching) | 0 | 1 |
+| 2 | abab (crossing) | 1 | −1/3 |
+| 3 | aabbcc, aabccb (nested) | 0 | 1 |
+| 3 | aabcbc | 1 | −1/3 |
+| 3 | abacbc | 2 | 1/9 |
+| 3 | abcabc (triple point) | 3 | 5/9 |
+| 4 | aabbccdd, aabbcddc, aabcddcb | 0 | 1 |
+| 4 | aabbcdcd, aabcbddc, aabcdcdb, aabcddbc | 1 | −1/3 |
+| 4 | aabcbdcd, aabcdbdc, ababcdcd | 2 | 1/9 |
+| 4 | aabcdbcd | 3 | 5/9 |
+| 4 | abacbdcd, abacdbdc | 3 | −1/27 |
+| 4 | abacdbcd | 4 | −5/27 |
+| 4 | abcadcbd | 4 | 11/27 |
+| 4 | abcadbcd | 5 | 7/27 |
+| 4 | abcdabcd | 6 | −13/27 |
+
+Every entry has |c(v)| ≤ 1, so |r| ≤ 1 (S8a), r is multiplicative over vertices (S8b), and at vertices carrying at most two walls r = (−1/3)^{crossings} (S8c, the two-wall case; iii-38's reading 5,614/5,614 at F ≤ 18, and the four-wall tori at F = 20 reading −1/27, 1/81, 1 for 3, 4, 0 crossings).
+
+*Proof.* (i) Locality. After the links of S not in T = ⋃C_i are integrated, the integrand over the T-links is Π_{pieces} Π_b χ_½(z_b) · Π_i χ₁(z_{C_i}) (§10, step 1, orientable pieces). Every T-link carries exactly three strands: the two boundary traversals, in opposite directions since S is orientable, and the wall's spin-1 strand, so its Haar integral is the projector onto Inv(½ ⊗ ½* ⊗ 1), which is one-dimensional; without walls it is the projector onto Inv(½ ⊗ ½*), also one-dimensional. A rank-one projector |ι⟩⟨ι| puts ι at one end of the link and ι* at the other, so the integral over all of T is a product over vertices of contractions of the ι's at that vertex along the corner pairings, numerator and denominator alike; the ratio is Π_v c(v) with c(v) the ratio of the two contractions, and c(v) = 1 at every vertex where only one wall passes (the contraction is ⟨ι|ι⟩ = 1 on both sides). (ii) The local values. Schur–Weyl at degree two gives, for a T-link a with its two face strands and the wall's strand, ∫ a_{αα′}(a⁻¹)_{β′β}D¹(a)_{μν} da = (1/6)(σ_μ)_{αβ}(σ_ν)_{β′α′}, against ½δ_{αβ}δ_{α′β′} without the wall: the face strands are joined across the link exactly as in S4′ step 2, with a Pauli matrix in each joint, and the wall's adjoint index between two consecutive links of the same wall is shared by two insertions at ONE vertex, so the sum factorises over vertices (the Yang–Mills seat's proof, §112 bis; iii-38's page 16.68 the same trace). The normalisations are the no-wall loop's 2 and (1/6)/(1/2) = 1/3 per link, two link ends per wall per vertex, which gives the ½·3^{−m} in front of the trace sum. Hence one wall Σ tr(σ_μσ_μ) = 6, normalised to 1; touching Σ tr(σ_μσ_μσ_νσ_ν) = 18 against 18, c = 1; crossing Σ tr(σ_μσ_νσ_μσ_ν) = −6, c = −1/3; the triple point Σ tr(σ_μσ_νσ_ρσ_μσ_νσ_ρ) = 30 against 54, c = 5/9. The twenty-six patterns with m ≤ 4 up to reflection are the contractions tabulated above (`records/surface-gas/s8_local.py`: the link projector built by exact quadrature and factorised, every pattern contracted; `s8_local_table.2026-10-29a.txt`); the Yang–Mills seat's `aperanton_s8_pauli.awk` and `aperanton_s8_exact.awk` read all 105 diagrams with m = 4 up to rotation by the Pauli sum and by exact quaternion moments, equal on every one. (iii) The second road: the global integrals ∫χ_½(z₁)χ_½(z₂)χ_½(z₂z₁)χ₁(z₁)χ₁(z₂) = 1/2 = the denominator (touching, c = 1) and ∫χ_½([z₁,z₂])χ₁(z₁)χ₁(z₂) = −1/6 against 1/2 (the torus crossing, c = −1/3), by orthogonality at the desk and by exact quadrature (`s8_kat.py`); the Yang–Mills seat's engine reads the same seven configurations, the triple point among them. ∎
+
+**Theorem S8′ (THE BRIDGE; iii-38's, page 16.68, proved at every spin assignment).** If a closed set X is the union of two link-disjoint closed sets X₁, X₂ and a single plaquette w whose links are split between them, then W(X) = 0: integrating X₁'s other links leaves an amplitude of w's arc in X₁ that is invariant under the gauge group acting on that arc alone, hence constant, likewise for X₂, and the remaining ∫χ_j(U_w) over a free link vanishes for every j ≥ ½. Hence two-component rests joined by one lone wall (912 chambers at F = 19, read as exactly zero) drop out of the fold-in. A patch of several plaquettes bridging two surfaces is not a bridge (16/81 at F = 20).
+
+**Lemma S9 (THE PATCH LAW for surface pieces; proved).** Let Y be a connected set of n plaquettes off S, every off-S link of Y of multiplicity exactly 2 in Y, every link of Y in S of multiplicity 1 in Y, Y orientable, attached to the orientable rest S along its k boundary curves ∂Y = b₁ ⊔ … ⊔ b_k ⊂ S, the curves pairwise link-disjoint. Then
+
+  W(S ∪ Y) = 3^{χ(Y)} a₁^n · W(S) · Π_v c(v),
+
+with c(v) the vertex table of S8 applied to the boundary curves as if each were a wall. *Proof.* Each plaquette of Y carries spin 1 exactly (its S-links carry ½ ⊗ ½ ⊗ j ∋ 0 ⇒ j = 1, and Y's off-S links carry j ⊗ j′ ∋ 0 ⇒ j = j′). Integrating Y's off-S links gives 3^{χ(Y)−n}·(3a₁)^n·Π_b χ₁(z_b) (the piece formula of §10 at spin 1, verified at the desk for the disc, the annulus and the one-holed torus), so each boundary curve carries one spin-1 loop, which is a wall's strand, and S8 applies. ∎ A disc (χ = 1, k = 1) weighs 3·a₁^n·W(S): iii-38's reading 4·3^{1−n} at n = 1, 2, 3, 4 (discs with 1, 2, 3 and 5 internal links, the 2×2 square among them) is this law.
+
+**Lemma S10 (THE PIECE BOUND for every piece; proved).** Let Y be any connected set of n plaquettes off S whose off-S links all have multiplicity ≥ 2 in Y (so that Y ∪ S is closed at integer spins on Y), attached along the graph T = L(Y) ∩ L(S). Then
+
+  |W(S ∪ Y)| ≤ √C(T) · (3a₁)^n · W(S),
+
+with C(T) the L² constant of S4′. *Proof.* Cauchy–Schwarz in the T-variables: |∫ g_S h_Y| ≤ ‖g_S‖₂‖h_Y‖₂, ‖g_S‖₂ = √C(T)·W(S) by S4′. For h_Y = ∫_{off-S} Π_{p∈Y} 3a₁χ₁(U_p): by Jensen ‖h_Y‖₂² ≤ (3a₁)^{2n} Z₁(Y), Z₁(Y) := ∫ Π_{p∈Y} χ₁(U_p)² over ALL links of Y. Every link of T lies in exactly one plaquette p of Y, and ∫ dU χ₁(AU)² = ∫(1 + χ₁ + χ₂)(AU) dU = 1 removes p; the plaquettes removed expose the next layer, and a plaquette none of whose links is free has all its links shared with removed plaquettes, hence free; so Z₁(Y) = 1 for every piece. ∎ For the tripod (T three 3-paths from x to y, b₁ = 2, C = 16/3) the bound is 2.31·27a₁³ = 62a₁³ against the exact 6a₁³, which is why S10 is used only where S9 does not apply.
+
+**Lemma S11 (THE CAPPED BOUND for every all-½ closed set; proved).** For any closed set X all of whose plaquettes carry spin ½ (so every link multiplicity is even), |W_½(X)| ≤ u^{|X|}·2^{χ(X̂)}, where X̂ is X cut along every link of multiplicity ≥ 4 with every boundary curve capped by a disc: cut X there; the pieces are surfaces with boundary (possibly non-orientable) whose integrals are products of d^{χ(P)−n(P)} and characters of boundary words, each of modulus ≤ 2 = χ_½(1); so the integral is at most its value with every cut-link holonomy set to 1, which is u^{|X|}2^{χ(X̂)}. In particular |W_½(X)| ≤ 4^{c(X̂)}u^{|X|} with c(X̂) the number of pieces, and |W_½(S)| ≤ 4u^{|S|} for every closed surface S, orientable or not. ∎ For S6's acyclic contacts this is the equality.
+
+**What this section proves and what it does not.** S8–S11 are theorems. They price: lone walls on orientable rests exactly; surface pieces on orientable rests exactly; every other piece by S10; every all-½ closed set by S11. Not yet priced sharply: branched pieces (S10's √C(T)(3a₁)^n in place of their exact 3^{χ}Π c(m) a₁^n with c(3) = 2); pieces whose boundaries share a link of S (½ ⊗ ½ ⊗ 1 ⊗ 1, rank two; read 1 at F = 16); non-orientable rests (none to F = 20). The fold-in of §14 uses only the proved bounds and says which.

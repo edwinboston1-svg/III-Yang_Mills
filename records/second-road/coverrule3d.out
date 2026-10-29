@@ -1,0 +1,5 @@
+3D COVER L=2: plaquettes=24 with count != 1: 0
+3D COVER L=4: plaquettes=192 with count != 1: 0
+3D COVER L=6: plaquettes=648 with count != 1: 0
+3D COVER L=8: plaquettes=1536 with count != 1: 0
+CONTROL (one link added) L=2: plaquettes=24 with count != 1: 4 (must be > 0)

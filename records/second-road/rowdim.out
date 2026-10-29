@@ -1,0 +1,22 @@
+KAT D=4: ROW(0.2410) hand = 0.996296731 (Table 3: 0.996297)
+D=2: P=2 direct=4 mediated=6
+  beta=0.70: direct=0.258838 mediated=0.394833 ROW(hand)=0.653670623  ROW(true)=0.576046
+  beta=0.80: direct=0.363561 mediated=0.556927 ROW(hand)=0.920487194  ROW(true)=0.773620
+  beta=0.82: direct=0.388091 mediated=0.595029 ROW(hand)=0.983120163  ROW(true)=0.817530
+  beta=0.83: direct=0.400859 mediated=0.614880 ROW(hand)=1.015738620  ROW(true)=0.840058
+  beta=0.85: direct=0.427447 mediated=0.656257 ROW(hand)=1.083703513  ROW(true)=0.886278
+  ROW = 1 at beta = 0.825209 (hand constants)   0.896545 (true constants)
+D=3: P=4 direct=8 mediated=36
+  beta=0.30: direct=0.232423 mediated=0.383656 ROW(hand)=0.616078677  ROW(true)=0.595967
+  beta=0.35: direct=0.319472 mediated=0.543050 ROW(hand)=0.862521704  ROW(true)=0.821973
+  beta=0.37: direct=0.358830 mediated=0.617446 ROW(hand)=0.976276374  ROW(true)=0.923855
+  beta=0.374: direct=0.367031 mediated=0.633117 ROW(hand)=1.000148158  ROW(true)=0.945042
+  beta=0.38: direct=0.379544 mediated=0.657135 ROW(hand)=1.036678738  ROW(true)=0.977335
+  beta=0.40: direct=0.423132 mediated=0.741786 ROW(hand)=1.164918440  ROW(true)=1.089476
+  ROW = 1 at beta = 0.373975 (hand constants)   0.384144 (true constants)
+D=4: P=6 direct=12 mediated=90
+  beta=0.2300: direct=0.331235 mediated=0.569908 ROW(hand)=0.901142799  ROW(true)=0.875259
+  beta=0.2410: direct=0.363540 mediated=0.632756 ROW(hand)=0.996296731  ROW(true)=0.964245
+  beta=0.2452: direct=0.376287 mediated=0.657876 ROW(hand)=1.034163464  ROW(true)=0.999463
+  beta=0.2500: direct=0.391136 mediated=0.687366 ROW(hand)=1.078501759  ROW(true)=1.040561
+  ROW = 1 at beta = 0.241415 (hand constants)   0.245263 (true constants)

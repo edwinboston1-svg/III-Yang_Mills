@@ -99,3 +99,15 @@ The proved strong end is 0.2452. The ordered-datum flow measured at spins ≤ 2 
 ## 7. Not claimed
 
 No gap is claimed above β = 0.2452. The counts beyond F = 18 are not used. The ceiling near 1.0 rests on measured growth, not on a proof. Theorem S is staked, not proved.
+
+## 8. The stakes read (10:3x EDT by the clock; the F = 22 run ended at 10:04 and was read after the S2′ commit f8429c0)
+
+The count to F = 22 (`records/surface-gas/surf_d4_F22.2026-10-29a.txt`, 4,679 s, DUP = 0): **80,480 surfaces at F = 20, 320 of them tori, and 551,408 at F = 22, 352 of them tori.** The node counter in that record wrapped, because `long` is 32 bits on this platform; the surface counts are far below the wrap and unaffected.
+
+| Stake | Bet | Read | Verdict |
+|---|---|---|---|
+| S1 | growth per plaquette over fours at F = 20 and 22 in [2.15, 2.45] | (80,480/2,728)^{1/4} = 2.331 and (551,408/23,508)^{1/4} = 2.201 | HELD |
+| S2 | branch-free reach with the proved tail, F₀ = 22, in [0.565, 0.62] | 0.5942 (u = 0.1464) | HELD |
+| S2′ | composite-included reach with the proved tail, F₀ = 22, in [0.546, 0.60] | 0.5776 (u = 0.1424) | HELD |
+
+The two parity chains of the growth are converging from opposite sides: 1.968, 2.065, 2.154, 2.201 on F ≡ 2 mod 4 and 2.416, 2.331 on F ≡ 0 mod 4. That points to an asymptotic growth near 2.25 to 2.3. This is a reading, not a bound. At the measured growth the composite-included ceiling is 1.04. Record `records/surface-gas/kp_reach_F22.2026-10-29a.txt`. S3 and S4 wait on R1 and R4. Nothing above β = 0.2452 is claimed: the convergence condition is verified for the branch-free part and its forest composites only, and the irreducible branched pieces are not yet bounded.

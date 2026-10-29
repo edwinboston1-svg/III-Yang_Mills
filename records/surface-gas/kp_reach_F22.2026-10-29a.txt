@@ -1,0 +1,9 @@
+# enumerated through F0 = 22
+tail mu = 5.0 : KP (branch-free part) holds to beta = 0.5942  u = 0.1464  alpha = 0.0196  S = 1.960e-02
+tail mu = 4.0 : KP (branch-free part) holds to beta = 0.7398  u = 0.1809  alpha = 0.0208  S = 2.080e-02
+tail mu = 3.0 : KP (branch-free part) holds to beta = 0.9717  u = 0.2339  alpha = 0.0282  S = 2.820e-02
+tail mu = 2.5 : KP (branch-free part) holds to beta = 1.1181  u = 0.2660  alpha = 0.0438  S = 4.380e-02
+tail mu = 5.0 : KP with composite shift holds to beta = 0.5776  u = 0.1424  alpha = 0.0100
+tail mu = 4.0 : KP with composite shift holds to beta = 0.7171  u = 0.1756  alpha = 0.0112
+tail mu = 3.0 : KP with composite shift holds to beta = 0.9279  u = 0.2241  alpha = 0.0170
+tail mu = 2.5 : KP with composite shift holds to beta = 1.0365  u = 0.2483  alpha = 0.0282

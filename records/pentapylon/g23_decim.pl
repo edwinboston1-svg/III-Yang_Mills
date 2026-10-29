@@ -15,9 +15,9 @@
 # over a superset of the realisable configurations: it is the constant the plan seat's form of argument would need, not the specification's own.
 # THE SEARCH.  TV by quadrature on S^3 (theta midpoints, weight (2/pi) sin^2, the axis on a Fibonacci sphere; NTH x NSPH points); phi by its
 # series (r <= 8 here); the sup by random starts (the five other w's aligned or random, |w| in [0, 5]) and coordinate refinement.  KNOWN ANSWERS:
-# at five w's = 0 and |w_p| -> 0 the TYPE I coefficient tends to the bare one-link law (the tilt-free vMF at kappa = beta|w_p| rotated: TV ->
-# 0); the TYPE I sup with the other five w's = 0 must not exceed the sharp one-link bound (2 beta/(3 pi)) x |w_p - w'_p| <= (2 beta/3pi) x 2|w_p|
-# (it is a vMF in y with kappa = beta|w_p| to first order) -- printed as a check, and TV(f, f) = 0.
+# at five w's = 0 and |w_p| -> 0 the TYPE I TV tends to the linear response of the pinned law: the pinning enters through phi(beta|y + w|),
+# whose derivative is beta m(beta|y + w|), so at w_p = 0.01 e, w'_p = -0.01 e the TV is (2/(3 pi)) x beta m(beta) x 0.02 within 5 % (the 03:5x
+# correction: the first draft compared against (2 beta/(3 pi)) x 0.02, a bound 16x too loose, and passed vacuously); and TV(f, f) = 0.
 # usage: perl g23_decim.pl beta [NSTART=300] [NREF=200] [NTH=24] [NSPH=96] [SEED=1]
 use strict; use warnings; use POSIX (); $| = 1;                                          # autoflush: the run ends in POSIX::_exit, which skips the buffer
 my ($beta, $NSTART, $NREF, $NTH, $NSPH, $SEED) = @ARGV; die "usage: beta [NSTART] [NREF] [NTH] [NSPH] [SEED]" unless defined $beta;
@@ -27,6 +27,7 @@ sub phi { my $r = shift; return -log(2) if $r < 1e-12; my $z = $r * $r / 4; my (
 my @Q; { for my $it (0 .. $NTH - 1) { my $th = $PI * ($it + 0.5) / $NTH; my $wt = (2 / $PI) * sin($th) ** 2 * ($PI / $NTH) / $NSPH;
   for my $k (0 .. $NSPH - 1) { my $z = 1 - 2 * ($k + 0.5) / $NSPH; my $r = sqrt(1 - $z * $z); my $ph = $k * $PI * (3 - sqrt(5)); push @Q, [[cos($th), sin($th) * $r * cos($ph), sin($th) * $r * sin($ph), sin($th) * $z], $wt] } } }
 my $NQ = scalar @Q;
+sub bessel { my ($n, $x) = @_; my $s = 0; my $t = ($x / 2) ** $n; my $f = 1; $f *= $_ for 1 .. $n; $t /= $f; for my $k (0 .. 60) { $s += $t; $t *= ($x / 2) ** 2 / (($k + 1) * ($k + 1 + $n)) } return $s }
 sub nrm { my $v = shift; return sqrt($v->[0] ** 2 + $v->[1] ** 2 + $v->[2] ** 2 + $v->[3] ** 2) }
 sub randunit { my @v = map { my $u1 = rand() || 1e-12; my $u2 = rand(); sqrt(-2 * log($u1)) * cos(2 * $PI * $u2) } 1 .. 4; my $n = nrm(\@v); return [ map { $_ / $n } @v ] }
 sub scale { my ($v, $s) = @_; return [ map { $_ * $s } @$v ] }
@@ -48,7 +49,8 @@ my $t0 = time;
 printf "G23 beta=%g the decimated specification's coefficients searched: quadrature %d points, %d starts x %d refinements per type (seed %d)\n", $beta, $NQ, $NSTART, $NREF, $SEED;
 # known answers
 { my $W0 = [ map { [0, 0, 0, 0] } 1 .. 5 ]; my $Lf = logpart($W0); my $w = [3, 0, 0, 0]; printf "G23-KAT tv(f, f) = %.2e (must be 0)\n", tv_pair($Lf, $w, $w);
-  my $t = tv_pair($Lf, [0.01, 0, 0, 0], [-0.01, 0, 0, 0]); printf "G23-KAT the tilt-free TYPE I at |w_p| = 0.01, antipodal: tv = %.3e against the sharp one-link bound (2 beta/3pi) x 0.02 = %.3e  [%s]\n", $t, 2 * $beta / (3 * $PI) * 0.02, $t <= 2 * $beta / (3 * $PI) * 0.02 * 1.01 ? 'WITHIN' : 'EXCEEDS';
+  my $mb = bessel(2, $beta) / bessel(1, $beta); my $lr = 2 * $beta * $mb / (3 * $PI) * 0.02; my $t = tv_pair($Lf, [0.01, 0, 0, 0], [-0.01, 0, 0, 0]);
+  printf "G23-KAT the tilt-free TYPE I at |w_p| = 0.01, antipodal: tv = %.3e against the linear response (2/(3 pi)) x beta m(beta) x 0.02 = %.3e (ratio %.3f)  [%s]\n", $t, $lr, $t / $lr, abs($t / $lr - 1) < 0.05 ? 'WITHIN-5%' : 'OFF';
   my $t5 = tv_pair($Lf, [5, 0, 0, 0], [-5, 0, 0, 0]); printf "G23-KAT the tilt-free TYPE I at |w_p| = 5, antipodal: tv = %.6f\n", $t5 }
 # the search
 my %best = (I => [0, ''], II => [0, '']);

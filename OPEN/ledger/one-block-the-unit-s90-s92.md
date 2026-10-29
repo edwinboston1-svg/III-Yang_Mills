@@ -1,6 +1,6 @@
-# ΑΠΕΡΑΝΤΟΝ ledger §74 bis, §83 quater–quinquies, §90–§92 bis — the one-doubling unit, candidate B's refutation, Fontes's constants re-derived
+# ΑΠΕΡΑΝΤΟΝ ledger §74 bis, §83 quater–quinquies, §90–§92 septies — the one-doubling unit, candidate B's refutation, Fontes's constants re-derived
 
-Extracted verbatim from STDLIB/data/paraggelma/project_iii_aperanton_master_plan_after_the_reboot_of_2026_10_27.md on 2026-10-29 05:35 (the desktop seat b10e8d4b). Time labels are this machine's `date +%H:%M` (EDT). Instruments (this seat's scratchpad, to land under STDLIB/scripts with their records after run ae releases the gate): fontes_hessian.awk, fontes_peierls.awk, fontes_christoffel.awk.
+Extracted verbatim from STDLIB/data/paraggelma/project_iii_aperanton_master_plan_after_the_reboot_of_2026_10_27.md on 2026-10-29 05:52 (the desktop seat b10e8d4b). Time labels are this machine's `date +%H:%M` (EDT). Instruments: STDLIB/scripts/aperanton_fontes_{hessian,peierls,christoffel}.awk with records STDLIB/build/aperanton/fontes_*.2026-10-29a.txt; the KP balance kp_floor.awk in the seat's scratchpad.
 
 §83 quater — BAŁABAN FROM THE PAGE (iii-3a, two readings, 05:18; file D4-BALABAN-THE-PAGES.md in that seat's scratchpad). THE
 MAP IS EXACT: CMP 109 p. 252, (0.2): "A^ε(U) = Σ_p ε^{d−4}[1 − Re tr U(∂p)], where tr is the normalized trace, i.e. tr 1 = 1",
@@ -230,3 +230,60 @@ the Peierls condition 54.4·μ₁(β, θ_c) < 1; the KP activity C₀θ_c²/(3β
 record: 32 RIGOROUS in (a) (the crude Christoffel bound is a theorem, two lines above) and conditional on (b) his KP
 threshold and (c) the chessboard constant; 20 if the sharp M is near its reading. THE COORDINATES: [0.2452, 32] with (b) and
 (c) outstanding — 7.0 doublings of β; the sup metric grows ×1.8–2.1 per doubling at the bottom (§91); no gap at the top (§74).
+
+§91 ter — iii-38 ON THE RECORD (05:37): Δ_link = 0.163334 at β = 0.5 is the same object as iii-3a's 0.164961 (the truncated weight w = 1 + 2a₁χ_½, two staples in different plaquettes moved, four at 1, F(g,g′) = −log ∫ w(U)⁴ w(Ug) w(Ug′) dU, Δ = max over g′ of the oscillation over the 48-design of F(g,g′) − F(g,1)); his g′ ran over EIGHT design elements against all 48, the 1 % the subset's deficit on the sup. THE WORST CASE OF THE QUOTIENT CRITERION MEASURED: at the cancelling datum one un-cancelling change moves E[tr U_top] by 0.648992 — 11× the symmetric near response, the stake [0.15, 0.45] exceeded — so the worst-case block form is DEAD at 2.2 in the spins-≤-1 model; the survivor is the small/large-field split with the measure's weight of the frustrated data as its first constant. g31_cube_pair.pl (exact plaquette-pair correlations on the cube with positive boundary fields, the Griffiths decider, KATs met) runs next at 2.2/1.0/0.5; run y RED by his own in-flight edit, run z launched 05:23.
+
+§92 ter — THE SECOND STANDING FALSIFIER, AND THIS UNIT UNDER IT (the plan seat, 05:37): beside the U(1) test, THE FREE MASSLESS GAUSSIAN FIELD — two coupled free fields with boundary data differing at one site differ by a harmonic extension of order r⁻² that never vanishes, every actual (averaged) per-site total variation along the coupling is small, there is no frustration, and the correlations are algebraic; so any criterion in which paths pay a product of ACTUAL per-site influences certifies the massless field and is false (van den Berg–Maes is a theorem only because its disagreement probability is the SUPREMUM over neighbour data, of order one there — the supremum the frustrated datum killed at the crossover). Partial frustration (one plaquette with tr U_p ≤ 0) has probability near 0.1 at β = 2.2 for either group, so "frustrated rare" needs its threshold. Every candidate from here states, beside its U(1) line, what it reads for the free massless field. THIS UNIT: the one-block small-field expansion converges for the free field exactly as for SU(2) (the same Gaussian block Hessian, no Christoffel term), so β_SF certifies nothing about decay — it is where a Bałaban-type analysis has a verified foothold, and the two-scale trap (§74) is why convergence is not a gap; §90's sup criterion reads order one per site on the free field and certifies nothing. What survives the two falsifiers is the reading in which the site is a block at a scale inside Theorem 8.7's disk, where the sup criterion closes by itself: the renormalisation step.
+
+§92 quater — §92/§92 bis CHECKED BY HAND BY iii-3a, THE CONVENTION STATED, AND (c)'s SMALL-BALL ROAD REFUTED (05:46). HOLDS,
+independent of the instruments: (i) the 120 (32 × 6 = 192 incidences = 24 × 4 + 96 × 1; two block edges share a plaquette only
+in a face); (ii) the 72 (for an edge (v, μ) and each ν ≠ μ one of the two (μν)-plaquettes is a face and the other external,
+external on the + side iff v_ν = 1 — base in {0,1,2}⁴ keeps k externals for an edge with k ones among its other coordinates,
+diagonal 3 + k, multiplicities 4 × (1,3,3,1), the origin's four edges keeping none: his single zero mode); (iii) H_full =
+facesᵀfaces + 3I; (iv) THE SPECTRUM BY THE HODGE DECOMPOSITION of the tesseract (interval Laplacians 0, 2 on vertices, 2 on
+edges): ker d₁ = im d₀ fifteen-dimensional; Δ₂ on 2-forms at 4, 6, 8 with multiplicities 6, 12, 6; the exact 2-forms (dim 7) at
+6 ×4 and 8 ×3; the coexact 2-forms — the nonzero spectrum of facesᵀfaces — at 4 ×6, 6 ×8, 8 ×3; plus 3I: 3 ×15, 7 ×6, 9 ×8,
+11 ×3, trace 192: the exact computation and the Hodge count agree to the last multiplicity; (v) (e·20)^{k−1} against 20^k
+fails first at k = 4; (vi) the marginal by Laplace with s = βθ*²: μ₁/e^{−β(1−cos θ*)} = [√s e^{−s/2} + √(π/2) erfc(√(s/2))] /
+(√(π/2) e^{−s/2}) = 2.24 at s = 5.99 — my 2.24 from a different road; (vii) M ≤ 9 holds for the ORDERED-PAIR convention
+(w_p sums over ordered pairs with the antisymmetric S_p, so Σ_p|w_p(x)| ≤ |x|ᵀA|x| ≤ 9|x|² with A the 9-regular face-sharing
+adjacency), the same convention in which ‖S‖ = 5.96 and the reading 6.26 were taken — an unordered convention would read
+4.5 and move β_SF; stated here beside the 9. THE LINE NOT SIGNED, in (c): "(Z_defect-everywhere/Z)^{1/N_p}" — under
+coordinate reflections a (μν)-plaquette event reflects to a (μν)-plaquette event, so the chessboard estimate's "everywhere"
+is all plaquettes of ONE ORIENTATION CLASS, exponent 6/N_p, and a contour of mixed orientations pays ∏_{μν} z_{μν}^{|S_{μν}|}.
+THE SMALL-BALL ROAD FOR THE CHESSBOARD CONSTANT IS REFUTED: constraining N of the 6N plaquettes while Z keeps every link
+free, Z ≥ e^{6βN cos ε}v^{4N} (v the Haar ball of radius ε/4) gives per plaquette e^{−β(1−cos θ*)}·e^{6β(1−cos ε)}·v⁻⁴ ~ ε⁻¹²,
+optimised at ε² = 2/β a prefactor of order 10⁹β⁶ (10⁷β^{4.5} with a maximal-tree gauge fixing) — 10¹⁴ at β = 32 — on which
+the Peierls condition cannot close at any β. The chessboard constant needs a GAUSSIAN lower bound on Z (Jensen against a
+Gaussian reference on gauge-fixed links, cut off on the compact group), where the prefactor becomes a low power of βθ*², as
+the marginal's 2.24 suggests. (c) IS iii-3a's, in the form: (α) μ₁(β, θ*) ≤ ρ_{μν}(β, θ*) := (Z[all (μν)-plaquettes with
+θ_p > θ*]/Z)^{1/N_{μν}} — the marginal a LOWER bound on the chessboard factor by the estimate itself at |S| = 1; (β) ρ_{μν} ≤
+e^{−β(1−cos θ*)}·K(β, θ*) with K explicit, the pointwise weight bound above and a Gaussian-domination lower bound on Z below;
+(γ) the corrected floor from 54.4·ρ_{μν} < 1. Until it lands the coordinate [0.2452, 32] carries "(c) owed, the small-ball
+road refuted". B4 MEANWHILE: VmfBounds.lean drafted (22 theorems: the four coefficient sequences' closed forms and signs —
+turan, lower, upper, perp — the four translations to the bounds on m given the recurrence r(I₁ − I₃) = 4I₂, the Riccati
+identity's algebra, the third-cumulant bound from (P), (V), (D)); compiles the minute ae releases the slot.
+
+§92 quinquies — (b) READ FROM HIS OWN TABLE, AND THE FLOOR CORRECTED: β_SF ≈ 70, NOT [20, 32] (05:49; law 18 on my own §92
+bis). His Kotecký–Preiss condition is in his margin table (ym_v65.tex line 357): "KP condition c_d z e² < 1", c_d = 18 the
+link–plaquette adjacency (line 4313, 5587: 6 plaquettes × 3 other links), z = C₀θ*²/(βλ_min) the per-link activity — at his
+(9587, 0.025, 0.6893) it reads 1.342 × 10⁻⁴ against his table's 1.33 × 10⁻⁴, so this is the criterion. My §92 bis took the
+threshold as z < 0.1 "read off his 26× margin" — a misreading by 13×: the threshold is z < 1/(18e²) = 0.00752, and AS A
+THEOREM (the standard sufficient condition Σ_{X∋ℓ}|ζ(X)|e^{|X|} ≤ 1 with |ζ(X)| ≤ z^{|X|} and at most (e·c_d)^{n−1} connected
+link sets of size n through ℓ: e·z/(1 − e²c_d z) ≤ 1) z ≤ 1/(e + e²c_d) = 0.00737, within 2 %. So the KP floor is
+β > 18e²C₀θ*²/λ_min = 473θ*² at λ_min = 3 — RISING in θ* where the Peierls floor FALLS — and the corrected one-block floor
+is the balance: minimise max(Peierls(θ*), 473θ*²) over θ* below the Christoffel edge 0.5636 (M = 9): Peierls 250.9 / 111.9 /
+69.9 / 40.7 / 32.5 and KP 18.9 / 42.6 / 68.3 / 118.2 / 148.3 at θ* = 0.20 / 0.30 / 0.38 / 0.50 / 0.56 — THE FLOOR IS β_SF = 69.9 AT
+θ* = 0.38 (instrument /tmp/kp_floor.awk, the quadrature of fontes_peierls; its text in this seat's scratchpad as
+kp_floor.awk). §92 bis's "19.4" and "[20, 32]" took the KP floor at a wrong threshold and read it as non-binding; it binds.
+THE CONDITIONS NOW: (a) the Christoffel bound RIGOROUS (M ≤ 9, θ* = 0.38 < 0.5636); (b) his activity bound |ζ(X)| ≤
+(C₀θ*²/(βλ_min))^{|X|}·e^{−(βλ/4)δ(X)} with C₀ = 32/3 TAKEN AS STATED (lem:activity, lines 5199–5234: the cumulant expansion
+with the parity cancellation of the cubic vertex — unverified here) and the KP threshold from it a theorem (above); (c) the
+chessboard constant, iii-3a's, the marginal its lower bound. THE COORDINATES, corrected: [0.2452, ≈70] — 8.2 doublings of β —
+with (b)'s activity bound and (c) outstanding; Fontes's own 9587 at θ* = 0.025 fails his Peierls condition by 2.24× (§92 (6)),
+and at his θ* the corrected floor would be ≈ 16,000, so the whole gain is the block's true gap (3 for 0.6893, a factor 4.35 in
+z) and the free choice of θ* — both his, used right.
+
+§92 sexies — (b) READ AT ITS PROOF: THE ACTIVITY BOUND IS ASYMPTOTIC, NOT A BOUND (05:50; ym_v65.tex lines 5236–5340). His Lemma (Activity bound) is proved in O-notation: the first cumulant "O(g²) per link (parity kills the cubic, leaving quartic at O(1/β))", the second "O(θ*²/(βλ³))", the remainder R₃ "O(g⁶) per link" with an explicit factor e^{O(βθ*)} = e^{O(β^{1/2})} declared "absorbed because g⁶/g⁴ = g² decays faster", the off-diagonal propagator by a Combes–Thomas estimate (1.451/β)e^{−γd}, γ ≥ 0.81; the total "z ≤ C₀θ*²/(βλ_min) + O(1/β^{3/2})" with C₀ = 32/3 said to dominate two sampled vertex terms. No constant in any O(·) is named, and the remainder exponent at the corrected floor is βθ* = 70 × 0.38 = 27 — nothing there is small. So (b) stands as: the KP threshold from a per-link activity z is a theorem (§92 quinquies), the activity bound z = C₀θ*²/(βλ_min) is an ASYMPTOTIC STATEMENT at β → ∞ with every remainder unquantified; at β ≈ 70 it is a conjecture about the block, and the floor ≈ 70 is conditional on it in that strong sense (the remainder could move it far up). THE ANSWER TO THE OPERATOR'S QUESTION, whole: as printed the constants do not work (§92 (6): his own β₀ fails his own Peierls condition); corrected and used right, the one-block split's hypotheses are met at β ≈ 70 PROVIDED the activity bound's remainder and the chessboard constant are quantified — two theorems nobody has written, (c) in iii-3a's hands, (b) a cumulant expansion with constants, days of work; and none of it is a gap (§74). What was done that predecessors had not: the block's true spectrum, the two defects with numbers, the floor as a function of θ* with its balance point.
+
+§92 septies — BOTH CONDITIONS BIND AT θ* = 0.38 (the plan seat, 05:52): the Peierls side of the balance is the one-plaquette marginal μ₁(β, θ*), the OPTIMISTIC reading of the chessboard factor (§92 quater: μ₁ ≤ ρ_μν), so "≈ 70" rests on (c) in BOTH floors, not only in the large-field weight; and at θ* = 0.38 rad the quadratic model's error constant C₀ = 32/3 is used at a plaquette angle fifteen times his 0.025 — (b)'s activity bound as stated must hold at that angle, which §92 sexies found asserted asymptotically and nowhere quantified. The coordinate [0.2452, ≈70] carries both: "(b) at θ* = 0.38 and (c) in both floors outstanding".

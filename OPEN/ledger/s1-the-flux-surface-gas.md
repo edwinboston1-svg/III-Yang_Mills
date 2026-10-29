@@ -115,3 +115,84 @@ The two parity chains of the growth are converging from opposite sides: 1.968, 2
 ## 9. Correction of this page's hour labels (written 10:13:58 EDT, read from the clock)
 
 The hour labels written into §§1–8 were estimates, not readings of the clock, and they run ahead of it by up to half an hour. The commits carry the true times: the page and stakes S1–S4 at 09:06:53 (fc5efff); §4b and the met second road at 09:28:20 (30f8de4); the named sources, the clarification of S2 and the stake S2′ at 10:04:53 (f8429c0); §8, the stakes read, at 10:06:37 (a87fe2e). The F = 22 run ended at 10:04:34 by its own clock line, nineteen seconds before S2′ was committed. S2′ was written and committed before that run's output was read, but the record cannot show that it was written before the numbers existed, so **S2′ counts as a bet placed before reading, not as a preregistration**. S1 and S2 were committed about an hour before the F = 20 and 22 counts existed and stand as preregistered. The stakes themselves are not edited.
+
+## 10. R1 split into its two halves, and the weight lemma S4′ (11:5x EDT, read from `date`; iii-43 with iii-38's census)
+
+**The census (iii-38, g48_polymers v2–v5; records as reported by that seat: F18 v2 `ad7b1819`, F19 v5, F20 v5 `602be458`).** Irreducible branched sets through p₀:
+
+| F | Odd irreducible | Even irreducible |
+|---|---|---|
+| 11 | 66 | — |
+| 12 | 0 (the 240 sets are reducible) | — |
+| 13 | none | — |
+| 14 | 224 | — |
+| 15 | 2,520 | — |
+| 16 | 1,568 | 64 waists |
+| 17 | 3,876 | — |
+| 18 | 10,788 | 576 pinches |
+| 19 | 88,426, all odd (no even set exists at odd F) | — |
+| 20 | 106,460 | 7,140: 2,340 waists, 3,840 pinches, 960 double contacts |
+
+Two of iii-38's stakes were refuted on its own record, and both are named so:
+- Its stake (b), that branched rests first appear at F = 21, was refuted at F = 19.
+- Its stake (c), that even irreducibles are only waists and pinches, was refuted at F = 20 by the 960 double contacts.
+
+Every odd irreducible to F = 18 is a branch-free surface plus integer-spin wall patches. From F = 19 on, some rests are branched.
+
+**Size, measured.** In the KP sum through a link at β near 0.55, R1's enumerated terms add up to about 2 × 10⁻⁸, under 10⁻⁴ of the cube term 48u⁶ ≈ 3 × 10⁻⁴. The sum is carried by the cubes and by the crude tail. Area for area, though, R1 is not small. At F = 19 the chambers weigh about 11a₁ ≈ 0.14 of the F = 18 surfaces at β = 0.55, using the calibrated weight 12a₁u^{18} per single-wall sphere. So R1 matters exactly where the proof must bound it, in the tail.
+
+**The split.** The counting half is iii-38's 16.58 and Lemma P:
+- single-wall sites number at most 2|R| − (3/2)E;
+- wall patches through links off R are independent;
+- a patch whose off-R links have multiplicity 2 comes from a forced closing path, so there are at most 5^{n−1} of them;
+- Z₂-minimal even sets are leaves of T_odd, so pinches, double contacts and acyclic contacts fall within the 5^{F−1} leaves;
+- waists count like composites, with a cycle in place of a forest.
+
+The weight half is this section. Feasibility decides which kind of weight bound is needed:
+- With S4's supremum factor (4 per cycle) and the L¹ norm of the wall (‖f_even‖₁ ≈ 2.48a₁), a single wall costs about 9.9a₁. With the crude multi-wall count, the decorations raise the effective growth enough to pull the proved reach down to about 0.25–0.3, no better than Theorem 8.7.
+- The bound that keeps the reach is an L² one. It needs this lemma.
+
+**Lemma S4′ (the L² cut identity; proved).** Setup:
+- S is a branch-free closed surface with every plaquette at spin ½.
+- T is a set of S's links, with T's vertices taken at S's vertex cycles.
+- g(U_T) = ∫ Π_{p∈S} χ_½(U_p) Π_{ℓ∉T} dU_ℓ.
+
+Then
+
+  ∫ g² dU_T = C(T) · (∫ g dU_T)²,  with  C(T) = Π_{components K of T} [4^{b₁(K)−1} + (4/3)^{b₁(K)−1}],
+
+where b₁ is the cycle rank. Per component, C is 1 on a tree, 2 on a cycle, 16/3 at b₁ = 2, about 17.8 at b₁ = 3, and about 4^{b₁−1} beyond.
+
+*Proof.*
+1. Cut S along T into pieces. A piece P of n(P) plaquettes integrates to d^{χ(P)−n(P)} Π_{b∈∂P} χ_½(z_b). Here each boundary curve b is a closed walk in T, and z_b is its holonomy. Every T-link is traversed exactly twice by the curves, once from each of its two plaquettes. So g = K Π_b χ_½(z_b), with K = Π_P d^{χ(P)−n(P)}.
+2. N₁ := ∫ Π_b χ_½(z_b) dU_T = 2^{χ(T)}, where χ(T) = v_T − |T|. Each link integral pairs its two traversals with a factor ½, and the index loops are the vertex cycles. Equivalently, χ(S) = χ(T) + Σ_P χ(P) together with S2.
+3. N₂ := ∫ Π_b χ_½(z_b)² = Σ_{A⊆curves} ∫ Π_{b∈A} χ₁(z_b), since χ_½² = 1 + χ₁. A term vanishes unless every T-link is traversed by A an even number of times.
+4. The corner argument. Around a vertex cycle of S, the T-links and the corners (curve passages) alternate, and the two corners beside a T-link are its two traversals. So an even A contains either all the corners at a vertex or none of them. Hence A is a union of the curve sets of whole components of T.
+5. For such an A the spin-1 contraction gives Π_{K⊆A} 3^{χ(K)}, positive because ρ₁ is real orthogonal. So N₂ = Π_K (1 + 3^{χ(K)}).
+6. Therefore C = N₂/N₁² = Π_K 4^{−χ(K)}(1 + 3^{χ(K)}), with χ(K) = 1 − b₁(K). ∎
+
+**The four tests, worked by hand before the proof was written down.** Each has a closed form independent of the formula:
+
+| T | Holonomy form | Closed form | Formula |
+|---|---|---|---|
+| One separating cycle (the box's waist) | g ∝ χ_½(z)² | ∫χ_½⁴ / (∫χ_½²)² = 2/1 = 2; this is the 2·W(box)² calibration of §5 | 2 |
+| One non-separating cycle on the 16-plaquette Clifford torus ∂[0,1]²×∂[0,1]² | the cut torus is a cylinder whose two boundary circles both run along T, so g ∝ χ_½(z)² | 2 | 2 |
+| Two disjoint cycles | g ∝ χ_½(z₁)² χ_½(z₂)² | 4 | 2 · 2 = 4 |
+| Two cycles sharing an edge (two adjacent faces of a cube) | g ∝ χ_½(A) χ_½(B) χ_½(AB) | N₁ = ½, N₂ = 1 + ⅓ (from ∫χ₁(B)χ₁(AB)dB = χ₁(A)/3), so C = 16/3 | 16/3 |
+
+The torus's figure-eight T (a meridian and a longitude at one vertex) also reads 16/3: the single curve is a commutator, with ∫χ_j([x, y]) = 1/d_j. So the per-cycle factor is not 2^{b₁/2}: the theta and figure-eight cases exceed it, which is why the lemma is stated per component.
+
+**What S4′ buys.**
+- **Walls.** For a wall cluster Y of integer spins glued to S along T, Cauchy–Schwarz gives |W(S ∪ Y)| ≤ ‖g‖₂‖h_Y‖₂ = √C(T) · W(S) · ‖h_Y‖₂, where h_Y is Y's integral with its links off S done.
+  - For one plaquette, ‖h_Y‖₂ = φ := ‖f_even‖₂ = (Σ_{j∈ℕ} d_j² a_j²)^{1/2}. To six digits φ = 3a₁: φ = 0.019802, 0.024997, 0.030770 at β = 0.40, 0.45, 0.50.
+  - So one wall costs at most √2·φ·W(S). The exact value at the two cubes sharing a face is 3a₁·W(box), within √2 of the bound.
+  - A cluster on a connected T with b₁ = b costs at most √(2·4^{b−1}) ≤ 2^b, so at most 2 per wall.
+- **Waists.** For two branch-free surfaces glued along T, |W| ≤ √(C_{S₁}(T) C_{S₂}(T)) · W(S₁)W(S₂). This holds with equality, 2·W(box)W(cube) = 32u^{16}, for the F = 16 waist, because both g's are proportional to χ_½(z)². This replaces §5's "at most 4 per surface per independent cycle" with √C per gluing.
+
+**What is still owed before any number.**
+- **(B)** ‖h_Y‖₂ ≤ φ^{|Y|} for multi-plaquette patches. Jensen gives ‖h_Y‖₂² ≤ ∫ Π_{p∈Y} |f_even(U_p)|². That equals φ^{2|Y|} when the patch's plaquettes can be ordered so that each has a link no later plaquette uses (its holonomy is then independent Haar). Otherwise each plaquette without such a link pays sup|f_even| ≈ 9a₁ in place of φ.
+- **(D)** Weights for the pinches and double contacts that Lemma P counts: a factor per multiplicity-4 link, from the ½^{⊗4} invariant projector (dimension 2).
+- **(E)** One tree with two edge types: forests exact (S3), cycles priced by S4′. The higher-spin pieces enter as (1 + O(a_{3/2}/u)) factors.
+- **(F)** `kp_reach3` re-run with u → u·e^{ε(β)}, where ε comes from the proved wall weights times iii-38's proved counts.
+
+**A projection, not a result.** With a uniform factor 2 per wall, 2|S| single-wall sites, and 4·5^{n−1} patches of n ≥ 2 per site, ε(0.475) ≈ 0.18. The composite reach of §8 (u = 0.1424) then moves to about β ≈ 0.47. Nothing above 0.2452 is claimed: (B), (D), (E) and (F) are owed, and the projection is not even a reading.

@@ -28,7 +28,15 @@ use strict; use warnings;
 my ($beta, $MODE, $NRAND, $NTH, $NSPH, $SEED) = @ARGV; $MODE //= 'sym'; $NRAND //= 8; $NTH //= 36; $NSPH //= 120; $SEED //= 1; die "usage: beta [sym|random] [NRAND] [NTH] [NSPH] [SEED]" unless defined $beta;
 my $PI = 3.141592653589793;
 sub bessel { my ($n, $x) = @_; my $s = 0; my $t = ($x / 2) ** $n; my $f = 1; $f *= $_ for 1 .. $n; $t /= $f; for my $k (0 .. 60) { $s += $t; $t *= ($x / 2) ** 2 / (($k + 1) * ($k + 1 + $n)) } return $s }
-my $A1 = bessel(2, $beta) / bessel(1, $beta); my $A2 = bessel(3, $beta) / bessel(1, $beta); die "a_1 >= 1/4: the truncated weight is not positive" if $A1 >= 0.25;
+my $A1 = bessel(2, $beta) / bessel(1, $beta); my $A2 = bessel(3, $beta) / bessel(1, $beta);
+# THE FLOWED WEIGHT (2026-10-29 02:1x EDT, RESULTS 16's 4D table): with G14_C1 (and G14_C2, G14_RUNG, G14_FROM) in the environment the cube is read at
+# the certified MK flow's rung weight w_k = sum (n+1) c_n chi_n in the SAME spin-1/2 truncation -- the truncation keeps c_1 alone, so the rung enters as
+# a_1 := c_1(k) (a_2 := c_2(k) for the printed truncation ratio); beta is relabelled the Wilson-equivalent beta_eff with I_2/I_1(beta_eff) = c_1, used only
+# in the Wilson anchors; in delta mode the single-link Delta is then taken under the SAME truncated weight (the product of six linear factors, exact on the design).
+my $WFLOW = ''; if (defined $ENV{G14_C1}) { $A1 = $ENV{G14_C1} + 0; $A2 = ($ENV{G14_C2} // 0) + 0; my ($lo, $hi) = (0, 20); for (1 .. 200) { my $mid = ($lo + $hi) / 2; (bessel(2, $mid) / bessel(1, $mid) < $A1) ? ($lo = $mid) : ($hi = $mid) } $beta = ($lo + $hi) / 2;
+  $WFLOW = sprintf("rung %s of the certified flow from beta=%s", $ENV{G14_RUNG} // '?', $ENV{G14_FROM} // '?');
+  printf "G14W %s: c_1=%.12g c_2=%.12g beta_eff(c_1)=%.6f (the Wilson coupling with the same a_1; the Wilson weight there has a_2=%.6f against the rung's c_2)\n", $WFLOW, $A1, $A2, $beta, bessel(3, $beta) / bessel(1, $beta) }
+die "a_1 >= 1/4: the truncated weight is not positive" if $A1 >= 0.25;
 # ---- quaternions and the spin-1/2 matrix; complex numbers as [re, im]
 sub qmul { my ($a, $b) = @_; return [ $a->[0]*$b->[0] - $a->[1]*$b->[1] - $a->[2]*$b->[2] - $a->[3]*$b->[3], $a->[0]*$b->[1] + $a->[1]*$b->[0] + $a->[2]*$b->[3] - $a->[3]*$b->[2], $a->[0]*$b->[2] - $a->[1]*$b->[3] + $a->[2]*$b->[0] + $a->[3]*$b->[1], $a->[0]*$b->[3] + $a->[1]*$b->[2] - $a->[2]*$b->[1] + $a->[3]*$b->[0] ] }
 sub qinv { my $a = shift; return [ $a->[0], -$a->[1], -$a->[2], -$a->[3] ] }
@@ -150,3 +158,31 @@ if ($MODE eq "randomall") { srand($SEED); for my $trial (1 .. $NRAND) { my @d = 
 ", $trial, $OUTKEYS[$j], $best, @{$DES[$bg]} }
     printf "G14-RANDOM-SUM trial=%d DS-sum/|V| at this datum = %.6f [%s]
 ", $trial, $tot, $tot < 1 ? "DS-HOLDS" : "DS-FAILS" } }
+# ---- MODE=delta (2026-10-29 01:4x EDT, the orchestrating seat's ask): THE TRANSMISSION ACROSS THE CUBE between two boundary links on OPPOSITE faces --
+# u a link of the outward 3-plaquette under a bottom edge, u' a link of the outward 3-plaquette above a top edge; F(d) = -log Z_cube(d) and
+#   Delta(u, u'; d) = max over g' of osc over g of [ F(d with u -> g u, u' -> g' u') - F(d with u -> g u) ],
+# g over the 48-design, g' over eight of its elements (-1, i, j, k, two half-integer points, two (1+i)/sqrt2-type points), at the symmetric datum
+# and NRAND random data; beside it the SINGLE LINK's Delta_link by the same sampling (four staples at 1, two moved; Z_1(s) = 2 I_1(beta s)/(beta s)),
+# and the ratio.  The cube's Z is the design average of N_d(U) (exact for the spin-1/2 weight); the quantity is the mixed second difference of the
+# block's free energy that THE GROUND's first tilt lemma turns into C(y, y') <= 1 - exp(-Delta).
+if ($MODE eq "delta") { srand($SEED); my @GP = (1, 2, 4, 6, 8, 9, 24, 26);
+  my $b0 = $EDGE{b0}; my $t = sub { my ($name, $which) = @_; my $e = $EDGE{$name}; my ($p, $d) = ($e->{base}, $e->{dir}); my $s = ($p->[2] == 1) ? 1 : -1; my $pd = vadd($p, $d, 1);
+    return $which eq 'par' ? okey(vadd($p, 3, $s), $d) : ($s > 0 ? okey($p, 3) : okey(vadd($p, 3, -1), 3)) };                    # the parallel link outside the face, or the near vertical
+  my @pairs; for my $uw ('par', 'near') { my $u = $t->('b0', $uw); for my $j (0 .. 3) { push @pairs, [$u, $t->("t$j", 'par'), "b0:$uw -> t$j:par"] } push @pairs, [$u, $t->('t0', 'near'), "b0:$uw -> t0:near"] }
+  sub logZ { my $dat = shift; my $Cc = openC($dat); my $Z = 0; $Z += Nfun($Cc, $dat, $_) / 48 for @DES; die "Z not positive" unless $Z > 0; return log($Z) }
+  sub qnorm2 { my $a = shift; return sqrt($a->[0] ** 2 + $a->[1] ** 2 + $a->[2] ** 2 + $a->[3] ** 2) }
+  sub logZ1 { my ($g, $gp) = @_; my $S = [4 + $g->[0] + $gp->[0], $g->[1] + $gp->[1], $g->[2] + $gp->[2], $g->[3] + $gp->[3]]; my $s = qnorm2($S); return log(2 * bessel(1, $beta * $s) / ($beta * $s)) }
+  sub logZ1t { my ($g, $gp) = @_; my $Z = 0; for my $U (@DES) { $Z += (1 + 2 * $A1 * qtr($U, [1, 0, 0, 0])) ** 4 * (1 + 2 * $A1 * qtr($U, $g)) * (1 + 2 * $A1 * qtr($U, $gp)) / 48 } return log($Z) }   # the truncated weight's one-link Z, exact on the 7-design (degree 6)
+  my $dlink = 0; { my @F; for my $gi (0 .. 47) { for my $gp (0, @GP) { $F[$gi]{$gp} = -($WFLOW ? logZ1t($DES[$gi], $DES[$gp]) : logZ1($DES[$gi], $DES[$gp])) } }
+    printf "G14D-WEIGHT %s: Delta_link below is the TRUNCATED weight's one-link law (not the vMF law), the same truncation as the cube's\n", $WFLOW if $WFLOW;
+    for my $gp (@GP) { my ($mx, $mn) = (-1e9, 1e9); for my $gi (0 .. 47) { my $m = $F[$gi]{$gp} - $F[$gi]{0}; $mx = $m if $m > $mx; $mn = $m if $m < $mn } $dlink = $mx - $mn if $mx - $mn > $dlink } }
+  printf "G14D beta=%.4f a_1=%.6f (the dropped spin-1 weight 3a_2/2a_1 = %.3f) Delta_link (one link, two of six staples moved, the rest 1) = %.6f  [Lemma T's 8 beta/(3 pi) = %.6f]\n", $beta, $A1, 3 * $A2 / (2 * $A1), $dlink, 8 * $beta / (3 * $PI);
+  my $t0 = time; my $supall = 0; my $suparg = '';
+  for my $trial (0 .. $NRAND) { my @d = $trial == 0 ? (map { [1, 0, 0, 0] } 1 .. $NOUT) : (map { $DES[int(rand(48))] } 1 .. $NOUT); my $dname = $trial == 0 ? 'symmetric' : "random$trial"; my $supd = 0; my $arg = '';
+    for my $pr (@pairs) { my ($u, $up, $lab) = @$pr; my %F;
+      for my $gi (0 .. 47) { for my $gp (0, @GP) { my @dd = map { [@$_] } @d; $dd[$u] = qmul($DES[$gi], $d[$u]); $dd[$up] = qmul($DES[$gp], $d[$up]); $F{$gi}{$gp} = -logZ(\@dd) } }
+      my ($best, $bg) = (0, 0); for my $gp (@GP) { my ($mx, $mn) = (-1e9, 1e9); for my $gi (0 .. 47) { my $m = $F{$gi}{$gp} - $F{$gi}{0}; $mx = $m if $m > $mx; $mn = $m if $m < $mn } if ($mx - $mn > $best) { $best = $mx - $mn; $bg = $gp } }
+      printf "G14D-PAIR beta=%.4f datum=%s pair=%s u=%s u'=%s Delta=%.6f argmax-g'=(%.3f,%.3f,%.3f,%.3f) ratio-to-link=%.4f (%d s)\n", $beta, $dname, $lab, $OUTKEYS[$u], $OUTKEYS[$up], $best, @{$DES[$bg]}, $best / $dlink, time - $t0;
+      if ($best > $supd) { $supd = $best; $arg = $lab } }
+    printf "G14D-DATUM beta=%.4f datum=%s sup over pairs Delta_cube=%.6f at %s  ratio-to-link=%.4f\n", $beta, $dname, $supd, $arg, $supd / $dlink; if ($supd > $supall) { $supall = $supd; $suparg = "$dname/$arg" } }
+  printf "G14D-SUP beta=%.4f Delta_cube over %d data and %d pairs = %.6f at %s; Delta_link = %.6f; ratio = %.4f  (%d s)\n", $beta, $NRAND + 1, scalar @pairs, $supall, $suparg, $dlink, $supall / $dlink, time - $t0 }

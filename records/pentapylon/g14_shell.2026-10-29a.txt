@@ -16,3 +16,24 @@ G14S-VERDICT 46 links in the d = 1 shell split by class: 1 pinning edge(s): 34 l
 G14S-MEANS beta=0.3 |m(4beta)|=I2/I1(1.2)=0.28348  rho(-|y)=5.680e-04  rho_1=0.118935  (8 beta/3 pi)=0.25465  ratio rho/(rho_1 (8 beta/3 pi) m^2) = 0.2334  (the Schur quarter 0.25)
 G14S-MEANS beta=0.5 |m(4beta)|=I2/I1(2.0)=0.43313  rho(-|y)=2.450e-03  rho_1=0.179117  (8 beta/3 pi)=0.42441  ratio rho/(rho_1 (8 beta/3 pi) m^2) = 0.1718  (the Schur quarter 0.25)
 G14S-MEANS beta=0.7 |m(4beta)|=I2/I1(2.8)=0.54510  rho(-|y)=5.780e-03  rho_1=0.234116  (8 beta/3 pi)=0.59418  ratio rho/(rho_1 (8 beta/3 pi) m^2) = 0.1398  (the Schur quarter 0.25)
+G14S-LAW beta=0.3 m(4beta)=0.28348 Var(4beta)=1-3m/k-m^2=0.21094  rho_1 beta m^2 Var = 6.0484e-04
+G14S-LAW beta=0.5 m(4beta)=0.43313 Var(4beta)=1-3m/k-m^2=0.16271  rho_1 beta m^2 Var = 2.7337e-03
+G14S-LAW beta=0.7 m(4beta)=0.54510 Var(4beta)=1-3m/k-m^2=0.11883  rho_1 beta m^2 Var = 5.7865e-03
+G14S-LAW orbit j=-1,0,0,0:1 sig=-|a   a-or-b-only          rho/(rho_1 beta m^2 Var) = 0.954 / 0.922 / 1.020
+G14S-LAW orbit j=-1,0,0,0:3 sig=-|a   a-or-b-only          rho/(rho_1 beta m^2 Var) = 0.944 / 0.911 / 1.037
+G14S-LAW orbit j=-1,0,1,0:1 sig=a|a   one-in-each-face     rho/(rho_1 beta m^2 Var) = 1.885 / 1.833 / 2.091
+G14S-LAW orbit j=0,-1,0,0:1 sig=-|y   y-only               rho/(rho_1 beta m^2 Var) = 0.939 / 0.896 / 0.999
+G14S-LAW orbit j=0,-1,0,0:2 sig=-|ay  y+adjacent-same-face rho/(rho_1 beta m^2 Var) = 1.435 / 1.350 / 1.325
+G14S-LAW orbit j=0,-1,0,0:3 sig=-|a   a-or-b-only          rho/(rho_1 beta m^2 Var) = 0.944 / 0.911 / 1.037
+G14S-LAW orbit j=0,0,-1,0:1 sig=-|y   y-only               rho/(rho_1 beta m^2 Var) = 0.939 / 0.896 / 0.999
+G14S-LAW orbit j=0,0,-1,0:3 sig=-|y   y-only               rho/(rho_1 beta m^2 Var) = 0.951 / 0.925 / 1.047
+G14S-LAW orbit j=0,0,0,-1:1 sig=-|y   y-only               rho/(rho_1 beta m^2 Var) = 0.939 / 0.896 / 0.999
+G14S-LAW orbit j=0,0,0,-1:3 sig=-|a   a-or-b-only          rho/(rho_1 beta m^2 Var) = 0.944 / 0.911 / 1.037
+G14S-LAW orbit j=0,0,0,-1:4 sig=-|ay  y+adjacent-same-face rho/(rho_1 beta m^2 Var) = 1.443 / 1.372 / 1.362
+G14S-LAW class a-or-b-only            orbits=4 mean rho/(rho_1 beta m^2 Var) = 0.947 / 0.914 / 1.033
+G14S-LAW class one-in-each-face       orbits=1 mean rho/(rho_1 beta m^2 Var) = 1.885 / 1.833 / 2.091
+G14S-LAW class y+adjacent-same-face   orbits=2 mean rho/(rho_1 beta m^2 Var) = 1.439 / 1.361 / 1.344
+G14S-LAW class y-only                 orbits=4 mean rho/(rho_1 beta m^2 Var) = 0.942 / 0.904 / 1.011
+G14S-LAW (1) a-or-b-only against y-only: 1.005 / 1.011 / 1.021 (the same law reads 1)
+G14S-LAW (2) y+adjacent-same-face against TWICE the single (y-only): 0.764 / 0.753 / 0.665; against twice a-or-b: 0.760 / 0.745 / 0.651
+G14S-LAW (3) one-in-each-face against twice a-or-b: 0.996 / 1.003 / 1.013 (independent faces add: 1)

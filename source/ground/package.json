@@ -1,0 +1,9 @@
+{
+  "name": "the-ground",
+  "version": "1.0.0",
+  "description": "Generator of THE GROUND (Edwin Boston III): node build.js <out.docx>",
+  "private": true,
+  "dependencies": {
+    "docx": "9.5.1"
+  }
+}

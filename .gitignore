@@ -1,0 +1,4 @@
+node_modules/
+source/ground/*.docx
+source/ground/*.pdf
+source/ground/pg-*.png

@@ -1,0 +1,10 @@
+beta      theta*   mu1(exact)   Fontes bound   ratio
+9587      0.025    0.111969     0.049998       2.239
+150       0.2237   0.057865     0.023814       2.430
+150       0.20     0.112127     0.050287       2.230
+20        0.7383   0.014361     0.005474       2.623
+15        0.7383   0.046894     0.020125       2.330
+Peierls floor at theta_c=0.7383 with entropy 20e=54.37: beta = 18.96
+  (with Fontes's entropy 20 instead: beta = 14.73)
+KP activity z = C0 theta_c^2/(lambda beta) = 0.1 at beta = 19.38 (lambda = 3), 84.35 (lambda = 0.6893)
+his (9587, 0.025): 20e*mu1 = 6.087;  his (150, 0.2237): 20e*mu1 = 3.146

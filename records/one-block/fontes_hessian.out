@@ -1,0 +1,13 @@
+edges of the block: 32
+FONTES SET: plaquettes=72 trace=144
+  spectrum: -0.000000 x1  0.689343 x3  1.000000 x1  1.425172 x3  1.458619 x2  2.000000 x1  2.223571 x3  3.000000 x1  5.271914 x3  5.381966 x3  7.541381 x2  7.565775 x3  7.618034 x3  9.824225 x3  
+  diagonal census: diag=3:4  diag=4:12  diag=5:12  diag=6:4  
+FULL SET: plaquettes=120 trace=192
+  spectrum: 3.000000 x15  7.000000 x6  9.000000 x8  11.000000 x3  
+  diagonal census: diag=6:32  
+  (H-3)(H-7)(H-9)(H-11) nonzero entries: 0  (0 = the spectrum is contained in {3,7,9,11} EXACTLY)
+  tr H=192 tr H^2=1440 tr H^3=12288  (15,6,8,3 at 3,7,9,11 predict 192, 1440, 11952)
+FACES: 24  tr(S^T S)=288  ||S||^2 = 35.522651  ||S|| = 5.960088  (Fontes: 288; [35.52, 35.53]; 5.96)
+  S^T S spectrum: 0.006823 x2  0.054317 x2  0.407374 x2  0.786874 x2  2.011995 x2  2.088583 x2  3.376386 x2  5.148527 x2  7.296996 x2  7.949585 x2  11.132123 x2  13.651289 x2  14.414926 x2  15.053427 x2  25.098125 x2  35.522651 x2  
+  theta_c(lambda_min=0.6893, ||S||=6.01) = 0.2237 rad;  ln20/(1-cos theta_c) = 120.26
+  theta_c(lambda_min=3.0000, ||S||=6.01) = 0.7383 rad;  ln20/(1-cos theta_c) = 11.50

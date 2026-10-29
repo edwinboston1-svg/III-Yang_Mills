@@ -1,0 +1,20 @@
+Useless use of a constant ("x") in void context at g26_cube_spin1.pl line 162.
+Useless use of a constant ("y") in void context at g26_cube_spin1.pl line 162.
+Useless use of a constant ("z") in void context at g26_cube_spin1.pl line 162.
+G26-KAT RULE12 637 points: E w^2=0.249999999999998(0.250000000000000) E w^4=0.124999999999999(0.125000000000000) E w^6=0.078125000000000(0.078125000000000) E w^8=0.054687500000000(0.054687500000000) E w^10=0.041015625000000(0.041015625000000) E w^12=0.032226562500000(0.032226562500000) E x^4y^4z^4=8.371e-05(8.371e-05); R(q1 q2) = R(q1) R(q2) and tr R = 4w^2 - 1: MET  [KAT-GREEN]
+G26 beta=2.2 MODE=quotworst a_1=0.464479 a_2=0.155493 a_3=0.040408; the truncated weight's minimum over V = 0.071034 (positive); the dropped spin-3/2 term's size against the kept: 16 a_3 / (1 + 4 a_1 + 9 a_2) = 0.152
+G26-LINK beta=2.2 MODE=quotworst Delta_link (one link, two of six staples moved by g and g' in {1}, the rest 1) under the truncated law = 0.260030
+G26-QWORST-KAT the staples of t0 at d_c: (+1,+0,+0,+0) (-1,+0,+0,+0) (+0,+1,+0,+0) (+0,-1,+0,+0); their sum (0.000,0.000,0.000,0.000) has norm 0.0e+00 [CANCELLED]
+G26-QWORST beta=2.2 E[tr U_top] at the symmetric datum 1.282646004, at the cancelling datum d_c(t0) 1.137027666 (Z_c = 4.985188e+13); the drop 0.145618  [STAKE-MET] (47 s)
+G26-QWORST-PROGRESS 0,-1,1,0:1 g=8 of 47 dE=-0.187611 (205 s)
+G26-QWORST-PROGRESS 0,-1,1,0:1 g=16 of 47 dE=-0.498966 (394 s)
+G26-QWORST-PROGRESS 0,-1,1,0:1 g=24 of 47 dE=-0.145282 (522 s)
+G26-QWORST-PROGRESS 0,-1,1,0:1 g=32 of 47 dE=-0.094342 (636 s)
+G26-QWORST-PROGRESS 0,-1,1,0:1 g=40 of 47 dE=-0.348879 (751 s)
+G26-QWORST-SERIES beta=2.2 link=0,-1,1,0:1 (the un-cancelling change (t0's first middle link, staple 1 -> g^-1)) at d_c: sup over the 47 changes of |E[tr U_top | d_c,g] - E[tr U_top | d_c]| = 0.648992 at g=(-1.000,0.000,0.000,0.000) (w_g = -1.000), the mean 0.350561; against the symmetric datum's near sup 0.058585: 11.08 x; profile 1:-0.64899 2:-0.34799 3:-0.34799 4:-0.35026 5:-0.35026 6:-0.35026 7:-0.35026 8:-0.18761 9:-0.18761 10:-0.18761 11:-0.18761 12:-0.18761 13:-0.18761 14:-0.18761 15:-0.18761 16:-0.49897 17:-0.49897 18:-0.49897 19:-0.49897 20:-0.49897 21:-0.49897 22:-0.49897 23:-0.49897 24:-0.14528 25:-0.14528 26:-0.53041 27:-0.53041 28:-0.09434 29:-0.09434 30:-0.57922 31:-0.57922 32:-0.09434 33:-0.09434 34:-0.57922 35:-0.57922 36:-0.34888 37:-0.34888 38:-0.34888 39:-0.34888 40:-0.34888 41:-0.34888 42:-0.34888 43:-0.34888 44:-0.35026 45:-0.35026 46:-0.35026 47:-0.35026  (863 s)
+G26-QWORST-PROGRESS 1,0,1,0:3 g=8 of 47 dE=-0.083610 (1036 s)
+G26-QWORST-PROGRESS 1,0,1,0:3 g=16 of 47 dE=-0.003732 (1250 s)
+G26-QWORST-PROGRESS 1,0,1,0:3 g=24 of 47 dE=-0.090498 (1447 s)
+G26-QWORST-PROGRESS 1,0,1,0:3 g=32 of 47 dE=-0.054384 (1668 s)
+G26-QWORST-PROGRESS 1,0,1,0:3 g=40 of 47 dE=-0.081850 (1858 s)
+G26-QWORST-SERIES beta=2.2 link=1,0,1,0:3 (a near link outside t0's staples (the z-near above (1,0,1))) at d_c: sup over the 47 changes of |E[tr U_top | d_c,g] - E[tr U_top | d_c]| = 0.107299 at g=(0.000,-1.000,0.000,0.000) (w_g = +0.000), the mean 0.059054; against the symmetric datum's near sup 0.058585: 1.83 x; profile 1:+0.10550 2:-0.10730 3:-0.10730 4:-0.04771 5:-0.04771 6:-0.04771 7:-0.04771 8:-0.08361 9:-0.08361 10:-0.08361 11:-0.08361 12:-0.08361 13:-0.08361 14:-0.08361 15:-0.08361 16:-0.00373 17:-0.00373 18:-0.00373 19:-0.00373 20:-0.00373 21:-0.00373 22:-0.00373 23:-0.00373 24:-0.09050 25:-0.09050 26:+0.04936 27:+0.04936 28:-0.05438 29:-0.05438 30:+0.05573 31:+0.05573 32:-0.05438 33:-0.05438 34:+0.05573 35:+0.05573 36:-0.08185 37:-0.08185 38:-0.08185 39:-0.08185 40:-0.08185 41:-0.08185 42:-0.08185 43:-0.08185 44:-0.04771 45:-0.04771 46:-0.04771 47:-0.04771  (2003 s)

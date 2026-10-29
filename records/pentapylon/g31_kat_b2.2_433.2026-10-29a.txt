@@ -1,0 +1,5 @@
+G31-KAT representations (GENINV=1): s=3: hom-defect 2.8e-17 (sub 1.8e+00, inv-sub 2.8e-17) tr=-0.672000000000 chi=-0.672000000000; s=4: hom-defect 2.2e-16 (sub 1.5e+00, inv-sub 2.2e-16) tr=-1.246400000000 chi=-1.246400000000; [MET]
+G31-KAT RULE22 (12 x 12 x 23 = 3312 points, needed 22): errors w^2:1.6e-15 w^4:2.0e-15 w^6:2.1e-15 w^8:1.3e-15 w^10:5.6e-16 w^12:8.7e-16 w^14:1.4e-17 w^16:1.9e-16 w^18:2.3e-16 w^20:1.7e-17 w^22:3.1e-17 x^2y^2z^2w^2:1.5e-15 x^4y^4z^4w^0:1.9e-15 x^4y^4z^4w^2:9.7e-16 x^4y^4z^4w^4:1.3e-15 [MET]
+G31 beta=2.2 MODE=kat caps top=4 side0=3 bottom=3 (others 2) rule degree 22; a_1=0.464479 a_2=0.155493; f = 1.000000,0.928958,0.466478,0.000000,0.000000; the weight's minimum 0.071034; datum symmetric
+G31-SPACE 4500 cut states
+G31-KAT the free cube: resolved sectors (0,0,0)=1.000000e+00 (1,1,1)=5.010353e-02 (2,2,2)=1.253166e-03 (3,3,3)=2.329207e-123 (imag 7.3e-21); Z = 1.040293024082e+00 (closed form 1.040293024082e+00); E[chi_1/2(top)] = 0.954171742203 (0.954171742203); E[chi chi] top-side0 0.926242159861 top-bottom 0.926242159861 (closed form 0.926242159861); the connected pair +0.015798446 [MET] (808 s)

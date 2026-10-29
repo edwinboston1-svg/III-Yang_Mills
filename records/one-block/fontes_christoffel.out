@@ -1,0 +1,6 @@
+faces: 24 (expect 24)
+face-sharing degree per edge: min 9 max 9 (ordered pairs; 9 neighbours each) -> crude M <= 9
+M read from below (60 restarts, 400 ascent steps): 6.2595   [uniform ||S|| = 5.9601; crude upper 9]
+M = 5.9601: theta_c = 0.7420 rad, Peierls floor (54.4 mu1 < 1) beta = 18.8, KP floor (C0 theta_c^2/(3 beta) < 0.1) beta = 19.6
+M = 6.2595: theta_c = 0.7204 rad, Peierls floor (54.4 mu1 < 1) beta = 19.9, KP floor (C0 theta_c^2/(3 beta) < 0.1) beta = 18.5
+M = 9.0000: theta_c = 0.5636 rad, Peierls floor (54.4 mu1 < 1) beta = 32.1, KP floor (C0 theta_c^2/(3 beta) < 0.1) beta = 11.3

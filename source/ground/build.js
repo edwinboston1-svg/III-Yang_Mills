@@ -73,6 +73,8 @@ const sources = [
   ref(19, 'M. Faizal and A. Shabir, "Reflection-Positive Construction of a Four-Dimensional SU(N) Yang–Mills Theory with Mass Gap and Confinement", arXiv:2606.19362 [hep-lat], 9 June 2026, 593 pages; *Fortschritte der Physik* 74 (2026), e70097, doi 10.1002/prop.70097; with four companion papers in *Int. J. Geom. Methods Mod. Phys.* (2026) cited therein.'),
   ref(20, 'A. H. Guth, "Existence proof of a nonconfining phase in four-dimensional U(1) lattice gauge theory", *Phys. Rev. D* 21 (1980), 2291–2307.'),
   ref(21, 'J. Fröhlich and T. Spencer, "Massless phases and symmetry restoration in abelian gauge theories and spin systems", *Comm. Math. Phys.* 83 (1982), 411–454.'),
+  ref(22, 'E. T. Tomboulis, "Confinement for all values of the coupling in four-dimensional SU(2) gauge theory", arXiv:0707.2179 [hep-th], 2007; reply to Ito and Seiler, arXiv:0712.2620, 2007.'),
+  ref(23, 'K. R. Ito and E. Seiler, "On the recent paper on quark confinement by Tomboulis", arXiv:0711.4930 [hep-th], 2007; "Further discussion of Tomboulis\' approach to the confinement problem", arXiv:0803.3019 [hep-th], 2008.'),
   H2('Records of the computations of Edwin Boston III'),
   P0('Each record is held, with its instrument and its run of record, in the repository of Edwin Boston III.', { after: 120 }),
   ref('R1', '*The shadow ladder* (Proposition 8.3): record g6_tube.2026-10-28a, with its instrument g6_tube.pl; landed in commit aea98a3af; re-derived in the run of record pentapylon_gate.2026-10-28r, nine arms, nineteen mutant tests, verdict GREEN.'),

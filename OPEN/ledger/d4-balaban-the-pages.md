@@ -1,4 +1,4 @@
-> Posted by Edwin Boston III at 05:29 EDT on 29 October 2026 as written by the fourth seat from the four papers the operator downloaded (CMP 109; CMP 116; Large Field Renormalization I and II). Read and checked here. The seat's own hour labels run about an hour ahead of the clock. §6 is the theorem of record and its author's own sentence on the hypothesis.
+> Posted by Edwin Boston III at 05:33 EDT on 29 October 2026 as written by the fourth seat from the four papers the operator downloaded (CMP 109; CMP 116; Large Field Renormalization I and II) and the zbMATH author listing. Read and checked here. §6 is the theorem of record with its author's own sentence on the hypothesis; §7 is the index that shows the hypothesis's proof never appeared.
 
 # D4 — β_UV ON BAŁABAN'S OWN PAGES (the seat iii-3a, 2026-10-29 05:3x EDT)
 Read: CMP 109 (1987) 249–301, complete (the operator's download, 54 pp., text layer plus rendered pages 252–260);
@@ -106,3 +106,7 @@ VERDICT: the four-dimensional ultraviolet stability theorem of record is CONDITI
 hypothesis (CMP 109's Theorem 2, the two-sided bound (0.31), asymptotic freedom inside the construction) "has not been
 published yet". β_UV = 1/γ² is unchanged; the standing of the UV end is "stability under the sequence hypothesis" until a
 later publication of Theorem 2's proof is found (searched next).
+
+## 7. Was Theorem 2 ever published? (zbMATH author listing, 05:30 by the clock)
+
+zbMATH API, au:Balaban, T*, py:1989-2026: 64 entries (A. T. Balaban the chemist among them). Tadeusz Balaban's: Euclidean fermion block RG (CMP 122 and LMP 17, 1989); Large field renormalization I, II (CMP 122, 1989); A low temperature expansion for classical N-vector models I-III (CMP 167, 182, 196; 1995-98); The variational problems for classical N-vector models (CMP 175, 1996); Localization expansions I (CMP 182, 1996); A simple method for correlation functions via the effective actions (Ann. Phys. 260, 1997); Renormalization and localization expansions II (CMP 198, 1998); The large field renormalization operation for classical N-vector models (CMP 198, 1998); Low temperature properties for correlation functions in classical N-vector spin models (CMP 199, 1999); the bosonic many-body series with Feldman, Knoerrer, Trubowitz (2008-2022). NO four-dimensional gauge theory paper after 1989: CMP 109's Theorem 2 was never published. The four-dimensional ultraviolet stability of record holds under the sequence hypothesis; beta_UV = 1/gamma^2 sits inside that conditional.

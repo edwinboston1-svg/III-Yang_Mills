@@ -1,0 +1,8 @@
+G14E beta=0.5000 rho_{t0,link} = TV(marginal of t_0 | d, | d with the link changed), the worst change over the 48-design; t_0 = (0,0,1,0):1 (the top edge t0)
+G14E link=0,0,-1,0:1   u: parallel under b0         symmetric=0.002448  random data: 0.000742
+G14E link=0,0,-1,0:3   u: near vertical under b0    symmetric=0.002528  random data: 0.000737
+G14E link=0,0,2,0:1    u': parallel above t0        symmetric=0.176266  random data: 0.207439
+G14E link=1,0,2,0:2    u': parallel above t1        symmetric=0.002492  random data: -
+G14E link=0,1,2,0:1    u': parallel above t2        symmetric=0.002448  random data: -
+G14E link=0,0,2,0:2    u': parallel above t3        symmetric=0.002492  random data: -
+G14E link=0,0,1,0:3    u': near vertical above t0   symmetric=0.179117  random data: 0.207515

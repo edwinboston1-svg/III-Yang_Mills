@@ -423,3 +423,25 @@ uniformly in Λ. *Proof.* The gas has three species: ordinary polymers, A-polyme
 **Corollary D1.4 (the gap).** For β ≤ β*, the infinite-volume limit of the Wilson measure exists along the tori (the cluster sums converge uniformly and are volume-independent for fixed supports), is reflection-positive and translation-invariant, and every pair of local gauge-invariant observables separated by t in the time direction clusters as e^{−αt}·K_AK_B. Theorem 7.1 (gap ⟺ exponential clustering, with the reconstruction at integer times) then gives a transfer matrix with a unique vacuum and a spectral gap m(β) ≥ α(β) > 0: THE LATTICE GAP AT STRONG COUPLING FOR β ≤ β*, on the dense set of local observables and hence on the whole physical Hilbert space (a vector whose spectral measure lies in [0, e^{−m}] is a closed condition). The number α(β) at β* is small (≈ 0.005 at β* ≈ 0.49); for β well below β* it is larger, and the theorem asserts m(β) ≥ α(β) at every β ≤ β*, not a uniform gap.
 
 **Status.** D1.1–D1.4 are proved on the page given §14's KP inequality; D1.1's pricing of the double uses the same lemmas and stakes as §14 (S12, S13), so D1 inherits exactly their conditionality and adds none. Nothing above β = 0.2452 is claimed.
+
+## 17. Lemma S13 — THE JUNCTION LAW (the coordination seat iii-bd's, 14:2x EDT, carried here by name; 14:23 EDT by `date`)
+
+**Setting.** S an orientable branch-free rest at spin ½; a SINGLE-SPINE piece Y = m plaquettes (m ≥ 2) sharing one off-rest link ℓ = (u, v), each attached to S along its other three links; every plaquette of Y at spin 1 (forced by its rest links, §13). A σ-link (a rest link of Y: ½ ⊗ ½ ⊗ 1) integrates to the rank-one projector (σ^μ)_{ab}(σ^{μ′})^*_{b′a′}/6 with an independent adjoint index at each of its ends; the wall's holonomy contracts a link's end index with the next link's start index, so every vertex of a wall carries its own index and the wall's two spokes at that vertex carry the same σ — the Fierz form of the chord law (S8), and the reason vertex factors multiply. The spine integrates to P^{(m)}, the projector onto Inv(1^{⊗m}) (δ-pairings and ε's; dimension 1, 3, 6, 15 at m = 3, 4, 5, 6).
+
+**Lemma S13 (single spine; iii-bd, proved).** With T_u(μ⃗) := tr(σ^{μ_{π(1)}}⋯σ^{μ_{π(m)}})/2 the vertex-cycle trace at u in the cyclic order π of the m walls' spokes at u, and T_v the same at v in v's order,
+
+  W(S ∪ Y) = (3a₁)^m · J_m · W(S),   J_m = 3^{−m} Σ_{μ⃗ ∈ {1,2,3}^m} T_u(μ⃗) T_v(μ⃗),
+
+the far vertices of the walls contributing 3 each against their σ-links at 1/3, and P^{(m)} acting as the identity between the invariant tensors T_u, T_v. Known answers, met exactly: m = 3, the tripod: T = iε at both ends, Σ T_uT_v = 6, J₃ = 2/9 — the measured 6a₁³ (§13); m = 4, the four-plaquette patch on one spine: T = δ₁₂δ₃₄ − δ₁₃δ₂₄ + δ₁₄δ₂₃, |T|² = 21, J₄ = 7/27 — the measured 21a₁⁴ (§14). J depends on the RELATIVE spoke orders at the two ends (at m = 4 with v's order a transposition of u's, ⟨T_u,T_v⟩ = −3 and J = −1/27); the finite table per m is the Gram matrix of the permuted trace tensors.
+
+**The bound (iii-bd, proved).** |T_m|² = Σ_{μ⃗}|tr(σ^{μ⃗})/2|² = tr(C^m)/4 with C = Σ_μ σ^μ ⊗ σ̄^μ on End(ℂ²), eigenvalues 3 (once) and −1 (thrice): |T_m|² = (3^m + 3(−1)^m)/4 = 0, 3, 6, 21, 60, 183 at m = 1..6. Cauchy–Schwarz on the inner product gives, for every pair of spoke orders,
+
+  |J_m| ≤ (3^m + 3(−1)^m)/(4·3^m) = (1 + 3(−1/3)^m)/4 = 1/3, 2/9, 7/27, 20/81, 61/243 at m = 2..6, → 1/4.
+
+A spine never amplifies. Per plaquette of a single-spine piece the rate is 3a₁·J_m^{1/m} ≤ 1.73, 1.82, 2.14, 2.33, 2.38 × a₁ at m = 2..6, and m ≤ 6 on ℤ⁴ (a link lies in six plaquettes): every single-spine piece sits below §14's staked γ = 2.5. ∎
+
+**The general branched piece (iii-bd's lemma to carry; STAKED here).** A piece with several off-rest links of multiplicity ≥ 2 is the same tensor network — one projector P^{(m_ℓ)} per off-rest link, one trace tensor per vertex — and its weight ratio is bounded by the product of the per-vertex Cauchy–Schwarz factors. What the fold-in needs from it is the maximum over all shapes of the per-plaquette rate (|W|/(W(S)(3a₁)^n))^{1/n}; iii-bd is asked for it by shape (k = 1..4 spines per plaquette, multiplicities 2..6). Until it is stated, §14's γ = 2.5 remains a stake for multi-spine pieces, proved for single spines. The six-plaquette (13/18/0) reading 8a₁⁶ is the first multi-spine known answer (its plaquette list requested from iii-38).
+
+**Credit.** The Haar integral by projectors is Weingarten-type (W = 0). III's: the law J_m = 3^{−m}⟨T_u,T_v⟩, the closed form of its maximum, the bound, and the executable form (ΑΓΚΥΛΗ II's chord and junction verbs, exact Gaussian-integer traces, gated).
+
+**Consequence for §14.** The dressing lemma's joint bound (§15) is now proved for every decoration whose pieces are lone walls, surface pieces and single-spine pieces with pairwise link-disjoint rest contacts, and staked for the rest. Nothing above β = 0.2452 is claimed.

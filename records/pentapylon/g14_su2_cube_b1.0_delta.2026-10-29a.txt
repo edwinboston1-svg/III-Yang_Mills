@@ -1,0 +1,62 @@
+G14-CUBE beta=1.0000 a_1=0.240194 a_2=0.039225 (the dropped spin-1 weight 3a_2 against 2a_1: 0.245) outside-links=88 orbits-under-stab(t0)=23 quadrature=4320 points
+G14-ANCHOR tv(d,d)=0.000e+00 (must be 0)
+G14-ANCHOR direct sign flip of a staple link of t0 at symmetric data: tv=0.340705 against the single-link law (4/3pi)beta=0.424413 (ratio 0.8028; equal only as beta -> 0)
+G14-ORBIT j=1,-1,0,0:2 size=4 rho=0.013452 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.006940 at g=(-0.707,0.000,-0.707,0.000) gap=6.51e-03
+G14-ORBIT j=0,-1,0,0:1 size=2 rho=0.013299 argmax-g=(-0.500,-0.500,0.500,-0.500) second-best=0.013299 at g=(-0.500,0.500,-0.500,0.500) gap=7.33e-07
+G14-ORBIT j=1,0,-1,0:3 size=4 rho=0.014246 argmax-g=(-0.500,-0.500,0.500,-0.500) second-best=0.014245 at g=(-0.500,0.500,-0.500,0.500) gap=6.55e-07
+G14-ORBIT j=0,0,-1,0:1 size=2 rho=0.013299 argmax-g=(-0.500,-0.500,0.500,-0.500) second-best=0.013299 at g=(-0.500,0.500,-0.500,0.500) gap=7.33e-07
+G14-ORBIT j=1,0,0,0:4 size=8 rho=0.013850 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.006888 at g=(-0.707,0.000,-0.707,0.000) gap=6.96e-03
+G14-ORBIT j=0,0,0,1:1 size=4 rho=0.013299 argmax-g=(-0.500,-0.500,0.500,-0.500) second-best=0.013299 at g=(-0.500,0.500,-0.500,0.500) gap=7.33e-07
+G14-ORBIT j=1,1,1,0:1 size=4 rho=0.013451 argmax-g=(-0.707,0.000,0.707,0.000) second-best=0.013449 at g=(-0.707,0.000,-0.707,0.000) gap=1.65e-06
+G14-ORBIT j=2,1,0,0:3 size=4 rho=0.000886 argmax-g=(-0.500,-0.500,0.500,-0.500) second-best=0.000886 at g=(-0.500,0.500,-0.500,0.500) gap=6.94e-08
+G14-ORBIT j=1,1,0,0:1 size=2 rho=0.001763 argmax-g=(-0.500,-0.500,0.500,-0.500) second-best=0.001762 at g=(-0.500,0.500,-0.500,0.500) gap=2.84e-07
+G14-ORBIT j=1,2,0,0:3 size=4 rho=0.000886 argmax-g=(-0.500,-0.500,0.500,-0.500) second-best=0.000886 at g=(-0.500,0.500,-0.500,0.500) gap=6.94e-08
+G14-ORBIT j=1,1,0,0:2 size=4 rho=0.001020 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.001006 at g=(-0.707,0.000,-0.707,0.000) gap=1.39e-05
+G14-ORBIT j=1,1,0,1:3 size=8 rho=0.000886 argmax-g=(-0.500,-0.500,0.500,-0.500) second-best=0.000886 at g=(-0.500,0.500,-0.500,0.500) gap=6.94e-08
+G14-ORBIT j=1,1,0,0:4 size=4 rho=0.001362 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.000671 at g=(-0.707,0.707,0.000,0.000) gap=6.91e-04
+G14-ORBIT j=2,0,1,0:2 size=4 rho=0.014166 argmax-g=(-0.500,0.500,-0.500,0.500) second-best=0.014166 at g=(-0.500,-0.500,0.500,-0.500) gap=6.14e-07
+G14-ORBIT j=1,0,1,0:1 size=2 rho=0.028495 argmax-g=(-0.500,0.500,-0.500,0.500) second-best=0.028493 at g=(-0.500,-0.500,0.500,-0.500) gap=2.61e-06
+G14-ORBIT j=1,0,2,0:2 size=4 rho=0.014166 argmax-g=(-0.500,0.500,-0.500,0.500) second-best=0.014166 at g=(-0.500,-0.500,0.500,-0.500) gap=6.14e-07
+G14-ORBIT j=1,0,1,0:3 size=4 rho=0.340705 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.306142 at g=(-0.707,0.000,-0.707,0.000) gap=3.46e-02
+G14-ORBIT j=1,0,1,1:2 size=8 rho=0.014166 argmax-g=(-0.500,0.500,-0.500,0.500) second-best=0.014166 at g=(-0.500,-0.500,0.500,-0.500) gap=6.14e-07
+G14-ORBIT j=1,0,1,0:4 size=4 rho=0.350878 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.318793 at g=(-0.707,0.000,-0.707,0.000) gap=3.21e-02
+G14-ORBIT j=0,-1,1,0:1 size=2 rho=0.330867 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.293826 at g=(-0.707,0.000,0.707,0.000) gap=3.70e-02
+G14-ORBIT j=0,0,1,1:1 size=2 rho=0.330867 argmax-g=(-1.000,0.000,0.000,0.000) second-best=0.293826 at g=(-0.707,0.000,0.707,0.000) gap=3.70e-02
+G14-ORBIT j=0,2,0,0:1 size=2 rho=0.001710 argmax-g=(-0.500,-0.500,0.500,-0.500) second-best=0.001709 at g=(-0.500,0.500,-0.500,0.500) gap=5.21e-07
+G14-ORBIT j=0,1,0,1:1 size=2 rho=0.001710 argmax-g=(-0.500,-0.500,0.500,-0.500) second-best=0.001709 at g=(-0.500,0.500,-0.500,0.500) gap=5.21e-07
+G14-SYM beta=1.0000 DS-sum/|V| = sum_j rho_xj = 4.789322 (criterion holds iff < 1) [DS-FAILS]  (12 x this is the cube's double sum against |V| = 12)
+G14D beta=1.0000 a_1=0.240194 (the dropped spin-1 weight 3a_2/2a_1 = 0.245) Delta_link (one link, two of six staples moved, the rest 1) = 0.362908  [Lemma T's 8 beta/(3 pi) = 0.848826]
+G14D-PAIR beta=1.0000 datum=symmetric pair=b0:par -> t0:par u=0,0,-1,0:1 u'=0,0,2,0:1 Delta=0.033584 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.0925 (85 s)
+G14D-PAIR beta=1.0000 datum=symmetric pair=b0:par -> t1:par u=0,0,-1,0:1 u'=1,0,2,0:2 Delta=0.002265 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.0062 (147 s)
+G14D-PAIR beta=1.0000 datum=symmetric pair=b0:par -> t2:par u=0,0,-1,0:1 u'=0,1,2,0:1 Delta=0.004142 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.0114 (209 s)
+G14D-PAIR beta=1.0000 datum=symmetric pair=b0:par -> t3:par u=0,0,-1,0:1 u'=0,0,2,0:2 Delta=0.002265 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.0062 (302 s)
+G14D-PAIR beta=1.0000 datum=symmetric pair=b0:par -> t0:near u=0,0,-1,0:1 u'=0,0,1,0:3 Delta=0.036172 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.0997 (404 s)
+G14D-PAIR beta=1.0000 datum=symmetric pair=b0:near -> t0:par u=0,0,-1,0:3 u'=0,0,2,0:1 Delta=0.036005 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.0992 (475 s)
+G14D-PAIR beta=1.0000 datum=symmetric pair=b0:near -> t1:par u=0,0,-1,0:3 u'=1,0,2,0:2 Delta=0.002565 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.0071 (559 s)
+G14D-PAIR beta=1.0000 datum=symmetric pair=b0:near -> t2:par u=0,0,-1,0:3 u'=0,1,2,0:1 Delta=0.002565 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.0071 (639 s)
+G14D-PAIR beta=1.0000 datum=symmetric pair=b0:near -> t3:par u=0,0,-1,0:3 u'=0,0,2,0:2 Delta=0.036005 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.0992 (706 s)
+G14D-PAIR beta=1.0000 datum=symmetric pair=b0:near -> t0:near u=0,0,-1,0:3 u'=0,0,1,0:3 Delta=0.072649 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.2002 (788 s)
+G14D-DATUM beta=1.0000 datum=symmetric sup over pairs Delta_cube=0.072649 at b0:near -> t0:near  ratio-to-link=0.2002
+G14D-PAIR beta=1.0000 datum=random1 pair=b0:par -> t0:par u=0,0,-1,0:1 u'=0,0,2,0:1 Delta=0.029195 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.0804 (874 s)
+G14D-PAIR beta=1.0000 datum=random1 pair=b0:par -> t1:par u=0,0,-1,0:1 u'=1,0,2,0:2 Delta=0.002083 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.0057 (964 s)
+G14D-PAIR beta=1.0000 datum=random1 pair=b0:par -> t2:par u=0,0,-1,0:1 u'=0,1,2,0:1 Delta=0.001059 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.0029 (1061 s)
+G14D-PAIR beta=1.0000 datum=random1 pair=b0:par -> t3:par u=0,0,-1,0:1 u'=0,0,2,0:2 Delta=0.002535 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.0070 (1160 s)
+G14D-PAIR beta=1.0000 datum=random1 pair=b0:par -> t0:near u=0,0,-1,0:1 u'=0,0,1,0:3 Delta=0.030472 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.0840 (1257 s)
+G14D-PAIR beta=1.0000 datum=random1 pair=b0:near -> t0:par u=0,0,-1,0:3 u'=0,0,2,0:1 Delta=0.028655 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.0790 (1349 s)
+G14D-PAIR beta=1.0000 datum=random1 pair=b0:near -> t1:par u=0,0,-1,0:3 u'=1,0,2,0:2 Delta=0.002106 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.0058 (1446 s)
+G14D-PAIR beta=1.0000 datum=random1 pair=b0:near -> t2:par u=0,0,-1,0:3 u'=0,1,2,0:1 Delta=0.001869 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.0051 (1546 s)
+G14D-PAIR beta=1.0000 datum=random1 pair=b0:near -> t3:par u=0,0,-1,0:3 u'=0,0,2,0:2 Delta=0.029523 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.0814 (1642 s)
+G14D-PAIR beta=1.0000 datum=random1 pair=b0:near -> t0:near u=0,0,-1,0:3 u'=0,0,1,0:3 Delta=0.051162 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.1410 (1746 s)
+G14D-DATUM beta=1.0000 datum=random1 sup over pairs Delta_cube=0.051162 at b0:near -> t0:near  ratio-to-link=0.1410
+G14D-PAIR beta=1.0000 datum=random2 pair=b0:par -> t0:par u=0,0,-1,0:1 u'=0,0,2,0:1 Delta=0.051905 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.1430 (1845 s)
+G14D-PAIR beta=1.0000 datum=random2 pair=b0:par -> t1:par u=0,0,-1,0:1 u'=1,0,2,0:2 Delta=0.006241 argmax-g'=(0.000,1.000,0.000,0.000) ratio-to-link=0.0172 (1966 s)
+G14D-PAIR beta=1.0000 datum=random2 pair=b0:par -> t2:par u=0,0,-1,0:1 u'=0,1,2,0:1 Delta=0.003625 argmax-g'=(0.000,0.000,0.000,1.000) ratio-to-link=0.0100 (2087 s)
+G14D-PAIR beta=1.0000 datum=random2 pair=b0:par -> t3:par u=0,0,-1,0:1 u'=0,0,2,0:2 Delta=0.004889 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.0135 (2190 s)
+G14D-PAIR beta=1.0000 datum=random2 pair=b0:par -> t0:near u=0,0,-1,0:1 u'=0,0,1,0:3 Delta=0.048608 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.1339 (2322 s)
+G14D-PAIR beta=1.0000 datum=random2 pair=b0:near -> t0:par u=0,0,-1,0:3 u'=0,0,2,0:1 Delta=0.054479 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.1501 (2437 s)
+G14D-PAIR beta=1.0000 datum=random2 pair=b0:near -> t1:par u=0,0,-1,0:3 u'=1,0,2,0:2 Delta=0.007149 argmax-g'=(-0.707,0.707,0.000,0.000) ratio-to-link=0.0197 (2550 s)
+G14D-PAIR beta=1.0000 datum=random2 pair=b0:near -> t2:par u=0,0,-1,0:3 u'=0,1,2,0:1 Delta=0.006292 argmax-g'=(0.000,0.000,0.000,1.000) ratio-to-link=0.0173 (2670 s)
+G14D-PAIR beta=1.0000 datum=random2 pair=b0:near -> t3:par u=0,0,-1,0:3 u'=0,0,2,0:2 Delta=0.037572 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.1035 (2797 s)
+G14D-PAIR beta=1.0000 datum=random2 pair=b0:near -> t0:near u=0,0,-1,0:3 u'=0,0,1,0:3 Delta=0.052028 argmax-g'=(-1.000,0.000,0.000,0.000) ratio-to-link=0.1434 (2918 s)
+G14D-DATUM beta=1.0000 datum=random2 sup over pairs Delta_cube=0.054479 at b0:near -> t0:par  ratio-to-link=0.1501
+G14D-SUP beta=1.0000 Delta_cube over 3 data and 10 pairs = 0.072649 at symmetric/b0:near -> t0:near; Delta_link = 0.362908; ratio = 0.2002  (2918 s)

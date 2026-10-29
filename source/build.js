@@ -76,6 +76,8 @@ const sources = [
   ref(22, 'E. T. Tomboulis, "Confinement for all values of the coupling in four-dimensional SU(2) gauge theory", arXiv:0707.2179 [hep-th], 2007; reply to Ito and Seiler, arXiv:0712.2620, 2007.'),
   ref(23, 'K. R. Ito and E. Seiler, "On the recent paper on quark confinement by Tomboulis", arXiv:0711.4930 [hep-th], 2007; "Further discussion of Tomboulis\' approach to the confinement problem", arXiv:0803.3019 [hep-th], 2008.'),
   ref(24, 'H. Shen, R. Zhu and X. Zhu, "A stochastic analysis approach to lattice Yang–Mills at strong coupling", *Comm. Math. Phys.* (2023), doi:10.1007/s00220-022-04609-1; arXiv:2204.12737.'),
+  ref(25, 'M. R. Douglas and F. Rajasekaran, *lgt — Lattice Gauge Theory in Lean 4*, github.com/mrdouglasny/lgt, headline theorems proved 4 May 2026, version 0.1.0 of 6 September 2026.'),
+  ref(26, 'S. Chatterjee, *Gauge Theory Lecture Notes* (2026), Chapters 15–16, as cited by [25].'),
   H2('Records of the computations of Edwin Boston III'),
   P0('Each record is held, with its instrument and its run of record, in the repository of Edwin Boston III.', { after: 120 }),
   ref('R1', '*The shadow ladder* (Proposition 8.3): record g6_tube.2026-10-28a, with its instrument g6_tube.pl; landed in commit aea98a3af; re-derived in the run of record pentapylon_gate.2026-10-28r, nine arms, nineteen mutant tests, verdict GREEN.'),

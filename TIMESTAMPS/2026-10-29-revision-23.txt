@@ -1,0 +1,16 @@
+THE GROUND, revision 23 and the OPEN pages through a49fe0b (Edwin Boston III)
+Manifest written 2026-10-29T10:14:08Z.
+
+  a49fe0be17cfbbea4cf797ae950dbd14b0445cc7  2026-10-29T06:14:03-04:00  THE GROUND, revision 23 (Edwin Boston III, 2026-10-29 06:14 EDT): a c
+  4f337161c3dad79fa1dcdfc6cf26f8407fd81e94  2026-10-29T06:10:10-04:00  OPEN: Balaban's Theorem 2 read by the second reader from CMP 109 pp. 
+  66a2af7aa4d3a3d730eb5b783db97b953500aa97  2026-10-29T06:04:35-04:00  TIMESTAMPS: a stray .bak of the client's upgrade removed (2026-10-29 
+  89ad03c8d97371eae78c57a89a879ac839b1920b  2026-10-29T06:03:23-04:00  RECORDS and OPEN: the Griffiths decider at 2.2 reads all four loop pa
+  c92e4f4aa4b588b70fb6f391712951763e0a75d2  2026-10-29T06:03:10-04:00  ARXIV.md: the page count of revision 22, 42, restored (the ship chain
+  6f1be6ce5cbcb70a40bf294d26583573334b7817  2026-10-29T06:00:24-04:00  TIMESTAMPS: an OpenTimestamps proof of revision 22 and the OPEN pages
+
+  54b5ba42a889cd48f465abf728a90f7944bd22060fab9e9eaad635cd5b46fe11 *THE-GROUND-Edwin-Boston-III.pdf
+  bb4e3f3b45b73b1ca77b0e19c95029d044eef6a3bf97bd8b01f39b4f56e29674 *THE-GROUND-Edwin-Boston-III.docx
+  e7677cc0b2fe641e3a7196563f724eddc806a4e7fb6303efcd68b2a036768673 *README.md
+  c9cf1e3688da904b1079b3f228ca1b01a8330b6a869826af39e6a7a02c40958a *OPEN/ledger/d1-the-renormalisation-step.md
+  555a6b090086a90b16f2e5f7e68650ac0901ccf2d35204d3515cccb6917d0a46 *OPEN/ledger/one-block-the-unit-s90-s92.md
+  a9b8664d2369754bb2854539eaa57c105dd8aeb7d0a7f180e6fcfc80b39f7111 *OPEN/the-crossing.md

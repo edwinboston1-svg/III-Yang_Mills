@@ -1,0 +1,17 @@
+vertex (0, 0, 0, 0) t_v = 6
+vertex (0, 0, 0, 1) t_v = 6
+vertex (0, 0, 1, 0) t_v = 6
+vertex (0, 0, 1, 1) t_v = 6
+vertex (0, 1, 0, 0) t_v = 6
+vertex (0, 1, 0, 1) t_v = 6
+vertex (0, 1, 1, 0) t_v = 6
+vertex (0, 1, 1, 1) t_v = 6
+vertex (1, 0, 0, 0) t_v = 6
+vertex (1, 0, 0, 1) t_v = 6
+vertex (1, 0, 1, 0) t_v = 6
+vertex (1, 0, 1, 1) t_v = 6
+vertex (1, 1, 0, 0) t_v = 6
+vertex (1, 1, 0, 1) t_v = 6
+vertex (1, 1, 1, 0) t_v = 6
+vertex (1, 1, 1, 1) t_v = 6
+prod_v t_v = +2821109907456 ; integral = prod / 6^32 = + 6^-16 (= 3.5447e-13) ; rho = (6^-16)^(1/24) = 6^(-2/3) = 0.3029

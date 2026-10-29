@@ -1,0 +1,10 @@
+## ORIENT=inv
+sum over edge indices of prod_i P30_i = 61131600
+F = 16981 / 202500 = 0.0838567901
+3^12 = 531441 ; W(D_box)/(3a1)^24 = F/3^12 = 1.577913e-07 ; sqrt = 3.972296e-04
+junction bound for the box: (7/3)^3 = 12.7037 times sqrt(double) = 0.005046 ; rho = 0.5207
+## ORIENT=same
+sum over edge indices of prod_i P30_i = 20891760
+F = 87049 / 3037500 = 0.0286581070
+3^12 = 531441 ; W(D_box)/(3a1)^24 = F/3^12 = 5.392528e-08 ; sqrt = 2.322182e-04
+junction bound for the box: (7/3)^3 = 12.7037 times sqrt(double) = 0.002950 ; rho = 0.4979

@@ -47,9 +47,9 @@ module.exports = function (L) {
   push(P(`Finally, if dim H ≥ 2 then Ω^{⊥} ≠ {0}, the spectrum of *H* on Ω^{⊥} is a nonempty closed subset of [*m*, ∞), and its infimum *m*\\* is finite. ∎`));
   push(P0(`The finite form of the implication (c) ⇒ (a), the gap read off the decay of a positive symmetric transfer matrix, is checked by the Lean kernel.[[fn:Edwin Boston III; listed in the Records under the lattice theorems in Lean.]]`, { before: 60 }));
   push(Thm('Corollary 7.2', 'Clustering', [
-    `Under the conditions of Theorem 7.1, for all finite families f and g and every t ≥ 0, |S(θḡ · τ_{t}f) − S(θḡ) S(f)| ≤ e^{−mt} ‖ψ_{g}‖ ‖ψ_{f}‖. If S also satisfies (E0)–(E3), the cluster property (E4) holds.`,
+    `Under the conditions of Theorem 7.1, for all finite families f and g and every t ≥ 0, |S(θḡ · τ_{t}f) − S(θḡ) S(f)| ≤ e^{−mt} ‖ψ_{g}‖ ‖ψ_{f}‖. If S also satisfies (E0)–(E3), the cluster property (E4) holds, and the same bound holds with τ_{t} replaced by the translation by t in any direction.`,
   ]));
-  push(Proof(`The left side is |⟨ψ_{g}, *e*^{−tH}ψ_{f}⟩|, and *e*^{−tH} has norm at most *e*^{−mt} on Ω^{⊥}. Under (E0)–(E3) the vacuum is unique by Theorem 7.1, and Theorem 3.1 gives (E4).`));
+  push(Proof(`The left side is |⟨ψ_{g}, *e*^{−tH}ψ_{f}⟩|, and *e*^{−tH} has norm at most *e*^{−mt} on Ω^{⊥}. Under (E0)–(E3) the vacuum is unique by Theorem 7.1, and Theorem 3.1 gives (E4). A translation in another direction is conjugate to τ_{t} by a Euclidean rotation, under which *S* is invariant by (E1), and the reflection Hilbert space built across the rotated hyperplane carries the same Hamiltonian spectrum, since the Schwinger functions it is built from are the same functions.`));
   push(P0(`Measured against Theorem 7.1, the decay (5.2) asserted for the components of YMM1 is the decay of a theory whose mass gap has not been established: a bound by an inverse power of the separation is compatible with spectrum reaching down to zero. The distance between the power and the exponential is the mass gap.`));
 
   push(H2('7.3  From the lattice to the limit'));

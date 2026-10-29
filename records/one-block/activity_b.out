@@ -1,0 +1,10 @@
+d=4: links 32, interior plaquettes 24, external 96; H spectrum [np.float64(3.0), np.float64(7.0), np.float64(9.0), np.float64(11.0)]
+   g_p interior: max 0.455988 mean 0.455988;  external: max 0.219336 mean 0.219336
+   theta*=0.4774: activity*beta <= 0.1341 (Fontes's form C0 theta*^2/lambda = 0.8104); KP floor 17.8, Peierls floor 107.8, floor = max = 107.8
+   theta*=0.5636: activity*beta <= 0.1356 (Fontes's form C0 theta*^2/lambda = 1.1294); KP floor 18.0, Peierls floor 77.9, floor = max = 77.9
+   theta*=0.72: activity*beta <= 0.1385 (Fontes's form C0 theta*^2/lambda = 1.8432); KP floor 18.4, Peierls floor 48.6, floor = max = 48.6
+d=3: links 12, interior plaquettes 6, external 24; H spectrum [np.float64(2.0), np.float64(6.0), np.float64(8.0)]
+   g_p interior: max 0.583333 mean 0.583333;  external: max 0.354167 mean 0.354167
+   theta*=0.4774: activity*beta <= 0.2214 (Fontes's form C0 theta*^2/lambda = 1.2155); KP floor 19.6, Peierls floor 68.3, floor = max = 68.3
+   theta*=0.5636: activity*beta <= 0.2245 (Fontes's form C0 theta*^2/lambda = 1.6941); KP floor 19.9, Peierls floor 49.4, floor = max = 49.4
+   theta*=0.72: activity*beta <= 0.2307 (Fontes's form C0 theta*^2/lambda = 2.7648); KP floor 20.5, Peierls floor 30.8, floor = max = 30.8

@@ -29,7 +29,7 @@ def bessel_I(n, x, terms=80):
 NSURF = {6: 4.0, 10: 60.0, 12: 80.0, 14: 1092.0, 16: 2728.0, 18: 23508.0, 20: 80480.0, 22: 551408.0}   # through a plaquette
 NCONT = {18: 576.0, 20: 4800.0}                                                                        # contact leaves (pinches 576; 3840 + 960)
 F0 = int(os.environ.get("F0", "20"))                       # the tail starts after the last size where ALL leaves are enumerated
-GTABLE = [float(x) for x in os.environ.get("GTABLE", "3,1.7321,3.4641,5.6577,6.7349,7.8103,8.6101,9.2673").split(",")]   # gamma(s) for s = 1..7, then gamma(s >= 8): THE JUNCTION THEOREM v1 (S1 section 21): N(Y) <= prod_v sqrt(e(deg_T v)) * 3^k, e(d) = (3^d + 3(-1)^d)/(4 3^(d/2)); degrees <= min(8, s), k = 0 below 9, the joint max 3.09 per plaquette
+GTABLE = [float(x) for x in os.environ.get("GTABLE", "3,1.732051,3.464102,5.663746,6.734884,7.810250,8.600465,9.270541").split(",")]   # gamma(s) for s = 1..7, then gamma(s >= 8): THE JUNCTION THEOREM v1 (S1 section 21): N(Y) <= prod_v sqrt(e(deg_T v)) * 3^k, e(d) = (3^d + 3(-1)^d)/(4 3^(d/2)); degrees <= min(8, s), k = 0 below 9, the joint max 3.09 per plaquette
 def gam(s): return GTABLE[min(s, 8) - 1]
 MU = float(os.environ.get("MU", "5.0"))                    # the tail branching (5 proved)
 KTREE = float(os.environ.get("KTREE", "4.0"))

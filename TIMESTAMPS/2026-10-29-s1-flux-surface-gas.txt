@@ -1,0 +1,14 @@
+THE FLUX-SURFACE GAS (OPEN/ledger/s1-the-flux-surface-gas.md), Edwin Boston III
+Manifest written 2026-10-29 10:13:03 EDT for the repository state at commit a87fe2e7f2bd4dff1cdd2e72e39686b2155efdd7
+
+sha256 of the page and its records at that commit:
+d26fcb62bf64bfd0df5c86382bf7dce30d24069b23b5bde7fc8126745eb166ba *OPEN/ledger/s1-the-flux-surface-gas.md
+639ca1e65ff68ec66ed491cdaa69a320ce2c13fd855fae5ac136bb2e3b6db58a *records/surface-gas/kp_reach2.py
+7b3e745e4ccdee4f63e49dcadcd699dccf36f3bbfb1dac0b8eecba28aebe7ab0 *records/surface-gas/kp_reach3.py
+25be7e1059b1f55cc7558a30c5fb808e34be2c0e97ff46ea02d8868531bbcfa5 *records/surface-gas/kp_reach3_F18.2026-10-29a.txt
+710d1d9c5f336a33f00d4abe9441afa231b26dac65c62b496fb7865ea97ba976 *records/surface-gas/kp_reach_F18.2026-10-29a.txt
+2211f2db34bba88354b253b61ce65b23c9683862e3e2a33f059496713a0f9434 *records/surface-gas/kp_reach_F22.2026-10-29a.txt
+fffa1b277b8456d545836bf937a22ba870a44d589a0de6858900320f2f571fcc *records/surface-gas/surf.c
+422d65703995cabc51827ebdcbc882908fab5b59aa2126082d2e0d7eced0b114 *records/surface-gas/surf_d3_F20.2026-10-29a.txt
+e41f308479cbdf41daab750093c3edc0a33acb9ea140ab9069b32eb6853db8bc *records/surface-gas/surf_d4_F18.2026-10-29a.txt
+b4c2cbeaebb3436f3c898e00ba823a6b32d53908fd7fd6c451e5ae77cdc881ef *records/surface-gas/surf_d4_F22.2026-10-29a.txt

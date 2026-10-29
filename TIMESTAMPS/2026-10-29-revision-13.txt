@@ -1,0 +1,27 @@
+THE GROUND, revision 13, and the records of Theorem 8.7 (Edwin Boston III)
+Repository: https://github.com/edwinboston1-svg/III-Yang_Mills
+Manifest written 2026-10-29T07:32:38Z by the local clock; GitHub's own record of the push of af03ccf: pushed_at 2026-10-29T07:25:17Z (api.github.com).
+
+git commits (SHA-1 object names):
+  af03ccf51db8a677afd1dfa7340d27a3abf8a601  2026-10-29T03:25:11-04:00  THE GROUND, revision 13 (Edwin Boston III, 2026-10-29 03:4x EDT): a lattice mass gap in i
+  0df7986a2882533a8807a8379d7edd9e8e4f3f81  2026-10-29T03:13:22-04:00  RECORDS: a lattice mass gap for SU(2) on Z^4 at beta <= 0.241, certified on two roads (Ed
+  1849862e7a9e78353aa000df73788c7baae69af1  2026-10-29T02:43:51-04:00  THE GROUND, revision 12 (Edwin Boston III, 2026-10-29 03:0x): the perfect decimation -- t
+
+SHA-256 of the files at commit af03ccf51db8a677afd1dfa7340d27a3abf8a601:
+  d44e0918fb21691351f7d0c6eb006afc4324a763677ffcc73f6ca34a27029679 *THE-GROUND-Edwin-Boston-III.pdf
+  9f1ab6f3f91393515bbe082827ff1c0e9a9bffd8f25e6d7694381fe74954b3a8 *THE-GROUND-Edwin-Boston-III.docx
+  b7daf5f44e9ebd3f4fb9eef9c8c62d1c34b5d1166e9d5e768413fa1d46885887 *README.md
+  1a4562e1d8335db21d7cf8ba2da2b06ec9e34714e5a8fe6179304dab48f96961 *SOURCES.md
+  550ad8495682d8aa5e918787e49e601afb5e607eea8db826ed79fec610cd460a *ARXIV.md
+  c799bfee3cb8eccd0c57ec0065c195e4fb547da85578edf0abb89479bd74f4f6 *source/ground/content4.js
+  e533f7c4fbcc449bb1dc058411d75d91f001cdff7d460b91dc6685b2b1a012aa *records/aperanton/decimation_cert.2026-10-29a.txt
+  0c0ad7303621e9d449990d1aba072c4469f286f5694b0ae341bdae6228c6ed21 *records/aperanton/decimation_cert.2026-10-29b.txt
+  ac743f0b7ce84df96f05372a4e8eb8d3804c87c0bdf108671dc137daf6900ab7 *records/aperanton/perfect_cover.2026-10-29a.txt
+  e3ec01324655c3b62d7863bdeb83ff424f3d4a2b486c561c873d776b844a0ed2 *records/aperanton/scripts/aperanton_decimation_cert.awk
+  7c1b760c6ede04a357883f4db54166217c43fb1528e3beecbb56633ccb5e000a *records/pentapylon/g24_rowsum.2026-10-29a.txt
+  6a89286bef1129fee14a4fd536a5fb44a83688a942161cdd76180da697a44a5d *records/pentapylon/g24_rowsum.awk
+  2957cd29cf930f834608944d820f6315289ed28f2b8ac65f587af9485ff711a8 *records/pentapylon/g19_vmf.2026-10-29b.txt
+  ff9db61046bdd8994ca2ed15db717fdb415e4f16cb155fbfa1f89871c2aa647c *records/second-road/verify73ter.py
+  a5ac92064edba143fefe30df5d32509a8d23a04bb15740063d9125539e177973 *records/second-road/verify73ter.out
+
+To verify: compute the SHA-256 of this file and check it against the OpenTimestamps proof beside it (ots verify), which anchors that digest in the Bitcoin blockchain.

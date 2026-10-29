@@ -38,3 +38,14 @@ What the reading decides: the side L* at which the weighted sum of SU(2) at the 
 ## 4. What is not claimed
 
 No gap is claimed above β = 0.2452. The measurements of §3 are readings. The theorem named in (B) is not proved; the conjecture named in (C) is not proved; the mechanism named in (D) is not made rigorous here.
+
+## 3b. The running of the coupling under blocking, measured on ℤ⁴ where it must act (staked 04:3x EDT, before the run)
+
+The refinement of §2 (B) says the missing object is a renormalisation step, and the mechanism it must carry is the one the hierarchical model gets wrong: under blocking the SU(2) coupling runs toward strong coupling, the U(1) coupling in its Coulomb phase does not. The instrument `records/second-road/wilsonloops.py` (Monte Carlo on a periodic lattice of side 8; a reading, not a certificate) measures the Wilson loops W(R, T), R, T ≤ 4, the Creutz ratios χ(I, I) = −log[W(I,I)W(I−1,I−1)/(W(I,I−1)W(I−1,I))], and the one-step blocked coupling obtained by matching the I × I loop to one plaquette of the blocked lattice, c₁(β_eff(I a)) = W(I, I), which is the hierarchical model's own matching read on the true lattice.
+
+**Staked before the run:**
+- S5. SU(2) at β = 2.3: χ(2,2), χ(3,3), χ(4,4) fall toward a plateau in [0.10, 0.20] (the string tension σa² at this coupling, √σ a ≈ 0.37); the matched coupling runs: β_eff(2a) ∈ [0.9, 1.6], β_eff(4a) ∈ [0.25, 0.7].
+- S6. U(1) at β = 1.2, the Coulomb phase: χ(I,I) falls below 0.05 by I = 4 (the perimeter law); β_eff(2a) within a factor 1.5 of 1.2, and β_eff(4a) not below 0.6: no running.
+- S7. U(1) at β = 0.9, the confining phase, as the control that the instrument sees confinement when it is there: χ(I,I) plateaus above 0.3 and β_eff(2a) < 0.4.
+
+What the reading decides: whether the one-step blocking on ℤ⁴ at the crossover already lands the SU(2) coupling at or below 1, the coupling where the side-2 block is certifiable, while U(1) at 1.2 stays where it is. If it does, the renormalisation step that the crossing needs is one step long on the true lattice, and the theorem that is missing is a theorem about one blocking of a 2⁴ cell at β ≈ 2.3 with its boundary typical; if it does not, the step is longer and the page says by how much.

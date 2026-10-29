@@ -36,7 +36,7 @@ theorem interdep_uniform_of_interface {W₀ : (S → G) → ℝ} (hW₀ : ∀ ω
   exact interdep_tilt_sharp W₀ hW₀ C hC δ (o n) hosc (Δ n) hmix
 
 /-- THE UNIFORM ROW SUM: one α for every cutoff -/
-theorem rowsum_uniform_of_interface {W₀ : (S → G) → ℝ} {C : S → S → ℝ} (α₀ : ℝ) (hrow₀ : ∀ s, ∑ t, C s t ≤ α₀)
+theorem rowsum_uniform_of_interface {C : S → S → ℝ} (α₀ : ℝ) (hrow₀ : ∀ s, ∑ t, C s t ≤ α₀)
     {o : ℕ → S → ℝ} {Δ : ℕ → S → S → ℝ} (α : ℝ)
     (hα : ∀ n s, Real.exp (o n s) * α₀ + ∑ t, (1 - Real.exp (-Δ n s t)) ≤ α) (n : ℕ) (s : S) :
     ∑ t, (Real.exp (o n s) * C s t + (1 - Real.exp (-Δ n s t))) ≤ α :=

@@ -157,7 +157,7 @@ theorem abs_integral_sub_mul_le [Nonempty G] (p p' h : G → ℝ) (hpi : Integra
       nlinarith
   have hint_shift : Integrable (fun g => (p g - p' g) * (h g - c)) μ :=
     hd.mul_bdd ((hh.sub measurable_const).aestronglyMeasurable) (Filter.Eventually.of_forall fun g => by
-      rw [Real.norm_eq_abs, abs_le]; constructor <;> linarith [hle g, hge g])
+      rw [Real.norm_eq_abs, abs_le]; dsimp only; constructor <;> linarith [hle g, hge g])
   have hup : ∫ g, (p g - p' g) * (h g - c) ∂μ ≤ tv μ p p' * m := by
     calc ∫ g, (p g - p' g) * (h g - c) ∂μ ≤ ∫ g, max (p' g - p g) 0 * m ∂μ :=
           integral_mono hint_shift ((hpi'.sub hpi).pos_part.mul_const m) hpt_up
@@ -525,7 +525,7 @@ theorem gibbs_add_const {W : (S → G) → ℝ} {m M : ℝ} (hW : Weight W m M) 
     mul_comm (∫ ω, W ω ∂(conf μ)) c, mul_div_assoc, div_self hZ.ne', mul_one]
 
 theorem obs_add_const {f : (S → G) → ℝ} {K : ℝ} (hf : Obs f K) (c : ℝ) : Obs (fun ω => f ω + c) (K + |c|) :=
-  ⟨hf.meas.add_const c, fun ω => le_trans (abs_add_le _ _) (add_le_add_right (hf.bd ω) _)⟩
+  ⟨hf.meas.add_const c, fun ω => le_trans (abs_add_le _ _) (add_le_add (hf.bd ω) le_rfl)⟩
 
 /-- the one-site marginal of W · f at s, written without the conditional -/
 theorem condExp_mul_zsite {W : (S → G) → ℝ} {m M : ℝ} (hW : Weight W m M) (s : S) (f : (S → G) → ℝ) (ω : S → G) :
@@ -563,9 +563,9 @@ theorem integral_condExp_eq_of_nonneg {W : (S → G) → ℝ} {m M : ℝ} (hW : 
   have hF₁m : Measurable F₁ := (hW.meas.mul hcobs.meas).ennreal_ofReal
   have hF₂m : Measurable F₂ := (hW.meas.mul hf.meas).ennreal_ofReal
   obtain ⟨x₀⟩ : Nonempty (S → G) := ⟨fun _ => Classical.arbitrary G⟩
-  rw [lintegral_eq_lmarginal_univ x₀, lintegral_eq_lmarginal_univ x₀,
-    lmarginal_erase (fun _ : S => μ) F₁ hF₁m (Finset.mem_univ s),
-    lmarginal_erase (fun _ : S => μ) F₂ hF₂m (Finset.mem_univ s)]
+  rw [lintegral_eq_lmarginal_univ (μ := fun _ : S => μ) x₀, lintegral_eq_lmarginal_univ (μ := fun _ : S => μ) x₀,
+    lmarginal_erase (μ := fun _ : S => μ) F₁ hF₁m (Finset.mem_univ s),
+    lmarginal_erase (μ := fun _ : S => μ) F₂ hF₂m (Finset.mem_univ s)]
   congr 1
   funext x
   -- at every configuration the one-site marginals agree

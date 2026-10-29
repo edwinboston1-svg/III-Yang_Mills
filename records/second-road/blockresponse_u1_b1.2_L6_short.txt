@@ -1,0 +1,23 @@
+group=u1 beta=1.2 L=6 N=8 sites=4096 interior_links=4320 interior_plaqs=5400 boundary_links_touching=6048 observed_plaqs=864 seed=22
+KAT periodic plaquette <P> = 0.75223 over 100 sweeps of 8^4 (216 s)
+  sweep 200/1200  <P_centre> = 0.75355  (363 s)
+  sweep 400/1200  <P_centre> = 0.75348  (470 s)
+  sweep 600/1200  <P_centre> = 0.75321  (585 s)
+  sweep 800/1200  <P_centre> = 0.75320  (696 s)
+  sweep 1000/1200  <P_centre> = 0.75252  (795 s)
+  sweep 1200/1200  <P_centre> = 0.75244  (905 s)
+RESULT <P_centre> = 0.75244
+PROFILE r = 1.75  mean J = 1.508e-02  pairs = 41472
+PROFILE r = 2.25  mean J = 8.333e-03  pairs = 297216
+PROFILE r = 2.75  mean J = 7.076e-03  pairs = 647136
+PROFILE r = 3.25  mean J = 7.391e-03  pairs = 862656
+PROFILE r = 3.75  mean J = 6.283e-03  pairs = 1072992
+PROFILE r = 4.25  mean J = 6.962e-03  pairs = 1028736
+PROFILE r = 4.75  mean J = 6.236e-03  pairs = 808704
+PROFILE r = 5.25  mean J = 4.268e-03  pairs = 466560
+FIT exponential: J ~ exp(-0.250 r), rate = 0.250 per spacing; residual 0.168
+FIT power: J ~ r^-0.834; residual 0.150
+ROWSUM kappa = 0.0: Sum_y J(x,y) e^(kappa d) at the centre: mean 4.0502e+01 max 4.7719e+01 over 864 plaquettes
+ROWSUM kappa = 0.5: Sum_y J(x,y) e^(kappa d) at the centre: mean 2.5050e+02 max 3.2884e+02 over 864 plaquettes
+ROWSUM kappa = 1.0: Sum_y J(x,y) e^(kappa d) at the centre: mean 1.8156e+03 max 2.7161e+03 over 864 plaquettes
+done in 907 s

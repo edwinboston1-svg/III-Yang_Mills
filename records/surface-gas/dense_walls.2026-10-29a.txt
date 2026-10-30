@@ -1,0 +1,7 @@
+hexagon + one triangle (k=3)                         S = 3/32  r2 = 3/2 = 1.50000  per-corner = 1.06991  (3/2)^(k/3) = 1.50000
+hexagon + two triangles (k=6)                        S = 433/5184  r2 = 433/324 = 1.33642  per-corner = 1.02446  (3/2)^(k/3) = 2.25000
+reduced C4(1/2)(+1,+2,+3,+4) + K4 walls (k=6, m=4)   S = 3271/3600  r2 = 3271/900 = 3.63444  per-corner = 1.11353  (3/2)^(k/3) = 2.25000
+full 8-cycle(1/2) + K4 walls (same object, unreduced) S = 3271/57600  r2 = 3271/900 = 3.63444  per-corner = 1.11353  (3/2)^(k/3) = 2.25000
+reduced C4(1/2) + K4 minus one diagonal (k=5)        S = 9/16  r2 = 9/4 = 2.25000  per-corner = 1.08447  (3/2)^(k/3) = 1.96556
+reduced C4(1/2) + the 4 fused walls (k=4)            S = 5/16  r2 = 5/4 = 1.25000  per-corner = 1.02829  (3/2)^(k/3) = 1.71707
+reduced C4(1/2) + 2 adjacent fused walls + 1 diagonal (k=3) S = 3/8  r2 = 3/2 = 1.50000  per-corner = 1.06991  (3/2)^(k/3) = 1.50000

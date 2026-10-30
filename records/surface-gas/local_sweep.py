@@ -67,16 +67,26 @@ def sheet_cycle_exists(R_order, O, Gamma):
         return walk(a, used, length)
     return search(0, frozenset(), 0)
 def ratio(Gamma, R_order, O):
+    """(S, r2); on the mixed road a star past the memory cap falls back to the operator-form CUT BOUND (cut_star):
+    then S and r2 are floats and UPPER BOUNDS, and ratio_how() reports 'CUT' for the last call"""
+    global LAST_HOW
     m = len(R_order)
     edges = [(i, j, Fraction(1)) for (i, j) in Gamma]
-    if m == 0 or m == 1:
-        S = eng.star(edges, quiet=True); return S, S
     if m == 2:
         edges += [(R_order[0], R_order[1], H), (R_order[0], R_order[1], H)]
-    else:
+    elif m >= 3:
         edges += [(R_order[i], R_order[(i + 1) % m], H) for i in range(m)]
-    S = eng.star(edges, quiet=True)
-    return S, S * Fraction(2) ** (m - 2)
+    try:
+        S = eng.star(edges, quiet=True); LAST_HOW = "EXACT"
+    except MemoryError:
+        if ENGINE != "mixed": raise
+        import cut_star as cs
+        b = cs.cut_bound(edges)
+        if b is None: raise
+        S = float(b[0]); LAST_HOW = "CUT split=%s" % (b[1],)
+    f = (Fraction(2) ** (m - 2)) if m >= 2 else 1
+    return S, S * (float(f) if isinstance(S, float) else f)
+LAST_HOW = "EXACT"
 def degrees_ok(Gamma, R, O):
     deg = {}
     for (i, j) in Gamma:
@@ -114,7 +124,7 @@ def sweep(KMAX, out, KMIN=1):
                     try: S, r2 = ratio(Gamma, (), O)
                     except MemoryError as e: seen[key] = ('REFUSED', None); rows.append((k, 'off', Gamma, (), 'REFUSED %s' % e, None, None)); continue
                     seen[key] = (S, r2)
-                    rate = float(r2) ** (1.0 / (2 * k)); rows.append((k, 'off', Gamma, (), S, r2, rate))
+                    rate = float(r2) ** (1.0 / (2 * k)); rows.append((k, 'off' if LAST_HOW == "EXACT" else 'off-' + LAST_HOW, Gamma, (), S, r2, rate))
                     if 'off' not in best or rate > best['off'][0]: best['off'] = (rate, Gamma, (), S, r2)
                     continue
                 Rl = sorted(R)
@@ -127,7 +137,7 @@ def sweep(KMAX, out, KMIN=1):
                     try: S, r2 = ratio(Gamma, order, O)
                     except MemoryError as e: seen[key] = ('REFUSED', None); rows.append((k, 'sheet', Gamma, order, 'REFUSED %s' % e, None, None)); continue
                     seen[key] = (S, r2)
-                    rate = float(r2) ** (1.0 / (2 * k)); rows.append((k, 'sheet', Gamma, order, S, r2, rate))
+                    rate = float(r2) ** (1.0 / (2 * k)); rows.append((k, 'sheet' if LAST_HOW == "EXACT" else 'sheet-' + LAST_HOW, Gamma, order, S, r2, rate))
                     tag = 'sheet-m%d' % len(order)
                     if tag not in best or rate > best[tag][0]: best[tag] = (rate, Gamma, order, S, r2)
         with open(out, 'a') as f:

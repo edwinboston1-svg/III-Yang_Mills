@@ -1,0 +1,13 @@
+K4 walls alone (k=6)                                       S=3271/3600 r2=3.63444 per-corner=1.11353 EXACT
+K4 walls + four-spine to 8 (k=10)                          S=647/500 r2=5.17600 per-corner=1.08567 EXACT
+K4 walls + two-spoke 0-8-2 (k=8)                           S=6803/10800 r2=2.51963 per-corner=1.05946 EXACT
+K4 walls + two-spoke 0-8-4 (k=8)                           S=1331/2160 r2=2.46481 per-corner=1.05800 EXACT
+K4 walls + three-spoke 8 to 0,2,4 (k=9)                    S=1403/2700 r2=2.07852 per-corner=1.04148 EXACT
+K4 walls + two four-spines 8,9 + 8-9 (k=15)                S=6.247508333333333 r2=24.99003 per-corner=1.11325 CUT split=(0, 2, 8)
+chord triangle alone (k=3)                                 S=3/4 r2=1.50000 per-corner=1.06991 EXACT
+chord triangle + three-spoke 8 (k=6)                       S=149/360 r2=0.82778 per-corner=0.98437 EXACT
+chord triangle + two-spoke 0-8-2 (k=5)                     S=1/2 r2=1.00000 per-corner=1.00000 EXACT
+W4 (four-spine alone, k=4)                                 S=7/108 r2=0.25926 per-corner=0.84473 EXACT
+four-spine + one wall 0-2 (k=5)                            S=11/108 r2=0.40741 per-corner=0.91412 EXACT
+four-spine + diagonal wall 0-4 (k=5)                       S=1/12 r2=0.33333 per-corner=0.89596 EXACT
+rc=0

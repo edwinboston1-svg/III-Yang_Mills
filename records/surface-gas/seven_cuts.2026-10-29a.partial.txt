@@ -1,0 +1,5 @@
+class 1: S <= 0.636345 (split (0, 2, 4, 6), halves 77315893/121500000 77315893/121500000) ; r2 <= 40.7261 ; per corner <= 1.12282 ; NEEDS EXACT (bound > 0.4878)
+class 2: S <= 0.636345 (split (0, 3, 4, 6), halves 77315893/121500000 77315893/121500000) ; r2 <= 40.7261 ; per corner <= 1.12282 ; NEEDS EXACT (bound > 0.4878)
+class 3: S <= 0.636345 (split (0, 2, 4, 6), halves 77315893/121500000 77315893/121500000) ; r2 <= 40.7261 ; per corner <= 1.12282 ; NEEDS EXACT (bound > 0.4878)
+class 4: S <= 0.636345 (split (0, 2, 4, 7), halves 77315893/121500000 77315893/121500000) ; r2 <= 40.7261 ; per corner <= 1.12282 ; NEEDS EXACT (bound > 0.4878)
+class 5: S <= 0.636345 (split (0, 3, 4, 6), halves 77315893/121500000 77315893/121500000) ; r2 <= 40.7261 ; per corner <= 1.12282 ; NEEDS EXACT (bound > 0.4878)

@@ -1,0 +1,10 @@
+SUMMARY chambers=72882 violations=0 refused=0 skipped_branched=4077 worst N^2/bound^2=inf cached_configurations=16
+census snapshot: STDLIB/build/pentapylon/g50_local_d4_f20.2026-10-29a.txt taken 21:06 EDT, 76959 G50-LOCAL lines (72882 branch-free read, 4077 branched skipped by name)
+tight (N^2 = bound^2) by |Y|:
+  26083 |Y|=1
+  37885 |Y|=2
+   4609 |Y|=3
+   3530 |Y|=4
+    491 |Y|=5
+chambers with N = 0 (bound not attained):
+284

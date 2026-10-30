@@ -63,7 +63,11 @@ def leaf_sum(a, alpha, kap):
         return 1.0 + sum((a[tj]/u)**F*((tj+1)/2.0)**2 for tj in range(2, 14))
     tot = 0.0
     for F, w in NSURF.items():
-        if F <= F0: tot += 3.0*w*ue**F*math.exp(2*alpha*F)*spin(F)        # 3 = links per plaquette-count conversion (sum through a link = 3x through a plaquette)
+        # CORRECTED 2026-10-30 04:5x EDT (the trunk seat; law 18, found by the exact certificate aperanton_kp_cert.awk, whose LHS at
+        # (0.477, 0.0036) read 0.00382 against this road's 0.00357): S2's activity is u^F 2^chi sigma(F) and 2^chi = 4 on a sphere;
+        # this line had dropped the 2^chi on the enumerated surfaces (the tail below always carried it), so every beta* this road
+        # printed before 04:5x (0.4708, 0.4759, 0.4773, 0.4859) was read a few thousandths high.  2^chi <= 4 (tori at 1 are bounded by 4).
+        if F <= F0: tot += 3.0*w*4.0*ue**F*math.exp(2*alpha*F)*spin(F)    # 3 = links per plaquette-count conversion (sum through a link = 3x through a plaquette)
     for F, w in NCONT.items():
         if F <= F0: tot += 3.0*w*4.0*ue**F*math.exp(2*alpha*F)
     r = MU*ue*math.exp(2*alpha)

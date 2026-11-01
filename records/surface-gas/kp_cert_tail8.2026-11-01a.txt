@@ -1,0 +1,21 @@
+# kp_cert_tail8.2026-11-01a.txt -- the certificate of record (STDLIB/scripts/aperanton_kp_cert.awk at HEAD 7b84ff73e, table mode LOCAL=1 with R2TAB from local_tail_table.2026-10-31g.txt, gamma 6) with the TAIL'S ACTIVITY DOUBLED (kp_cert_tail8.awk: the two tail lines' 4 -> 8), the controls first; 2026-11-01 15:24:35
+## control dress=page beta=4764 alpha=44
+KP-CERT dress=page graded=S24-table beta=4764/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.131404, 0.131411] root in [0.131404, 0.131411] u in [0.11798946, 0.11798946] u~ in [0.13455855, 0.13455957] r_hi=0.696902 LHS in [0.0043826, 0.0043833] alpha=0.0043999 -> PASS mix=0.000000000291
+## control dress=page beta=4764 alpha=40
+KP-CERT dress=page graded=S24-table beta=4764/10000 alpha=40/10000 gamma=6/1 F0=20: kappa_U in [0.130479, 0.130487] root in [0.130479, 0.130487] u in [0.11798946, 0.11798946] u~ in [0.13443419, 0.13443522] r_hi=0.694033 LHS in [0.0040050, 0.0040056] alpha=0.0039999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000291
+## control dress=page beta=4766 alpha=44
+KP-CERT dress=page graded=S24-table beta=4766/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.131645, 0.131652] root in [0.131645, 0.131652] u in [0.11803807, 0.11803807] u~ in [0.13464647, 0.13464749] r_hi=0.697357 LHS in [0.0044457, 0.0044465] alpha=0.0043999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000292
+## tail8 dress=page beta=4764 alpha=44
+KP-CERT dress=page graded=S24-table beta=4764/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.131404, 0.131411] root in [0.131404, 0.131411] u in [0.11798946, 0.11798946] u~ in [0.13455855, 0.13455957] r_hi=0.696902 LHS in [0.0084112, 0.0084127] alpha=0.0043999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000291
+## tail8 dress=page beta=4676 alpha=40
+KP-CERT dress=page graded=S24-table beta=4676/10000 alpha=40/10000 gamma=6/1 F0=20: kappa_U in [0.120555, 0.120562] root in [0.120555, 0.120562] u in [0.11584933, 0.11584933] u~ in [0.13069230, 0.13069330] r_hi=0.674715 LHS in [0.0040970, 0.0040977] alpha=0.0039999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000242
+## tail8 dress=page beta=4672 alpha=40
+KP-CERT dress=page graded=S24-table beta=4672/10000 alpha=40/10000 gamma=6/1 F0=20: kappa_U in [0.120128, 0.120136] root in [0.120128, 0.120136] u in [0.11575200, 0.11575200] u~ in [0.13052684, 0.13052783] r_hi=0.673861 LHS in [0.0039851, 0.0039858] alpha=0.0039999 -> PASS mix=0.000000000240
+## tail8 dress=page beta=4670 alpha=38
+KP-CERT dress=page graded=S24-table beta=4670/10000 alpha=38/10000 gamma=6/1 F0=20: kappa_U in [0.119516, 0.119523] root in [0.119516, 0.119523] u in [0.11570334, 0.11570334] u~ in [0.13039206, 0.13039306] r_hi=0.672089 LHS in [0.0037629, 0.0037635] alpha=0.0037999 -> PASS mix=0.000000000239
+## tail8 dress=tree beta=4816 alpha=44
+KP-CERT dress=tree graded=S24-table beta=4816/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.120608, 0.120616] root in [0.061118, 0.061126] u in [0.11925305, 0.11925305] u~ in [0.13453927, 0.13454030] r_hi=0.696802 LHS in [0.0083841, 0.0083855] alpha=0.0043999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000324
+## tail8 dress=tree beta=4720 alpha=54
+KP-CERT dress=tree graded=S24-table beta=4720/10000 alpha=54/10000 gamma=6/1 F0=20: kappa_U in [0.113630, 0.113638] root in [0.056008, 0.056015] u in [0.11691967, 0.11691967] u~ in [0.13098955, 0.13099055] r_hi=0.683866 LHS in [0.0055122, 0.0055131] alpha=0.0053999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000265
+## tail8 dress=tree beta=4710 alpha=34
+KP-CERT dress=tree graded=S24-table beta=4710/10000 alpha=34/10000 gamma=6/1 F0=20: kappa_U in [0.109493, 0.109495] root in [0.053024, 0.053025] u in [0.11667646, 0.11667646] u~ in [0.13017748, 0.13017773] r_hi=0.668835 LHS in [0.0033872, 0.0033874] alpha=0.0033999 -> PASS mix=0.000000000260

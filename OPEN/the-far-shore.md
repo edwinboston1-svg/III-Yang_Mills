@@ -160,3 +160,6 @@ Classical, named and not claimed: Osterwalder–Schrader reconstruction; Dobrush
 **Falsifiers.** ε(β) = 0 at every β to the grid (the gas has no margin — then the lemma's constant is empty and the exit must be Theorem 8.7's Dobrushin form with CrossoverCriterion.lean's own tilt budget); the first step's content above every ε in the disk with no decay in the model (then the crossing is not an expansion's stability, and this section is withdrawn as a road, dated).
 
 **Not claimed.** The lemma's hypothesis for ℤ⁴; the continuum gap; any coupling above β*. The lemma is a reduction with a computable constant, not a theorem about the crossing.
+
+
+**CLOCK NOTE (read from `date` at its own landing; the trunk seat).** The labels "03:0x EST" on §27, "03:2x EST" on §27 RESULTS 1, and the far shore's "03:2x"/"03:3x" on its §4.0 correction and §10 were written from the seat's sense of time against the standing order that a label comes from `date`: `date` read 02:4x–02:5x EST at their landings, and the commits' own times are the record (III-Yang_Mills ebc2d1a, b318001 and the RESULTS commit below; the III mirrors 53ec9d524, 93c257c28). Entered at 02:52:31 EST on 2026-11-01.

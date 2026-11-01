@@ -1,0 +1,17 @@
+LEAF-STARS C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/pentapylon/g50_list_f18_34_0_1.2026-10-29a.txt: EVEN sets 576; distinct star orbits 5; max half-axis degree 4; vertices with rho > 1: 0 -- E6 HELD on this listing
+  orbit mask=000000000001000000000101 E=3 deg=20202000 S=1/2 e=1.000000 mmax=1 rho=1.000000 vertices=5760
+  orbit mask=000000000101000000010100 E=4 deg=20202020 S=1/4 e=1.000000 mmax=1 rho=1.000000 vertices=2304
+  orbit mask=000000000001010001010100 E=5 deg=22202020 S=1/8 e=1.000000 mmax=1 rho=1.000000 vertices=1152
+  orbit mask=000000000101000101010001 E=6 deg=22402020 S=1/4 e=2.000000 mmax=2 rho=1.000000 vertices=1152
+  orbit mask=000000000000000101000101 E=4 deg=22202000 S=1/4 e=1.000000 mmax=1 rho=1.000000 vertices=576
+LEAF-STARS C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/pentapylon/g50_list_f20_36_0_2.2026-10-29a.txt: EVEN sets 7112; distinct star orbits 10; max half-axis degree 4; vertices with rho > 1: 9916 (worst rho 1.414214 at orbit 000000000111000000011101, set 1)
+  orbit mask=000000000001000000000101 E=3 deg=20202000 S=1/2 e=1.000000 mmax=1 rho=1.000000 vertices=77748
+  orbit mask=000000000101000000010100 E=4 deg=20202020 S=1/4 e=1.000000 mmax=1 rho=1.000000 vertices=35153
+  orbit mask=000000000101000101010001 E=6 deg=22402020 S=1/4 e=2.000000 mmax=2 rho=1.000000 vertices=10226
+  orbit mask=000000000001010001010100 E=5 deg=22202020 S=1/8 e=1.000000 mmax=1 rho=1.000000 vertices=8946
+  orbit mask=000000000111000000011101 E=7 deg=40402220 S=1/4 e=2.828427 mmax=2 rho=1.414214 vertices=6646
+  orbit mask=000000000000000101000101 E=4 deg=22202000 S=1/4 e=1.000000 mmax=1 rho=1.000000 vertices=4084
+  orbit mask=000100000111010001011000 E=8 deg=22402240 S=1/8 e=2.828427 mmax=2 rho=1.414214 vertices=1280
+  orbit mask=000000000101001001011101 E=8 deg=42402220 S=1/8 e=2.828427 mmax=2 rho=1.414214 vertices=1272
+  orbit mask=000000000011010001011101 E=8 deg=42402220 S=1/8 e=2.828427 mmax=2 rho=1.414214 vertices=638
+  orbit mask=000000001111000000111100 E=8 deg=40402222 S=1/8 e=2.828427 mmax=2 rho=1.414214 vertices=80

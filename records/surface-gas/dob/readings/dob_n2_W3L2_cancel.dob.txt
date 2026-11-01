@@ -1,0 +1,26 @@
+W2DOB-RECORD dob_n2_W3L2_cancel.txt: LMAX=2 (loop representations to spin 2/2), Z=2.09209518607383431e+35, GENINV(record)=1, 9 blocks
+W2DOB-KAT KR representation homomorphism: GENINV=1 derived, record's 1 [MET]
+W2DOB-KAT K0 rule degree 30 (7936 points): weights sum 0.999999999999987, character orthonormality to 1.3e-14 [MET]
+W2DOB-KAT K2 class moments from the dump against the record's 9 lines: worst relative difference 1.4e-14 [MET]
+W2DOB-SCHUR a=0 c=0 residual |F/Z - sum_k (f_k/d_k) P_k| = 2.554e-14
+W2DOB-SCHUR a=0 c=1 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.221e-15
+W2DOB-SCHUR a=0 c=2 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.411e-03
+W2DOB-SCHUR a=1 c=0 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.277e-15
+W2DOB-SCHUR a=1 c=1 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.193e-03
+W2DOB-SCHUR a=1 c=2 residual |F/Z - sum_k (f_k/d_k) P_k| = 7.117e-05
+W2DOB-SCHUR a=2 c=0 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.411e-03
+W2DOB-SCHUR a=2 c=1 residual |F/Z - sum_k (f_k/d_k) P_k| = 7.117e-05
+W2DOB-SCHUR a=2 c=2 residual |F/Z - sum_k (f_k/d_k) P_k| = 2.032e-04
+W2DOB-KAT K3 channels from the dump against the record's 9 lines: worst relative difference 1.0e-14 [MET]
+W2DOB-K4 Schur residual over all blocks 1.411e-03: the invariance is BROKEN by this datum (a reading, not a failure; a KAT only at the ordered datum)
+W2DOB-KAT K2' Peter-Weyl round trip F -> p -> F (U on the degree-30 rule, V on the degree-12 grid): worst absolute difference 3.9e-16 [MET]
+W2DOB-CENSUS joint density on 7936 x 637 points: min 1.224524e-01 max 5.570091e+00, negative at 0 (0.000 %); marginal p_B min 2.479867e-01 on the V grid, marginal p_A min 2.224348e-01 on the U rule -> joint POSITIVE, p_B POSITIVE
+W2DOB-GRID V grid degree 12 (637 points), 202566 pairs read, 0 pairs refused for Delta (a non-positive conditional): grid sup TV 0.347853074 at V=(angle 3.9270) V'=(angle 3.9270), rel. angle 4.7054; grid sup Delta 
+W2DOB-GRID-DELTA 3.843265371 at V=(angle 3.1416) V'=(angle 3.1416)
+W2DOB-C rule degree 30 (7936 points): C = 0.350598658 after 78 accepted moves (grid 0.347853074, movement +2.75e-03) at V=(angle 3.7472) V'=(angle 3.7476), rel. angle 5.0716
+W2DOB-DELTA rule degree 30: Delta = 3.891325115 after 58 accepted moves (grid 3.843265371, movement +4.81e-02) at V=(angle 3.3803) V'=(angle 3.3803); the tilt bound 1 - e^-Delta = 0.979581728
+W2DOB-C rule degree 60 (58621 points): C = 0.350376917 after 51 accepted moves (grid 0.347853074, movement +2.52e-03) at V=(angle 3.7478) V'=(angle 3.7470), rel. angle 5.0716
+W2DOB-KAT K5 the two rules (degrees 30, 60) on C: 0.350598658 against 0.350376917, relative difference 6.32e-04 [MET]
+W2DOB-RESULT C(A,B) at the datum = 0.350598658 (a grid-refined LOWER bound on the group's supremum; loop representations to spin 2/2); tilt bound 1 - e^-Delta = see W2DOB-DELTA; ratio C/bound = see below; S20 (twenty adjacent coarse plaquettes, the bent column, kappa -> 0) = 7.011973 > 1 (survives the grid)
+W2DOB-RATIO C / (1 - e^-Delta) = 0.357906 (Delta = 3.891325115, bound 0.979581728)
+W2DOB-DONE

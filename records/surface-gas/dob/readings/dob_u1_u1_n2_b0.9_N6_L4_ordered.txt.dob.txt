@@ -1,0 +1,12 @@
+U1DOB-RECORD dob_u1/u1_n2_b0.9_N6_L4_ordered.txt: beta=0.9 n=2 NMAX=6 LMAX=4 (charges to 4) datum=ordered; c_00 = 1.000000000000000
+U1DOB-KAT K2' Fourier round trip c -> p -> c on a 16 x 16 grid: worst absolute difference 1.3e-15 [MET]
+U1DOB-CENSUS joint density on 720 x 720 points: min 5.472405e-02 max 4.208881e+00, negative at 0 (0.000 %); marginal p_B min 1.740942e-01, p_A min 1.740942e-01 -> joint POSITIVE, p_B POSITIVE
+U1DOB-GRID psi grid 720 points, 258840 pairs read, 0 refused for Delta: grid sup TV 0.270410547 at psi=2.3126 psi'=3.9619; grid sup Delta 
+U1DOB-GRID-DELTA 2.329454594 at psi=2.1991 psi'=4.0841
+U1DOB-C phi grid 1024: C = 0.270413522 after 13 accepted moves (grid 0.270410547, movement +2.98e-06) at psi=2.3157 psi'=3.9662 (psi' - psi = 1.6505)
+U1DOB-C phi grid 4096: C = 0.270414243 after 15 accepted moves (grid 0.270410547, movement +3.70e-06) at psi=2.3162 psi'=3.9667
+U1DOB-DELTA phi grid 1024: Delta = 2.329465166 after 16 accepted moves (grid 2.329454594, movement +1.06e-05) at psi=2.2016 psi'=4.0816; the tilt bound 1 - e^-Delta = 0.902652202
+U1DOB-KAT K5 the two phi grids (1024, 4096) on C: 0.270413522 against 0.270414243, relative difference 2.66e-06 [MET]
+U1DOB-RESULT C(A,B) at the datum = 0.270414243 (a grid-refined LOWER bound on the group's supremum; charges to 4); S20 (twenty adjacent coarse plaquettes, kappa -> 0) = 5.408285 > 1 (survives the grid)
+U1DOB-RATIO C / (1 - e^-Delta) = 0.299577 (Delta = 2.329465166, bound 0.902652202)
+U1DOB-DONE

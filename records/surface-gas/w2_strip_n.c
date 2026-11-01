@@ -242,6 +242,12 @@ int main(int argc, char **argv) {
   if (getenv("W2_LIST")) for (int i = 0; i < NOUT; i++) printf("W2-OUT %d %d %d %d %d %d\n", i, OB[i][0], OB[i][1], OB[i][2], OB[i][3], OD[i]);
   int ROTL = -1; double ROTA = 0; if (getenv("W2_ROT")) { if (sscanf(getenv("W2_ROT"), "%d:%lf", &ROTL, &ROTA) != 2 || ROTL < 0 || ROTL >= NOUT) { fprintf(stderr, "W2_ROT must be <index 0..%d>:<angle>\n", NOUT - 1); return 1; }
     quat r = { cos(ROTA / 2), sin(ROTA / 2), 0, 0 }; DATA[ROTL] = qmul(r, DATA[ROTL]); printf("W2-ROT link %d (%d,%d,%d,%d dir %d) by %.6f\n", ROTL, OB[ROTL][0], OB[ROTL][1], OB[ROTL][2], OB[ROTL][3], OD[ROTL], ROTA); }
+  /* THE OSCILLATION INSTRUMENT (§9 ADDENDUM, 10:5x): W2_SET="<outside link index>:<w>:<x>:<y>:<z>" left-multiplies that one link by the unit
+     quaternion (w, x, y, z)/|·| -- any value of the link, not one angle about one axis -- so a sweep over a grid of quaternions reads the
+     range of the coarse loop's moments over the link's value at a fixed datum, the single-link influence's sup that a Dobrushin row takes */
+  if (getenv("W2_SET")) { int sl = -1; double sw, sx, sy, sz; if (sscanf(getenv("W2_SET"), "%d:%lf:%lf:%lf:%lf", &sl, &sw, &sx, &sy, &sz) != 5 || sl < 0 || sl >= NOUT) { fprintf(stderr, "W2_SET must be <index 0..%d>:<w>:<x>:<y>:<z>\n", NOUT - 1); return 1; }
+    double nn = sqrt(sw * sw + sx * sx + sy * sy + sz * sz); if (nn < 1e-12) { fprintf(stderr, "W2_SET: a zero quaternion\n"); return 1; } quat q = { sw / nn, sx / nn, sy / nn, sz / nn }; DATA[sl] = qmul(q, DATA[sl]);
+    printf("W2-SET link %d (%d,%d,%d,%d dir %d) left-multiplied by (%.9f,%.9f,%.9f,%.9f)\n", sl, OB[sl][0], OB[sl][1], OB[sl][2], OB[sl][3], OD[sl], q.w, q.x, q.y, q.z); }
   RSTR = (size_t)(SMAX + 1) * (SMAX + 1); RM = malloc(sizeof(cplx) * (size_t)NPT * (SMAX + 1) * 2 * RSTR);
   #pragma omp parallel for schedule(static)
   for (int pt = 0; pt < NPT; pt++) for (int s = 0; s <= SMAX; s++) { rep(s, RU[pt], rmat(pt, s, 0)); rep(s, qinv(RU[pt]), rmat(pt, s, 1)); }
@@ -286,6 +292,12 @@ int main(int argc, char **argv) {
     F = S.blk[0]; }
     cplx cls = 0; for (int r = 0; r < da; r++) for (int rp = 0; rp < dc; rp++) cls += F[r * sA_in + r * sA_out + rp * sB_in + rp * sB_out];
     if (a == 0 && c == 0) Z = creal(cls);
+    /* THE DUMP (the campaign's §14, 17:1x): W2_DUMPF=1 prints the junction tensor F^{ac}(r, q, r', q') = E[D^a(A)_{rq} D^c(B)_{r'q'}] (unnormalised; Z on its
+       own line, GENINV with it) entry by entry, the index order the class moment's (r the A-in wire, q the A-out, r' the B-in, q' the B-out) --
+       the (8.5) reader w2_dob.c reconstructs the joint law from it; unset, the output is byte-identical */
+    if (getenv("W2_DUMPF")) { if (a == 0 && c == 0) printf("W2-FHEAD GENINV=%d Z=%.17e LMAX=%d\n", GENINV, Z, LMAX);
+      for (int r = 0; r < da; r++) for (int q = 0; q < da; q++) for (int rp = 0; rp < dc; rp++) for (int qp = 0; qp < dc; qp++) { cplx v = F[r * sA_in + q * sA_out + rp * sB_in + qp * sB_out];
+        printf("W2-F a=%d c=%d r=%d q=%d rp=%d qp=%d %+.17e %+.17e\n", a, c, r, q, rp, qp, creal(v), cimag(v)); } }
     CLS[a][c] = creal(cls) / Z;
     printf("W2-CLASS a=%d c=%d E[chi_a(A) chi_c(B)] = %+.12e (imag %.1e; max state %zu, open plaquettes at most %d; %.1f s%s)\n", a, c, creal(cls) / Z, cimag(cls) / Z, maxstate, maxopen, now() - ts, slicenote);
     if (a > 0 && c > 0 && SLICE == 2) printf("W2-CHANNEL a=%d c=%d REFUSED: the diagonal slices hold the class moment only\n", a, c);

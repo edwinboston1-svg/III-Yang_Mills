@@ -32,6 +32,16 @@ static int WW[CT_MAXW][CT_MAXL], WL[CT_MAXW], NW = 0;
 /* ---- the Weingarten step: slots, union-find, the sum over the pairings */
 static int sl_par[CT_MAXW * CT_MAXL]; static int sl_fnd(int x) { while (sl_par[x] != x) x = sl_par[x] = sl_par[sl_par[x]]; return x; }
 static int ct_weingarten(int r, long long *nout, long long *dout) {
+  /* THE BALANCE: chi_1/2(z) = chi_1/2(z^-1), so any circle's word may be inverted without changing the integral; the U(2) step needs
+     every chord to appear as often as U as as U^-1 over all words, which the pieces' independent orientations do not guarantee --
+     search the sign patterns of the charged words (those with a nonzero exponent vector) for one that balances every chord, and
+     invert those words; no pattern (a single word running a chord twice the same way: a non-orientable piece) is refused by name. */
+  static int ex[CT_MAXW][32]; static int charged[CT_MAXW]; int nch = 0;
+  for (int b = 0; b < NW; b++) { for (int c = 0; c < r; c++) ex[b][c] = 0; for (int k = 0; k < WL[b]; k++) { int let = WW[b][k]; if (let > 0) ex[b][let - 1]++; else ex[b][-let - 1]--; }
+    int nz = 0; for (int c = 0; c < r; c++) if (ex[b][c]) nz = 1; if (nz) { if (nch >= 20) return -6; charged[nch++] = b; } }
+  int found = -1; for (int pat = 0; pat < (1 << nch); pat++) { int ok = 1; for (int c = 0; c < r && ok; c++) { int s = 0; for (int i = 0; i < nch; i++) s += ((pat >> i) & 1 ? -1 : 1) * ex[charged[i]][c]; if (s != 0) ok = 0; } if (ok) { found = pat; break; } }
+  if (found < 0) return -6;
+  for (int i = 0; i < nch; i++) if ((found >> i) & 1) { int b = charged[i], L = WL[b]; for (int k = 0; k < L / 2; k++) { int t = WW[b][k]; WW[b][k] = WW[b][L - 1 - k]; WW[b][L - 1 - k] = t; } for (int k = 0; k < L; k++) WW[b][k] = -WW[b][k]; }
   int off[CT_MAXW + 1], ns = 0; for (int b = 0; b < NW; b++) { off[b] = ns; ns += WL[b]; } off[NW] = ns;
   static int pu[32][2][2], pb[32][2][2], npu[32], npb[32];   /* per chord: the U occurrences (row slot, column slot) and the U^-1 ones */
   for (int c = 0; c < r; c++) { npu[c] = npb[c] = 0; }
@@ -44,7 +54,6 @@ static int ct_weingarten(int r, long long *nout, long long *dout) {
   for (int combo = 0; combo < ncomb; combo++) { for (int s = 0; s < ns; s++) sl_par[s] = s; long long coef = 1; int cc = combo;
     for (int c = 0; c < r; c++) { if (npu[c] == 0) continue; int sg = 0, tg = 0; if (npu[c] == 2) { sg = cc & 1; tg = (cc >> 1) & 1; cc >>= 2; coef *= (sg == tg) ? 2 : -1; }
       for (int k = 0; k < npu[c]; k++) { int ks = (npu[c] == 2 && sg) ? 1 - k : k, kt = (npu[c] == 2 && tg) ? 1 - k : k;
-        /* delta(a_k, c_{sigma k}): the U's row slot with the U^-1's column slot; delta(b_k, d_{tau k}): the U's column slot with the U^-1's row slot */
         int x = sl_fnd(pu[c][k][0]), y = sl_fnd(pb[c][ks][1]); if (x != y) sl_par[x] = y;
         x = sl_fnd(pu[c][k][1]); y = sl_fnd(pb[c][kt][0]); if (x != y) sl_par[x] = y; } }
     int comp = 0; for (int s = 0; s < ns; s++) if (sl_fnd(s) == s) comp++;
@@ -88,6 +97,7 @@ static int ct_primitive(int r, int *minlen_out, int *nwords_out) {
   for (int t = 0; t < nw; t++) if (l1[t] != 1) return 0;
   for (int t = 0; t < nw; t++) for (int u = t + 1; u < nw; u++) { int x = w1[t][0] > 0 ? w1[t][0] : -w1[t][0], y = w1[u][0] > 0 ? w1[u][0] : -w1[u][0]; if (x == y) return 0; }
   return 1; }
+#include "ct_freefactor.c"
 static cut_t cut_P(void) {
   cut_t out; memset(&out, 0, sizeof out); out.prim = -1;
   static long lk[MAXF * 4]; static int lp[MAXF * 4][6][2], lm[MAXF * 4], lc[MAXF][4][4], lmu[MAXF * 4]; int nl = 0;
@@ -136,7 +146,7 @@ static cut_t cut_P(void) {
   /* the Weingarten step, at every rank; at r = 1 compared with the character road */
   out.wg_ok = (r >= 1) ? ct_weingarten(r, &out.wN, &out.wD) : 0; out.wg_agree = -1;
   if (r == 1 && out.wg_ok == 1) out.wg_agree = (out.wD != 0 && out.wN == out.I * out.wD) ? 1 : 0;
-  if (r >= 1) { int ml = 0, nwd = 0; out.prim = ct_primitive(r, &ml, &nwd); out.minlen = ml; out.nwords = nwd; }
+  if (r >= 1) { int rk = 0, ed = 0; int ff = ct_freefactor(r, &rk, &ed); out.prim = ff; out.minlen = ed; out.nwords = rk; }   /* the free-factor column: prim = 1 iff <words> is a free factor; nwords = its rank, minlen = the core edges */
   /* the sign: the cross-caps of the non-orientable pieces */
   int sign = 1; { static int ori[MAXF]; for (int p = 0; p < F; p++) ori[p] = 0; static int nonor_piece[MAXF]; for (int t = 0; t < m; t++) nonor_piece[t] = 0;
     static int plinks[MAXF][4]; for (int p = 0; p < F; p++) { long Lk[4]; plaq_links(P[p], Lk); for (int q = 0; q < 4; q++) { int idx = -1; for (int i = 0; i < nl; i++) if (lk[i] == Lk[q]) idx = i; plinks[p][q] = idx; } }

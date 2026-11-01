@@ -1,0 +1,12 @@
+# objects_AC_reader.2026-11-01a.txt -- Objects A and C planted as closed seeds in boxenum_k.exe (cut_reader_w.c with the balanced Weingarten step and the free-factor column; MAXF 320); 2026-11-01 15:45:47
+## Object A
+# SEED: 138 plaquettes planted, 0 odd links, 4 four-links, 0 links at three or above four; BOX_NO4=0
+BOX-LEAF F=138 N4=4 S=0.5 chimax=-2 resolutions=81 b1max=1 b1lat=1 surgery-identity 48/108 fail STRONG-VIOLATION THE-LATTICE-CYCLE
+# THE CUT FORMULA AS THE SECOND ROAD: 1 leaves read (refused: 0 bad multiplicity, 0 boundary degree, 0 cycle rank >= 2, 0 no chord); against the resolution formula on the 2/4-link leaves: 1 compared, 0 PARTED; minimality (resolutions connected vs the rank criterion): 1 compared, 0 PARTED
+# THE WEINGARTEN STEP against the character road at cycle rank one: 1 compared, 0 PARTED; THE PRIMITIVITY COLUMN on the minimal leaves with a contact cycle: 1 read -- PRIMITIVE and S = 2^chi_max 0, PRIMITIVE and S != 2^chi_max 1, NOT-PRIMITIVE and S = 2^chi_max 0, NOT-PRIMITIVE and S != 2^chi_max 0; minimal leaves of cycle rank >= 2 read by both roads: 0
+## Object C
+# SEED: 290 plaquettes planted, 0 odd links, 7 four-links, 0 links at three or above four; BOX_NO4=0
+RANK-LEAF F=290 N4=7 r=2 pieces=3 chi_cut=-4 circles=6 I=4/3 S_cut=0.08333333333 S_res=0.08333333333 chimax=-4 PRIMITIVE words=2 minlen=2
+BOX-LEAF F=290 N4=7 S=0.08333333333 chimax=-4 resolutions=2187 b1max=1 b1lat=2 surgery-identity 1656/5103 fail STRONG-VIOLATION THE-LATTICE-CYCLE
+# THE CUT FORMULA AS THE SECOND ROAD: 1 leaves read (refused: 0 bad multiplicity, 0 boundary degree, 0 cycle rank >= 2, 0 no chord); against the resolution formula on the 2/4-link leaves: 1 compared, 0 PARTED; minimality (resolutions connected vs the rank criterion): 1 compared, 0 PARTED
+# THE WEINGARTEN STEP against the character road at cycle rank one: 0 compared, 0 PARTED; THE PRIMITIVITY COLUMN on the minimal leaves with a contact cycle: 1 read -- PRIMITIVE and S = 2^chi_max 0, PRIMITIVE and S != 2^chi_max 1, NOT-PRIMITIVE and S = 2^chi_max 0, NOT-PRIMITIVE and S != 2^chi_max 0; minimal leaves of cycle rank >= 2 read by both roads: 1

@@ -1,0 +1,8 @@
+FF-KAT {a b a^-1 b^-1 a}            r=2: NOT-FREE-FACTOR (rank 1, core edges 5) expected NOT-FREE-FACTOR -> MET
+FF-KAT {a, b, ab}                   r=2: FREE-FACTOR (rank 2, core edges 2) expected FREE-FACTOR -> MET
+FF-KAT {a, b a b^-1}                r=2: NOT-FREE-FACTOR (rank 2, core edges 3) expected NOT-FREE-FACTOR -> MET
+FF-KAT {ab, a}                      r=2: FREE-FACTOR (rank 2, core edges 2) expected FREE-FACTOR -> MET
+FF-KAT {U, U^-1} in F_1             r=1: FREE-FACTOR (rank 1, core edges 1) expected FREE-FACTOR -> MET
+FF-KAT {a^2}                        r=1: NOT-FREE-FACTOR (rank 1, core edges 2) expected NOT-FREE-FACTOR -> MET
+FF-KAT {a, b^2}                     r=2: NOT-FREE-FACTOR (rank 2, core edges 3) expected NOT-FREE-FACTOR -> MET
+FF-KAT ALL MET

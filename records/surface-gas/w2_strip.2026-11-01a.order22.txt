@@ -1,0 +1,24 @@
+fwd W2-OBJECT links=22 (shared=9) outside=174 staples five/four by census; rule degree 16, 1377 points; beta=2.2 WMAX=2 LMAX=2 datum=ordered order=fwd
+fwd W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag 6.7e-35; max state 196; 0.1 s)
+fwd W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = +6.210389044928e-01 (imag -8.4e-34; max state 3136; 0.1 s)
+fwd W2-CLASS a=0 c=2 E[chi_a(A) chi_c(B)] = +1.311983212794e-01 (imag -2.1e-34; max state 15876; 0.1 s)
+fwd W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +6.210389044928e-01 (imag 0.0e+00; max state 784; 0.1 s)
+fwd W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +4.029907368150e-01 (imag 4.7e-34; max state 12544; 0.1 s)
+fwd W2-CLASS a=1 c=2 E[chi_a(A) chi_c(B)] = +9.147198274485e-02 (imag 2.1e-34; max state 63504; 0.1 s)
+fwd W2-CLASS a=2 c=0 E[chi_a(A) chi_c(B)] = +1.311983212794e-01 (imag 4.2e-34; max state 1764; 0.1 s)
+fwd W2-CLASS a=2 c=1 E[chi_a(A) chi_c(B)] = +9.147198274485e-02 (imag 4.4e-34; max state 28224; 0.1 s)
+fwd W2-CLASS a=2 c=2 E[chi_a(A) chi_c(B)] = +2.318421497364e-02 (imag 9.5e-35; max state 142884; 0.1 s)
+fwd W2-Z beta=2.2 datum=ordered Z = 1.530165006664e+35
+fwd W2-DONE 0.7 s
+rev W2-OBJECT links=22 (shared=9) outside=174 staples five/four by census; rule degree 16, 1377 points; beta=2.2 WMAX=2 LMAX=2 datum=ordered order=rev
+rev W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag -3.1e-33; max state 196; 0.0 s)
+rev W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = +6.210389044928e-01 (imag -2.9e-33; max state 3136; 0.0 s)
+rev W2-CLASS a=0 c=2 E[chi_a(A) chi_c(B)] = +1.311983212794e-01 (imag 4.2e-34; max state 15876; 0.0 s)
+rev W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +6.210389044928e-01 (imag 1.7e-33; max state 3136; 0.0 s)
+rev W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +4.029907368150e-01 (imag -1.0e-33; max state 12544; 0.0 s)
+rev W2-CLASS a=1 c=2 E[chi_a(A) chi_c(B)] = +9.147198274485e-02 (imag 1.8e-34; max state 63504; 0.0 s)
+rev W2-CLASS a=2 c=0 E[chi_a(A) chi_c(B)] = +1.311983212794e-01 (imag 0.0e+00; max state 15876; 0.0 s)
+rev W2-CLASS a=2 c=1 E[chi_a(A) chi_c(B)] = +9.147198274485e-02 (imag 9.1e-34; max state 63504; 0.1 s)
+rev W2-CLASS a=2 c=2 E[chi_a(A) chi_c(B)] = +2.318421497364e-02 (imag -8.5e-35; max state 142884; 0.1 s)
+rev W2-Z beta=2.2 datum=ordered Z = 1.530165006664e+35
+rev W2-DONE 0.5 s

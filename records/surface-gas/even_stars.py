@@ -220,7 +220,7 @@ def kat():
     mp = cycle_mask([0, 2, 4]) | cycle_mask([0, 3, 5, 7])
     S, N, mmax, nm, d, E = S_half(mp)
     e2 = S / Fraction(1, 2 ** (sum(d) // 2 - 2))
-    print(f"E2 pinch star (C3 ∪ C4 at half-axis 0): S = {S} (stake 24/2^7 = {Fraction(24, 128)}) e² = {e2} (stake 6) m_max = {mmax}")
+    print(f"E2 pinch star (C3 + C4 sharing half-axis 0): S = {S} (stake 24/2^7 = {Fraction(24, 128)}) e2 = {e2} (stake 6) m_max = {mmax}")
     return ok
 
 def row(mask):

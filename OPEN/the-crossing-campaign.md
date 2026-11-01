@@ -290,3 +290,18 @@ A reading, under Addendum 3's withdrawal: the direction stands at the sharper ca
 | (2,2) | k = 4 | 0.556 | 1.254 | 1.545 | — |
 
 Every channel sum equals its class moment (the P_k idempotent to 10⁻¹⁵, summing to 1). The reading: at both data the lowest channel of the (1,1) and (1,2) pairs carries a NEGATIVE share and the highest more than the whole — the two loops' fusion is pushed off the free law toward the top channel — and the push is stronger at the cancelling datum (−0.331 against −0.068 at the leading pair) and grows with the cap there (W2L2's −0.247 → W3L2's −0.331) while at the ordered datum the cap moves it the other way (§10's W2L2 −0.140 → −0.068). The (2,2) pair's middle channel is the most negative (−0.758 at the cancelling datum). Nothing was staked on these; they are entered as the content's channel anatomy at the sharper cap, beside §10's at the crude one, and the sign pattern is what a channel-resolved window theorem would have to reproduce.
+
+
+**§12 RESULTS, PART 4 — THE FULL MODE'S RANDOM DATUM, THE THIRD IDENTITY WITH THE SLICE MODE, AND THE CHANNELS' MONOTONE PUSH (2026-11-01 16:1x EST, read from `date`; the trunk seat; w2n4_W3L2.2026-11-01b.random1.txt, the full mode's last datum, 3,596 s at the (2,2) class; the full run complete, 12,006 s over the three data).** THE CONTROL, THIRD TIME: the nine class moments of the full mode at the Haar-random datum equal the diagonal slice mode's (record c) to the last digit, as at the ordered and the cancelling data — the slice mode is the full mode's class reading on all three data, at a fifth of the price, and §12's parts 1–2 stand on it without reservation. THE CHANNELS at the random datum, beside parts 3's:
+
+| class pair | channel | free law | ordered | cancelling | random |
+|---|---|---|---|---|---|
+| (1,1) | k = 0 (singlet) | 0.25 | −0.068 | −0.331 | −0.499 |
+| (1,1) | k = 2 | 0.75 | 1.068 | 1.331 | 1.499 |
+| (1,2) | k = 1 | 0.333 | −0.129 | −0.342 | −0.331 |
+| (1,2) | k = 3 | 0.667 | 1.129 | 1.342 | 1.331 |
+| (2,2) | k = 0 | 0.111 | 0.057 | 0.214 | 0.331 |
+| (2,2) | k = 2 | 0.333 | −0.311 | −0.758 | −0.994 |
+| (2,2) | k = 4 | 0.556 | 1.254 | 1.545 | 1.664 |
+
+The reading: the push of the two loops' fusion off the free law toward the top channel is MONOTONE across the three data at the leading pair — the singlet share −0.068, −0.331, −0.499 from the ordered through the cancelling to the random datum — and the same order holds at (2,2)'s top channel (1.254, 1.545, 1.664) and middle channel (−0.311, −0.758, −0.994); the (1,2) pair's push saturates between the cancelling and the random datum (−0.342, −0.331). The random datum's class moments are four to seven orders below the named data's (the leading mode 1.2 × 10⁻⁴ against 2.8 × 10⁻² and 1.6 × 10⁻²), so the channel shares there are shares of a small moment, read exactly all the same. Nothing was staked on these; the monotone push is entered as a reading for a channel-resolved window theorem to meet, and the full run's three records close §12's owed channels.

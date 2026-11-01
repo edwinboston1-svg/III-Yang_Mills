@@ -1,0 +1,28 @@
+W2-KAT representations to spin 3/2 (GENINV=1): homomorphism and traces [MET]
+W2-OBJECT bent n=4 plaquettes=32 links=76 (shared=3) outside=532 staples five=24 four=52; rule degree 22, 3312 points; beta=2.2 WMAX=3 LMAX=2 datum=ordered order=fwd
+W2-TENSORS built in 2.9 s
+W2-SLICED mode=diag: the junction wires clamped in an outer loop of slices; face A's part (order index 36 of 76) swept once per class and gathered per slice
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag 2.2e-19; max state 810000, open plaquettes at most 4; 11.3 s; 1 slices)
+W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = +2.432512322177e-01 (imag 5.8e-20; max state 3240000, open plaquettes at most 4; 35.5 s; 2 slices)
+W2-CLASS a=0 c=2 E[chi_a(A) chi_c(B)] = +1.093129100974e-02 (imag 2.3e-21; max state 7290000, open plaquettes at most 4; 91.1 s; 3 slices)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +2.432512322177e-01 (imag 5.1e-20; max state 3240000, open plaquettes at most 4; 26.8 s; 2 slices)
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +7.297820336837e-02 (imag 1.5e-20; max state 6480000, open plaquettes at most 4; 109.2 s; 4 slices)
+W2-CHANNEL a=1 c=1 REFUSED: the diagonal slices hold the class moment only
+W2-CLASS a=1 c=2 E[chi_a(A) chi_c(B)] = +4.393077411372e-03 (imag 9.2e-22; max state 14580000, open plaquettes at most 4; 259.7 s; 6 slices)
+W2-CHANNEL a=1 c=2 REFUSED: the diagonal slices hold the class moment only
+W2-CLASS a=2 c=0 E[chi_a(A) chi_c(B)] = +1.093129100974e-02 (imag 4.5e-21; max state 7290000, open plaquettes at most 4; 55.8 s; 3 slices)
+W2-CLASS a=2 c=1 E[chi_a(A) chi_c(B)] = +4.393077411372e-03 (imag 1.7e-21; max state 9720000, open plaquettes at most 4; 191.8 s; 6 slices)
+W2-CHANNEL a=2 c=1 REFUSED: the diagonal slices hold the class moment only
+W2-CLASS a=2 c=2 E[chi_a(A) chi_c(B)] = +3.804790294576e-04 (imag 1.4e-22; max state 21870000, open plaquettes at most 4; 578.4 s; 9 slices)
+W2-CHANNEL a=2 c=2 REFUSED: the diagonal slices hold the class moment only
+W2-Z beta=2.2 datum=ordered n=4 Z = 2.182473250951e+123
+W2-CONN a=0 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.000000000e+00)
+W2-CONN a=0 c=1 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +2.432512322e-01)
+W2-CONN a=0 c=2 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.093129101e-02)
+W2-CONN a=1 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +2.432512322e-01, +1.000000000e+00)
+W2-CONN a=1 c=1 <chi_a chi_c>_c = +1.380704139295e-02 (marginals +2.432512322e-01, +2.432512322e-01)
+W2-CONN a=1 c=2 <chi_a chi_c>_c = +1.734027403524e-03 (marginals +2.432512322e-01, +1.093129101e-02)
+W2-CONN a=2 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.093129101e-02, +1.000000000e+00)
+W2-CONN a=2 c=1 <chi_a chi_c>_c = +1.734027403524e-03 (marginals +1.093129101e-02, +2.432512322e-01)
+W2-CONN a=2 c=2 <chi_a chi_c>_c = +2.609859063181e-04 (marginals +1.093129101e-02, +1.093129101e-02)
+W2-DONE 1362.6 s

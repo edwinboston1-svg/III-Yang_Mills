@@ -1,0 +1,22 @@
+# kp_budget.sh tag=2026-10-31g dress=page mode=TABLE(GRADED=1,R2TAB) F0=20; tilt on the 1/100 grid; 2026-11-01 02:57:06 EST
+KP-BUDGET beta=500/10000 alpha=1/1000: epsilon in [232/100, 233/100) (PASS at 232/100, refused at 233/100) 02:57:09
+KP-BUDGET beta=500/10000 alpha=4/1000: epsilon in [236/100, 237/100) (PASS at 236/100, refused at 237/100) 02:57:11
+KP-BUDGET beta=1000/10000 alpha=1/1000: epsilon in [162/100, 163/100) (PASS at 162/100, refused at 163/100) 02:57:14
+KP-BUDGET beta=1000/10000 alpha=4/1000: epsilon in [166/100, 167/100) (PASS at 166/100, refused at 167/100) 02:57:17
+KP-BUDGET beta=1500/10000 alpha=1/1000: epsilon in [121/100, 122/100) (PASS at 121/100, refused at 122/100) 02:57:20
+KP-BUDGET beta=1500/10000 alpha=4/1000: epsilon in [125/100, 126/100) (PASS at 125/100, refused at 126/100) 02:57:23
+KP-BUDGET beta=2000/10000 alpha=1/1000: epsilon in [91/100, 92/100) (PASS at 91/100, refused at 92/100) 02:57:26
+KP-BUDGET beta=2000/10000 alpha=4/1000: epsilon in [95/100, 96/100) (PASS at 95/100, refused at 96/100) 02:57:28
+KP-BUDGET beta=2500/10000 alpha=1/1000: epsilon in [68/100, 69/100) (PASS at 68/100, refused at 69/100) 02:57:31
+KP-BUDGET beta=2500/10000 alpha=4/1000: epsilon in [72/100, 73/100) (PASS at 72/100, refused at 73/100) 02:57:34
+KP-BUDGET beta=3000/10000 alpha=1/1000: epsilon in [49/100, 50/100) (PASS at 49/100, refused at 50/100) 02:57:38
+KP-BUDGET beta=3000/10000 alpha=4/1000: epsilon in [53/100, 54/100) (PASS at 53/100, refused at 54/100) 02:57:40
+KP-BUDGET beta=3500/10000 alpha=1/1000: epsilon in [33/100, 34/100) (PASS at 33/100, refused at 34/100) 02:57:44
+KP-BUDGET beta=3500/10000 alpha=4/1000: epsilon in [37/100, 38/100) (PASS at 37/100, refused at 38/100) 02:57:47
+KP-BUDGET beta=4000/10000 alpha=1/1000: epsilon in [19/100, 20/100) (PASS at 19/100, refused at 20/100) 02:57:50
+KP-BUDGET beta=4000/10000 alpha=4/1000: epsilon in [22/100, 23/100) (PASS at 22/100, refused at 23/100) 02:57:53
+KP-BUDGET beta=4500/10000 alpha=1/1000: epsilon in [6/100, 7/100) (PASS at 6/100, refused at 7/100) 02:57:56
+KP-BUDGET beta=4500/10000 alpha=4/1000: epsilon in [9/100, 10/100) (PASS at 9/100, refused at 10/100) 02:57:59
+KP-BUDGET beta=4764/10000 alpha=1/1000: epsilon in [0/100, 1/100) (PASS at 0/100, refused at 1/100) 02:58:03
+KP-BUDGET beta=4764/10000 alpha=4/1000: epsilon in [3/100, 4/100) (PASS at 3/100, refused at 4/100) 02:58:06
+# END 2026-11-01 02:58:06 EST

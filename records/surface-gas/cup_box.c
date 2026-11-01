@@ -82,15 +82,22 @@ static size_t MAXST;
 static double run_case(int L, int j2, int k2, int leg2, double *maxent, int *nlegs) {
   NL = 0; NW = 0; NCYC = 0; NFIX = 0; FIXS = leg2; for (int l = 0; l < MAXL; l++) ISLEG[l] = 0;
   /* the box [0,L] x [0,1] x [0,1]: bottom faces (the wall) at z = 0 for x = 0..L-1; the cup: top, front (y = 0), back (y = 1), left (x = 0), right (x = L) */
-  for (int x = 0; x < L; x++) add_face(x, 0, 0, 1, 2, k2);
-  /* CUP_BUMP (08:2x): the top face over x = 0 replaced by a unit cube's five faces -- four more cup faces, the wall and its links unchanged;
-   * parts "one power per wall link" (exponent 3L + 1 either way) from the cup's own d^{chi - n} (exponent 3L + 5) */
-  int bump = getenv("CUP_BUMP") != NULL;
-  for (int x = 0; x < L; x++) { if (!(bump && x == 0)) add_face(x, 0, 1, 1, 2, j2); add_face(x, 0, 0, 1, 3, j2); add_face(x, 1, 0, 1, 3, j2); }
-  if (bump) { add_face(0, 0, 1, 1, 3, j2); add_face(0, 1, 1, 1, 3, j2); add_face(0, 0, 1, 2, 3, j2); add_face(1, 0, 1, 2, 3, j2); add_face(0, 0, 2, 1, 2, j2); }
-  add_face(0, 0, 0, 2, 3, j2); add_face(L, 0, 0, 2, 3, j2);
-  /* the legs: every z = 0 link that lies in exactly one bottom face (the wall's boundary), at spin leg2 */
-  int nleg = 0; if (leg2 > 0) for (int l = 0; l < NL; l++) { if (LB[l][2] != 0 || LD[l] == 3) continue; int cnt = 0; for (int c = 0; c < L; c++) for (int i = 0; i < 4; i++) if (STEPL[c][i] == l) cnt++; if (cnt == 1) { ISLEG[l] = 1; if (NFIX < NFIXREQ) FIXL[NFIX++] = l; else add_leg(l, leg2); nleg++; } }
+  int bump = getenv("CUP_BUMP") != NULL, ends = getenv("CUP_ENDS") != NULL, nwall;
+  if (ends) {
+    /* CUP_ENDS, THE TUBE (09:0x): the walls are the two END faces x = 0 and x = L at spin k, the cup the four long sides (bottom, top, front,
+     * back) over x = 0..L-1 at spin j -- an ANNULUS, chi = 0 -- and the legs the two walls' eight boundary links; at L = 3 the cup's d^{chi - n}
+     * reads 2^-12, "per wall link" 2^-8, "plaquettes + boundary links - 1" 2^-9: the three laws part three ways on one run. */
+    add_face(0, 0, 0, 2, 3, k2); add_face(L, 0, 0, 2, 3, k2); nwall = 2;
+    for (int x = 0; x < L; x++) { add_face(x, 0, 0, 1, 2, j2); add_face(x, 0, 1, 1, 2, j2); add_face(x, 0, 0, 1, 3, j2); add_face(x, 1, 0, 1, 3, j2); }
+  } else {
+    for (int x = 0; x < L; x++) add_face(x, 0, 0, 1, 2, k2); nwall = L;
+    /* CUP_BUMP (08:2x): the top face over x = 0 replaced by a unit cube's five faces -- four more cup faces, the wall and its links unchanged;
+     * parts "one power per wall link" (exponent 3L + 1 either way) from the cup's own d^{chi - n} (exponent 3L + 5) */
+    for (int x = 0; x < L; x++) { if (!(bump && x == 0)) add_face(x, 0, 1, 1, 2, j2); add_face(x, 0, 0, 1, 3, j2); add_face(x, 1, 0, 1, 3, j2); }
+    if (bump) { add_face(0, 0, 1, 1, 3, j2); add_face(0, 1, 1, 1, 3, j2); add_face(0, 0, 1, 2, 3, j2); add_face(1, 0, 1, 2, 3, j2); add_face(0, 0, 2, 1, 2, j2); }
+    add_face(0, 0, 0, 2, 3, j2); add_face(L, 0, 0, 2, 3, j2); }
+  /* the legs: every link that lies in exactly one WALL face (the wall faces are the first nwall cycles), at spin leg2 */
+  int nleg = 0; if (leg2 > 0) for (int l = 0; l < NL; l++) { int cnt = 0; for (int c = 0; c < nwall; c++) for (int i = 0; i < 4; i++) if (STEPL[c][i] == l) cnt++; if (cnt == 1) { ISLEG[l] = 1; if (NFIX < NFIXREQ) FIXL[NFIX++] = l; else add_leg(l, leg2); nleg++; } }
   *nlegs = nleg;
   for (int c = 0; c < NCYC; c++) { NWIRE[c] = OPENC[c] ? NSTEP[c] + 1 : NSTEP[c]; WBASE[c] = NW; for (int i = 0; i < NWIRE[c]; i++) WCYC[NW + i] = c; NW += NWIRE[c]; }
   for (int l = 0; l < NL; l++) NSLOT[l] = 0; for (int c = 0; c < NCYC; c++) for (int i = 0; i < NSTEP[c]; i++) { int l = STEPL[c][i]; SLC[l][NSLOT[l]] = c; SLS[l][NSLOT[l]] = i; NSLOT[l]++; }

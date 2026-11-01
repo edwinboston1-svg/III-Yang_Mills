@@ -1,0 +1,11 @@
+W2-KAT representations to spin 2/2 (GENINV=1): homomorphism and traces [MET]
+W2-OBJECT bent n=2 plaquettes=8 links=22 (shared=3) outside=174 staples five=12 four=10; rule degree 14, 960 points; beta=1.5 WMAX=2 LMAX=1 datum=ordered order=fwd
+W2-ROT link 95 (2,1,0,-1 dir 2) by 3.141593
+W2-TENSORS built in 0.0 s
+W2-CMAX 0: face B's loop representation capped at 0/2 for this run (the classes a <= 1, c <= 0; the connected moments and channels for c <= 0 alone)
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag 0.0e+00; max state 196, open plaquettes at most 2; 0.0 s)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +3.918622539484e-01 (imag 0.0e+00; max state 784, open plaquettes at most 2; 0.0 s)
+W2-Z beta=1.5 datum=ordered n=2 Z = 1.751761621564e+23
+W2-CONN a=0 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.000000000e+00)
+W2-CONN a=1 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +3.918622539e-01, +1.000000000e+00)
+W2-DONE 0.1 s

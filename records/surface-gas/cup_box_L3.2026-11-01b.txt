@@ -1,0 +1,1 @@
+CUPBOX L=3 j=3/2 k=2/2 legs=8 at spin 1/2: links=28 |T|_F = 6.622738308e-09 max|entry| = 4.139211443e-10 rule 637 points maxstate=2359296 fixed=4

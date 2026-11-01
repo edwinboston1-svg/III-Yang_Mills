@@ -27,7 +27,7 @@
 #endif
 typedef double complex cplx;
 #define PI 3.141592653589793
-static double BETA; static int WMAX, LMAX, SMAX, FREE = 0;
+static double BETA; static int WMAX, LMAX, SMAX, FREE = 0, PLANAR = 0;
 static double A[32], FAC[32]; static int DIM[32]; static double FACT[40];
 static double now(void) {
 #ifdef _OPENMP
@@ -82,14 +82,19 @@ static void add_plaq(int p, int x, int y, int z, int d1, int d2) { int b[4] = { 
 static void add_loop_step(int c, int i, int x, int y, int z, int d, int sgn) { int b[4] = { x, y, z, 0 }; int l = lkey(b, d, 0); if (l < 0) { fprintf(stderr, "loop link (%d,%d,%d,%d) not an object link\n", x, y, z, d); exit(1); } STEPL[c][i] = l; STEPS[c][i] = sgn; }
 static void build(void) {
   add_plaq(0, 1, 0, 0, 1, 2); add_plaq(1, 1, 1, 0, 1, 2); add_plaq(2, 0, 0, 0, 1, 2); add_plaq(3, 0, 1, 0, 1, 2);   /* face A: far column, near column */
-  add_plaq(4, 0, 0, 0, 2, 3); add_plaq(5, 0, 1, 0, 2, 3); add_plaq(6, 0, 0, 1, 2, 3); add_plaq(7, 0, 1, 1, 2, 3);   /* face B: near column, far column */
+  if (PLANAR) { add_plaq(4, -1, 0, 0, 1, 2); add_plaq(5, -1, 1, 0, 1, 2); add_plaq(6, -2, 0, 0, 1, 2); add_plaq(7, -2, 1, 0, 1, 2); }   /* the planar face B: x in [-2, 0] */
+  else { add_plaq(4, 0, 0, 0, 2, 3); add_plaq(5, 0, 1, 0, 2, 3); add_plaq(6, 0, 0, 1, 2, 3); add_plaq(7, 0, 1, 1, 2, 3); }   /* face B: near column, far column */
   if (NL != 22) { fprintf(stderr, "object links: %d, not 22\n", NL); exit(1); }
   /* loop A around face A, based at the origin, counterclockwise in (x, y); loop B around face B, based at the origin, counterclockwise in (y, z) */
   NSTEP[8] = 8; ISLOOP[8] = 1; NSTEP[9] = 8; ISLOOP[9] = 1;
   add_loop_step(8, 0, 0, 0, 0, 1, 1); add_loop_step(8, 1, 1, 0, 0, 1, 1); add_loop_step(8, 2, 2, 0, 0, 2, 1); add_loop_step(8, 3, 2, 1, 0, 2, 1);
   add_loop_step(8, 4, 1, 2, 0, 1, -1); add_loop_step(8, 5, 0, 2, 0, 1, -1); add_loop_step(8, 6, 0, 1, 0, 2, -1); add_loop_step(8, 7, 0, 0, 0, 2, -1);
+  if (PLANAR) {   /* loop B around [-2, 0] x [0, 2] in the xy-plane, based at the origin, counterclockwise: up the shared edge, then -x, then down, then +x */
+    add_loop_step(9, 0, 0, 0, 0, 2, 1); add_loop_step(9, 1, 0, 1, 0, 2, 1); add_loop_step(9, 2, -1, 2, 0, 1, -1); add_loop_step(9, 3, -2, 2, 0, 1, -1);
+    add_loop_step(9, 4, -2, 1, 0, 2, -1); add_loop_step(9, 5, -2, 0, 0, 2, -1); add_loop_step(9, 6, -2, 0, 0, 1, 1); add_loop_step(9, 7, -1, 0, 0, 1, 1); }
+  else {
   add_loop_step(9, 0, 0, 0, 0, 2, 1); add_loop_step(9, 1, 0, 1, 0, 2, 1); add_loop_step(9, 2, 0, 2, 0, 3, 1); add_loop_step(9, 3, 0, 2, 1, 3, 1);
-  add_loop_step(9, 4, 0, 1, 2, 2, -1); add_loop_step(9, 5, 0, 0, 2, 2, -1); add_loop_step(9, 6, 0, 0, 1, 3, -1); add_loop_step(9, 7, 0, 0, 0, 3, -1);
+  add_loop_step(9, 4, 0, 1, 2, 2, -1); add_loop_step(9, 5, 0, 0, 2, 2, -1); add_loop_step(9, 6, 0, 0, 1, 3, -1); add_loop_step(9, 7, 0, 0, 0, 3, -1); }
   /* wires: a plaquette has 4 (cyclic), a loop 9 (wire 0 the junction's "in", wire 8 the junction's "out") */
   for (int c = 0; c < NCYC; c++) { NWIRE[c] = ISLOOP[c] ? NSTEP[c] + 1 : NSTEP[c]; WBASE[c] = NW; for (int i = 0; i < NWIRE[c]; i++) WCYC[NW + i] = c; NW += NWIRE[c]; }
   /* staples: for each object link (b, d), each k != d and side +-, the plaquette {d, k} at base b or b - e_k; an object plaquette is skipped */
@@ -176,9 +181,10 @@ static void projector(int a, int c, int k, cplx *P) { int da = DIM[a], dc = DIM[
   for (int pt = 0; pt < NPT; pt++) { double w = RW[pt] * DIM[k] * chi(k, RU[pt]); rep(a, RU[pt], Ra); rep(c, RU[pt], Rc);
     for (int q = 0; q < da; q++) for (int qp = 0; qp < dc; qp++) for (int r = 0; r < da; r++) for (int rp = 0; rp < dc; rp++) P[((size_t)q * dc + qp) * n + (size_t)r * dc + rp] += w * Ra[q * da + r] * Rc[qp * dc + rp]; } }
 int main(int argc, char **argv) {
-  if (argc < 5) { fprintf(stderr, "usage: w2_strip beta WMAX LMAX DATUM [fwd|rev]   DATUM = free | ordered | random:SEED | cancel\n"); return 1; }
+  if (argc < 5) { fprintf(stderr, "usage: w2_strip beta WMAX LMAX DATUM [fwd|rev] [planar]   DATUM = free | ordered | random:SEED | cancel\n"); return 1; }
   BETA = atof(argv[1]); WMAX = atoi(argv[2]); LMAX = atoi(argv[3]); const char *datum = argv[4]; int rev = (argc > 5 && !strcmp(argv[5], "rev"));
   if (WMAX > 15 || LMAX > 15 || WMAX < 0 || LMAX < 0) { fprintf(stderr, "caps out of range\n"); return 1; }
+  PLANAR = (argc > 6 && !strcmp(argv[6], "planar"));
   SMAX = WMAX > LMAX ? WMAX : LMAX; FREE = !strcmp(datum, "free");
   FACT[0] = 1; for (int i = 1; i < 40; i++) FACT[i] = FACT[i - 1] * i;
   for (int s = 0; s <= 30; s++) { A[s] = bessel(s + 1, BETA) / bessel(1, BETA); DIM[s] = s + 1; FAC[s] = (s <= WMAX) ? (s + 1) * A[s] : 0; }
@@ -194,7 +200,7 @@ int main(int argc, char **argv) {
   build(); slots();
   /* the rule: exact at the largest integrand degree, the slots' spins plus WMAX per staple */
   int deg = 0; for (int l = 0; l < NL; l++) { int d = NSTAP[l] * WMAX; for (int j = 0; j < NSLOT[l]; j++) d += cap_of(SLC[l][j]); if (d > deg) deg = d; } if (deg < 12) deg = 12; make_rule(deg);
-  printf("W2-OBJECT links=%d (shared=%d) outside=%d staples five/four by census; rule degree %d, %d points; beta=%g WMAX=%d LMAX=%d datum=%s order=%s\n", NL, SHARED0, NOUT, deg, NPT, BETA, WMAX, LMAX, datum, rev ? "rev" : "fwd");
+  printf("W2-OBJECT %s links=%d (shared=%d) outside=%d staples five/four by census; rule degree %d, %d points; beta=%g WMAX=%d LMAX=%d datum=%s order=%s\n", PLANAR ? "planar" : "bent", NL, SHARED0, NOUT, deg, NPT, BETA, WMAX, LMAX, datum, rev ? "rev" : "fwd");
   /* the datum */
   quat *DATA = malloc(sizeof(quat) * (NOUT + 1)); for (int i = 0; i < NOUT; i++) { quat e = { 1, 0, 0, 0 }; DATA[i] = e; }
   if (!strcmp(datum, "cancel")) { quat want[4] = { {1,0,0,0}, {-1,0,0,0}, {0,1,0,0}, {0,-1,0,0} }; if (NSTAP[SHARED0] != 4) { fprintf(stderr, "the shared link has %d staples, not 4\n", NSTAP[SHARED0]); return 1; } for (int k = 0; k < 4; k++) DATA[STAP[SHARED0][k][1][0]] = qinv(want[k]); }
@@ -207,9 +213,12 @@ int main(int argc, char **argv) {
   /* the link tensors */
   for (int l = 0; l < NL; l++) link_tensor(l, DATA);
   printf("W2-TENSORS built in %.1f s\n", now() - t0);
-  /* the processing order: face A's far column (private links), the A cut, A's near column (private), the shared links, B's near column (private), the B cut, B's far column */
-  int order[22], no = 0; { int seq[22][4] = { {1,0,0,1},{2,0,0,2},{1,1,0,1},{2,1,0,2},{1,2,0,1}, {1,0,0,2},{1,1,0,2}, {0,0,0,1},{0,1,0,1},{0,2,0,1}, {0,1,0,2},{0,0,0,2},
-      {0,0,0,3},{0,2,0,3},{0,1,0,3}, {0,0,1,2},{0,1,1,2}, {0,0,1,3},{0,2,1,3},{0,1,1,3},{0,0,2,2},{0,1,2,2} };
+  /* the processing order: face A's far column (private links), the A cut, A's near column (private), the shared links, then B's links in loop B's chain order (B[2], the near cross, the B cut, B[3], B[4], the far cross, B[5], B[6], and B[7] last) so that every cycle, loop or plaquette, has at most two open wires at any moment */
+  int order[22], no = 0; { int seqp[22][4] = { {1,0,0,1},{2,0,0,2},{1,1,0,1},{2,1,0,2},{1,2,0,1}, {1,0,0,2},{1,1,0,2}, {0,0,0,1},{0,1,0,1},{0,2,0,1}, {0,1,0,2},{0,0,0,2},
+      {-1,2,0,1},{-1,1,0,1}, {-1,0,0,2},{-1,1,0,2}, {-2,2,0,1},{-2,1,0,2},{-2,1,0,1},{-2,0,0,2},{-2,0,0,1},{-1,0,0,1} };
+    int seq[22][4] = { {1,0,0,1},{2,0,0,2},{1,1,0,1},{2,1,0,2},{1,2,0,1}, {1,0,0,2},{1,1,0,2}, {0,0,0,1},{0,1,0,1},{0,2,0,1}, {0,1,0,2},{0,0,0,2},
+      {0,2,0,3},{0,1,0,3}, {0,0,1,2},{0,1,1,2}, {0,2,1,3},{0,1,2,2},{0,1,1,3},{0,0,2,2},{0,0,1,3},{0,0,0,3} };
+    if (PLANAR) memcpy(seq, seqp, sizeof seq);
     for (int i = 0; i < 22; i++) { int b[4] = { seq[i][0], seq[i][1], seq[i][2], 0 }; int l = lkey(b, seq[i][3], 0); if (l < 0) { fprintf(stderr, "order link %d missing\n", i); return 1; } if (in_list(l, order, no) >= 0) { fprintf(stderr, "order repeats link %d\n", l); return 1; } order[no++] = l; }
     if (no != 22) return 1; if (rev) for (int i = 0; i < 11; i++) { int t = order[i]; order[i] = order[21 - i]; order[21 - i] = t; } }
   /* the sweeps: one per (a, c); the junction wires at the end */

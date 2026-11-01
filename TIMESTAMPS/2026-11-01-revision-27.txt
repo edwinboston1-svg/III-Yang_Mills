@@ -1,0 +1,15 @@
+THE GROUND, revision 27 and the OPEN pages through a4fd5aa (Edwin Boston III)
+Manifest written 2026-11-01T07:35:17Z.
+
+  a4fd5aa0960dab9b6379306670fc5f2bb8e9aba1  2026-11-01 02:35:16 -0500  THE GROUND, revision 27 (Edwin Boston III, 2026-11-01 02:35 EST): Theorem 8.9's proof paragraph names its one unproved input — 
+  9ee4d6471d7cb74d7234830b586fc93b8ebde642  2026-11-01 02:25:58 -0500  OPEN S1 §25 (l) THE CLAUSE (2026-11-01 02:3x EST, read from date; the trunk seat): Theorem 8.9's one staked input named where th
+  d49407dd3c3916e545f38c539e4af5d97e1eedfc  2026-11-01 02:25:57 -0500  OPEN: THE FAR SHORE — every piece of evidence and progress toward the continuum gap, the remainder past the strong-coupling bou
+  d2afd06cd47d7f9f7dd9c85f1212ed624d7fd8b4  2026-11-01 01:41:08 -0500  TIMESTAMPS: ots.sh, the OpenTimestamps client over the proofs (2026-11-01 01:5x EST). opentimestamps-client 0.8.0 installed; pyth
+  72f7cb9674ca05af449a057c12ed3bbbf9272566  2026-11-01 01:32:58 -0500  OPEN S1 §25 (k): two record notes (2026-11-01 01:4x EST); the generator's dependency pinned (package-lock.json, docx 9.5.x, inst
+  2f81a1f3f7dac4bd3ae08d332fffdc55e5b84193  2026-11-01 01:30:51 -0500  OPEN S1 §25 (k): the claim landed (2026-11-01 01:3x EST, read from date) — the run of record, the landing, the canon entry, re
+
+596e9d6ca1748461edc75bba261f661896601bc86b5c63e6ca9095b11b4fabd9 *THE-GROUND-Edwin-Boston-III.pdf
+dfe0944cb4d33ac1f3a75017c7042a0fc922d616d99e897279adf53a4b21985e *THE-GROUND-Edwin-Boston-III.docx
+bb6fecf342fc12348f6755e9dc80676d643e7ccd9033471b127de213c37787e3 *OPEN/the-far-shore.md
+d7eaabb5490827c89672567a9a99b667d22e0e1affa653d1889bd3b84c119014 *OPEN/ledger/s1-the-flux-surface-gas.md
+e5a38bdb8283f17e3f029b53a2d26cc62ff2e3ebaf9557ac310f178e41d0f192 *source/ground/content4.js

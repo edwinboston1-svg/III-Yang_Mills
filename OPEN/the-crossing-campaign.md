@@ -48,3 +48,15 @@
 ## §4 — WHAT IS NOT CLAIMED, SAID ONCE
 
 The continuum gap; the window theorem; any coupling above β = 0.4764; the existence of the exit for SU(2) beyond the certified descent's reading; the content's decay before it is read. This page claims the ORDER and the STANDARDS of the work, and nothing of its result.
+
+## §5 — W1 BEGUN: THE LEMMA'S EXACT FORM, ENTERED WHERE THE BUDGET LIVES (2026-11-01 03:4x EST, read from `date`; the trunk seat; a dated note, the rows above unedited)
+
+The lemma's mathematics is ONE COPY, at OPEN/the-far-shore.md §10 RESULTS 3, beside the budget it compares against; this section points at it and records what it changes on this page.
+
+1. **W1's row read "fine polymers" and defined the content by a sup norm.** RESULTS 3 (a) shows the sup-norm content does not pair with the exact-pricing budget of §10 RESULTS 1: a bond inside the Haar integral prices every surface it touches crudely. The row's words stand as written (no stake is edited); the correction is dated there and here. The polymers at the exit scale are the WILSON polymers of the exit gas.
+2. **The proof's quantity is the RELATIVE FOURIER CONTENT** c_rel of RESULTS 3 (c): each bond's Peter–Weyl modes in units of the Wilson coefficients they create or modify, summed through a plaquette with the weight e^{α|L(C)|}. The two structural facts (b1), (b2) put the decorated gas inside the gas's own alphabet; the owed PRICING-COMPARISON LEMMA (that a mode's coefficient enters A2's crossing law and A3's patch law as a scalar) is W1's second item, and the resolution-sum road for S12 its third.
+3. **The amplification is a number before it is a hope**: a mode that creates spin-½ flux is charged 1/(2a_½(β)), from 40 at β = 0.05 to 4.2 at 0.4764; a spin-1 mode 1/(3a_1), from 3200 to 36; a mode that modifies an existing plaquette is charged once (RESULTS 3 (d)).
+4. **W2's output, sharpened (a dated note under its row, the row unedited):** the two-face object's moment table E[χ_a(A)χ_c(B)] is the Fourier data the lemma consumes; W2 reports the pair coupling's modes IN WILSON UNITS, their sum r_C, and c_rel at a plaquette by the twenty adjacent pairs, with the relative-orientation mode (the dependence on tr(U_A U_B^{±1})) read beside the class-function part — never a sup norm. The count that is W2's first act is unchanged by this.
+5. **Owed under W1, by name** (RESULTS 3 (h)): the pricing-comparison lemma; a DRESS=crude mode of the certificate under the existing tilt, for the sup-norm form's own budget (W1(a), the Osterwalder–Seiler regime); the coefficient-supplied certificate mode, since the exit gas's one-plaquette coefficients are not Bessel ratios (RESULTS 3 (f)); the second seat's read of (b)–(c); S12's remainder.
+
+The next act is W2's count (§3, item 3), with §1's W2 row read together with note 4 above.

@@ -1,0 +1,21 @@
+W2-REFUSED: the state reached 590490000 entries after link 45 of 76 (4 plaquettes open), above the ceiling 400000000 (W2_CEIL)
+W2-KAT representations to spin 3/2 (GENINV=1): homomorphism and traces [MET]
+W2-OBJECT bent n=4 plaquettes=32 links=76 (shared=3) outside=532 staples five=24 four=52; rule degree 22, 3312 points; beta=2.2 WMAX=3 LMAX=2 datum=ordered order=fwd
+W2-TENSORS built in 1.2 s
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag 2.2e-19; max state 810000, open plaquettes at most 4; 6.8 s)
+W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = +2.432512322177e-01 (imag 5.8e-20; max state 12960000, open plaquettes at most 4; 20.7 s)
+W2-CLASS a=0 c=2 E[chi_a(A) chi_c(B)] = +1.093129100974e-02 (imag 2.3e-21; max state 65610000, open plaquettes at most 4; 88.1 s)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +2.432512322177e-01 (imag 5.1e-20; max state 3240000, open plaquettes at most 4; 11.1 s)
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +7.297820336837e-02 (imag 1.5e-20; max state 51840000, open plaquettes at most 4; 65.2 s)
+W2-CHANNEL a=1 c=1 k=0 f_k = -4.944981685322e-03 (imag -8.7e-22; P_k idempotent to 4.4e-16; f_k/E = -0.067759707, free law d_k/(d_a d_c) = 0.250000000)
+W2-CHANNEL a=1 c=1 k=2 f_k = +7.792318505369e-02 (imag 1.6e-20; P_k idempotent to 3.4e-15; f_k/E = 1.067759707, free law d_k/(d_a d_c) = 0.750000000)
+W2-CHANNEL-SUM a=1 c=1 sum_k f_k = +7.297820336837e-02 against the class moment +7.297820336837e-02 (sum_k P_k = 1 to 3.0e-15)
+W2-CLASS a=1 c=2 E[chi_a(A) chi_c(B)] = +4.393077411372e-03 (imag 9.2e-22; max state 262440000, open plaquettes at most 4; 291.9 s)
+W2-CHANNEL a=1 c=2 k=1 f_k = -5.669695314042e-04 (imag -6.7e-23; P_k idempotent to 1.4e-15; f_k/E = -0.129059763, free law d_k/(d_a d_c) = 0.333333333)
+W2-CHANNEL a=1 c=2 k=3 f_k = +4.960046942776e-03 (imag 9.9e-22; P_k idempotent to 3.7e-15; f_k/E = 1.129059763, free law d_k/(d_a d_c) = 0.666666667)
+W2-CHANNEL-SUM a=1 c=2 sum_k f_k = +4.393077411372e-03 against the class moment +4.393077411372e-03 (sum_k P_k = 1 to 4.2e-15)
+W2-CLASS a=2 c=0 E[chi_a(A) chi_c(B)] = +1.093129100974e-02 (imag 4.5e-21; max state 7290000, open plaquettes at most 4; 26.3 s)
+W2-CLASS a=2 c=1 E[chi_a(A) chi_c(B)] = +4.393077411372e-03 (imag 1.7e-21; max state 116640000, open plaquettes at most 4; 207.4 s)
+W2-CHANNEL a=2 c=1 k=1 f_k = -5.669695314042e-04 (imag -2.0e-22; P_k idempotent to 1.4e-15; f_k/E = -0.129059763, free law d_k/(d_a d_c) = 0.333333333)
+W2-CHANNEL a=2 c=1 k=3 f_k = +4.960046942776e-03 (imag 1.9e-21; P_k idempotent to 3.6e-15; f_k/E = 1.129059763, free law d_k/(d_a d_c) = 0.666666667)
+W2-CHANNEL-SUM a=2 c=1 sum_k f_k = +4.393077411372e-03 against the class moment +4.393077411372e-03 (sum_k P_k = 1 to 4.2e-15)

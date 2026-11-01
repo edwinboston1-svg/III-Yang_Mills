@@ -142,9 +142,35 @@ typedef struct { int nopen, open[128]; int ncyc, cyc[40]; int nblk; cplx **blk; 
 static int LSPIN[MAXCYC];
 static int in_list(int x, const int *L, int n) { for (int i = 0; i < n; i++) if (L[i] == x) return i; return -1; }
 static void free_state(state_t *S) { for (int b = 0; b < S->nblk; b++) free(S->blk[b]); free(S->blk); free(S->size); }
+/* THE SLICED SWEEP (10:1x; the weld of S1 §27 (m‴)'s fixed-leg split onto this engine, read to the trunk by two side readers and by iii-24):
+   the four junction wires wAin, wAout, wBin, wBout each belong to ONE chain step, are born open at that step's link, are never contracted,
+   and are closed only by the final trace (the class moment) or the channel projection -- so the final tensor F over them is what the sweep
+   computes, and clamping a junction wire at a value is an exact slice of F.  W2_SLICE=full runs every (q, r, q', r') slice and assembles F
+   entry by entry (the class moment AND the channels, as the unsliced sweep gives them); W2_SLICE=diag runs the d_a d_c diagonal slices
+   (the class moment alone, the channels refused by name).  The A-part of the order (face A's columns, before the shared links, index NA) is
+   swept once per class and kept as a snapshot; each slice is gathered from it (a wire already open is sliced by a strided gather, a wire not
+   yet born is clamped at birth through FIXV in process()), then the shared links and face B's slabs are swept on the slice.  Face B's chain,
+   which the slab sweep grows from both junction wires (d_c^4), is carried at its two growing ends alone (d_c^2), and face A's junction pair
+   (d_a^2) leaves the state: the peak falls by d_a^2 d_c^2 (81 at loop spin 1), the multiply-adds of the B-part are unchanged in total, the
+   A-part is paid once.  Unset, every byte of the output is the unsliced engine's. */
+static int FIXV[MAXW]; static int SLICE = 0; static int CMAX = -1;   /* CMAX: the cap on face B's loop representation (W2_CMAX; a ladder reads c = 0 alone), LMAX unless set */
+static void gather_state(const state_t *S, state_t *D, const int *fw, const int *fv, int nf) {
+  int pos[8]; for (int i = 0; i < nf; i++) { pos[i] = in_list(fw[i], S->open, S->nopen); if (pos[i] < 0) { fprintf(stderr, "gather: wire %d is not open\n", fw[i]); exit(1); } }
+  D->nopen = 0; for (int i = 0; i < S->nopen; i++) if (in_list(S->open[i], fw, nf) < 0) D->open[D->nopen++] = S->open[i];
+  D->ncyc = S->ncyc; memcpy(D->cyc, S->cyc, sizeof(int) * S->ncyc); D->nblk = S->nblk; D->blk = calloc(D->nblk, sizeof(cplx *)); D->size = calloc(D->nblk, sizeof(size_t));
+  for (int bn = 0; bn < S->nblk; bn++) { if (!S->blk[bn]) continue;
+    int spin[MAXCYC]; for (int c = 0; c < NCYC; c++) spin[c] = ISLOOP[c] ? LSPIN[c] : -1;
+    { int bb = bn; for (int i = 0; i < S->ncyc; i++) { spin[S->cyc[i]] = bb % (WMAX + 1); bb /= WMAX + 1; } }
+    size_t sstr[128]; { size_t mul = 1; for (int i = S->nopen - 1; i >= 0; i--) { sstr[i] = mul; mul *= DIM[spin[WCYC[S->open[i]]]]; } }
+    size_t base = 0; for (int i = 0; i < nf; i++) { if (fv[i] >= DIM[spin[WCYC[fw[i]]]]) { fprintf(stderr, "gather: value %d past the wire's dimension\n", fv[i]); exit(1); } base += (size_t)fv[i] * sstr[pos[i]]; }
+    int kd[128]; size_t ks[128], nsize = 1; int nk = 0; for (int i = 0; i < S->nopen; i++) if (in_list(S->open[i], fw, nf) < 0) { kd[nk] = DIM[spin[WCYC[S->open[i]]]]; ks[nk] = sstr[i]; nsize *= kd[nk]; nk++; }
+    cplx *NB = calloc(nsize, sizeof(cplx)); if (!NB) { fprintf(stderr, "out of memory at a gathered state of %zu entries\n", nsize); exit(3); } D->blk[bn] = NB; D->size[bn] = nsize;
+    const cplx *OB_ = S->blk[bn];
+    #pragma omp parallel for schedule(static)
+    for (long long e = 0; e < (long long)nsize; e++) { size_t rem = e, o = base; for (int k = nk - 1; k >= 0; k--) { size_t ix = rem % kd[k]; rem /= kd[k]; o += ix * ks[k]; } NB[e] = OB_[o]; } } }
 static void process(state_t *S, int l) {
   int m = NSLOT[l]; int sw[8], nsw = 0; for (int j = 0; j < m; j++) { sw[nsw++] = win(SLC[l][j], SLS[l][j]); sw[nsw++] = wout(SLC[l][j], SLS[l][j]); }
-  int contracted[8], ncon = 0, newer[8], nnew = 0; for (int i = 0; i < nsw; i++) { if (in_list(sw[i], S->open, S->nopen) >= 0) contracted[ncon++] = sw[i]; else newer[nnew++] = sw[i]; }
+  int contracted[8], ncon = 0, newer[8], nnew = 0, fixed[8], nfix = 0; for (int i = 0; i < nsw; i++) { if (in_list(sw[i], S->open, S->nopen) >= 0) contracted[ncon++] = sw[i]; else if (FIXV[sw[i]] >= 0) fixed[nfix++] = sw[i]; else newer[nnew++] = sw[i]; }
   state_t N; N.nopen = 0; for (int i = 0; i < S->nopen; i++) if (in_list(S->open[i], contracted, ncon) < 0) N.open[N.nopen++] = S->open[i]; for (int i = 0; i < nnew; i++) N.open[N.nopen++] = newer[i];
   N.ncyc = 0; for (int i = 0; i < S->ncyc; i++) { int c = S->cyc[i], has = 0; for (int w = 0; w < N.nopen; w++) if (WCYC[N.open[w]] == c) has = 1; if (has) N.cyc[N.ncyc++] = c; }
   for (int w = 0; w < N.nopen; w++) { int c = WCYC[N.open[w]]; if (ISLOOP[c]) continue; if (in_list(c, N.cyc, N.ncyc) < 0) N.cyc[N.ncyc++] = c; }
@@ -164,11 +190,12 @@ static void process(state_t *S, int l) {
       const cplx *OB_ = S->blk[bo]; const cplx *TB = LT[l][bt]; if (!OB_ || !TB) continue;
       size_t ostr[128], tstr[8]; { size_t mul = 1; for (int i = S->nopen - 1; i >= 0; i--) { ostr[i] = mul; mul *= DIM[spin[WCYC[S->open[i]]]]; } }
       { size_t mul = 1; for (int i = nsw - 1; i >= 0; i--) { tstr[i] = mul; mul *= DIM[spin[WCYC[sw[i]]]]; } }
+      size_t fixoff = 0; for (int i = 0; i < nfix; i++) fixoff += (size_t)FIXV[fixed[i]] * tstr[in_list(fixed[i], sw, nsw)];   /* a clamped junction wire enters the link tensor as that one slice and never the state */
       size_t nos[128], nts[128]; for (int w = 0; w < N.nopen; w++) { int io = in_list(N.open[w], S->open, S->nopen), it = in_list(N.open[w], sw, nsw); nos[w] = io >= 0 ? ostr[io] : 0; nts[w] = it >= 0 ? tstr[it] : 0; }
       int cdim[8]; size_t cos_[8], cts[8]; for (int i = 0; i < ncon; i++) { int io = in_list(contracted[i], S->open, S->nopen), it = in_list(contracted[i], sw, nsw); cdim[i] = DIM[spin[WCYC[contracted[i]]]]; cos_[i] = ostr[io]; cts[i] = tstr[it]; }
       size_t ncomb = 1; for (int i = 0; i < ncon; i++) ncomb *= cdim[i];
       #pragma omp parallel for schedule(static)
-      for (long long e = 0; e < (long long)nsize; e++) { size_t rem = e, oo = 0, to = 0; for (int w = N.nopen - 1; w >= 0; w--) { size_t ix = rem % ndim[w]; rem /= ndim[w]; oo += ix * nos[w]; to += ix * nts[w]; }
+      for (long long e = 0; e < (long long)nsize; e++) { size_t rem = e, oo = 0, to = fixoff; for (int w = N.nopen - 1; w >= 0; w--) { size_t ix = rem % ndim[w]; rem /= ndim[w]; oo += ix * nos[w]; to += ix * nts[w]; }
         cplx acc = 0; size_t ci[8] = {0};
         for (size_t q = 0; q < ncomb; q++) { size_t o2 = oo, t2 = to; for (int i = 0; i < ncon; i++) { o2 += ci[i] * cos_[i]; t2 += ci[i] * cts[i]; } acc += OB_[o2] * TB[t2];
           for (int i = ncon - 1; i >= 0; i--) { if (++ci[i] < (size_t)cdim[i]) break; ci[i] = 0; } }
@@ -222,23 +249,47 @@ int main(int argc, char **argv) {
   printf("W2-TENSORS built in %.1f s\n", now() - t0);
   if (rev) for (int i = 0; i < NORD / 2; i++) { int t = order[i]; order[i] = order[NORD - 1 - i]; order[NORD - 1 - i] = t; }
   int wAin = win(LOOPA, 0), wAout = wout(LOOPA, NSTEP[LOOPA] - 1), wBin = win(LOOPB, 0), wBout = wout(LOOPB, NSTEP[LOOPB] - 1);
+  int NA = -1; for (int i = 0; i < NORD; i++) if (order[i] == SHARED0) { NA = i; break; }
+  for (int w = 0; w < NW; w++) FIXV[w] = -1;
+  if (getenv("W2_SLICE")) { const char *sm = getenv("W2_SLICE"); SLICE = !strcmp(sm, "diag") ? 2 : (!strcmp(sm, "full") ? 1 : 0);
+    if (!SLICE) { fprintf(stderr, "W2_SLICE must be full or diag\n"); return 1; }
+    if (rev) { fprintf(stderr, "W2_SLICE is for the forward order (face A's part is cached before the shared links)\n"); return 1; }
+    if (NA < 0) { fprintf(stderr, "the first shared link is not in the order\n"); return 1; }
+    printf("W2-SLICED mode=%s: the junction wires clamped in an outer loop of slices; face A's part (order index %d of %d) swept once per class and gathered per slice\n", SLICE == 2 ? "diag" : "full", NA, NORD); }
+  CMAX = LMAX; if (getenv("W2_CMAX")) { CMAX = atoi(getenv("W2_CMAX")); if (CMAX < 0 || CMAX > LMAX) { fprintf(stderr, "W2_CMAX must be 0..%d\n", LMAX); return 1; }
+    printf("W2-CMAX %d: face B's loop representation capped at %d/2 for this run (the classes a <= %d, c <= %d; the connected moments and channels for c <= %d alone)\n", CMAX, CMAX, LMAX, CMAX, CMAX); }
   double Z = 0; static double CLS[16][16];
-  for (int a = 0; a <= LMAX; a++) for (int c = 0; c <= LMAX; c++) { double ts = now(); LSPIN[LOOPA] = a; LSPIN[LOOPB] = c;
+  for (int a = 0; a <= LMAX; a++) for (int c = 0; c <= CMAX; c++) { double ts = now(); LSPIN[LOOPA] = a; LSPIN[LOOPB] = c;
     state_t S; S.nopen = 0; S.ncyc = 0; S.nblk = 1; S.blk = calloc(1, sizeof(cplx *)); S.size = calloc(1, sizeof(size_t)); S.blk[0] = calloc(1, sizeof(cplx)); S.blk[0][0] = 1; S.size[0] = 1;
-    size_t maxstate = 1; int maxopen = 0; for (int i = 0; i < NORD; i++) { process(&S, order[i]); size_t tot = 0; for (int b = 0; b < S.nblk; b++) tot += S.size[b]; if (tot > maxstate) maxstate = tot; if (S.ncyc > maxopen) maxopen = S.ncyc;
+    int da = DIM[a], dc = DIM[c]; size_t sA_in = 0, sA_out = 0, sB_in = 0, sB_out = 0; const cplx *F = NULL; cplx *Fs = NULL; int nslices = 0; char slicenote[64] = "";
+    int nsweep = SLICE ? NA : NORD;
+    size_t maxstate = 1; int maxopen = 0; for (int i = 0; i < nsweep; i++) { process(&S, order[i]); size_t tot = 0; for (int b = 0; b < S.nblk; b++) tot += S.size[b]; if (tot > maxstate) maxstate = tot; if (S.ncyc > maxopen) maxopen = S.ncyc;
       if (tot > CEIL) { fprintf(stderr, "W2-REFUSED: the state reached %zu entries after link %d of %d (%d plaquettes open), above the ceiling %zu (W2_CEIL)\n", tot, i + 1, NORD, S.ncyc, CEIL); return 3; } }
+    if (SLICE) {   /* the snapshot S holds face A's part; every slice is gathered from it and swept through the shared links and face B */
+      int jw[4] = { wAin, wAout, wBin, wBout }; Fs = calloc((size_t)da * da * dc * dc, sizeof(cplx)); sA_in = (size_t)da * dc * dc; sA_out = (size_t)dc * dc; sB_in = dc; sB_out = 1;
+      for (int q = 0; q < da; q++) for (int r = 0; r < da; r++) for (int qp = 0; qp < dc; qp++) for (int rp = 0; rp < dc; rp++) { if (SLICE == 2 && (q != r || qp != rp)) continue;
+        int jv[4] = { q, r, qp, rp }, gw[4], gv[4], ng = 0; for (int i = 0; i < 4; i++) { if (in_list(jw[i], S.open, S.nopen) >= 0) { gw[ng] = jw[i]; gv[ng] = jv[i]; ng++; } else FIXV[jw[i]] = jv[i]; }
+        state_t T; gather_state(&S, &T, gw, gv, ng);
+        for (int i = NA; i < NORD; i++) { process(&T, order[i]); size_t tot = 0; for (int b = 0; b < T.nblk; b++) tot += T.size[b]; if (tot > maxstate) maxstate = tot; if (T.ncyc > maxopen) maxopen = T.ncyc;
+          if (tot > CEIL) { fprintf(stderr, "W2-REFUSED: the sliced state reached %zu entries after link %d of %d (%d plaquettes open), above the ceiling %zu (W2_CEIL)\n", tot, i + 1, NORD, T.ncyc, CEIL); return 3; } }
+        for (int i = 0; i < 4; i++) FIXV[jw[i]] = -1;
+        if (T.ncyc != 0 || T.nblk != 1 || T.nopen != 0) { fprintf(stderr, "a slice ended with %d open wires and %d open cycles\n", T.nopen, T.ncyc); return 1; }
+        Fs[q * sA_in + r * sA_out + qp * sB_in + rp * sB_out] = T.blk[0][0]; nslices++; free_state(&T); }
+      F = Fs; snprintf(slicenote, sizeof slicenote, "; %d slices", nslices); }
+    else {
     if (S.ncyc != 0 || S.nblk != 1) { fprintf(stderr, "plaquette cycles still open at the end\n"); return 1; }
-    int da = DIM[a], dc = DIM[c]; int pos[4] = { in_list(wAin, S.open, S.nopen), in_list(wAout, S.open, S.nopen), in_list(wBin, S.open, S.nopen), in_list(wBout, S.open, S.nopen) };
+    int pos[4] = { in_list(wAin, S.open, S.nopen), in_list(wAout, S.open, S.nopen), in_list(wBin, S.open, S.nopen), in_list(wBout, S.open, S.nopen) };
     if (S.nopen != 4) { fprintf(stderr, "%d open wires at the end, not 4\n", S.nopen); return 1; }
     for (int i = 0; i < 4; i++) if (pos[i] < 0) { fprintf(stderr, "junction wire %d not open at the end\n", i); return 1; }
     size_t str[4]; { size_t mul = 1; int dims[4]; for (int i = 0; i < 4; i++) dims[i] = DIM[LSPIN[WCYC[S.open[i]]]]; for (int i = 3; i >= 0; i--) { str[i] = mul; mul *= dims[i]; } }
-    size_t sA_in = str[pos[0]], sA_out = str[pos[1]], sB_in = str[pos[2]], sB_out = str[pos[3]];
-    const cplx *F = S.blk[0];
+    sA_in = str[pos[0]]; sA_out = str[pos[1]]; sB_in = str[pos[2]]; sB_out = str[pos[3]];
+    F = S.blk[0]; }
     cplx cls = 0; for (int r = 0; r < da; r++) for (int rp = 0; rp < dc; rp++) cls += F[r * sA_in + r * sA_out + rp * sB_in + rp * sB_out];
     if (a == 0 && c == 0) Z = creal(cls);
     CLS[a][c] = creal(cls) / Z;
-    printf("W2-CLASS a=%d c=%d E[chi_a(A) chi_c(B)] = %+.12e (imag %.1e; max state %zu, open plaquettes at most %d; %.1f s)\n", a, c, creal(cls) / Z, cimag(cls) / Z, maxstate, maxopen, now() - ts);
-    if (a > 0 && c > 0) { size_t nn = (size_t)da * dc; cplx *P = malloc(sizeof(cplx) * nn * nn), *Psum = calloc(nn * nn, sizeof(cplx)); double chsum = 0;
+    printf("W2-CLASS a=%d c=%d E[chi_a(A) chi_c(B)] = %+.12e (imag %.1e; max state %zu, open plaquettes at most %d; %.1f s%s)\n", a, c, creal(cls) / Z, cimag(cls) / Z, maxstate, maxopen, now() - ts, slicenote);
+    if (a > 0 && c > 0 && SLICE == 2) printf("W2-CHANNEL a=%d c=%d REFUSED: the diagonal slices hold the class moment only\n", a, c);
+    else if (a > 0 && c > 0) { size_t nn = (size_t)da * dc; cplx *P = malloc(sizeof(cplx) * nn * nn), *Psum = calloc(nn * nn, sizeof(cplx)); double chsum = 0;
       for (int k = abs(a - c); k <= a + c; k += 2) { projector(a, c, k, P); for (size_t i = 0; i < nn * nn; i++) Psum[i] += P[i];
         double idem = 0; for (size_t i = 0; i < nn; i++) for (size_t j = 0; j < nn; j++) { cplx acc = 0; for (size_t q = 0; q < nn; q++) acc += P[i * nn + q] * P[q * nn + j]; if (cabs(acc - P[i * nn + j]) > idem) idem = cabs(acc - P[i * nn + j]); }
         cplx f = 0; for (int q = 0; q < da; q++) for (int qp = 0; qp < dc; qp++) for (int r = 0; r < da; r++) for (int rp = 0; rp < dc; rp++) f += P[((size_t)q * dc + qp) * nn + (size_t)r * dc + rp] * F[r * sA_in + q * sA_out + rp * sB_in + qp * sB_out];
@@ -246,9 +297,9 @@ int main(int argc, char **argv) {
         printf("W2-CHANNEL a=%d c=%d k=%d f_k = %+.12e (imag %.1e; P_k idempotent to %.1e; f_k/E = %.9f, free law d_k/(d_a d_c) = %.9f)\n", a, c, k, creal(f) / Z, cimag(f) / Z, idem, creal(f) / Z / CLS[a][c], (double)DIM[k] / (da * dc)); }
       double pid = 0; for (size_t i = 0; i < nn; i++) for (size_t j = 0; j < nn; j++) { cplx want = (i == j) ? 1 : 0; if (cabs(Psum[i * nn + j] - want) > pid) pid = cabs(Psum[i * nn + j] - want); }
       printf("W2-CHANNEL-SUM a=%d c=%d sum_k f_k = %+.12e against the class moment %+.12e (sum_k P_k = 1 to %.1e)\n", a, c, chsum, CLS[a][c], pid); free(P); free(Psum); }
-    free_state(&S); }
+    free_state(&S); free(Fs); }
   printf("W2-Z beta=%g datum=%s n=%d Z = %.12e\n", BETA, datum, NN, Z);
-  int badfree = 0; for (int a = 0; a <= LMAX; a++) for (int c = 0; c <= LMAX; c++) { double conn = CLS[a][c] - CLS[a][0] * CLS[0][c];
+  int badfree = 0; for (int a = 0; a <= LMAX; a++) for (int c = 0; c <= CMAX; c++) { double conn = CLS[a][c] - CLS[a][0] * CLS[0][c];
     printf("W2-CONN a=%d c=%d <chi_a chi_c>_c = %+.12e (marginals %+.9e, %+.9e)\n", a, c, conn, CLS[a][0], CLS[0][c]);
     if (FREE) { double wantA = (a <= WMAX) ? DIM[a] * pow(A[a], NN * NN) : 0; if (fabs(CLS[a][0] - wantA) > 1e-9 * (1 + fabs(wantA)) || fabs(conn) > 1e-9) badfree++; } }
   if (FREE) printf("W2-KAT FREE n=%d: Z = 1 [%s]; E[chi_a(A)] = d_a a_a^(n^2) and every connected pair zero [%s]\n", NN, fabs(Z - 1) < 1e-9 ? "MET" : "FAILED", badfree ? "FAILED" : "MET");

@@ -37,7 +37,7 @@ static int seen(void) { long t[MAXF]; memcpy(t, P, sizeof(long) * F); qsort(t, F
 static int par[MAXF * 5];
 static int fnd(int x) { while (par[x] != x) x = par[x] = par[par[x]]; return x; }
 static void uni(int a, int b) { a = fnd(a); b = fnd(b); if (a != b) par[a] = b; }
-typedef struct { double S; int chimax, n4; long nres, conn; long sheet; int b1max; long sidfail, sidtests, sid0fail, sid0tests, aggfail, aggtests; } reading_t;
+typedef struct { double S; int chimax, n4; long nres, conn; long sheet; int b1max; int b1lat; long sidfail, sidtests, sid0fail, sid0tests, aggfail, aggtests; } reading_t;
 static double WR[59049]; static long sidprinted = 0;   /* the weight of every resolution of the current leaf (3^10 at most) */
 static reading_t resolve_P(void) {
   reading_t out = { 0, -99, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0 };
@@ -100,16 +100,25 @@ static reading_t resolve_P(void) {
     /* the vertices of each component: the distinct class roots among its edges' ends */
     static int seenv[MAXF * 8]; int nsv = 0; for (int e = 0; e < ne; e++) for (int k = 0; k < 2; k++) { int v = vtx[e][k]; int dup = 0; for (int i = 0; i < nsv; i++) if (seenv[i] == v) dup = 1; if (dup) continue; seenv[nsv++] = v; int a = v; while (cpar[a] != a) a = cpar[a]; for (int i = 0; i < nr; i++) if (roots[i] == a) rootV[i]++; }
     for (int i = 0; i < nr; i++) { int b1 = rootE[i] - rootV[i] + 1; if (b1 > out.b1max) out.b1max = b1; } }
+  /* THE CONTACT LINKS IN THE LATTICE: the cycle rank of the graph whose edges are the four-links and whose vertices are their
+     endpoints in Z^4 -- Lemma S6's hypothesis (the links of multiplicity >= 4 form a forest) is b1lat = 0; a lattice cycle needs
+     N4 >= 4 on the bipartite lattice, so b1lat >= 1 is the first object outside S6 (S12's remainder) */
+  out.b1lat = 0; if (N4 > 0) { static int ept[2 * MAXF * 4][4]; static int epar[2 * MAXF * 4]; int nep = 0; int ends[MAXF * 4][2];
+    for (int j = 0; j < N4; j++) { int i = n4[j]; int p = lp[i][0][0], s = lp[i][0][1];
+      for (int k = 0; k < 2; k++) { const int *c = lc[p][(s + k) % 4][0]; int idx = -1; for (int t = 0; t < nep; t++) if (!memcmp(ept[t], c, sizeof(int) * 4)) idx = t;
+        if (idx < 0) { idx = nep++; memcpy(ept[idx], c, sizeof(int) * 4); epar[idx] = idx; } ends[j][k] = idx; } }
+    int comps = nep; for (int j = 0; j < N4; j++) { int a = ends[j][0], b = ends[j][1]; while (epar[a] != a) a = epar[a]; while (epar[b] != b) b = epar[b]; if (a != b) { epar[a] = b; comps--; } }
+    out.b1lat = N4 - nep + comps; }
   return out; }
 /* ---- the census */
-static long long leaves[MAXF][16], minimal[MAXF][16], byb1[MAXF][8], unread = 0, strongv = 0, weakv = 0, shown = 0, staked = 0, sidtests = 0, sidfails = 0, sidleaves = 0, sidshown = 0, sid0tests = 0, sid0fails = 0, aggtests = 0, aggfails = 0; static double maxS[MAXF][16], maxSb1[MAXF][8];
+static long long leaves[MAXF][16], minimal[MAXF][16], byb1[MAXF][8], bylat[MAXF][8], latcyc = 0, unread = 0, strongv = 0, weakv = 0, shown = 0, staked = 0, sidtests = 0, sidfails = 0, sidleaves = 0, sidshown = 0, sid0tests = 0, sid0fails = 0, aggtests = 0, aggfails = 0; static double maxS[MAXF][16], maxSb1[MAXF][8], maxSlat[MAXF][8];
 static void record(void) { if (seen()) { dups++; return; }
   reading_t r = resolve_P(); if (r.n4 < 0) return; if (r.nres < 0) { unread++; return; }
   int n4 = r.n4 < 15 ? r.n4 : 15; leaves[F][n4]++; if (r.conn != r.nres) return;   /* not minimal: a disconnected resolution */
-  minimal[F][n4]++; double aS = fabs(r.S); if (aS > maxS[F][n4]) maxS[F][n4] = aS; int b1 = r.b1max < 7 ? r.b1max : 7; byb1[F][b1]++; if (aS > maxSb1[F][b1]) maxSb1[F][b1] = aS;
+  minimal[F][n4]++; double aS = fabs(r.S); if (aS > maxS[F][n4]) maxS[F][n4] = aS; int b1 = r.b1max < 7 ? r.b1max : 7; byb1[F][b1]++; if (aS > maxSb1[F][b1]) maxSb1[F][b1] = aS; int bl = r.b1lat < 7 ? r.b1lat : 7; bylat[F][bl]++; if (aS > maxSlat[F][bl]) maxSlat[F][bl] = aS; if (r.b1lat >= 1) latcyc++;
   int strong = aS > pow(2.0, r.chimax) + 1e-9, weak = aS > 4 + 1e-9; if (strong) strongv++; if (weak) weakv++; if (r.b1max >= 2) staked++;
   sidtests += r.sidtests; sidfails += r.sidfail; if (r.sidfail) sidleaves++; sid0tests += r.sid0tests; sid0fails += r.sid0fail; aggtests += r.aggtests; aggfails += r.aggfail;
-  if (strong || r.b1max >= 2 || (r.sidfail && sidshown++ < 10) || (n4 >= 2 && shown < 20)) { shown++; printf("BOX-LEAF F=%d N4=%d S=%.10g chimax=%d resolutions=%ld b1max=%d surgery-identity %ld/%ld fail %s%s%splaquettes:", F, r.n4, r.S, r.chimax, r.nres, r.b1max, r.sidfail, r.sidtests, strong ? "STRONG-VIOLATION " : "", weak ? "WEAK-VIOLATION " : "", r.b1max >= 2 ? "THE-STAKED-KIND " : "");
+  if (strong || r.b1max >= 2 || r.b1lat >= 1 || (r.sidfail && sidshown++ < 10) || (n4 >= 2 && shown < 20)) { shown++; printf("BOX-LEAF F=%d N4=%d S=%.10g chimax=%d resolutions=%ld b1max=%d b1lat=%d surgery-identity %ld/%ld fail %s%s%s%splaquettes:", F, r.n4, r.S, r.chimax, r.nres, r.b1max, r.b1lat, r.sidfail, r.sidtests, strong ? "STRONG-VIOLATION " : "", weak ? "WEAK-VIOLATION " : "", r.b1max >= 2 ? "THE-STAKED-KIND " : "", r.b1lat >= 1 ? "THE-LATTICE-CYCLE " : "");
     for (int i = 0; i < F; i++) { long s = P[i] / NPAIR; int k = (int)(P[i] % NPAIR); int x[4]; coords(s, x); printf(" (%d,%d,%d,%d)%d%d", x[0], x[1], x[2], x[3], PMU[k] + 1, PNU[k] + 1); } printf("\n"); fflush(stdout); } }
 static void search(void) { nodes++; if (nodes > NODEMAX) return;
   if (nodd == 0) { record(); return; }
@@ -136,6 +145,9 @@ int main(int argc, char **argv) {
   for (int f = 1; f <= FMAX; f++) for (int k = 0; k < 16; k++) if (leaves[f][k]) printf("%2d %2d %10lld %10lld %.6g\n", f, k, leaves[f][k], minimal[f][k], maxS[f][k]);
   printf("# F b1max minimal max|S| -- the minimal leaves by the largest cycle rank of a contact component on the sheet (the staked kind at b1max >= 2)\n");
   for (int f = 1; f <= FMAX; f++) for (int k = 0; k < 8; k++) if (byb1[f][k]) printf("%2d %2d %10lld %.6g\n", f, k, byb1[f][k], maxSb1[f][k]);
+  printf("# F b1lat minimal max|S| -- the minimal leaves by the cycle rank of the contact links IN THE LATTICE (Lemma S6's hypothesis is b1lat = 0; b1lat >= 1 is outside S6, S12's remainder)\n");
+  for (int f = 1; f <= FMAX; f++) for (int k = 0; k < 8; k++) if (bylat[f][k]) printf("%2d %2d %10lld %.6g\n", f, k, bylat[f][k], maxSlat[f][k]);
+  printf("# minimal leaves whose contact links hold a LATTICE cycle (outside Lemma S6): %lld\n", latcyc);
   printf("# violations among the minimal leaves: STRONG (|S| > 2^chi_max) %lld, WEAK (|S| > 4) %lld; minimal leaves of the staked kind (b1max >= 2) %lld\n", strongv, weakv, staked);
   printf("# the surgery identity (W' + W'' = W_sheet / 2 at every four-link and every assignment of the others): %lld tests on the minimal leaves, %lld failures, on %lld leaves\n", sidtests, sidfails, sidleaves);
   printf("# the surgery identity AT THE SHEET STAGE (every other four-link in its sheet pairing): %lld tests on the minimal leaves, %lld failures\n", sid0tests, sid0fails);

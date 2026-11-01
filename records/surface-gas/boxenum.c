@@ -37,9 +37,9 @@ static int seen(void) { long t[MAXF]; memcpy(t, P, sizeof(long) * F); qsort(t, F
 static int par[MAXF * 5];
 static int fnd(int x) { while (par[x] != x) x = par[x] = par[par[x]]; return x; }
 static void uni(int a, int b) { a = fnd(a); b = fnd(b); if (a != b) par[a] = b; }
-typedef struct { double S; int chimax, n4; long nres, conn; } reading_t;
+typedef struct { double S; int chimax, n4; long nres, conn; long sheet; int b1max; } reading_t;
 static reading_t resolve_P(void) {
-  reading_t out = { 0, -99, 0, 0, 0 };
+  reading_t out = { 0, -99, 0, 0, 0, -1, 0 };
   static long lk[MAXF * 4]; static int lp[MAXF * 4][4][2], lm[MAXF * 4], ls[MAXF][4], lc[MAXF][4][4][4]; int nl = 0;   /* links: id, incidences (p, side), multiplicity; per plaquette: side signs, corner sites */
   for (int p = 0; p < F; p++) { long Lk[4]; plaq_links(P[p], Lk); long s = P[p] / NPAIR; int k = (int)(P[p] % NPAIR); int a = PMU[k], c = PNU[k]; int b[4]; coords(s, b);
     int corners[4][4]; memcpy(corners[0], b, sizeof b); memcpy(corners[1], b, sizeof b); corners[1][a]++; memcpy(corners[2], corners[1], sizeof b); corners[2][c]++; memcpy(corners[3], b, sizeof b); corners[3][c]++;
@@ -68,16 +68,36 @@ static reading_t resolve_P(void) {
       for (int p0 = 0; p0 < F; p0++) { if (fnd(ncorn + p0) != rt || sig[p0]) continue; sig[p0] = 1; int stack[MAXF], sp = 0; stack[sp++] = p0;
         while (sp) { int p = stack[--sp]; for (int g = 0; g < ngl; g++) { int a = -1, b = -1; if (gl[g][0][0] == p) { a = 0; b = 1; } else if (gl[g][1][0] == p) { a = 1; b = 0; } else continue; int q = gl[g][b][0], sa = ls[p][gl[g][a][1]], sb = ls[q][gl[g][b][1]]; int want = -sig[p] * sa * sb; if (!sig[q]) { sig[q] = want; stack[sp++] = q; } else if (sig[q] != want) ok = 0; } } }
       int chi = cV[c] - cE[c] + cF[c]; chitot += chi; w *= pow(2.0, chi); if (!ok && ((2 - chi) % 2)) w = -w; }
-    sum += w; if (ncomp == 1) { conn++; if (chitot > out.chimax) out.chimax = chitot; } }
-  out.conn = conn; double S = sum; for (int i = 0; i < N4; i++) S *= 2.0 / 3.0; out.S = S; return out; }
+    sum += w; if (ncomp == 1) { conn++; if (chitot > out.chimax) { out.chimax = chitot; out.sheet = r; } } }
+  out.conn = conn; double S = sum; for (int i = 0; i < N4; i++) S *= 2.0 / 3.0; out.S = S;
+  /* THE CONTACT GRAPH ON THE SHEET (the resolution of largest chi): its edges the two glued passages of every four-link (each a
+     preimage edge of the contact link on the sheet), its vertices the corner classes of the sheet; the cycle rank of each component
+     E - V + 1; the largest over the components is the staked case's measure (S12's remainder begins at cycle rank two) */
+  out.b1max = 0; if (N4 > 0 && out.sheet >= 0) { long rr = out.sheet; for (int i = 0; i < N4; i++) { choice[i] = rr % 3; rr /= 3; }
+    int ncorn = F * 4; for (int i = 0; i < ncorn; i++) par[i] = i;
+    /* corner classes of the sheet: all gluings (two-links and four-links) */
+    static int ev[MAXF * 8][2]; int ne = 0;
+    for (int i = 0; i < nl; i++) { int pairs[2][2]; int ci = -1; if (lm[i] == 4) { for (int j = 0; j < N4; j++) if (n4[j] == i) ci = j; const int *pr = PAIR[choice[ci]]; pairs[0][0] = pr[0]; pairs[0][1] = pr[1]; pairs[1][0] = pr[2]; pairs[1][1] = pr[3]; } else { pairs[0][0] = 0; pairs[0][1] = 1; }
+      for (int t = 0; t < (lm[i] == 4 ? 2 : 1); t++) { int p = lp[i][pairs[t][0]][0], s = lp[i][pairs[t][0]][1], q = lp[i][pairs[t][1]][0], s2 = lp[i][pairs[t][1]][1];
+        for (int k = 0; k < 2; k++) { int cp = (s + k) % 4; for (int k2 = 0; k2 < 2; k2++) { int cq = (s2 + k2) % 4; if (!memcmp(lc[p][cp], lc[q][cq], sizeof(int) * 4)) uni(p * 4 + cp, q * 4 + cq); } }
+        if (lm[i] == 4) { ev[ne][0] = p * 4 + s; ev[ne][1] = p * 4 + (s + 1) % 4; ne++; } } }   /* the preimage edge: the side's two corners on the sheet */
+    /* the contact graph's components over the sheet's vertices (corner classes): union-find on a second array keyed by class roots */
+    static int cpar[MAXF * 4]; for (int i = 0; i < ncorn; i++) cpar[i] = i;
+    int vtx[MAXF * 8][2]; for (int e = 0; e < ne; e++) { vtx[e][0] = fnd(ev[e][0]); vtx[e][1] = fnd(ev[e][1]); int a = vtx[e][0], b = vtx[e][1]; while (cpar[a] != a) a = cpar[a]; while (cpar[b] != b) b = cpar[b]; if (a != b) cpar[a] = b; }
+    static int rootE[MAXF * 8], rootV[MAXF * 8], roots[MAXF * 8]; int nr = 0;
+    for (int e = 0; e < ne; e++) { int a = vtx[e][0]; while (cpar[a] != a) a = cpar[a]; int idx = -1; for (int i = 0; i < nr; i++) if (roots[i] == a) idx = i; if (idx < 0) { idx = nr++; roots[idx] = a; rootE[idx] = 0; rootV[idx] = 0; } rootE[idx]++; }
+    /* the vertices of each component: the distinct class roots among its edges' ends */
+    static int seenv[MAXF * 8]; int nsv = 0; for (int e = 0; e < ne; e++) for (int k = 0; k < 2; k++) { int v = vtx[e][k]; int dup = 0; for (int i = 0; i < nsv; i++) if (seenv[i] == v) dup = 1; if (dup) continue; seenv[nsv++] = v; int a = v; while (cpar[a] != a) a = cpar[a]; for (int i = 0; i < nr; i++) if (roots[i] == a) rootV[i]++; }
+    for (int i = 0; i < nr; i++) { int b1 = rootE[i] - rootV[i] + 1; if (b1 > out.b1max) out.b1max = b1; } }
+  return out; }
 /* ---- the census */
-static long long leaves[MAXF][16], minimal[MAXF][16], unread = 0, strongv = 0, weakv = 0, shown = 0; static double maxS[MAXF][16];
+static long long leaves[MAXF][16], minimal[MAXF][16], byb1[MAXF][8], unread = 0, strongv = 0, weakv = 0, shown = 0, staked = 0; static double maxS[MAXF][16], maxSb1[MAXF][8];
 static void record(void) { if (seen()) { dups++; return; }
   reading_t r = resolve_P(); if (r.n4 < 0) return; if (r.nres < 0) { unread++; return; }
   int n4 = r.n4 < 15 ? r.n4 : 15; leaves[F][n4]++; if (r.conn != r.nres) return;   /* not minimal: a disconnected resolution */
-  minimal[F][n4]++; double aS = fabs(r.S); if (aS > maxS[F][n4]) maxS[F][n4] = aS;
-  int strong = aS > pow(2.0, r.chimax) + 1e-9, weak = aS > 4 + 1e-9; if (strong) strongv++; if (weak) weakv++;
-  if ((strong || (n4 >= 2 && shown < 40)) ) { shown++; printf("BOX-LEAF F=%d N4=%d S=%.10g chimax=%d resolutions=%ld %s%s plaquettes:", F, r.n4, r.S, r.chimax, r.nres, strong ? "STRONG-VIOLATION " : "", weak ? "WEAK-VIOLATION " : "");
+  minimal[F][n4]++; double aS = fabs(r.S); if (aS > maxS[F][n4]) maxS[F][n4] = aS; int b1 = r.b1max < 7 ? r.b1max : 7; byb1[F][b1]++; if (aS > maxSb1[F][b1]) maxSb1[F][b1] = aS;
+  int strong = aS > pow(2.0, r.chimax) + 1e-9, weak = aS > 4 + 1e-9; if (strong) strongv++; if (weak) weakv++; if (r.b1max >= 2) staked++;
+  if (strong || r.b1max >= 2 || (n4 >= 2 && shown < 20)) { shown++; printf("BOX-LEAF F=%d N4=%d S=%.10g chimax=%d resolutions=%ld b1max=%d %s%s%splaquettes:", F, r.n4, r.S, r.chimax, r.nres, r.b1max, strong ? "STRONG-VIOLATION " : "", weak ? "WEAK-VIOLATION " : "", r.b1max >= 2 ? "THE-STAKED-KIND " : "");
     for (int i = 0; i < F; i++) { long s = P[i] / NPAIR; int k = (int)(P[i] % NPAIR); int x[4]; coords(s, x); printf(" (%d,%d,%d,%d)%d%d", x[0], x[1], x[2], x[3], PMU[k] + 1, PNU[k] + 1); } printf("\n"); fflush(stdout); } }
 static void search(void) { nodes++; if (nodes > NODEMAX) return;
   if (nodd == 0) { record(); return; }
@@ -102,5 +122,7 @@ int main(int argc, char **argv) {
   printf("# boxenum box %dx%dx%dx%d FMAX=%d: nodes %lld (cap %lld)%s, DUP %lld, leaves with more than ten four-links unread %lld\n", L[0], L[1], L[2], L[3], FMAX, nodes, NODEMAX, nodes > NODEMAX ? " CAP REACHED (the census is partial)" : "", dups, unread);
   printf("# F N4 leaves minimal max|S|(minimal)\n");
   for (int f = 1; f <= FMAX; f++) for (int k = 0; k < 16; k++) if (leaves[f][k]) printf("%2d %2d %10lld %10lld %.6g\n", f, k, leaves[f][k], minimal[f][k], maxS[f][k]);
-  printf("# violations among the minimal leaves: STRONG (|S| > 2^chi_max) %lld, WEAK (|S| > 4) %lld\n", strongv, weakv);
+  printf("# F b1max minimal max|S| -- the minimal leaves by the largest cycle rank of a contact component on the sheet (the staked kind at b1max >= 2)\n");
+  for (int f = 1; f <= FMAX; f++) for (int k = 0; k < 8; k++) if (byb1[f][k]) printf("%2d %2d %10lld %.6g\n", f, k, byb1[f][k], maxSb1[f][k]);
+  printf("# violations among the minimal leaves: STRONG (|S| > 2^chi_max) %lld, WEAK (|S| > 4) %lld; minimal leaves of the staked kind (b1max >= 2) %lld\n", strongv, weakv, staked);
   return 0; }

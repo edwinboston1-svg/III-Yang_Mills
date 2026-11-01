@@ -137,7 +137,7 @@ The flux-surface gas's tail, F > F₀, prices every Z₂-minimal set by N(F) ≤
 ## 8. In flight and owed, as of 02:1x EST
 
 - The big gate's run 2026-11-01a (the rewritten TABLE/J6′ certificate in the tree; arm 137 re-aimed with its pins from a probe; the four graded teeth re-aimed at the rewritten code and each verified bleeding by hand; ktsignhbend — run an's one RED, inert on Q₈ by a theorem — retuned to the swapped-sign bend); the table gate's run e with CERT the tree's. In flight. The landing, the odontograph pins (210, 5) and the kernel record's refresh follow a GREEN.
-- **Theorem 8.9's S12 clause**: entered tonight in THE CLAIM (§25 (l)) and in THE GROUND's Theorem 8.9 proof paragraph (revision 27), dated, before the closing road is walked. OWED NOW.
+- **Theorem 8.9's S12 clause**: ENTERED — §25 (l) on both copies of the gas page (9ee4d64 here; ce081ee78 in the III tree) and THE GROUND's Theorem 8.9 proof paragraph in revision 27 (a4fd5aa, its OpenTimestamps proof a8ed3d6), dated, before the closing road is walked.
 - The exact table at k = 15, 16 and the five classes (the engines); the Q₈ calibration §26; Σ1b's Lemma C; the interface.
 - The peers: iii-73's T-795 (the crossing) and its eidesis run; iii-24's whirl run c (ENDs about 03:45 EST); iii-58's ΣΤΑΘΜΙΟΝ Add. I.
 

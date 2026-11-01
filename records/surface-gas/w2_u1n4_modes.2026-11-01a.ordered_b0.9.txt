@@ -1,0 +1,11 @@
+U1-MODES L=1 N=128: sup|delta_2| = 1.528373e-01, sup|e^delta_2 - 1| = 1.651354e-01 on the grid; U1-OBJECT bent n=4 plaquettes=32 links=76 (shared=3) outside=532 staples five=24 four=52; beta=0.9 NMAX=6 (dropped weight I_7/I_0 = 6.27e-07) LMAX=1 datum=ordered
+U1-MODE a=-1 c=-1 |bhat(e^delta-1)|=5.026802371e-02 (+5.026802e-02 +5.627316e-18 i) delta-mode=(+5.012321e-02 +8.408655e-19 i) unit=3.418860e-02 ratio=1.470315e+00
+U1-MODE a=-1 c=0 |bhat(e^delta-1)|=5.975434742e-03 (-5.975435e-03 -1.845672e-18 i) delta-mode=(-5.208137e-03 +6.581181e-19 i) unit=1.849016e-01 ratio=3.231684e-02
+U1-MODE a=-1 c=1 |bhat(e^delta-1)|=1.795118602e-02 (-1.795119e-02 -9.704893e-18 i) delta-mode=(-1.822519e-02 -1.089362e-17 i) unit=3.418860e-02 ratio=5.250635e-01
+U1-MODE a=0 c=-1 |bhat(e^delta-1)|=5.975434742e-03 (-5.975435e-03 +7.754018e-18 i) delta-mode=(-5.208137e-03 -7.744462e-18 i) unit=1.849016e-01 ratio=3.231684e-02
+U1-MODE a=0 c=0 |bhat(e^delta-1)|=2.209734795e-03 (+2.209735e-03 +0.000000e+00 i) delta-mode=(-9.133302e-04 +0.000000e+00 i) unit=1.000000e+00 ratio=2.209735e-03
+U1-MODE a=0 c=1 |bhat(e^delta-1)|=5.975434742e-03 (-5.975435e-03 -7.754018e-18 i) delta-mode=(-5.208137e-03 +7.744462e-18 i) unit=1.849016e-01 ratio=3.231684e-02
+U1-MODE a=1 c=-1 |bhat(e^delta-1)|=1.795118602e-02 (-1.795119e-02 +9.704893e-18 i) delta-mode=(-1.822519e-02 +1.089362e-17 i) unit=3.418860e-02 ratio=5.250635e-01
+U1-MODE a=1 c=0 |bhat(e^delta-1)|=5.975434742e-03 (-5.975435e-03 +1.845672e-18 i) delta-mode=(-5.208137e-03 -6.581181e-19 i) unit=1.849016e-01 ratio=3.231684e-02
+U1-MODE a=1 c=1 |bhat(e^delta-1)|=5.026802371e-02 (+5.026802e-02 -5.627316e-18 i) delta-mode=(+5.012321e-02 -8.408655e-19 i) unit=3.418860e-02 ratio=1.470315e+00
+U1-CONTENT L=1: r_create = 4.120025e+00; sup|delta_2| = 1.528373e-01; |E[e^{i Phi_A}]| = 1.849016e-01

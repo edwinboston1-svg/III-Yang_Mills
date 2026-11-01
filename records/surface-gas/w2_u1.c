@@ -113,7 +113,11 @@ int main(int argc, char **argv) {
   if (NMAX < 1 || NMAX > MAXN - 1 || LMAX < 0 || LMAX > NMAX || NN < 1 || NN > 4) { fprintf(stderr, "caps out of range\n"); return 1; }
   FREE = !strcmp(datum, "free");
   double I0 = bessel(0, BETA); for (int n = 0; n <= NMAX + 1; n++) IR[n] = bessel(n, BETA) / I0;
-  build(); slots(); for (int p = 0; p < NP; p++) ORDER[p] = p;
+  build(); slots();
+  /* the plaquette order (06:1x: the index order swept face A from the shared edge outward and kept its near column open through the whole
+     face -- eight plaquettes in the frontier at n = 4, 13^8 amplitudes, the allocation refused): face A from the far column to the shared edge,
+     then face B from the shared edge outward; the frontier holds one column and the plaquette being added, five at most */
+  { int t = 0; for (int i = NN - 1; i >= 0; i--) for (int j = 0; j < NN; j++) ORDER[t++] = j + NN * i; for (int k = 0; k < NN; k++) for (int j = 0; j < NN; j++) ORDER[t++] = NN * NN + j + NN * k; }
   int n5 = 0, n4 = 0; for (int l = 0; l < NL; l++) { if (NSTAP[l] == 5) n5++; else if (NSTAP[l] == 4) n4++; else { fprintf(stderr, "a link with neither four nor five staples\n"); return 1; } }
   printf("U1-OBJECT %s n=%d plaquettes=%d links=%d (shared=%d) outside=%d staples five=%d four=%d; beta=%g NMAX=%d (dropped weight I_%d/I_0 = %.2e) LMAX=%d datum=%s\n", PLANAR ? "planar" : "bent", NN, NP, NL, SHARED0, NOUT, n5, n4, BETA, NMAX, NMAX + 1, IR[NMAX + 1], LMAX, datum);
   double *phase = calloc(NOUT + 1, sizeof(double));
@@ -122,12 +126,13 @@ int main(int argc, char **argv) {
     for (int i = 0; i < NOUT; i++) { unsigned long long h = seed * 0x9E3779B97F4A7C15ULL + 0x1234567ULL; for (int j = 0; j < 4; j++) h = (h ^ (unsigned long long)(OB[i][j] + 1000003)) * 0xBF58476D1CE4E5B9ULL; h = (h ^ (unsigned long long)(OD[i] * 7919)) * 0x94D049BB133111EBULL; h ^= h >> 31; h *= 0xD6E8FEB86659FD93ULL; h ^= h >> 32; phase[i] = 2 * PI * ((h >> 11) / 9007199254740992.0); } }
   else if (strcmp(datum, "ordered") && strcmp(datum, "free")) { fprintf(stderr, "unknown datum %s\n", datum); return 1; }
   link_weights(phase);
-  static double CLS[16][16]; cplx Z = sweep(0, 0); if (cabs(Z) == 0) { fprintf(stderr, "Z = 0\n"); return 1; }
+  static cplx CLS[33][17]; cplx Z = sweep(0, 0); if (cabs(Z) == 0) { fprintf(stderr, "Z = 0\n"); return 1; }
   printf("U1-Z beta=%g datum=%s n=%d Z = %.12e (imag %.1e)\n", BETA, datum, NN, creal(Z), cimag(Z));
-  for (int a = 0; a <= LMAX; a++) for (int c = 0; c <= LMAX; c++) { cplx m = sweep(a, c) / Z; CLS[a][c] = creal(m);
-    printf("U1-CLASS a=%d c=%d E[e^{ia Phi_A} e^{ic Phi_B}] = %+.12e (imag %.1e)\n", a, c, creal(m), cimag(m)); }
-  int badfree = 0; for (int a = 0; a <= LMAX; a++) for (int c = 0; c <= LMAX; c++) { double conn = CLS[a][c] - CLS[a][0] * CLS[0][c];
-    printf("U1-CONN a=%d c=%d <e^{ia Phi_A} e^{ic Phi_B}>_c = %+.12e (marginals %+.9e, %+.9e)\n", a, c, conn, CLS[a][0], CLS[0][c]);
-    if (FREE) { double want = pow(IR[a], NN * NN); if (fabs(CLS[a][0] - want) > 1e-9 * (1 + fabs(want)) || fabs(conn) > 1e-9) badfree++; } }
+  /* the charges a in [-LMAX, LMAX] on loop A and c in [0, LMAX] on loop B: the other half of the table is the conjugate, M(-a, -c) = conj M(a, c) */
+  for (int a = -LMAX; a <= LMAX; a++) for (int c = 0; c <= LMAX; c++) { cplx m = sweep(a, c) / Z; CLS[a + 16][c] = m;
+    printf("U1-CLASS a=%d c=%d E[e^{ia Phi_A} e^{ic Phi_B}] = %+.12e %+.12e i\n", a, c, creal(m), cimag(m)); }
+  int badfree = 0; for (int a = -LMAX; a <= LMAX; a++) for (int c = 0; c <= LMAX; c++) { cplx conn = CLS[a + 16][c] - CLS[a + 16][0] * CLS[16][c];
+    printf("U1-CONN a=%d c=%d <e^{ia Phi_A} e^{ic Phi_B}>_c = %+.12e %+.12e i (marginals %+.9e %+.9e i, %+.9e %+.9e i)\n", a, c, creal(conn), cimag(conn), creal(CLS[a + 16][0]), cimag(CLS[a + 16][0]), creal(CLS[16][c]), cimag(CLS[16][c]));
+    if (FREE) { double want = pow(IR[abs(a)], NN * NN); if (cabs(CLS[a + 16][0] - want) > 1e-9 * (1 + fabs(want)) || cabs(conn) > 1e-9) badfree++; } }
   if (FREE) printf("U1-KAT FREE n=%d: Z = 1 [%s]; E[e^{ia Phi_A}] = (I_a/I_0)^(n^2) and every connected pair zero [%s]\n", NN, fabs(creal(Z) - 1) < 1e-9 ? "MET" : "FAILED", badfree ? "FAILED" : "MET");
   printf("U1-DONE\n"); return 0; }

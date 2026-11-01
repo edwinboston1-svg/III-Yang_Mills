@@ -1,0 +1,69 @@
+W2-MODES L=4 N=256: sup|delta_2| = 5.404868e-03, sup|e^delta_2 - 1| = 5.419501e-03 on the grid; W2-OBJECT links=22 (shared=9) outside=174 staples five/four by census; rule degree 32, 9537 points; beta=2.2 WMAX=4 LMAX=4 datum=random:1 order=fwd
+W2-MODE a=0 c=0 bhat(e^delta-1)=+2.141631097e-07 delta-mode=-2.122891809e-07 unit=1.000000e+00 ratio=+2.141631e-07 kind=constant
+W2-MODE a=0 c=1 bhat(e^delta-1)=-3.398154459e-05 delta-mode=-3.414216115e-05 unit=7.468223e-03 ratio=-4.550151e-03 kind=creating
+W2-MODE a=0 c=2 bhat(e^delta-1)=-6.992743663e-06 delta-mode=-7.422524524e-06 unit=-5.664071e-03 ratio=NO-UNIT kind=modifying
+W2-MODE a=0 c=3 bhat(e^delta-1)=-1.769133655e-07 delta-mode=-3.436509553e-07 unit=-6.373708e-05 ratio=NO-UNIT kind=creating
+W2-MODE a=0 c=4 bhat(e^delta-1)=-3.765685130e-08 delta-mode=-5.893115873e-08 unit=6.459142e-07 ratio=-5.830008e-02 kind=creating
+W2-MODE a=0 c=5 bhat(e^delta-1)=-1.151843834e-09 delta-mode=-2.910638561e-09 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=0 c=6 bhat(e^delta-1)=-2.126545457e-10 delta-mode=-4.342939000e-10 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=1 c=0 bhat(e^delta-1)=-5.653699802e-06 delta-mode=-5.731925261e-06 unit=3.816153e-02 ratio=-1.481518e-04 kind=creating
+W2-MODE a=1 c=1 bhat(e^delta-1)=+8.961839538e-04 delta-mode=+8.961728042e-04 unit=2.849988e-04 ratio=+3.144518e+00 kind=creating
+W2-MODE a=1 c=2 bhat(e^delta-1)=+1.834203384e-04 delta-mode=+1.833419025e-04 unit=-2.161496e-04 ratio=NO-UNIT kind=creating
+W2-MODE a=1 c=3 bhat(e^delta-1)=+4.656082904e-06 delta-mode=+4.643265233e-06 unit=-2.432304e-06 ratio=NO-UNIT kind=creating
+W2-MODE a=1 c=4 bhat(e^delta-1)=+9.878491317e-07 delta-mode=+9.881081518e-07 unit=2.464907e-08 ratio=+4.007652e+01 kind=creating
+W2-MODE a=1 c=5 bhat(e^delta-1)=+3.029804519e-08 delta-mode=+3.026169645e-08 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=1 c=6 bhat(e^delta-1)=+5.578919387e-09 delta-mode=+5.588787113e-09 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=2 c=0 bhat(e^delta-1)=-8.895212688e-07 delta-mode=-1.312727520e-06 unit=-1.787705e-03 ratio=NO-UNIT kind=modifying
+W2-MODE a=2 c=1 bhat(e^delta-1)=+1.220142209e-04 delta-mode=+1.218544278e-04 unit=-1.335098e-05 ratio=NO-UNIT kind=creating
+W2-MODE a=2 c=2 bhat(e^delta-1)=+3.827766055e-06 delta-mode=+3.401296058e-06 unit=1.012569e-05 ratio=+3.780253e-01 kind=modifying
+W2-MODE a=2 c=3 bhat(e^delta-1)=+4.303960116e-07 delta-mode=+2.644311925e-07 unit=1.139431e-07 ratio=+3.777290e+00 kind=creating
+W2-MODE a=2 c=4 bhat(e^delta-1)=+2.288216155e-08 delta-mode=+1.676536012e-09 unit=-1.154704e-09 ratio=NO-UNIT kind=creating
+W2-MODE a=2 c=5 bhat(e^delta-1)=+2.446163005e-09 delta-mode=+6.996263759e-10 unit=-0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=2 c=6 bhat(e^delta-1)=+1.371154263e-10 delta-mode=-8.360540968e-11 unit=-0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=3 c=0 bhat(e^delta-1)=-1.077492500e-08 delta-mode=-1.210290372e-07 unit=-4.677811e-05 ratio=NO-UNIT kind=creating
+W2-MODE a=3 c=1 bhat(e^delta-1)=+1.662522217e-06 delta-mode=+1.638627852e-06 unit=-3.493494e-07 ratio=NO-UNIT kind=creating
+W2-MODE a=3 c=2 bhat(e^delta-1)=+2.896426333e-07 delta-mode=+1.787730231e-07 unit=2.649545e-07 ratio=+1.093179e+00 kind=creating
+W2-MODE a=3 c=3 bhat(e^delta-1)=+9.515088426e-09 delta-mode=-1.626401819e-08 unit=2.981500e-09 ratio=+3.191376e+00 kind=creating
+W2-MODE a=3 c=4 bhat(e^delta-1)=+1.562707548e-09 delta-mode=+5.017961823e-11 unit=-3.021465e-11 ratio=NO-UNIT kind=creating
+W2-MODE a=3 c=5 bhat(e^delta-1)=+5.998015603e-11 delta-mode=-1.449497757e-10 unit=-0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=3 c=6 bhat(e^delta-1)=+8.873341595e-12 delta-mode=-2.596997375e-12 unit=-0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=4 c=0 bhat(e^delta-1)=-1.656944730e-09 delta-mode=-1.063183975e-08 unit=-2.904516e-07 ratio=NO-UNIT kind=creating
+W2-MODE a=4 c=1 bhat(e^delta-1)=+2.251694340e-07 delta-mode=+2.244709124e-07 unit=-2.169158e-09 ratio=NO-UNIT kind=creating
+W2-MODE a=4 c=2 bhat(e^delta-1)=+4.347013406e-09 delta-mode=-4.645870032e-09 unit=1.645139e-09 ratio=+2.642339e+00 kind=creating
+W2-MODE a=4 c=3 bhat(e^delta-1)=+7.697764005e-10 delta-mode=-1.602914016e-10 unit=1.851254e-11 ratio=+4.158135e+01 kind=creating
+W2-MODE a=4 c=4 bhat(e^delta-1)=+2.792672782e-11 delta-mode=-5.809457578e-11 unit=-1.876069e-13 ratio=NO-UNIT kind=creating
+W2-MODE a=4 c=5 bhat(e^delta-1)=+4.307667067e-12 delta-mode=+4.258092306e-13 unit=-0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=4 c=6 bhat(e^delta-1)=+1.733257152e-13 delta-mode=-3.218920167e-13 unit=-0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=5 c=0 bhat(e^delta-1)=+7.812406684e-13 delta-mode=-4.027491304e-10 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=5 c=1 bhat(e^delta-1)=+3.395798206e-10 delta-mode=+2.879411748e-10 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=5 c=2 bhat(e^delta-1)=+5.855716972e-10 delta-mode=+1.833815687e-10 unit=-0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=5 c=3 bhat(e^delta-1)=+9.113797470e-12 delta-mode=-6.316028995e-11 unit=-0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=5 c=4 bhat(e^delta-1)=+3.092101347e-12 delta-mode=+1.894925210e-12 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=5 c=5 bhat(e^delta-1)=+6.607115113e-14 delta-mode=-2.683340809e-13 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=5 c=6 bhat(e^delta-1)=+1.731948444e-14 delta-mode=+2.301197425e-14 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=6 c=0 bhat(e^delta-1)=-3.763996900e-12 delta-mode=-3.293487497e-11 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=6 c=1 bhat(e^delta-1)=+5.040629399e-10 delta-mode=+5.043673825e-10 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=6 c=2 bhat(e^delta-1)=+6.341776358e-14 delta-mode=-2.904096091e-11 unit=-0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=6 c=3 bhat(e^delta-1)=+1.602200396e-12 delta-mode=+3.272994907e-13 unit=-0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=6 c=4 bhat(e^delta-1)=+1.158461069e-14 delta-mode=-1.059223098e-13 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=6 c=5 bhat(e^delta-1)=+8.715083304e-15 delta-mode=+1.566175470e-14 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-MODE a=6 c=6 bhat(e^delta-1)=+1.032231228e-16 delta-mode=-5.792361337e-16 unit=0.000000e+00 ratio=NO-UNIT kind=creating
+W2-CONTENT L=4: r_mod = 1.171003e-05 (c_rel,mod = 20 r e^{7 alpha} = 2.358458e-04); r_create = 9.594760e+01 (c_rel,create = 1.932432e+03); 29 modes past L with no unit read; sup|delta_2| = 5.404868e-03
+W2-COEF j2=1 aprime=1.908076332178e-02 rational=19080763322/1000000000000
+W2-COEF j2=2 aprime=-5.959015853280e-04 rational=-595901584/1000000000000
+W2-COEF j2=3 aprime=-1.169452823403e-05 rational=-11694527/1000000000000
+W2-COEF j2=4 aprime=-5.809032916994e-08 rational=-58089/1000000000000
+W2-COEF j2=5 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=6 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=7 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=8 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=9 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=10 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=11 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=12 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=13 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=14 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=15 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=16 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-SHARES NPAIR=16: s_half = 5.977049e-02 s_one = 2.608633e-02 s_high = 6.892487e-03 per pair; half factor 1 + NPAIR r_mod = 1.000187360; wall floor a'_1 + NPAIR s_one/3 = 1.385311955e-01
+W2-CERT-CALL COEF=19080763322/1000000000000,-595901584/1000000000000,-11694527/1000000000000,-58089/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000 HALFN=1000187360496 HALFD=1000000000000 WALLN=138531195471 WALLD=1000000000000

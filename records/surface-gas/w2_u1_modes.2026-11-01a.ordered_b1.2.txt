@@ -1,0 +1,27 @@
+U1-MODES L=2 N=128: sup|delta_2| = 1.023763e+00, sup|e^delta_2 - 1| = 1.783650e+00 on the grid; U1-OBJECT bent n=2 plaquettes=8 links=22 (shared=3) outside=174 staples five=12 four=10; beta=1.2 NMAX=8 (dropped weight I_9/I_0 = 2.07e-08) LMAX=2 datum=ordered
+U1-MODE a=-2 c=-2 |bhat(e^delta-1)|=4.282236448e-02 (+4.282236e-02 +8.643442e-18 i) delta-mode=(+7.238202e-03 +4.038124e-18 i) unit=1.307952e-02 ratio=3.274000e+00
+U1-MODE a=-2 c=-1 |bhat(e^delta-1)|=8.080112870e-02 (-8.080113e-02 +5.049873e-17 i) delta-mode=(-6.959884e-02 -8.712316e-17 i) unit=6.606718e-02 ratio=1.223015e+00
+U1-MODE a=-2 c=0 |bhat(e^delta-1)|=1.152190669e-02 (+1.152191e-02 +3.308405e-18 i) delta-mode=(+3.025113e-02 -1.929144e-17 i) unit=1.143657e-01 ratio=1.007461e-01
+U1-MODE a=-2 c=1 |bhat(e^delta-1)|=5.828577948e-02 (+5.828578e-02 +5.326514e-17 i) delta-mode=(+4.303390e-02 -1.499035e-17 i) unit=6.606718e-02 ratio=8.822199e-01
+U1-MODE a=-2 c=2 |bhat(e^delta-1)|=2.983915986e-02 (-2.983916e-02 +7.752284e-18 i) delta-mode=(-2.207154e-02 -3.107380e-17 i) unit=1.307952e-02 ratio=2.281364e+00
+U1-MODE a=-1 c=-2 |bhat(e^delta-1)|=8.080112870e-02 (-8.080113e-02 -1.832291e-17 i) delta-mode=(-6.959884e-02 +2.409020e-17 i) unit=6.606718e-02 ratio=1.223015e+00
+U1-MODE a=-1 c=-1 |bhat(e^delta-1)|=2.491679107e-01 (+2.491679e-01 -2.790796e-17 i) delta-mode=(+2.274424e-01 +2.890537e-17 i) unit=3.337180e-01 ratio=7.466422e-01
+U1-MODE a=-1 c=0 |bhat(e^delta-1)|=8.240325987e-02 (-8.240326e-02 -5.841653e-17 i) delta-mode=(-4.482158e-02 -3.639560e-17 i) unit=5.776833e-01 ratio=1.426444e-01
+U1-MODE a=-1 c=1 |bhat(e^delta-1)|=1.020661181e-01 (-1.020661e-01 -1.056983e-17 i) delta-mode=(-1.170431e-01 -6.844728e-18 i) unit=3.337180e-01 ratio=3.058454e-01
+U1-MODE a=-1 c=2 |bhat(e^delta-1)|=5.828577948e-02 (+5.828578e-02 -1.726867e-17 i) delta-mode=(+4.303390e-02 -1.406834e-17 i) unit=6.606718e-02 ratio=8.822199e-01
+U1-MODE a=0 c=-2 |bhat(e^delta-1)|=1.152190669e-02 (+1.152191e-02 -2.780873e-17 i) delta-mode=(+3.025113e-02 +5.740718e-17 i) unit=1.143657e-01 ratio=1.007461e-01
+U1-MODE a=0 c=-1 |bhat(e^delta-1)|=8.240325987e-02 (-8.240326e-02 +1.463629e-16 i) delta-mode=(-4.482158e-02 +9.498686e-17 i) unit=5.776833e-01 ratio=1.426444e-01
+U1-MODE a=0 c=0 |bhat(e^delta-1)|=9.257054636e-02 (+9.257055e-02 +0.000000e+00 i) delta-mode=(+1.367534e-03 +0.000000e+00 i) unit=1.000000e+00 ratio=9.257055e-02
+U1-MODE a=0 c=1 |bhat(e^delta-1)|=8.240325987e-02 (-8.240326e-02 -1.463629e-16 i) delta-mode=(-4.482158e-02 -9.498686e-17 i) unit=5.776833e-01 ratio=1.426444e-01
+U1-MODE a=0 c=2 |bhat(e^delta-1)|=1.152190669e-02 (+1.152191e-02 +2.780873e-17 i) delta-mode=(+3.025113e-02 -5.740718e-17 i) unit=1.143657e-01 ratio=1.007461e-01
+U1-MODE a=1 c=-2 |bhat(e^delta-1)|=5.828577948e-02 (+5.828578e-02 +1.726867e-17 i) delta-mode=(+4.303390e-02 +1.406834e-17 i) unit=6.606718e-02 ratio=8.822199e-01
+U1-MODE a=1 c=-1 |bhat(e^delta-1)|=1.020661181e-01 (-1.020661e-01 +1.056983e-17 i) delta-mode=(-1.170431e-01 +6.844728e-18 i) unit=3.337180e-01 ratio=3.058454e-01
+U1-MODE a=1 c=0 |bhat(e^delta-1)|=8.240325987e-02 (-8.240326e-02 +5.841653e-17 i) delta-mode=(-4.482158e-02 +3.639560e-17 i) unit=5.776833e-01 ratio=1.426444e-01
+U1-MODE a=1 c=1 |bhat(e^delta-1)|=2.491679107e-01 (+2.491679e-01 +2.790796e-17 i) delta-mode=(+2.274424e-01 -2.890537e-17 i) unit=3.337180e-01 ratio=7.466422e-01
+U1-MODE a=1 c=2 |bhat(e^delta-1)|=8.080112870e-02 (-8.080113e-02 +1.832291e-17 i) delta-mode=(-6.959884e-02 -2.409020e-17 i) unit=6.606718e-02 ratio=1.223015e+00
+U1-MODE a=2 c=-2 |bhat(e^delta-1)|=2.983915986e-02 (-2.983916e-02 -7.752284e-18 i) delta-mode=(-2.207154e-02 +3.107380e-17 i) unit=1.307952e-02 ratio=2.281364e+00
+U1-MODE a=2 c=-1 |bhat(e^delta-1)|=5.828577948e-02 (+5.828578e-02 -5.326514e-17 i) delta-mode=(+4.303390e-02 +1.499035e-17 i) unit=6.606718e-02 ratio=8.822199e-01
+U1-MODE a=2 c=0 |bhat(e^delta-1)|=1.152190669e-02 (+1.152191e-02 -3.308405e-18 i) delta-mode=(+3.025113e-02 +1.929144e-17 i) unit=1.143657e-01 ratio=1.007461e-01
+U1-MODE a=2 c=1 |bhat(e^delta-1)|=8.080112870e-02 (-8.080113e-02 -5.049873e-17 i) delta-mode=(-6.959884e-02 +8.712316e-17 i) unit=6.606718e-02 ratio=1.223015e+00
+U1-MODE a=2 c=2 |bhat(e^delta-1)|=4.282236448e-02 (+4.282236e-02 -8.643442e-18 i) delta-mode=(+7.238202e-03 -4.038124e-18 i) unit=1.307952e-02 ratio=3.274000e+00
+U1-CONTENT L=2: r_create = 2.261021e+01; sup|delta_2| = 1.023763e+00; |E[e^{i Phi_A}]| = 5.776833e-01

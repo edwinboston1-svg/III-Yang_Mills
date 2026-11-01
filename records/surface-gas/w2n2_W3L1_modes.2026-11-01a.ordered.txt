@@ -1,0 +1,1 @@
+W2-MODES REFUSED: the truncated density is not positive at 31242 of 65536 grid cells (L=1): the log is not readable at this L

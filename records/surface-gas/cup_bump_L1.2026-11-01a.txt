@@ -1,0 +1,3 @@
+CUPBOX L=1 j=1/2 k=2/2 legs=4 at spin 1/2: links=20 |T|_F = 9.765625000e-04 max|entry| = 2.441406250e-04 rule 637 points maxstate=147456 fixed=2
+CUPBOX L=1 j=3/2 k=2/2 legs=4 at spin 1/2: links=20 |T|_F = 3.814697266e-06 max|entry| = 9.536743164e-07 rule 637 points maxstate=1048576 fixed=2
+BUMP L=1 mixed/uniform = 3.906250000e-03  (2^-8 = 3.906250000e-03, 2^-4 = 6.250000000e-02)

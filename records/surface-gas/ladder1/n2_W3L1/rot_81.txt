@@ -1,0 +1,17 @@
+W2-KAT representations to spin 3/2 (GENINV=1): homomorphism and traces [MET]
+W2-OBJECT bent n=2 plaquettes=8 links=22 (shared=3) outside=174 staples five=12 four=10; rule degree 20, 2541 points; beta=2.2 WMAX=3 LMAX=1 datum=ordered order=fwd
+W2-ROT link 81 (2,0,0,-1 dir 2) by 3.141593
+W2-TENSORS built in 0.1 s
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag 7.1e-19; max state 900, open plaquettes at most 2; 0.0 s)
+W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = +7.697804731465e-01 (imag 3.4e-19; max state 14400, open plaquettes at most 2; 0.0 s)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +7.420617824804e-01 (imag 0.0e+00; max state 3600, open plaquettes at most 2; 0.0 s)
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +5.901149865737e-01 (imag 5.4e-18; max state 57600, open plaquettes at most 2; 0.1 s)
+W2-CHANNEL a=1 c=1 k=0 f_k = +7.892744830284e-02 (imag 3.7e-19; P_k idempotent to 6.1e-16; f_k/E = 0.133749269, free law d_k/(d_a d_c) = 0.250000000)
+W2-CHANNEL a=1 c=1 k=2 f_k = +5.111875382709e-01 (imag 0.0e+00; P_k idempotent to 2.7e-15; f_k/E = 0.866250731, free law d_k/(d_a d_c) = 0.750000000)
+W2-CHANNEL-SUM a=1 c=1 sum_k f_k = +5.901149865737e-01 against the class moment +5.901149865737e-01 (sum_k P_k = 1 to 3.1e-15)
+W2-Z beta=2.2 datum=ordered n=2 Z = 2.734012172650e+37
+W2-CONN a=0 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.000000000e+00)
+W2-CONN a=0 c=1 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +7.697804731e-01)
+W2-CONN a=1 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +7.420617825e-01, +1.000000000e+00)
+W2-CONN a=1 c=1 <chi_a chi_c>_c = +1.889031655200e-02 (marginals +7.420617825e-01, +7.697804731e-01)
+W2-DONE 0.3 s

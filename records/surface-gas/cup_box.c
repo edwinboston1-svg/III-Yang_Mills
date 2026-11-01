@@ -83,7 +83,11 @@ static double run_case(int L, int j2, int k2, int leg2, double *maxent, int *nle
   NL = 0; NW = 0; NCYC = 0; NFIX = 0; FIXS = leg2; for (int l = 0; l < MAXL; l++) ISLEG[l] = 0;
   /* the box [0,L] x [0,1] x [0,1]: bottom faces (the wall) at z = 0 for x = 0..L-1; the cup: top, front (y = 0), back (y = 1), left (x = 0), right (x = L) */
   for (int x = 0; x < L; x++) add_face(x, 0, 0, 1, 2, k2);
-  for (int x = 0; x < L; x++) { add_face(x, 0, 1, 1, 2, j2); add_face(x, 0, 0, 1, 3, j2); add_face(x, 1, 0, 1, 3, j2); }
+  /* CUP_BUMP (08:2x): the top face over x = 0 replaced by a unit cube's five faces -- four more cup faces, the wall and its links unchanged;
+   * parts "one power per wall link" (exponent 3L + 1 either way) from the cup's own d^{chi - n} (exponent 3L + 5) */
+  int bump = getenv("CUP_BUMP") != NULL;
+  for (int x = 0; x < L; x++) { if (!(bump && x == 0)) add_face(x, 0, 1, 1, 2, j2); add_face(x, 0, 0, 1, 3, j2); add_face(x, 1, 0, 1, 3, j2); }
+  if (bump) { add_face(0, 0, 1, 1, 3, j2); add_face(0, 1, 1, 1, 3, j2); add_face(0, 0, 1, 2, 3, j2); add_face(1, 0, 1, 2, 3, j2); add_face(0, 0, 2, 1, 2, j2); }
   add_face(0, 0, 0, 2, 3, j2); add_face(L, 0, 0, 2, 3, j2);
   /* the legs: every z = 0 link that lies in exactly one bottom face (the wall's boundary), at spin leg2 */
   int nleg = 0; if (leg2 > 0) for (int l = 0; l < NL; l++) { if (LB[l][2] != 0 || LD[l] == 3) continue; int cnt = 0; for (int c = 0; c < L; c++) for (int i = 0; i < 4; i++) if (STEPL[c][i] == l) cnt++; if (cnt == 1) { ISLEG[l] = 1; if (NFIX < NFIXREQ) FIXL[NFIX++] = l; else add_leg(l, leg2); nleg++; } }
@@ -97,7 +101,11 @@ static double run_case(int L, int j2, int k2, int leg2, double *maxent, int *nle
    * 4^16 = 2^32 states at L = 3 with the cup at 3/2 (its own refusal, cup_box_L3.2026-11-01a.txt). The order moves no number: L = 1, 2 re-read to the digit.
    * Within a key the LEGS GO LAST (07:5x): a leg's two wires stay open to the end, so it is opened as late as its slab allows, and at the far
    * end the end face opens only after the top and the sides have closed -- the x-sweep's peak 4^8 · 2^{2·legs} (2^32 at L = 3) falls by 2^2..2^3. */
-  int order[MAXL], no = 0; for (int key = 0; key <= 2 * L + 1; key++) for (int pass = 0; pass < 2; pass++) for (int l = 0; l < NL; l++) if (2 * LB[l][0] + (LD[l] == 1) == key && ISLEG[l] == pass) order[no++] = l;
+  /* CUP_ORDER=z (08:4x): the sweep along z instead -- key 2z + [the link runs along z]; the wall closes inside its own slab and the cut
+   * between z-planes crosses the side faces only (four at L = 1, 2L + 2 in general), so a TALL object (the bump) is cheap where the x-sweep,
+   * built for a LONG box, opens every face across the x = 0 | 1 cut at L = 1. The order moves no number (controls below). */
+  int zorder = getenv("CUP_ORDER") != NULL && getenv("CUP_ORDER")[0] == 'z';
+  int order[MAXL], no = 0; for (int key = 0; key <= (zorder ? 5 : 2 * L + 1); key++) for (int pass = 0; pass < 2; pass++) for (int l = 0; l < NL; l++) if ((zorder ? 2 * LB[l][2] + (LD[l] == 3) : 2 * LB[l][0] + (LD[l] == 1)) == key && ISLEG[l] == pass) order[no++] = l;
   if (no != NL) { fprintf(stderr, "order %d of %d\n", no, NL); exit(1); }
   size_t maxst = 1; int trace = getenv("CUP_TRACE") != NULL; for (int i = 0; i < NL; i++) { process(&S, order[i]); if (S.size > maxst) maxst = S.size; if (trace) fprintf(stderr, "trace %2d link %2d at (%d,%d,%d) dir %d: state %zu open %d\n", i, order[i], LB[order[i]][0], LB[order[i]][1], LB[order[i]][2], LD[order[i]], S.size, S.nopen); } MAXST = maxst;
   double nrm = 0, mx = 0; for (size_t e = 0; e < S.size; e++) { double a = cabs(S.v[e]); nrm += a * a; if (a > mx) mx = a; }

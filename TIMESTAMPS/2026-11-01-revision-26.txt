@@ -1,0 +1,13 @@
+THE GROUND, revision 26 and the OPEN pages through 13491cf (Edwin Boston III)
+Manifest written 2026-11-01T06:29:43Z.
+
+  13491cf7eb5670cfdca7941c3c4333159e9c2ac4  2026-11-01 01:29:43 -0500  THE GROUND, revision 26 (Edwin Boston III, 2026-11-01 02:xx EDT EDT): Theorem 8.9, the lattice mass gap at strong coupling extend
+  0f2d69fa46380251d10fb561220d76794b63e4ef  2026-11-01 00:09:14 -0400  OPEN S1 §25 and the night's corrections (2026-10-31 22:2x–2026-11-01 00:1x EDT, read from date): the certified realigned opera
+  341432720569d2e51fa8747e46d5490941aa0915  2026-10-31 21:41:23 -0400  OPEN S1 §24 addition (10-31 21:4x EDT, read from date): class 1's sixteen-chord vertex exact — S = 4240168963/11664000000, per
+  148c9072b2dffdc7a168e33272a74917b8a5f1a5  2026-10-30 07:30:47 -0400  OPEN S1 §24 addition (07:3x EDT, read from date): the realigned operator-norm bound's first light -- within 1-1.5x of the retire
+  86fb26ca15c28dccfd0086198a3d6cde5ad7d3f6  2026-10-30 06:53:46 -0400  OPEN S1 §24 addition (06:5x EDT, read from date): the tree dressing's reach 0.4816 (a reading under the tail stake, beside the p
+  221073d5fd09c389d169ca43c1e008643b55d2cb  2026-10-30 05:36:27 -0400  OPEN S1 §24 addition (05:3x EDT, read from date): the operator's sidenote assessed (the chord law is the second road on the lone
+
+2467e5337ab87c777a32df39cda7e0ed342aa8047c38e872098817953a7c6fc7 *THE-GROUND-Edwin-Boston-III.pdf
+722b84093d3afc0e03d9ddfcf172df7f24f64eadea6b4267fde9d6455777b25f *THE-GROUND-Edwin-Boston-III.docx
+e098a9c615d5e65b19f1112fe795f42ea62a7a0f6fce66e380b919637d4f2cba *OPEN/ledger/s1-the-flux-surface-gas.md

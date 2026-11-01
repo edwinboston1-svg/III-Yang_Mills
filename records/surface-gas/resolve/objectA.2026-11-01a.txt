@@ -1,0 +1,2 @@
+RESOLVE F=138 links=272 (two-plaquette 268, four-plaquette 4): 81 resolutions, 81 connected (0 spheres), chi from -6 to -2; components census: 1:81
+RESOLVE signed sum of 2^chi over the resolutions = 2.53125; S(X) = (2/3)^4 x that = 0.5  (a sphere's units: a cube reads 4)

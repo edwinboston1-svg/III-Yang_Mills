@@ -1,0 +1,11 @@
+# cup_amp.c, 2026-11-01 06:34 EST: the legs at spin 1/2 (CUP_LEG=1, the default)
+CUP j=1/2 k=2/2: |T|_F = 1.562500000e-02 max|entry| = 3.906250000e-03  ratio to the uniform wall (j=1/2, k=1): norm 1.000000e+00 max 1.000000e+00  rule 2541 points
+CUP j=3/2 k=2/2: |T|_F = 9.765625000e-04 max|entry| = 2.441406250e-04  ratio to the uniform wall (j=1/2, k=1): norm 6.250000e-02 max 6.250000e-02  rule 2541 points
+CUP j=3/2 k=4/2: |T|_F = 9.765625000e-04 max|entry| = 2.441406250e-04  ratio to the uniform wall (j=1/2, k=1): norm 6.250000e-02 max 6.250000e-02  rule 2541 points
+CUP j=5/2 k=4/2: |T|_F = 1.929012346e-04 max|entry| = 4.822530864e-05  ratio to the uniform wall (j=1/2, k=1): norm 1.234568e-02 max 1.234568e-02  rule 2541 points
+CUP j=5/2 k=6/2: |T|_F = 1.929012346e-04 max|entry| = 4.822530864e-05  ratio to the uniform wall (j=1/2, k=1): norm 1.234568e-02 max 1.234568e-02  rule 2541 points
+CUP j=1/2 k=0/2: |T|_F = 1.562500000e-02 max|entry| = 3.906250000e-03  ratio to the uniform wall (j=1/2, k=1): norm 1.000000e+00 max 1.000000e+00  rule 2541 points
+# the closed cube, no legs (CUP_LEG=0): the uniform spin-1/2 cube's known answer is 2^(chi - n) = 1/16
+# the closed cube, no legs (CUP_LEG=0): the uniform cube's known answer 2^(chi - n) = 1/16 at spin 1/2, 4^(2-6) = 1/256 at spin 3/2
+CUP j=1/2 k=1/2: |T|_F = 6.250000000e-02 max|entry| = 6.250000000e-02  ratio to the uniform wall (j=1/2, k=1): norm 4.619895e+63 max 4.619895e+63  rule 2541 points
+CUP j=3/2 k=3/2: |T|_F = 3.906250000e-03 max|entry| = 3.906250000e-03  ratio to the uniform wall (j=1/2, k=1): norm 2.887434e+62 max 2.887434e+62  rule 2541 points

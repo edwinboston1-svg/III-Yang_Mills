@@ -1,0 +1,23 @@
+# SEED: 13 plaquettes planted, 12 odd links, 4 four-links, 0 links at three or above four; BOX_NO4=1
+# boxenum box 5x5x5x5 FMAX=40: nodes 6000000052 (cap 6000000000) CAP REACHED (the census is partial), DUP 0, leaves with more than ten four-links unread 0
+# F N4 leaves minimal max|S|(minimal)
+16  4          1          0 0
+24  4          1          0 0
+28  4         17          0 0
+30  4         20          0 0
+32  4        347          0 0
+34  4        871          0 0
+36  4       7802          0 0
+38  4      27831          0 0
+40  4     185529          0 0
+# F b1max minimal max|S| -- the minimal leaves by the largest cycle rank of a contact component on the sheet (the staked kind at b1max >= 2)
+# F b1lat minimal max|S| -- the minimal leaves by the cycle rank of the contact links IN THE LATTICE (Lemma S6's hypothesis is b1lat = 0; b1lat >= 1 is outside S6, S12's remainder)
+# minimal leaves whose contact links hold a LATTICE cycle (outside Lemma S6): 0
+# THE CUT FORMULA AS THE SECOND ROAD: 222419 leaves read (refused: 0 bad multiplicity, 0 boundary degree, 0 cycle rank >= 2, 0 no chord); against the resolution formula on the 2/4-link leaves: 222419 compared, 0 PARTED; minimality (resolutions connected vs the rank criterion): 222419 compared, 0 PARTED
+# SIX-FOLD LINKS (read by the cut formula alone; admitted by the odd rule under BOX_MAX6=0): F leaves minimal max|S|(minimal)
+# minimal leaves with a six-fold link and |S| > 4 (THE SEXTUPLE VIOLATION of S12's bound): 0
+# THE WEINGARTEN STEP against the character road at cycle rank one: 222419 compared, 0 PARTED; THE PRIMITIVITY COLUMN on the minimal leaves with a contact cycle: 0 read -- PRIMITIVE and S = 2^chi_max 0, PRIMITIVE and S != 2^chi_max 0, NOT-PRIMITIVE and S = 2^chi_max 0, NOT-PRIMITIVE and S != 2^chi_max 0; minimal leaves of cycle rank >= 2 read by both roads: 0
+# violations among the minimal leaves: STRONG (|S| > 2^chi_max) 0, WEAK (|S| > 4) 0; minimal leaves of the staked kind (b1max >= 2) 0
+# the surgery identity (W' + W'' = W_sheet / 2 at every four-link and every assignment of the others): 0 tests on the minimal leaves, 0 failures, on 0 leaves
+# the surgery identity AT THE SHEET STAGE (every other four-link in its sheet pairing): 0 tests on the minimal leaves, 0 failures
+# THE AGGREGATE IDENTITY per contact link (the two cross weights summed over the others' assignments = half the sheet-paired sum, i.e. S(X) = S(X_sheet)): 0 links tested on the minimal leaves, 0 failures

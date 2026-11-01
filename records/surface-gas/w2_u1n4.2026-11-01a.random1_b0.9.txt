@@ -1,0 +1,15 @@
+U1-OBJECT bent n=4 plaquettes=32 links=76 (shared=3) outside=532 staples five=24 four=52; beta=0.9 NMAX=6 (dropped weight I_7/I_0 = 6.27e-07) LMAX=1 datum=random:1
+U1-Z beta=0.9 datum=random:1 n=4 Z = 2.602587055894e-06 (imag 2.9e-21)
+U1-CLASS a=-1 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = -7.091021610959e-05 -4.079384420257e-05 i
+U1-CLASS a=-1 c=1 E[e^{ia Phi_A} e^{ic Phi_B}] = +2.969160418731e-09 -6.509613566628e-09 i
+U1-CLASS a=0 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +1.000000000000e+00 -1.445324149335e-31 i
+U1-CLASS a=0 c=1 E[e^{ia Phi_A} e^{ic Phi_B}] = +1.873675451452e-04 +2.461912198044e-04 i
+U1-CLASS a=1 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = -7.091021610959e-05 +4.079384420257e-05 i
+U1-CLASS a=1 c=1 E[e^{ia Phi_A} e^{ic Phi_B}] = -1.155888327390e-06 -3.497974396252e-07 i
+U1-CONN a=-1 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals -7.091021611e-05 -4.079384420e-05 i, +1.000000000e+00 -1.445324149e-31 i)
+U1-CONN a=-1 c=1 <e^{ia Phi_A} e^{ic Phi_B}>_c = +6.212347272163e-09 +1.859130147925e-08 i (marginals -7.091021611e-05 -4.079384420e-05 i, +1.873675451e-04 +2.461912198e-04 i)
+U1-CONN a=0 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +1.445324149335e-31 i (marginals +1.000000000e+00 -1.445324149e-31 i, +1.000000000e+00 -1.445324149e-31 i)
+U1-CONN a=0 c=1 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +1.000000000e+00 -1.445324149e-31 i, +1.873675451e-04 +2.461912198e-04 i)
+U1-CONN a=1 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals -7.091021611e-05 +4.079384420e-05 i, +1.000000000e+00 -1.445324149e-31 i)
+U1-CONN a=1 c=1 <e^{ia Phi_A} e^{ic Phi_B}>_c = -1.132558968007e-06 -3.399834094699e-07 i (marginals -7.091021611e-05 +4.079384420e-05 i, +1.873675451e-04 +2.461912198e-04 i)
+U1-DONE

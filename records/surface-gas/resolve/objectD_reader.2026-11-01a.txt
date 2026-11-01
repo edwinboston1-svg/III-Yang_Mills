@@ -1,0 +1,4 @@
+# SEED: 362 plaquettes planted, 0 odd links, 4 four-links, 0 links at three or above four; BOX_NO4=0
+BOX-LEAF F=362 N4=4 S=4 chimax=2 resolutions=81 b1max=1 b1lat=1 surgery-identity 0/108 fail THE-LATTICE-CYCLE
+# THE CUT FORMULA AS THE SECOND ROAD: 1 leaves read (refused: 0 bad multiplicity, 0 boundary degree, 0 cycle rank >= 2, 0 no chord); against the resolution formula on the 2/4-link leaves: 1 compared, 0 PARTED; minimality (resolutions connected vs the rank criterion): 1 compared, 0 PARTED
+# THE WEINGARTEN STEP against the character road at cycle rank one: 1 compared, 0 PARTED; THE PRIMITIVITY COLUMN on the minimal leaves with a contact cycle: 1 read -- PRIMITIVE and S = 2^chi_max 1, PRIMITIVE and S != 2^chi_max 0, NOT-PRIMITIVE and S = 2^chi_max 0, NOT-PRIMITIVE and S != 2^chi_max 0; minimal leaves of cycle rank 

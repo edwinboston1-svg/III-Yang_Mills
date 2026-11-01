@@ -125,6 +125,11 @@ int main(int argc, char **argv) {
   else if (!strncmp(datum, "random:", 7)) { unsigned long long seed = (unsigned long long)atoll(datum + 7);
     for (int i = 0; i < NOUT; i++) { unsigned long long h = seed * 0x9E3779B97F4A7C15ULL + 0x1234567ULL; for (int j = 0; j < 4; j++) h = (h ^ (unsigned long long)(OB[i][j] + 1000003)) * 0xBF58476D1CE4E5B9ULL; h = (h ^ (unsigned long long)(OD[i] * 7919)) * 0x94D049BB133111EBULL; h ^= h >> 31; h *= 0xD6E8FEB86659FD93ULL; h ^= h >> 32; phase[i] = 2 * PI * ((h >> 11) / 9007199254740992.0); } }
   else if (strcmp(datum, "ordered") && strcmp(datum, "free")) { fprintf(stderr, "unknown datum %s\n", datum); return 1; }
+  /* THE INFLUENCE LADDER for U(1) (the campaign's §9): U1_ROT="<outside link index>:<angle>" adds the angle to that one link's phase;
+     U1_LIST=1 prints every outside link's coordinates and direction once */
+  if (getenv("U1_LIST")) for (int i = 0; i < NOUT; i++) printf("U1-OUT %d %d %d %d %d %d\n", i, OB[i][0], OB[i][1], OB[i][2], OB[i][3], OD[i]);
+  if (getenv("U1_ROT")) { int rl = -1; double ra = 0; if (sscanf(getenv("U1_ROT"), "%d:%lf", &rl, &ra) != 2 || rl < 0 || rl >= NOUT) { fprintf(stderr, "U1_ROT must be <index 0..%d>:<angle>\n", NOUT - 1); return 1; }
+    phase[rl] += ra; printf("U1-ROT link %d (%d,%d,%d,%d dir %d) by %.6f\n", rl, OB[rl][0], OB[rl][1], OB[rl][2], OB[rl][3], OD[rl], ra); }
   link_weights(phase);
   static cplx CLS[33][17]; cplx Z = sweep(0, 0); if (cabs(Z) == 0) { fprintf(stderr, "Z = 0\n"); return 1; }
   printf("U1-Z beta=%g datum=%s n=%d Z = %.12e (imag %.1e)\n", BETA, datum, NN, creal(Z), cimag(Z));

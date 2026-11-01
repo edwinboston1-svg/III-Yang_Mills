@@ -209,6 +209,12 @@ int main(int argc, char **argv) {
       double g[4], nn = 0; for (int j = 0; j < 4; j += 2) { h ^= h >> 31; h *= 0xD6E8FEB86659FD93ULL; h ^= h >> 32; double u1 = ((h >> 11) + 1.0) / 9007199254740994.0; h ^= h >> 29; h *= 0xBF58476D1CE4E5B9ULL; h ^= h >> 32; double u2 = (h >> 11) / 9007199254740992.0; double r = sqrt(-2 * log(u1)); g[j] = r * cos(2 * PI * u2); g[j + 1] = r * sin(2 * PI * u2); }
       for (int j = 0; j < 4; j++) nn += g[j] * g[j]; nn = sqrt(nn); quat q = { g[0] / nn, g[1] / nn, g[2] / nn, g[3] / nn }; DATA[i] = q; } }
   else if (strcmp(datum, "ordered") && strcmp(datum, "free")) { fprintf(stderr, "unknown datum %s\n", datum); return 1; }
+  /* THE INFLUENCE LADDER (the campaign's §9, 06:3x): W2_ROT="<outside link index>:<angle>" left-multiplies that one outside link by the
+     rotation by the angle about the x-axis of su(2) (the quaternion (cos a/2, sin a/2, 0, 0)); W2_LIST=1 prints every outside link's
+     coordinates and direction once, so a reader can group them by distance and class */
+  if (getenv("W2_LIST")) for (int i = 0; i < NOUT; i++) printf("W2-OUT %d %d %d %d %d %d\n", i, OB[i][0], OB[i][1], OB[i][2], OB[i][3], OD[i]);
+  int ROTL = -1; double ROTA = 0; if (getenv("W2_ROT")) { if (sscanf(getenv("W2_ROT"), "%d:%lf", &ROTL, &ROTA) != 2 || ROTL < 0 || ROTL >= NOUT) { fprintf(stderr, "W2_ROT must be <index 0..%d>:<angle>\n", NOUT - 1); return 1; }
+    quat r = { cos(ROTA / 2), sin(ROTA / 2), 0, 0 }; DATA[ROTL] = qmul(r, DATA[ROTL]); printf("W2-ROT link %d (%d,%d,%d,%d dir %d) by %.6f\n", ROTL, OB[ROTL][0], OB[ROTL][1], OB[ROTL][2], OB[ROTL][3], OD[ROTL], ROTA); }
   RSTR = (size_t)(SMAX + 1) * (SMAX + 1); RM = malloc(sizeof(cplx) * (size_t)NPT * (SMAX + 1) * 2 * RSTR);
   #pragma omp parallel for schedule(static)
   for (int pt = 0; pt < NPT; pt++) for (int s = 0; s <= SMAX; s++) { rep(s, RU[pt], rmat(pt, s, 0)); rep(s, qinv(RU[pt]), rmat(pt, s, 1)); }

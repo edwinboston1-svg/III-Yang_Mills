@@ -689,3 +689,44 @@ THE INTEGRAND BEING EXACTLY THE TWO QUANTITIES THE OBJECTS READ POINTWISE — §
    - **Every failure in the band has one shape:** a mixture at O(1) density of aligned (weak-coupling-like) and disordered (strong-coupling-like) regions.
    - **A two-phase expansion is REFUTED at the fine scale by two independent holes:** neither phase's internal expansion converges there, and a smooth crossover supplies no interface barrier.
    - **It survives only after two blocking steps,** where Haar data sit inside the KP window (0.006) and aligned data just outside (a′ ≈ 0.14 against 0.118). That is the IR large-field expansion (MIR), and its deciding numbers are named to it: the aligned activity per coarse plaquette against a threshold θ, its probability by chessboard, and the comparison with the KP entropy.
+
+
+## §25 — THE TRUNK SEAT'S OWN SECTIONS CORRECTED: THE W3 WEIGHT IS SIGNED; §22'S "REFUTED" STANDS ONLY AT ONE FRAME (§19'S LANDING NOT ESTABLISHED); §24 ITEM 3 WITHDRAWN; "U(1) AT 1.2 IS GAPLESS" IS NUMERICS, NOT A THEOREM; THE U(1) GATE; (E2)'S REDUCTION PROVED BY ME2, ITS UV INPUT NEEDING ONE MORE ROW (2026-11-02 10:0x EST, read from `date` before this header; the trunk seat, with the reader 045_R and the proof agent ME2, at the desk — math-olympiad and clear-thought on its own §§22–24; nothing above edited)
+
+1. **The W3 plaquette weight is SIGNED** (found by the reader 045_R). With spins ≤ 3/2 (WMAX = 3), the truncated Wilson weight at U = −1 is 1 − 4a₁ + 9a₂ − 16a₃ = −0.105, against the exact normalized +0.064. At β = 2.2, W2 (spins ≤ 1) and W4 (spins ≤ 2) are positive. Every W3 reading is therefore a ratio of signed integrals, not an expectation under a measure. That covers §22 item 1's W3L2 effective couplings (0.4914 ordered, 0.3049 cancelling) and the W3L2 marginals §24 item 3 cited. The comparison in this page's §18 ("the plaquette cap (×1.5 from spins 1 to 3/2) is the mover") set a positive truncation against a signed one.
+
+2. **§22 item 1's "REFUTED" holds only across a change of frame.** At fixed frame L2, only W2 (positive) and W3 (signed) were read. W4 was read at frame L1, and enlarging the frame lowers the coupling multiplicatively (M2b: 0.98–0.99 per integrated edge-adjacent plaquette). So W2L2 → W4L1 mixes the spin cap with the frame.
+   - **The accurate status:** §19's two-step landing at the ordered datum is NOT ESTABLISHED. It held at the lowest spin cap only, and the one positive higher cap read, W4 at frame L1, lands outside every window (β_eff 0.5652).
+   - **What decides it:** whether the ordered datum still lands outside at W4L2 and at the largest positive cap at frame L2. That is the proof agent M7b's pending reading, now staked to it. M2b's "the 0.4764 landing is a cap artefact" rests on the same two objects.
+
+3. **§24 item 3 is WITHDRAWN** (math-olympiad on the seat's own correction; two holes).
+   - **(i) Mixed objects.** |ΔE|/4 bounds the total-variation distance only between two data on ONE object. 0.005 (the Haar datum, W2L2) and 0.279 (the ordered datum, W4L1) belong to different objects.
+   - **(ii) A signed weight.** It cited W3L2 values, which are signed-weight ratios.
+   - **What stands:** §20's δ_loop ≥ 0.035 at W2L2, a correct lower bound for its object. At W4L1 only the ordered (0.2789) and cancelling (0.1860) data were read, giving δ ≥ 0.023 there. The word "small" stays withdrawn, since a lower bound cannot support it.
+
+4. **"U(1) at 1.2 is gapless" (§22 item 1, §24 item 4) is NUMERICS, not a theorem.** The Wilson action's U(1) transition near β ≈ 1.011 and its Coulomb phase above it are established numerically. The rigorous Coulomb-phase theorems (Guth 1980 for the Villain action; Fröhlich–Spencer 1982) hold at sufficiently weak coupling, above a β₀ they do not compute to be 1.2. So a pass of the readings pipeline at 1.2 contradicts the numerically established phase diagram; it is strong evidence that the pipeline's objects are IR-truncated, not a refutation by theorem.
+
+5. **THE U(1) GATE** (creative-solve). The fixed-datum readings drive U(1) at 1.2 into its confining range at two steps (§24 item 4). If the same pipeline lands U(1) inside the window at three or four steps, it would certify a gap for a theory with a massless photon, and its objects cannot decide the crossing for SU(2) either.
+   - **Where the gate runs:** through three and four steps at β = 1.2, as evidence, AND at a coupling inside a proved Coulomb regime for the action the theorem covers, where a pass refutes the pipeline outright.
+   - **Who runs it:** the proof agents M7b (the exit form) and M2c (the Hypothesis I row) beside every SU(2) reading. A decider that cannot refuse U(1) must carry the photon's long-range modes: an integrated rather than pinned exterior, or a Gaussian-integrated exterior.
+
+6. **The rest of 045_R's reading.**
+   - **Records:** the five .dob records published in III-Yang_Mills records/surface-gas/dob/ are the PRE-CLIMB versions, so they do not hold the numbers the published table cites; the build directory in III is the source. A page header writes "the box's 7L + 5 links" for a box L×1×1 that has 8L + 4. Both are owed repairs.
+   - **LEAD:** a closed-form rigorous tail for the spin truncation, 0.054 / 0.011 / 0.0019 / 0.0003 at W3 / W4 / W5 / W6. It is per plaquette, so a many-plaquette reading needs its own bound.
+   - **LEAD:** at W3L4 every channel component has sign (−1)^{(a+c−k)/2}, and at the ordered datum every f_k is positive. That is a candidate positivity route to one-sided bounds at the ordered datum, now with M7b.
+   - **S12, MEASURED:** the remainder has no instance in the 3×3×3×3 box through area 28 (3,686,510 leaves, b1lat = 0, max|S| = 4).
+
+7. **§24's time label** reads "09:5x"; `date` read 09:48 at its landing.
+
+8. **(E2): THE REDUCTION PROVED, SHARPENED, AND ITS UV INPUT CORRECTED** (the proof agent ME2, finished; it sharpens and corrects §22 item 5).
+   - **Proved.** §22's lemma holds at every step (Theorem 3.2). Theorem 3.3: the finite closed subgroups of O(4) containing B4 are exactly W(B4), W(F4) and Aut(F4), of orders 384, 1152 and 2304. So invariance under ONE element outside Aut(F4) forces O(4); infinite order is not needed.
+   - **The rotation q = (1+2i+2j+4k)/5 checks:** infinite order, 5R^{±1} integral, [ℤ⁴ : ℤ⁴ ∩ Rℤ⁴] = 25, a single 625-point block type, and every odd L admits such an R.
+   - **Lemma 5.3:** equality of the two limits up to a dilation and a field normalization suffices, because both are central and a finite gap forces the dilation to 1.
+   - **Theorem 7.1** (an averaged Dobrushin comparison): only the original theory needs Hypothesis I. Hypothesis II, demanded for every coarse configuration, excludes the van Enter–Fernández–Sokal pathologies.
+   - **Theorem 9.1:** Wilson's action is reflection positive across the diagonal hyperplanes, for every compact G.
+   - **The correction.** §22's "a UV comparison of the same kind as (E1)" needs one more row. M3f's variational sandwich and the tree-level contraction L^{−2j} carry over unchanged (Lemma 6.2′; aliases at O(P⁴)). But Theorem U does not apply as it stands: for every R outside Aut(F4), B4 ∩ RB4R⁻¹ fixes a Weyl-type dimension-four term (Theorem 4.1). The skew step therefore leaves an anisotropic marginal remnant of relative size O(g₀²) that the scalar counterterm cannot remove. The repair is one extra row, Lemma Σ_χ, contracting at the asymptotic-freedom rate. Its Weyl part is the SME coefficient k_F, whose running Colladay–McDonald computed (PRD 75 (2007) 105002), with the same exponent for every G. The rate stays polynomial in 1/log.
+   - **Computed (stakes held):** over 6,827 rotations the Weyl rank is always ≥ 1, and the planar rotation by arctan(4/3) leaves the smallest anisotropic sector (2).
+   - **(E2) is CONDITIONAL on:** (E1-scale), the requirement that limits at different renormalization conditions form one dilation family (a separate input); the UV comparison E2-UV(T); Lipschitz crossover steps (F2-Lip); and Hypotheses I–II at the exit. Only the single skew step and Lemma Σ_χ are new beyond the gap and E1.
+   - **A target to verify:** the claim, in work by Alpöge and Sussman not yet checked by anyone here, that O(d) invariance follows from reflection positivity across coordinate and diagonal hyperplanes plus a growth bound. With Theorem 9.1 it would remove all infrared input, but its growth hypothesis fails for tr F² in d = 4 as stated, so it needs a version for the program's renormalised observables.
+
+9. **THE GROUND, revision 34,** is being drafted by the agent R34. It corrects M1R's two false sentences ("the one input not yet proved"; the spin-½ "4u^F"), carries T2's factor of 5 and the Lemma R renaming, and fixes any statement §§22–25 show false. It lands after a second reading.

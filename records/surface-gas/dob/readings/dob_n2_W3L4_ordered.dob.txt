@@ -1,0 +1,42 @@
+W2DOB-RECORD dob_n2_W3L4_ordered.txt: LMAX=4 (loop representations to spin 4/2), Z=1.44000196278625366e+38, GENINV(record)=1, 25 blocks
+W2DOB-KAT KR representation homomorphism: GENINV=1 derived, record's 1 [MET]
+W2DOB-KAT K0 rule degree 30 (7936 points): weights sum 0.999999999999987, character orthonormality to 1.3e-14 [MET]
+W2DOB-KAT K2 class moments from the dump against the record's 25 lines: worst relative difference 2.3e-14 [MET]
+W2DOB-SCHUR a=0 c=0 residual |F/Z - sum_k (f_k/d_k) P_k| = 2.554e-14
+W2DOB-SCHUR a=0 c=1 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.776e-15
+W2DOB-SCHUR a=0 c=2 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.429e-15
+W2DOB-SCHUR a=0 c=3 residual |F/Z - sum_k (f_k/d_k) P_k| = 5.551e-17
+W2DOB-SCHUR a=0 c=4 residual |F/Z - sum_k (f_k/d_k) P_k| = 2.168e-18
+W2DOB-SCHUR a=1 c=0 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.776e-15
+W2DOB-SCHUR a=1 c=1 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.221e-15
+W2DOB-SCHUR a=1 c=2 residual |F/Z - sum_k (f_k/d_k) P_k| = 4.198e-16
+W2DOB-SCHUR a=1 c=3 residual |F/Z - sum_k (f_k/d_k) P_k| = 6.852e-17
+W2DOB-SCHUR a=1 c=4 residual |F/Z - sum_k (f_k/d_k) P_k| = 4.337e-18
+W2DOB-SCHUR a=2 c=0 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.429e-15
+W2DOB-SCHUR a=2 c=1 residual |F/Z - sum_k (f_k/d_k) P_k| = 4.233e-16
+W2DOB-SCHUR a=2 c=2 residual |F/Z - sum_k (f_k/d_k) P_k| = 2.082e-16
+W2DOB-SCHUR a=2 c=3 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.583e-17
+W2DOB-SCHUR a=2 c=4 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.586e-18
+W2DOB-SCHUR a=3 c=0 residual |F/Z - sum_k (f_k/d_k) P_k| = 5.378e-17
+W2DOB-SCHUR a=3 c=1 residual |F/Z - sum_k (f_k/d_k) P_k| = 6.852e-17
+W2DOB-SCHUR a=3 c=2 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.615e-17
+W2DOB-SCHUR a=3 c=3 residual |F/Z - sum_k (f_k/d_k) P_k| = 3.930e-18
+W2DOB-SCHUR a=3 c=4 residual |F/Z - sum_k (f_k/d_k) P_k| = 2.372e-19
+W2DOB-SCHUR a=4 c=0 residual |F/Z - sum_k (f_k/d_k) P_k| = 2.277e-18
+W2DOB-SCHUR a=4 c=1 residual |F/Z - sum_k (f_k/d_k) P_k| = 4.391e-18
+W2DOB-SCHUR a=4 c=2 residual |F/Z - sum_k (f_k/d_k) P_k| = 1.586e-18
+W2DOB-SCHUR a=4 c=3 residual |F/Z - sum_k (f_k/d_k) P_k| = 2.439e-19
+W2DOB-SCHUR a=4 c=4 residual |F/Z - sum_k (f_k/d_k) P_k| = 3.918e-20
+W2DOB-KAT K3 channels from the dump against the record's 46 lines: worst relative difference 2.9e-14 [MET]
+W2DOB-K4 Schur residual over all blocks 2.554e-14: the joint law is invariant under simultaneous conjugation to roundoff (the ordered datum's KAT: MET)
+W2DOB-KAT K2' Peter-Weyl round trip F -> p -> F (U on the degree-30 rule, V on the degree-12 grid): worst absolute difference 3.0e-15 [MET]
+W2DOB-CENSUS joint density on 7936 x 637 points: min 5.143243e-03 max 1.096326e+01, negative at 0 (0.000 %); marginal p_B min 6.458628e-02 on the V grid, marginal p_A min 4.870379e-02 on the U rule -> joint POSITIVE, p_B POSITIVE
+W2DOB-GRID V grid degree 12 (637 points), 202566 pairs read, 0 pairs refused for Delta (a non-positive conditional): grid sup TV 0.235817554 at V=(angle 4.7124) V'=(angle 4.7124), rel. angle 3.1387; grid sup Delta 
+W2DOB-GRID-DELTA 3.029713513 at V=(angle 3.9270) V'=(angle 3.9270)
+W2DOB-C rule degree 30 (7936 points): C = 0.237921189 after 58 accepted moves (grid 0.235817554, movement +2.10e-03) at V=(angle 4.5202) V'=(angle 4.5201), rel. angle 3.5261
+W2DOB-DELTA rule degree 30: Delta = 3.083093793 after 77 accepted moves (grid 3.029713513, movement +5.34e-02) at V=(angle 4.2794) V'=(angle 4.2794); the tilt bound 1 - e^-Delta = 0.954182712
+W2DOB-C rule degree 60 (58621 points): C = 0.237775803 after 65 accepted moves (grid 0.235817554, movement +1.96e-03) at V=(angle 4.5200) V'=(angle 4.5203), rel. angle 3.5261
+W2DOB-KAT K5 the two rules (degrees 30, 60) on C: 0.237921189 against 0.237775803, relative difference 6.11e-04 [MET]
+W2DOB-RESULT C(A,B) at the datum = 0.237921189 (a grid-refined LOWER bound on the group's supremum; loop representations to spin 4/2); tilt bound 1 - e^-Delta = see W2DOB-DELTA; ratio C/bound = see below; S20 (twenty adjacent coarse plaquettes, the bent column, kappa -> 0) = 4.758424 > 1 (survives the grid)
+W2DOB-RATIO C / (1 - e^-Delta) = 0.249346 (Delta = 3.083093793, bound 0.954182712)
+W2DOB-DONE

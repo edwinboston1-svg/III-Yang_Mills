@@ -1,0 +1,11 @@
+THE GROUND, revision 33, through a633563 (Edwin Boston III)
+Manifest written 2026-11-02T12:52:52Z.
+
+  a6335633f7401230b200463f4f7675e04562670c  2026-11-02 07:52:50 -0500  THE GROUND, revision 33 (Edwin Boston III, 2026-11-02): the reduction of the gap to the blocked bound in L², and S12-c′ narrow
+  b3374548a76eb63c6ed6b5ef524e980cd2589698  2026-11-02 07:08:54 -0500  THE CROSSING CAMPAIGN §20: the coarse hypothesis from the fibre, C^λ ≤ δT_∂/(1 − δ); the constant S tabulated; the rout
+
+3cb649e76d5d6518c5cfc63cd61e12be43b4e763f7af1a81ae41596799cda027 *THE-GROUND-Edwin-Boston-III.pdf
+b848fcd708ac104b9c2e731d7f49dbea8b39f7a28f07f55f7a6c0a654ccba3e6 *THE-GROUND-Edwin-Boston-III.docx
+d361d562e891bbf1654dfb1fc8759f07fe50e4c8e1ef77b8f989233a0c58cf0d *source/ground/content4.js
+b361ce878d721f0b464c8c87905614dd88e411a167594c4d5679ed3512674801 *README.md
+15a4db62634fcc3ece631b7415782a267df2bb7b23cf6f0dbc5e10ea13715ed9 *ARXIV.md

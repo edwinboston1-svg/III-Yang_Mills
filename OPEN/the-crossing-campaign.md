@@ -650,3 +650,42 @@ THE INTEGRAND BEING EXACTLY THE TWO QUANTITIES THE OBJECTS READ POINTWISE — §
    **The least-supported object** is certifying the exact steps' tails at O(1) coupling: the readings rise with the cap, and the instrument is the character expansion whose convergence fails there. Pushing the tube down shrinks that interval from above. If the tube reaches β ≈ 3, the engines are needed only for a_½ ≤ 0.568 (and only for a_½ ≤ 0.32 if it reaches 1.4) instead of up to the UV.
 
 7. **The KP certificate's run of record on the fixed copy is GREEN** (STDLIB/build/runs/aperanton_table_gate.2026-11-022026-11-02a: `GATE_RC=0` with its verdict token, no RED or STOPPED line, the teeth bled in their arms, END rc = 0 twice). It discharges §22 item 2's pending verdict.
+
+
+## §24 — FOUR CORRECTIONS AND TWO READINGS OF THE UV HALF: THEOREM PI-4 AS STATED HAS A HOLE (REPAIRED AT SMALL OR REAL d), E1 AND LEMMAS B AND D PROVED GIVEN NAMED INPUTS, §20'S RANGE STALE, §22'S U(1) CONTROL OVERSTATED, §23'S TIME LABEL; THE BAND'S DIAGNOSIS (2026-11-02 09:5x EST, read from `date`; the trunk seat, with the proof agents M3dR and M3f and the reader 046_R; nothing above edited)
+
+1. **THEOREM PI-4 AS STATED HAS A HOLE** (found by M3d's second reader, M3dR; it corrects §22 item 4, where PI-4 was listed as proved pending that reader).
+   - **The hole.** The boundary-layer field A_k (CMP 119 (3.23), (3.25), (3.29); LFR I (1.60)) stays in the large-field factor T with scaled size up to C₁p₁(g_k). A complex Wilson deviation d therefore carries the cross term −2d𝒲(A, A_k): linear in A, with coefficient up to |d|C_WC₁p₁. Bałaban removes his own cross term by completing the square with a REAL shift; for Im d ≠ 0 nothing on the page controls it.
+   - **Counterexample to M3d's 9.2:** d = iθ_*/2 and |A_k| = ½C₁p₁ give a constant ≍ θ_*C_WC₁²p₁², which tends to ∞. A complex-mean Gaussian route would need new estimates, and analytic continuation from real d fails (the shifted cutoffs are not analytic in d).
+   - **The repair, signed:** |d_j| ≤ cε_*/(C_WC₁p₁(g_j)), or d real, with the pure-layer term −d𝒲(A_k, A_k) kept inside T's Gaussian. Theorem S₁(i)–(iii) survives on M3d's own τ-disc when ∇h̃ ≢ 0, because the repair condition holds there automatically (r_τ ∝ δ_* ≤ P(γ)^{−3}). For ∇h̃ ≡ 0 the disc shrinks by p₁(γ)^{−2}. Every radius stays independent of the cutoff and the volume.
+   - **Not affected:** Lemma C′, Σ₁, PI-5, the β-flow, E1-a, E1-b (all whole-lattice, with no layer field).
+   - **Holding with repairs:** Lemma 2 (‖M_d − I‖ must be proved from the near-constancy of d), the census of where 1/g² enters (a fourth case), R5, the τ-disc (a bound on ∇R_k), PI-5 (3.1) and (3.2) (the moment-form computation must be written out, or the history accumulates ε₁ log K), Σ₁ (M3cR's local Lemma M(d)), SH (its extension of Lemma M to defect polymers is a new step, not a black box), E1-a, E1-b and S₁(iv).
+   - **Holding as stated:** R_D, Lemma 1, the upper-bounds-only claim, and T3 (by the e^{−δ₀MR_k} separation).
+
+2. **THE TWO-CUTOFF COMPARISON, LEMMA B AND LEMMA D, PROVED GIVEN NAMED INPUTS** (the proof agent M3f; its second reader M3fR is running and now checks whether every use of PI-4 stays in the repaired regime).
+   - **A structural finding.** Bałaban's R-operation preserves integrals, and the marginal outside its integration region, but not the density. So ρ_K is not the law of the block variables, and E1, with §22 item 5's (E2) comparison, is a statement about generating functionals (sources). M3 §7's (E0) argument is withdrawn as stated.
+   - **Theorem U:** the bare action is universal inside Bałaban's class for W_K(τ) and every τ-derivative. Given Bałaban's black boxes, Lemma M_c, PI-4, PI-5, (ROB), (W) and (B-SUP).
+   - **Two cutoffs:** Lemma 6.2, a variational sandwich (proved), gives the classical RG's contraction L^{−2j} uniformly. E1 for two cutoffs then holds at a rate polynomial in 1/log ε⁻¹, given in addition (T_loc) and (CB). The bare coupling is unique (shells are Lipschitz).
+   - **Lemma B, Lemma D and an exact stage identity:** the exact gauge-fixed stage identity (Theorem 7.1) is proved, and no alias constant is needed. Theorem B1 holds given the Ward identities. Lemma B holds given (r1)–(r2) and M3e's strip analyticity; Lemma D given Lemmas M and W.
+   - **The centre.** The limit of Bałaban's minimiser actions is Hasenfratz–Niedermayer's classically perfect action, which is the centre §23 item 4 proposed for the tube.
+   - **The next object:** (T_loc), the localized analytic tree-level bound, whose first case is quadratic and carries L^{−2j}.
+
+3. **§20 item 4's range is stale** (found by the reader 046_R). §20 wrote "E[χ_½(A)] lies between 0.005 and 0.146 at the read data, so δ_loop ≥ 0.035". The W3L2 marginals are 0.1519 and 0.2433, and W4L1 reads 0.2789 (§22 item 1). The bound is |ΔE|/4 (|χ_½| ≤ 2), so the range is at least [0.005, 0.279] and δ_loop ≥ 0.0685: the lower bound doubles. A lower bound never supported the word "small" in that sentence, and the word is withdrawn.
+
+4. **§22 item 1's "U(1) at 1.2 fails as required" OVERSTATES the control** (found by the reader 046_R).
+   - **What the readings do.** The fixed-datum two-step readings drive U(1) at β = 1.2, which is gapless and in its Coulomb phase, into its confining range at both data: 1.2 → 1.42746 → 0.63163 ordered, → 0.45791 cancelling. The one-plaquette test fails U(1) only because the drop per step is smaller.
+   - **What follows.** The readings' drift is group-blind in mechanism. By the law that a dead instrument and a clean world print the same output, they cannot by themselves count as evidence of SU(2)'s drift. A valid deciding inequality must refuse U(1) at 1.2 at every scale (046_R's I1). This is a requirement on M7b's and M2c's objects.
+   - **Also visible in the U(1) record:** the §18 defect (10 of 532 "outside" links are object links; 6 of 174 at n = 2).
+
+5. **§23's time label** reads "09:3x"; `date` read 09:23 at its landing.
+
+6. **THE BAND'S DIAGNOSIS** (the trunk seat at the desk; deep-think, creative-solve, clear-thought, math-olympiad).
+   - **The core is physics, not belief.** In the band β ≈ 0.5–3:
+     - one step from 2.2 gives β_eff = 1.85 / 1.19 / 0.076 at the ordered / cancelling / Haar data;
+     - the fibre's off-path conditionals are the bare laws (M5);
+     - every certified non-perturbative mechanism stops at 0.48.
+     No reformulation examined creates a small parameter there: larger blocks, decimation, finite subgroups, chessboard bounds, continuity in β, finite-volume transfer matrices. Each fails for a stated reason.
+   - **One belief found:** the tube's 90° convexity wall is the Wilson cosine's, while the perfect action at the tube's centre is Manton-like at large angles. That is a stake, with M8b testing it against Wilson, heat-kernel and Manton weights.
+   - **Every failure in the band has one shape:** a mixture at O(1) density of aligned (weak-coupling-like) and disordered (strong-coupling-like) regions.
+   - **A two-phase expansion is REFUTED at the fine scale by two independent holes:** neither phase's internal expansion converges there, and a smooth crossover supplies no interface barrier.
+   - **It survives only after two blocking steps,** where Haar data sit inside the KP window (0.006) and aligned data just outside (a′ ≈ 0.14 against 0.118). That is the IR large-field expansion (MIR), and its deciding numbers are named to it: the aligned activity per coarse plaquette against a threshold θ, its probability by chessboard, and the comparison with the KP entropy.

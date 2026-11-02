@@ -1,0 +1,28 @@
+M3e. Work file: C:\Users\EDWINB~1\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\M3e\WORK.md. Every page cited was read on image (render/).
+
+1. WHAT THEY CLAIM (CMP 102 277–309, p. 308; the assignment's title belongs to CMP 99). (189): for A′ in (77) and 𝔄 supported in Δ̃(y′), the Hessian of V ((80)) restricted to Δ(y) is at most O(1)ε₃(L^jη)⁻³e^{−¼δ₀d(y,y′)}max{|𝔄|₍₋₁₎,|∇𝔄|₍₋₂₎}. (190): δ𝓗/δB(y′), its gradient, Hölder norm, D*D and Δ are bounded by O(1)(L^jη)^{−1…−3}(L^{j′}η)^{−d}e^{−⅛δ₀d(y,y′)}. The fourth entry prints y for y′.
+
+2. RESULT. Both PROVED GIVEN three kernel bounds (K-H), (K-Π), (K-𝔇), at rate ¼δ₀ (for (190), better than the stated ⅛δ₀).
+- Lemma A, a second-order adjoint identity (known technique), writes the Hessian as eight chains: δ²D/δA′² never appears, and Δ_πH = Q*[(QGQ*)⁻¹−a]ℓ⁻¹ removes every second derivative of a propagator.
+- Lemma C: chain decay from CMP 96 Lemma 2.1, one rate loss per chain.
+- Lemma L: local Hessians by Cauchy, as in Bałaban's (185).
+- Entries 4–5 of (190) go through (133) differentiated, because CMP 99 Theorems 3.12–3.13 exclude the Laplacian bound for G, G₁, 𝔊.
+- Complex A′, B and backgrounds: CMP 99 Theorem 3.4.
+- Toy check (double precision, not a proof): Lemma A matches finite differences to 4e−11; dropping the multiplier fails at 3e−2. Hessian and dA*/dB decay at the slowest kernel rate (ratios 1.011, 1.006). Record: rec/toy189.2026-11-02a.txt.
+
+3. WHERE USED (corrects the dependency picture). CMP 116 §1 (pp. 2–7) does NOT use (190): it localizes by decoupling H, G̃, H₀ in random walks, citing Sect. G only for (179)–(180). (190) enters through CMP 109 (3.9), (3.17), (3.54) → CMP 116 (1.24) → Lemmas 1–2 → M3c's Lemma M, BB4*, Lemma W; also CMP 119 (3.7), LFR II p. 360, M3R's Lemma B. Each use spends the rate on a distance ≥ M, so any positive rate serves; BB4* survives.
+
+4. CMP 99 AUDIT.
+- A1, the main finding: (3.132), the decay and walk expansion of (QGQ*)⁻¹, is asserted by analogy ("We will not repeat these considerations", p. 422). It sits under (3.133) for H, CMP 102 (46), (69), (73), Theorem 3.13, all three propagators CMP 116 decouples, and three rows of (189).
+- A3: Theorem 3.10 (G) only sketched. A6: tree walks asserted.
+- A5, A7: deferred to CMP 89 and CMP 99 75–102, neither on disk.
+- A2: G′, Q′G′²Q′* proved via CMP 95/96 (on disk; checked).
+- CMP 116 p. 5's "Prop. 4 holds" for V(H(s)) needs Bałaban's (87)–(89) form (Π decoupled, not Δ_πH(s)); then only first-order bounds are used.
+
+5. UV STATUS.
+- Proved: Lemmas A, C, L; toy checks pass.
+- Proved given (3.132), CMP 98 Prop. 5 (not read), sketched Theorem 3.10: (189), (190).
+- CMP 116 Lemmas 1–2 rest on A1, A3, A6.
+- M3c's BB4*, Lemma W, Lemma C/C′: proved given that; (190) is no longer an unchecked input.
+
+NEXT OBJECT: (3.132), the one estimate under everything above. WORK.md §5 proves its upper half (QGQ* ≤ (1−θ)⁻¹ℓ², a two-line variational bound) and the decay step (Combes–Thomas). Owed: one competitor field giving QGQ* ≥ C₁⁻¹ℓ². Falsifier: a near-zero mode uniform in k.

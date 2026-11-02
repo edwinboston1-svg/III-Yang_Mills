@@ -1,0 +1,336 @@
+\def\cprime{$'$} \def\polhk#1{\setbox0=\hbox{#1}{\ooalign{\hidewidth
+  \lower1.5ex\hbox{`}\hidewidth\crcr\unhbox0}}}
+\begin{thebibliography}{RWZZ20}
+
+\bibitem[AC22]{DdhikariCao}
+A.~Adhikari and S.~Cao.
+\newblock Correlation decay for finite lattice gauge theories at weak coupling.
+\newblock {\em arXiv preprint arXiv:2202.10375}, 2022.
+
+\bibitem[AD99]{AnderssonDriver}
+L.~Andersson and B.~K. Driver.
+\newblock Finite dimensional approximations to {W}iener measure and path
+  integral formulas on manifolds.
+\newblock {\em Journal of functional analysis}, 165(2):430--498, 1999.
+
+\bibitem[Adh21]{Adhikari2021}
+A.~Adhikari.
+\newblock Wilson loop expectations for non-abelian gauge fields coupled to a
+  {H}iggs boson at low and high disorder.
+\newblock {\em arXiv preprint arXiv:2111.07540}, 2021.
+
+\bibitem[AGZ10]{AGZ}
+G.~W. Anderson, A.~Guionnet, and O.~Zeitouni.
+\newblock {\em An introduction to random matrices}, volume 118 of {\em
+  Cambridge Studies in Advanced Mathematics}.
+\newblock Cambridge University Press, Cambridge, 2010.
+
+\bibitem[AHKZ89]{MR990999}
+S.~Albeverio, R.~Hoegh-Krohn, and B.~Zegarli\'{n}ski.
+\newblock Uniqueness of {G}ibbs states for general {$P(\varphi)_2$}-weak
+  coupling models by cluster expansion.
+\newblock {\em Comm. Math. Phys.}, 121(4):683--697, 1989.
+
+\bibitem[Bak97]{Bakry97}
+D.~Bakry.
+\newblock On {S}obolev and logarithmic {S}obolev inequalities for {M}arkov
+  semigroups.
+\newblock In {\em New trends in stochastic analysis ({C}haringworth, 1994)},
+  pages 43--75. World Sci. Publ., River Edge, NJ, 1997.
+
+\bibitem[BB21]{RolandSG}
+R.~Bauerschmidt and T.~Bodineau.
+\newblock Log-{S}obolev inequality for the continuum {Sine-Gordon} model.
+\newblock {\em Communications on Pure and Applied Mathematics},
+  74(10):2064--2113, 2021.
+
+\bibitem[BD22]{RolandPhi4}
+R.~Bauerschmidt and B.~Dagallier.
+\newblock Log-{S}obolev inequality for the $\varphi^4_2 $ and $\varphi^4_3$
+  measures.
+\newblock {\em arXiv preprint arXiv:2202.02295}, 2022.
+
+\bibitem[BE85]{MR889476}
+D.~Bakry and M.~\'{E}mery.
+\newblock Diffusions hypercontractives.
+\newblock In {\em S\'{e}minaire de probabilit\'{e}s, {XIX}, 1983/84}, volume
+  1123 of {\em Lecture Notes in Math.}, pages 177--206. Springer, Berlin, 1985.
+
+\bibitem[BG18]{MR3861073}
+R.~Basu and S.~Ganguly.
+\newblock {${\rm SO}(N)$} lattice gauge theory, planar and beyond.
+\newblock {\em Comm. Pure Appl. Math.}, 71(10):2016--2064, 2018.
+
+\bibitem[BGHZ21]{StringManifold}
+Y.~Bruned, F.~Gabriel, M.~Hairer, and L.~Zambotti.
+\newblock Geometric stochastic heat equations.
+\newblock {\em J. Amer. Math. Soc.}, 35(1):1--80, 2021.
+
+\bibitem[BGL14]{BakryLedoux}
+D.~Bakry, I.~Gentil, and M.~Ledoux.
+\newblock {\em Analysis and geometry of {M}arkov diffusion operators}, volume
+  103.
+\newblock Springer, 2014.
+
+\bibitem[Cao20]{Cao20}
+S.~Cao.
+\newblock Wilson loop expectations in lattice gauge theories with finite gauge
+  groups.
+\newblock {\em Comm. Math. Phys.}, 380(3):1439--1505, 2020.
+
+\bibitem[CCHS20]{CCHS2d}
+A.~Chandra, I.~Chevyrev, M.~Hairer, and H.~Shen.
+\newblock Langevin dynamic for the {2D} {Yang-Mills} measure.
+\newblock {\em arXiv preprint arXiv:2006.04987}, 2020.
+
+\bibitem[CCHS22]{CCHS3d}
+A.~Chandra, I.~Chevyrev, M.~Hairer, and H.~Shen.
+\newblock Stochastic quantisation of {Yang-Mills-Higgs in 3D}.
+\newblock {\em arXiv preprint arXiv:2201.03487}, 2022.
+
+\bibitem[CE75]{CE75}
+J.~Cheeger and D.~G. Ebin.
+\newblock {\em Comparison theorems in {R}iemannian geometry}.
+\newblock North-Holland Mathematical Library, Vol. 9. North-Holland Publishing
+  Co., Amsterdam-Oxford; American Elsevier Publishing Co., Inc., New York,
+  1975.
+
+\bibitem[Cha16]{Chatterjee16}
+S.~Chatterjee.
+\newblock The leading term of the {Y}ang-{M}ills free energy.
+\newblock {\em J. Funct. Anal.}, 271(10):2944--3005, 2016.
+
+\bibitem[Cha19a]{Cha}
+S.~Chatterjee.
+\newblock Rigorous solution of strongly coupled {$SO(N)$} lattice gauge theory
+  in the large {$N$} limit.
+\newblock {\em Comm. Math. Phys.}, 366(1):203--268, 2019.
+
+\bibitem[Cha19b]{Chatterjee18}
+S.~Chatterjee.
+\newblock Yang-{M}ills for probabilists.
+\newblock In {\em Probability and analysis in interacting physical systems},
+  volume 283 of {\em Springer Proc. Math. Stat.}, pages 1--16. Springer, Cham,
+  2019.
+
+\bibitem[Cha20]{MR4107931}
+S.~Chatterjee.
+\newblock Wilson loops in {I}sing lattice gauge theory.
+\newblock {\em Comm. Math. Phys.}, 377(1):307--340, 2020.
+
+\bibitem[Cha21]{MR4278289}
+S.~Chatterjee.
+\newblock A probabilistic mechanism for quark confinement.
+\newblock {\em Comm. Math. Phys.}, 385(2):1007--1039, 2021.
+
+\bibitem[Che19]{Chevyrev19YM}
+I.~Chevyrev.
+\newblock Yang-{M}ills measure on the two-dimensional torus as a random
+  distribution.
+\newblock {\em Comm. Math. Phys.}, 372(3):1027--1058, 2019.
+
+\bibitem[Che22]{ChevyrevReview}
+I.~Chevyrev.
+\newblock Stochastic quantisation of {Yang-Mills}.
+\newblock {\em arXiv preprint arXiv:2202.13359}, 2022.
+
+\bibitem[CJ16]{ChatterjeeJafar}
+S.~Chatterjee and J.~Jafarov.
+\newblock {The $1/N $ expansion for $SO (N)$ lattice gauge theory at strong
+  coupling}.
+\newblock {\em arXiv preprint arXiv:1604.04777}, 2016.
+
+\bibitem[CWZZ21]{CWZZ18}
+X.~Chen, B.~Wu, R.~Zhu, and X.~Zhu.
+\newblock Stochastic heat equations for infinite strings with values in a
+  manifold.
+\newblock {\em Trans. Amer. Math. Soc.}, 374(1):407--452, 2021.
+
+\bibitem[dC92]{MR1138207}
+M.~P. do~Carmo.
+\newblock {\em Riemannian geometry}.
+\newblock Mathematics: Theory \& Applications. Birkh\"{a}user Boston, Inc.,
+  Boston, MA, 1992.
+\newblock Translated from the second Portuguese edition by Francis Flaherty.
+
+\bibitem[Dob70]{Dobrushin1970}
+R.~L. Dobrushin.
+\newblock Prescribing a system of random variables by conditional
+  distributions.
+\newblock {\em Theory of Probability \& Its Applications}, 15(3):458--486,
+  1970.
+
+\bibitem[Dri89]{Driver89}
+B.~K. Driver.
+\newblock Y{M{${}_2$}}: continuum expectations, lattice convergence, and
+  lassos.
+\newblock {\em Comm. Math. Phys.}, 123(4):575--616, 1989.
+
+\bibitem[Dri19]{MR3982691}
+B.~K. Driver.
+\newblock A functional integral approaches to the {M}akeenko-{M}igdal
+  equations.
+\newblock {\em Comm. Math. Phys.}, 370(1):49--116, 2019.
+
+\bibitem[FLV20]{FLV20}
+M.~P. {Forsstr{\"o}m}, J.~{Lenells}, and F.~{Viklund}.
+\newblock {Wilson loops in finite Abelian lattice gauge theories}.
+\newblock {\em arXiv e-prints}, January 2020.
+
+\bibitem[FLV21]{FLV21}
+M.~P. {Forsstr{\"o}m}, J.~{Lenells}, and F.~{Viklund}.
+\newblock {Wilson loops in the abelian lattice Higgs model}.
+\newblock {\em arXiv e-prints}, July 2021.
+
+\bibitem[For21a]{Forsstrom2021}
+M.~P. Forsstr{\"o}m.
+\newblock Decay of correlations in finite abelian lattice gauge theories.
+\newblock {\em arXiv preprint arXiv:2104.03752}, 2021.
+
+\bibitem[For21b]{forsstromAbelian}
+M.~P. Forsstr{\"o}m.
+\newblock Wilson lines in the abelian lattice {H}iggs model.
+\newblock {\em arXiv preprint arXiv:2111.06620}, 2021.
+
+\bibitem[FOT94]{Fukushima}
+M.~Fukushima, Y.~Oshima, and M.~Takeda.
+\newblock {\em Dirichlet forms and symmetric {M}arkov processes}, volume~19 of
+  {\em De Gruyter Studies in Mathematics}.
+\newblock Walter de Gruyter \& Co., Berlin, 1994.
+
+\bibitem[GJS73]{GJS1973}
+J.~Glimm, A.~Jaffe, and T.~Spencer.
+\newblock The particle structure of the weakly coupled {$P(\phi)_2$} model and
+  other applications of high temperature expansions.
+\newblock In {\em Constructive quantum field theory}, pages 132--198. Springer,
+  1973.
+
+\bibitem[GKS89]{GKS89}
+L.~Gross, C.~King, and A.~Sengupta.
+\newblock Two-dimensional {Y}ang-{M}ills theory via stochastic differential
+  equations.
+\newblock {\em Ann. Physics}, 194(1):65--112, 1989.
+
+\bibitem[GS21]{GS21}
+C.~{Garban} and A.~{Sep{\'u}lveda}.
+\newblock {Improved spin-wave estimate for Wilson loops in $U(1)$ lattice gauge
+  theory}.
+\newblock {\em arXiv e-prints}, July 2021.
+
+\bibitem[GZ03]{GZ}
+A.~Guionnet and B.~Zegarlinski.
+\newblock Lectures on logarithmic {S}obolev inequalities.
+\newblock In {\em S\'{e}minaire de {P}robabilit\'{e}s, {XXXVI}}, volume 1801 of
+  {\em Lecture Notes in Math.}, pages 1--134. Springer, Berlin, 2003.
+
+\bibitem[Hai16]{Hairer16}
+M.~Hairer.
+\newblock The motion of a random string.
+\newblock {\em ArXiv e-prints}, May 2016.
+
+\bibitem[Hsu02]{Hsu}
+E.~P. Hsu.
+\newblock {\em Stochastic analysis on manifolds}, volume~38 of {\em Graduate
+  Studies in Mathematics}.
+\newblock American Mathematical Society, Providence, RI, 2002.
+
+\bibitem[Jaf16]{Jafar}
+J.~Jafarov.
+\newblock Wilson loop expectations in {$ SU (N) $} lattice gauge theory.
+\newblock {\em arXiv preprint arXiv:1610.03821}, 2016.
+
+\bibitem[Ken86]{Ken86}
+W.~S. Kendall.
+\newblock Nonnegative {R}icci curvature and the {B}rownian coupling property.
+\newblock {\em Stochastics}, 19(1-2):111--129, 1986.
+
+\bibitem[Kur07]{Kurtz}
+T.~G. Kurtz.
+\newblock The {Y}amada-{W}atanabe-{E}ngelbert theorem for general stochastic
+  equations and inequalities.
+\newblock {\em Electron. J. Probab.}, 12:951--965, 2007.
+
+\bibitem[L\'17]{Levy11}
+T.~L\'{e}vy.
+\newblock The master field on the plane.
+\newblock {\em Ast\'{e}risque}, (388):ix+201, 2017.
+
+\bibitem[L{\'e}v03]{Levy03}
+T.~L{\'e}vy.
+\newblock Yang-{M}ills measure on compact surfaces.
+\newblock {\em Mem. Amer. Math. Soc.}, 166(790):xiv+122, 2003.
+
+\bibitem[MR92]{MaRockner}
+Z.~M. Ma and M.~R\"{o}ckner.
+\newblock {\em Introduction to the theory of (nonsymmetric) {D}irichlet forms}.
+\newblock Universitext. Springer-Verlag, Berlin, 1992.
+
+\bibitem[Nel66]{Nelson66}
+E.~Nelson.
+\newblock {D}erivation of the {S}chr\"odinger {E}quation from {N}ewtonian
+  {M}echanics.
+\newblock {\em Phys. Rev.}, 150:1079--1085, Oct 1966.
+
+\bibitem[Nua06]{MR2200233}
+D.~Nualart.
+\newblock {\em The {M}alliavin calculus and related topics}.
+\newblock Probability and its Applications (New York). Springer-Verlag, Berlin,
+  second edition, 2006.
+
+\bibitem[OS78]{OS1978}
+K.~Osterwalder and E.~Seiler.
+\newblock Gauge field theories on a lattice.
+\newblock {\em Annals of Physics}, 110(2):440--471, 1978.
+
+\bibitem[PW81]{ParisiWu}
+G.~Parisi and Y.~S. Wu.
+\newblock Perturbation theory without gauge fixing.
+\newblock {\em Sci. Sinica}, 24(4):483--496, 1981.
+
+\bibitem[RWZZ20]{RWZZ17}
+M.~R\"{o}ckner, B.~Wu, R.~Zhu, and X.~Zhu.
+\newblock Stochastic {H}eat {E}quations with {V}alues in a {M}anifold via
+  {D}irichlet {F}orms.
+\newblock {\em SIAM J. Math. Anal.}, 52(3):2237--2274, 2020.
+
+\bibitem[Sei82]{MR785937}
+E.~Seiler.
+\newblock {\em Gauge theories as a problem of constructive quantum field theory
+  and statistical mechanics}, volume 159 of {\em Lecture Notes in Physics}.
+\newblock Springer-Verlag, Berlin, 1982.
+
+\bibitem[Spe75]{MR389080}
+T.~Spencer.
+\newblock The decay of the {B}ethe-{S}alpeter kernel in {$P(\phi)_{2}$} quantum
+  field models.
+\newblock {\em Comm. Math. Phys.}, 44(2):143--164, 1975.
+
+\bibitem[SSZ22]{SSZloop}
+H.~Shen, S.~A. Smith, and R.~Zhu.
+\newblock A new derivation of the finite $ n $ master loop equation for lattice
+  {Yang--Mills}.
+\newblock {\em arXiv preprint arXiv:2202.00880}, 2022.
+
+\bibitem[tH74]{tHooft1974}
+G.~'t~Hooft.
+\newblock A planar diagram theory for strong interactions.
+\newblock {\em Nuclear Phys. B}, 72:461--473, 1974.
+
+\bibitem[vRS05]{RS05}
+M.-K. von Renesse and K.-T. Sturm.
+\newblock Transport inequalities, gradient estimates, entropy, and {R}icci
+  curvature.
+\newblock {\em Comm. Pure Appl. Math.}, 58(7):923--940, 2005.
+
+\bibitem[Wan06]{Wang}
+F.~Wang.
+\newblock {\em Functional inequalities, {M}arkov semigroups and spectral
+  theory}.
+\newblock Elsevier, 2006.
+
+\bibitem[Wil74]{Wilson1974}
+K.~G. Wilson.
+\newblock Confinement of quarks.
+\newblock {\em Physical review D}, 10(8):2445, 1974.
+
+\end{thebibliography}

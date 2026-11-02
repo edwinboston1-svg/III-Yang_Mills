@@ -1,0 +1,2044 @@
+          THE GROUND
+
+  Yang­Mills Theory after the Alpöge­Sussman Manuscripts
+
+     What Is Constructed, What Is Claimed, and the Object That Remains
+
+                               Edwin Boston III
+
+                         28 October 2026 · revised 1 November 2026
+
+                                                Abstract
+
+A proof that quantum Yang­Mills theory has a mass gap must stand on a construction of the
+theory, and the most complete public construction now in view is the corpus of manuscripts
+that Levent Alpöge and Ethan Sussman have posted since 6 October 2026, carrying Balaban's
+renormalisation group from the lattice to the continuum for the gauge group SU(2). This paper
+fixes that ground. It reads the corpus from its primary sources and proves, clause by clause
+and with exact references, what the corpus asserts and at what strength. In three dimensions
+an 854-page manuscript asserts continuum Schwinger functions of the plaquette-energy
+density, the lattice form of tr F², which satisfy the Osterwalder­Schrader axioms in the
+clustering components of infinite-volume limits taken along subsequences, together with a
+short-distance law that makes the theory non-trivial; it asserts no mass gap. In four
+dimensions a 153-page draft deduces, from inputs it declares clause by clause and from
+supporting statements two of which are not yet written, continuum limits on  along
+subsequences with regularity, reflection positivity, symmetry and hypercubic invariance; its
+authors call the underlying argument extremely long and not understandable as it stands, and
+state that the corpus has not been satisfactorily vetted. The paper then proves that, for a
+reflection-positive theory, a mass gap is the same property as exponential clustering of the
+reflection-positive correlations, and that a lower bound on the lattice mass gap, uniform in
+physical units along the lattice sequence of such a construction, supplies at once the three
+properties the corpus withholds: a unique vacuum, the cluster property and a mass gap. It
+                                             THE GROUND · EDWIN BOSTON III
+
+then reduces that bound to two finite statements: if, at a fixed physical scale, the blocked
+measure satisfies Dobrushin's condition with an exponential weight and the field inside the
+blocks clusters at the block scale, both uniformly in the cutoff, then every limit point has a
+unique vacuum and a mass gap of at least min(, log(1/))/a_c; the open mathematics of the
+problem is thereby two statements about one block at the crossover scale, stated in the form
+that is uniform in the cutoff, and the paper says why the form on the fine measure's blocks is
+not. Finally it proves a theorem at the strong end: for the SU(2) Wilson theory on  at  
+0.241, an exact decimation of one link in every plaquette and Dobrushin's criterion, with
+constants that Turán's inequality for the modified Bessel functions makes exact, give a unique
+infinite-volume Gibbs measure, exponential clustering and a mass gap of the lattice theory
+(Theorem 8.7). The theorem lies at strong coupling; the interval between it and the crossover
+is the open part of the problem, and the object on which the proof that follows must stand.
+
+                                                                 2
+                                                           THE GROUND · EDWIN BOSTON III
+
+Contents
+
+1. Introduction ......................................................................................................................................................................... 5
+2. The Ground Theorem....................................................................................................................................................... 6
+3. What the Problem Demands ......................................................................................................................................... 7
+
+   3.1 Euclidean fields and the axioms of Osterwalder and Schrader............................................................... 7
+   3.2 The mass gap................................................................................................................................................................ 8
+   3.3 Non-triviality................................................................................................................................................................ 9
+   3.4 Limits obtained by compactness ......................................................................................................................... 9
+4. The Lattice, Its Positivity and Its Gap ........................................................................................................................ 9
+   4.1 Wilson's theory ........................................................................................................................................................... 9
+   4.2 Reflection positivity and the transfer matrix ...............................................................................................10
+   4.3 The renormalisation group of Balaban ...........................................................................................................11
+5. The Three-Dimensional Manuscripts......................................................................................................................11
+   5.1 The documents..........................................................................................................................................................11
+   5.2 The observable..........................................................................................................................................................12
+   5.3 The torus, the infinite volume and the components..................................................................................12
+   5.4 The axioms and the reconstruction ..................................................................................................................13
+   5.5 Non-triviality..............................................................................................................................................................13
+   5.6 What the manuscript does not assert..............................................................................................................13
+6. The Four-Dimensional Draft and the Standing of the Corpus.......................................................................14
+   6.1 The authors' account ..............................................................................................................................................14
+   6.2 The conditional theorem.......................................................................................................................................14
+   6.3 What the draft does not claim.............................................................................................................................15
+   6.4 The standing of the corpus...................................................................................................................................16
+   6.5 The public reading ...................................................................................................................................................16
+   6.6 Further claims in public view..............................................................................................................................17
+7. The Residue and Its Completion................................................................................................................................20
+   7.1 The residue .................................................................................................................................................................20
+   7.2 The gap is exponential clustering......................................................................................................................20
+   7.3 From the lattice to the limit .................................................................................................................................22
+   7.4 The collapse of the components.........................................................................................................................23
+8. The Ground Handed Over.............................................................................................................................................23
+
+                                                                             3
+                                                           THE GROUND · EDWIN BOSTON III
+
+   8.1 The object that remains.........................................................................................................................................23
+   8.2 The instruments in hand .......................................................................................................................................24
+   8.3 The reduction.............................................................................................................................................................28
+   8.4 Coda ...............................................................................................................................................................................40
+Sources ....................................................................................................................................................................................... 41
+   Records of the computations of Edwin Boston III ..............................................................................................42
+
+                                                                             4
+                                                           THE GROUND · EDWIN BOSTON III
+
+1. Introduction
+
+The quantum Yang­Mills problem of the Clay Mathematics Institute is a single sentence. For every
+compact simple gauge group G it asks for a proof that a non-trivial quantum Yang­Mills theory exists
+on  and has a mass gap  > 0.1 The sentence joins two demands of different kinds. The first is a
+construction: a system of correlation functions, free of every cutoff, defined on the whole of space-
+time and obeying axioms at least as strong as those of Wightman and of Osterwalder and Schrader.
+The second is an inequality: the spectrum of the Hamiltonian of the theory so constructed must leave
+an interval above zero empty. The inequality cannot be stated before the construction exists, and
+when the construction proceeds by compactness, the problem's own text, in a footnote examined in
+Section 3, does not count it as complete until properties of this kind are proved for the limit.
+
+    In two dimensions the continuum Yang­Mills measure was constructed in 1989, by Driver and
+by Gross, King and Sengupta.2 In three dimensions Balaban controlled Wilson's lattice theory on a
+torus by a renormalisation group whose bounds are uniform in the lattice spacing; in four dimensions
+he proved the same bounds under the hypothesis that the running couplings stay below an
+uncomputed constant at every scale, a hypothesis whose own proof his paper of record states to be
+unpublished and which never appeared (§8.3).3 When the problem was posed, its authors wrote that
+a detailed construction on a compact space would be a major breakthrough, and that even then "no
+present ideas point the direction to establish the existence of a mass gap that is uniform in the
+volume. Nor do present methods suggest how to obtain the existence of the infinite volume limit T
+ ."4
+
+    On 6 October 2026 Ethan Sussman opened a public repository for the joint work of Levent Alpöge
+and himself, whose stated aim is "to induce LLMs to develop, push, and extend Balaban's program to
+construct Yang--Mills_4 (YM4) and other quantum gauge theories".5 It now holds an 854-page
+manuscript on three-dimensional SU(2) Yang­Mills theory, a revised edition of 856 pages, a 1,044-
+page sequel on curvature bilinears, a 263-page manuscript on three-dimensional quantum
+electrodynamics, a 30-page manuscript on rotation invariance from reflection positivity, and a 153-
+page zeroth draft on four-dimensional SU(2) Yang­Mills theory.6 Peter Woit discussed the repository
+
+1A. Jaffe and E. Witten, "Quantum Yang­Mills theory", official problem description of the Clay Mathematics Institute,
+https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf, §4, p. 6.
+2B. K. Driver, "YM: continuum expectations, lattice convergence, and lassos", Comm. Math. Phys. 123 (1989); L. Gross, C. King and
+A. Sengupta, "Two dimensional Yang­Mills theory via stochastic differential equations", Ann. Physics 194 (1989).
+3T. Balaban, "Ultraviolet stability of three-dimensional lattice pure gauge field theories", Comm. Math. Phys. 102 (1985), 255­
+275; "Renormalization group approach to lattice gauge field theories. I", Comm. Math. Phys. 109 (1987), 249­301; and the further
+papers of the series, Comm. Math. Phys. 95­122 (1984­1989).
+4Jaffe and Witten, op. cit., §6, p. 7.
+5L. Alpöge and E. Sussman, README of the repository Yang--Mills-LLM-experiment, https://github.com/ethanwsussman/Yang--
+Mills-LLM-experiment (repository created 6 October 2026, 09:51:17 UTC; README last changed 26 October 2026, 16:18:10 UTC;
+read 28 October 2026).
+6Measured by counting the page breaks of the text extracted from each file of https://github.com/ethanwsussman/Yang--Mills-
+LLM-experiment: YM3/YMM1.pdf, 854 pages (posted 26 October 2026, 02:10 UTC); YM3/Revisions/YMM1-2026-10-26.pdf,
+856; YM3/YMM2.pdf, 1,044 (posted 27 October 2026, 01:14 UTC); QED3/qed3.pdf, 263; RPM1.pdf, 30;
+ym4_manuscript_zeroth_draft.pdf, 153.
+
+                                                                             5
+                                                           THE GROUND · EDWIN BOSTON III
+
+on 26 October 2026.7 Its standing has since been compressed into a single sentence: a public three-
+dimensional manuscript proving the Osterwalder­Schrader axioms for tr F², about 854 pages, "LLM-
+approved", unverified, with subsequential infinite-volume limits and no gap; and a four-dimensional
+existence argument that its authors call extremely long and not currently understandable, being
+rewritten slowly.
+
+    This paper replaces that sentence by a proof. Each of its clauses is unfolded into a precise
+mathematical statement, each statement is traced to the sentence of the primary source that carries
+it, and the consequences for the Millennium problem are deduced. The outcome is the Ground
+Theorem of Section 2. Its first three parts establish what the corpus asserts in three dimensions, what
+it asserts in four, and on what standing it asserts either. Its fourth part establishes what the corpus
+leaves undone and proves that one inequality completes it: a lower bound on the lattice mass gap,
+uniform in physical units along the construction's own sequence of lattices. That inequality is the
+object on which the proof that follows will stand.
+
+    Quotations are verbatim, including the authors' spelling. Page counts were measured by counting
+the page breaks in the text extracted from each file. Every source was read on 28 October 2026; the
+repository's most recent commit is dated 27 October 2026, 10:45:28 UTC, and its README was last
+changed on 26 October 2026, 16:18:10 UTC. The deductions of Sections 7 and 8 assume nothing
+about the correctness of the corpus. They hold for every construction of the shape the corpus
+describes.
+
+2. The Ground Theorem
+
+By the corpus we mean the content of the repository Yang--Mills-LLM-experiment of L. Alpöge and E.
+Sussman at its commit of 27 October 2026. By the problem statement we mean the official description
+of Jaffe and Witten. Throughout, a denotes a lattice spacing and b > 0 the physical inverse coupling of
+the three-dimensional theory, with bare inverse coupling  = b/a.
+
+Theorem 2.1 (The Ground). (i) Three dimensions. For the SU(2) Wilson lattice theory on the lattices
+aK³, with aK = L-K and bare inverse coupling LKb, the manuscript YMM1 asserts four things: on each
+fixed torus the connected correlations of the centred plaquette-energy density converge along the full
+sequence of cutoffs; infinite-volume limits exist along subsequences; in each canonical clustering
+component of such a limit the Schwinger functions satisfy the Osterwalder­Schrader axioms (E0)­(E4)
+and reconstruct a Hermitian scalar Wightman field; and a short-distance two-point law, at sufficiently
+small reference coupling, determines b and proves the theory non-trivial. YMM1 asserts no mass gap.
+For the original limit it asserts neither the uniqueness of the vacuum nor clustering, and the clustering
+bound it proves in the components is the inverse first power of the separation.
+
+    (ii) Four dimensions. The zeroth draft asserts, under proof inputs that it declares clause by clause,
+    continuum limits on  along subsequences of cutoffs and volumes whose Schwinger functions
+    satisfy (E0) in a stated form, invariance under translations and the hypercubic group, reflection
+    positivity and symmetry, whence a Hilbert space with a vacuum and a non-negative Hamiltonian;
+
+7P. Woit, "Secret Unified Physics Slop", Not Even Wrong, 26 October 2026, with its updates and comments,
+https://www.math.columbia.edu/~woit/wordpress/?p=15948 (read 28 October 2026).
+
+                                                                             6
+THE GROUND · EDWIN BOSTON III
+
+    non-triviality uniformly in the volume, through a two-point law in the running coupling; and
+    invariance under O(4) under a displayed hypothesis on the flux of the lattice rotation current. It
+    asserts neither the cluster property, nor the uniqueness of the vacuum, nor a mass gap, nor the
+    uniqueness of the limit. Two of its supporting statements are not yet written. Its authors describe
+    the four-dimensional argument behind it as extremely long and not understandable as it stands, and
+    state that it is being written out methodically and slowly.
+
+    (iii) Standing. The authors state that the corpus has not been satisfactorily vetted and that all its
+    claims are to be understood as tentative, pending verification.
+
+    (iv) Residue and completion. Measured against the problem statement, the corpus supplies a mass
+    gap in no dimension. In four dimensions it supplies neither the cluster property, nor the uniqueness
+    of the vacuum, nor unconditional invariance under O(4), nor the relativistic spectral condition. In
+    every dimension it treats the single gauge group SU(2) and a restricted class of curvature
+    observables. For a reflection-positive theory a mass gap is equivalent to exponential clustering of
+    the reflection-positive correlations. Consequently, uniform exponential clustering of the lattice
+    correlations at a rate fixed in physical units, which a lower bound on the lattice mass gap uniform
+    in physical units supplies together with the bounds at separated points that such a construction
+    provides, gives every limit point of the construction's sequence the uniqueness of the vacuum, the
+    cluster property and a mass gap.
+
+    The rest of the paper is the proof. Sections 3 and 4 set down the definitions on which every clause
+depends. Section 5 proves part (i), Section 6 proves parts (ii) and (iii), and Section 7 proves part (iv).
+Section 8 states the object that remains, the instruments with which the proof that follows will meet
+it, and the reduction of that object to two statements about one block at a fixed physical scale,
+Theorem 8.5, and proves at the strong end a mass gap of the lattice theory in infinite volume,
+Theorem 8.7.
+
+3. What the Problem Demands
+
+3.1 Euclidean fields and the axioms of Osterwalder and Schrader
+
+A Euclidean quantum field theory in d dimensions is given by its Schwinger functions Sn, n  1:
+continuous linear functionals on test functions of n points of d. For the composite fields from which
+a gauge theory is built, the natural test functions vanish, with all their derivatives, wherever two
+points coincide, and the corpus works with exactly these.8 Let  be the reflection xd  -xd, let v be
+translation by v, and let  consist of the test functions supported where every point has positive last
+coordinate. A finite family is a sequence f = (f, f, ..., fN) with fn  (dn); it stands for a polynomial in
+the smeared field, and we write
+
+( · ) = , +(  )                                                  (3.1)
+
+8YMM1, "Scalar fields from three-dimensional lattice Yang­Mills theory", YM3/YMM1.pdf and its source YM3/YMM1.tex in the
+repository, p. 4; The zeroth draft, "SU(2) Yang­Mills theory in four dimensions via Balaban's renormalisation group: construction,
+axioms and non-triviality", dated 6 October 2026, ym4_manuscript_zeroth_draft.pdf in the repository, Remark 4.11.
+
+                                                                             7
+                                                           THE GROUND · EDWIN BOSTON III
+
+for the corresponding correlation, with t the translation by t in the last coordinate. The axioms of
+Osterwalder and Schrader are five.9
+
+  (E0) Regularity. Each Sn is a distribution on its test space; in the strengthened form of the second
+         paper, |Sn(f)| is bounded by one Schwartz seminorm of degree proportional to n, with
+         constants growing at most as a power of n!.
+
+  (E1) Euclidean invariance. Sn(h·f) = Sn(f) for every Euclidean motion h.
+  (E2) Reflection positivity. S(f · f)  0 for every finite family f.
+  (E3) Symmetry. Each Sn is invariant under permutations of its arguments.
+  (E4) Cluster property. For finite families f, g and every spatial vector v  0, S(f · svg)  S(f) S(g)
+
+         as s  .
+
+Theorem 3.1 (Osterwalder­Schrader reconstruction). Schwinger functions satisfying (E0) in its
+strengthened form and (E1)­(E3) determine a Hilbert space H, a unit vector , a positive self-adjoint
+Hamiltonian H with H = 0, a unitary representation of the Poincaré group and Wightman fields, from
+which the Sn are recovered by analytic continuation. Each finite family f defines a vector [f]  H; these
+vectors are dense in H, , [f] = S(f), and [f], e-tH[f] = S(f · tf) for t  0. Given (E0)­(E3), the cluster
+property (E4) holds exactly when  is, up to a phase, the only vector invariant under the translations.
+This is the theorem of Osterwalder and Schrader.10 Reflection positivity is the axiom that
+manufactures the Hilbert space, and with it the Hamiltonian whose spectrum the mass gap concerns.
+
+3.2 The mass gap
+The problem statement defines the gap and states the problem in these words:11
+
+          "A quantum field theory has a mass gap  if H has no spectrum in the interval (0, ) for some
+           > 0. The supremum of such  is the mass m, and we require m < .
+          Yang­Mills Existence and Mass Gap. Prove that for any compact simple gauge group G, a non-
+          trivial quantum Yang­Mills theory exists on  and has a mass gap  > 0. Existence includes
+          establishing axiomatic properties at least as strong as those cited in [45, 35]."
+
+The two references are Streater and Wightman's axioms and those of Osterwalder and Schrader. The
+text adds that clustering is "an important consequence of the existence of a mass gap": connected
+vacuum correlations of local operators decay exponentially in the distance. It also records that "the
+existence of a uniform gap for finite-volume approximations may play a fundamental role in the proof
+of existence of the infinite-volume limit."12 Section 7 proves the precise form of both remarks that the
+present ground requires.
+
+9K. Osterwalder and R. Schrader, "Axioms for Euclidean Green's functions", Comm. Math. Phys. 31 (1973), 83­112, and "Axioms
+for Euclidean Green's functions. II", Comm. Math. Phys. 42 (1975), 281­305.
+10Osterwalder and Schrader, op. cit.; see also J. Glimm and A. Jaffe, Quantum Physics: A Functional Integral Point of View, 2nd ed.,
+Springer, 1987, Chapter 6.
+11Jaffe and Witten, op. cit., §4, p. 6.
+12Jaffe and Witten, op. cit., §5, p. 6.
+
+                                                                             8
+                            THE GROUND · EDWIN BOSTON III
+
+3.3 Non-triviality
+
+The problem fixes what it means for the constructed theory to be Yang­Mills theory and not some
+other theory:13
+
+          "To establish existence of four-dimensional quantum gauge theory with gauge group G, one
+          should define a quantum field theory (in the above sense) with local quantum field operators
+          in correspondence with the gauge-invariant local polynomials in the curvature F and its
+          covariant derivatives, such as Tr FijFkl(x). Correlation functions of the quantum field operators
+          should agree at short distances with the predictions of asymptotic freedom and perturbative
+          renormalization theory, as described in textbooks."
+
+Two features of this demand govern the reading of the corpus: the theory must carry all the gauge-
+invariant local polynomials in the curvature, and its short-distance behaviour must be that of
+asymptotic freedom.
+
+3.4 Limits obtained by compactness
+
+A construction often proves bounds uniform in the cutoffs, extracts a convergent subsequence by
+compactness, and calls the limit the theory. The problem statement addresses this practice in its
+second footnote:14
+
+          "We specifically exclude weak-existence (compactness) as the solution to the existence part
+          of the Millennium problem, unless one also uses other techniques to establish properties of
+          the limit (such as the existence of a mass gap and the axioms)."
+
+Proposition 3.2 (The standard for a limit by compactness). A system of Schwinger functions
+obtained as a limit point of cutoff theories by compactness establishes the existence part of the problem
+only together with a proof of properties of that limit, and the problem statement names the mass gap
+and the axioms as such properties.
+
+Proof. This is the content of the footnote quoted above, read at its literal strength. The footnote does
+not require the limit to be unique; it requires the properties to be proved for the limit that has been
+obtained. 
+
+4. The Lattice, Its Positivity and Its Gap
+
+4.1 Wilson's theory
+
+Let  be the periodic lattice of spacing a and side L. To each oriented bond b of  Wilson's theory
+assigns Ub  G, with U-b = Ub-1, and to each plaquette p the ordered product Up of the four bond
+variables around it. For G = SU(N) Wilson's measure is15
+
+                     ()  =  -1 ( -  (1  -   1    ) )  ,                         (4.1)
+                                            
+
+13Jaffe and Witten, op. cit., §4, p. 6.
+14Jaffe and Witten, op. cit., §6.5, footnote 2, p. 12.
+15K. G. Wilson, "Confinement of quarks", Phys. Rev. D 10 (1974), 2445­2459.
+
+                                                                             9
+THE GROUND · EDWIN BOSTON III
+
+with dUb the normalised Haar measure. It is invariant under the gauge transformations Uxy 
+gxUxygy-1, and the observables of the theory are the gauge-invariant functions of the bond variables.
+For SU(2) the plaquette energy ap(U) = 1 - ½ tr Up is the gauge-invariant scalar whose smeared and
+centred sums are the corpus's basic observable, the lattice form of the action density tr F².16
+
+4.2 Reflection positivity and the transfer matrix
+
+Osterwalder and Seiler proved that Wilson's measure is reflection positive: if  is the reflection of 
+in a lattice hyperplane orthogonal to a coordinate axis and F is a function of the bond variables on
+one side of it, then  F · F d  0.17 The problem statement calls this "a major advantage" and adds
+that "establishing a quantum mechanical Hilbert space is part of the solution to this Millennium
+problem."18 Reflection positivity makes the lattice theory a quantum mechanics. Lüscher constructed
+for Wilson's action a self-adjoint, strictly positive transfer matrix T acting on the gauge-invariant
+functions of the bond variables of one time slice, so that time-ordered correlations on a torus of time
+extent Na are traces of products of T with the observables.19 On a torus of finite spatial volume T is
+an integral operator with a continuous, strictly positive kernel on a compact space. By Jentzsch's
+theorem its largest eigenvalue  is simple, with a strictly positive eigenfunction , and every other
+eigenvalue is strictly smaller.20
+
+Definition 4.1 (The lattice gap). Let  be the largest eigenvalue of T below  on the gauge-invariant
+sector. The lattice mass gap is mlat = log(/), in units of the lattice spacing; its value in physical units
+is mlat/a.
+
+In the state defined by , which is the limit of infinite time extent at fixed spatial volume, an
+observable A of the bond variables at positive times defines, by integration over the half-lattice with
+A inserted, a vector A on the time slice, and  · nA = A, (T/)n A for every number n of time
+steps. This is the lattice form of Theorem 3.1.
+
+Lemma 4.2 (The gap governs reflection-positive decay). Let q = /. For every gauge-invariant
+observable A at positive times and every n  0,
+
+0   · 0 - |0|2   (  · 0 - |0|2 ).  (4.2)
+
+Proof. Write A = , A +  with   . Since , A = A and  is fixed by T/, the left
+side of (4.2) equals , (T/)n . The operator T/ is positive, and on the orthogonal complement
+of  its norm is q. Hence 0  , (T/)n   qn ², and ² =  · A - |A|² is the case n = 0.
+
+
+16YMM1, p. 4.
+17K. Osterwalder and E. Seiler, "Gauge field theories on a lattice", Ann. Physics 110 (1978), 440­471.
+18Jaffe and Witten, op. cit., §6.5, p. 11.
+19M. Lüscher, "Construction of a selfadjoint, strictly positive transfer matrix for Euclidean lattice gauge theories", Comm. Math.
+Phys. 54 (1977), 283­292.
+20R. Jentzsch, "Über Integralgleichungen mit positivem Kern", J. Reine Angew. Math. 141 (1912), 235­244.
+
+                                                                             10
+                                                           THE GROUND · EDWIN BOSTON III
+
+The finite form of Lemma 4.2, that a gap places every connected two-point function of a positive
+symmetric transfer matrix between zero and qn times its value at n = 0, is checked by the Lean
+kernel.21
+On a torus of finite time extent N the correlations differ from those of the state  by terms bounded,
+at a fixed lattice, by multiples of qN-n and of tr(T/)N - 1, and these tend to zero as the time extent
+grows at fixed spatial volume. The constant on the right of (4.2) is a correlation between A and its
+mirror image, whose supports are separated by twice the distance of A from the reflection plane. It
+is therefore controlled by bounds on correlations at separated points, which is the only kind of bound
+a construction of a composite field can provide.
+
+4.3 The renormalisation group of Balaban
+A continuum limit requires bounds on the lattice theory that are uniform as the spacing tends to zero
+along a sequence of bare couplings tuned by asymptotic freedom. Balaban's renormalisation group
+provides such bounds on a torus. It integrates out the fluctuations of one length scale after another,
+each step followed by a rescaling, chooses gauges that vary from cell to cell and from scale to scale,
+and controls the effective actions uniformly in the spacing, with an analysis of asymptotic freedom
+and of the regions of large field.22 The problem statement recorded that these estimates "need to be
+extended to the study of expectations of gauge-invariant functions of the fields."23 The corpus is an
+attempt to carry out that extension and then to pass to infinite volume.
+
+5. The Three-Dimensional Manuscripts
+
+This section proves part (i) of the Ground Theorem.
+
+5.1 The documents
+The three-dimensional work consists of two manuscripts. The first, YMM1, is titled "Scalar fields from
+three-dimensional lattice Yang­Mills theory", carries no author or date line, and runs to 854 pages.24
+A revised edition, posted on 27 October 2026, runs to 856 pages. Its change list records twenty-four
+corrections and states: "The statements of the principal Theorems 0 and A­C are unchanged."25 The
+second manuscript, YMM2, is titled "Curvature observables, dynamics, and conditional confinement
+in three-dimensional lattice Yang­Mills theory" and runs to 1,044 pages. It was posted with the note
+that it "has not been edited to even our standards, so we would like to continue cleaning it up and
+checking it", and its abstract states that "Confinement assumes a box inequality uniform along a fixed
+
+21Edwin Boston III; listed in the Records under the lattice theorems in Lean.
+22Balaban, op. cit.; Jaffe and Witten, op. cit., §6.5, p. 11.
+23Jaffe and Witten, op. cit., §6.5, p. 11.
+24Page counts measured as stated in the Introduction.
+25YM3/Revisions/CHANGES-2026-10-26.md in the repository.
+
+                                                                             11
+                    THE GROUND · EDWIN BOSTON III
+
+physical scale and label."26 Part (i) of the Ground Theorem concerns YMM1. YMM2 enters the residue
+of Section 7 through the curvature bilinears it adds.
+
+5.2 The observable
+
+YMM1 states its subject in its first sentences: "We study a scalar observable whose formal classical
+counterpart is tr(F²), the Yang­Mills action density. Its quantum correlations are defined through
+centered Wilson plaquette energies."27 On the lattice aK³, with aK = L-K and L  13 odd, the smeared
+density of a compactly supported test function f is
+
+                    () = -1  (()) ,                                                                                     (5.1)
+
+the sum running over the positive plaquettes of all three orientations, x(p) the barycentre of p and ap
+= 1 - ½ tr Up the plaquette energy; the centred density subtracts its expectation. The manuscript is
+explicit that "the notation tr(F²) does not denote the pointwise square of a separately constructed
+continuum field strength."28 The object of YMM1 is therefore a single gauge-invariant scalar field, the
+continuum limit of the plaquette energy.
+
+5.3 The torus, the infinite volume and the components
+
+Theorem A of YMM1 concerns a fixed torus of side 2Lm. For n  2 real Lipschitz test functions whose
+supports have empty common intersection, it asserts that the connected correlation of the smeared
+densities "exists along the full sequence of sufficiently fine lattices", locally uniformly in b > 0, and
+that "different positive labels b give different limiting families on the same torus."29 On a fixed torus
+the manuscript therefore asserts a limit without passing to subsequences.
+
+    Theorem B passes to infinite volume, and there the limit is subsequential. For first-passage data
+(Kj, j) at a reference coupling g and periodic Gibbs states j, "there is a common subsequence on
+which" the moments of the centred densities converge for every separated tuple, and the limit "has
+zero one-point function, is invariant under all Euclidean isometries, and is reflection positive at every
+plane."30 Every such limit  carries a canonical component measure (X, , ()X), with X compact
+metrizable,  of full support and  =   d(), and each component obeys
+
+|( · ) - () ()|  (, ) ||-1 (||  (, )),                                                                                  (5.2)
+
+uniformly in .31 The manuscript states the subsequential character of its conclusion in so many
+words: "The infinite-volume conclusion is subsequential. The fixed-torus estimate retains a power of
+the volume and does not give uniqueness of these infinite-volume limits."32
+
+26YMM2, "Curvature observables, dynamics, and conditional confinement in three-dimensional lattice Yang­Mills theory",
+YM3/YMM2.pdf in the repository, p. 1; commit message of 27 October 2026, 01:14:40 UTC.
+27YMM1, p. 4.
+28YMM1, p. 4.
+29YMM1, p. 5.
+30YMM1, p. 6.
+31YMM1, p. 6; the display is taken from the source file YM3/YMM1.tex.
+32YMM1, p. 7.
+
+                                                                             12
+                    THE GROUND · EDWIN BOSTON III
+
+5.4 The axioms and the reconstruction
+
+Theorem 0 of YMM1 is its Osterwalder­Schrader theorem. It asserts an odd integer L  13, a physical
+inverse coupling b > 0, integers Kj   and periodic Gibbs states at spacing L-K and inverse coupling
+LKb along K = Kj, such that the limits of the moments of the centred densities exist for test functions
+with pairwise disjoint supports, extend uniquely to the test functions flat at the coincidence
+diagonals, and satisfy (E0) with the explicit bound |Sn()|  2Cn(n!)8||8n, together with (E1)­(E4).33
+On their reflection Hilbert space these functionals "reconstruct a Hermitian scalar Wightman field on
+1+2 with positive energy, a unique invariant vacuum, a dense common Poincaré-invariant
+polynomial domain, covariance, local commutativity and tempered vacuum distributions", and "the
+Hilbert space has dimension at least two."34
+
+    The proof beneath Theorem 0 selects "one of its canonical clustering components", and the
+clustering and the unique vacuum are properties of a component. Of the original limit Theorem B
+says: "The original limit also has this reconstruction, except that vacuum uniqueness and clustering
+are not asserted. Its zero-energy space is L²(X, ), with the vacuum vector corresponding to the
+constant 1."35 The original limit is thus a superposition of clustering theories, with as many vacua as
+the component measure has room for.
+
+5.5 Non-triviality
+
+Theorem C of YMM1 is a short-distance law for the two-point function. At a reference coupling below
+a further ceiling, for test pairs (f, h) whose supports lie at a distance of order d, every limit of Theorem
+B and every one of its components obeys
+
+                    2(, )  =    9  -2 (, ) (1                                    +  ),  (5.3)
+                              16²
+
+                    (, ) =  () () | - |-6  ,
+
+with |e|  (d)  0 as d  0, uniformly in the limit, the component, the test pair and its position; and
+"the label is uniquely determined by the connected two-point function."36 The kernel |x - y|-6 is the
+two-point function of the free action density in three dimensions, and the factor b-2 carries the
+coupling. Non-triviality is thus a statement about short distances, as the problem statement requires
+in Section 3.3.
+
+5.6 What the manuscript does not assert
+
+YMM1 closes its statement of Theorem B with sentences that fix the boundary of its claim: "The
+observable throughout is the scalar plaquette-energy density defined above. The reconstructed field
+is a scalar field. The construction makes no identification with a tensor-valued field strength and
+
+33YMM1, pp. 4­5.
+34YMM1, p. 5.
+35YMM1, pp. 5 and 7.
+36YMM1, p. 7; the display is taken from YM3/YMM1.tex.
+
+                                                                             13
+                                                           THE GROUND · EDWIN BOSTON III
+
+asserts no mass gap."37 The decay (5.2) is a power, and an inverse first power. A mass gap, as Section
+7 proves, is equivalent to decay at an exponential rate.
+Proof of part (i). Each clause of part (i) is the content of the sentence cited for it: the convergence on
+a fixed torus, by Theorem A of YMM1 (§5.3); the subsequential infinite-volume limits and the
+components with the decay (5.2), by Theorem B (§5.3); the axioms and the reconstruction in a
+component, by Theorem 0 (§5.4); the non-triviality, by Theorem C (§5.5); the absence of vacuum
+uniqueness and of clustering for the original limit, by Theorem B (§5.4); and the absence of a mass
+gap, by the sentence quoted in §5.6. 
+
+6. The Four-Dimensional Draft and the Standing of the Corpus
+
+This section proves parts (ii) and (iii) of the Ground Theorem.
+
+6.1 The authors' account
+The README describes the four-dimensional work in a note marked as Alpöge's:38
+
+          "[LA: At the moment we do (appear to) have a YM4 (i.e. , not just in finite volume) existence
+          argument / slop, but it is extremely long and basically not understandable as is. Thus in the
+          meanwhile it is being written much more methodically (thus quite slowly!) and our intention
+          with e.g. QED3 and then YM3 (both also ³) is to show some of the coolest YM4 arguments
+          (e.g. winning O(4)-invariance via an RP trick) in a much simpler, and shorter to write, setting."
+
+The same note asks that the field "not incentivize rushing out 10,000-page slop, which I think would
+be especially useless here!" The repository also holds a raw account, set in four dimensions and titled
+"The Yang--Mills continuum limit along Balaban's renormalization group: a complete account of
+Theorem 0", in three LaTeX files totalling 26,610,818 bytes.39 Woit described the four-dimensional
+material as "a 4d YM existence proof, but in the useless form of tens of thousands of pages of
+unchecked slop", and observed that "Alpoge/Sussman also claim they can do ."40
+
+6.2 The conditional theorem
+The zeroth draft is titled "SU(2) Yang­Mills theory in four dimensions via Balaban's renormalisation
+group: construction, axioms and non-triviality", is dated 6 October 2026, and runs to 153 pages. Its
+theorem is conditional from its first sentence: "Assuming the proof inputs declared clause by clause
+in Section 9, running Balaban's renormalisation group with complex sources gives the following
+deductions".41 Among its clauses are the following.42
+
+37YMM1, p. 7.
+38README of the repository, op. cit.
+39theorem_0_complete_account_raw_I.tex (10,554,720 bytes), raw_II.tex (9,092,940) and raw_III.tex (6,963,158), with a master
+file of 1,284 bytes, in the repository; sizes from the repository's file index.
+40Woit, op. cit.
+41The zeroth draft, p. 1.
+42The zeroth draft, pp. 3­4.
+
+                                                                             14
+                                                           THE GROUND · EDWIN BOSTON III
+
+  (0) The running coupling exists at every scale between the cutoff and a reference length, its
+         inverse square obeys two-sided linear flow bounds uniformly in the cutoff, and for SU(2) at
+         small coupling it obeys the exact one-loop law.
+
+  (i) Balaban's ultraviolet stability theorem holds, its one hypothesis supplied by (0).
+  (iii) The connected correlations of n  2 smeared action densities with separated supports are
+
+         bounded uniformly in the cutoff and, for test functions supported in balls, uniformly in the
+         volume and the position.
+  (ii) In the draft's words, "they converge as the cutoff is removed--on each torus without passing
+         to subsequences along bare couplings tuned at the reference length, on  along
+         subsequences of cutoffs and volumes--to limits that satisfy, in the numbering of [21], the
+         regularity condition E0 in a stated form, the invariance E1 under translations and the
+         hypercubic group, the reflection positivity E2 and the symmetry E3, whence a Hilbert space
+         with a vacuum vector, a non-negative Hamiltonian and spatial momenta".
+  (iv) At separation d the connected two-point function equals, up to a relative error at most one
+         half, a fixed constant times a factor   [2/3, 4/3] times the fourth power of the running
+         coupling at the scale d times an explicit free kernel, uniformly in the cutoff, the bare coupling,
+         the volume and the position.
+  (vi) If the flux of the lattice rotation current through far spheres vanishes along one sequence of
+         radii, uniformly in the cutoff, then every limit on  taken along cutoffs that grow fast enough
+         compared with the volume is invariant under O(4).
+The draft states that its conclusions up to non-triviality, except the convergence without
+subsequences on a fixed torus, "are complete deductions from Balaban's theorems as cited" and from
+a companion account.43 It records with equal care what rests on what. Of a statement whose proof it
+defers it says, "we do not claim that a complete written proof exists, here or in the companion
+account", and of the uniqueness clause (v) it says that its supporting statements are proved "except
+five, which we do not claim as proved: three are written, with independent verification in progress,
+and two are not yet written".44
+
+6.3 What the draft does not claim
+The draft's introduction lists what it does not claim:45
+
+          "We do not claim uniqueness of the infinite-volume limit (the limits on  are taken along
+          subsequences of volumes), uniqueness of the vacuum, the cluster property, a mass gap, the
+          growth condition of [22] in the number of points (hence field operators or Wightman
+          functions), anything at coinciding points, invariance under all rotations without the
+          hypothesis of clause (vi), statements about Wilson loops or about Balaban's block-averaged
+          variables, or any statement for SU(N), N  3."
+
+43The zeroth draft, p. 1.
+44The zeroth draft, p. 6.
+45The zeroth draft, p. 5.
+
+                                                                             15
+                                                           THE GROUND · EDWIN BOSTON III
+
+Its account of related work ends: "the present paper does not address the mass gap."46 Its Remark
+4.19 gives the reason that clustering and the gap are absent and states the subsequential character
+of the limit:47
+
+          "(3) The cluster property (E4), uniqueness of the vacuum, a mass gap. The constants in our
+          bounds do not decay as the separation of the supports grows, so no decay of the connected
+          functions is available. ... (5) Uniqueness. The limits on  are obtained along subsequences of
+          cutoffs and volumes; independence of the subsequence, convergence without subsequences
+          in the volume, independence of the regularisation, and convergence for merely Lipschitz test
+          functions on  are not asserted."
+
+6.4 The standing of the corpus
+The repository opens with a disclaimer, which also states the authors' attribution of the work:48
+
+          "Disclaimer. This repository contains work-in-progress, written largely by LLM. Its content
+          has not been satisfactorily vetted. All claims should be understood as tentative, pending
+          verification. Novel mathematical ideas should be attributed to Claude (under the guidance of
+          LA)."
+
+The phrase "LLM-approved" belongs to the README's paragraph on quantum electrodynamics:
+"While we have not verified the contents of the manuscript, we believe it is essentially correct and
+have done our best to reach a reasonable state of confidence. The manuscript is LLM-approved, but
+LLMs are fallible. A few parts have been checked by hand." Of YMM1 the README says: "We believe
+this manuscript is essentially correct also. [ES: I am less confident than for QED3, but I do think the
+manuscript is correct.]" It describes the manuscripts as "the result of cutting material from literally
+thousands of pages of slop", which "is then fed to Codex to extract a minimal manuscript", and it adds
+that "some definitions that are explicit in the slop must be inferred in the abridged version. We have
+not figured out how to fix this."49 These sentences are the evidence for the words "LLM-approved"
+and "unverified" in the sentence this paper set out to prove.
+
+6.5 The public reading
+On Woit's thread a commenter observed that "the abstract of the 854-page slop "YMM1.pdf" states
+"Infinite-volume limits are subsequential."" Sussman replied the same evening:50
+
+          "Of course subsequential results are weaker than results which do not require passing to a
+          subsequence! But I must admit to not understanding the broader issue. The crux of the
+          problem is to prove that the subsequential limit has good properties."
+
+Section 7 takes this sentence at its word and identifies the property that suffices.
+
+Proof of parts (ii) and (iii). Part (ii) is the content of the passages quoted in §§6.1­6.3: the conditional
+deductions and their clauses (§6.2), the two supporting statements not yet written (§6.2), the
+
+46The zeroth draft, p. 6.
+47The zeroth draft, p. 75.
+48README of the repository, op. cit.
+49README of the repository, op. cit.
+50Woit, op. cit. Comments of 27 October 2026, 6:30 pm and 8:35 pm ET.
+
+                                                                             16
+                                                           THE GROUND · EDWIN BOSTON III
+
+properties not claimed (§6.3), and the authors' description of the four-dimensional argument (§6.1).
+Part (iii) is the content of the disclaimer and of the README's sentences on verification quoted in
+§6.4. 
+
+6.6 Further claims in public view
+
+Six further claims stood in public view when this paper was written, and the ground is not fixed until
+each is placed beside the corpus. The first is an announcement. On 26 October 2026 OpenAI
+announced a mathematically rigorous existence proof of interacting quantum field theories in four
+dimensions, among them the Yang­Mills theory and quantum chromodynamics, stating that "We
+finished our formalization of Yang­Mills' existence on October 16th, 2026", and that a group led by
+David Gross, with Arthur Jaffe, Michael Douglas, Igor Klebanov and Nikita Nekrasov, would review
+the work before its release; Woit, who reproduces the announcement's sentences, gives its length as
+1,147 pages, and the review group's own statement says that Balaban's ideas "enabled OpenAI to
+follow the theory all the way to infinite distances and prove the existence of its proper continuum
+limit. But confinement and the mass gap remain very important open challenges."51 If that proof is
+released and holds, it is a candidate for the ultraviolet half of the chain of §8.1, with the effective
+measure at a fixed physical scale as its output; by its own statement it is not a proof of the gap.
+
+    The second is a published claim of the whole. Mir Faizal and Arshid Shabir, "Reflection-Positive
+Construction of a Four-Dimensional SU(N) Yang­Mills Theory with Mass Gap and Confinement",
+posted to the arXiv on 9 June 2026 and published in Fortschritte der Physik 74 (2026), e70097, with
+the detailed calculations in four companion papers in the International Journal of Geometric Methods
+in Modern Physics, runs to 593 pages in its arXiv form.52 Its abstract claims a reflection-positive lattice
+formulation with a transfer operator of uniform gap at strong coupling, a "finite-range, gauge-
+covariant multiscale analysis" that carries the gap and the area law "from one scale to the next with
+interlaced inequalities whose small defects can be summed", the Osterwalder­Schrader
+reconstruction, and universality: "a single-scale Lipschitz control and a telescoping argument bind
+all admissible reflection-positive slicings into a unique limiting measure", so that "the continuum
+reached from strong coupling meets the one approached along an asymptotically free trajectory,
+yielding one and the same theory". At the join the structure is this. Section 3 obtains the gap at strong
+coupling "at fixed lattice spacing" by the polymer expansion. Section 10 enters the weak-coupling
+regime under "Hypothesis 1 (Stated for convenience; proved as Theorem 10.4 below)", which asserts
+a one-step renormalisation map, analytic "in a neighborhood U of (g, K) = (0, 0)", obeying the one-
+loop recursion with a controlled remainder, Theorem 10.4 being the "one-step contraction near the
+Gaussian fixed point". Theorem 10.8, "Identification with the constructed continuum limit", then
+asserts that the continuum Schwinger functions "obtained by following an admissible, asymptotically
+free trajectory from the ultraviolet" and those "constructed by transporting the strong-coupling mass
+gap and Wilson-loop area law to the continuum within the admissible class" coincide, by the
+uniqueness of its Section 9 over that class. The passage between the two regimes is thus made by a
+
+51Woit, op. cit., the post of 26 October 2026, from which every sentence of the announcement and of the group's statement is
+quoted here; the work itself is unreleased, and this paper has read none of it.
+52Faizal and Shabir, arXiv:2606.19362, doi 10.1002/prop.70097. This paper has read its abstract (p. 1), its table of contents (pp.
+2­3) and the three statements at its join, Hypothesis 1 (p. 110), Theorem 10.4 (p. 116) and Theorem 10.8 (p. 128), and not its
+remaining pages; no expert assessment of it was found in print by 29 October 2026.
+
+                                                                             17
+                                                           THE GROUND · EDWIN BOSTON III
+
+uniqueness statement over a class of constructions, where the chain of §8.1 makes it by a bound at
+the crossover scale. Read at the five places where such a construction must carry weight, it carries it
+as follows.53 The multiscale analysis is a "scale-by-scale decomposition of Gaussian covariances", the
+resolvent of "a nonnegative, selfadjoint, gauge-covariant elliptic operator L on ²(a) with nearest-
+neighbour structure and a spectral gap m²  0", with "massive covariances (Ah + ²)-1" in the
+appendix: the mass of the fluctuation field is a parameter of the decomposition, not an output of the
+theory. The persistence of the gap across scales, Theorem 5.6, assumes "the interlacing/defect
+inequality k+1  k - k" with k <  and concludes inf k   - j by the telescoping sum; the
+summability, Proposition 5.5, holds "Under the FRD locality hypotheses", which "guarantee",
+uniformly in the scale, that "every connected Ursell kernel Uk(X) associated with a finite polymer X
+of diameter diam(X) =  obeys |Uk(X)|  Ce-c" -- exponential clustering at every scale is the
+hypothesis. The continuum Schwinger functions of Theorem 7.1 are subsequential limits, by
+tightness, of "the continuum embedding of the corresponding lattice field as a random tempered
+distribution ... via block-averaging followed by the usual scaling", at a fixed bare coupling. The weak-
+coupling half, Theorem 10.4, is carried on three pages that represent "the one-step effective action
+by integrating the fluctuation field with law N(0, C)", a Gaussian, and state that "the Brydges­
+Kennedy­Abdesselam­Rivasseau (BKAR) formula together with Kotecký­Preiss bounds guarantees
+absolute convergence of the cumulant expansion provided the a priori polymer norm is small", with
+the remainder bounded because "Power counting and analyticity give the bound |Rk|  c|gk|"; the
+large-field regions, the gauge fixing of the fluctuation field and the non-linear averaging of a compact
+variable, which occupy Balaban's papers, do not appear in them. And the uniqueness that identifies
+the two limits, Theorem 9.4, concludes that two constructions give the same Schwinger functions "If
+k =  k and Kk = K k on a core of local observables", that is, when they already share their marginal and
+their transition kernel; so Theorem 10.8 presupposes the identification it asserts. In this form the
+construction does not reach the object this paper names as open, Hypothesis I of §8.3, and does not
+discharge it. Its remaining pages are not examined here, and no expert assessment of it was found in
+print by 29 October 2026.
+
+    The third and fourth are manuscripts deposited on Zenodo, which no journal has refereed.
+Ramiro Fontes, "The SU(2) Yang­Mills Mass Gap via Curvature-Based Block Renormalization,
+Character Expansion, and Dobrushin Comparison", deposited on 7 March 2026 and revised on 11
+March, states as its Main Theorem that for    = 9587 the connected correlators of gauge-invariant
+observables decay exponentially, uniformly in the volume, and that every subsequential continuum
+limit carries a mass gap (p. 4).54 Its renormalisation group runs while the effective coupling stays at
+least , the first of its inductive hypotheses (p. 19), and stops after ( - 9587)/0.258 steps; the decay
+is then asserted for the effective measure at  by a cluster expansion whose polymers lie inside one
+block of side two with its boundary held fixed, the rate being, in its words, "the inter-block decay of
+the effective action" (pp. 46, 85). Locality of an effective action is not clustering of its measure, and
+
+53The same arXiv PDF: §2.3 (p. 17), Proposition 5.5 (pp. 55­56), Theorem 5.6 (p. 57), Theorem 7.1 (p. 80), Theorem 9.4 (p. 105),
+the proof of Theorem 10.4 (pp. 117­119) and the appendix on the decomposition (p. 174). The quotations are verbatim.
+54Zenodo records 18906249 and 18969699; this paper has read, in the version of 11 March 2026 (ym_v65.pdf), the Main
+Theorem (p. 4), the inductive hypothesis (p. 19), the passage on the decay rate (p. 46), the note on the terminal coupling (p. 80)
+and the clustering step of the mass-gap theorem (p. 85). B. Lee, Zenodo record 19601454, version v13_r22: pp. 11­12, 19, 26, 72
+and 83.
+
+                                                                             18
+                                                           THE GROUND · EDWIN BOSTON III
+
+the manuscript's own note shows the consequence, stating that at  = 9587, its minimum, "no RG step
+is needed: the cluster expansion converges directly on the original lattice" (p. 80). The bare Wilson
+theory at  = 9587, a coupling at which the manuscript's own normalisation places the physical scale
+some e25,800 lattice spacings out, would then have a correlation length of the order of the spacing. The
+mechanism is the spectral gap of the block's abelian Hessian, the non-abelian curvature entering as
+a small correction (p. 4), so the same argument would give the four-dimensional U(1) theory a gap at
+weak coupling, which Guth and Fröhlich and Spencer exclude: it fails the test of §8.3. Byoungwoo Lee,
+"Yang­Mills Mass Gap in Four Dimensions: Reduction and Closure for the BT­2 Route", deposited on
+16 April 2026, obtains its gap m   from its Assumption 2.1, a logarithmic Sobolev floor uniform
+in the spacing (pp. 11­12). The floor is carried by the Holley­Stroock lemma under the supposition
+KL()  M (p. 72), with M among the quantities the manuscript holds fixed by choice (p. 11), and
+its appendix proves that the system of inequalities is solvable in its parameters (p. 83), not that the
+Yang­Mills measure satisfies it; for a Gibbs measure that relative entropy grows with the volume and
+as the spacing tends to zero. Neither manuscript reaches the crossover.
+
+    The fifth and sixth are repositories, read on 29 October at the places where their gaps are
+obtained. A GitHub repository announcing a resolution of the problem for SU(3), created on 16
+October 2026 and last changed on 28 October, carries five volumes and a Lean corpus. Its master
+theorem is stated under two named hypotheses, a continuum bridge and a non-perturbative cluster
+decay, and concludes a gap of 1.552 ± 0.038 GeV, a simulation's number with its error bar; the gap
+enters twice by insertion, as the square of that number set equal to a Ricci lower bound on the orbit
+space, which no derivation supports, and as the decay rate of its cluster theorem, and once by
+assertion, a polymer contraction evaluated at the finest scale only and declared uniform toward the
+infrared, where asymptotic freedom denies the bound it needs; its own reviewers' guide names the
+first of these as a trap, and its own README classes the Lean corpus as a conditional reduction whose
+premise is the cluster decay. The polymer step is group-blind and would give the four-dimensional
+U(1) theory a gap: it fails the test of §8.3 where it is asserted.55 A Zenodo record of 27 September
+2026, written by a language model at its depositor's request and labelled as awaiting the depositor's
+review, proves a spectral gap for the SU(2) Kogut­Susskind Hamiltonian on open spatial boxes at
+strong coupling, uniform in the box and the spacing: unconditionally for g²  3.978 with its order-2
+inputs recomputed, conditionally to g²  3.684 on coefficient bounds read and not re-implemented,
+by a vacuum equation, a Casimir inequality proved through a supply­demand theorem, and a spectral
+return. It states its own limit, that the continuum path leaves its domain after finitely many steps, and
+claims no crossing. It is a sibling of Theorem 8.7 in the Hamiltonian formulation, at a strong-coupling
+threshold that cannot be ranked against 0.2452 because no exact map joins the two couplings there,
+and not a claimant.56
+
+55github.com/garygitton/yang-mills-millennium-problem: Volume V, p. 2 (Theorem 1.2) and p. 5 ((2.6), Theorem 2.1); Volume
+II, p. 14 (Theorem 4.5 and its proof, evaluated at k = 0) and pp. 23­24 (Theorem 7.1); the README's epistemic note and the
+REVIEWERS_GUIDE; the Lean theorems dimensional_transmutation_mass_gap_positive,
+canonical_balaban_polymer_activity_subunitary_evaluation (the inequality 582 < 1000) and
+scaleway_su3_measured_mass_gap_positive (a typed number); read by the fourth seat of this work on 29 October 2026.
+56Zenodo record 23001803, version of 27 September 2026, the Yang­Mills record: §0.3, §1, Theorem 2.1, Lemma 2.2, Corollary
+2.6 and Proposition 6.2; read by the fourth seat on 29 October 2026.
+
+                                                                             19
+                                 THE GROUND · EDWIN BOSTON III
+
+7. The Residue and Its Completion
+
+This section proves part (iv) of the Ground Theorem.
+
+7.1 The residue
+
+Table 1 sets each demand of the problem statement beside what the two manuscripts assert, with
+the section of this paper that carries the evidence.
+
+The problem demands              YMM1, three dimensions                The zeroth draft, four dimensions
+
+Every compact simple gauge       SU(2) (§5.2)                          SU(2); no statement for SU(N), N  3
+group                                                                  (§6.3)
+
+All gauge-invariant local        The scalar plaquette-energy density;  The action density (§6.2)
+polynomials in the curvature     curvature bilinears in YMM2 (§§5.1­
+                                 5.2)
+
+The infinite volume              Limits along subsequences (§5.3)      Limits along subsequences of cutoffs
+                                                                       and volumes, under the declared inputs
+                                                                       (§6.2)
+
+Euclidean invariance (E1)        Asserted (§5.3)                       Translations and the hypercubic group;
+                                                                       O(4) under the flux hypothesis (§6.2)
+
+Reflection positivity and        Asserted (§§5.3­5.4)                  Asserted under the declared inputs
+symmetry (E2), (E3)                                                    (§6.2)
+
+The cluster property (E4) and a In each component, with decay |v|-1; not Not claimed (§6.3)
+
+unique vacuum                    for the original limit (§§5.3­5.4)
+
+Field operators and the          A scalar Wightman field in each       Not claimed; a non-negative
+relativistic spectral condition  component (§5.4)                      Hamiltonian (§§6.2­6.3)
+
+Short-distance agreement with The two-point law (5.3) (§5.5)           A two-point law in the running coupling,
+asymptotic freedom                                                     uniform in the volume (§6.2)
+
+A mass gap  > 0 with finite      Not asserted (§5.6)                   Not addressed (§6.3)
+mass
+
+A verified proof                 Not satisfactorily vetted, by the authors' Conditional; two supporting statements
+
+                                 statement (§6.4)                      not yet written (§6.2)
+
+                  Table 1. The demands of the problem statement and the assertions of the corpus.
+
+7.2 The gap is exponential clustering
+
+The decisive observation is that, for a reflection-positive theory, a mass gap and exponential decay of
+the reflection-positive correlations are one and the same property. The argument is the spectral
+theorem applied to the semigroup of Osterwalder and Schrader; its weight here lies in the
+identification it makes. Let S be reflection positive and invariant under time translations, and let H, 
+and H  0 be the Hilbert space, the vacuum and the Hamiltonian that Osterwalder and Schrader
+construct from these two properties, with the relations of Theorem 3.1. This is exactly the structure
+that both manuscripts assert for their limits.
+
+                                                       20
+THE GROUND · EDWIN BOSTON III
+
+Theorem 7.1 (The gap is exponential clustering). Let m > 0. The following conditions are
+equivalent.
+
+(a)  is, up to a phase, the only vector annihilated by H, and H has no spectrum in the interval (0,
+m).
+
+(b) For every finite family f and every t  0, S(f · tf) - |S(f)|²  e-mt ( S(f · f) - |S(f)|² ).
+
+(c) For every finite family f there are a constant Cf and an unbounded set Tf  [0, ) such that S(f
+· tf) - |S(f)|²  Cf e-mt for every t  Tf.
+
+When they hold and H has dimension at least two, the mass m* = inf spec(H restricted to ) satisfies
+m  m* < .
+
+Proof. For a finite family f put f = [f] - S(f). Since , [f] = S(f), the vector f is the orthogonal
+projection of [f] onto , and since e-tH = ,
+
+, -  = ( · ) - |()|2,   0.                                                                       (7.1)
+
+The space  reduces H, and since the vectors [f] are dense in H, the vectors f are dense in .
+
+    (a)  (b). By (a) the restriction of H to  has spectrum in [m, ), so e-tH  e-mt on  by the
+spectral theorem. Apply this to f in (7.1); the case t = 0 of (7.1) identifies f².
+
+(b)  (c). Take Cf = S(f · f) - |S(f)|² and Tf = [0, ).
+
+    (c)  (a). Let f be the spectral measure of H in the vector f, a finite positive measure on [0, ).
+For 0  m < m and t  Tf, identity (7.1) and condition (c) give
+
+([0, ]) -   - ()   -,                                                                            (7.2)
+
+so f([0, m])  Cf e-(m-m)t for arbitrarily large t, and f([0, m]) = 0. Letting m increase to m gives f([0,
+m)) = 0, which says that Ef = 0 for the spectral projection E of H onto [0, m). The f are dense in 
+and E is bounded, so E vanishes on . Hence H  m on : no nonzero vector of  is annihilated by
+H, and H has no spectrum in (0, m). This is (a).
+
+    Finally, if dim H  2 then   {0}, the spectrum of H on  is a nonempty closed subset of [m, ),
+and its infimum m* is finite. 
+
+The finite form of the implication (c)  (a), the gap read off the decay of a positive symmetric transfer
+matrix, is checked by the Lean kernel.57
+
+Corollary 7.2 (Clustering). Under the conditions of Theorem 7.1, for all finite families f and g and every
+t  0, |S( · tf) - S() S(f)|  e-mt g f. If S also satisfies (E0)­(E3), the cluster property (E4)
+holds, and the same bound holds with t replaced by the translation by t in any direction.
+
+Proof. The left side is |g, e-tHf|, and e-tH has norm at most e-mt on . Under (E0)­(E3) the vacuum
+is unique by Theorem 7.1, and Theorem 3.1 gives (E4). A translation in another direction is conjugate
+to t by a Euclidean rotation, under which S is invariant by (E1), and the reflection Hilbert space built
+across the rotated hyperplane carries the same Hamiltonian spectrum, since the Schwinger functions
+it is built from are the same functions. 
+
+57Edwin Boston III; listed in the Records under the lattice theorems in Lean.
+
+21
+                                                           THE GROUND · EDWIN BOSTON III
+
+Measured against Theorem 7.1, the decay (5.2) asserted for the components of YMM1 is the decay of
+a theory whose mass gap has not been established: a bound by an inverse power of the separation is
+compatible with spectrum reaching down to zero. The distance between the power and the
+exponential is the mass gap.
+
+7.3 From the lattice to the limit
+
+Lemma 7.3 (Passage to the limit). Let Sj be Schwinger functions converging to S, along a subsequence,
+on the test functions flat at the coincidence diagonals, and let D  [0, ) be unbounded. Suppose that
+for every finite family f there are a constant Cf and numbers rj(t; f), with rj(t; f)  0 as j   for each t 
+D, such that Sj(f · tf) - |Sj(f)|²  Cf e-mt + rj(t; f) for t  D. Then S satisfies condition (c) of Theorem 7.1.
+Proof. For a finite family f and t  0 the families f and tf are supported in opposite half-spaces, so
+every test function entering Sj(f · tf) is flat at the coincidence diagonals, and both sides of the
+hypothesis converge along the subsequence. The inequality passes to the limit, with Tf = D. 
+
+Theorem 7.4 (The completion). Let a construction be given by Wilson measures on periodic lattices
+of spacings aj = aL-K, with L a fixed integer and Kj  , whose sides tend to infinity, with bare couplings
+tuned along the sequence; and let the Schwinger functions Sj of smeared gauge-invariant observables
+converge along a subsequence to S. Let D be the set of times n aL-k with n, k  0. Suppose that the lattice
+correlations cluster uniformly at a physical rate m > 0: for every finite family f there are a constant Cf
+and numbers rj(t; f)  0 as j   for each t  D, such that
+
+    Sj(f · tf) - |Sj(f)|²  Cf e-mt + rj(t; f) for t  D.
+    Then S has a unique vacuum, its Hamiltonian has no spectrum in (0, m), and its connected reflection-
+    positive correlations decay in time at the rate m. If S is non-trivial, its mass is finite. The hypothesis
+    holds, with rj = 0, when the Sj are the correlations of the states  of spatial tori, the transfer matrices
+    satisfy mlat(j)  m aj on the sector generated by the observables, and the correlations at separated
+    points are bounded uniformly in j.
+Proof. The set D is unbounded and independent of f. Lemma 7.3 gives condition (c) of Theorem 7.1
+for S, and Theorem 7.1 with Corollary 7.2 gives the conclusions; non-triviality means that H has
+dimension at least two. For the last sentence, each t  D is an integer multiple njaj of the spacing for
+all large j, and the smeared observable of tf is then the lattice translate by nj steps of the smeared
+observable of f. With qj = / for the transfer matrix of rung j, so that -log qj = mlat(j)  m aj, Lemma
+4.2 gives Sj(f · tf) - |Sj(f)|²  qjn (Sj(f · f) - |Sj(f)|²)  e-mt (Sj(f · f) - |Sj(f)|²), and the bracket is a
+correlation at separated points, bounded uniformly in j by a constant depending only on f. 
+
+Corollary 7.5 (What the gap supplies against the footnote). For a construction by compactness of
+the kind in Theorem 7.4, uniform clustering at a physical rate, and in particular a lattice gap uniform in
+physical units, supplies the mass gap and the uniqueness of the vacuum. With (E0)­(E3), (E1) meaning
+full Euclidean invariance, it supplies the properties that the footnote of Proposition 3.2 names: the mass
+gap and the axioms.
+Proof. Theorem 7.4 gives the gap and the unique vacuum; with (E0)­(E3), Corollary 7.2 gives the
+cluster property (E4), which completes the axioms. 
+
+                                                                             22
+                                                           THE GROUND · EDWIN BOSTON III
+
+7.4 The collapse of the components
+
+Corollary 7.6 (The gap collapses the component measure). If the original limit  of Theorem B of
+YMM1 satisfies condition (c) of Theorem 7.1, then its component measure  is a point mass,  is itself a
+clustering theory, and its connected correlations decay exponentially in every direction.
+Proof. By Theorem B of YMM1 the zero-energy space of  is L²(X, ), with the vacuum the constant 1
+(§5.4). By Theorem 7.1 the zero-energy space is spanned by , so L²(X, ) is one-dimensional. If 
+were not a point mass, a Borel set B with 0 < (B) < 1 would give a function 1B independent of 1 in
+L²(X, ). Hence  is a point mass; since  has full support, X is a single point and  = . The decay is
+exponential in time by Corollary 7.2 and in every direction by the Euclidean invariance of . 
+
+A gap would therefore do more than add a property to the limit: it would remove the need for the
+conditioning by which the corpus obtains its clustering components.
+
+Proof of part (iv). The residue is Table 1, each entry of which is proved in Sections 5 and 6. The
+completion is Theorem 7.4, and its equivalence with uniform exponential clustering is Theorem 7.1,
+carried along the sequence by Lemma 7.3. 
+
+8. The Ground Handed Over
+
+8.1 The object that remains
+The object that remains is the infinite-volume mass gap of four-dimensional SU(2) lattice Yang­Mills
+theory at every coupling, uniform in physical units along the scaling sequence: a constant m > 0 with
+mlat(j)  m aj at every rung of the construction's sequence, a lower bound on the lattice gap in physical
+units, uniform in the spacing and in the volume. By Theorem 7.4 it is the mass gap of every continuum
+limit point, and the same object for every compact simple gauge group completes the problem's
+demand for a gap. Two features of this inequality fix the work it demands.
+
+    The first is its scale. In lattice units the required gap tends to zero with the spacing, like m aj, so it
+cannot be read at a single coupling. The lattice gaps that are proved directly hold at strong coupling,
+where the transfer matrix mixes rapidly: for SU(2) this is the theorem of Osterwalder and Seiler, and
+for every finite gauge group it is among the theorems checked by machine in §8.2.58 For SU(2) the
+constant of that gap is a theorem of Edwin Boston III: the conditional law of one link given its six
+staples, the heat-bath kernel, moves in total variation by at most 2/(3) times the change of the
+staple sum, because the mean absolute deviation of a coordinate of a von Mises­Fisher law on the
+three-sphere is at most its value 4/(3) at the uniform law, with equality there alone; so Dobrushin's
+single-site condition holds on the full lattice for  < 3/72 = 0.1309, and in the temporal gauge on
+lattices open in time, where every time link is the identity and a space link has fourteen neighbouring
+links rather than eighteen, four spatial plaquettes with three other space links each and two temporal
+plaquettes with one, for  < 3/56 = 0.1683.59 The construction's sequence runs into the scaling
+
+58Osterwalder and Seiler, op. cit., for the strong-coupling gap of the Wilson theory with a compact gauge group; the finite-group
+form with its explicit coefficients is Edwin Boston III's, listed in the Records.
+59Edwin Boston III, the sharp one-link lemma: the bound on the mean absolute deviation is certified by an enclosure of 9,104
+rectangles in the plane of the two parameters of the law, no cell undecided, with the axial case by Chebyshev's association
+
+                                                                             23
+                                                           THE GROUND · EDWIN BOSTON III
+
+window of weak bare coupling, where asymptotic freedom ties the bare coupling to the spacing. The
+inequality must be carried from the one end of the sequence to the other.
+
+    The second is its carrier. The carrier is the renormalisation group itself: a chain of blocking steps
+from a fixed physical scale, at which the effective coupling is small and Balaban's estimates hold,
+down to the scale of the gap, with the error of every step certified. Five links compose this carrier,
+and each has its status. The first is the ultraviolet half: the blocking steps from the cutoff to a fixed
+physical scale at which the effective coupling is still small, with the effective action held near Wilson's
+uniformly in the number of steps. This is Balaban's theorem, and what the carrier needs of it beyond
+his published estimates is stated as an interface: the convergence of the correlation functions of the
+effective theory at that scale as the cutoff is removed, and the Euclidean invariance of the limit, the
+two pieces the zeroth draft deduces conditionally and names among its inputs. The second is a single
+bound at the crossover scale, where the effective coupling ceases to be small. Along the Gaussian
+scales above it the mixing coefficient of a fibre is exactly one, that of a massless Gaussian, so no
+contraction is to be certified there; the content lies at the crossover scale alone, and the object there
+is the influence functional of the blocked action: the covariance of a boundary-adjacent link's
+projection with every plaquette of the block under the worst boundary datum, equivalently the mixed
+second differences of the non-Wilson part of the renormalised action. This bound is the open
+mathematics of the route. The third is the infrared half, the gap of the blocked theory inside the
+strong-coupling disk, which is the theorem of Osterwalder and Seiler for SU(2) and a theorem
+checked by machine for every finite gauge group. The fourth is the uniformity of the second link's
+bound in the cutoff: the effective actions at the fixed scale differ across the sequence by tilts of small
+oscillation, and a bound stable under such tilts makes the decay rate and range of the third link
+independent of the cutoff, which is the inequality of Theorem 7.4 with one constant. The fifth is the
+assembly, Theorem 7.4 itself. Once the second link is in hand, two roads carry it to the gap: the
+transfer-matrix road of Propositions 8.1 and 8.2 below, and the Gibbs road of §8.3, where Theorem
+8.5 states the passage from a Dobrushin bound on the blocked measure at one fixed physical scale,
+with the field inside the blocks clustering at that scale, to the gap of every limit point, the third and
+fourth links among its hypotheses and Proposition 8.4 the fourth link's exact form. The remaining
+entries of Table 1, namely every compact simple gauge group, the full algebra of curvature
+observables and the unconditional invariance under O(4), stand beside it as the rest of the existence
+that the problem demands.
+
+8.2 The instruments in hand
+
+The proof that follows begins with instruments in hand. Each reads a lattice gap exactly at fixed
+coupling, and each is stated here at the strength of its proof or of its record.
+
+Proposition 8.1 (Dobrushin's coefficient bounds the gap). Let T be a transfer operator with a
+continuous, strictly positive kernel on a compact space X, with largest eigenvalue  and positive
+eigenfunction , and let P(x, dy) = T(x, dy) (y) / ( (x)) be its Doob transform, a Markov kernel.
+
+inequality and the remainder by hand; the heat-bath kernel's constant follows by the path argument, each law along the path
+being a von Mises­Fisher law; its record and run of record are listed in the Records. The time-open count is the paper's.
+
+                                                                             24
+THE GROUND · EDWIN BOSTON III
+
+For k  1 let (Pk) = supx,y Pk(x, ·) - Pk(y, ·)TV be Dobrushin's coefficient. Then every real eigenvalue  
+ of T satisfies ||/  (Pk)1/k, and when T is positive,
+
+    1      1              1.                (8.1)
+         ()
+
+When X is finite, mlat equals the limit of the right side as k  .
+
+Proof. The Doob transform has the eigenvalues / of T, with eigenfunctions u = /, which are
+bounded because  is bounded below on the compact space. For a real bounded function u, Pku(x) -
+Pku(y) is the integral of u against the signed measure Pk(x, ·) - Pk(y, ·), of total mass zero and total
+variation at most 2(Pk), so osc(Pku)  (Pk) osc(u). If Pu = u with  real and u nonconstant, then
+osc(Pku) = ||k osc(u), whence ||k  (Pk). When T is positive every eigenvalue is non-negative, and
+the bound at  is (8.1). When X is finite, (Pk) is the norm of Pk on the signed measures of total mass
+zero, on which the spectrum of P is that of T/ with the simple eigenvalue 1 removed, and Gelfand's
+spectral-radius formula gives the limit. 
+
+The coefficient is Dobrushin's and the limit is Gelfand's.60 Proposition 8.1 turns the gap of Theorem
+7.4 into a statement about mixing: a certified bound (Pk)  e-k m a for the Doob chain of every rung's
+transfer matrix bounds every eigenvalue below the top of the whole spectrum, and therefore gives
+the gap mlat(j)  m aj on the sector generated by the observables.
+
+    A single coefficient (Pk) is a global quantity, and on a lattice of many sites it is close to one at
+every accessible k. The renormalisation group splits it into rung quantities that can each be certified.
+
+Proposition 8.2 (The chain lemma; Edwin Boston III). Let X be a finite state space, P the Doob chain
+
+of a transfer matrix on X with stationary law , and b : X  Y a block map with fibres Fy = b-1(y) and
+conditional laws (· | y). Let (b*)(y) = (Fy), and define the lumped chain P(y, ·) = xb¹(y) (x | y)
+(b*P²)(x, ·), so that one coarse step is two fine steps; for k  1 put Q = Pk. With  - TV = ½  | - |,
+define the fibre forgetting k, the largest of P2k(x, ·) - P2k(x, ·)TV over pairs x, x in one fibre; the lumping
+defect k, the largest of (b*P2k)(x, ·) - Q(b(x), ·)TV over x; and the fibre equilibration k, the largest of
+P2k(x, · | y) - (· | y)TV over x and the fibres y that P2k(x, ·) charges, where P2k(x, · | y) is P2k(x, ·)
+conditioned on Fy. Let Mk be the 2 × 2 matrix with rows ((Q) + 2k, 2k) and (k, 2k). Then
+
+(2)  () + 2 + 2 + 6,  (/)2  (),     1  1 ,  (8.2)
+                                   2  ()
+
+where (Mk) = ½[(d + 2k) + ((d - 2k)² + 8kk)] is the spectral radius of Mk and d = (Q) + 2k.
+
+Proof. For g : X   let (y) = xb¹(y) (x | y) g(x), a = osc(), s = maxy osc(g restricted to Fy) and r = g
+- b, so that |r|  s and r has mean zero under every (· | y). First, P2k(b)(x) = y (b*P2k)(x, y) (y)
+= (Q)(b(x)) + e(x), where e(x) integrates  against a signed measure of total mass zero and total
+variation at most k, so |e|  ka. Second, P2kr(x) = y (b*P2k)(x, y) xb¹(y) P2k(x, x | y) r(x), and
+because r has mean zero under (· | y) the inner sum equals x [P2k(x, x | y) - (x | y)] r(x), of
+modulus at most ks; so e = P2kr satisfies |e|  ks. Hence P2kg = (Q)b + e + e.
+
+60R. L. Dobrushin, "Central limit theorem for nonstationary Markov chains. I, II", Theory Probab. Appl. 1 (1956), 65­80 and 329­
+383; I. Gelfand, "Normierte Ringe", Mat. Sbornik 9 (51) (1941), 3­24.
+
+                                                                             25
+                 THE GROUND · EDWIN BOSTON III
+
+    For g = P2kg write a and s for its two oscillations. The fibre mean of g is Q plus a function
+bounded by ka + ks, and osc(Q)  (Q) osc(), so a  ((Q) + 2k)a + 2ks. For x, x in one fibre,
+|g(x) - g(x)|  k osc(g)  k(a + 2s), so s  k(a + 2s). Finally osc(g)  a + 2s. Since (P2k) is the
+supremum of osc(P2kg) over osc(g)  1, and osc(g)  1 gives a, s  1, the first inequality of (8.2) follows.
+The entries of Mk are non-negative, so the componentwise bounds (a, s)  Mk(a, s) chain: applying
+P2k j times with the same k at every step, against the same Q, so that the rung quantities are fixed,
+gives osc(P2kjg)  (1, 2) Mkj (1, 1)T for osc(g)  1. Proposition 8.1 applied to P2kj then gives (/)2kj 
+(P2kj)  (1, 2) Mkj (1, 1)T  C·j·(Mk)j, the factor j present only where Mk is not diagonalisable, and the
+j-th root removes it: this is the second inequality, of which the third is the logarithm. 
+
+The lemma carries its own scope. The lumping defect accumulates over the coarse chain's mixing
+time, since k  k by telescoping and   , so on a chain of n levels down to the mixing scale the
+level m must certify m2n-m < 1. The instrument is therefore finite: it reaches a gap through finitely
+many certified levels, and the continuum end of the sequence lies beyond it, with the renormalised
+trajectory of §8.1. Its place in Theorem 7.4 is exact: the inequality mlat(j)  m aj at rung j holds as soon
+as one k and one block map certify (Mk)  e-2k m a there. Read in double precision on the decimation
+of the Z transfer matrix of the 2×4 cross-section to 2×2, the lemma gives mlat  1.538 at u =  against
+the certified gap 3.831, and mlat  0.867 at u = ½ against the certified gap 1.763.61
+
+Proposition 8.3 (The shadow ladder; Edwin Boston III). Let G be a finite subgroup of SU(2)
+containing -1, weighted by Wilson's factor w(g) = eb(g),  = tr the fundamental character, and let c/c
+= ½ g w(g) (g) / g w(g) be its fundamental character coefficient; for SU(2) itself the sums are Haar
+integrals. Let mn(G) be the moments of  under the uniform measure on G and t the largest integer with
+mk(G) = mk(SU(2)) for every k  t. Then t is odd, and the functions tube(b) = -4 log(c/c) of G and of
+SU(2) satisfy
+
+  ()  -   (2)()  =  -  4  -1  +  (+1),   = +1() - +1((2)). (8.3)
+                       !
+
+The integer t is the design strength of G as a set of points of the three-sphere SU(2).
+
+Proof. Since -1  G and (-g) = -(g), the odd moments vanish, so t is odd and every series below is
+even. Let Z(b) = n mn bn/n! be the normalised partition function. Then c/c = ½ (log Z)(b), and since
+m = 1, c/c = (b/2)(1 + u(b)) with u(b) = O(b²). The moments of G and of SU(2) agree through order
+t, so log ZG - log ZSU(2) = bt+1/(t+1)! + O(bt+3). Since u = (log Z)/b - 1, differentiating and dividing by
+b gives uG - uSU(2) = bt-1/t! + O(bt+1), and since tube = -4 log(b/2) - 4 log(1 + u) with u = O(b²), (8.3)
+follows.
+
+    The moment mn(G) is the multiplicity of the trivial representation of G in the n-th tensor power
+of the fundamental representation. By the Clebsch­Gordan rule the moments agree through order n
+exactly when no irreducible representation of SU(2) of spin j with 1  2j  n has a nonzero G-invariant
+vector. The harmonic polynomials of degree 2j on the three-sphere are the matrix coefficients of spin
+j, and their average over G is the projection onto the G-invariant vectors, so the same condition says
+that G is a design of strength n. 
+
+61Edwin Boston III, the chain lemma; its record and run of record are listed in the Records.
+                                                                             26
+                         THE GROUND · EDWIN BOSTON III
+
+For the quaternion group Q and the binary tetrahedral, octahedral and icosahedral groups 2T, 2O
+and 2I, Table 2 gives the exact values. The moments of SU(2) are the Catalan numbers 1, 2, 5, 14, 42,
+132 at n = 2, 4, ..., 12; those of the four groups are 1, 4, 16, 64, 256, 1024; 1, 2, 6, 22, 86, 342; 1, 2, 5,
+15, 51, 187; and 1, 2, 5, 14, 42, 133. The finite groups therefore approximate the strong-coupling gap
+of SU(2) to an order fixed by their design strength, with an exactly known first defect.62
+
+Group  Order  Design strength t mt+1(G) against SU(2)                  First defect -4/t!
+
+Q      8      3                                4 against 2         2   -4/3
+
+2T     24     5                                6 against 5         1   -1/30
+
+2O     48     7                                15 against 14       1   -1/1260
+
+2I     120    11                               133 against 132     1   -1/9979200
+
+Table 2. The shadow ladder: the order at which each finite subgroup's strong-coupling gap parts from that of SU(2),
+                                                          and the exact first defect.
+
+    The gap by counting; Edwin Boston III. For the Z gauge theory in 2 + 1 dimensions on the periodic
+cross-sections 2×2, 2×3, 2×4 and 3×3 at couplings e-2 among ½, , ¼ and , fourteen cells in all,
+the two leading eigenvalues of the transfer matrix are bracketed by sign counts of integer matrices,
+by Sylvester's law of inertia, so that every gap is certified to thirteen or fourteen decimal places by
+counting alone, with no limit taken.63 At all fourteen cells the brackets contain the eigenvalues
+computed to forty-five digits by a second engine that shares no computation with the first, and they
+meet a third, independently certified set of intervals. On the 3×3 cross-section at e-2 = ½ the gap is
+4.391458312669 in lattice units.
+
+    The gap through duality; Edwin Boston III. By Wegner's duality the gap of the Z gauge theory in
+2 + 1 dimensions at coupling  is the inverse correlation length of the three-dimensional Ising model
+at the dual coupling K*, with tanh K* = e-2.64 Edwin Boston III reads the first two coefficients of the
+strong-coupling expansion of the gap exactly on the 3×3 cross-section, meets through them the first
+three coefficients of the low-temperature series of the Ising correlation length published by Arisue
+and Tabata, and, solving that published relation for the coefficients that no cross-section of side at
+most four can read, obtains the expansion on the infinite lattice65
+
+              () = -4   + 2 - 15 4 + 7 6 - 87 8
+                                                            2   3  4
+
+                 +  251  10  -            331  12  +  (14),      =  ,                      (8.4)
+                     5                     2
+
+with all ten published coefficients met.
+
+62Edwin Boston III, the shadow ladder; the record and its run of record are listed in the Records at the end of this paper.
+63J. J. Sylvester, "A demonstration of the theorem that every homogeneous quadratic polynomial is reducible by real orthogonal
+substitutions to the form of a sum of positive and negative squares", Philosophical Magazine 4 (1852), 138­142. The computation
+is Edwin Boston III's; its record is listed in the Records.
+64F. J. Wegner, "Duality in generalized Ising models and phase transitions without local order parameters", J. Math. Phys. 12
+(1971), 2259­2272.
+65H. Arisue and K. Tabata, "Low-temperature series for the correlation length in d = 3 Ising model", Nucl. Phys. B435 (1995),
+555­566. The reading is Edwin Boston III's; its record is listed in the Records.
+
+                                                                             27
+                                                           THE GROUND · EDWIN BOSTON III
+
+    The transform on a tube; Edwin Boston III. For the SU(2) Wilson theory in 2 + 1 dimensions on the
+spatial torus of side two, in the temporal gauge, with the transfer matrix written in the spin-network
+basis truncated at spin j  1, a space of 2,018 states, and at j  3/2, a space of 33,342 states, Edwin
+Boston III reads the spectrum within the truncation and proves two facts about the operator. First,
+the inequality of Proposition 8.1 holds for its Doob chain, so that the gap is at least (1/k) log(1/(Pk))
+for every k. Second, the centre flux through the two cycles of the torus commutes with the transfer
+matrix, so the chain of Proposition 8.2 lumps exactly by the flux, with lumping defect zero: the
+physical rate is the gap within the sector of zero flux, and the full gap is the least of the gaps between
+sectors. A tube is not , and the theorem supplies no uniformity in the cross-section; it is the first
+exact non-abelian instance of the structure the transform must carry. At j  1 and  = 2.3 the top
+eigenvalue is 3.86580, the full gap 1.01886 is the torelon of unit flux, the zero-flux gap is 2.771287,
+and the plaquette correlation along the tube decays at the rates 2.849, 2.843 and 2.837 at separations
+6, 7 and 8, falling toward the sector's gap; across  from 0.2 to 6 the correlation decays at the sector's
+own rate, and at  = 0.2 the rate 11.983 meets the strong-coupling value -4 log(c/c) = 11.99 to
+0.06 per cent. The truncation is not small, and every number is carried at its cutoff: read at j  3/2,
+the rate at  = 2 falls by 6 per cent, and at  = 2.3 the zero-flux gap reads 2.452280 against 2.771287,
+the torelon 0.931023 against 1.018863, and the correlation's rates 2.590, 2.563, 2.552 and 2.546 at
+separations 5 to 8 fall toward the sector's gap as before.66
+
+    The lattice theorems, checked by machine; Edwin Boston III. In the Lean proof assistant, above the
+Mathlib library and with no unproved step, Edwin Boston III has formalised the following lattice
+theorems, and the Lean kernel has checked them.67 For the transfer matrix of every finite-group
+lattice theory: every even-time quadratic form is non-negative; the spectral sum holds; the dominant
+root is simple and strictly dominant, with its residual law; the string energy is the exact limit of two
+Perron roots; and there is a mass gap on every finite cross-section, at every coupling. For every finite
+group acting faithfully by a real orthogonal representation, on every finite cross-section, the static
+potential of a Wilson loop is at least the mass gap of its sector. For the Z theory: Griffiths' inequalities
+hold, with the monotonicity in the couplings; the infinite-volume Wilson expectation exists; the string
+tension exists, with its strong-coupling bound; and on a slab of T + 1 cross-sections of d-1 the mass
+gap is uniform in the cross-section and in T whenever (3m + 2) tanh  < 1, where m = 2(d - 2) is the
+number of in-plane plaquettes on a link, that is, for  < 0.1257 when d = 3 and  < 0.0716 when d = 4.
+Beside these stand the finite forms of the arguments of Sections 4 and 7: the bound that a gap imposes
+on every connected two-point function, the gap read off the decay, the definition of a physical gap
+along a scaling sequence, and Dobrushin's comparison theorem.
+
+8.3 The reduction
+
+The passage from the second link to the gap is itself a theorem, and this section proves it at the
+strength of its hypotheses. Fix a physical length ac = 2ka with k  0, an integer multiple of the unit
+a of Theorem 7.4, and call it the coarse scale. Take the construction with L = 2, with lattices whose
+
+66Edwin Boston III, the transform on a tube; the instrument, its records at both cutoffs and the run of record are listed in the
+Records. The spin-3/2 record at  = 2.3 is posted with its digest in the repository; its gate run follows the run of record named
+there.
+67Edwin Boston III, the lattice theorems in Lean; the files, the theorem names and the run of record are listed in the Records.
+
+                                                                             28
+THE GROUND · EDWIN BOSTON III
+
+sides are multiples of ac and whose reflection hyperplane is one of the hyperplanes x = n ac. Every
+spacing aj then divides ac; the half-open cubes of side ac with corners on the coarse lattice  of
+spacing ac, reduced modulo the sides, partition the lattice of rung j into blocks, each link assigned to
+the block containing its midpoint. Write By for the block at the coarse point y and |y - y| = max |y -
+y| for the distance on the coarse lattice; the four links of a plaquette lie in blocks at mutual distance
+at most one. For a bounded observable f, a function of the links, let S(f) be the set of blocks containing
+a link on which f depends, N(f) its cardinality, f its supremum norm, and y(f) the oscillation of f
+under changes of the links of By alone, so that y(f)  2f and y(f) = 0 off S(f); the distance between
+two sets of blocks is the least distance between their members. For a smeared Wilson loop, for a
+polynomial in such loops, and for every observable whose support and bound are fixed in physical
+units, N(f) and f are bounded uniformly in j.
+
+    A block map is a measurable bijection of the configurations of a block onto a product V × j, with
+measurable inverse, the same for every block, in which V is a fixed compact space, the space of the
+coarse variables, and j is compact; one SU(2) element per coarse link, the holonomy of the block
+along a fixed path, with the remaining links in a fixed gauge, is such a map. Write vy  V and y  j
+for the coordinates of the links of By. The coarse coordinate of a block is a function of that block's
+links alone, and a change of it at fixed fine coordinates changes the links of that block alone; so a
+change of one coarse variable alters the Wilson conditionals at that block and at the blocks adjacent
+to it, and nowhere else. The blocked measure j is the law of the coarse configuration v = (vy) under
+the Wilson measure j, and the fibre measure j(· | v) is the conditional law of the fine coordinates 
+= (y) given v: the Gibbs measure on the fibres whose conditional at a block is the Wilson conditional
+of that block restricted to its fibre, defined for every v. The blocked measure has conditional laws
+j(dvy | v) given the other coarse variables, and Dobrushin's interdependence matrix of the blocked
+measure is
+
+(, ) =  (· | ) - (· | ),       (8.5)
+
+the supremum over pairs v, v of coarse configurations that differ only at y, and ·TV the total
+variation distance of the two conditional laws of vy. The coarse variables are of one type at every rung,
+so the total variation in (8.5) is taken on one fixed space for every j.
+
+Proposition 8.4 (The tilt lemmas). Let p and p be probability measures on a compact space X,  a
+bounded measurable function on X with oscillation osc  = sup  - inf , and Tp = ep / p(e) the tilt of
+p by . Then
+
+ -   1 - - ,  -      - .       (8.6)
+
+Consequently, let W be a positive weight on the configurations of finitely many sites with compact spin
+spaces, with interdependence matrix C, and  a bounded function of the configuration; let oy() be the
+supremum, over configurations, of the oscillation of  in the variable at y, and yy() the supremum,
+over pairs of configurations differing only at y, of the oscillation in the variable at y of the difference of
+the two restrictions of . Then the weight W e has interdependence matrix at most
+
+() (, ) + 1 - -().             (8.7)
+
+29
+  THE GROUND · EDWIN BOSTON III
+
+Proof. Normalise  so that its infimum is 0 and its supremum is o = osc ; the tilt is unchanged. Then
+e takes values in [1, eo] and A = p(e) lies in the same interval, so Tp has density e/A  e-o with
+respect to p; for every measurable set B, p(B) - (Tp)(B)  (1 - e-o) p(B)  1 - e-o, and the supremum
+over B is the first inequality. For the second, let pu = p + u(p - p) for 0  u  1 and qu = Tpu, with Au =
+pu(e)  1. For a measurable set B, qu(B) = pu(e1B)/Au, and differentiating in u,
+
+  ()  =   1    (1  -   ())  (    -  ).
+         
+
+The integrand (1B - qu(B)) e takes values in [1 - qu(B), (1 - qu(B))eo] on B and in [-qu(B)eo, -qu(B)]
+off B, so its oscillation is at most eo; and the integral of a function of oscillation at most c against a
+signed measure of total mass zero is at most c times half the total variation of that measure, that is,
+cp - pTV. Hence |dqu(B)/du|  eop - pTV, and integrating from 0 to 1 gives |(Tp)(B) - (Tp)(B)|
+ eop - pTV for every B, which is the second inequality. For the last assertion, fix a site y and a
+configuration  of the other sites, and let p be the conditional law of the variable at y under W; the
+conditional law under W e is Tp with  the restriction of  to the variable at y at , of oscillation at
+most oy(). If  differs from  only at y, with restriction , then Tp = T-(Tp), so by the triangle
+inequality and the two inequalities just proved, Tp - TpTV  eop - pTV + 1 - e-osc(-)  eoC(y,
+y) + 1 - e-, with o = oy() and  = yy(). 
+
+Hypothesis I (The blocked bound). There are numbers  > 0 and  < 1 and a rung j such that at
+every rung j  j, on every lattice of the construction, y Cj(y, y) e|y-y|   for every coarse point y.
+
+Hypothesis II (The fibre clustering). There are a number  < 1, a constant K and a rung j such that
+at every rung j  j, on every lattice of the construction, for every coarse configuration v and all bounded
+observables f and g, with d the distance between S(f) and S(g):
+
+    (a) |j(fg | v) - j(f | v) j(g | v)|  K N(f) f g d;
+
+    (b) the fibre mean F(v) = j(f | v), as a function of the coarse configuration, satisfies y(F)  K N(f)
+    f r for every coarse point y, where r is the distance from y to S(f).
+
+Hypothesis I is the second link of §8.1 in its finite form: a statement about the conditional law of one
+coarse variable at one fixed physical scale, with the exponential weight that fixes the range, and with
+constants independent of the cutoff and of the volume. Hypothesis II is the ultraviolet half of the chain
+at the scales below ac: with the coarse variables held fixed, the field inside the blocks clusters at the
+block scale, and its means depend on distant coarse variables only through an exponentially small
+tail. It is demanded for every coarse configuration, the adversarial ones included, because a single-
+site criterion conditions on the worst case; this is where it exceeds the small-field expansions, which
+control the fluctuation field in typical backgrounds and the large fields by their probability, and it is
+named here as the demand it is. Neither hypothesis refers to a limit. Their consequence is the gap.
+
+Theorem 8.5 (The reduction of the gap to the blocked bound). Let a construction be as in Theorem
+7.4 with L = 2, blocked at the coarse scale ac with a block map as above, and suppose Hypotheses I and
+II. Put  = max(e-, ). Then for every  with  <  < 1 there is a constant K, depending on , , , K,
+N(f), N(g), f and g and on nothing else, such that at every rung j  j, on every lattice of the
+construction, for all bounded observables f and g, |Sj(fg) - Sj(f) Sj(g)|  K d, with d the distance between
+S(f) and S(g); and every limit point of the construction's Schwinger functions, on the sector generated
+
+                   30
+               THE GROUND · EDWIN BOSTON III
+
+by the observables that are bounded uniformly in j, has a unique vacuum and a Hamiltonian with no
+spectrum in (0, m), where
+
+                  = 1  ( ,  1 ).                      (8.8)
+                               
+
+Proof. Fix j  j, a lattice, and bounded observables f and g; write F(v) = j(f | v) and G(v) = j(g | v) for
+their fibre means, bounded by f and g. The covariance splits along the block map: j(fg) -
+j(f)j(g) = [j(FG) - j(F)j(G)] + j(j(fg | ·) - FG). The second term is the j-mean of the covariance
+of f and g under the fibre measure, at most KN(f)fgd by Hypothesis II(a).
+
+    For the first term put G = G + 2g, with values between g and 3g, and  = Gj/j(G). The
+blocked measure is a finite system of coarse variables with compact values, and Dobrushin's
+comparison theorem applies to it:68 if  has conditional laws that differ from those of j at y by at
+most by in total variation, for every conditioning, then for every bounded function F of the coarse
+configuration, |(F) - j(F)|  i,y i(F) D(i, y) by, where D = n0 (Cj)n. The conditional law of  at y is
+that of j tilted by log G as a function of vy, so by the first inequality of Proposition 8.4 the two differ
+by at most by = 1 - e-osc  osc  y(G)/inf G  y(G)/g  KN(g) r, where osc is the oscillation of
+log G in vy and r the distance from y to S(g), by Hypothesis II(b). Under Hypothesis I the weighted
+matrix C(y, y) = Cj(y, y) e|y-y| has row sums at most , and since |y - y|  |y - y| + |y - y|, induction
+on n gives (Cj)n(y, y) e|y-y|  Cn(y, y)  n; so D(y, y)  e-|y-y|/(1 - ). With i(F)  KN(f)fr by
+Hypothesis II(b), r the distance from i to S(f), the comparison theorem gives
+
+| ()  -  () |    , () (, )     ² () ()        , (,),
+                                       1 - 
+
+where e(i, y) = ri + |i - y| + ry, with ri the distance from i to S(f) and ry that from y to S(g), and  =
+max(e-, ) bounds the base of each of the three factors. By the triangle inequality e(i, y)  d, and the
+number of pairs (i, y) with e(i, y)  n is at most N(f)N(g)(2n + 1)8, since i then lies within distance n of
+S(f) and y within distance n of S(g). Hence the last sum is at most N(f)N(g) nd (2n + 1)8 n, which is
+d times a polynomial in d and is therefore at most Kd for every   (, 1), with K depending on
+, , N(f) and N(g). Since j(FG) - j(F)j(G) = j(G)((F) - j(F)) and j(G)  3g, the first term is
+at most 3K²N(f)N(g)fgKd/(1 - ). Adding the second term gives the covariance inequality,
+with K = 3K²N(f)N(g)fgK/(1 - ) + KN(f)fg.
+
+    For the gap, let f be an observable, bounded uniformly in j, whose links lie in the time interval [0,
+w]. The links of f lie in [-w, 0] and those of tf in [t, t + w], and the block boundaries in time are the
+multiples of ac, so the distance between S(f) and S(tf) is at least t/ac  t/ac - 1. The covariance
+inequality gives Sj(f · tf) - |Sj(f)|²  (K/) e-mt with m = log(1/)/ac, the constant independent of
+j and of the lattice because N(f) and f are. This is the hypothesis of Theorem 7.4 with rj = 0 at every
+t  D, so Theorem 7.4 leaves no spectrum in (0, m) for every   (, 1), hence none in (0, m) with m
+= log(1/)/ac, which is (8.8). 
+
+68R. L. Dobrushin, "Prescribing a system of random variables by conditional distributions", Theory Probab. Appl. 15 (1970), 458­
+486, where the uniqueness theorem and the comparison theorem are proved for arbitrary single-site spaces; the comparison
+theorem is used here in the form of Theorem 8.20 of H.-O. Georgii, Gibbs Measures and Phase Transitions, second edition, de
+Gruyter, Berlin, 2011. Its finite form, for finite single-site spaces, is among the theorems checked by machine in §8.2.
+
+                                                                             31
+                                                           THE GROUND · EDWIN BOSTON III
+
+    Hypothesis I is read on the effective action of the coarse variables. Write the blocked measure as
+j(dv) = e-Adv with respect to the product over the blocks of a fixed reference measure on V, so that A
+= Aj(v) is the effective action at the coarse scale, and let yy(A) be its mixed second difference in the
+sense of Proposition 8.4: the supremum, over coarse configurations differing only at y, of the
+oscillation in vy of the difference of the two actions. The conditional law of vy under one of the two
+configurations is the tilt of its conditional law under the other by that difference, so the first inequality
+of Proposition 8.4 gives Cj(y, y)  1 - e- with  = yy(A). Hypothesis I is therefore a bound on the
+mixed second differences of the effective action between blocks, weighted by their distance: the
+influence functional of §8.1, and the number that a certificate of the second link must deliver at the
+coarse scale.
+
+    One might wish to state the hypothesis on the fine measure directly, taking the blocks as the sites
+of a Gibbs measure and the whole configuration of a block as its variable, so that Dobrushin's
+condition for that measure would give every local observable's decay at once, with no fibre clause.
+That form is not uniform in the cutoff. Its interdependence coefficient between adjacent blocks is the
+total variation between two laws of all the links of a block under outside data that differ on a whole
+neighbouring face; as the spacing tends to zero that face carries ever more links, the two laws become
+distinguishable almost surely by an average over the face, and the coefficient tends to one at every
+coupling, so that the row sums tend to at least one. Whole-block total variation is the one norm that
+does not survive large blocks, and the hypothesis of the reduction is therefore stated on the coarse
+variables, whose type is fixed, with the field inside the blocks entering through its clustering alone.
+
+    Theorem 8.5 is the second link in the form the route attacks it. Hypothesis I is a bound on the
+blocked measure at the coarse scale, the object named in §8.1 as the influence functional of the
+blocked action. Hypothesis II is what the ultraviolet half must deliver below that scale; for the gauge
+group SU(2) the literature states nothing in this form, so it stands beside Hypothesis I as the second
+half of what the crossover must supply, and it is named as such. Proposition 8.4 is the fourth link in
+its exact form. The blocked measures j have variables of one type at every rung, so it is meaningful
+to say that their conditional laws at the coarse scale are tilts of those of one rung j by functions j
+whose oscillations oj and weighted mixed differences y(1 - e-)e|y-y| tend to zero; when they are,
+Hypothesis I at the rung j with the constant  implies it at every later rung with any   (, 1), by
+(8.7). That the measures stand in this relation is the ultraviolet interface of §8.1, and it is the place at
+which Balaban's theorem enters the chain, with its two unpublished pieces and with the unpublished
+proof of its own hypothesis on the sequence of couplings.
+
+    The theorem places the four-dimensional gap at one remove from a finite statement. Hypotheses
+I and II concern the conditional law of one coarse variable and the field inside one block, at a fixed
+physical scale, with constants uniform in the cutoff, and nothing in them refers to a limit; their
+consequence, by Theorem 8.5, is the unique vacuum, the cluster property and the mass gap of every
+limit point, with the gap's value in (8.8). The proof that follows this paper is the proof of those two
+statements, and its measure of progress is a number: the distance, in blocking steps, between the
+scale at which the ultraviolet half delivers its interface and the scale at which the blocked bound is
+read. On the hierarchical model of the renormalisation group, in which each blocking step is the
+Migdal­Kadanoff recursion on a single-plaquette weight and is exact for the hierarchical lattice, that
+distance has been measured: Edwin Boston III has certified the flow of the SU(2) Wilson weight at
+
+                                                                             32
+                                                           THE GROUND · EDWIN BOSTON III
+
+256 bits of precision with directed rounding, every coefficient an interval and the truncation priced,
+and from  = 2.3 the fundamental character coefficient falls below the finite-group threshold 0.131
+of §8.2 at the seventh step, from  = 5 at the eighteenth, and from  = 10 at the thirty-seventh.69 The
+record also says what the model is not. Its first step from  = 2.2 moves the coupling up where the
+running of  moves it down, by an amount of the step's own size, so the model certifies the entry
+into the disk from its fifth rung and the threshold at its seventh, and not the crossover's first steps,
+which a flow on  must read on an object of . The distance Hypotheses I and II must cross is
+measured in the blocking steps of  itself; no step count of the hierarchical model is a reading of it,
+and no reading of the hierarchical model is a statement about . One more thing is known about the
+inequality that would carry the model's control to . A comparison that bounded the mixed second
+differences of the effective action of  by those of the hierarchical model, and held for every compact
+gauge group, would give the four-dimensional U(1) theory a gap wherever its hierarchical flow
+reaches the disk; the U(1) theory has a massless phase at weak coupling.70 The inequality the step
+needs therefore depends on the group, and that dependence is the first property a proof of
+Hypothesis I must use.
+
+    Two things are known about the strong end of that distance. With the first-order transmission
+between links, the total variation moved by one neighbour's change, no block criterion of Dobrushin
+and Shlosman's kind gains on the single link at any block side, because a link deep inside a block
+branches to its eighteen neighbours exactly as a link of the full lattice does, and the criterion's series
+has the single link's ratio. A block gains only through the transmission across an integrated face,
+which carries the product of the two pinned means of the face's other edges, an average over the
+interior: its one-face constant is an explicit function of the moments of the von Mises­Fisher law on
+the three-sphere, the covariance of the transmitted variable being a multiple of the identity plus one
+rank-one term whose size is a closed form in two Bessel ratios, certified in a run of record. What is
+not in hand is the theorem that composes that transmission along paths inside a block: every
+composition that is proved, Dobrushin's comparison theorem among them, takes a supremum over
+configurations at each step and so composes the first-order sensitivities only, which return the single
+link's disk; a convergent expansion of the block measure would compose the averages, and its radius
+has no proof beyond that disk.71 The paper carries no number for that widening until both are
+theorems.
+
+    One averaged composition is rigorous, and it is an instance of Theorem 8.5 in which the fibre
+clause holds exactly. Call a set of links of  a perfect cover when every plaquette contains exactly one
+of its links. One exists with period two in every direction: reading the coordinates of a site x modulo
+2, take the link from x in direction 1 when x = x = x, in direction 2 when x = x  x, in direction 3
+when x = x  x, and in direction 4 when x = x  x. The four conditions partition the sixteen
+
+69Edwin Boston III, the certified descent; the instrument, its records at the four starting couplings and the run of record are listed
+in the Records. The first step from  = 2.2 is read from the same record: the coefficient rises from 0.464 to 0.486, an effective
+coupling of 2.34, where the one-loop running of  takes 2.2 to 1.94 under one doubling of the scale.
+70A. H. Guth, "Existence proof of a nonconfining phase in four-dimensional U(1) lattice gauge theory", Phys. Rev. D 21 (1980),
+2291­2307; J. Fröhlich and T. Spencer, "Massless phases and symmetry restoration in abelian gauge theories and spin systems",
+Comm. Math. Phys. 83 (1982), 411­454.
+71Edwin Boston III; the block criterion's accounting, the one-face law and the closed form of its covariance are entered on the
+ledger of the work that follows this paper, with their readings on the exact cube.
+
+                                                                             33
+                         THE GROUND · EDWIN BOSTON III
+
+residues, so the set has one link at every site and density one quarter, and a direct check of the ninety-
+six plaquettes of the torus of side two shows that each contains exactly one of its links; since the
+condition is local and the set periodic, the same holds on  and on every torus of even side.72 Two
+consequences are used below: no plaquette contains two links of the cover, and a link outside the
+cover lies in six plaquettes whose six cover links are distinct, since two links share at most one
+plaquette.
+
+Lemma 8.6 (The constants of the von Mises­Fisher law on the three-sphere). For w in  let w
+be the law on the unit sphere S³ of , identified with SU(2), whose density with respect to the uniform
+measure is proportional to eu, w. Write r = |w|, Z(r) = 2I(r)/r for its normalising constant,  = log Z and
+m =  = I/I, with I the modified Bessel functions. The mean of w is m(r); its covariance has the
+eigenvalue (r) on  and m(r)/r on the orthogonal complement; and its third cumulant along a unit
+vector u with u,  = c is (r)c³ + 3(D(r)/r)c(1 - c²), where D =  - m/r. For every r  0:
+
+(i) m(r)/r  1/4 and (r)  1/4;
+
+(ii) -m(r)²/3  D(r)  0;
+
+(iii) the third cumulant of w along every unit vector is at most m(r)/2 in absolute value.
+
+Proof. The cumulants of w are the derivatives at w of x  (|x|) - (|w|), the logarithm of the
+normalised Laplace transform of w. Its gradient at w is m and its Hessian has the stated
+eigenvalues; along the line x + tu the radius (t) = |x + tu| has  = c,  = (1 - c²)/r and  = -3c(1 -
+c²)/r² at t = 0, so the third derivative ³ + 3 +  is the stated form. The recurrences I
+= I + I/r and I = I - 2I/r give  = m and the Riccati identity
+
+                                  =  1  -  3  -  2.                                         (8.9)
+                                            
+
+Put z = r²/4 and A = k zk/(k!(k + 2)!), B = k zk/(k!(k + 1)!), C = k zk/(k!(k + 3)!), so that A = (2/r)²I,
+B = (2/r)I and C = (2/r)³I, all three positive, with m/r = A/(2B) and m² = zA²/B². Comparing
+coefficients gives B - 2A = zC  0, which is the first half of (i). By (8.9),  = 1 - 3A/(2B) - zA²/B², and
+the substitution B = 2A + zC gives
+
+1 -  =  (² - ¾ ) ,  =  -  = -  (² - ).                                                      (8.10)
+4                              ²                        ²
+
+Now A² - BC = (2/r)(I² - II). The product formula II = k (r/2)++2k ( +  + 2k)!/(k!( + k)!( +
+k)!( +  + k)!)73 makes the k-th coefficient of I² - II equal to (4 + 2k)!/(k!(4 + k)!(2 + k)!(3 + k)!),
+which is positive, and that of 3II - 2I² equal to k/(2 + k) times the k-th coefficient of II, which is
+not negative. Hence 0  A² - BC  A²/3. The left inequality is Turán's inequality for the modified Bessel
+functions.74 By (8.10) it gives D  0, and, since then ¾BC  ¾A²  A², it gives   1/4, the second half
+of (i). The right inequality gives |D|  zA²/(3B²) = m²/3, which is (ii). For (iii), differentiate (8.9): 
+= 3|D|/r - 2m, where 0  3|D|/r  m²/r  m/4 by (ii) and (i), and 0  2m  m/2 because  is a
+
+72Edwin Boston III; the cover was found by an exhaustive search on the torus of side two and checked again, on a road sharing no
+line with the search, on every plaquette of the tori of side two, four and six, where a single bent site leaves ten plaquettes of the
+smallest torus with zero or two links of the set; Records R7.
+
+73G. N. Watson, A Treatise on the Theory of Bessel Functions, second edition, Cambridge University Press, 1944, §5.41.
+
+74K. V. Thiruvenkatachar and T. S. Nanjundiah, "Inequalities concerning Bessel functions and orthogonal polynomials", Proc.
+Indian Acad. Sci. A 33 (1951), 373­384.
+
+                                        34
+THE GROUND · EDWIN BOSTON III
+
+variance at most 1/4. With a = 3|D|/r and b = 2m, the third cumulant at c in [0, 1] is ac(2c² - 1) -
+bc³, and it is odd in c. When 2c²  1 it lies between -bc³  -(m/2)c³ and ac(2c² - 1)  (m/4)c(2c² -
+1); when 2c² < 1 it equals -(ac(1 - 2c²) + bc³), whose size is at most (m/4)c(1 - 2c²) + (m/2)c³ =
+(m/4)c. In every case its size is at most (m/4)c(1 + c²)  m/2. 
+
+Theorem 8.7 (A lattice mass gap at strong coupling; Edwin Boston III). Consider the SU(2) lattice
+gauge theory on  with Wilson's action, each plaquette weighted by exp(½  tr Up), at 0 <   0.241. Its
+infinite-volume Gibbs measure is unique. For every m < log(1/())/2, with ()  0.9963 the number
+of (8.12), there is a constant K, depending on  and m alone, such that for all bounded observables f and
+g depending on finitely many links, |fg - fg|  K N(f) N(g) f g e-m d, with N(f) the number of
+links on which f depends and d the least distance, in the maximum norm, between the midpoints of a link
+of f and a link of g; the same bound holds on every torus of even side. The Hamiltonian H = -log T of the
+transfer matrix T annihilates a unique vacuum and has no spectrum in the interval (0, m).
+
+Proof. Let L be the perfect cover and L its complement, and read each element of SU(2) as a unit
+vector of , so that ½ tr Up = Ua, Sp(a) for the cover link a of a plaquette p, the staple Sp(a) being
+the product of the other three links of p, or of their inverses, read as a unit vector. Each plaquette
+contains exactly one link of L, so the Wilson weight is the product over a in L of expUa, (a), with
+(a) =  pa Sp(a) and |(a)|  6. Given the links of L, the links of L are therefore independent, Ua
+distributed by w at w = (a), and the marginal law of the links of L has density proportional to aL
+Z(|(a)|) with respect to the product of the Haar measures: a Gibbs measure with a potential of finite
+range. For x in L and a plaquette p  x, let ap be the cover link of p, p(Ux) = Sp(ap), which is  times
+an isometry of  applied to Ux, and wp = (ap) - p(Ux), the contribution of the five other plaquettes
+of ap, so that |wp|  5. The conditional law of Ux given the other links of L is proportional to px
+Z(|wp + p(Ux)|), the six factors coming from six distinct cover links.
+
+    By Taylor's theorem along the segment from wp to wp + p, which stays in the ball of radius 6,
+and since m is increasing, log Z(|wp + p|) = (|wp|) + m(|wp|)p, p + ½p, pp + Rp, with p the
+covariance of w at w = wp and |Rp|  (³/6)T, T = m(6)/2, by Lemma 8.6(iii). The linear terms add
+to Ux, v for a vector v to which p contributes a vector of length at most m(5); the quadratic term
+of p equals a constant plus ½²D(|wp|)p/, p², whose oscillation in Ux is at most ½²D, with D
+= m(5)²/3, by Lemma 8.6(ii). The conditional law of Ux is therefore the tilt of v by a function h = p
+hp of oscillation at most
+
+ = 325 + 236.                  (8.11)
+
+Two facts bound the influence of one link on that law. First, if p is a probability measure and g a
+bounded function of oscillation o, the tilt Tgp differs from p in total variation by at most tanh(o/4) 
+o/4: with g normalised to take values in [0, o], for a set B of p-measure s on which eg averages a and
+off which it averages a, (Tgp)(B) - p(B) = s(1 - s)(a - a)/(sa + (1 - s)a), which is largest at a = eo, a
+= 1 and s = 1/(1 + eo/2), where it equals tanh(o/4). Second, by the sharp one-link lemma of §8.1, the
+mean absolute deviation of U, e under any law v is at most 4/(3) for every unit vector e, and under
+a tilt of v by a function of oscillation at most  it is at most (3e - 1)/2 times as large: if the tilt has
+density g with values in [c, ce] with respect to v, where c  1, and Y = U, e - v(U, e) with M =
+v(|Y|), the deviation is at most v(g|Y|) + |v(gY)|  ceM + c(e - 1)M/2, because v(Y) = M/2.
+
+35
+                                  THE GROUND · EDWIN BOSTON III
+
+Differentiating along the segment from v to v, two tilts of v and v by one function of oscillation at
+most  differ in total variation by at most ()(2/(3))|v - v|, with () = (3e - 1)/2.
+
+    Now let a link y of L change, the others fixed. If y is one of the two other links of a plaquette p of
+x, as twelve links are, then v moves by at most 2m(5), because a factor of the isometry moves by at
+most 2, and hp moves by a function of oscillation at most ²D + (2/3)³T. If y lies in one of the five
+other plaquettes of a cover link ap, as ninety links do, fifteen for each of the six, then wp moves by at
+most 2, so v moves by at most ·¼·2 = ²/2, the Jacobian of the mean being the covariance, whose
+norm is at most ¼ by Lemma 8.6(i); the quadratic part of hp moves by a function of oscillation at most
+min(²D, 2³T), the second bound because the covariance moves in norm by at most 2 times the
+bound on the third cumulant, the norm of a symmetric trilinear form being its supremum on the
+diagonal; and the remainder moves by at most (2/3)³T. By the two facts the interdependence
+coefficients are at most
+
+                               =  () 4 (5)     +  1  (  25   +  2  36  ),
+                                                  4             3
+                                            3
+
+         =  ()     2  +  1  (  (25,      236)  +  2  36  ),  () = 12  + 90 . (8.12)
+                   3     4                        3
+
+A link y that occupies several of these positions is counted once for each, which bounds its coefficient
+because total variation is subadditive along a chain of single changes, and no other link of L affects
+the law of Ux; the column sums obey the same count. Every term of  is increasing in , and Table 3
+gives its value: (0.241) = 0.996297 < 1. By Dobrushin's uniqueness theorem the Gibbs measure of
+the links of L is unique,75 and, since the links of L are conditionally independent given them with a
+law that is fixed, so is the Gibbs measure of the theory. The coefficients vanish between links at
+distance more than two, so the weighted row sums of Hypothesis I are at most e2, which is less than
+one for  < log(1/)/2; Hypothesis II holds with zero fibre covariance for observables with disjoint
+supports, whose links in L are distinct and conditionally independent, and with fibre means that
+depend on the links of L within distance one of their support. The argument of the proof of Theorem
+8.5, applied on one lattice with the links of L as the coarse variables, gives the clustering bound with
+any m < log(1/)/2, uniformly over the tori of even side and in the infinite volume. The Wilson action
+is reflection positive and its transfer matrix is strictly positive,76 the bound applies to f and tf at
+every integer time t, and Theorem 7.1, applied to the reconstruction at integer times, gives the
+vacuum and the gap. 
+
+         12 Cdir               90 Cmed         ()                            ()
+0.200    0.250918              0.418916        0.669834            0.004576  1.006879
+0.220    0.303206              0.516348        0.819554            0.006609  1.009946
+0.230    0.331235              0.569908        0.901143            0.007838  1.011804
+0.240    0.360539              0.626868        0.987407            0.009224  1.013901
+0.241    0.363540              0.632756        0.996297            0.009372  1.014124
+
+75R. L. Dobrushin, "Prescribing a system of random variables by conditional distributions", Theory Probab. Appl. 15 (1970), 458­
+486; Sources [17].
+
+76K. Osterwalder and E. Seiler, Sources [5]; M. Lüscher, Sources [7].
+
+                                         36
+                  THE GROUND · EDWIN BOSTON III
+
+        12 Cdir   90 Cmed   ()                             ()
+
+0.2415  0.365046  0.635714  1.000760             0.009446  1.014237
+
+  Table 3. The interdependence row sum (8.12) of the decimated measure, with the constants of Lemma 8.6,
+              evaluated at 256 bits with outward rounding; it crosses one between 0.241 and 0.2415.
+
+    The numbers of Table 3 are certified on three roads that share no line; the derivation that they
+evaluate is the proof above, and its one test from outside the proof is a search from below over the
+decimated specification's own data, which found no configuration whose coefficient exceeds the
+constants (the direct coefficient reaching 97 per cent of its bound at  = 0.245, the mediated 89 per
+cent). The certificate evaluates m at 5 and 6 from its series with a bound on the tail, in integer
+arithmetic at 256 bits with every quantity rounded outward; a second evaluation at sixty digits agrees
+with it to 5 × 10 at every tabulated coupling and places the root of  = 1 at  = 0.241415; and a third
+encloses  with directed rounding over the whole interval and certifies it below one on [0, 0.2414].
+With the two constants replaced by their exact values, |D(5)| for m(5)²/3 and |(6)| for
+m(6)/2, the second being the largest third cumulant along any direction at radius at most 6, each
+enclosed with certified error in a run of record, the same row sum stays below one on [0, 0.2452].77
+Theorem 8.7 is a theorem at strong coupling, 1.84 times the single link's disk 3/72 of §8.1, and it
+reaches no crossover: it claims nothing above  = 0.2452, the test of the abelian group in this section
+does not bear on it, and the interval between it and the crossover near  = 2.3 is the part of the second
+link that Hypotheses I and II must still supply. That no decimation of  places both integrated links
+of every plaquette opposite one another, which a two-colouring argument shows in every dimension
+above two, is the reason the product of two pinned means of the block criterion cannot be composed
+in this way, and the reason that wider widening remains the conjecture above.78
+
+    The open part. Theorem 8.7 certifies the gap for   0.2452 by Dobrushin's comparison, on proved
+lemmas alone; Theorem 8.9 below extends it to   0.4764 by the flux-surface gas, conditional on the
+one lemma its statement names; nothing above 0.2452 is proved unconditionally, and nothing above
+0.4764 is proved at all. The inequality that produces it, Dobrushin's comparison theorem, is group-
+blind, and correctly so: it holds for every compact single-spin space, and the four-dimensional U(1)
+theory at weak coupling, whose photon is massless, satisfies its unweighted finite-volume form as
+readily as a massive theory does, since a boundary's influence there decays as the fourth power of
+the distance and the unweighted block sum is of order L³ log L against the block's volume L. The
+group enters only through the evaluation of Hypothesis I, the weighted row sums y C(x, y)e|x-y| of
+the blocked measure, which diverge for every  > 0 in a Coulomb phase and converge in a massive
+one; what is open is a certified evaluation of those sums at a coupling where neither the strong-
+coupling nor the weak-coupling expansion converges. The weak end has no published number.
+Balaban's ultraviolet stability theorem in four dimensions, Theorem 1 of his paper of record, is
+proved under the hypothesis that every effective coupling of the sequence, from the bare one at the
+cutoff to the one at the unit lattice, is at most a constant  that exists and is never computed ("the
+
+77Edwin Boston III; the certificate and its sharp pass, the second evaluation, the third road's enclosure and the enclosures of the
+two constants are Records R7.
+78Edwin Boston III; the two-colouring argument, the range of the decimated specification and its row sum are on the ledger of
+the work that follows this paper, with their records.
+
+                                                                             37
+                                                           THE GROUND · EDWIN BOSTON III
+
+constant  depends on all other constants"); the coupling grows toward coarse scales, so the
+condition binds at the unit lattice, where his action weighs a plaquette exactly as (8.12)'s does with
+ = 1/g², and the distance is the interval [0.2452, 1/²] on proved lemmas, [0.4764, 1/²] under
+Theorem 8.9's condition, with  unread. The hypothesis's own proof, his Theorem 2 of 1987 with its
+two-sided bound on the couplings, is announced there and stated in the 1989 paper to be
+unpublished, so that the theorem of record is conditional: "so we have Theorem 1 with the
+assumption"; it never appeared: his complete list of publications after 1989 contains no paper on
+four-dimensional gauge theory,79 so the four-dimensional ultraviolet half of every construction of the
+corpus's kind rests on an announced and unpublished theorem, and every sentence of this paper that
+cites Balaban's four-dimensional result carries that clause.80 Dimock's expositions treat the abelian
+and scalar cases and state every threshold the same way. Within the certified form the next widening
+is the same theorem in the Wasserstein metric of the three-sphere, whose one-link constant is 1/4,
+exact in the two symmetric directions and supported to one per cent between them, against total
+variation's 4/(3); with the constants proved so far it gains nothing over Theorem 8.7, it is predicted
+to close near  = 0.30 under two constants not yet proved, and it is unguessed to the digit until they
+are. The tools that would cross the interval are named and not claimed: a finite-volume criterion with
+typical rather than extremal boundary data, for which no theorem exists in a non-abelian gauge
+theory; a correlation inequality, Griffiths' second inequality for untruncated SU(2) Wilson loops,
+which holds on the exact tube of §8.2 at  = 0.5 and 1.0, is undecided at 2.0 and 2.3, and from which,
+by the r plaquette correlations of the U(1) Coulomb phase, no finite-volume criterion for truncated
+correlations can follow; and the centre of the group, whose one published every-coupling argument
+rests on a matching inequality that its examiners found established only where the high-temperature
+expansion converges, and which, as structured, would confine U(1) as well.81
+
+Theorem 8.9 (The lattice mass gap at strong coupling, extended by the flux-surface gas; Edwin
+Boston III). Consider the SU(2) lattice gauge theory on  with Wilson's action, each plaquette
+weighted by exp(½  tr Up), at 0 <   , where  = 0.4764 is the largest coupling on the grid of step 2 ×
+10 at which the certified Kotecký­Preiss inequality of the flux-surface gas holds in the dressing of its
+page (in the tree dressing of §20 of that page the same inequality holds to  = 0.4816). Then,
+CONDITIONAL ON LEMMA S12'S REMAINDER -- the activity bound 4uF for those of the tail's contact
+leaves that lie outside the classes proved on the companion page. The bound is proved where every
+component of the contact preimage on the sheet has cycle rank at most one; for a sphere sheet whose
+
+79The zbMATH author listing for T. Balaban, 1989­2022, read on 29 October 2026: the Euclidean fermion block renormalisation
+(1989), the two large-field papers (1989), the classical N-vector series (1995­1999), and the bosonic many-body series with
+Feldman, Knörrer and Trubowitz (2008­2022); no paper on four-dimensional gauge theory.
+80T. Balaban, Comm. Math. Phys. 109 (1987), 249­301: Theorem 1 (p. 259) and Theorem 3 (p. 267), the recursion (0.20) (p. 256),
+the action (0.2) with the normalised trace (p. 252), read from the pages on 29 October 2026. The statement that the sequence can
+be kept small in four dimensions, his Theorem 2 (pp. 259­260), is deferred there to "a separate paper"; the four-dimensional
+stability theorem itself is Theorem 1 of Large field renormalization II, Comm. Math. Phys. 122 (1989), 355­392, p. 355, read on 29
+October 2026: "If the sequence of the effective coupling constants is contained in an interval ]0, ] with a sufficiently small
+positive , then the effective densities _k have the form, and satisfy all the conditions and bounds, described in Sect. 2", followed
+by "Theorem 2 of [I] allows us to remove the assumption ... The proof of Theorem 2 ... has not been published yet, so we have
+Theorem 1 with the assumption"; its bibliography names no paper proving Theorem 2.
+81E. T. Tomboulis, "Confinement for all values of the coupling in four-dimensional SU(2) gauge theory", arXiv:0707.2179 (2007);
+K. R. Ito and E. Seiler, "On the recent paper on quark confinement by Tomboulis", arXiv:0711.4930 (2007), and "Further
+discussion of Tomboulis' approach to the confinement problem", arXiv:0803.3019 (2008); Tomboulis's reply, arXiv:0712.2620
+(2007). Sources [22]­[23].
+
+                                                                             38
+                                                           THE GROUND · EDWIN BOSTON III
+
+contact preimage is a forest, or whose face words, one dropped, form a primitive system of the
+contact graph's fundamental group, which holds in particular for at most three faces over at most
+two independent contact cycles of links of multiplicity four; for a contact graph with one cycle, trees
+attached, when a link of the cycle has multiplicity four, or when every link of the cycle has multiplicity
+six and the cycle is a unit square, a 1 × n rectangle, a 2 × 2 square or a skew hexagon; and for every
+leaf of the census to F = 22. It is open on the rest, among them contact preimages of higher cycle rank
+beyond those cases and single six-fold cycles of other shapes, the first a skew octagon, where 8 is
+proved: the one input of this theorem not yet proved, named again in the proof and on the companion
+page's §25 (l) and its entries (p) -- the polymer expansion of the theory converges absolutely in every
+finite volume with bounds uniform in the volume, the infinite-volume Gibbs measure is unique, and
+for all bounded gauge-invariant observables A and B depending on finitely many links, with d the
+least distance between their supports, |AB - AB|  KAKBABe-d, where  = () is any value
+at which the inequality is certified (at  =  the certificate holds for  in [0.0041, 0.0047]) and KA
+depends on A's support alone. On the gauge-invariant sector the Hamiltonian H of the transfer matrix
+has spectrum in {0}  [, ) in lattice units: a mass gap of at least (). Without that condition the same
+conclusions hold for 0 <   0.241 on proved constants and to 0.2452 on the certified ones (Theorem
+8.7); no coupling above 0.2452 in this paper rests on proved lemmas alone.
+
+Proof. The proof is the flux-surface gas of the companion page (The flux-surface gas, §§2­25 of the
+OPEN ledger, every section dated before the run it reports and every pricing lemma read by a second
+seat), and this paragraph is its chain. The polymer representation is classical: expanding each
+plaquette weight in characters, f = j djajj with aj = I2j+1()/I(), the partition function is a gas of
+closed sets of plaquettes whose links all carry an even multiplicity, incompatible when they share a
+link; a closed branch-free surface at spin ½ weighs uF2 (Osterwalder­Seiler, Drouffe­Zuber). What
+the page proves beyond that is a pricing of every decoration of such a surface in exact representation
+theory rather than in supremum norms: the cut identity (S4), the lone wall at exactly 3a (S7), the
+acyclic contacts free (S6), and THE LOCAL THEOREM (Theorem L, §24): the weight of any set of spin-
+1 plaquettes Y attached to a sheet S, divided by (3a)|Y| times the sheet's weight, is at most v rv over
+the vertices Y touches, with rv² = 2m_{v-2}·S(C½m_{v}  v) a Haar integral of the vertex's own star --
+the sheet's cycle of spin-½ edges and Y's spin-1 chords at v. The stars form a FINITE family, the simple
+subgraphs of K2,2,2,2 on the eight directions at a vertex, so the rate (s) = 3(s) with (s) = maxks
+r2max(k)1/2k is a finite table: r2max(k) is the exact maximum of the star integral over every star of k
+chords where every row of the enumeration at k has been read by the exact intertwiner engine (k 
+12 and the rows below the engine's cap elsewhere), and on the rows not read it is the lesser of two
+certified bounds -- the Frobenius sieve |S|  lRl, Rl the dimension of the invariants at link l, and
+THE REALIGNED OPERATOR-NORM BOUND (Lemma R, §25): contracting the star's link projectors
+in any order, |S|  PFtMtopPnF with Mt the projector realigned along the split, and Mt²op 
+max(TrNPt)max(TrSPt) by the block Cauchy­Schwarz inequality, every eigenvalue bound certified by
+an exact LDL decomposition in rational arithmetic. Every exact value read (3464 of them, at every
+k) lies under its own realigned bound, and the bound's planted defect is refused by name. With the
+closing-tree count N(F)  5F-1 of Z-minimal surfaces, the dressing of the contacts -- the contact
+leaves' activity 4uF, a theorem on the classes the statement lists, and on the rest a lemma still owed:
+the one input of this theorem not yet proved, named on the page's §25 (l) with its closing road in the
+companion register OPEN/the-far-shore.md §4.0 (the vertex-norm theorem at spin ½ with the finite
+
+                                                                             39
+                                                           THE GROUND · EDWIN BOSTON III
+
+table of even stars, and the sparsity of a Z-minimal leaf's stars or a sharper dense-leaf count) -- and
+the composite tree, the Kotecký­Preiss condition X|W(X)|e|L(X)|   is a finite inequality in the
+Bessel ratios aj, the table and , and the certificate (aperanton_kp_cert.awk in its TABLE mode, gawk
+at 256 bits with every quantity an interval of width 2¹² rounded outward) decides it on the grid: it
+holds at  and fails one step above it. The gap then follows as in §16 of the page (D1): an observable's
+support enters the gas as a boundary, the relative leaves are counted by the same closing tree, a cluster
+joining the two supports is link-connected across the distance between them, and the Kotecký­Preiss
+tree bound in its two-weight form supplies e-d; Theorem 7.1 turns the clustering of the reflection-
+positive correlations into the gap of the transfer matrix, and the uniform bounds pass to the infinite
+volume. The certificate's run of record is aperanton_table_gate.2026-11-01d (eight arms, five mutant
+tests, verdict GREEN; R8).
+
+    What is new in Theorem 8.9 and what is classical. Classical: the polymer representation and the
+weight of a closed surface (Osterwalder and Seiler 1978; Drouffe and Zuber 1983); the Kotecký­
+Preiss criterion (1986) and its tree bound; the inequalities ABF  AFBop, the block Cauchy­
+Schwarz inequality and Sylvester's criterion; Theorem 7.1. New, and only in this work: the pricing of
+the branched decorations by the exact representation theory of the vertex star rather than by
+supremum norms -- the cut identity, the lone wall, the acyclic contacts, the local theorem with its
+finite family of stars -- the exact table through k = 12 with the kill-switch read on every row (no star
+above the per-corner rate 1.113533 of the four walls on a link), the certified realigned bound that
+closes the unread rows, and the number  itself, certified rather than estimated. Theorem 8.7's  
+0.2452 was Dobrushin's comparison on a decimated measure; Theorem 8.9 reaches  = 0.4764 by the
+gas's own geometry, conditional on Lemma S12's remainder. Both are lattice gaps at strong coupling,
+not the continuum gap that is the object of the Clay problem; the distance to Balaban's unread  is
+the interval [0.2452, 1/²] on proved lemmas and [0.4764, 1/²] under that condition.
+
+8.4 Coda
+The ground, then, is this. A construction of the corpus's kind, as its manuscripts state it, delivers a
+limit that is controlled at short distances and silent at long ones: a theory whose correlations obey
+the axioms of positivity and symmetry, whose coupling is seen to run, and whose large-distance
+behaviour is not controlled. Theorem 7.1 shows that the missing control is a single spectral fact.
+Theorem 7.4 shows that this fact is a property of the rungs: an inequality on the lattice, where
+reflection positivity has made a quantum mechanics of the theory before any limit is taken. The proof
+that follows takes up that inequality on that sequence.
+
+                                                                             40
+                                                           THE GROUND · EDWIN BOSTON III
+
+Sources
+
+Every source was read on 28 October 2026. The repository sources are cited by file name; the
+repository is at https://github.com/ethanwsussman/Yang--Mills-LLM-experiment.
+
+[1] A. Jaffe and E. Witten, "Quantum Yang­Mills theory", official problem description, Clay Mathematics Institute;
+        in The Millennium Prize Problems, Clay Mathematics Institute and American Mathematical Society, 2006;
+        https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf.
+
+[2] L. Alpöge and E. Sussman, repository Yang--Mills-LLM-experiment: README.md (last changed 26 October
+        2026, 16:18:10 UTC); YM3/YMM1.pdf and YM3/YMM1.tex, "Scalar fields from three-dimensional lattice
+        Yang­Mills theory", 854 pages; YM3/Revisions/YMM1-2026-10-26.pdf, 856 pages, and
+        YM3/Revisions/CHANGES-2026-10-26.md; YM3/YMM2.pdf, "Curvature observables, dynamics, and
+        conditional confinement in three-dimensional lattice Yang­Mills theory", 1,044 pages;
+        ym4_manuscript_zeroth_draft.pdf, "SU(2) Yang­Mills theory in four dimensions via Balaban's
+        renormalisation group: construction, axioms and non-triviality", 6 October 2026, 153 pages; QED3/qed3.pdf,
+        263 pages; RPM1.pdf, 30 pages; theorem_0_complete_account_raw_I­III.tex. Repository created 6 October
+        2026, 09:51:17 UTC; most recent commit 27 October 2026, 10:45:28 UTC.
+
+[3] P. Woit, "Secret Unified Physics Slop", Not Even Wrong, 26 October 2026, with its updates and its comments
+        through 28 October 2026, https://www.math.columbia.edu/~woit/wordpress/?p=15948.
+
+[4] K. Osterwalder and R. Schrader, "Axioms for Euclidean Green's functions", Comm. Math. Phys. 31 (1973), 83­
+        112; "Axioms for Euclidean Green's functions. II", Comm. Math. Phys. 42 (1975), 281­305.
+
+[5] K. Osterwalder and E. Seiler, "Gauge field theories on a lattice", Ann. Physics 110 (1978), 440­471.
+[6] K. G. Wilson, "Confinement of quarks", Phys. Rev. D 10 (1974), 2445­2459.
+[7] M. Lüscher, "Construction of a selfadjoint, strictly positive transfer matrix for Euclidean lattice gauge
+
+        theories", Comm. Math. Phys. 54 (1977), 283­292.
+[8] T. Balaban, "Ultraviolet stability of three-dimensional lattice pure gauge field theories", Comm. Math. Phys.
+
+        102 (1985), 255­275; "Renormalization group approach to lattice gauge field theories. I. Generation of
+        effective actions in a small field approximation and a coupling constant renormalization in four dimensions",
+        Comm. Math. Phys. 109 (1987), 249­301; "Large field renormalization. II. Localization, exponentiation, and
+        bounds for the R operation", Comm. Math. Phys. 122 (1989), 355­392; and the further papers of the series in
+        Comm. Math. Phys. 95­122 (1984­1989).
+[9] B. K. Driver, "YM: continuum expectations, lattice convergence, and lassos", Comm. Math. Phys. 123 (1989);
+        L. Gross, C. King and A. Sengupta, "Two dimensional Yang­Mills theory via stochastic differential equations",
+        Ann. Physics 194 (1989).
+[10] J. Glimm and A. Jaffe, Quantum Physics: A Functional Integral Point of View, 2nd ed., Springer, 1987.
+[11] R. Jentzsch, "Über Integralgleichungen mit positivem Kern", J. Reine Angew. Math. 141 (1912), 235­244.
+[12] R. L. Dobrushin, "Central limit theorem for nonstationary Markov chains. I, II", Theory Probab. Appl. 1 (1956),
+        65­80 and 329­383.
+[13] I. Gelfand, "Normierte Ringe", Mat. Sbornik 9 (51) (1941), 3­24.
+[14] J. J. Sylvester, "A demonstration of the theorem that every homogeneous quadratic polynomial is reducible
+        by real orthogonal substitutions to the form of a sum of positive and negative squares", Philosophical
+        Magazine 4 (1852), 138­142.
+[15] F. J. Wegner, "Duality in generalized Ising models and phase transitions without local order parameters", J.
+        Math. Phys. 12 (1971), 2259­2272.
+[16] H. Arisue and K. Tabata, "Low-temperature series for the correlation length in d = 3 Ising model", Nucl. Phys.
+        B435 (1995), 555­566.
+[17] R. L. Dobrushin, "Prescribing a system of random variables by conditional distributions", Theory Probab.
+        Appl. 15 (1970), 458­486.
+[18] H.-O. Georgii, Gibbs Measures and Phase Transitions, de Gruyter Studies in Mathematics 9, second edition, de
+        Gruyter, Berlin, 2011; Chapter 8, Theorem 8.20.
+
+                                                                             41
+                                                           THE GROUND · EDWIN BOSTON III
+
+[19] M. Faizal and A. Shabir, "Reflection-Positive Construction of a Four-Dimensional SU(N) Yang­Mills Theory
+        with Mass Gap and Confinement", arXiv:2606.19362 [hep-lat], 9 June 2026, 593 pages; Fortschritte der
+        Physik 74 (2026), e70097, doi 10.1002/prop.70097; with four companion papers in Int. J. Geom. Methods
+        Mod. Phys. (2026) cited therein.
+
+[20] A. H. Guth, "Existence proof of a nonconfining phase in four-dimensional U(1) lattice gauge theory", Phys. Rev.
+        D 21 (1980), 2291­2307.
+
+[21] J. Fröhlich and T. Spencer, "Massless phases and symmetry restoration in abelian gauge theories and spin
+        systems", Comm. Math. Phys. 83 (1982), 411­454.
+
+[22] E. T. Tomboulis, "Confinement for all values of the coupling in four-dimensional SU(2) gauge theory",
+        arXiv:0707.2179 [hep-th], 2007; reply to Ito and Seiler, arXiv:0712.2620, 2007.
+
+[23] K. R. Ito and E. Seiler, "On the recent paper on quark confinement by Tomboulis", arXiv:0711.4930 [hep-th],
+        2007; "Further discussion of Tomboulis' approach to the confinement problem", arXiv:0803.3019 [hep-th],
+        2008.
+
+Records of the computations of Edwin Boston III
+
+Each record is held, with its instrument and its run of record, in the repository of Edwin Boston III.
+
+[R1] The shadow ladder (Proposition 8.3): record g6_tube.2026-10-28a, with its instrument g6_tube.pl; landed in
+        commit aea98a3af; re-derived in the run of record pentapylon_gate.2026-10-28r, nine arms, nineteen
+        mutant tests, verdict GREEN.
+
+[R2] The gap by counting (§8.2): record g6_inertia.2026-10-28b; run of record pentapylon_gate.2026-10-28r,
+        verdict GREEN; landed in commit e11e1269c. The independently certified intervals it meets: run of record
+        tomeus_gate.2026-10-27e, ten arms, ten mutant tests, verdict GREEN.
+
+[R3] The gap through duality (§8.2): the dual-road records of 28 October 2026 and record g6_ising_anchor.2026-
+        10-28a; landed in commit 44be883de with the run pentapylon_gate.2026-10-28q, eight arms, seventeen
+        mutant tests, verdict GREEN; re-derived in run r.
+
+[R5] The chain lemma (Proposition 8.2): instrument g9_chain.pl and record g9_chain.2026-10-29a; landed in
+        commit 103e8425a; run of record pentapylon_gate.2026-10-28s, twelve arms, twenty-five mutant tests,
+        verdict GREEN.
+
+[R6] The sharp one-link lemma, the certified descent and the transform on a tube (§§8.1, 8.2, 8.3): instruments
+        g18_mad_lemma.pl with g17_mixed_survey.pl, mkflow.awk and g20_tube.pl; records g18_m1, g18_axis,
+        g18_mono and g18_direct_b0_1 ... b8_20 of 2026-10-29b, mkflow_b2.2, b2.3, b5 and b10 of 2026-10-29d, and
+        g20_tube_j1.2026-10-29b with the spin-3/2 readings g20_tube_j32_b2 and b2.3 of 2026-10-29a; run of
+        record pentapylon_gate.2026-10-29w, fifteen arms, thirty-two mutant tests, verdict GREEN at 02:20 EDT on
+        29 October 2026. The instruments, the records and the run's own file are posted with their digests in the
+        repository, under records/pentapylon.
+
+[R7] The lattice mass gap at strong coupling (Theorem 8.7): the cover, instrument aperanton_perfect_cover.pl and
+        record perfect_cover.2026-10-29a; the certificate, instrument aperanton_decimation_cert.awk and records
+        decimation_cert.2026-10-29a and, with the exact constants, 2026-10-29b; the enclosures of the two
+        constants, record g19_vmf.2026-10-29b with its instrument; the third road, instrument g24_rowsum.awk
+        and record g24_rowsum.2026-10-29a; and the second evaluation, verify73ter.py with its output, which
+        shares no line with the certificate and checks the cover on the tori of side two and four, the coefficients of
+        Turán's inequality exactly, and the row sum to sixty digits. The enclosures of the two constants and the one-
+        face constants are of record: the run pentapylon_gate.2026-10-29x, seventeen arms, thirty-eight mutant
+        tests, verdict GREEN at 04:06 EDT on 29 October 2026, re-runs them live and compares them byte for byte;
+        the certificate, its second evaluation and the third road await their own gate run. The derivation is the proof
+        of §8.3; its test from outside is the search from below, instrument g23_decim.pl with its records of 2026-10-
+        29b, which found no configuration exceeding the constants; and it was read independently, line by line, by a
+        second reader on 29 October 2026, who found no defect, reproduced Table 3 to six digits on a fourth road,
+        and checked Lemma 8.6 and the one-link bound by deterministic quadrature at 240 radii and seventy law-
+        direction pairs. The files and their digests are posted in the repository, under records/aperanton,
+        records/pentapylon and records/second-road.
+
+                                                                             42
+                                                           THE GROUND · EDWIN BOSTON III
+
+[R8] The lattice mass gap at strong coupling, extended (Theorem 8.9): the flux-surface gas page OPEN/ledger/s1-
+        the-flux-surface-gas.md, §§2­25, each section dated before its run; the exact star table and its records
+        local_tail_table.2026-11-01d.txt, kp_cert_table_scan_page.2026-11-01d.txt and _tree; the certified realigned
+        bound, instrument realign_cert.py, records realign_bound.2026-10-31a­d and the census
+        realign_census.2026-10-31b (3464 exact values under their bounds, 0 discords); the class record
+        class_exact.2026-10-31a; the certificate aperanton_kp_cert.awk in its TABLE mode; the run of record
+        aperanton_table_gate.2026-11-01d, eight arms, five mutant tests, verdict GREEN; landed in commit
+        c928db955.
+
+[R4] The lattice theorems in Lean (§§4.2, 7.2, 8.2): the files EvenTime.lean, Spectral.lean, Perron.lean,
+        StringEnergy.lean and MassGap.lean (the transfer theorem for every finite group); Nonabelian.lean and
+        Separation.lean (the static potential); Griffiths.lean, Rectangle.lean and StrongCoupling.lean (the Z
+        inequalities, expectation and string tension); Slab.lean and Z2Slab.lean, theorem transfer_gap_sharp (the Z
+        slab); Scaling.lean, theorem twopoint_le_of_gap and definition PhysicalGapAlong; Decay.lean, theorems
+        gap_of_decay and eigenvalue_le_of_decay; Dobrushin.lean, theorem cov_le. Run of record
+        aperanton_gate.2026-10-27u, forty-eight arms, twenty-nine mutant tests, verdict GREEN; landed in commit
+        7dd4c66b2.
+
+                                                                             43
+

@@ -1,0 +1,30 @@
+Part 1. Hess F_p(0): eigenvalues [-0.         -0.         -0.         -0.          0.          0.
+  0.          0.          0.          3.99999998  3.99999998  3.99999998] (expect 4 (x3) and 0 (x9))
+  b = 0.010 : e(b) >= 0.047010   e(b)/b = 4.7010
+  b = 0.020 : e(b) >= 0.095749   e(b)/b = 4.7874
+  b = 0.050 : e(b) >= 0.253425   e(b)/b = 5.0685
+  b = 0.100 : e(b) >= 0.559907   e(b)/b = 5.5991
+  b = 0.200 : e(b) >= 1.376979   e(b)/b = 6.8849
+  b = 0.300 : e(b) >= 2.559750   e(b)/b = 8.5325
+Part 2. torus extents [4 2 2 2] : sites 32, links 128, variables 384, plaquettes 192
+  constraint rows 24 (rank 24); residual gauge columns 90; Q G max |entry| = 1.39e-16 (gauge covariance at the trivial background)
+  slice dimension 270 (expected 270)
+  lambda_min of the free form on the slice (torus gamma0 at k in {0, pi/2}): 1.849564
+  lowest free eigenvalues on the slice: [1.849564 1.849564 1.849564 2.       2.       2.      ]
+  direction = soft mode 0 (free eig 1.8496): b_cross = 0.924599838256836, max plaquette angle there 1.22500188186907
+  direction = soft mode 1 (free eig 1.8496): b_cross = 0.924599838256836, max plaquette angle there 1.2250018818690835
+  direction = soft mode 2 (free eig 1.8496): b_cross = 0.924599838256836, max plaquette angle there 1.225001881869074
+  direction = soft mode 3 (free eig 2.0000): b_cross = 0.7836620330810548, max plaquette angle there 1.5673240661621008
+  random direction  0: b_cross = 0.69645, max plaquette angle 1.51879   (13 s)
+  random direction  1: b_cross = 0.66696, max plaquette angle 1.62022   (16 s)
+  random direction  2: b_cross = 0.72655, max plaquette angle 1.74891   (18 s)
+  random direction  3: b_cross = 0.6649, max plaquette angle 1.59284   (20 s)
+  random direction  4: b_cross = 0.78069, max plaquette angle 1.73603   (23 s)
+  random direction  5: b_cross = 0.73248, max plaquette angle 1.68441   (25 s)
+  random direction  6: b_cross = 0.72978, max plaquette angle 1.74719   (28 s)
+  random direction  7: b_cross = 0.65649, max plaquette angle 1.85279   (30 s)
+  random direction  8: b_cross = 0.7054, max plaquette angle 1.56635   (32 s)
+  random direction  9: b_cross = 0.72307, max plaquette angle 1.79846   (35 s)
+  random direction 10: b_cross = 0.72855, max plaquette angle 1.68481   (37 s)
+  random direction 11: b_cross = 0.73621, max plaquette angle 1.65204   (39 s)
+  best so far: b_cross = 0.65649 (random 7)

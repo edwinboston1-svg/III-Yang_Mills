@@ -1,0 +1,11 @@
+START 2026-11-02 08:07:40 x3check.c md5=1636e79187efdcb3dd4f8dc7a81ae592
+BOX s=4 mode=X_inf(control): squares=1600 rank=1344 deficiency=256 (known answer s^4=256 -> MET)
+BOX s=4 mode=X3: squares=1200 rank=1200 deficiency=0
+STAR of X3 at any vertex: d=12 (page 12) a=8 (page 8) half-axis multiplicities e1..e4 = 4 2 4 2 (page 4 2 4 2) K=0
+BOX s=5 mode=X_inf(control): squares=3600 rank=2975 deficiency=625 (known answer s^4=625 -> MET)
+BOX s=5 mode=X3: squares=2700 rank=2700 deficiency=0
+STAR of X3 at any vertex: d=12 (page 12) a=8 (page 8) half-axis multiplicities e1..e4 = 4 2 4 2 (page 4 2 4 2) K=0
+BOX s=6 mode=X_inf(control): squares=7056 rank=5760 deficiency=1296 (known answer s^4=1296 -> MET)
+BOX s=6 mode=X3: squares=5292 rank=5292 deficiency=0
+STAR of X3 at any vertex: d=12 (page 12) a=8 (page 8) half-axis multiplicities e1..e4 = 4 2 4 2 (page 4 2 4 2) K=0
+END 2026-11-02 08:07:44

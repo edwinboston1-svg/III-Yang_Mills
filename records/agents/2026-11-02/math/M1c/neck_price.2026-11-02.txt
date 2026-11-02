@@ -1,0 +1,13 @@
+START 2026-11-02 09:46:03
+28d14fb61ea73dbfebeba87dc5b111f0 */c/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/M1c/kp_cert_m1c_neck.awk
+== controls: eps = 0 must PASS (the record's verdicts)
+KP-CERT SCAN dress=page graded=S24-table beta=0.3650 gamma=6/1 F0=22: PASS for alpha in [0.0039, 0.0050]
+KP-CERT SCAN dress=page graded=S24-table beta=0.5100 gamma=6/1 F0=22: PASS for alpha in [0.0033, 0.0038]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0041, 0.0047]
+NECK-PRICE beta=0.3650 dress=page F0=22 mode=w: PASS at eps = 312 e-5, refused at eps = 321 e-5
+NECK-PRICE beta=0.3650 dress=page F0=22 mode=a: PASS at eps = 156 e-5, refused at eps = 165 e-5
+NECK-PRICE beta=0.5100 dress=page F0=22 mode=w: PASS at eps = 68 e-5, refused at eps = 78 e-5
+NECK-PRICE beta=0.5100 dress=page F0=22 mode=a: PASS at eps = 9 e-5, refused at eps = 19 e-5
+NECK-PRICE beta=0.4764 dress=page F0=20 mode=w: PASS at eps = 136 e-5, refused at eps = 146 e-5
+NECK-PRICE beta=0.4764 dress=page F0=20 mode=a: PASS at eps = 39 e-5, refused at eps = 48 e-5
+END 2026-11-02 09:53:35

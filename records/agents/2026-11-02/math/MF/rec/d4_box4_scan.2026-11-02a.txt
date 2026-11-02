@@ -1,0 +1,6 @@
+B line=ReK=0 d=4 L=2 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=3.154840139 at Kperp=(1.5708,0.0000,0.0000) first_transverse_pole=3.525494
+B line=ReK=pi d=4 L=2 box4 dir=0 kappa(Kperp=0)=1.762747174 kappa_min=1.762747174 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=3.525494
+B line=ReK=0 d=4 L=4 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=4.045500270 at Kperp=(1.5708,0.0000,0.0000) first_transverse_pole=5.267832
+B line=ReK=pi d=4 L=4 box4 dir=0 kappa(Kperp=0)=1.425416943 kappa_min=1.425416943 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=5.267832
+B line=ReK=0 d=4 L=8 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=4.347442758 at Kperp=(1.5708,0.0000,0.0000) first_transverse_pole=5.982555
+B line=ReK=pi d=4 L=8 box4 dir=0 kappa(Kperp=0)=1.344024470 kappa_min=1.344024470 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=5.982555

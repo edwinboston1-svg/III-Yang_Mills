@@ -1,0 +1,14 @@
+KAT U1-K1: door unset, planar beta 1.2 NMAX 6 LMAX 2 n=4 ordered = the record (0.3010471616240; (1,1) 5.106496271959e-02 at a=-1 c=1):
+U1-CLASS a=-1 c=1 E[e^{ia Phi_A} e^{ic Phi_B}] = +5.106496271959e-02 +0.000000000000e+00 i
+U1-CLASS a=1 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +3.010471616240e-01 +0.000000000000e+00 i
+U1-CONN a=-1 c=1 <e^{ia Phi_A} e^{ic Phi_B}>_c = -3.956443080225e-02 +0.000000000000e+00 i (marginals +3.010471616e-01 +
+U1-CONN a=1 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +3.010471616e-01 +0
+KAT U1-K2: the door with I_n/I_0(1.2), n <= 6:
+U1-CLASS a=-1 c=1 E[e^{ia Phi_A} e^{ic Phi_B}] = +5.106496271959e-02 +0.000000000000e+00 i
+U1-CLASS a=1 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +3.010471616240e-01 +0.000000000000e+00 i
+U1-CONN a=-1 c=1 <e^{ia Phi_A} e^{ic Phi_B}>_c = -3.956443080225e-02 +0.000000000000e+00 i (marginals +3.010471616e-01 +
+U1-CONN a=1 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +3.010471616e-01 +0
+KAT U1-K3: free datum, Villain beta 3: E[e^{iPhi}] = a_1^{16} = exp(-16/6) = 0.069483
+U1-CLASS a=1 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +6.948345122280e-02 +0.000000000000e+00 i
+U1-CONN a=1 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +6.948345122e-02 +0.000000000e+00 i, +1
+U1-KAT FREE n=4: Z = 1 [MET]; E[e^{ia Phi_A}] = (I_a/I_0)^(n^2) and every connected pair zero [MET]

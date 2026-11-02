@@ -1,0 +1,760 @@
+arXiv:hep-lat/9604018v1 18 Apr 1996                                                                                COLO-HEP-370
+
+                                     Scaling and Topological Charge of a Fixed Point
+                                              Action for SU (2) Gauge Theory 1
+
+                                                      Thomas DeGrand, Anna Hasenfratz, and Decai Zhu
+                                                                          Department of Physics
+
+                                                          University of Colorado, Boulder CO 80309-390
+
+                                                                                August 2018
+
+                                                                                        Abstract
+                                                  We construct a few parameter approximate fixed point action for SU(2)
+                                             pure gauge theory and subject it to scaling tests, via Monte Carlo sim-
+                                             ulation. We measure the critical coupling for deconfinement for lattices
+                                             of temporal extent Nt = 2, 3, 4, the torelon mass at fixed physical vol-
+                                             ume, and the string tension (and heavy quark potential) from Wilson
+                                             loops. We calculate the topological susceptibility using inverse blocking
+                                             and show that it scales over the observed range of lattice spacings.
+                                         1Work supported in part by NSF Grant PHY-9023257 and U. S. Department of Energy
+                                     grant DE­FG02­92ER­40672
+1 Introduction
+
+In QCD instantons may be responsible for breaking axial symmetry and resolv-
+ing the U (1) problem [1]. The relevant observable is the topological susceptibil-
+ity , defined as the infinite volume limit of
+
+                t =  Q2     (1)
+                     V
+
+where Q is the topological charge and V the space time volume. In QCD t
+is a dimension-4 object with no weak coupling expansion, and a calculation of
+t in physical units in the continuum requires nonperturbative techniques. In
+the large-Nc limit the mass of the  is related to the topological susceptibility
+through the Witten-Veneziano formula[2]
+
+m2 + m2 - 2m2K = 2Nf t/f2.  (2)
+
+    Unfortunately, the study of topology in lattice simulations is badly contami-
+nated by the presence of lattice artifacts, which can arise both from the form of
+the lattice action and from the choice of lattice operator to define and measure
+topological charge. A lattice action is, in general, not scale invariant, and so if a
+smooth continuum instanton is placed on the lattice, its action can depend on its
+size. A lattice simulation can be compromised by lattice artifacts, called "dislo-
+cations," [3], which are non-zero charged configurations whose contribution to
+the topological charge comes entirely from small localized regions. If the mini-
+mal action of a dislocation is smaller than some critical fraction (6/11 for SU(2))
+of the continuum value of a one-instanton configuration, then dislocations will
+dominate the path integral and spoil the scaling of t [4, 5]. Difficulties also
+arise because the topological charge is not conserved on the lattice. When the
+size of an instanton becomes small compared to the lattice spacing it can "fall
+through" the lattice and its charge disappears. Topological charge operators
+can fail to identify this process.
+
+    In Ref. [6] we described a framework which solves both these problems and
+allows one to study topology in the context of numerical lattice simulations in
+a theoretically reliable way. If one can construct a lattice action and lattice
+operators which live on the renormalized trajectory (RT) of some renormaliza-
+tion group transformation (RGT), then one's predictions do not depend on the
+lattice spacing. A recent series of papers[7, 8, 9, 10] have constructed fixed point
+(FP) actions for asymptotically free spin and gauge theories. FP actions share
+the scaling properties of the RT (through one-loop quantum corrections) and as
+such may be taken as a first approximation to a RT. FP gauge actions have scale-
+invariant instanton solutions with an action value of exactly 82/g2 and, using
+
+                2
+RG techniques, one can define a topological charge which has no lattice arti-
+facts. Basically, one inverts an RG transformation using a FP action to produce
+a fine-grained lattice which has the same topological structure as the original
+coarse configuration. On the fine lattice the size of any topological object scales
+as the ratio of coarse to fine lattice spacings, and after enough blocking steps
+the objects will become so large that their charge can be measured in any way
+desired.
+
+    The purpose of this paper is to construct an approximate FP action for
+SU(2) pure gauge theory, subject it to scaling tests, and then measure the
+topological susceptibility. In the next section we outline the construction of an
+action. Then we describe its properties under simulation: we have computed the
+critical temperatures for deconfinement, and the string tension measured using
+correlators of Polyakov loops and from Wilson loops. The action shows good
+scaling properties beginning at lattice spacing a  1/2Tc. Finally we describe
+our measurement of the topological susceptibility using inverse blocking.
+
+    We (again) remark that our approach to topology has been anticipated by
+studies by others of two-dimensional spin models[11, 12, 13], although we cannot
+go as far due to computer speed and memory limitations.
+
+2 Construction of an Approximate FP Action
+
+In order to have a practical action for use in simulations, we adopt a slightly
+different method for finding a FP action than was used in Ref. [6]. We want an
+action valid only for configurations which would be encountered in a realistic
+simulation, with correlation lengths of a few lattice spacings. Thus we solve the
+FP steepest descent equation
+
+SF P (V ) = min SF P (U ) + T (U, V ) ,  (3)
+{U }
+
+(where {V } is the coarse configuration, {U } is the fine configuration, and
+T (U, V ) is the blocking transformation) as follows: we generate coarse configu-
+rations using the Wilson action with Wilson coupling  = 1.5 - 2.5 and perform
+the minimization to find the number SF P (V ). We use an algorithm similar to
+the one we employed for SU (3) gauge theory [9], making a random rotation on
+each link variable and quadratically interpolating to a proposed minimum. The
+cost of a sweep through the lattice is roughly equivalent to a standard Monte
+Carlo update sweep. We reduced the change in the action per sweep to a value
+of 0.005 or below. Typical action values range from 1000 to 8000, depending
+on the volume of the lattice and the coupling. The number of sweeps required
+
+      3
+to minimize the configuration to the given accuracy is strongly beta-dependent,
+the procedure gets increasingly costly at small  values.
+
+    We fit SF P (V ) measured according to Eqn. 3 to a small set of operators
+and couplings. The fit is not designed to work for configurations which are
+much smoother or coarser than the ones we present to be minimized. There
+is considerable freedom in this fitting method, and it may be that alternate
+approximate FP actions exist which solve Eqn. 3 equally well, and have other
+nicer properties in addition.
+
+Figure 1: Difference between the measured (Eqn. 3) and fitted (Eqn. 4) value
+of SF P (V ) for the eight parameter approximate FP action of Table 1.
+
+    The approximate FP action consists of several powers of two loops, the
+                                                   4
+plaquette and the perimeter-six loop (x,y,z,-x,-y,-z),
+
+          S(V  )  =   1     (c1(C )(2 - Tr(VC )) + c2(C )(2 - Tr(VC ))2 + ...  (4)
+                      2
+                         C
+
+with coefficients tabulated in Table 1. The quality of the fit is shown in the
+
+scatter plot of Fig. 1. We chose the c1 coefficients so that the approximate FP
+action is O(a2) improved.
+
+Table 1: Couplings of the few-parameter FP action for SU(2) pure gauge theory.
+
+operator          c1        c2                c3        c4
+
+cplaq             .3333     .00402            .00674    .0152
+
+c6-link           .08333    .0156             .0149     -.0035
+
+    In Ref. [6] we constructed sets of trial smooth instantons and measured their
+
+action and charge. We found that when they had Q = 1, their action S()  SI ,
+
+where SI is the continuum instanton action, and that dislocations (instanton-
+
+like field configurations for which Q = 1) have actions evaluated at the FP using
+
+inverse blocking which is less than SI . Now we make a similar comparison for
+
+these configurations using our approximate FP action. We consider two kinds of
+
+smooth configurations, singly blocked c1 and c2 instantons (for a description of
+
+these objects see Ref. [6].) We show actions versus instanton size  in Figs. 2 and
+
+3. The dotted line indicates the Q = 0  Q = 1 boundary on the original coarse
+
+lattice while the solid line is the boundary on the inverse blocked configuration.
+
+Instanton configurations were not included in the fit which produced the action.
+
+The curve shows the action on the coarse lattice evaluated according to Eqn.
+
+3 and Table 1. The action does not reproduce the good feature of the full FP
+
+action: in particular, S() < SI out to very large . However, this action is
+still quite suitable for simulations. It will generate dislocations (configurations
+
+which have Q = 1 but S < SI ), but those dislocations will not dominate the
+
+functional integral because their action exceeds the entropic bound (for SU(N))
+
+of                                  482
+                                    11N 2
+                            S   >          ,                                   (5)
+
+or S/SI > 6/11 for SU (2). If we measure the action on an inverse blocked
+lattice using a parameterization of the FP action appropriate to smooth gauge
+
+configurations we will reproduce the results of Ref. [6], namely S()  SI when
+Q = 1, Q = 0 when S() < SI .
+
+                                    5
+3 Critical Couplings for Deconfinement
+
+The deconfinement phase transition for the pure SU(2) gauge theory is sec-
+ond order, and the transition is in the same universality class as the three-
+dimensional Ising model. The order parameter is the average Polyakov loop
+
+       L     =   1                          L(x)                              (6)
+                Ns3
+                                         x
+
+where
+
+                1                        t=Nt
+                2
+       L(x)  =                     T  r        Ut,x;0                         (7)
+
+                                         t=1
+
+and Ns and Nt are the spatial and temporal size of the lattice respectively.
+
+The Binder cumulant is defined as
+
+       g4    =  < L4 >                        -  3.                           (8)
+                < L2 >2
+
+A standard finite size scaling analysis shows that this quantity is a scaling
+function [14]. It must be independent of Ns at the critical point (neglecting
+contributions from irrelevant scaling fields).
+
+    In order to determine the critical coupling, we run simulations at different
+Ns for each Nt, then plot the Binder cumulant. The location in  at which the
+different curves cross must correspond to the critical point.
+
+    Fig. 4 shows the Binder cumulant plot for Nt = 2. We performed simulations
+at three different volumes, Ns = 4, 6 and 8. From this plot, we see that the
+crossing happens at approximately  = 1.34 and g4 = -1.40, which is consistent
+with the result from the three-dimensional Ising model where g4 = -1.41(1) [15].
+Combining this plot and the requirement that g4 = -1.40 at the crossing, we
+conclude that c = 1.340(5) for Nt = 2.
+
+    Figs. 5 and 6 show the Binder cumulant plots for Nt = 3 and Nt = 4. It
+is difficult to decrease the statistical error for these data points. We identify
+the critical coupling as the point where g4 = -1.40, and so we conclude that
+c = 1.502(5) and 1.575(10) for Nt = 3 and 4, respectively.
+
+    Although the FP action is not designed to improve asymptotic scaling, only
+scaling, we can still see if it shows asymptotic scaling. Using the original cou-
+pling in the action, we compute Tc/ from the two loop formula from our data,
+
+                                   6
+and record the results in Table 2 and Fig. 7. The eight parameter FP action
+shows asymptotic scaling within fifteen per cent from NT = 2 to 4 in terms of
+the bare coupling, with Tc/  7 - 8. Its  parameter is about a factor of five
+larger than the Wilson one and therefore much closer in value to the continuum
+ parameters.
+
+Table 2: Critical couplings at infinite volume for the FP action with parameters
+
+in Table 1.
+Nt           2            3                            4
+
+c            1.340(5)     1.502(5)  1.575(10)
+
+Tc/          8.01(9)      7.87(9)   7.04(17)
+
+4 Torelon Mass
+
+In this section we describe the measurement of the string tension  through the
+correlator of pairs of objects with the quantum numbers of Polyakov loops: on
+a lattice of transverse size L the correlator of two Polyakov loops averaged over
+transverse separations and separated a longitudinal distance z is
+
+                C(z) = Re Pj (r, z)Pj(0, 0)  exp(-µz)     (9)
+
+                       r
+
+(plus boundary terms) where µ is the so-called torelon mass. On an infinite
+lattice µ = L and we will define µ = L(L) on a finite lattice. To carry out
+a scaling test we fix the lattice spacing through the deconfinement temperature
+and perform a series of simulations on lattices of fixed physical size L = c/Tc
+and different lattice spacings. Here we take c = 2 and aTc = 1/2, 1/3, and 1/4
+(the corresponding couplings were determined in the previous section). As a
+scaling test we compute L  = c /Tc.
+
+    At large lattice spacing (aTc = 1/2) the best signals came from the Polyakov
+loop itself, measured with the Parisi - Petronzio - Rapuano [16] multihit variance
+reduction method. At smaller lattice spacing (aTc  1/3) we used correlators
+of APE-blocked [17] links: we iterate
+
+       Vjn+1(x) = (1 - )Vjn(x) + /4 (Vkn(x)Vjn(x + k^)Vjn(x + ^j)
+
+                                                                             k=j
+
+                                           + Vkn(x - k^)Vjn(x - k^)Vjn(x - k^ + ^j)) (10)
+
+(with Vj0(x) = Uj(x) and Vjn+1(x) projected back onto SU (2)), with  varying
+from 0.2 at aTc = 1/3 to 0.5 at aTc = 1/4 and ten blocking steps.
+
+                          7
+    We determined the torelon mass from a single-exponential correlated fit,
+beginning at a minimum z where the 2/DF is near unity, and where we see
+stability in the effective mass over a range of z. At aTc = 1/2 the fits are to
+z = 1 and z = 2 points only since there is no signal for z > 2.
+
+    We display our results in Fig. 8 and Tables 3 and 4. An uncertainty in
+the value of the critical coupling propagates into the uncertainty of L (L) =
+2 /Tc for the FP action. We include this uncertainty in the figure by com-
+bining it in quadrature with the statistical fluctuation in L (L); in the figure
+the extreme range of the vertical error bars shows the combined uncertainty.
+
+Table 3: Our measurements of torelon masses from the Wilson action on small
+
+lattices.                                                         L
+volume                                  µ = L
+
+43 × 12            1.88                 2.25(5)                   3.00(3)
+63 × 12            2.177                1.38(3)                   2.88(3)
+
+83 × 12            2.29872              0.97(3)                   2.78(4)
+
+        Table  4:  Our    measurements  of torelon  masses  from  theLFPaction.
+volume                                    µ = L
+
+43 × 12            1.34                 1.75(6)                   2.65(4)
+63 × 12            1.502                1.16(7)                   2.62(2)
+
+83 × 12            1.575                0.82(3)                   2.55(4)
+
+    There have been many simulations in the literature which present the string
+tension from the torelon mass [18, 19, 20]. However, most of them are done on
+
+lattices whose physical size is not the one used here, L = 2/Tc. On the scale
+of Fig. 8 the torelon mass (L) is quite sensitive to L. We elect to show only
+three small lattice spacing points. The first is the Wilson action  = 2.50 164
+
+result of Michael and Teper[18]; for this data set, L  2.07/Tc (a lattice with
+Nt = 7.7 would be at its deconfinement transition at  = 2.50). We also show
+the  = 2.60 point of the same authors and the  = 2.70 point of Ref. [19]: for
+
+these data we extrapolate to L = 2/Tc using the string formula
+
+                              =         (L)  +                                   (11)
+                                                3L2
+
+(which itself may not be correct).
+
+    The result of our simulations is that the torelon mass measured on aspect
+ratio 2 lattices using the FP action scales within one standard deviation for
+1/4  aTc  1/2, at a value which appears to be consistent with the value
+inferred from Wilson action results from small lattice spacing simulations.
+
+                                        8
+5 Potential from Wilson Loops
+
+As  rises, the critical temperature for deconfinement becomes more difficult to
+measure, and one needs some other quantity to determine the scale. Torelons
+are not a good choice because of their sensitivity to volume. The only other
+relatively straightforward observable is the potential, extracted from L × T
+Wilson loops W (L, T ).
+
+    We used a method (and a program) developed by U. Heller[21]: we construct
+APE-blocked spatial links and measure Wilson loops made of these blocked
+spatial links and unblocked temporal links. This gives a better overlap onto the
+potential. To speed up the program, the computation of the Wilson loops is
+done by first performing a gauge transformation to axial gauge, after which the
+desired APE smearing of space-like links is accomplished. We measure all on-
+axis loops, as well as off-axis time-like loops with the space-like parts along the
+directions (1,1,0), (2,1,0) and (1,1,1) plus others related by the lattice symmetry.
+
+The potential is defined up to an additive constant by
+
+      exp(-V (R)T ) = W (R, T )                                 (12)
+
+and is measured by fitting the analog of the "effective mass" in spectroscopy:
+look at the ratio - log(W (R, T + 1)/W (R, T )) and ask for it to plateau; then
+equate it to the potential V (R).
+
+    These are low-statistics simulations. We used a 123×16 lattice (84 for Wilson
+ = 1.88, FP   1.45) and collected 100-500 measurements of Wilson loops
+(spaced five update sweeps apart) per coupling.
+
+    While the numerics are easy the analysis is not. The signal from big R
+disappears into the noise exponentially in R (as the torelon mass does) and the
+extraction of V (R) from the data requires a global fit to some functional form.
+However, as far as we can tell, the choice of a particular ansatz is arbitrary. It
+is difficult to make reliable error estimates if the results depend on it.
+
+In Table 5 we present the result of a fit to V (r) to the form
+
+      V (r) = V0 + r - E/r - F (GL(r) - 1/r)                    (13)
+
+with GL(r) the lattice Coulomb potential for the quadratic action (i.e. the
+action given by truncating the formula of Table 1 by keeping only the c1 terms,
+
+then expanding 2 - TrU to quadratic order in the vector potential). A fit to the
+
+form
+
+      V (r) = V0 + r - E/r                                      (14)
+
+      9
+produces essentially identical results for  for the smaller lattice spacing data
+( > 1.502). The larger lattice spacing data are difficult to fit. The FP  = 1.34
+data set is fit keeping only on-axis points, and is fit to pure linear plus Coulomb
+form. The Wilson  = 1.88 data is fit keeping only the linear term.
+
+    A scale related to the string tension, which has smaller dependence on the
+functional form of V (r), is the distance r0, as defined through the force, by
+r02F (r0) = -1.65 [22]. In the physical world of three colors and four flavors,
+r0 = 0.5 fm. The last column of Table 5 shows r0 for our data.
+
+        Table 5: Parameters of the static potential from Wilson loops.
+
+FP action
+
+           a2        2           rmin  rmax                             r0/a
+
+1.7        0.051(1)  12.5        1.00  7.07  5.10(15)
+
+1.65       0.082(1)  6.7         1.41  6.93  4.15(10)
+
+1.625      0.093(2)  8.1         2.00  8.49                             3.9(1)
+
+1.6        0.111(2)  17.138      1.73  8.66  3.55(10)
+
+1.575      0.133(2)  14.5        1.73  10.3  3.25(10)
+
+1.502      0.237(7)  14.5        2.24  8.49                             2.48(5)
+
+1.45       0.35(1)   5.6         2.24  5.56  2.05(10)
+
+1.34       0.51(2)   1.0         1.00  4.00                             1.7(1)
+
+Wilson action
+
+2.2987     .142(2)   3.2         2.24  5.2                              3.1(1)
+
+1.88       0.67(2)   .07         2     4                                1.6(1)
+
+    The  = 1.34, 1.502, and 1.575 pointscan be used for a second scaling test
+since they are at aTc = 1/2, 1/3 and 1/4: /Tc= 1.43(3), 1.46(2), and 1.46(1).
+(The errors do not include an uncertainty in c).
+
+    In contrast the Wilson action stringtension shows an eight per cent violation
+of scaling between Nt = 2 and 4, with /Tc at Nt = 2 of 1.63(3) and at Nt = 4
+of 1.51(1).
+
+    Because we only use naive operators for the potential, not FP operators[8],
+the presence or absence of rotational symmetry breaking is not a scaling test.
+The persistence of such violation as the lattice spacing changes is a test of scale
+breaking. We can compare violations of rotational symmetry as a function of
+lattice spacing by using our results from lattice spacings determined from Tc,
+by scaling the potential by 1/Tc and the radius by Tc. We display the scaled
+potentials from the Wilson action in Fig. 9 and from the FP action in Fig. 10.
+We have not forced the potentials to lie atop each other, so the reader can view
+the extent of rotational symmetry violations.
+
+                             10
+    The combination r02 is a dimensionless variable whose variation with lattice
+spacing gives a scaling test (to the extent that the determination of r0 and/or
+
+ can be compromised by lack of rotational invariance). We present a plot
+of r02 vs a/r0 (lattice spacing in units of 0.5 fm) in Fig. 11. The dominant
+uncertainty is from the string tension. Both Wilson and FP actions scale within
+
+our uncertainties for this variable.
+
+6 Topological Susceptibility
+
+In Ref. [6] we described how to use the scale invariance of the FP action to
+define topological charge through an RG transformation by interpolating the
+gauge field configuration generated on a coarse lattice to a finer lattice. The
+interpolation is done by solving Eqn. 3. We then measure the instanton charge
+on the fine lattice. If the configurations are generated using a FP action and
+inverse blocked using the same FP action, the blocking preserves the topological
+charge while doubling the radius of any instanton. In principle this procedure
+should be repeated until all of the instantons generated on the coarse lattice
+have inflated to such a large size that any measuring technique will give their
+charge. In practice, we are limited to a single step of inverse blocking, which
+might not prove reliable if the initial configuration is too rough.
+
+    We measure the topological charge in the following way: We generate a
+series of gauge configurations {V } on an L4 lattice using the eight-parameter
+approximate FP action of Table 1. We then inverse block the configurations
+onto a (2L)4 lattice to produce fine variables {U }, by solving Eqn. 3. Finally,
+we define the topological charge on the configuration as its value on the fine
+lattice, measured using the geometric definition [23]
+
+Q(V ) = Qgeom(U ).            (15)
+
+    We use the same minimizing algorithm as we used for the construction of
+the action in Section 2. Inverse blocking is carried out on the fine lattice and
+typically takes 50 to 200 minimization passes through the lattice. We reduced
+the change in the action per sweep to a value of 0.001 or below, while typical
+action values range from 1000 to 8000. For most configurations this accuracy is
+not necessary, but occasionally the topological charge will change as we reduce
+the change in the action from, for example, 0.01 to 0.001. For the topological
+susceptibility we have not observed any systematic difference, though.
+
+    To perform a scaling test we compute the dimensionless ratio of susceptibility
+
+11
+times the fourth power of r0
+
+                              r04 =  Q2  (  r0  )4  (16)
+                                            L
+
+where r0 is extracted from the heavy quark potential. An alternative would be
+the ratio of susceptibility divided by the square of the string tension
+
+                                     =   Q2         (17)
+                              2         L42
+
+but r0 has a smaller overall systematic uncertainty with respect to form of the
+potential and fit range.
+
+    In measuring the topological charge one encounters two types of systematic
+errors even when the action itself shows scaling. The first is the effect of finite
+volume: on small volumes larger instantons are lost and the measured suscep-
+tibility is smaller than on infinite volume. The second effect is related to finite
+lattice spacing: small radius instantons are not supported on lattices with large
+lattice spacing, again lowering the measured value of the topological suscepti-
+bility. In the following we compare the scale invariant quantity r04 on lattices
+of fixed physical size, measured in units of r0 but of different lattice spacing
+(again measured in units of r0).
+
+    Table 6 contains our measurements for the topological susceptibility for the
+approximate fixed point action. The data sets typically contain 300-400 inde-
+pendent configurations. For comparison we also present Q2 measured directly
+on the coarse lattice (no inverse blocking). This number is about a factor of
+3-4 larger than the theoretically reliable inverse blocked number, signaling that
+small dislocations on the coarse lattice have been incorrectly identified as in-
+stantons by the geometric algorithm.
+
+    For the Wilson action the topological susceptibility has been measured both
+by the direct geometric definition and after cooling (locally minimizing the ac-
+tion) [24]. Typically, the charge on cooled configurations was found to be about
+1/10 the charge measured on coarse configurations. Cooling has been regarded
+with misgiving by some authors, because of fear that some objects carrying
+topological charge would disappear under cooling. Our results indicate that
+those fears were justified. It may still be possible to find a cooling algorithm
+which reproduces the results of inverse blocking, but we feel that it would have
+to be used with extreme caution. We were not able to invent a satisfactory
+cooling method.
+
+    All the results for Q2 min of Table 6 have been obtained after one inverse
+blocking step. We performed a short test run at  = 1.6 where we inverse
+
+                                     12
+blocked twice, from 44 to 84 to 164 lattices. On all configurations the topological
+charge was identical after one and two inverse blocking steps.
+
+    In Figure 12 we plot the quantity r04 versus the lattice spacing a/r0 for
+physical volumes L/r0  1.6, 1.9 and 3.2. The three data points correspond-
+ing to L/r0 = 1.54, 1.57 and 1.62, which span a range in lattice spacing a =
+0.4r0 - 0.2r0 is consistent with scaling. Apparently a lattice with a = 0.4r0
+is fine enough to support the physically relevant instantons. To check that as-
+sumption further, we created a set of 44 configurations by blocking with the RG
+transformation of the FP a set of 84 configurations generated at  = 1.7. The
+scaling properties and the value of L/r0 of these configurations are the same as
+the 84 configurations but the lattice spacing is doubled by the blocking. Any
+change in the topological susceptibility would be due to the large lattice spac-
+ing a = 0.4r0 of the 44 configurations. The blocked lattices are much rougher
+than the original ones, and the signal is noisier. It is likely that more than one
+inverse blocking step is needed to smooth the configuration. However, within
+our accuracy no difference is seen in the topological susceptibility.
+
+    In contrast the topological susceptibility on the coarsest lattice a = 0.5r0
+of the volume L/r0 = 1.85, 1.93 and 1.95 set is a bit lower then the two finer
+lattice values. This lattice is too coarse for the relevant instantons. In physical
+units, a lattice spacing of 0.25 fm is coarse enough to affect the topological
+properties of QCD while a spacing of 0.2 fm seems to be small enough not to do
+so. According to our earler work [6], a candidate instanton solution has Q = 1
+only if /a > 0.7 - 0.8: thus physically relevant instantons have sizes larger than
+0.2 × (0.7 - 0.8) fm or about 0.16 fm.
+
+    Within our statistical errors there is no significant change in the topological
+susceptibility as we increase the volume of the lattice.
+
+    Making the (possibly unwarranted) assumption that the large volume is large
+enough to approximate infinity, and making the (also possibly unwarranted)
+assumption that the pure gauge SU(2) r0 is equal to the phenomenological SU(3)
+number 0.5 fm, our value r04 = 0.12(2) corresponds to  = ( 235(10) MeV)4.
+Evaluating the Witten-Veneziano formula with the known physical masses of
+the appropriate mesons, and Nf = 3, this susceptibility yields an  mass of
+1520 MeV. With the physical  mass, one would expect to see 1/4 = 180 MeV
+if all the assumptions which went into the derivation of Eqn. 2 were correct.
+
+                                                  13
+       Table 6: Topological charge from the approximate FP action.
+
+       L   Q2 direct  Q2 min      L/r0  r04
+1.45
+1.502  4   2.79(38)   1.020(100)  1.95  0.070(21)
+1.502
+1.502  4   2.01(8)    .540(026)   1.62  0.079(10)
+1.575
+1.6    6   9.8(8)     3.15(29)    2.42  0.091(16)
+1.6
+1.625  8   37.5(43)   11.55(87)   3.23  0.106(17)
+1.65
+1.7    6   3.96(27)   1.463(116)  1.85  0.126(25)
+1.7
+       6   2.92(12)   .727(078)   1.69  0.089(19)
+
+       8   10.2(8)    3.13(33)    2.25  0.0140(29)
+
+       6   1.98(10)   .490(029)   1.54  0.087(14)
+
+       8   5.18(34)   1.520(105)  1.93  0.110(18)
+
+       8   2.21(11)   .503(030)   1.57  0.083(15)
+
+       84             .60(6)      1.57  0.099(21)
+
+7 Conclusions
+
+We demonstrate that an FP action shows scaling in the ratio /Tc, where the
+string tension is computed from the torelon mass, as opposed to the Wilson
+action, where the scaling violations are about eight per cent for the same range
+of lattice spacings.
+
+    We measured the topological susceptibility of SU(2) pure gauge theory using
+a theoretically motivated technique. We found the topological susceptibility on
+lattices with L/r0  1.6, a  0.4r0 is r04 = 0.12(2). In physical units that
+corresponds to 1/4 = 235 MeV.
+
+    The major bottleneck in the computation is, of course, the inverse blocking.
+The inverse block transformation creates a smooth lattice from a coarse one. In
+this sense it is an interpolating transformation like that of Ref. [25]. However
+topological properties are not necessarily preserved by all interpolating transfor-
+mations. In our case Eqn. 3 guarantees that the topological charge is the same
+on the coarse lattice and on the interpolating fine lattice. It may be that one
+can devise an approximate parametrization of the inverse blocked lattice along
+the lines of the construction for the sigma model described in Ref. [11], or that
+the procedure of Ref. [25] could be refined for the given RG transformation. It
+is also possible that the construction of Ref. [25] could be used as a starting
+point for further numerical minimization.
+
+    The extension of all these methods to SU(3) appears to be straightforward.
+We encourage others interested in the topological properties of gauge theories
+to use them. We remind the reader one last time that the essential ingredient of
+
+                      14
+our technique is the use of a FP action and of an interpolation (inverse blocking)
+which exploits the scaling properties of the FP action, to transform lattice con-
+figurations which are so rough that standard measurements of topological charge
+fail, into smoother configurations which still retain all the original topological
+properties. On these configurations the charge can be reliably measured. The
+method has to be used with a FP action. Generating configurations with the
+Wilson action and inverse blocking them with our RG kernel in not consistent.
+
+8 Acknowledgements
+
+We would like to thank M. Mu¨ller-Preussker for providing us with a copy of the
+program for measuring topological charge. We very much want to thank Urs
+Heller for his analysis of the potential using Wilson loops, described in Section
+5. We would like to thank P. Hasenfratz and F. Niedermayer for useful conver-
+sations, and A. Barker, M. Horanyi and the Colorado high energy experimental
+group for allowing us to use their work stations. This work was supported by
+the U.S. Department of Energy and by the National Science Foundation.
+
+References
+
+ [1] S. Weinberg, Phys. Rev. D11 (1975) 3583; G. t'Hooft, Phys. Rev. D14
+      (1976) 3432; Phys. Rev. Lett. 37 (1976) 8.
+
+ [2] E. Witten, Nucl. Phys. B156 (1979) 269; G. Veneziano, Nucl. Phys. B159
+      (1979) 213.
+
+ [3] M. Kremer, A. S. Kronfeld, M. L. Laursen, G. Schierholz, C. Schleiermacher
+      and U.-J. Wiese, Nucl. Phys. B305 (1988) 109.
+
+ [4] D. J. R. Pugh and M. Teper, Phys. Lett. 224B (1989) 159.
+ [5] M. G¨ockeler, A. S. Kronfeld, M. L. Laursen, G. Schierholz, and U.-J. Wiese,
+
+      Phys. Lett.. 233B (1989) 192.
+ [6] T. DeGrand, A. Hasenfratz, D. Zhu, COLO-HEP-369, hep-lat/9603015.
+
+ [7] P. Hasenfratz and F. Niedermayer, Nucl. Phys. B414 (1994) 785; P. Hasen-
+      fratz, Nucl. Phys. B (Proc. Suppl) 34 (1994) 3; F. Niedermayer, ibid., 513.
+
+ [8] T. DeGrand,A. Hasenfratz, P. Hasenfratz, F. Niedermayer, Nucl. Phys.
+      B454 (1995) 587.
+
+                                                  15
+ [9] T. DeGrand,A. Hasenfratz, P. Hasenfratz, F. Niedermayer, Nucl. Phys.
+      B454 (1995) 615.
+
+[10] A. Farchioni, P. Hasenfratz, F. Niedermayer and A. Papa, BUTP-95/16,
+      IFUP-TH 33/95, preprint (1995).
+
+[11] M. Blatter, R. Burkhalter, P. Hasenfratz and F. Niedermayer, Nucl.
+      Phys. B (Proc. Suppl.) 42 (1995) 799; Bern preprint BUTP 95/17, hep-
+      lat/9508028.
+
+[12] R. Burkhalter, Bern preprint BUTP-95/18, hep-lat/9512032.
+[13] M. D'Elia, F. Farchioni, A. Papa, Bern preprint IFUP-TH 60/95 (1995):
+
+      hep-lat/9511021.
+[14] J. Engels, J. Fingberg and M. Weber, Nucl. Phys. B332(1990) 737.
+[15] A.M. Ferrenberg and D.P. Landau, Phys. Rev. B44(1991) 5081;
+
+      V. Privman, P. Hohenberg and A. Aharony, in phase transitions and crit-
+      ical phenomena, Vol. 14, ed. C. Domb and J. Lebowitz(Academic Press,
+      New York, 1991).
+[16] G. Parisi, R. Petronzio, F. Rapuano, Phys. Lett. 128B, 418 (1983).
+[17] M. Falcioni, M. Paciello, G. Parisi, B. Taglienti, Nucl. Phys. B251[FS13],
+      624 (1985). M. Albanese, et. al. Phys. Lett. B192, 163 (1987).
+[18] C. Michael and M. Teper, Nucl. Phys. B305 [FS23] (1988) 453.
+[19] C. Michael and S. Perantonis, in the Proceedings of Lattice '90, Nucl. Phys.
+      B [Proc. Suppl.] 20, (1991) 177.
+[20] S. Booth, et. al., Nucl. Phys. B394 (1993) 509.
+[21] U. Heller, K. Bitar, R. Edwards, A. Kennedy, Phys. Lett. 335B, 71 (1994).
+[22] R. Sommer, Nucl. Phys. B411 (1994) 839.
+[23] M. Luscher, Commun. Math. Phys. 85 (1982) 29; A. Phillips and D. Stone,
+      Commun. Math. Phys. 103 (1986) 599.
+[24] D. J. R. Pugh, M. Teper, Phys. Rev. Lett. B218 (1989), 326.
+[25] P. Hern´andez and R. Sundrum, Harvard preprints HUTP-96/A015, hep-
+      lat/9604009 and HUTP-96/A003, hep-lat/9602017 (1996).
+
+                                                  16
+Figure 2: Action of single blocked c1 instanton configurations computed using
+the eight parameter FP action. The dotted line indicates the Q = 0  Q = 1
+boundary on the original coarse lattice while the solid line is the boundary on
+the inverse blocked configuration.
+
+                                                  17
+Figure 3: Action of single blocked c2 instanton configurations computed using
+the eight parameter FP action, displayed as in Fig. 2.
+
+                                                  18
+Figure 4: The Binder cumulant for the FP action for Nt = 2. The diamond
+shows results for 43 spatial volumes, the cross labels 63 volumes, and the square
+labels 83.
+
+                                                  19
+Figure 5: The Binder cumulant for the FP action for Nt = 3. Diamond: 64,
+cross: 83 and square: 103 spatial volumes.
+
+                                                  20
+Figure 6: The Binder cumulant for the FP action for Nt = 4. Diamond: 83,
+cross: 103, square: 123 spatial volumes.
+
+                                                  21
+Figure 7: Tc/ for the Wilson (octagons) and FP (squares) actions.
+                                            22
+Figure 8: Scaling test of torelon mass on lattices of fixed physical volume for
+the Wilson action (crosses) and FP action (squares); Tc is defined in infinite
+spatial volumes. The cross is a torelon mass measurement at L = 2.07/Tc from
+Ref. 18 and the diamonds are extrapolations by us to L = 2/Tc.
+
+                                                  23
+Figure 9: Potential V (r)/Tc vs. rTc for the Wilson action at c(NT = 2)
+(octagons) and c(NT = 4) (squares).
+
+                                                  24
+Figure 10: Potential V (r)/Tc vs. rTc for the FP action at c(NT = 2) (oc-
+tagons), c(NT = 3) (diamonds) and c(NT = 4) (squares).
+
+                                                  25
+Figure 11: String tension times r02 for the FP action (octagons) and Wilson
+action (crosses) as a function of r0/a.
+
+                                                  26
+Figure 12: Scaling test for the topological susceptibility, as a function of lattice
+spacing. The three lattice sizes (in units of r0) of approximately 1.6, 1.9, and
+3.2 are shown by diamonds, crosses, and a square, respectively.
+
+                                                  27
+

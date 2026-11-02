@@ -1,0 +1,11 @@
+L2DOB-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+L2DOB-RECORD c0_plain_n2_ring_W2L1_ord.txt: SU(2), LMAX=1, GENINV(record)=1, 25 F entries
+L2DOB-MARG c0_plain_n2_ring_W2L1_ord.txt degA=30 (7936 points): int p_A = 1.000000000000, int p_B = 1.000000000000; min p_A -1.682784e-01, min p_B -1.682784e-01 -> SIGNED: ROAD A REFUSED
+L2DOB-ROADA c0_plain_n2_ring_W2L1_ord.txt rho = -1.000000000   (next singular values 0.000e+00 0.000e+00 0.000e+00 0.000e+00)
+L2DOB-HAAR c0_plain_n2_ring_W2L1_ord.txt sigma_H = 0.067817475   (next 6.782e-02 6.782e-02 1.568e-02); max|G| 3.391e-02, Frobenius 5.925e-02
+L2DOB-CENSUS c0_plain_n2_ring_W2L1_ord.txt joint density on 2541 x 2541 (degB=20): min -3.946304e-01, negative at 1625757
+L2DOB-ROADB c0_plain_n2_ring_W2L1_ord.txt rho = -1.000000000 (degB=20, 2541 points) REFUSED: a marginal not positive on the rule
+L2DOB-TV c0_plain_n2_ring_W2L1_ord.txt C_grid = 0.513985163 (V on the degree-12 rule, 637 points, U on degree 20) at angles 4.7124 5.4978
+L2DOB-TV-ASCENT c0_plain_n2_ring_W2L1_ord.txt start 0: C = 35325.050193029 at angles 5.1538 5.1413
+L2DOB-TV-ASCENT c0_plain_n2_ring_W2L1_ord.txt start 1: C = 50942.339193048 at angles 5.1413 5.1413
+L2DOB-RESULT c0_plain_n2_ring_W2L1_ord.txt rhoA=-1.000000000 rhoB=-1.000000000 sigmaH=0.067817475 Cgrid=50942.339193048 rho/C=-0.000020

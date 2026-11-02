@@ -1,0 +1,24 @@
+THE GROUND, revision 33 (Edwin Boston III, 2026-11-02): the reduction of the gap to the blocked bound in L², and S12-c′ narrowed to rectangular cycles
+
+§8.3 gains the reduction in the L² currency, inserted after Theorem 8.5's proof with no line of the paper deleted. It is stated for any fixed L and any measurable coarse map, as revision 32 widened Theorem 8.5. Its parts:
+- Proposition 8.1′: the gap is an L² norm.
+- Hypotheses I′ and II′: the blocked bound by conditional maximal correlations, and the fibre clause averaged over the blocked measure.
+- Lemmas 8.5A–B (two projections; the angle between two coarse variables).
+- Proposition 8.5C (the fluctuation vector decays).
+- Theorem 8.5D, the two-sided covariance bound with exponential decay, this paper's own.
+- Proposition 8.5E, the currency inequality R² ≤ C(y|y′)C(y′|y), with equality for two-point spaces.
+- Theorem 8.5′, the reduction in L², with the same mass as Theorem 8.5, which it contains under (S).
+- Proposition 8.4′, the tilt lemma in L², and Corollary 8.5F, the effective-action reading and the fourth link across rungs.
+The classical parts are credited in five footnotes: Saloff-Coste and Levin–Peres–Wilmer; Seneta; Kassabov's Friedrichs-angle variance bound; Peyre; Liu–Wong–Kong and Amit; Föllmer–Künsch.
+
+The theorem is the proof agent M2's (Theorem 3.1 of its work). It was checked line by line by the reader M2R and written in the paper's notation by M2R. The inserted text was then read line by line by the reader M2RR, who re-proved Proposition 8.4′ on the page and tested it on 600,000 random instances and 180 adversarial searches with no violation. M2RR found one printed inequality false, ℓ_y(F) ≤ δ_y(F)/2 for complex F (three equiprobable cube roots of unity give 0.577), corrected to δ/√2 with Hypothesis II ⇒ II′ unchanged. Its five further text repairs are applied:
+- the absolute covariance, with the convention for a constant coordinate;
+- the heat-bath generator renamed so as not to collide with the construction's L;
+- translation-covariant versions of the conditional laws;
+- convergence uniform in the lattice in Corollary 8.5F (ii);
+- invariance under both θ and the time shifts.
+No proof used the false form.
+
+Theorem 8.9's list of proved classes now reads "a rectangular cycle whose interior links at its straight vertices have multiplicity two" where revision 32 wrote "a planar cycle". The proof agent M1 found that S12-c′'s proof covers rectangles only: at a reflex corner the interior square is unforced. The unit square, the 1 × n rectangles and the 2 × 2 square remain cases of it.
+
+README and ARXIV follow (56 pages).

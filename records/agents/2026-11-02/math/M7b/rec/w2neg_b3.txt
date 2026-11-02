@@ -1,0 +1,1 @@
+W2 at beta=3 negative for phi in (1.7189, 2.2553) = rotation angle a = 2 phi in (1.0943 pi, 1.4358 pi)

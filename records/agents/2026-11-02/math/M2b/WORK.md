@@ -399,7 +399,9 @@ two steps at W3 is out (6.7 GB at L1).
 is quoted).** The sliced LEAN + NOSNAP + WEIGHT0 path against the unsliced sweep, and Lemma 0.1 checked with full slices (no weight filter: the
 nonzero-weight entries must be at roundoff): frame (1,1,0,0) n = 2 W2L2 cancelling 1.3 × 10⁻¹⁷, full = unsliced exactly, Lemma 0.1 1.3 × 10⁻¹⁷;
 ordered 2.6 × 10⁻¹⁷, exactly, 2.6 × 10⁻¹⁷; frame (1,0,0,0) n = 4 W2L1 cancelling (two steps) 2.5 × 10⁻¹⁸, exactly, 2.1 × 10⁻¹⁸. The corner
-cells and the reversed-order weight checks follow in 7.8.
+cells follow in 7.8. The weight-level checks (rec/t7.log; unsliced, Haar-random datum seed 5, n = 2 W2L2): the reversed contraction order
+against the forward one reads 2.8 × 10⁻¹⁶ for frame (1,1,0,0), 3.9 × 10⁻¹⁶ for frame (1,1,1,1), and 6.6 × 10⁻¹⁶ for the corner object. So the
+frame and corner plaquettes enter the weight the same way whichever end the zipper starts from.
 
 **7.7 THE INTEGRATED RING, READ BY CHANNEL — (W-S) and the blocked coefficient (rec/frame; the stakes of §6 graded).**
 
@@ -418,8 +420,85 @@ the integrated ring LOWERS the coupling — part of the pinned coupling is cance
 must find. **SR2 REFUTED at this cell: the SO(3) channel FALLS with the ring integrated (−15.6 %) and its share falls (0.195 % → 0.175 %); the
 ring-mediated scalar exchange (W-S) is not visible at this reach — the ring's integration removes integer-spin coupling faster than it adds any.**
 SB2 HELD: the blocked coupling falls (β_eff 0.2922 → 0.2828, −3.2 %). The pinned shares at the other cells: two steps 0.16 % (W2L2 cancelling),
-0.59 % (W3L2 cancelling), one step 7–22 % (all inside M4's ≤ 0.87 % at two steps). Remaining framed cells (two steps cancelling, one step with a
-row above and below at W2L2 and W3L2) are appended below as they land.
+0.59 % (W3L2 cancelling); one step 7.5–25.2 % (rec/bent plan_n2_*_so3, filtered 08:0x: W2/W3/W4L2 ordered 11.9 / 21.8 / 25.2 %, cancelling
+7.5 / 12.8 / 15.1 %; the share rises with the cap at one step). The two-step shares lie inside M4's ≤ 0.87 %. The remaining framed cells landed by 08:07 (rec/run_frame.log;
+both roads equal at every cell, the joint density positive; one step W3L2 1262 s and 1082 s, 0.36 GB); all six cells:
+
+| framed cell (planar; the ring rows integrated, the datum pinned beyond) | ρ: pinned → framed (×) | SO(3) R̃: pinned → framed (×) | E[χ_½(A)] (×) |
+|---|---|---|---|
+| two steps W2L2 ordered, one row above | 0.015211 → 0.014263 (×0.9377) | 2.9625 → 2.5010 × 10⁻⁵ (×0.8442) | ×0.9683 |
+| two steps W2L2 cancelling, one row above | 0.017434 → 0.016329 (×0.9366) | 2.8438 → 2.3995 × 10⁻⁵ (×0.8438) | ×0.9683 |
+| one step W2L2 ordered, a row above and below | 0.081208 → 0.075825 (×0.9337) | 0.0096617 → 0.0082422 (×0.8531) | ×0.9709 |
+| one step W2L2 cancelling, above and below | 0.132155 → 0.123122 (×0.9316) | 0.0098865 → 0.0083850 (×0.8481) | ×0.9701 |
+| one step W3L2 ordered, above and below | 0.109878 → 0.101050 (×0.9197) | 0.023990 → 0.020258 (×0.8444) | ×0.9693 |
+| one step W3L2 cancelling, above and below | 0.189481 → 0.175553 (×0.9265) | 0.024246 → 0.020354 (×0.8395) | ×0.9750 |
+
+**THE MULTIPLIER (a reading across both caps, both data and one and two steps; its identity across the six cells was law 2-quater's
+shape until the frame extent was varied below, where it resolves into a factor per integrated edge-adjacent plaquette — eight of them in every
+cell of this table):** integrating the ring multiplies the centre-even (SO(3)) coupling by 0.840–0.853, the full coupling by 0.920–0.938 and
+the blocked loop expectation by 0.968–0.975. The SO(3) channel
+falls about 2.3 times faster than the coupling as a whole at every cell, so SR2 is refuted at all six. Every number here is a reading of R̃ —
+the total coupling with the ring integrated — and not of the outside-mediated term S̃, which no linear contraction reads (§9). The cap moves
+the one-step SO(3) channel by ×2.48 pinned and ×2.46 framed from W2 to W3, so the multiplier, not the channel's size, is what the cap leaves
+alone.
+
+**STAKES FOR THE FRAME EXTENT (written 08:1x, before the runs; the review's point: an identical multiplier across six cells is law 2-quater's
+shape until the one dimension never varied, the frame extent, is varied).** At n = 2 W2L2, both data, frames (1,0,0,0) (one row above),
+(1,1,0,0) (have) and (1,1,1,1) (all four sides). SF1: if the multiplier is a per-row boundary factor, the SO(3) multiplier moves with the
+extent: one row in [0.88, 0.96], four sides in [0.60, 0.80]. SF2: the full coupling's multiplier moves the same way (one row ≥ 0.95, four
+sides ≤ 0.90). KILL: if four sides read 0.84–0.86 again, the agreement is a wall — a reading of what the ring is given — and will be reported
+as one, not as a law.
+**STAKE SF3 (written 08:1x after the first three frame-extent cells, before the second-row runs).** The first-row cells read a factor per
+integrated plaquette sharing an EDGE with the object (below). If that is a BOUNDARY effect, a second row adds much less: at n = 2 W2L2, frame
+(2,0,0,0) multiplies the SO(3) channel by a number in [0.89, 0.923) and the full coupling by one in [0.955, 0.966), against the first row's
+0.9235 and 0.9662. KILL: if (2,0,0,0) reads the SO(3) channel at 0.86 or below, the effect is extensive in the integrated region, and the
+first ring does not read the integrated limit.
+
+**THE FRAME EXTENT, READ (rec/run_frame2.log, rec/run_frame3.log, rec/frame/fr_n2_W2L2_{top,top2,all}_*; n = 2 W2L2, planar, β = 2.2;
+both roads equal, the joint density positive at every cell).**
+
+| frame at n = 2 W2L2 | integrated plaquettes (edge-adjacent / corner / second row) | ordered: ρ ×, SO(3) × | cancelling: ρ ×, SO(3) × |
+|---|---|---|---|
+| (1,0,0,0) one row above | 4 / 0 / 0 | ×0.96621, ×0.92353 | ×0.96420, ×0.92255 |
+| (1,1,0,0) above and below (records) | 8 / 0 / 0 | ×0.93372, ×0.85308 | ×0.93164, ×0.84813 |
+| (1,1,1,1) all four sides | 12 / 4 / 0 | ×0.90061, ×0.78612 | ×0.89993, ×0.78151 |
+| (2,0,0,0) two rows above | 4 / 0 / 4 | ×0.96468, ×0.92066 | ×0.96288, ×0.91980 |
+
+**NOT A WALL — A FACTOR PER INTEGRATED PLAQUETTE THAT SHARES AN EDGE WITH THE OBJECT.** The first row's factor composes multiplicatively
+across sides. One row squared reads above-and-below to 0.02 % (SO(3) 0.85290 against 0.85308; full 0.93356 against 0.93372, ordered) and to
+0.35 % cancelling. The one-row factor cubed (four sides' 12 edge-adjacent plaquettes = three rows of four) reads all four sides to 0.2 % ordered
+(0.78768 against 0.78612; 0.90201 against 0.90061) and to 0.5 % cancelling. So the four corner plaquettes, which touch the object at a vertex
+only, add at most 0.2–0.5 %. The second row adds ×0.9969 (SO(3)) and ×0.9984 (full) over the first, about 4 % of the first row's logarithm: a
+BOUNDARY effect that converges at the first ring. Per edge-adjacent plaquette, the SO(3) factor is 0.9803 (n = 2, every frame), 0.9790
+(n = 4, the row above, both data), 0.9784–0.9791 (W3L2 above and below). The full factor is 0.9913–0.9915 (n = 2), 0.9919–0.9920 (n = 4) and
+0.9896 (W3L2). It is the same at one and two steps, at both caps and at both data. SF1 HELD (one row 0.9235 ∈ [0.88, 0.96]; four sides
+0.786 ∈ [0.60, 0.80]). SF2: one-row half HELD (0.966 ≥ 0.95); the four-sides half REFUTED by 0.0006 (0.9006 against the staked ≤ 0.90).
+SF3 HELD (SO(3) 0.9207 ∈ [0.89, 0.923); full 0.9647 ∈ [0.955, 0.966)). The KILLs did not fire. What was NOT varied: β (2.2 only), the bent
+geometry with a ring, the loop cap, and the four sides at two steps. The last is out of this engine's reach: above and below at n = 4 stage at
+3.61 GB and 4.4 × 10¹² multiply-adds, and four sides are refused ("too many links"; rec/stage/dry_n4_frame1111.txt).
+**ARITHMETIC ON THESE READINGS, NOT A READING:** the two-step planar pair has 24 edge-adjacent outside plaquettes (2 × (8 + 4)). If the
+per-plaquette factor 0.9919 carries to the whole first ring, integrating it multiplies the full coupling by 0.9919²⁴ = 0.82 (the SO(3)
+channel by 0.979²⁴ = 0.60). That would carry the true pinned two-step row (§7.8: cancelling 1.04–1.08, ordered 0.89–0.94) to 0.86–0.89 and
+0.73–0.77, BELOW ONE at both data. This is the first arithmetic in this file that puts the integrated two-step row below one, and it rests on
+three steps not read: the bent pair with a ring, the four sides at two steps, and the coarse-conditioned measure beyond the ring.
+**STAKE SF4 (written 08:2x, before the run; the one side of the two-step ring that IS in reach — the left column, frame (0,0,1,0) at n = 4,
+staged at 0.021 GB and 1.9 × 10¹⁰).** If the per-plaquette factor carries to a column touching A alone at two steps, its four plaquettes
+multiply the SO(3) channel by a number in [0.90, 0.94] (0.979⁴ = 0.919) and the full coupling by one in [0.955, 0.98] (0.992⁴ = 0.968), at both
+data. KILL: outside these bands, the per-plaquette law fails on the side columns at two steps, and the ring arithmetic above is withdrawn.
+
+**SF4 HELD (rec/run_frame4.log; fr_n4_W2L2_left_*; 68 s and 71 s, 0.021 GB).** The left column at two steps multiplies the full coupling by
+0.96788 / 0.96797 (ordered / cancelling) and the SO(3) channel by 0.91757 / 0.91754. Per plaquette that is 0.99187 / 0.99189 and 0.97872 /
+0.97871 — the top row's per-plaquette factors (0.99199, 0.97905) to 0.01–0.03 %. The column touches B alone: E[χ_½(B)] moves ×0.9681 and
+E[χ_½(A)] is unmoved to 2 × 10⁻⁵. With side-specific factors, the ring arithmetic reads ×0.8236 (ordered) and ×0.8220 (cancelling) for the
+whole first ring of the two-step pair, so the true row would go to 0.73–0.77 and 0.86–0.89 — unchanged in substance.
+**A FACTORIZATION, READ AT TWO STEPS.** Under the ring's integration the coupling moves exactly as the product of the two loops' expectations.
+The framed/pinned ratio of ρ is 0.93766 against E-product 0.93755 (top row, ordered), 0.93662 against 0.93758 (top, cancelling), 0.96788
+against E(B)'s 0.96813 (left, ordered) and 0.96797 against 0.96815 (left, cancelling). So κ := ρ/(m_A m_B), m = E[χ_½]/2, is unmoved by the
+ring to 0.03–0.1 % (2.871 → 2.872 ordered, 5.690 → 5.684 cancelling) while the DATUM doubles it (2.87 ordered against 5.69 cancelling, the
+cancelling datum freeing the shared link's staples). At two steps the outside acts on the coupling through the loops' one-body alignments
+m_A, m_B, plus a shared-edge transmission κ set by the environment AT the shared edge. At one step the same identity holds to 0.5–1.6 % only.
+This is a reading on four two-step cells at β = 2.2, planar, W2L2, and the next instrument should test it: it splits the coarse-environment
+supremum into sup κ (local to the shared edge) times the loops' alignments (global, bounded by the most aligned outside).
 
 **STAKES FOR THE TRUE BENT ROW (written before the bent runs below).** SBent1: at every cell read (one step W2L2, W3L2, W4L2; two steps W2L2;
 ordered and cancelling) the true bent ρ exceeds the planar ρ at the same cap and datum — the corner plaquettes add a direct A–B coupling with
@@ -436,18 +515,100 @@ records to every printed digit). The stakes above graded.**
 | one step W2L2 | 0.101385 / 0.081208 / **1.2485** | 0.150762 / 0.132155 / **1.1408** |
 | one step W3L2 | 0.133182 / 0.109878 / **1.2121** | 0.207627 / 0.189481 / **1.0958** |
 | one step W4L2 | 0.145159 / 0.121272 / **1.1970** | 0.215639 / 0.196225 / **1.0989** |
-| two steps W2L2 | (in flight) | **0.019806** / 0.017434 / **1.1361** |
+| two steps W2L2 | **0.017587** / 0.015211 / **1.1562** | **0.019806** / 0.017434 / **1.1361** |
 
-SBent1 HELD at every cell read (the corners always add coupling); SBent2 HELD (one step ≤ 24.85 %, two steps 13.6 %); the two-step true bent
-coupling is centre-odd and near-isotropic as the planar one (ρ/T = 0.660, SO(3) share 0.19 %), E[χ_½(A)] moves by +0.3 % only. THE TRUE ROW AT
-TWO STEPS W2L2, cancelling: S₂₀ = 4 × 0.017434 + 16 × 0.019806 = **0.387** against the planar 20ρ = 0.349 — SBent3 HELD there.
+SBent1 HELD at every cell read (the corners always add coupling). SBent2: the one-step half HELD (≤ 24.85 %). The two-step half HELD at
+the cancelling datum (13.6 %) and is REFUTED at the ordered datum, by 0.6 points (15.6 % against the staked 15 %). The two-step true bent coupling is centre-odd and near-isotropic, like the planar one (cancelling
+ρ/T = 0.660 and SO(3) share 0.19 %; ordered ρ/T = 0.658 and share 0.23 %, ∫|c| odd share 0.99992; 1588 s, 0.82 GB). E[χ_½(A)] moves by
++0.3 % and +0.55 % only. THE TRUE ROW AT TWO STEPS W2L2: cancelling S₂₀ = 4 × 0.017434 + 16 × 0.019806 = **0.387**, against the planar
+20ρ = 0.349; ordered S₂₀ = 4 × 0.015211 + 16 × 0.017587 = **0.342**, against the planar 0.304. SBent3 HELD at both data.
 **ARITHMETIC, NOT A READING (the W4 bent pair is out of reach at two steps):** the bent/planar ratio falls slowly with the cap at one step
-(cancelling 1.141 → 1.096 → 1.099). Carried onto the W4L1 planar cancelling value with r ∈ [1.10, 1.14], the true row reads
-0.935 × (4 + 16r)/20 = 1.01–1.04, and with the cap tail (×1.040) 1.05–1.08: **at the pinned cancelling datum the TRUE two-step row probably lies
-ABOVE ONE**, by a few per cent. At the ordered datum (planar 0.792, tail 0.838) a ratio near the one-step 1.20 gives 0.95–1.0 — undecided by
-arithmetic. This revises the planar statement of 7.1: the sub-one two-step readings in the L² currency are planar-geometry readings; with the
-corners the pinned row sits at one within the errors of this arithmetic. As every pinned reading, it is the integrand at one datum (the
-integrated ring lowers the coupling 6 %, 7.7), not Hypothesis I's row.
+(ordered 1.249 → 1.212 → 1.197, cancelling 1.141 → 1.096 → 1.099; W4/W2 = 0.959 and 0.963). Carried onto the two-step W2L2 ratios, that
+gives r ∈ [1.094, 1.136] (cancelling) and [1.108, 1.156] (ordered) at W4. On the W4L1 planar values the true row reads
+0.935 × (4 + 16r)/20 = 1.01–1.04 (cancelling), 1.05–1.08 with the cap tail (×1.040), 1.04–1.07 with the L1 → L2 correction. The ordered row
+reads 0.792 × (4 + 16r)/20 = 0.86–0.89, then 0.91–0.94 with the tail (×1.059), then 0.89–0.92 with L1 → L2. **At the pinned cancelling datum
+the TRUE two-step row probably lies ABOVE ONE by a few per cent; at the pinned ordered datum it lies BELOW ONE by about a tenth** — both by
+arithmetic. This revises the planar statement of 7.1: the sub-one two-step readings in the L² currency are planar-geometry readings. With the
+corners, the pinned row sits at one at the cancelling datum and about a tenth below it at the ordered datum, within the errors of this
+arithmetic. As with every pinned reading, it is the integrand at one datum (integrating the ring multiplies the coupling by 0.92–0.94, 7.7),
+not Hypothesis I's row.
+
+---
+
+## 9. (W-S) AS THE MAIN ROAD: WHAT IS CENTRE-FREE (the orchestrator's priority of 2026-11-02 07:4x: G₂, F₄, E₈ have trivial centre, so the
+vortex channel vanishes for them — M4's no-go — and the gap must come through the centre-even channel, the 0⁺⁺ exchange)
+
+**Proposition W-S1 (the centre-even coupling, centre-free; proved).** Let G be any compact group, Z(G) its centre, and H_c(G) ⊂ L²(G) the
+functions invariant under U ↦ zU for z ∈ Z(G) (all of L²(G) when Z(G) is trivial). For the two coarse loops with the fine outside ω integrated
+given the coarse environment ξ, let R̃_ξ be the maximal correlation of (A, B) over f ∈ H_c in A and g ∈ H_c in B, ρ̃_ω the same at a fixed fine
+datum, ρ̃_ξ(A; ω) the maximal correlation between f(A), f ∈ H_c, and the outside. Then for 1/s + 1/q = 1,
+ R̃_ξ ≤ ‖ρ̃_·‖_{L^s(ν₀(·|ξ))} (Θ_A^{(q)} Θ_B^{(q)})^{1/2} + S̃_ξ,  S̃_ξ := sup |Cov_ν(E_ω f(A), E_ω g(B))| ≤ ρ̃_ξ(A; ω) ρ̃_ξ(B; ω),
+the supremum over unit-variance f, g in H_c. *Proof.* Lemma A2's proof with f, g restricted to H_c: every step — the law of total covariance,
+Hölder, Minkowski's integral inequality, the variance bound Var(E[f | ω]) ≤ ρ̃(A; ω)² Var f — is a statement about functions in a closed
+subspace and never uses the group law or the centre. ∎
+So (W-S) is EXACTLY the second term of Lemma A2 in the centre-even subspace, and for a centreless G the whole coupling is bounded by the
+fine-averaged direct part plus (W-S). M4R's finding that the single-link fibre Dobrushin row is ≥ 13.2 at β = 2.2 does not touch this form: it
+asks for no fibre Dobrushin condition, only fine averages (the s-norm of the pinned centre-even coupling, the q-moment of the density ratio)
+and the outside's centre-even information ρ̃(·; ω).
+
+**Proposition C2″ (the leading-mode shape for any compact G; proved).** For an irreducible π of dimension d_π and a law on G × G with Haar
+marginals whose coupling is pure (π, π̄), write c(U, V) = Σ K_{(ij),(kl)} φ_{ij}(U) conj φ_{kl}(V) in the Haar-orthonormal basis
+φ_{ij} = √d_π π_{ij}. Then ρ = ‖K‖_op. For π SELF-CONJUGATE (χ_π real-valued: every irreducible of SU(2), G₂, F₄ and E₈, −1 lying in their
+Weyl groups) the relative-holonomy coupling c = ε d_π χ_π(U g V⁻¹) has K = ε × a unitary, so ρ = ε with full multiplicity d_π² (the isotropic
+end); for complex π the real density ε d_π Re χ_π(UgV⁻¹) splits into the π- and π̄-blocks, each (ε/2) × a unitary, and ρ = ε/2. *Proof.* By
+Peter–Weyl the φ_{ij} are orthonormal in L²₀(G); the coupling operator maps φ_{kl} to Σ_{ij} K_{(ij),(kl)} φ_{ij} and kills their orthocomplement;
+and χ_π(UgV⁻¹) = Σ_{ijk} π_{ij}(U) π_{jk}(g) conj π_{ik}(V), so d_π χ_π(UgV⁻¹) = Σ φ_{ij}(U) conj φ_{ik}(V) π_{jk}(g), whose coefficient matrix is
+1 ⊗ π(g) up to transposition — unitary. ∎ (Corrected 07:5x: the first draft omitted the self-conjugacy condition.) For SU(2) and π = ½ this is
+Proposition C2′(i): in the orthonormal basis 2u_i the matrix of uᵀKv is K/4, and ‖K/4‖ = σ₁/4. For G₂ the first channel is the 7, real,
+centre-even.
+
+**Proposition W-S2 (no localized twist without a centre; proved).** Let G be compact and connected with simple Lie algebra, and w a
+non-constant class function (the plaquette weight; w_β = exp((β/N) Re tr U), β > 0). Let L_V be the links crossing a dual 3-chain V such that
+some plaquette p has two opposite links in L_V (every slab of dual cubes has such plaquettes). If τ_h: U_ℓ ↦ hU_ℓ on L_V (all other links
+fixed) leaves p's weight unchanged for every configuration, then h is central. *Proof.* With p's holonomy U₁U₂U₃⁻¹U₄⁻¹ and ℓ₁, ℓ₃ ∈ L_V,
+τ_h gives hU₁U₂U₃⁻¹h⁻¹U₄⁻¹; the four links are distinct, so X = U₁U₂U₃⁻¹ and Y = U₄⁻¹ range freely over G, and w(hXh⁻¹Y) = w(XY) for
+all X, Y, i.e. w(cg) = w(g) for every c ∈ C_h = {hXh⁻¹X⁻¹ : X ∈ G} and every g. Because w is a class function, the left translations fixing w
+form a closed normal subgroup; it contains C_h, a connected set through 1, hence the closed normal subgroup N generated by C_h, which is
+connected. If h is not central then C_h ≠ {1}, so N is a nontrivial connected closed normal subgroup, hence N = G (a proper closed normal
+subgroup of such a G is finite and central), and w is constant — a contradiction. ∎
+So Theorem C1's change of variables — the one global, measure-weighted bound in this file that escapes Theorem A1 — exists exactly for central
+twists. For G₂, F₄, E₈ (trivial centre, no outer automorphisms) no sheet can be moved by a fixed-element twist (left or, by the same argument,
+right multiplication): M4's no-go, seen at the change of variables.
+
+**W-S3 (what the SU(2) readings say about G₂, and what they do not).** In SU(2) the centre acts on spin j by (−1)^{2j}, so Hom(½ ⊗ ½, ½) = 0:
+half-integer flux is conserved mod 2 at every link, and the leading coupling between adjacent coarse loops — the (½, ½) relative-holonomy channel
+(§7.4: ≥ 99.98 % of the connected density's L¹ mass at every two-step cell read) — is CENTRE-ODD, where Theorem C1 bounds it globally; (W-S) inherits only the
+residue (SO(3) share 0.15–0.6 % at two steps). For G₂ the lowest representation 7 is real and the centre is trivial, so the analogous leading
+channel (7, 7) is CENTRE-EVEN and lies INSIDE (W-S); and Hom(7 ⊗ 7, 7) ≠ 0 (so(7) = Λ²7 = g₂ ⊕ 7, the octonionic cross product), so 7-flux
+sheets branch along seams, giving couplings with no SU(2) analogue. Hence the SO(3) readings are evidence about SU(2) only and must not be read as
+evidence for the universal road. The SU(2) PROXY for G₂'s problem is SU(2)'s FULL coupling read without Theorem C1 — a structural analogy, not
+a G₂ reading; the measurement needs the engine with G₂'s characters. That proxy is the true pinned two-step row, by arithmetic at the cap
+limit (§7.8): 1.04–1.08 at the cancelling datum and 0.89–0.94 at the ordered datum. Integrating the ring multiplies the coupling by 0.92–0.94
+(§7.7). For G₂ the universal road is Hypothesis I in full, at the threshold two steps up from the SU(2)-analogous coupling: above one at the
+cancelling datum, about a tenth below it at the ordered datum.
+
+**THE READING (W-S) asks for, at its strength (§7.7's table, rec/frame; planar, the datum pinned beyond the ring, β = 2.2).** With the ring
+integrated, the centre-even (SO(3)) channel of the coarse pair FALLS at all six cells. Integration multiplies it by 0.840–0.853 (two steps
+W2L2, one row above, both data: ×0.844, ×0.844; one step W2L2 and W3L2, a row above and below, both data: ×0.853, ×0.848, ×0.844, ×0.840).
+It multiplies the full coupling by 0.920–0.938 and the blocked loop expectation by 0.968–0.975. The ring's mixture removes centre-even coupling
+about 2.3 times faster than the coupling as a whole. Varying the frame extent (§7.7, n = 2: one row, two rows, all four sides, a second row)
+resolves the multiplier into a factor per integrated plaquette sharing an edge with the object. That factor is 0.979–0.980 for the SO(3)
+channel and 0.990–0.992 for the full coupling, multiplicative across sides to 0.02–0.5 %. Corner plaquettes and a second row add at most a few
+tenths of a per cent. It is the same at one and two steps, at both caps and at both data: a boundary effect, converged at the first ring.
+Whatever scalar exchange the integrated ring adds is smaller than what its averaging removes. These are readings of R̃, the left side of W-S1,
+and SU(2) readings only (W-S3).
+
+**What the framed engine reads, and what it cannot.** (Corrected 07:5x. The first draft of this paragraph claimed that a doubled object gives
+a two-sided rigorous bracket on (W-S), from the range of Z_obj over ring configurations. At β = 2.2 that range carries factors up to e^{2β} = 81
+per ring plaquette, so the bracket is vacuous; the claim is withdrawn.) E_ν[m_f m_g] = (1/Z)∫dω W_out(ω) Z^f_obj(ω) Z^g_obj(ω)/Z_obj(ω), so S̃
+is a REPLICA RATIO, and no linear tensor contraction evaluates it. Its lower bounds are linear: a fixed test function h of the ring gives
+Corr(f(A), h(ω)) as a ratio of two contractions. Its upper bounds, ρ̃(A; ω)ρ̃(B; ω) included, are not. What the framed engine computes
+exactly is linear: R̃_ξ, the total centre-even coupling with the ring integrated. That is the left side of W-S1 and a coefficient of the kind a
+coarse Dobrushin matrix needs; the coarse-conditioned version is the next object, §8. So a proof bounds R̃_ξ, with W-S1 / Lemma A2 as the
+decomposition, and the readings above are readings of R̃_ξ, not of S̃. A literal S̃ on a small outside is a deterministic quadrature: one
+outside link u, a product Gauss rule on SU(2) with Haar weight, and at each node the raw Z(u) and the conditional marginals of A and B. These
+are assembled into the replica law Q = E_u[p_A(·|u) ⊗ p_B(·|u)] and read by the maximal-correlation reader. That is about 500 nodes on the
+one-step object (seconds each) and out of reach at two steps (25 minutes each). Nothing in it uses the centre.
 
 ---
 
@@ -463,14 +624,30 @@ FINE-data supremum is removable inside the mixture, interpolating M2's Lemmas 5.
 Lemma C0 and Theorem C1 (§5): the object-level twist identity F_tw = (−1)^a F, and |E X| ≤ ‖X‖ ‖λ − τ_V*λ‖_TV for every centre-odd coarse
 observable — a measure-weighted bound with no environment supremum, global, and refusing the Ising mixture as a sound bound must.
 Proposition C2′ (§7.4): for a pure centre-odd coupling with Haar marginals, ρ = σ₁(K)/4, ρ/C = 3π/16 universally, and ρ/T_A ∈ [3π/16, 9π²/64]
-with the ends characterised (rank one; orthogonal).
+with the ends characterised (rank one; orthogonal). The rest is in §9, the universal road. Proposition C2″: the same shape for any compact G
+and self-conjugate π, with the relative-holonomy coupling at the isotropic end. Proposition W-S1: Lemma A2 on the centre-even subspace — the
+form of (W-S) that uses no centre and no fibre Dobrushin condition. Proposition W-S2: a fixed-element twist moves only a sheet iff the
+element is central, so no Theorem C1 exists for G₂, F₄, E₈. W-S3 (representation theory): Hom(½ ⊗ ½, ½) = 0 puts SU(2)'s leading coupling in
+the centre-odd sector, while for G₂, Hom(7 ⊗ 7, 7) ≠ 0 and the leading (7, 7) coupling lies inside (W-S).
 
-**Read (exact finite objects, double precision, two roads where marked; planar geometry unless "true bent").** The two-step planar coupling at
-W4L1: ρ = 0.046755 (cancelling) / 0.039579 (ordered), 20ρ = 0.935 / 0.792, cap steps ×1.20 / ×1.23 after ×2.22 / ×2.11, the geometric tail
-×1.040 / ×1.059 — the same step law U(1)'s converged charge ladder obeys (×1.15–1.23, then ×1.01–1.02); U(1)'s converged two-step sums 1.31–2.96.
-The coupling is ≥ 99.98 % centre-odd and near-isotropic (ρ/T = 0.64–0.71): the vector channel of the relative holonomy across the shared edge.
-The blocked one-plaquette coupling at the pinned data is NOT converged in the cap and the cap raises it: β_eff 0.292 → 0.491 → 0.565 (ordered),
-0.222 → 0.305 → 0.374 (cancelling) at W2, W3, W4; the W2L2 evidence for a two-step landing in Theorem 8.9's region is a cap artefact.
+**Read (exact finite objects, double precision, two roads where marked; planar geometry unless "true bent"; pinned data unless "integrated").**
+The two-step PLANAR coupling at W4L1: ρ = 0.046755 (cancelling) / 0.039579 (ordered), 20ρ = 0.935 / 0.792, cap steps ×1.20 / ×1.23 after
+×2.22 / ×2.11, the geometric tail ×1.040 / ×1.059 — the step law U(1)'s converged charge ladder also obeys (×1.15–1.23, then ×1.01–1.02); U(1)'s
+converged two-step sums 1.31–2.96. THE TRUE BENT PAIR (corner plaquettes integrated as cycles, first computed here) is 10–25 % stronger than the
+planar one at one step, and 13.6 % (cancelling) / 15.6 % (ordered) stronger at two steps W2L2. So the TRUE pinned two-step row is, by
+arithmetic at the cap limit, 1.04–1.08 at the cancelling datum (at one, not below it) and 0.89–0.94 at the ordered datum. The coupling is
+≥ 99.98 % centre-odd and near-isotropic (ρ/T = 0.64–0.71): the vector channel of the relative holonomy across the shared edge. INTEGRATING THE
+RING multiplies the coupling by a FACTOR PER INTEGRATED PLAQUETTE SHARING AN EDGE WITH THE OBJECT: 0.990–0.992 for the full coupling and
+0.979–0.980 for the SO(3) channel. It is multiplicative across sides, the same at one and two steps, both caps and both data; corners and a
+second row add a few tenths of a per cent (twelve framed cells; the frame extent varied at n = 2, the top row and the left column at
+n = 4). At two steps the ring moves the coupling exactly as the product of the two loops' expectations (to 0.01–0.1 %): ρ = κ m_A m_B, with
+the shared-edge transmission κ unmoved by the ring and doubled by the datum (2.87 ordered, 5.69 cancelling). By ARITHMETIC, the whole first ring of the
+two-step pair (24 such plaquettes, ×0.82) would carry the true row to 0.86–0.89 (cancelling) and 0.73–0.77 (ordered) — below one. That rests on
+the bent pair with a ring, the four sides at two steps (out of this engine's reach) and the coarse-conditioned measure, none of them read.
+These are readings of R̃, SU(2) only; S̃ itself is a replica ratio that no linear contraction reads. The blocked one-plaquette
+coupling at the pinned data is NOT converged in the cap and the cap raises it: β_eff 0.292 → 0.491 → 0.565 (ordered), 0.222 → 0.305 → 0.374
+(cancelling) at W2, W3, W4; the W2L2 evidence for a two-step landing in Theorem 8.9's region is a cap artefact, the landing not refuted (the pinned
+datum is more aligned than any coarse environment) but its evidence removed.
 
 **The next object, and its instrument.** By Theorem A1 the coarse-environment supremum stays; what the readings have never taken is the
 supremum, over COARSE environments, of the coefficient with the FINE outside INTEGRATED. The instrument is the coarse-conditioned object: the
@@ -478,7 +655,16 @@ integrated-ring engine (w2f.c, W2_FRAME) with the neighbouring coarse loops IMPO
 at the loop cap) instead of pinned fine data — the frame plaquettes carry the neighbouring coarse plaquettes' interiors, so their boundary loops
 are cycles the engine already knows how to read. Its first test: the two-step blocked a′_½ and the adjacent coupling at the most aligned coarse
 environment, against Theorem 8.9's 0.4764, beside U(1) at 1.2. And M4's (W-V) (M5's), the twisted fibre's forgetting of a 't Hooft insertion at
-a_c/2, is what Theorem C1 needs to turn the coarse twist distinguishability into a number.
+a_c/2, is what Theorem C1 needs to turn the coarse twist distinguishability into a number. FOR THE UNIVERSAL ROAD (W-S2, W-S3) the same object
+must be read in EVERY channel with no vortex help: for G with trivial centre the leading coupling lies inside (W-S), so the road is Hypothesis I
+in full. The SU(2) proxy places its pinned two-step row at the threshold (cancelling 1.04–1.08, ordered 0.89–0.94). By arithmetic on the
+per-plaquette factor, the whole first ring would carry it to 0.86–0.89 and 0.73–0.77. The decisive cell — the two-step pair with its whole
+first ring and the coarse environment imposed beyond — is out of this engine's reach (§7.7), and is the instrument to build: a contraction
+that carries the four-sided ring at n = 4 under 2 GB. The two-step factorization ρ = κ m_A m_B (§7.7) is its design lever. The coarse supremum
+splits into sup κ, local to the shared edge (a few links: sup over the shared edge's coarse neighbours), times the loops' alignments, global and
+bounded by the most aligned outside. The per-step fall at the read caps is ×3.1 (ordered) to ×4.2 (cancelling), from one-step W4L2 to
+two-step W4L1, planar, so a third step is the other road. The G₂ reading itself needs the engine rebuilt on G₂'s recoupling data
+(Clebsch–Gordan for the 7 and the 14, with their multiplicities).
 
 **Cross-field.** (1) Theorem A1 is the lattice form of a fact Markov-chain theory already knows: conductance is governed by bottlenecks, and a
 bottleneck sits on configurations of vanishing probability (Cheeger); a criterion blind to rare configurations cannot see a bottleneck. The
@@ -487,4 +673,8 @@ correlation analysis on S³: the shape of a centre-odd coupling is the singular-
 (trace × trace, rank one) and the rotor-like (u·v, orthogonal) couplings at the two ends. The two-step reading sits at the rotor end: at the scale
 4a from β = 2.2 the blocked SU(2) theory couples adjacent coarse plaquette holonomies as the O(4) σ-model couples neighbouring spins, ε u·v with
 ε = 4ρ, and 20ρ < 1 is that model's Dobrushin condition in the L² currency. (3) Theorem C1 is the Tomboulis–Yaffe vortex inequality read at the
-coarse scale and in total variation: confinement as the indistinguishability of a configuration from its centre-twisted image.
+coarse scale and in total variation: confinement as the indistinguishability of a configuration from its centre-twisted image. (4) W-S2 is the
+lattice change-of-variables face of 't Hooft's classification of twisted boundary conditions: the twist sectors are indexed by Z(G) and are
+empty for trivial centre (classical, W = 0). W-S3 is the representation theory behind G₂'s string breaking: 7 ⊂ 14 ⊗ 14 ⊗ 14, so three gluons
+screen a 7 charge (Holland, Minkowski, Pepe, Wiese, Nucl. Phys. B 668 (2003)). The coupling a centre-free road must carry is the one that, in
+SU(2), the centre's selection rule hands to the vortex channel.

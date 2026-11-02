@@ -1,0 +1,15 @@
+C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\MG2\code\g2_window.py:65: RuntimeWarning: invalid value encountered in divide
+  return (self.alt(np.array(lam) + self.delta) / self.Ad).real
+C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\MG2\code\g2_window.py:65: RuntimeWarning: divide by zero encountered in divide
+  return (self.alt(np.array(lam) + self.delta) / self.Ad).real
+C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\MG2\code\g2_window.py:77: RuntimeWarning: invalid value encountered in multiply
+  gram = np.array([[np.sum(g.h * chis[i] * chis[j]) for j in range(len(L))] for i in range(len(L))])
+C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\MG2\code\g2_window.py:182: RuntimeWarning: invalid value encountered in multiply
+  c7 = g.chi((1, 0)); fus = {tuple(l): round(float(np.sum(g.h * c7 * c7 * g.chi(l))), 10) for l in L[:10]}
+C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\MG2\code\g2_window.py:183: RuntimeWarning: invalid value encountered in multiply
+  print('   7x7 fusion multiplicities:', fus, ' int chi7^3 =', round(float(np.sum(g.h * c7 ** 3)), 10), ' int chi7^4 =', round(float(np.sum(g.h * c7 ** 4)), 10))
+== SU(2) |W| = 2 irreps 15 first: [((0,), 1, 0.0), ((1,), 2, 0.75), ((2,), 3, 2.0), ((3,), 4, 3.75), ((4,), 5, 6.0), ((5,), 6, 8.75), ((6,), 7, 12.0), ((7,), 8, 15.75)]
+   KAT sum h = 1.0  max|<chi_a,chi_b> - delta| = 8.68229099726392e-16
+== G2 |W| = 12 irreps 23 first: [((0, 0), 1, 0.0), ((1, 0), 0, 2.0), ((0, 1), 0, 4.0), ((2, 0), 0, 4.6667), ((1, 1), 0, 7.0), ((3, 0), 0, 8.0), ((0, 2), 0, 10.0), ((2, 1), 0, 10.6667)]
+   KAT sum h = 1.0  max|<chi_a,chi_b> - delta| = nan
+   7x7 fusion multiplicities: {(0, 0): nan, (1, 0): nan, (0, 1): nan, (2, 0): nan, (1, 1): nan, (3, 0): nan, (0, 2): nan, (2, 1): nan, (4, 0): nan, (1, 2): nan}  int chi7^3 = nan  int chi7^4 = nan

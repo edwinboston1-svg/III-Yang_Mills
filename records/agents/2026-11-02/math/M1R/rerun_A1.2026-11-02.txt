@@ -1,0 +1,39 @@
+START 2026-11-02 07:28:56
+3d17b9b8cd661c6fcbdd313acbcfe8f6 *kp_cert_m1.awk
+b5145c3821ac1b9764168336f40d6a6a *kp_cert_rec_from_III.awk
+e141f00567ee077bc31df4db1a18867a *kp_cert_m1r.awk
+c0524260203c2c0771d979d43f892433 *r2tab_g_mine.txt
+9f2a46a164266a93c11feeaaa3609db8 *local_tail_table.2026-10-31g.txt
+ff26d775a791dec1ef8cddaffd57683b */c/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/scripts/aperanton_bessel_cert.awk
+== C0 CONTROLS at beta = 0.4764, alpha = 0.0044, F0 = 20 (the record's point): record engine / M1 engine, modes unset / M1R variant, modes unset
+REC  KP-CERT dress=page graded=S24-table beta=4764/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.131404, 0.131411] root in [0.131404, 0.131411] u in [0.11798946, 0.11798946] u~ in [0.13455855, 0.13455957] r_hi=0.696902 LHS in [0.0043826, 0.0043833] alpha=0.0043999 -> PASS mix=0.000000000291
+M1   KP-CERT dress=page graded=S24-table beta=4764/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.131404, 0.131411] root in [0.131404, 0.131411] u in [0.11798946, 0.11798946] u~ in [0.13455855, 0.13455957] r_hi=0.696902 LHS in [0.0043826, 0.0043833] alpha=0.0043999 -> PASS mix=0.000000000291
+M1R  KP-CERT dress=page graded=S24-table beta=4764/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.131404, 0.131411] root in [0.131404, 0.131411] u in [0.11798946, 0.11798946] u~ in [0.13455855, 0.13455957] r_hi=0.696902 LHS in [0.0043826, 0.0043833] alpha=0.0043999 -> PASS mix=0.000000000291
+C0 page: M1 engine (modes unset) CHARACTER-IDENTICAL to the record engine
+C0 page: M1R variant (modes unset) CHARACTER-IDENTICAL to the record engine
+REC  KP-CERT dress=tree graded=S24-table beta=4764/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.115833, 0.115841] root in [0.057609, 0.057617] u in [0.11798946, 0.11798946] u~ in [0.13247963, 0.13248064] r_hi=0.686135 LHS in [0.0031276, 0.0031281] alpha=0.0043999 -> PASS mix=0.000000000291
+M1   KP-CERT dress=tree graded=S24-table beta=4764/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.115833, 0.115841] root in [0.057609, 0.057617] u in [0.11798946, 0.11798946] u~ in [0.13247963, 0.13248064] r_hi=0.686135 LHS in [0.0031276, 0.0031281] alpha=0.0043999 -> PASS mix=0.000000000291
+M1R  KP-CERT dress=tree graded=S24-table beta=4764/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.115833, 0.115841] root in [0.057609, 0.057617] u in [0.11798946, 0.11798946] u~ in [0.13247963, 0.13248064] r_hi=0.686135 LHS in [0.0031276, 0.0031281] alpha=0.0043999 -> PASS mix=0.000000000291
+C0 tree: M1 engine (modes unset) CHARACTER-IDENTICAL to the record engine
+C0 tree: M1R variant (modes unset) CHARACTER-IDENTICAL to the record engine
+== R1 THE S12-FREE NUMBER (Corollary U''): EVENTAIL=1 UNCOND=1 U12=1 NCSIG=1, F0 = 22
+KP-CERT SCAN dress=page graded=S24-table beta=0.3650 gamma=6/1 F0=22: PASS for alpha in [0.0039, 0.0050]
+KP-CERT SCAN dress=page graded=S24-table beta=0.3652 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.3656 gamma=6/1 F0=22: PASS for alpha in [0.0038, 0.0051]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.3658 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+== R1' the U'' points' report lines at alpha = 0.0044 (inside both PASS windows)
+KP-CERT dress=page graded=S24-table eventail K=1/1 C=1/1 beta=3650/10000 alpha=44/10000 gamma=6/1 F0=22: kappa_U in [0.052146, 0.052146] root in [0.052146, 0.052146] u in [0.09074764, 0.09074764] u~ in [0.09560537, 0.09560541] r_hi=0.495153 LHS in [0.0000453, 0.0043576] alpha=0.0043999 -> PASS mix=0.000000000020
+KP-CERT M1-TAIL enum_hi=0.0000453 tail_hi=0.0043122 rK_hi=0.495153
+KP-CERT M1-UNCOND delta1_hi=0.17728969 eps1_hi=0.13712742 K1_hi=1.53446387 C1_hi=2.772022 KI_hi=0.27425485 rK1_hi=0.759794
+KP-CERT dress=tree graded=S24-table eventail K=1/1 C=1/1 beta=3656/10000 alpha=44/10000 gamma=6/1 F0=22: kappa_U in [0.050096, 0.050096] root in [0.015674, 0.015674] u in [0.09089518, 0.09089518] u~ in [0.09556465, 0.09556469] r_hi=0.494942 LHS in [0.0000452, 0.0043411] alpha=0.0043999 -> PASS mix=0.000000000020
+KP-CERT M1-TAIL enum_hi=0.0000452 tail_hi=0.0042959 rK_hi=0.494942
+KP-CERT M1-UNCOND delta1_hi=0.17787191 eps1_hi=0.13735367 K1_hi=1.53484325 C1_hi=2.774764 KI_hi=0.27470734 rK1_hi=0.759659
+== R3 THE CONDITIONAL NUMBER (S12's staked 4 sigma(F) u^F kept, T1 + T2): EVENTAIL=1 NCSIG=1, F0 = 22
+KP-CERT SCAN dress=page graded=S24-table beta=0.5100 gamma=6/1 F0=22: PASS for alpha in [0.0033, 0.0038]
+KP-CERT SCAN dress=page graded=S24-table beta=0.5102 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5198 gamma=6/1 F0=22: PASS for alpha in [0.0036, 0.0043]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5200 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+== R3' the same with NCSIG unset (M1: it moves no digit)
+KP-CERT SCAN dress=page graded=S24-table beta=0.5100 gamma=6/1 F0=22: PASS for alpha in [0.0033, 0.0038]
+KP-CERT SCAN dress=page graded=S24-table beta=0.5102 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+END 2026-11-02 07:37:32

@@ -1,0 +1,32 @@
+PHOTON L=2 map=H M1=256 a0=1 dir=0 rank_of_S in [3, 3]
+PHOTON-RATE L=2 map=H dir=0 kappa=1.717662 (D1=6 D2=13) local=1.717664
+PHOTON L=2 map=H M1=256 a0=1 dir=3 rank_of_S in [3, 3]
+PHOTON-RATE L=2 map=H dir=3 kappa=1.717717 (D1=6 D2=12) local=1.717670
+PHOTON L=2 map=A M1=256 a0=1 dir=0 rank_of_S in [3, 3]
+PHOTON-RATE L=2 map=A dir=0 kappa=3.541182 (D1=3 D2=6) local=3.529312
+PHOTON L=2 map=A M1=256 a0=1 dir=3 rank_of_S in [3, 3]
+PHOTON-RATE L=2 map=A dir=3 kappa=3.541182 (D1=3 D2=6) local=3.529313
+PHOTON L=4 map=H M1=256 a0=2 dir=0 rank_of_S in [3, 3]
+PHOTON-RATE L=4 map=H dir=0 kappa=1.123083 (D1=8 D2=17) local=1.123090
+PHOTON L=4 map=H M1=256 a0=2 dir=3 rank_of_S in [3, 3]
+PHOTON-RATE L=4 map=H dir=3 kappa=1.123081 (D1=6 D2=13) local=1.123076
+PHOTON L=4 map=A M1=256 a0=2 dir=0 rank_of_S in [3, 3]
+PHOTON-RATE L=4 map=A dir=0 kappa=5.280398 (D1=3 D2=4) local=5.280398
+PHOTON L=4 map=A M1=256 a0=2 dir=3 rank_of_S in [3, 3]
+PHOTON-RATE L=4 map=A dir=3 kappa=5.280398 (D1=3 D2=4) local=5.280398
+PHOTON L=8 map=H M1=256 a0=4 dir=0 rank_of_S in [3, 3]
+PHOTON-RATE L=8 map=H dir=0 kappa=0.746109 (D1=11 D2=22) local=0.746105
+PHOTON L=8 map=H M1=256 a0=4 dir=3 rank_of_S in [3, 3]
+PHOTON-RATE L=8 map=H dir=3 kappa=0.746110 (D1=6 D2=12) local=0.746109
+PHOTON L=8 map=A M1=256 a0=4 dir=0 rank_of_S in [3, 3]
+PHOTON-RATE L=8 map=A dir=0 kappa=fast (|C0| below 1e-11 by D=4)
+PHOTON L=8 map=A M1=256 a0=4 dir=3 rank_of_S in [3, 3]
+PHOTON-RATE L=8 map=A dir=3 kappa=fast (|C0| below 1e-11 by D=4)
+PHOTON L=16 map=H M1=256 a0=8 dir=0 rank_of_S in [3, 3]
+PHOTON-RATE L=16 map=H dir=0 kappa=0.511829 (D1=13 D2=26) local=0.511988
+PHOTON L=16 map=H M1=256 a0=8 dir=3 rank_of_S in [3, 3]
+PHOTON-RATE L=16 map=H dir=3 kappa=0.519248 (D1=3 D2=7) local=0.511885
+PHOTON L=16 map=A M1=256 a0=8 dir=0 rank_of_S in [3, 3]
+PHOTON-RATE L=16 map=A dir=0 kappa=fast (|C0| below 1e-11 by D=3)
+PHOTON L=16 map=A M1=256 a0=8 dir=3 rank_of_S in [3, 3]
+PHOTON-RATE L=16 map=A dir=3 kappa=fast (|C0| below 1e-11 by D=3)

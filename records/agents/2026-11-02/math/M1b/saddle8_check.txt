@@ -1,0 +1,4 @@
+START 2026-11-02 08:20:09 saddle8_check.c md5=7019573f2bca9c48231cb3b0f493fde8
+TORUS n=4: F=512 (2n^4=512) vertices=256 half-axes not two-fold=0 stars not ONE 8-cycle=0 chi=V-L+F=-256 (-n^4=-256)
+TORUS n=6: F=2592 (2n^4=2592) vertices=1296 half-axes not two-fold=0 stars not ONE 8-cycle=0 chi=V-L+F=-1296 (-n^4=-1296)
+END 2026-11-02 08:20:10

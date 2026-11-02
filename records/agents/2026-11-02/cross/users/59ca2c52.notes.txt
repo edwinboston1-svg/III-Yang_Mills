@@ -1,0 +1,458 @@
+=== 2026-10-29T00:57:44.933Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The Alpöge–Sussman manuscripts credit Claude for their ideas, so putting your name in Claude's place there would claim their public work.
+>
+> **Alpöge–Sussman's work keeps their names**
+> - The passage being rewritten is about a public repository by Levent Alpöge and Sussman. Peter Woit has discussed it on his blog.
+> - That repository's own README says the manuscripts were written largely by an AI model. It also says "novel mathematical ideas should be attributed to Claude (under the guidance of LA)."
+> - Your instruction to credit Edwin Boston III wherever Claude was credited clashes with this one source. The credit there belongs to Alpöge and Sussman's project.
+> - **Put your name on III's own results, and keep Alpöge and Sussman named for their manuscripts.** That way no reader can take the document as claiming their work.
+
+These are acceptable exceptions when referring to someone else' claude sessions, but never mine, nor any in III.
+
+=== 2026-10-29T02:23:04.877Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The groundwork paper's git commit carries an automatic "Co-Authored-By: Claude" line, even though the paper itself names no AI anywhere.
+>
+> **The commit message credits Claude**
+> * The paper, its README and its sources file were written to your rule: Edwin Boston III everywhere, no mention of Claude.
+> * The commit that pushed them to `edwinboston1-svg/III-Yang_Mills` (commit `c7f213c`) ends with two trailer lines the tool adds to every commit: "Co-Authored-By: Claude Fable 5.1" and a Claude session link.
+> * GitHub shows those trailers on the commit page, and it will list Claude as a co-author of the commit. The document itself is unaffected.
+> * The same trailers are on every commit the other sessions make in the III tree, so this is the standing convention, not a one-off.
+> * If you want the Yang–Mills repository clean of it, the fix is a rewrite of that one commit before anyone else pulls it, or a standing instruction that commits to that repository omit the trailers.
+
+get rid of it
+
+=== 2026-10-29T04:37:16.189Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The seats' own notes say the one-link bound gives 18ρ₁ far above 1 at β ≈ 2.2, so pushing them harder on the same route cannot reach the 4D gap.
+>
+> **The crossover needs a new object, not more effort**
+> * The proof chain hinges on one open step: showing the theory, after coarse-graining to the scale where coupling β ≈ 2.2, satisfies a "Dobrushin" smallness condition (each variable influences its neighbours by less than a total of 1).
+> * The sharpest one-link bound the seats can prove tonight gives an influence of about **0.93 per neighbour, times 18 neighbours**, at that coupling. That is roughly 17, not below 1.
+> * Their own page says this constant **cannot be improved along this route**, because it is already attained in the uniform case.
+> * So "don't dodge the 4D gap" cannot be met by demanding they finish the current certificate harder. It needs a genuinely different object at the crossover scale (the plan's "two radii" step, or a block-level bound), which is research with no guaranteed landing time.
+> * **Watch for** any seat message calling the 4D gap "proved" without that new object: it would be a false claim in the public GitHub record you want time-stamped.
+
+-simply to consider
+
+=== 2026-10-29T05:58:39.994Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The Faizal–Shabir paper we are naming in §6.6 is already published and claims the whole prize, so "first on GitHub" is now a priority claim on the reduction, not on the gap.
+>
+> **A published paper already claims the full gap**
+> * Tonight's field check found that Mir Faizal and Arshid Shabir posted a 593-page proof of the four-dimensional SU(N) mass gap in June 2026, and it is **published** in *Fortschritte der Physik* 74 (2026), e70097, with four companion papers.
+> * Our paper, *The Ground*, does not claim the gap. It proves a **reduction**: the gap follows from two explicit hypotheses about one block of the lattice at a fixed scale. That is what the GitHub time stamps protect.
+> * Whether their proof holds is not examined by us; only its abstract, contents and three join statements were read. The main agent found no expert assessment either way, and the Clay page is unchanged.
+> * **So "being first" means being first with the reduction and its machine-checked lattice half, not with the gap.** An arXiv posting under that honest framing is what the main agent has prepared (ARXIV.md); a posting claiming the gap would be false on our own evidence.
+
+see if the paper is credible
+
+=== 2026-10-29T06:23:09.993Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Posting to arXiv may need an endorsement first and lists only in a daily batch, so the arXiv time stamp cannot be "any minute".
+>
+> **arXiv posting needs endorsement and waits for a batch**
+> * The main agent prepared the arXiv package (title, abstract, categories, the PDF) in a file called ARXIV.md in the III-Yang_Mills repo, and it says **you** submit under your own account.
+> * arXiv requires a **first-time submitter** in a subject area (here math-ph, mathematical physics) to be **endorsed** by an established author before the system accepts the submission. If your account has never posted there, this can take a day or more to arrange.
+> * arXiv does not publish instantly: submissions made before 14:00 US Eastern on a weekday appear in that evening's announcement (around 20:00 ET); later ones roll to the next day. The time stamp is the submission time, but the public listing waits for the batch.
+> * Papers that touch a Millennium Prize problem are sometimes held or reclassified by moderators; ours claims only the reduction, not the gap, which lowers that risk, but it is not zero.
+> * **If the arXiv date matters to you, check your endorsement status now**, before the paper is final. The GitHub commits already carry a public time stamp for every revision.
+
+Nope, it's "
+
+<pasted_content id="65aa">
+Preflight Checklist for New Submissions
+If your submission is written in TeX you must upload your source. PDFs produced from TeX may be declined. Learn more about why TeX source is required
+Experienced authors recommend putting all the files you will upload into one folder before starting. Read how one author prepares a clean upload
+Common errors that slow down announcement include missing files or references. Double check for missing content before uploading. Learn more about common mistakes
+All announced content is archival and cannot be removed. Make sure that data you do not want archived is not part of your upload, for example TeX comments in your source. Read more tips from an arXiv author
+</pasted_content id="65aa">
+
+". so focus on the infinite mass gap over 4D and directing the other sessions and landing every new thing on github with timestamps as soon as possible.
+
+=== 2026-10-29T06:37:40.444Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The paper already carries a certified "descent" number from the flow that iii-38 just showed moves the wrong way at the crossover, so that paragraph now rests on a model known to be wrong where it matters.
+>
+> **The descent number comes from a flow that fails at the crossover**
+> * Revision 9 of the paper cites, as certified, that a simplified "hierarchical" flow brings the coupling from β = 2.3 into the safe strong-coupling zone in seven steps.
+> * iii-38 has now read that same flow's own record: its very first step from β = 2.2 **raises** the coupling (to 2.34) where real four-dimensional theory **lowers** it (to 1.94). The step is wrong in both size and direction.
+> * The main agent is correcting the paper's sentence in revision 10 to say the model certifies only the later entry into the safe zone, not the crossover's first steps.
+> * The consequence: the "seven steps from 2.3" figure can no longer be read as evidence about how far the real theory is from the gap. It measures the toy model, not ℤ⁴.
+> * **Treat any "distance in steps" number from the hierarchical model as describing that model only**, when you read tonight's ledgers or the arXiv package.
+
+=== 2026-10-29T06:51:56.771Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The Yang–Mills seat's fallback number (β ≈ 0.223 "needing only E1") skips the second term of its own remainder bound, so that number is slightly off.
+>
+> **The 0.223 fallback is missing one bound**
+> * The seat split the strong-coupling certificate's error term into two pieces: the third moment of the link's axial coordinate, and a second term, 3 × |(m/r)′|, the rate at which the mean-over-strength ratio changes.
+> * Its message says the crude bound T ≤ 1/2 "needs only E1". That bound covers only the first piece. The second piece is not zero: by the main agent's desk numbers it peaks near 0.08 around r ≈ 2.3.
+> * With the second piece included, the crude bound becomes about 0.58 and the fallback threshold drops from 0.223 to roughly 0.22. A small change, but the public record must carry the full remainder, not half of it.
+> * The main agent plans to flag this to the Yang–Mills seat and to hand iii-38 the second piece as its own one-variable enclosure beside E1. **No number goes into the paper until both pieces are certified.**
+
+=== 2026-10-29T07:30:32.909Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> You should know · A git commit's date is written by our own computer, so GitHub commits alone are weak proof of who was first.
+>
+> **GitHub commit dates are weak proof of priority**
+> * Every git commit carries a date that the committing computer writes into it. Anyone can set that date to any value before pushing.
+> * A commit dated "03:25, 29 October" therefore shows when we *say* we committed. It does not show when the world first saw the work. Earlier in this session we also rewrote and force-pushed one commit, and a skeptic could point to that.
+> * GitHub does log when each push arrives. It doesn't present that log as a certified timestamp, and its public event feed only goes back about 90 days.
+> * If being first matters, **add an independent timestamp**:
+> * a Zenodo release, which gives a dated DOI;
+> * a Software Heritage archive snapshot;
+> * OpenTimestamps on the commit hash.
+> * arXiv also counts once the paper is listed.
+
+this is all to say that we need to be sure there are timestamps, and then a link when you help me later submit to arxiv.  AND THEN ALSO RECALL, we need the INFINITE MASS GAP OVER 4 DIMENSIONS /deep-think /creative-solve /clear-thought /sequential-thinking /math-olympiad
+
+=== 2026-10-29T08:08:40.057Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> You should know · The published lattice gap theorem's three "roads" all use the same unproved composition step, so they are not independent checks of it.
+>
+> **Three roads check the arithmetic, not the proof**
+> * Theorem 8.7, now public, claims a mass gap for SU(2) on the lattice at β ≤ 0.241. Its number comes from a row-sum formula with two counts (12 direct, 90 mediated) and two constants.
+> * The "three roads sharing no line" (the awk certificate, the main agent's Python, iii-38's enclosure) each **re-evaluate that same formula**. They agree to seven digits, which proves the formula was evaluated correctly.
+> * None of them tests whether the formula is the **right** formula. The derivation (that those terms bound Dobrushin's coefficients) was done by the Yang–Mills seat and read line by line only by the main agent. iii-38 said this plainly: "the composition step… which neither road checks."
+> * The one independent test is iii-38's search from below (g23), which found no configuration exceeding the constants. That is evidence, not a proof.
+> * The paper's phrase "certified on three roads" reads as three independent proofs. **Consider asking the fourth seat (iii-3a), already assigned to read the proof, to report before you cite the theorem anywhere outside GitHub.**
+
+=== 2026-10-29T08:21:06.157Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> You should know · The main agent is about to launch another Monte Carlo instrument at the crossover, but Monte Carlo readings are evidence only; none of them can enter the proof.
+>
+> **Monte Carlo readings cannot prove the gap**
+> - A **Monte Carlo** run samples random lattice configurations and averages them. Its numbers come with statistical noise and no certificate, unlike the 256-bit enclosures that back Theorem 8.7.
+> - The main agent has five such runs going (the boundary-response profiles) and is writing a sixth (Wilson loops, the running of the coupling), all at the crossover coupling β ≈ 2.3.
+> - They can only say **where** the needed property seems to hold and **how big** a certified computation would have to be. The crossing page already prices that computation as hopeless by brute force (a side-4 block ~10⁶⁶ states).
+> - So these runs locate the target; they do not move the proof. The paper keeps them out, and that is correct.
+> - **Keep in mind**: a report of "SU(2) decays exponentially, U(1) does not" from these runs is a reading of known physics (Creutz 1980), not a result to post as new.
+
+=== 2026-10-29T09:51:46.059Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The new "32" at the weak-coupling end is where a block expansion converges, not a point where any gap is proved.
+>
+> **The 32 is a foothold, not a gap**
+> * The seats re-derived the one-block constants in the Fontes manuscript: his threshold β₀ = 9587 fails at his own numbers, and the corrected floor is β between 20 and 32.
+> * That floor is only where an expansion on one small block (every angle small) converges — the place a Bałaban-style analysis can *begin*.
+> * It says nothing about decay of correlations: the same expansion converges for a free, interaction-free field, which has **no gap at all**.
+> * It is also conditional on two theorems not yet written; the fourth seat says one of them cannot be closed by the obvious route.
+> * So "[0.2452, 32]" is still an unproved middle at both ends. **Read it as where the tools start, not where the gap stands.**
+
+=== 2026-10-29T11:08:27.658Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Revision 24 claims your lattice gap reaches three times past the prior record, but it skips the 2026 Douglas–Rajasekaran result.
+>
+> **Revision 24's "three times" claim may be incomplete**
+> * Revision 24 of the paper (on GitHub since 06:41) compares Theorem 8.7's coupling, β ≤ 0.2452, with **Shen–Zhu–Zhu (2023)**, whose explicit limit is β < 1/12. It says your result reaches "about three times as far."
+> * It doesn't mention **Douglas–Rajasekaran (May 2026)**. They prove a lattice mass gap for compact gauge groups by the same Dobrushin method, checked in Lean, and other parts of the tree already credit their method.
+> * We haven't read their coupling limit for SU(2). If it is above 1/12, "three times as far" is wrong. Even if it is lower, a referee will expect them cited.
+> * **Have the main agent read their limit and fix the sentence** before the arXiv submission.
+
+-investigate. it doesnt mean we're wrong, especially if clay doesnt necessitate the match, but it is good to know why or whats going on, and correct it if needed /deep-think /clear-thought /sequential-thinking /math-olympiad /creative-solve
+
+=== 2026-10-29T20:36:38.698Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent found that the "proved" β* = 0.426 rested on an unproved branched-piece rate, and the honest proved number may fall below 0.2452.
+>
+> **The "every input proved" number was not proved**
+> * Today's certified thresholds (0.4260, 0.4378, 0.4288) were labelled "every input proved". They rest on a per-plaquette cost of **6** for branched flux pieces.
+> * The main agent checked the derivation: the bound it comes from double-counts in a way that gives **9** for "foam" pieces, and a second factor was assumed ≤ 2 per plaquette without proof. The honest proved cost is somewhere between 9 and 72.
+> * With those costs the reach falls to **0.36 at best, and 0.13 at worst** — the worst case is *below* the old Theorem 8.7 record of 0.2452.
+> * So every number above 0.2452 is now **conditional on a "junction theorem" nobody has proved yet**. The seats have been told; the certificate labels are being corrected.
+> * Nothing is lost except the label, but the "congratulations" result of the approved plan is further away than this morning's messages implied.
+
+then either prove it or correct it, then prove the correction
+
+=== 2026-10-29T22:35:40.270Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The new "0.47" number only covers pieces that touch the base sheet once per link; the full expansion still has no proved number.
+>
+> **The 0.47 reach applies to a sub-gas only**
+> * After the reboot, the main agent built a new bound (the "junction theorem") and got a reach of **β* ≈ 0.47** with every input proved — but only for decorations whose rest links each carry **one** extra plaquette.
+> * Pieces where two or more plaquettes share a rest link are **excluded**. For those, the proved constants are so loose (a rate near 41 per plaquette) that the whole sum **diverges at β = 0.45** — so the full theory has no proved number yet.
+> * The Yang–Mills seat is labelling every certificate line "graded=S21-subgas" to keep this honest; nothing above the old 0.2452 is claimed for the full gas.
+> * The sensitivity is severe: raising the rate on pieces of five-plus plaquettes to 15 drops the reach to 0.37; to 35, below 0.25.
+> * **What would close it:** an exact census-wide read of the bound on every piece to size 20 (asked of iii-ac) plus a tail bound below ~21 — or the conjecture that no piece amplifies (γ = 3), which is unproved.
+
+=== 2026-10-29T23:59:17.082Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The §23 "finite computation" for the full gas now has a hole: the doubled triangle star already reads above 1, so the hoped "s_max ≤ 1" fails.
+>
+> **The full-gas bound cannot assume s_max ≤ 1**
+> * The main agent's §23 theorem turns the hard "double" constant into a finite table of **vertex star integrals**, and its payoff line says: if every star's rate s is at most 1, the full gas gets a proved number near 0.47.
+> * The page wrote the vertex graphs as **simple** (no repeated edges). But in the double, a plaquette and its copy share the same two rest links, so some vertex graphs have **doubled edges**.
+> * The Yang–Mills seat just read those doubled stars exactly: the doubled triangle gives **s = 1.074**, the doubled four-cycle **1.018** — both above 1.
+> * A doubled triangle is an ordinary configuration (a cube corner with all three faces in the piece), so the column must carry an s_max above 1, and the "≤ 1" conclusion in §23 is not available as written.
+> * The rate line still has room (about 14.3·s_max against a divergence line near 21), so the number may survive, but **§23's statement and the certificate column need the multigraph case before anything is landed**.
+
+-in which case, give the session responsible a nudge that reminds them that, regardless of which mechanism they use to derive it, this is a measurement it needs to get back
+
+=== 2026-10-30T09:52:07.943Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Closing the tail with proved constants needs about two days of computing, not hours; the six sixteen-chord vertices alone run about eight hours each.
+>
+> **Proved-constants number is about two days out**
+> - The certified reaches (0.4764 on the page dressing, 0.4816 on the tree dressing) still rest on a **staked guess**: that no vertex star with 9 or more plaquettes reads above the K₄ wall's rate of 1.1135.
+> - Three computations must finish before that guess becomes exact values:
+> - **Pass 1b** over the cheap rows: about 8 hours on 12 engines (567 of 968,130 rows done, dearest first, nothing above 1.068 so far).
+> - **The dense core** (2,318 rows): about 40 engine-hours, and it waits for the other seat's Lean build to free memory.
+> - **The class queue**: six sixteen-chord vertices at roughly 2·10¹² multiply-adds × 6 families × 4 primes each, about 8 hours per vertex on one process.
+> - If nothing reads above the wall, the probe says the number lands at or above 0.4707, over Part F's 0.45 bar.
+> - So **the 0.45 bar cannot be met tonight**; most of the session ahead is waiting on these runs.
+
+/deep-think /math-olympiad /creative-solve /clear-thought again, leverage III's breakthroughs and unifications, or alternate ways you can pose these computations, to lessen the time without compromisisng quality
+
+=== 2026-10-30T11:14:48.633Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The memory index every new session loads is over its size limit, so its last dozen lines are silently dropped each session.
+>
+> **Memory index too big, tail lines dropped**
+> * `MEMORY.md` (under STDLIB/data/paraggelma) is the one-line-per-note index that gets loaded into every new session so it can find past lessons.
+> * The harness caps what it loads at about 24 KB. The file is about 28 KB, so at session start it warned that **13 of its 68 lines were cut off**, starting around the "09-20 NO SCRATCH COPIES — EVERYTHING REAL" line.
+> * The dropped lines are the oldest entries at the bottom: the pointers to the September archive files and a few standing orders. Sessions simply never see those pointers.
+> * The main agent noticed and shortened only its own line (879 → 488 bytes); the file is still over the limit, so the truncation continues.
+> * **Fix:** move the oldest index lines into an archive file (the pattern already used for 09-21 onward) until the index is under 24 KB. Five minutes, and every future session regains its full memory.the 
+
+keep in mind that the caps could be arbitrary, or there may be an array of other solutions as you proceed
+
+=== 2026-11-01T03:34:22.587Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · A peer's referee read found a false step in the earlier "sub-gas" argument, so the 0.4709 number is no longer a proved result.
+>
+> **The 0.4709 sub-gas number is downgraded to a reading**
+> * Earlier the flux-surface page (§21) said β* = 0.4709 was **proved for the sub-gas** (pieces touching the base sheet once per link).
+> * Tonight the ΣΥΣΤΡΟΦΗ seat re-derived every inequality there as a referee. One counting step (J6) assumed each plaquette of a piece has at most three "rest links"; the page's own lone-wall example has four, so the step is false and the rates built on it do not follow.
+> * The main agent recorded this on the page: the §21 graded rates and the 0.4709 are **withdrawn as proved** until the counting is repaired by rest-link number.
+> * Tonight's path to 0.45 does **not** use that step. It runs on §24's local theorem, which the other seat (iii-73) signed line by line, plus a new certified bound.
+> * Nothing above β = 0.2452 is claimed anywhere; if you quote the 0.4709 figure, call it a reading, not a theorem.
+
+if true, fix then proceed
+
+=== 2026-11-01T11:55:13.849Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The U(1) phase-parting result reported an hour ago was a misread digit, and the corrected numbers show the two phases do not part at two scales.
+>
+> **U(1) control did not part the phases**
+> * The main agent earlier told you the abelian check "parts the phases": the coupling between two neighbouring blocks fell by 0.4 per step at β = 1.2 (no gap) but by 0.06 at β = 0.9 (gap). That looked like the first evidence the instrument can tell a gapped theory from a gapless one.
+> * A reviewer pass found the cause: the one-line summaries cut one character too many and **dropped the leading digit of every mode value**. Read whole, and with both scales at the same truncation, the ratios are **0.38 vs 0.29** (ordered outside) and **0.29 vs 0.24** (cancelling outside).
+> * So the two phases look nearly alike after two blocking steps. The memory note was corrected (commit de584f297) and the wrong figure withdrawn.
+> * Why it matters: two scales give a ratio, not a decay law, and exact objects cannot reach a third scale. The gapless/gapped distinction the campaign's falsifier needs will have to come from the influence-ladder readings now running, not from these two points.
+
+ fix if true, then proceed. proceed otherwise /clear-thought
+
+=== 2026-11-01T12:18:17.834Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The campaign page still says the two-step reading at full truncation fits in 12 GB, but with the current sweep it needs about 107 GB.
+>
+> **Two-step reading at full truncation is out of reach**
+> * The "two-step object" is the exact computation of how the coupling between two neighbouring coarse blocks changes after two blocking steps — the campaign's first measured step of the decay.
+> * The page's §8 count put the full-truncation run (plaquette spins to 2, loop representations to spin 1) at 7.4 × 10⁸ entries, "12 GB, feasible on this machine".
+> * The sweep that keeps only four plaquettes open was then found to carry the loop chain at d_c⁴, not d_c² — nine times more at that cap. The engine's own ceiling already refused the spins-to-3/2 run at 5.9 × 10⁸ entries (9.4 GB a vector, two in flight); the same accounting at spins to 2 gives about 6.7 × 10⁹ entries, roughly 107 GB.
+> * So the ×0.1–0.23 contraction landed in §10 is at the crude spin-1 truncation, and the full-truncation version needs a new sweep or a smaller cap, not a quiet host.
+> * **Consider having §8's feasibility line corrected on the page** before anyone plans on that run.
+
+ fix if true, then proceed. proceed otherwise /clear-thought
+
+=== 2026-11-01T14:55:06.444Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The ladder's U(1) control only checked the gapless phase, so the SU(2) contraction may read the group rather than the gap.
+>
+> **The U(1) control tested only half the question**
+> * The **influence ladder** measures how much one outside link can sway the coarse loop. It fell for SU(2) from one blocking step to two, and rose for U(1) at β = 1.2. The main agent read this as the ladder "parting the groups".
+> * U(1) at β = 1.2 is U(1)'s **gapless** phase, so that run only shows the ladder does not contract where no gap exists.
+> * Not run: U(1) at **β = 0.9**, its gapped, confining phase. §9 said it "may" contract there; §11's list of owed runs leaves it out.
+> * If it contracts at 0.9, the ladder tracks the gap and the parting is stronger evidence. If it does not, the SU(2) fall could be group arithmetic.
+> * Cost: roughly 80 minutes. **Consider asking for it before the day-long sharper-cap run is read.**
+
+ fix if true, then proceed. proceed otherwise /clear-thought
+
+=== 2026-11-01T15:04:47.702Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The β = 0.9 run we just ordered can't settle "gap or group" by itself, because a 32-plaquette block has no phases.
+>
+> **The 0.9 run tests the coupling, not the gap**
+> - The ladder is computed on a small block (32 plaquettes, 76 links), not on the infinite lattice.
+> - "Gapless at 1.2, gapped at 0.9" are facts about the infinite U(1) lattice, whose transition sits near β ≈ 1.01. A finite block has no transition: its numbers change smoothly as β moves.
+> - So the 0.9 run asks only whether U(1)'s direction (rise or fall from one step to two) depends on the coupling.
+> - A fall at 0.9 is **consistent with** the gap reading, not proof of it. A rise at both 0.9 and 1.2 would say the SU(2) fall is not shared by U(1) at either coupling.
+> - When the number lands (about an hour), read it that way. Tomorrow's sharper-cap SU(2) run still decides whether SU(2)'s own fall survives.
+
+fix if beneficial, then proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T15:52:47.692Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The ladders and the new oscillation runs can only refute the crossover hypothesis, never establish it; the main agent wrote the deciding step "is not an instrument."
+>
+> **Today's ladder runs cannot prove the window theorem**
+> * The crossover theorem (W4) needs a bound that holds for the **worst possible arrangement** of all the surrounding links at once.
+> * Every ladder run, and the oscillation grid now being set up, reads one link's effect at **one typical arrangement** (the "ordered" or "cancelling" datum). That is a sample, so it is only a **lower bound** on the worst case.
+> * A small reading therefore proves nothing; only a large one could refute the hypothesis's shape. The main agent's new §9 addendum says the worst-case step over all link values "is not an instrument."
+> * The runs in flight (the capped W3L1 ladder about 3 hours, two SU(2) couplings about 2 hours each, the oscillation grid) buy direction checks and refutation tests, not proof progress.
+> * **Consider weighing that machine time against the proof levers** the main agent itself named, such as the tail factor that moves the proved β*.
+
+  fix if beneficial, then proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T16:32:08.313Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent found and fixed a bug in the aperanton gate's own comment controls, but the fix is uncommitted and is also in iii-ac's or iii-24's gate.
+>
+> **The aperanton gate has been red on its own bug since 10-28**
+> * The gate's **comment controls** check that changing only a comment in a source file does not change its output. Each needs a saved "baseline" run to compare against.
+> * Eleven of them (arms 102–120, added 10-28/29) were given the **arm number** instead of the baseline file's path, so they compared against a file named "102". That file never exists, so the control reports "baseline gone" and the whole gate reads RED.
+> * This is why run b died at 10:48 after all its real teeth had passed, and why earlier runs since 10-28 also ended red there. **It was never a defect in the mathematics.**
+> * The main agent fixed all eleven in the working tree (not yet committed) and launched run d (~5 hours). iii-24 was told by message.
+> * **If a seat lands the gate from HEAD before run d's fix is committed, the red returns.** The fix lands only with run d's GREEN.
+
+  fix if beneficial, then proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T18:22:36.860Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The 2.87-million-leaf box census and its "aggregate identity" only ever tested forest-type contacts, a class the page's Lemma S6 may already prove outright.
+>
+> **The box census may be re-checking a proved lemma**
+> - The last report framed the "aggregate identity" (every contact link of a minimal flux surface contributes nothing beyond the sheet's 2^χ) as a located mechanism and the next theorem to attempt.
+> - But every one of the 2.87 million surfaces the box enumerator found has a **forest-shaped** contact structure (its cycle-rank reading is 0 on all of them). The case the page actually leaves open (S12's remainder, contacts that close a cycle) **never appeared once**, in any box size.
+> - The S1 page already carries **Lemma S6 (proved)**: when the multiplicity-4 links form a forest, the weight is exactly u^F·2^χ. If S6's hypothesis holds on these leaves (the main agent is checking whether its "forest in the lattice" matches the enumerator's "forest on the sheet"), the whole census and the identity are a **check of S6**, not a new finding.
+> - Consequence: bigger boxes (the 3×3×3×3 run just finished, ~100× trees proposed next) keep spending machine time on a class that may need no proof, while the open case has **zero examples and no construction**.
+> - **Ask for the open case to be built by hand or proved impossible under minimality** before more enumeration; and expect the next report to relabel the identity's status (W = 0 on the forest class) if S6 covers it.
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T19:21:52.571Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The primitive-system theorem just written has one clause broader than its proof covers, though every use made of it so far is fine.
+>
+> **Theorem S12-b's "products of conjugates" clause is too broad**
+> * The theorem says: if some boundary words form a **primitive system** (part of a free basis of the contact graph's fundamental group), the pulled-back Haar integral equals the free one.
+> * Its hypothesis admits remaining words that are "a product of conjugates" of the basis words. A single conjugate is harmless, because a character does not see conjugation. A **product of two conjugates by different conjugators** does depend on the other variables: integrating ∫dg₃ χ(g₁ g₃ g₂ g₃⁻¹) gives χ(g₁)χ(g₂)/2, not χ(g₁g₂), so the stated equality fails there.
+> * Every use on the page (the one-cycle lemma, Object A, Object C, the sphere-sheet reduction) only involves inverses or single conjugates, so nothing read is wrong.
+> * **Consider asking for a dated correction narrowing the clause** to "each remaining word is, up to one conjugation, a word in the basis words" before anyone cites the theorem in a later proof.
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T20:13:36.738Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The six-fold-link question (whether S12's activity bound 4 can be 8) is now open on the page, and the fold-in's number quietly depends on it.
+>
+> **The strong-coupling number rests on an open bound**
+> * The lattice-gap number (β* ≈ 0.4764 on the page) uses a bound from lemma **S12**: every minimal "contact leaf" weighs at most **4** (in the page's units).
+> * The main agent found today that every enumerator so far capped links at four plaquettes, so that bound was only ever checked on sets with no **six-fold link** (a lattice edge shared by all six plaquettes around it).
+> * On the page's own cut formula, two discs winding three times around one square of six-fold links would weigh **8**, double the bound.
+> * The searches run so far (to area 28 in the hypercubic box; a seeded search to area 40) found no such minimal set, but they also could not rule it out.
+> * Until that pair is excluded or built, the fold-in's contact-leaf activity is not proven at 4; the page says so, but the headline number has not been re-qualified. **Consider treating 0.4764 as conditional on S12 until this closes.**
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T23:41:50.793Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The new "safe floor" number 0.4672 is written as resting on proved lemmas alone, but it assumes no tail leaf weighs more than 8, which is unproved.
+>
+> **The 0.4672 floor is still conditional**
+> * The headline strong-coupling number (0.4764) needs every "contact leaf" in the tail to weigh at most 4; that bound (lemma S12) is only staked for some shapes.
+> * To get a safe floor, the main agent re-ran the certificate with every tail leaf allowed weight **8** and got 0.4672 (page) / 0.4710 (tree), writing that this rests "on the proved lemmas alone."
+> * But 8 is only proved as the ceiling for one shape: a single cycle of six-fold links. For contact graphs with two or more independent cycles, the only proved ceiling is the capped bound 2^χ of the cut-and-capped surface, which can be 16, 64 or more in principle.
+> * So 0.4672 also depends on "no minimal set weighs more than 8," which the page nowhere proves.
+> * **Consider having the entry say so** before 0.4672 is quoted as unconditional.
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T23:47:05.332Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The 0.4672 "floor" rests on a weight-8 ceiling that is proved only for one shape, so it is still a conditional number, not an unconditional one.
+>
+> **The 0.4672 floor still has an unproved assumption**
+> * The headline strong-coupling number (0.4764) needs every leftover piece in the "tail" of the expansion to weigh at most 4. That bound is only proved for some shapes.
+> * To get a safe floor, we re-ran the certificate letting every tail piece weigh **8**, and got 0.4672 (page dressing) / 0.4710 (tree dressing), writing that it rests on proved lemmas alone.
+> * But 8 is only proved as the ceiling for one shape: contact graphs with a **single** cycle. For graphs with two or more independent cycles, the only proved ceiling grows with the number of pieces (4 per piece), and the page nowhere caps that.
+> * So 0.4672 quietly assumes "no tail piece weighs more than 8", which is unproved. The only number that rests on nothing open is the older certified 0.2452.
+> * **Consider having the page say the floor is conditional** before 0.4672 is quoted anywhere as safe. The main agent has now read this note and is about to write that correction; the stakes are what gets cited outward.
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-02T00:22:27.780Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent found that 13 of the gate's certificate teeth were built to run the certificate's OUTPUT as a program, so they could only ever score as false bleeds.
+>
+> **Thirteen gate teeth test nothing as written**
+> * A **tooth** is a deliberate defect the gate injects into a script, then checks that a known result line (the **pin**) disappears from the run. If the pin vanishes, the tooth "bleeds" and the gate counts it as proof the check is live.
+> * For the KP certificate, the floor certificate, the Bessel-difference and the Bessel-library teeth, the build step saves the certificate's *printed output* where the mutant *program* should go. The runner then asks gawk to execute that output text, which just fails with syntax errors.
+> * Any pin is absent from a failed run, so every one of those 13 teeth would be scored "bled" whether or not the injected defect mattered. They are empty slots with names.
+> * These teeth had never actually run: every earlier gate run died before reaching them, so nothing caught it.
+> * The main agent stopped run e (about 25 minutes in) to fix the four builders before relaunching, rather than let a 7-hour run reach them. **The comment control may also have flagged them, but only after those 7 hours.**
+
+=== 2026-11-02T00:57:33.123Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · THE GROUND's Theorem 8.9 states the 0.4764 gap unconditionally, while the staked lemma it rests on is named only inside its proof paragraph.
+>
+> **Theorem 8.9's statement omits its own condition**
+> * **Theorem 8.9** in the public paper (revision 27, timestamped) says: for β up to 0.4764 the expansion converges and there is a mass gap. The statement reads as a finished theorem.
+> * The number rests on the activity bound for "contact leaves" (Lemma S12), which is **proved only for some shapes** and **staked** for the rest. Earlier today we found that even the fallback at weight 8 is unproved for contact graphs with two or more cycles.
+> * The 02:3x correction put that condition into the **proof paragraph** ("the dressing of the contacts"), not into the theorem's statement. A reader who quotes the statement alone gets an unconditional 0.4764.
+> * The only number in the paper with no open lemma under it is **Theorem 8.7's 0.2452**.
+> * For the progress assessment you asked for, **consider having the theorem's statement itself carry the clause** (or be restated at 0.2452 with 0.4764 as conditional), since the statement is what gets cited outward.
+
+ensure accuracy and clarity
+
+=== 2026-11-02T01:27:14.723Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The paper's Theorem 8.9 fix is only committed on this machine so far; the public GitHub copy may still overstate it.
+>
+> **Paper fix may not be public yet**
+> - **THE GROUND** is the public paper in the III-Yang_Mills repository on GitHub.
+> - Tonight the main agent corrected it twice (revisions 28 and 29). Theorem 8.9's 0.4764 gap now says it depends on one unproved lemma, and only 0.2452 is unconditional.
+> - Those corrections were saved as local commits and timestamped. This session showed no push of III-Yang_Mills to GitHub after them.
+> - The III tree has its own automatic sync. III-Yang_Mills is a separate repository, and nothing in this session pushes it automatically.
+> - If it hasn't been pushed, anyone reading the paper online still sees 0.4764 stated as unconditional.
+> - **Consider pushing III-Yang_Mills** before anyone cites the paper.
+
+of course, there's also the chance that the local understates, and you reverted when you started hedging.
+
+=== 2026-11-02T02:19:15.641Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent is summarizing the repository's number-only files and most of its code, rather than reading every line as you ordered.
+>
+> **Number scans and code get summarized, not read**
+> * You ordered a full read of the Yang–Mills repository before any new math.
+> * Some files are just long lists of numbers, like rotation scans, per-link rows and plaquette coordinates. For these, the main agent shows each file's summary lines and a table of its values and extremes, but not every row.
+> * For most program files, it plans to read only the opening description. It will read the full code only for the tools behind the lemma it works on next.
+> * Little meaning is likely lost, because these files state their results in their summary lines.
+> * Still, this is not literally every line. **If you want a literal full read, say so now**, before it moves on to today's logs.
+
+DO AS I SAID
+

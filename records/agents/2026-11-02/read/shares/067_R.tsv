@@ -1,0 +1,52 @@
+#path	first_line	last_line	total_lines	bytes	sha256_16	note
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_base.out	1	7	7	1184	52f8723962084c84	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_base_box.out	1	77	77	7201	d4de66befeab99b2	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_base_jun.out	1	49	49	6250	a6ae2870d23d145a	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_boxchibend.cc	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_boxchibend.out	1	77	77	7208	40d4a24aabf43f17	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_boxdegbend.cc	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_boxdegbend.out	1	83	83	7717	35b7dbff77d0f7fc	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_boxprodbend.cc	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_boxprodbend.out	1	63	63	5973	dc801594f9845cb6	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_gradedformbend.out	1	7	7	1080	6a8877259de2a466	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_gradedprefbend.point.out	1	2	2	667	ed9a9d3506d28353	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_gradedsignbend.point.out	1	2	2	711	07d507e67e9d6316	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_gradedsupbend.out	1	7	7	1080	d74b4fd4332c858c	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_juncchebbend.cc	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_juncchebbend.out	1	49	49	6273	ecc1cd3c43ebd397	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_juncindexbend.cc	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_juncindexbend.out	1	49	49	6230	bc8b279a89ac22ff	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_juncphibend.cc	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_juncphibend.out	1	31	31	4466	68672c3d1119f3cb	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_point_base.out	1	2	2	667	8d578482ed543d26	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_stardegbend.cc	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_stardegbend.out	1	44	44	5465	6cd3a888de612c91	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_starsumbend.cc	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_starsumbend.out	1	49	49	6242	241f750d1b3bc0d2	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l2_p0.out	1	2	2	242	f6fbe94d19bb666d	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l2_p1.out	1	2	2	242	f86870805dae31bd	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l2_p2.out	1	2	2	242	8117b8591df4cb5e	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l2_p3.out	1	2	2	242	de509b0cdf512a16	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l3_p0.out	1	2	2	242	c3afa881007d51a1	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l3_p1.out	1	2	2	242	95ebc92e7b9e9200	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l3_p2.out	1	2	2	242	b87d8d5294c9a676	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l3_p3.out	1	2	2	242	38b55e0771b9f0b4	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l3c_p0.out	1	2	2	239	a470cfed41ac0f51	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l3c_p1.out	1	2	2	242	0289b864ad7f91a0	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l3c_p2.out	1	2	2	242	091fbb2f6dce34ef	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n12l3c_p3.out	1	2	2	242	845bee17aa676a8b	III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n16l4_p0.out	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n16l4_p1.out	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n16l4_p2.out	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/jac_2026-10-29/n16l4_p3.out	0	0	0	0	-	EMPTY III-UNTRACKED:STDLIB/build/aperanton/jac_2026-10-29
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/land_table_c.out	1	1	1	173	60b849bad0846468	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/land_table_d.out	1	20	20	1295	3106617f6755f573	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_pass.out	1	20	20	1802	2022e4ae974d8010	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_pass.zero_ids	1	57	57	353	c276847b3b3ee28e	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail.retired.ids	1	36953	36953	271551	31fcfe6eb6bd736c	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.2026-10-30a.part1_stopped.txt	1	324	324	32269	f6b1a66847233a5e	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.2026-10-30a.txt	1	1634	1634	159855	8670c7de7f00f1ce	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.launch.out	1	5	5	293	4f1424bc9c8204fc	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.launch.part2.out	1	5	5	354	b3b5a7cadc212f56	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.launch.part3.out	1	1	1	85	2e193e0854d65629	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.part1.shard0.in	1	2235	2235	450201	9a3b179979700b07	III-UNTRACKED:STDLIB/build/aperanton

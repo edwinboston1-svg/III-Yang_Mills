@@ -1,0 +1,25 @@
+W2-KAT representations to spin 2/2 (GENINV=1): homomorphism and traces [MET]
+W2-OBJECT planar n=4 plaquettes=32 links=76 (shared=3) outside=536 staples five=24 four=52; rule degree 16, 1377 points; beta=2.2 WMAX=2 LMAX=2 datum=ordered order=fwd
+W2-DATUM C:/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/MIR/rec/datum_a0.400.txt: all 536 outside links set from the file (the named datum ordered overridden link by link)
+W2-TENSORS built in 0.4 s
+W2-CMAX 1: face B's loop representation capped at 1/2 for this run (the classes a <= 2, c <= 1; the connected moments and channels for c <= 1 alone)
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag -2.1e-17; max state 38416, open plaquettes at most 4; 1.6 s)
+W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = +1.275928163600e-01 (imag -6.1e-18; max state 614656, open plaquettes at most 4; 3.1 s)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +1.456611890978e-01 (imag 3.1e-18; max state 153664, open plaquettes at most 4; 2.9 s)
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +2.557684144599e-02 (imag 0.0e+00; max state 2458624, open plaquettes at most 4; 8.6 s)
+W2-CHANNEL a=1 c=1 k=0 f_k = -3.660009653495e-03 (imag -6.3e-19; P_k idempotent to 6.7e-16; f_k/E = -0.143098579, free law d_k/(d_a d_c) = 0.250000000)
+W2-CHANNEL a=1 c=1 k=2 f_k = +2.923685109949e-02 (imag 7.7e-19; P_k idempotent to 2.9e-15; f_k/E = 1.143098579, free law d_k/(d_a d_c) = 0.750000000)
+W2-CHANNEL-SUM a=1 c=1 sum_k f_k = +2.557684144599e-02 against the class moment +2.557684144599e-02 (sum_k P_k = 1 to 2.7e-15)
+W2-CLASS a=2 c=0 E[chi_a(A) chi_c(B)] = +2.720161075116e-03 (imag -1.2e-20; max state 345744, open plaquettes at most 4; 3.6 s)
+W2-CLASS a=2 c=1 E[chi_a(A) chi_c(B)] = +7.286392994839e-04 (imag 0.0e+00; max state 5531904, open plaquettes at most 4; 12.8 s)
+W2-CHANNEL a=2 c=1 k=1 f_k = -1.444268002912e-04 (imag 1.2e-21; P_k idempotent to 3.1e-16; f_k/E = -0.198214398, free law d_k/(d_a d_c) = 0.333333333)
+W2-CHANNEL a=2 c=1 k=3 f_k = +8.730660997752e-04 (imag 0.0e+00; P_k idempotent to 1.7e-15; f_k/E = 1.198214398, free law d_k/(d_a d_c) = 0.666666667)
+W2-CHANNEL-SUM a=2 c=1 sum_k f_k = +7.286392994839e-04 against the class moment +7.286392994839e-04 (sum_k P_k = 1 to 2.0e-15)
+W2-Z beta=2.2 datum=ordered n=4 Z = 6.872601499648e+82
+W2-CONN a=0 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.000000000e+00)
+W2-CONN a=0 c=1 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.275928164e-01)
+W2-CONN a=1 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.456611891e-01, +1.000000000e+00)
+W2-CONN a=1 c=1 <chi_a chi_c>_c = +6.991520094653e-03 (marginals +1.456611891e-01, +1.275928164e-01)
+W2-CONN a=2 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +2.720161075e-03, +1.000000000e+00)
+W2-CONN a=2 c=1 <chi_a chi_c>_c = +3.815662869570e-04 (marginals +2.720161075e-03, +1.275928164e-01)
+W2-DONE 33.0 s

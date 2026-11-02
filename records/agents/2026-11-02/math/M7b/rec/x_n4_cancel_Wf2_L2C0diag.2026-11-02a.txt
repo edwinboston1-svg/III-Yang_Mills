@@ -1,0 +1,14 @@
+W2-EXACT the staple weights EXACT, w(V) = beta e^{beta V.w}/(2 I_1(beta)) = 5.746842245565092e-01 e^{2.200000 V.w}; face plaquettes truncated at spin WMAX/2 = 2/2; rule degree DEGX = 50 plus the slots
+W2-KAT representations to spin 2/2 (GENINV=1): homomorphism and traces [MET]
+W2-OBJECT planar n=4 plaquettes=32 links=76 (shared=3) outside=536 staples five=24 four=52; rule degree 58, 53100 points; beta=2.2 WMAX=2 LMAX=2 datum=cancel order=fwd
+W2-TENSORS built in 23.0 s
+W2-SLICED mode=diag: the junction wires clamped in an outer loop of slices; face A's part (order index 36 of 76) swept once per class and gathered per slice
+W2-CMAX 0: face B's loop representation capped at 0/2 for this run (the classes a <= 2, c <= 0; the connected moments and channels for c <= 0 alone)
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag 3.1e-35; max state 38416, open plaquettes at most 4; 9.3 s; 1 slices)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +1.825104886193e-01 (imag -1.4e-33; max state 153664, open plaquettes at most 4; 15.9 s; 2 slices)
+W2-CLASS a=2 c=0 E[chi_a(A) chi_c(B)] = +5.350007212759e-03 (imag 0.0e+00; max state 345744, open plaquettes at most 4; 22.4 s; 3 slices)
+W2-Z beta=2.2 datum=cancel n=4 Z = 3.729997216933e+122
+W2-CONN a=0 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.000000000e+00)
+W2-CONN a=1 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.825104886e-01, +1.000000000e+00)
+W2-CONN a=2 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +5.350007213e-03, +1.000000000e+00)
+W2-DONE 70.6 s

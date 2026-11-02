@@ -1,0 +1,9 @@
+START 2026-11-02 07:57:36 tessfam.c md5=b17587b8d77b5c80f4fa26dc62572dc4 s=32
+R' s=32 box W=86: |A|=2304 |H|=576 collisions(A x A)=0 removals(H x H)=331776 outside=0 | F=4976640 L=5769216 V=1595392 chi=802816 odd=0 N4=4184064 N6=0
+S sizes (28, 32): pinches=802816 F_S(closed form)=1944320 collisions(S onto R')=0 outside=0
+X' PLAQUETTES F=6920960 (R' 4976640 + S 1944320) nonmixed=0 | LINKS L=9657856 odd=0 N4=4184064 N6=0 N>6=0 | V=2736895 chi=-1
+SKELETON components=1 | G: E=4184064 V=1496832 c=1 b1=2687233 | G6: E=0 b1=0 | Q=2687233 Q/F=0.388275 (10/21=0.476190)
+THEOREM I (x8): lhs=6185984 rhs=6185984 -> MET
+CUBES closed unit 3-cubes = 0 | TESSERACTS with an X-plaquette=2802819, carrying a closed subset=0
+NEXT SCALE: closed 24-square tori bd(1x2) x bd(1x1) inside X' = 493521
+END 2026-11-02 07:58:38

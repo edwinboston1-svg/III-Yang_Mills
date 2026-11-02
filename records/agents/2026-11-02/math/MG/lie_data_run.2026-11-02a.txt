@@ -1,0 +1,44 @@
+== SU(2)=A1: dim G = 3, h_dual = 2, #pos roots = 1, fundamental dims = [2]
+   minimal rep (1,): d = 2, C2 = 3/4, T = 1/2, kappa = d/T = 4, h*kappa = 8
+   Cartan square 2w: d = 3; ratio d^2/(2 d_2w) = 2/3 = 0.666667; crossing r_x = 1 - h/(2C2) = -1/3
+   extra adj (2,): d = 3, C2 = 2, T = 2
+== SU(3)=A2: dim G = 8, h_dual = 3, #pos roots = 3, fundamental dims = [3, 3]
+   minimal rep (1, 0): d = 3, C2 = 4/3, T = 1/2, kappa = d/T = 6, h*kappa = 18
+   Cartan square 2w: d = 6; ratio d^2/(2 d_2w) = 3/4 = 0.750000; crossing r_x = 1 - h/(2C2) = -1/8
+   complex rep: dual (0, 1), d_(w+w*) = 8; mixed ratio d^2/d_mix = 9/8 = 1.125000
+   extra adj (1, 1): d = 8, C2 = 3, T = 3
+   extra 6 (2, 0): d = 6, C2 = 10/3, T = 5/2
+   extra 10 (3, 0): d = 10, C2 = 6, T = 15/2
+   extra 27 (2, 2): d = 27, C2 = 8, T = 27
+== G2: dim G = 14, h_dual = 4, #pos roots = 6, fundamental dims = [7, 14]
+   minimal rep (1, 0): d = 7, C2 = 2, T = 1, kappa = d/T = 7, h*kappa = 28
+   Cartan square 2w: d = 27; ratio d^2/(2 d_2w) = 49/54 = 0.907407; crossing r_x = 1 - h/(2C2) = 0
+   extra w2 (0, 1): d = 14, C2 = 4, T = 4
+   extra 27=2w1 (2, 0): d = 27, C2 = 14/3, T = 9
+== F4: dim G = 52, h_dual = 9, #pos roots = 24, fundamental dims = [52, 1274, 273, 26]
+   minimal rep (0, 0, 0, 1): d = 26, C2 = 6, T = 3, kappa = d/T = 26/3, h*kappa = 78
+   Cartan square 2w: d = 324; ratio d^2/(2 d_2w) = 169/162 = 1.043210; crossing r_x = 1 - h/(2C2) = 1/4
+   extra w1 (1, 0, 0, 0): d = 52, C2 = 9, T = 9
+== E6: dim G = 78, h_dual = 12, #pos roots = 36, fundamental dims = [27, 78, 351, 2925, 351, 27]
+   minimal rep (1, 0, 0, 0, 0, 0): d = 27, C2 = 26/3, T = 3, kappa = d/T = 9, h*kappa = 108
+   Cartan square 2w: d = 351; ratio d^2/(2 d_2w) = 27/26 = 1.038462; crossing r_x = 1 - h/(2C2) = 4/13
+   complex rep: dual (0, 0, 0, 0, 0, 1), d_(w+w*) = 650; mixed ratio d^2/d_mix = 729/650 = 1.121538
+   extra w2 (0, 1, 0, 0, 0, 0): d = 78, C2 = 12, T = 12
+== E7: dim G = 133, h_dual = 18, #pos roots = 63, fundamental dims = [133, 912, 8645, 365750, 27664, 1539, 56]
+   minimal rep (0, 0, 0, 0, 0, 0, 1): d = 56, C2 = 57/4, T = 6, kappa = d/T = 28/3, h*kappa = 168
+   Cartan square 2w: d = 1463; ratio d^2/(2 d_2w) = 224/209 = 1.071770; crossing r_x = 1 - h/(2C2) = 7/19
+   extra w1 (1, 0, 0, 0, 0, 0, 0): d = 133, C2 = 18, T = 18
+== E8: dim G = 248, h_dual = 30, #pos roots = 120, fundamental dims = [3875, 147250, 6696000, 6899079264, 146325270, 2450240, 30380, 248]
+   minimal rep (0, 0, 0, 0, 0, 0, 0, 1): d = 248, C2 = 30, T = 30, kappa = d/T = 124/15, h*kappa = 248
+   Cartan square 2w: d = 27000; ratio d^2/(2 d_2w) = 3844/3375 = 1.138963; crossing r_x = 1 - h/(2C2) = 1/2
+   extra w1 (1, 0, 0, 0, 0, 0, 0, 0): d = 3875, C2 = 48, T = 750
+== Sp(2)=C2: dim G = 10, h_dual = 3, #pos roots = 4, fundamental dims = [4, 5]
+   minimal rep (1, 0): d = 4, C2 = 5/4, T = 1/2, kappa = d/T = 8, h*kappa = 24
+   Cartan square 2w: d = 10; ratio d^2/(2 d_2w) = 4/5 = 0.800000; crossing r_x = 1 - h/(2C2) = -1/5
+   extra w2 (0, 1): d = 5, C2 = 2, T = 1
+== Spin(7)=B3 vector: dim G = 21, h_dual = 5, #pos roots = 9, fundamental dims = [7, 21, 8]
+   minimal rep (1, 0, 0): d = 7, C2 = 3, T = 1, kappa = d/T = 7, h*kappa = 35
+   Cartan square 2w: d = 27; ratio d^2/(2 d_2w) = 49/54 = 0.907407; crossing r_x = 1 - h/(2C2) = 1/6
+   extra spinor (0, 0, 1): d = 8, C2 = 21/8, T = 1
+== universal: one-loop drift of 1/lambda per doubling = 2 b0 ln2 / h = 11 ln2/(24 pi^2) = 0.032188976
+   b1/b0^2 = 102/121 (pure YM, every G)

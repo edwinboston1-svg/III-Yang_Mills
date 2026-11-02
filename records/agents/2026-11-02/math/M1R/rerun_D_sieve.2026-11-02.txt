@@ -1,0 +1,23 @@
+START 2026-11-02 07:48:28
+== U'' (S12-free), sieve table at k >= 15
+KP-CERT SCAN dress=page graded=S24-table beta=0.3650 gamma=6/1 F0=22: PASS for alpha in [0.0039, 0.0049]
+KP-CERT SCAN dress=page graded=S24-table beta=0.3652 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.3656 gamma=6/1 F0=22: PASS for alpha in [0.0038, 0.0051]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.3658 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+== conditional (T1 + T2), sieve table at k >= 15
+KP-CERT SCAN dress=page graded=S24-table beta=0.5100 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the dressing iteration leaves [0, 3]: no root)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5198 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the dressing iteration leaves [0, 3]: no root)
+== conditional, sieve table, the largest passing beta (page), by bisection
+KP-CERT SCAN dress=page graded=S24-table beta=0.4400 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0041]
+KP-CERT SCAN dress=page graded=S24-table beta=0.5100 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the dressing iteration leaves [0, 3]: no root)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4750 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the dressing iteration leaves [0, 3]: no root)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4574 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the dressing iteration leaves [0, 3]: no root)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4486 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the dressing iteration leaves [0, 3]: no root)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4442 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0017]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4464 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the dressing iteration leaves [0, 3]: no root)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4452 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0012]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4458 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the dressing iteration leaves [0, 3]: no root)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4454 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0010]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4456 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the dressing iteration leaves [0, 3]: no root)
+BISECT beta* = 0.4454 (PASS), refused at 0.4456
+END 2026-11-02 07:54:16

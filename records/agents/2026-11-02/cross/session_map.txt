@@ -1,0 +1,40 @@
+# b10e8d4b first 2026-10-22T08:25:49.599 last 2026-10-30T05:11:33.415 bytes 406967274
+   2026-10-22 n=4507 Migdal:3 crossover:15 Yang:25 mass gap:1
+   2026-10-23 n=11119 Migdal:3 crossover:12 Yang:19
+   2026-10-24 n=9770 Migdal:5 crossover:6 Yang:47 mass gap:10
+   2026-10-25 n=4232 crossover:2 Yang:3
+   2026-10-26 n=6073 crossover:3 Yang:6
+   2026-10-27 n=10668 Tomboulis:41 crossover theorem:10 Migdal:29 crossover:34 Yang:136 mass gap:124
+   2026-10-28 n=13565 Tomboulis:258 crossover theorem:12 Migdal:62 β = 2.3:44 beta=2.3:24 beta=2.2:6 hierarchical:9 crossover:158 Yang:238 mass gap:191
+   2026-10-29 n=12897 Tomboulis:86 K* = 7:21 closed at k = 8:6 crossover theorem:43 Migdal:116 β = 2.3:45 beta=2.3:29 β = 2.2:29 hierarchical:230 crossover:313 Yang:296 mass gap:207
+   2026-10-30 n=2691 crossover theorem:2 Migdal:1 β = 2.3:1 hierarchical:1 crossover:7 Yang:25 mass gap:7
+# 0964fd4b first 2026-10-24T19:53:43.066 last 2026-10-27T21:35:02.177 bytes 130494397
+   2026-10-24 n=1325 crossover:1 Yang:2
+   2026-10-25 n=3086 closed at k = 8:1 Migdal:4 crossover:4 Yang:11 mass gap:4
+   2026-10-26 n=8413 Migdal:2 crossover:8 Yang:13 mass gap:2
+   2026-10-27 n=10191 Tomboulis:19 crossover theorem:1 Migdal:7 crossover:56 Yang:108 mass gap:96
+# cd9abb9e first 2026-10-29T07:39:36.622 last 2026-10-29T11:05:22.802 bytes 43968013
+   2026-10-29 n=2335 Tomboulis:33 K* = 7:12 crossover theorem:2 Migdal:23 β = 2.3:3 hierarchical:16 crossover:40 Yang:116 mass gap:42
+# 73cd2372 first 2026-10-30T01:52:35.403 last 2026-10-30T05:47:14.176 bytes 10779073
+   2026-10-30 n=1835 K* = 7:1 crossover theorem:2 hierarchical:4 crossover:4 Yang:7 mass gap:4
+# c3419161 first 2026-10-28T00:41:49.768 last 2026-11-02T03:06:45.406 bytes 260589135
+   2026-10-28 n=16057 Tomboulis:36 crossover theorem:10 Migdal:18 β = 2.3:7 crossover:24 Yang:99 mass gap:105
+   2026-10-29 n=13158 Tomboulis:36 K* = 7:50 K*=7:14 crossover theorem:17 Migdal:57 β = 2.3:6 beta=2.3:49 β = 2.2:45 beta=2.2:125 hierarchical:138 crossover:182 Yang:261 mass gap:60
+   2026-10-30 n=11507 Tomboulis:5 K* = 7:5 crossover theorem:11 Migdal:6 β = 2.3:4 beta=2.3:1 β = 2.2:9 beta=2.2:1 hierarchical:12 crossover:42 Yang:132 mass gap:40
+   2026-11-01 n=12201 Tomboulis:1 crossover theorem:8 Migdal:3 β = 2.2:1 hierarchical:3 crossover:19 Yang:69 mass gap:18
+   2026-11-02 n=1305 crossover:1 Yang:7
+# 5cf16cea first 2026-10-29T17:19:18.584 last 2026-11-02T03:06:47.236 bytes 101048104
+   2026-10-29 n=3749 Tomboulis:17 K* = 7:5 crossover theorem:10 Migdal:15 β = 2.3:2 β = 2.2:6 hierarchical:8 crossover:36 Yang:113 mass gap:59
+   2026-10-30 n=2908 Tomboulis:10 crossover theorem:3 Migdal:1 β = 2.3:1 hierarchical:2 crossover:11 Yang:43 mass gap:35
+   2026-11-01 n=11432 crossover theorem:7 Migdal:4 crossover:18 Yang:165 mass gap:24
+   2026-11-02 n=1563 crossover theorem:2 β = 2.2:2 crossover:4 Yang:24 mass gap:2
+# 113c4e67 first 2026-11-01T04:38:40.892 last 2026-11-02T03:06:45.494 bytes 52956134
+   2026-11-01 n=11669 crossover theorem:6 crossover:14 Yang:23 mass gap:8
+   2026-11-02 n=597 Yang:2
+# b7e5b036 first 2026-11-01T01:33:07.453 last 2026-11-01T03:48:12.623 bytes 3135986
+   2026-11-01 n=183 crossover theorem:1 crossover:3 Yang:13 mass gap:2
+# 59ca2c52 first 2026-10-29T00:47:49.943 last 2026-11-02T05:20:32.363 bytes 359267790
+   2026-10-29 n=12026 Tomboulis:92 K* = 7:87 K*=7:2 crossover theorem:22 Migdal:66 β = 2.3:43 beta=2.3:4 β = 2.2:82 beta=2.2:2 hierarchical:211 crossover:347 Yang:687 mass gap:454
+   2026-10-30 n=3992 Tomboulis:5 crossover theorem:7 Migdal:1 beta=2.3:1 hierarchical:4 crossover:17 Yang:165 mass gap:29
+   2026-11-01 n=11027 Tomboulis:14 K* = 7:12 crossover theorem:41 Migdal:37 β = 2.3:5 beta=2.3:14 β = 2.2:95 beta=2.2:26 hierarchical:32 crossover:116 Yang:470 mass gap:83
+   2026-11-02 n=1742 Tomboulis:33 K* = 7:32 K*=7:5 closed at k = 8:22 crossover theorem:23 Migdal:43 β = 2.3:26 beta=2.3:10 β = 2.2:66 beta=2.2:17 hierarchical:48 crossover:110 Yang:304 mass gap:102

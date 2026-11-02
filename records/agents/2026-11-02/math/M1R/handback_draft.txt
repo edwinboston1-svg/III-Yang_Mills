@@ -1,0 +1,25 @@
+Every item holds: T1, T2, Lemma R (1/3), M′, E, S, E4, U″, LP at 7/12 (its 1/2 is an observation, not a theorem), and the S12-c′ narrowing (counterexample: 3×3 square minus a corner). T2 sharpens both 5^{F−1} counts by 5: S1 §3's and the certificate's.
+
+**Re-run** (M1's engine byte-identical; the record's control matches character for character):
+- S12-free: page 0.3650 PASS (slack 0.96 %), 0.3652 FAIL (0.96 % over); tree 0.3656 PASS (1.31 %), 0.3658 FAIL (0.55 % over).
+- Conditional: page 0.5100 PASS (0.37 %), 0.5102 FAIL (1.41 % over); tree 0.5198 PASS (0.51 %), 0.5200 FAIL (1.02 % over).
+- κ* (0.35, 0.4764) and the F₀ = 20 numbers (0.3588, 0.5050, 0.5140) reproduce.
+- The S12-free run uses no S12 stake and survives with table rows k ≥ 15 on the signed sieve; 0.5100 does not.
+- iii-08's road: T1/T2 alone +0.026 to +0.028, F₀ = 22 +0.005, table dressing +0.015; U″ then costs −0.040 against q = √2 (K₁ ≈ 1.535, C₁ ≈ 2.77). Its ladder is the tree's; its limit 0.4260 is an extrapolation (the tree reads 0.4378 at q = 1).
+
+**Unproved inputs besides the neck lemma and contact-rest dressing:**
+1. κ_T = 4's cycle gluing on contact-leaf constituents (S4′ covers branch-free surfaces only).
+2. D1.1–D1.3 without S12 (A-leaves fall outside U″): needed for clustering and the gap.
+3. Dressing of raised and integer-spin rests (Theorem L's table is for spin-½ sheets).
+4. The engine omits the neck factor on z_br (about 10⁻¹¹; no number moves).
+5. The F = 22 census: one road.
+6. Question for the record: integer-spin polymers with no even subset (a cubical Bing's house). I found no term for them.
+7. Record-level: the realigned bound (§25 (c)) has no second-seat signature, and 0.5100 leans on it.
+
+**Paper strength:**
+- T1, T2, R, M′, E, E4, S and U″ are theorems. Rename M1's Lemma R (the paper's Lemma R is the realigned bound).
+- S12-free: the KP inequality holds at 0.3650 / 0.3656 (0.3588 at F₀ = 20), conditional on the neck lemma, items 1 and 3, and item 2 for clustering and the gap. S12-free, not unconditional: 0.2452 stays the unconditional number.
+- 0.5100 / 0.5198: conditional readings under spin-summed S12 plus the above.
+- THE GROUND's "the one input not yet proved" and its spin-½ "4u^F" need correcting either way.
+
+Review: C:\Users\EDWINB~1\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\M1R\REVIEW.md (records beside it).

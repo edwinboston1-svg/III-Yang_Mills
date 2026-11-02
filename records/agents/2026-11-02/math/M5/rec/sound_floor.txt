@@ -1,0 +1,8 @@
+FLOOR SOUND ordered page WALL=38256841494 e-12: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+FLOOR MAXR ordered page WALL=9339173883 e-12: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+FLOOR SOUND ordered local WALL=38256841494 e-12: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+FLOOR MAXR ordered local WALL=9339173883 e-12: PASS at alpha (1e-4): 1 2 5 10 20 30 40 47 55 65 80
+FLOOR SOUND cancel page WALL=42723589375 e-12: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+FLOOR MAXR cancel page WALL=10546893050 e-12: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+FLOOR SOUND cancel local WALL=42723589375 e-12: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+FLOOR MAXR cancel local WALL=10546893050 e-12: PASS at alpha (1e-4): 1 2 5 10 20 30 40 47 55 65 80

@@ -1,0 +1,18 @@
+U1-VILLAIN a_n = exp(-n^2/(2 beta)), beta=4
+U1-OBJECT planar n=4 plaquettes=32 links=76 (shared=3) outside=536 staples five=24 four=52; beta=4 NMAX=10 (dropped weight I_11/I_0 = 2.70e-07) LMAX=6 datum=ordered
+U1-Z beta=4 datum=ordered n=4 Z = 2.008762994756e+170 (imag 0.0e+00)
+U1-CLASS a=0 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +1.000000000000e+00 +0.000000000000e+00 i
+U1-CLASS a=1 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +7.263343478161e-01 +0.000000000000e+00 i
+U1-CLASS a=2 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +2.783212223788e-01 +0.000000000000e+00 i
+U1-CLASS a=3 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +5.626381883650e-02 +0.000000000000e+00 i
+U1-CLASS a=4 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +6.000469022493e-03 +0.000000000000e+00 i
+U1-CLASS a=5 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +3.376091773878e-04 +0.000000000000e+00 i
+U1-CLASS a=6 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +1.002111977937e-05 +0.000000000000e+00 i
+U1-CONN a=0 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +1.000000000e+00 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=1 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +7.263343478e-01 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=2 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +2.783212224e-01 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=3 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +5.626381884e-02 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=4 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +6.000469022e-03 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=5 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +3.376091774e-04 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=6 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +1.002111978e-05 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-DONE

@@ -1,0 +1,4 @@
+HBU1 L=12 beta=1.2 ntherm=200 nmeas=100 nskip=3 seed=11: 100 configurations
+HBU1-LOOP n=1 E[cos Phi] = 7.519155e-01 +- 1.5e-04; E[cos Phi_A cos Phi_B] planar 5.682975e-01 +- 2.1e-04 (connected 2.921e-03), bent 5.717946e-01 +- 2.1e-04 (connected 6.418e-03)
+HBU1-LOOP n=2 E[cos Phi] = 4.520855e-01 +- 3.1e-04; E[cos Phi_A cos Phi_B] planar 2.141355e-01 +- 3.0e-04 (connected 9.754e-03), bent 2.205482e-01 +- 2.8e-04 (connected 1.617e-02)
+HBU1-LOOP n=4 E[cos Phi] = 1.505945e-01 +- 4.1e-04; E[cos Phi_A cos Phi_B] planar 3.085290e-02 +- 1.9e-04 (connected 8.174e-03), bent 3.360292e-02 +- 1.6e-04 (connected 1.092e-02)

@@ -1,0 +1,103 @@
+N=6 links=72 coarse=8 free=64 n=192 dimR=96 nT=96 gauge-fixing rows=96
+selftest expX/logX round trip max err = 4.44e-16
+selftest quaternion product vs 2x2 matrices max err = 1.57e-16; inverse err = 2.24e-16; expX vs matrix exponential err = 2.29e-16
+selftest contour_vars vectorised vs loop max err = 0.00e+00
+selftest: R preserves the constraint (max coarse-link change) = 3.33e-16; Wilson change = 1.78e-15
+selftest (sighted): a gauge transformation AT a centre moves the coarse links by 8.52e-01 (must be O(1))
+selftest complex-step gradient vs central difference (one entry): 0.4555346496 vs 0.4555346500
+=== seed 1: W random (scale 1.2); coarse-link check 2.2e-16
+[N1 seed1 non-critical start point] n=192 dimR=96 rows(L)=96 |gradF|=5.45e+00 axial residual max|logU(y,x)|=1.08e+00 plaquette |angle| min 0.418 max 2.954; Hessian asymmetry 2.8e-11 (time 71.0s)
+[N1 seed1] |HG|/(|H||G|)=2.12e-02  sv(LG): min 1.000e+00 max 1.000e+00  rank L=96 dimG=96 nT=96
+   w=1.0   d=0.3          logdet q1=-152.85397657 mineig q1=-2.700e-01 |ratio/(1+d)^nT - 1| = 1.014e+00
+   w=1.0   d=-0.25        logdet q1=-152.85397657 mineig q1=-2.700e-01 |ratio/(1+d)^nT - 1| = 6.284e-01
+   w=1.0   d=(0.1+0.2j)   logdet q1=-152.85397657 mineig q1=-2.700e-01 |ratio/(1+d)^nT - 1| = 5.889e+00
+   BFGS round 0: Phi=0.389802178093038 |grad|=2.28e-08 nit=84
+   Newton 0: |step|=2.78e-07 |grad|=2.01e-15 min eig Hess(Phi)=+3.315e-02
+[P1 seed1 background] n=192 dimR=96 rows(L)=96 |gradF|=1.99e-15 axial residual max|logU(y,x)|=7.23e-16 plaquette |angle| min 0.248 max 0.376; Hessian asymmetry 1.3e-11 (time 53.7s)
+[P1 seed1] |HG|/(|H||G|)=3.15e-13  sv(LG): min 1.000e+00 max 1.000e+00  rank L=96 dimG=96 nT=96
+   w=0.25  d=0.3          logdet q1=-242.64869325 mineig q1=+3.315e-02 |ratio/(1+d)^nT - 1| = 1.688e-10
+   w=0.25  d=-0.25        logdet q1=-242.64869325 mineig q1=+3.315e-02 |ratio/(1+d)^nT - 1| = 1.404e-10
+   w=0.25  d=(0.1+0.2j)   logdet q1=-242.64869325 mineig q1=+3.315e-02 |ratio/(1+d)^nT - 1| = 1.258e-10
+   w=1.0   d=0.3          logdet q1=-109.56443458 mineig q1=+5.836e-02 |ratio/(1+d)^nT - 1| = 4.218e-11
+   w=1.0   d=-0.25        logdet q1=-109.56443458 mineig q1=+5.836e-02 |ratio/(1+d)^nT - 1| = 3.518e-11
+   w=1.0   d=(0.1+0.2j)   logdet q1=-109.56443458 mineig q1=+5.836e-02 |ratio/(1+d)^nT - 1| = 3.146e-11
+   w=4.0   d=0.3          logdet q1=+23.51982408 mineig q1=+6.443e-02 |ratio/(1+d)^nT - 1| = 1.053e-11
+   w=4.0   d=-0.25        logdet q1=+23.51982408 mineig q1=+6.443e-02 |ratio/(1+d)^nT - 1| = 8.768e-12
+   w=4.0   d=(0.1+0.2j)   logdet q1=+23.51982408 mineig q1=+6.443e-02 |ratio/(1+d)^nT - 1| = 7.871e-12
+[N2 seed1 over-complete] |HG|/(|H||G|)=3.15e-13  sv(LG): min 1.000e+00 max 1.033e+00  rank L=102 dimG=96 nT=96
+   w=1.0   d=0.3          logdet q1=-100.14097220 mineig q1=+6.911e-02 |ratio/(1+d)^nT - 1| = 6.997e-01
+   w=1.0   d=-0.25        logdet q1=-100.14097220 mineig q1=+6.911e-02 |ratio/(1+d)^nT - 1| = 3.048e+00
+   w=1.0   d=(0.1+0.2j)   logdet q1=-100.14097220 mineig q1=+6.911e-02 |ratio/(1+d)^nT - 1| = 7.431e-01
+[N3 seed1 non-invariant] |HG|/(|H||G|)=6.44e-03  sv(LG): min 1.000e+00 max 1.000e+00  rank L=96 dimG=96 nT=96
+   w=1.0   d=0.3          logdet q1=-59.31646684 mineig q1=+1.584e-01 |ratio/(1+d)^nT - 1| = 5.020e+02
+   w=1.0   d=-0.25        logdet q1=-59.31646684 mineig q1=+1.584e-01 |ratio/(1+d)^nT - 1| = 9.962e-01
+   w=1.0   d=(0.1+0.2j)   logdet q1=-59.31646684 mineig q1=+1.584e-01 |ratio/(1+d)^nT - 1| = 9.869e+00
+[N4 seed1] |H - J^T Hall J|/|H| = 2.522e-02   |grad A over all links| = 6.412e-01 (nonzero: a Lagrange multiplier is present)
+[N4 seed1 Hessian without Lagrange term] |HG|/(|H||G|)=1.38e-03  sv(LG): min 1.000e+00 max 1.000e+00  rank L=96 dimG=96 nT=96
+   w=1.0   d=0.3          logdet q1=-109.63311612 mineig q1=+5.836e-02 |ratio/(1+d)^nT - 1| = 4.647e-02
+   w=1.0   d=-0.25        logdet q1=-109.63311612 mineig q1=+5.836e-02 |ratio/(1+d)^nT - 1| = 3.055e-02
+   w=1.0   d=(0.1+0.2j)   logdet q1=-109.63311612 mineig q1=+5.836e-02 |ratio/(1+d)^nT - 1| = 3.230e-02
+=== seed 2: W random (scale 1.2); coarse-link check 1.7e-16
+[N1 seed2 non-critical start point] n=192 dimR=96 rows(L)=96 |gradF|=4.86e+00 axial residual max|logU(y,x)|=1.35e+00 plaquette |angle| min 0.272 max 3.048; Hessian asymmetry 2.5e-11 (time 51.1s)
+[N1 seed2] |HG|/(|H||G|)=1.92e-02  sv(LG): min 1.000e+00 max 1.000e+00  rank L=96 dimG=96 nT=96
+   w=1.0   d=0.3          logdet q1=-152.38867521 mineig q1=-4.517e-01 |ratio/(1+d)^nT - 1| = 1.000e+00
+   w=1.0   d=-0.25        logdet q1=-152.38867521 mineig q1=-4.517e-01 |ratio/(1+d)^nT - 1| = 1.346e+00
+   w=1.0   d=(0.1+0.2j)   logdet q1=-152.38867521 mineig q1=-4.517e-01 |ratio/(1+d)^nT - 1| = 1.070e+01
+   BFGS round 0: Phi=0.597656838616844 |grad|=1.38e-08 nit=109
+   Newton 0: |step|=1.92e-07 |grad|=1.23e-15 min eig Hess(Phi)=+2.385e-02
+[P1 seed2 background] n=192 dimR=96 rows(L)=96 |gradF|=1.25e-15 axial residual max|logU(y,x)|=6.35e-16 plaquette |angle| min 0.099 max 0.549; Hessian asymmetry 1.3e-11 (time 35.2s)
+[P1 seed2] |HG|/(|H||G|)=3.38e-13  sv(LG): min 1.000e+00 max 1.000e+00  rank L=96 dimG=96 nT=96
+   w=0.25  d=0.3          logdet q1=-244.83535555 mineig q1=+2.385e-02 |ratio/(1+d)^nT - 1| = 1.379e-10
+   w=0.25  d=-0.25        logdet q1=-244.83535555 mineig q1=+2.385e-02 |ratio/(1+d)^nT - 1| = 1.151e-10
+   w=0.25  d=(0.1+0.2j)   logdet q1=-244.83535555 mineig q1=+2.385e-02 |ratio/(1+d)^nT - 1| = 1.029e-10
+   w=1.0   d=0.3          logdet q1=-111.75109688 mineig q1=+2.885e-02 |ratio/(1+d)^nT - 1| = 3.455e-11
+   w=1.0   d=-0.25        logdet q1=-111.75109688 mineig q1=+2.885e-02 |ratio/(1+d)^nT - 1| = 2.865e-11
+   w=1.0   d=(0.1+0.2j)   logdet q1=-111.75109688 mineig q1=+2.885e-02 |ratio/(1+d)^nT - 1| = 2.572e-11
+   w=4.0   d=0.3          logdet q1=+21.33316179 mineig q1=+3.012e-02 |ratio/(1+d)^nT - 1| = 8.534e-12
+   w=4.0   d=-0.25        logdet q1=+21.33316179 mineig q1=+3.012e-02 |ratio/(1+d)^nT - 1| = 7.187e-12
+   w=4.0   d=(0.1+0.2j)   logdet q1=+21.33316179 mineig q1=+3.012e-02 |ratio/(1+d)^nT - 1| = 6.408e-12
+[N2 seed2 over-complete] |HG|/(|H||G|)=3.38e-13  sv(LG): min 1.000e+00 max 1.005e+00  rank L=102 dimG=96 nT=96
+   w=1.0   d=0.3          logdet q1=-101.98636688 mineig q1=+4.149e-02 |ratio/(1+d)^nT - 1| = 7.066e-01
+   w=1.0   d=-0.25        logdet q1=-101.98636688 mineig q1=+4.149e-02 |ratio/(1+d)^nT - 1| = 3.136e+00
+   w=1.0   d=(0.1+0.2j)   logdet q1=-101.98636688 mineig q1=+4.149e-02 |ratio/(1+d)^nT - 1| = 7.528e-01
+[N3 seed2 non-invariant] |HG|/(|H||G|)=6.47e-03  sv(LG): min 1.000e+00 max 1.000e+00  rank L=96 dimG=96 nT=96
+   w=1.0   d=0.3          logdet q1=-60.18409742 mineig q1=+1.289e-01 |ratio/(1+d)^nT - 1| = 4.929e+02
+   w=1.0   d=-0.25        logdet q1=-60.18409742 mineig q1=+1.289e-01 |ratio/(1+d)^nT - 1| = 9.961e-01
+   w=1.0   d=(0.1+0.2j)   logdet q1=-60.18409742 mineig q1=+1.289e-01 |ratio/(1+d)^nT - 1| = 9.816e+00
+[N4 seed2] |H - J^T Hall J|/|H| = 2.444e-02   |grad A over all links| = 6.186e-01 (nonzero: a Lagrange multiplier is present)
+[N4 seed2 Hessian without Lagrange term] |HG|/(|H||G|)=1.33e-03  sv(LG): min 1.000e+00 max 1.000e+00  rank L=96 dimG=96 nT=96
+   w=1.0   d=0.3          logdet q1=-111.81509901 mineig q1=+2.886e-02 |ratio/(1+d)^nT - 1| = 4.345e-02
+   w=1.0   d=-0.25        logdet q1=-111.81509901 mineig q1=+2.886e-02 |ratio/(1+d)^nT - 1| = 2.845e-02
+   w=1.0   d=(0.1+0.2j)   logdet q1=-111.81509901 mineig q1=+2.886e-02 |ratio/(1+d)^nT - 1| = 3.015e-02
+[P3 abelian flux m=1 (critical, not a minimum)] n=192 dimR=96 rows(L)=96 |gradF|=1.16e-15 axial residual max|logU(y,x)|=1.57e+00 plaquette |angle| min 0.349 max 0.349; Hessian asymmetry 6.6e-12 (time 39.0s)
+   eigenvalues of q1 below 0: 0; smallest |eig| = 6.219e-02
+[P3 flux m=1] |HG|/(|H||G|)=1.52e-13  sv(LG): min 1.000e+00 max 1.000e+00  rank L=96 dimG=96 nT=96
+   w=1.0   d=0.3          logdet q1=-110.77945101 mineig q1=+6.219e-02 |ratio/(1+d)^nT - 1| = 8.235e-12
+   w=1.0   d=-0.25        logdet q1=-110.77945101 mineig q1=+6.219e-02 |ratio/(1+d)^nT - 1| = 6.924e-12
+   w=1.0   d=(0.1+0.2j)   logdet q1=-110.77945101 mineig q1=+6.219e-02 |ratio/(1+d)^nT - 1| = 6.125e-12
+   w=4.0   d=0.3          logdet q1=+22.30480766 mineig q1=+6.963e-02 |ratio/(1+d)^nT - 1| = 2.036e-12
+   w=4.0   d=-0.25        logdet q1=+22.30480766 mineig q1=+6.963e-02 |ratio/(1+d)^nT - 1| = 1.723e-12
+   w=4.0   d=(0.1+0.2j)   logdet q1=+22.30480766 mineig q1=+6.963e-02 |ratio/(1+d)^nT - 1| = 1.536e-12
+[P3 abelian flux m=2 (critical, not a minimum)] n=192 dimR=96 rows(L)=96 |gradF|=1.96e-15 axial residual max|logU(y,x)|=3.14e+00 plaquette |angle| min 0.698 max 0.698; Hessian asymmetry 8.8e-12 (time 39.8s)
+   eigenvalues of q1 below 0: 6; smallest |eig| = 3.777e-17
+[P3 flux m=2] |HG|/(|H||G|)=1.71e-13  sv(LG): min 1.000e+00 max 1.000e+00  rank L=96 dimG=96 nT=96
+   w=1.0   d=0.3          logdet q1=-398.15680199 mineig q1=-4.772e-16 |ratio/(1+d)^nT - 1| = 1.304e+01
+   w=1.0   d=-0.25        logdet q1=-398.15680199 mineig q1=-4.772e-16 |ratio/(1+d)^nT - 1| = 2.921e-01
+   w=1.0   d=(0.1+0.2j)   logdet q1=-398.15680199 mineig q1=-4.772e-16 |ratio/(1+d)^nT - 1| = 1.416e+01
+   w=4.0   d=0.3          logdet q1=-259.27533527 mineig q1=-1.407e-15 |ratio/(1+d)^nT - 1| = 5.869e-01
+   w=4.0   d=-0.25        logdet q1=-259.27533527 mineig q1=-1.407e-15 |ratio/(1+d)^nT - 1| = 3.161e-01
+   w=4.0   d=(0.1+0.2j)   logdet q1=-259.27533527 mineig q1=-1.407e-15 |ratio/(1+d)^nT - 1| = 4.549e+01
+=== log|det q_1| at the backgrounds (S-P2): -109.564435, -111.751097, -110.779451, -398.156802
+=== SUMMARY (test, seed, worst |ratio/(1+d)^nT - 1|, |HG|/(|H||G|))
+   N1 non-critical        seed 1   worst 5.889e+00   HG 2.12e-02
+   P1 constrained min     seed 1   worst 1.688e-10   HG 3.15e-13
+   N2 over-complete gf    seed 1   worst 3.048e+00   HG 3.15e-13
+   N3 non-invariant       seed 1   worst 5.020e+02   HG 6.44e-03
+   N4 no Lagrange term    seed 1   worst 4.647e-02   HG 1.38e-03
+   N1 non-critical        seed 2   worst 1.070e+01   HG 1.92e-02
+   P1 constrained min     seed 2   worst 1.379e-10   HG 3.38e-13
+   N2 over-complete gf    seed 2   worst 3.136e+00   HG 3.38e-13
+   N3 non-invariant       seed 2   worst 4.929e+02   HG 6.47e-03
+   N4 no Lagrange term    seed 2   worst 4.345e-02   HG 1.33e-03
+   P3 flux m=1            seed 0   worst 8.235e-12   HG 1.52e-13
+   P3 flux m=2            seed 0   worst 4.549e+01   HG 1.71e-13

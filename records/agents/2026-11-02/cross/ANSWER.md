@@ -1,0 +1,30 @@
+# Where the proof crossed β ≈ 2.3 — the answer of 2026-11-02 (ten search agents, every revision of both repositories, every day's transcripts; digests in cross/digest_C*.md, reports in read/REPORTS.md)
+
+VERDICT. The proof crossed once, completely and with a certificate, on the hierarchical (Migdal–Kadanoff) SU(2) model. On ℤ⁴ it never crossed. The operator's quoted sentence occurs in no file, revision or transcript before his message; it is exact for ℤ⁴ and false for the hierarchical model.
+
+THE CROSSING (hierarchical, certified):
+- mkflow (5f2c1ba, records mkflow_b*.2026-10-29d; 256 bits, directed rounding, KAT contained, wrong-rounding control refused): K* = 7 (2.2), 7 (2.3), 18 (5), 37 (10) to c₁ ≤ 0.131 [c₁ compared with a β threshold].
+- In the disk's own units (c₁ < 0.0327, III PENTAPYLON RESULTS 15.1): steps 8 (2.2), 8 (2.3), 19 (5), 38 (10).
+- The tilt budget (master plan §63 RESULTS 2/4, III HEAD, 10-29 00:42/00:59): B₈ ∈ [0.033549, 0.033598] from 2.2 and [0.28151, 0.28192] from 2.3 — inside the SU(2) single-link Dobrushin disk; the staked k = 9 refuted. Gate arm 120: pins met in all nine runs reaching it (none of those runs GREEN overall).
+- The ledger 10-29 04:42Z: "the chain Σ0 → Σ2 → Σ3 closes … the first complete instance of the crossover theorem; the geometry is hierarchical".
+- Paper revision 9 (48d055e, 10-29 02:22) §8.3: "On that model the chain closes in a handful of steps from the crossover coupling."
+- MassGapChain.lean:19 "closed at k = 8" (the file proves the implication with the budget as hypothesis; [Fintype G] at :32).
+- Classical in existence: Ito, PRL 55 (1985) 558; Müller–Schiemann, CMP (1987). The certificate and the step counts are this work's.
+
+OTHER CROSSINGS AT THEIR SCOPE:
+- Lean kernel (GREEN run 2026-10-27u): Separation.lean:312 wilson_lattice_potential_gap_faithful, Unitary.lean:237 wilson_lattice_potential_gap_unitary, MassGap:22 — gap and strictly positive static potential at every β > 0, every finite gauge group, every finite cross-section; no bound uniform in the cross-section.
+- Z₂, 4D: kernel Wegner duality (Duality:125, wegner_dual:261) exact at every β maps 2.3 to 0.01005, inside the certified region (< 0.0716); the Z₂ weak-coupling clause β > 1.445 is built in III (TorusT3Assembly.lean), gate runs RED, not in the published kernel.
+- The tube at β₃ = 2.3 (2+1D, 2×2 torus): Doob-chain gap bound and exact flux lumping PROVED within the truncation; spectra READINGS: gap 1.018863 (spins ≤ 1), 0.931023 (spins ≤ 3/2).
+- 3D: Theorem 8.8 (ℤ³, β ≤ 0.3739; 0.3841 exact constants) PROVED + Bałaban 1985 unconditional 3D UV; about 6 RG steps between (of 7.3–7.8).
+- ℤ⁴ readings (exact finite objects, fixed boundary datum; not bounds): blocked flow from 2.2: 1.888, 1.553, 1.161, 0.662, 0.109 (below 0.2452 at step 5); influence ladder ×0.55 at 2.2 (U(1) at 1.2 falls ×0.90 at the cancelling datum: withdrawn as a decider); Hypothesis I's coefficient two steps up 0.53–0.60 (spins ≤ 1), 1.11–1.33 (spins ≤ 3/2); at rung 7 of the certified flow from 2.2 the DS cube sum 0.930251.
+- ℤ⁴ proved: Theorem 8.7 (0.241; 0.2452 exact constants), Theorem 8.9 (0.4764 page / 0.4816 tree, conditional on S12's remainder), Theorem 8.5 (gap of every limit point from Hypotheses I and II), the exit lemma (8bcfffd).
+
+THE SCALE-BACK:
+Justified: Ito's theorem gives U(1) the same hierarchical descent, and 4D U(1) is massless at weak coupling, so no group-blind transfer can hold; the hierarchical first step from 2.2 rises (2.2 → 2.34) where ℤ⁴ one-loop falls (→ 1.94); Theorem 8.9 unconditional at revision 26 → conditional at 28–30, each step naming S12's unproved remainder.
+Not justified or stale: revision 10 (9d5db99, 10-29 02:35) deleted revision 9's true sentence; revision 11 (d9d6527, 02:39) added "no step count of the hierarchical model is a reading of it" with no new evidence; iii-43's "the proof that it reads nothing about ℤ⁴" (10-29 08:25Z) exceeded its evidence; the k = 8 closure recorded nowhere in the paper, PENTAPYLON or S1; the far shore (ce081ee78) still prints the refuted "k = K* + 2 = 9 … STAKED"; README "does not yet cite" the descent (cited since revision 9); README and abstract never say the descent starts at 2.3; the abstract never names Theorem 8.9; ARXIV.md gives only 0.241; THE STANDING lists the descent and the tube only as refuted roads and its "not claimed" lists omit the proved reduction.
+Lost by error: revision 26 resumed from the stale source tree (source/*.js vs source/ground/*.js) and dropped revisions 22–25, Theorem 8.8 among them (README still cites it); condition (c) proved 10-29 (floor ≈ 70 → ≈ 107) still listed open at 70.
+Overstated: "threshold at the seventh step" (eighth in the disk's units); "the exact spectra of the SU(2) tube" (truncated, double precision).
+
+THE MISSING STEP ON ℤ⁴ (named independently by C2, C3, C4, C5c, C7 and the reading agents): a measure-weighted, group-dependent bound on Hypothesis I's coefficient at one blocking scale reached from 2.2–2.3: typical boundary data bounded on the exact objects, frustrated data priced by their chessboard (reflection-positivity) probability; first test: small for SU(2), failing for U(1) at 1.2. Equivalent form: a one-sided SU(2)-specific comparison of ℤ⁴'s blocked influence with the certified hierarchical flow (the step Ito–Seiler found unproved in Tomboulis's argument).
+
+ALSO FOUND (integrity): published copies not byte-faithful to III (dropped backslashes in g34_su2_square.pl:121, g35_u1_square.pl:68, pentapylon_gate.sh:713; g36 cannot reproduce its record; g39 prints the opposite verdict); W2 engine bent object counts the hinge plaquettes twice (w2_strip_n.c and siblings; readings at 2.2 on the bent object suspect); ct_primitive reads {a, bab⁻¹} as primitive (S12-b class counts not certified); kp_budget run in sub-gas mode not table mode (the far shore's ε(β) table is the sub-gas's); mkflow's 0.131 rounded the wrong way (3π/72 = 0.1308997); F₀ = 22 unclaimed (+0.005, N_c(22) = 46,816 in hand); the crude certificate's constant doubled (0.2248 with the stated constant, not 0.160).

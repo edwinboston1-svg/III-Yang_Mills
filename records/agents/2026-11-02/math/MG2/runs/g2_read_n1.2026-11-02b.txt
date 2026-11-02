@@ -1,0 +1,12 @@
+== G2 beta=7.875 datum=ordered grid=96 Cspan=30 CK=80 (span 23 of 64 irreps, top dim 40579) a_rho=0.267252 tail(phiX)=1.3e-09 rho_link min/max=8.2e-16 | MAXCORR=0.037697 next=0.001751
+rc=0 (G2 7.875 96 30 80)
+== G2 beta=9.45 datum=ordered grid=96 Cspan=30 CK=80 (span 23 of 64 irreps, top dim 40579) a_rho=0.337715 tail(phiX)=3.7e-08 rho_link min/max=-8.3e-10 | MAXCORR=0.035634 next=0.001499
+rc=0 (G2 9.45 96 30 80)
+== G2 beta=12.9968 datum=ordered grid=96 Cspan=30 CK=80 (span 23 of 64 irreps, top dim 40579) a_rho=0.479280 tail(phiX)=4.1e-06 rho_link min/max=-7.5e-08 | MAXCORR=0.033045 next=0.001222
+rc=0 (G2 12.9968 96 30 80)
+== G2 beta=20 datum=ordered grid=96 Cspan=30 CK=80 (span 23 of 64 irreps, top dim 40579) a_rho=0.652448 tail(phiX)=3.4e-04 rho_link min/max=-3.0e-06 | MAXCORR=0.030871 next=0.001020
+rc=0 (G2 20 96 30 80)
+== SU(2) beta=1.5 datum=ordered grid=256 Cspan=30 CK=300 (span 11 of 34 irreps, top dim 34) a_rho=0.344144 tail(phiX)=1.8e-50 rho_link min/max=5.6e-04 | MAXCORR=0.033736 next=0.001719 | centre-even (SO(3)) MAXCORR=0.024857
+rc=0 (SU2 1.5 256 30 300)
+== SU(2) beta=3 datum=ordered grid=256 Cspan=30 CK=300 (span 11 of 34 irreps, top dim 34) a_rho=0.567924 tail(phiX)=2.3e-37 rho_link min/max=8.9e-09 | MAXCORR=0.030814 next=0.001238 | centre-even (SO(3)) MAXCORR=0.030447
+rc=0 (SU2 3.0 256 30 300)

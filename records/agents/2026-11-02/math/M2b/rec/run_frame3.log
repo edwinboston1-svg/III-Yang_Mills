@@ -1,0 +1,6 @@
+== fr_n2_W2L2_top2_ordered (frame 2,0,0,0) start 08:18:55
+   rc=0 end 08:19:26 W2-M2b peak memory 0.017 GB (S + N + snapshot), multiply-adds 5.3357e+09 W2-DONE 30.2 s 
+   full: rhoA=0.078339636 Cgrid=0.159663103  SO3: rhoA=0.008895144  E[chi_1/2(A)]: +6.116451547233e-01  census: min 2.893410e-02, negative at 0
+== fr_n2_W2L2_top2_cancel (frame 2,0,0,0) start 08:19:34
+   rc=0 end 08:20:13 W2-M2b peak memory 0.017 GB (S + N + snapshot), multiply-adds 5.3357e+09 W2-DONE 39.2 s 
+   full: rhoA=0.127249410 Cgrid=0.239785416  SO3: rhoA=0.009093609  E[chi_1/2(A)]: +4.793042708017e-01  census: min 1.640143e-01, negative at 0

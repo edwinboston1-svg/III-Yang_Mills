@@ -1,0 +1,152 @@
+----- LINE 11
+  push(P0(`The object that remains is the infinite-volume mass gap of four-dimensional SU(2) lattice Yang–Mills theory at every coupling, uniform in physical units along the scaling sequence: a 
+constant *m* > 0 with *m*_{lat}(*j*) ≥ *m a*_{j} at every rung of the construction's sequence, a lower bound on the lattice gap in physical units, uniform in the spacing and in the volume. By 
+Theorem 7.4 it is the mass gap of every continuum limit point, and the same object for every compact simple gauge group completes the problem's demand for a gap. Two features of this inequality fix 
+the work it demands.`));
+
+----- LINE 12
+  push(P(`The first is its scale. In lattice units the required gap tends to zero with the spacing, like *m a*_{j}, so it cannot be read at a single coupling. The lattice gaps that are proved 
+directly hold at strong coupling, where the transfer matrix mixes rapidly: for SU(2) this is the theorem of Osterwalder and Seiler, and for every finite gauge group it is among the theorems checked 
+by machine in §8.2.[[fn:Osterwalder and Seiler, *op. cit.*, for the strong-coupling gap of the Wilson theory with a compact gauge group; the finite-group form with its explicit coefficients is Edwin 
+Boston III's, listed in the Records.]] For SU(2) the constant of that gap is a theorem of Edwin Boston III: the conditional law of one link given its six staples, the heat-bath kernel, moves in total 
+variation by at most 2β/(3π) times the change of the staple sum, because the mean absolute deviation of a coordinate of a von Mises–Fisher law on the three-sphere is at most its value 4/(3π) at 
+the uniform law, with equality there alone; so Dobrushin's single-site condition holds on the full lattice for β < 3π/72 = 0.1309, and in the temporal gauge on lattices open in time, where every 
+time link is the identity and a space link has fourteen neighbouring links rather than eighteen, four spatial plaquettes with three other space links each and two temporal plaquettes with one, for β 
+< 3π/56 = 0.1683.[[fn:Edwin Boston III, the sharp one-link lemma: the bound on the mean absolute deviation is certified by an enclosure of 9,104 rectangles in the plane of the two parameters of the 
+law, no cell undecided, with the axial case by Chebyshev's association inequality and the remainder by hand; the heat-bath kernel's constant follows by the path argument, each law along the path 
+being a von Mises–Fisher law; its record and run of record are listed in the Records. The time-open count is the paper's.]] The construction's sequence runs into the scaling window of weak bare 
+coupling, where asymptotic freedom ties the bare coupling to the spacing. The inequality must be carried from the one end of the sequence to the other.`));
+
+----- LINE 13
+  push(P(`The second is its carrier. The carrier is the renormalisation group itself: a chain of blocking steps from a fixed physical scale, at which the effective coupling is small and Bałaban's 
+estimates hold, down to the scale of the gap, with the error of every step certified. Five links compose this carrier, and each has its status. The first is the ultraviolet half: the blocking steps 
+from the cutoff to a fixed physical scale at which the effective coupling is still small, with the effective action held near Wilson's uniformly in the number of steps. This is Bałaban's theorem, 
+and what the carrier needs of it beyond his published estimates is stated as an interface: the convergence of the correlation functions of the effective theory at that scale as the cutoff is removed, 
+and the Euclidean invariance of the limit, the two pieces the zeroth draft deduces conditionally and names among its inputs. The second is a single bound at the crossover scale, where the effective 
+coupling ceases to be small. Along the Gaussian scales above it the mixing coefficient of a fibre is exactly one, that of a massless Gaussian, so no contraction is to be certified there; the content 
+lies at the crossover scale alone, and the object there is the influence functional of the blocked action: the covariance of a boundary-adjacent link's projection with every plaquette of the block 
+under the worst boundary datum, equivalently the mixed second differences of the non-Wilson part of the renormalised action. This bound is the open mathematics of the route. The third is the infrared 
+half, the gap of the blocked theory inside the strong-coupling disk, which is the theorem of Osterwalder and Seiler for SU(2) and a theorem checked by machine for every finite gauge group. The fourth 
+is the uniformity of the second link's bound in the cutoff: the effective actions at the fixed scale differ across the sequence by tilts of small oscillation, and a bound stable under such tilts 
+makes the decay rate and range of the third link independent of the cutoff, which is the inequality of Theorem 7.4 with one constant. The fifth is the assembly, Theorem 7.4 itself. Once the second 
+link is in hand, two roads carry it to the gap: the transfer-matrix road of Propositions 8.1 and 8.2 below, and the Gibbs road of §8.3, where Theorem 8.5 states the passage from a Dobrushin bound on 
+the blocked measure at one fixed physical scale, with the field inside the blocks clustering at that scale, to the gap of every limit point, the third and fourth links among its hypotheses and 
+Proposition 8.4 the fourth link's exact form. The remaining entries of Table 1, namely every compact simple gauge group, the full algebra of curvature observables and the unconditional invariance 
+under O(4), stand beside it as the rest of the existence that the problem demands.`));
+
+----- LINE 218
+  push(P(`The theorem places the four-dimensional gap at one remove from a finite statement. Hypotheses I and II concern the conditional law of one coarse variable and the field inside one block, at 
+a fixed physical scale, with constants uniform in the cutoff, and nothing in them refers to a limit; their consequence, by Theorem 8.5, is the unique vacuum, the cluster property and the mass gap of 
+every limit point, with the gap's value in (8.8). The proof that follows this paper is the proof of those two statements, and its measure of progress is a number: the distance, in blocking steps, 
+between the scale at which the ultraviolet half delivers its interface and the scale at which the blocked bound is read. On the hierarchical model of the renormalisation group, in which each blocking 
+step is the Migdal–Kadanoff recursion on a single-plaquette weight and is exact for the hierarchical lattice, that distance has been measured, and the crossover is crossed with certified numbers. 
+Edwin Boston III has certified the flow of the SU(2) Wilson weight at 256 bits of precision with directed rounding, every character coefficient an interval and the truncation priced, and has 
+certified a bound on the Dobrushin row of the flowed weight *F*ₖ placed on ℤ⁴ as the weight of every plaquette, at every step from β = 2.2 and β = 2.3 and from the eleventh step from β = 5 
+and the thirty-first from β = 10; the earlier steps from those two couplings the certificate refuses by name, the eight-term truncation leaving its lower bound on *F*ₖ non-positive near θ = π. 
+Write *F*ₖ(*U*) = exp(βₖ cos θ + δₖ(θ)) for *U* of angle θ, with βₖ the Wilson coupling whose fundamental character coefficient is the step's own, so that δₖ is the weight's 
+departure from Wilson's form. A weight tilted by e^{δ} keeps Dobrushin's interdependence up to the factor e^{o} and adds 1 − e^{−Δ} for each neighbour, where o bounds the oscillation of the 
+tilt along the varied link and Δ its mixed difference between the two links;[[fn:The two tilt lemmas: a probability law tilted by e^{ρ} with ρ of oscillation at most o moves by at most 1 − 
+e^{−o} in total variation, and two laws tilted by the same ρ keep their distance up to the factor e^{o}; the triangle inequality then gives the tilted interdependence e^{o}C + (1 − e^{−Δ}). 
+Both proofs are short and hold on any probability space; the finite form is checked by the Lean kernel in CrossoverCriterion.lean (Records).]] each link lies in six plaquettes and has eighteen 
+neighbouring links, two distinct links share at most one plaquette, and the Wilson part's row is 18 · 4βₖ/(3π) by §8.1, so the row is at most *B*ₖ = e^{6 osc δₖ} · (24/π) βₖ + 18 (1 
+− e^{−2 osc δₖ}), which is the single link's disk βₖ < 3π/72 of §8.1 when δₖ = 0. From β = 2.2 and from β = 2.3 the budget closes at the eighth step, B₈ ∈ [0.033548, 0.033599] 
+and B₈ ∈ [0.28150, 0.28192], after B₇ ∈ [2.0760, 2.0791] and B₇ ∈ [4.9347, 4.9420]; from β = 5 it closes at the nineteenth, B₁₉ ∈ [0.026779, 0.026820] after B₁₈ ∈ [1.9154, 
+1.9182]; and from β = 10 at the thirty-ninth, B₃₉ ∈ [0.0055722, 0.0055806] after B₃₈ ∈ [1.1355, 1.1372], where the coupling β₃₈ = 0.1177 already lies inside the single link's disk 
+and the departure from Wilson's form alone holds the budget above one. The eighth iterate from the crossover coupling therefore defines on ℤ⁴ a theory with a unique infinite-volume Gibbs measure 
+and exponential clustering, and, its character coefficients being non-negative so that the weight is reflection positive, a lattice mass gap by Theorem 7.1; and eight is the first step at which the 
+budget closes, the budget itself being certified above one at the step before. The hierarchical model's own confinement at every coupling, with lower bounds on its string tension and mass gap, is 
+classical,[[fn:K. R. Ito, "Permanent quark confinement in four-dimensional hierarchical lattice gauge theories of Migdal–Kadanoff type", *Phys. Rev. Lett.* 55 (1985), 558; V. F. Müller and J. 
+Schiemann, "Convergence of Migdal–Kadanoff iterations: a simple and general proof", *Lett. Math. Phys.* 15 (1988), 289–295, whose rate of convergence gives lower bounds on the string tension and 
+the mass gap of the hierarchical four-dimensional gauge models. Ito's theorem covers the hierarchical U(N) models, U(1) among them.]] and what the certificate adds is the number of steps and the 
+budget at each of them: on the hierarchical model eight blocking steps carry the crossover coupling into the disk, each one certified.[[fn:Edwin Boston III, the certified descent and the certified 
+budget; the instruments, the records at the four starting couplings and the known answers are listed in the Records. The first step from β = 2.2 is read from the same record: the coefficient rises 
+from 0.464 to 0.486, an effective coupling of 2.35, where the one-loop running of ℤ⁴ takes 2.2 to 1.94 under one doubling of the scale. Revision 30 counted instead the steps at which the 
+coefficient c₁ itself falls below 0.131, the seventh from β = 2.3, the eighteenth from β = 5 and the thirty-seventh from β = 10, and compared them with a bound that §8.1 states on the coupling: 
+the disk is β < 3π/72, c₁ < 0.0327 for a weight of Wilson's form, and the budget above, which also prices the departure from that form, closes one or two steps after the coefficient's crossing.]] 
+The record also says what the model is not. Its first step from β = 2.2 moves the coupling up where the running of ℤ⁴ moves it down, by an amount of the step's own size, so its first steps are 
+not ℤ⁴'s: the distance Hypotheses I and II must cross is counted in the blocking steps of ℤ⁴, and the hierarchical count is the measured model of it. One more thing is known about the 
+inequality that would carry the model's control to ℤ⁴. A comparison that bounded the mixed second differences of the effective action of ℤ⁴ by those of the hierarchical model, and held for 
+every compact gauge group, would give the four-dimensional U(1) theory a gap wherever its hierarchical flow reaches the disk; the hierarchical U(1) model confines at every coupling by the same 
+theorem, its flow descending at a rate exponentially small in the coupling, 7.3·10⁻⁵ of β per step at an effective coupling of 1.39 and about 3·10⁻¹³ at 2.83, where the SU(2) flow descends 
+by 0.256 to 0.258 per step near β = 5.5, the rate of ℤ⁴'s one-loop running, 0.2575 per doubling; and the U(1) theory on ℤ⁴ has a massless phase at weak coupling.[[fn:A. H. Guth, "Existence 
+proof of a nonconfining phase in four-dimensional U(1) lattice gauge theory", *Phys. Rev. D* 21 (1980), 2291–2307; J. Fröhlich and T. Spencer, "Massless phases and symmetry restoration in abelian 
+gauge theories and spin systems", *Comm. Math. Phys.* 83 (1982), 411–454.]] The inequality the step needs therefore depends on the group, and that dependence is the first property a proof of 
+Hypothesis I must use; on the hierarchical model the two groups part in the rate of descent, which is where the running coupling lives.`));
+
+----- LINE 219
+  push(P(`Two things are known about the strong end of that distance. With the first-order transmission between links, the total variation moved by one neighbour's change, no block criterion of 
+Dobrushin and Shlosman's kind gains on the single link at any block side, because a link deep inside a block branches to its eighteen neighbours exactly as a link of the full lattice does, and the 
+criterion's series has the single link's ratio. A block gains only through the transmission across an integrated face, which carries the product of the two pinned means of the face's other edges, an 
+average over the interior: its one-face constant is an explicit function of the moments of the von Mises–Fisher law on the three-sphere, the covariance of the transmitted variable being a multiple 
+of the identity plus one rank-one term whose size is a closed form in two Bessel ratios, certified in a run of record. What is not in hand is the theorem that composes that transmission along paths 
+inside a block: every composition that is proved, Dobrushin's comparison theorem among them, takes a supremum over configurations at each step and so composes the first-order sensitivities only, 
+which return the single link's disk; a convergent expansion of the block measure would compose the averages, and its radius has no proof beyond that disk.[[fn:Edwin Boston III; the block criterion's 
+accounting, the one-face law and the closed form of its covariance are entered on the ledger of the work that follows this paper, with their readings on the exact cube.]] The paper carries no number 
+for that widening until both are theorems.`));
+
+----- LINE 220
+  push(P(`One averaged composition is rigorous, and it is an instance of Theorem 8.5 in which the fibre clause holds exactly. Call a set of links of ℤ⁴ a *perfect cover* when every plaquette 
+contains exactly one of its links. One exists with period two in every direction: reading the coordinates of a site *x* modulo 2, take the link from *x* in direction 1 when *x*₂ = *x*₃ = *x*₄, 
+in direction 2 when *x*₄ = *x*₁ ≠ *x*₃, in direction 3 when *x*₂ = *x*₁ ≠ *x*₄, and in direction 4 when *x*₃ = *x*₁ ≠ *x*₂. The four conditions partition the sixteen residues, 
+so the set has one link at every site and density one quarter, and a direct check of the ninety-six plaquettes of the torus of side two shows that each contains exactly one of its links; since the 
+condition is local and the set periodic, the same holds on ℤ⁴ and on every torus of even side.[[fn:Edwin Boston III; the cover was found by an exhaustive search on the torus of side two and 
+checked again, on a road sharing no line with the search, on every plaquette of the tori of side two, four and six, where a single bent site leaves ten plaquettes of the smallest torus with zero or 
+two links of the set; Records R7.]] Two consequences are used below: no plaquette contains two links of the cover, and a link outside the cover lies in six plaquettes whose six cover links are 
+distinct, since two links share at most one plaquette.`));
+
+----- LINE 269
+  push(P(`*The open part.* Theorem 8.7 certifies the gap for β ≤ 0.2452 by Dobrushin's comparison, on proved lemmas alone; Theorem 8.9 below extends it to β ≤ 0.4764 by the flux-surface gas, 
+conditional on the one lemma its statement names; nothing above 0.2452 is proved unconditionally, and nothing above 0.4816, where the same inequality holds in the tree dressing (0.4764 in the 
+dressing of the page), is proved at all. The inequality that produces it, Dobrushin's comparison theorem, is group-blind, and correctly so: it holds for every compact single-spin space, and the 
+four-dimensional U(1) theory at weak coupling, whose photon is massless, satisfies its unweighted finite-volume form as readily as a massive theory does, since a boundary's influence there decays as 
+the fourth power of the distance and the unweighted block sum is of order *L*³ log *L* against the block's volume *L*⁴. The group enters only through the evaluation of Hypothesis I, the weighted 
+row sums Σ_{y} *C*(*x*, *y*)*e*^{κ|x−y|} of the blocked measure, which diverge for every κ > 0 in a Coulomb phase and converge in a massive one; what is open is a certified evaluation of those 
+sums at a coupling where neither the strong-coupling nor the weak-coupling expansion converges. The weak end has no published number. Bałaban's ultraviolet stability theorem in four dimensions, 
+Theorem 1 of his paper of record, is proved under the hypothesis that every effective coupling of the sequence, from the bare one at the cutoff to the one at the unit lattice, is at most a constant 
+γ that exists and is never computed ("the constant γ depends on all other constants"); the coupling grows toward coarse scales, so the condition binds at the unit lattice, where his action weighs a 
+plaquette exactly as (8.12)'s does with β = 1/*g*², and the distance is the interval [0.2452, 1/γ²] on proved lemmas, [0.4764, 1/γ²] under Theorem 8.9's condition, with γ unread. The 
+hypothesis's own proof, his Theorem 2 of 1987 with its two-sided bound on the couplings, was announced there, stated in the 1989 paper to be unpublished ("so we have Theorem 1 with the assumption"), 
+and never appeared: his complete list of publications after 1989 contains no paper on four-dimensional gauge theory,[[fn:The zbMATH author listing for T. Bałaban, 1989–2022, read on 29 October 
+2026: the Euclidean fermion block renormalisation (1989), the two large-field papers (1989), the classical N-vector series (1995–1999), and the bosonic many-body series with Feldman, Knörrer and 
+Trubowitz (2008–2022); no paper on four-dimensional gauge theory.]] so the four-dimensional ultraviolet half of every construction of the corpus's kind has stood on it as an assumption. It is not 
+an assumption here but a theorem on this work's path. Its content is exact: his equations (0.18) and (0.20) define the effective coupling at each step by subtracting from the inverse coupling the 
+coefficient β_{k+1} that his extraction (0.28) reads off the step's output as the marginal term, and Theorem 2 is the statement that this coefficient stays between two positive multiples of log *L* 
+at every step, from which the existence of the bare coupling, the bound (0.31) and asymptotic freedom follow by summation and the intermediate value theorem. The coefficient has two parts per step, 
+the background dependence of the fluctuation determinant of his Gaussian normalisation — the one-loop coefficient of the block scheme, whose continuum value for SU(2) is 0.2575 per doubling in 
+Wilson's normalisation of the coupling — and a second-order part bounded through Theorem 1's own estimates; both are stated with their pages on the open ledger, with the falsifier beside them: for 
+U(1) the one-loop coefficient vanishes, so the lower bound and the theorem fail, and the chain separates the groups at the ultraviolet end as Theorem 8.7 separates them at the infrared end. When the 
+bound is proved here, γ becomes a number this work produces and the interval has two ends of its own. Below that ceiling the first rung of the renormalisation step, the small-field split of one 
+block of side two with its Peierls and Kotecký–Preiss conditions, has its constants re-derived on the open ledger (the block Hessian's least eigenvalue 3, the entropy 54.4 per plaquette, the 
+large-field weight the exact one-plaquette marginal): the coupling at which that split converges is about 70, conditional on the activity bound of the small-field expansion and on the chessboard 
+constant, neither proved there, and, proved, it would mark where a Bałaban-type analysis has a verified foothold and not where decay begins, since the same expansion converges for the free massless 
+field, which has no gap. The lower end of the interval is Theorem 8.7's. Osterwalder and Seiler proved a gap at every sufficiently small β with no coupling named; Shen, Zhu and Zhu named one, which 
+for SU(2) on ℤ⁴ is β < 1/12 in Wilson's normalisation;[[fn:H. Shen, R. Zhu and X. Zhu, "A stochastic analysis approach to lattice Yang–Mills at strong coupling", *Comm. Math. Phys.* (2023), 
+doi:10.1007/s00220-022-04609-1, arXiv:2204.12737, (1.2)–(1.3): their action is Nβ Re Σ Tr Q_{p}, so their β is one quarter of Wilson's for SU(2), and their condition |β| < 1/(16(d − 1)) is β 
+< 1/12 on ℤ⁴ and β < 1/8 on ℤ³ in Wilson's normalisation.]] Douglas and Rajasekaran formalised in Lean, for the U(n) theories, the Dobrushin route of Chatterjee's lecture notes, at β < 
+1/(32n(d − 1)) for the action β Σ_{p} (n − Re Tr U_{p}), which for n = 2 on ℤ⁴ is β < 1/96 in Wilson's normalisation.[[fn:M. R. Douglas and F. Rajasekaran, *lgt — Lattice Gauge Theory in 
+Lean 4*, github.com/mrdouglasny/lgt, the headline theorems of LGT/MassGap/StrongCoupling.lean proved on 4 May 2026 (version 0.1.0, 6 September 2026): for U(n) Wilson theory on (ℤ/Nℤ)^d, d ≥ 2, 
+N ≥ 3, and β < 1/(32n(d − 1)), the connected correlation of two plaquette traces is at most 32n²/(1 − α) α^{(dist − 1)/2} with α < 1, uniformly in N; other compact groups in U(n) by an 
+instance. Their action is β Σ(n − Re Tr U_{p}), so their β is one half of Wilson's for n = 2: β < 1/96 on ℤ⁴ and β < 1/64 on ℤ³ in Wilson's normalisation. They cite S. Chatterjee, 
+*Gauge Theory Lecture Notes* (2026), Chapters 15–16, for the route.]] Theorem 8.7 reaches 0.2452, about three times the first of these thresholds and more than twenty times the second, and Theorem 
+8.8 reaches 0.3739 on ℤ³, against 1/8 and 1/64 there, with the rate and the certified constants.[[fn:T. Bałaban, *Comm. Math. Phys.* 109 (1987), 249–301: Theorem 1 (p. 259) and Theorem 3 (p. 
+267), the recursion (0.20) (p. 256), the action (0.2) with the normalised trace (p. 252), read from the pages on 29 October 2026. The statement that the sequence can be kept small in four dimensions, 
+his Theorem 2 (pp. 259–260), is deferred there to "a separate paper"; the four-dimensional stability theorem itself is Theorem 1 of *Large field renormalization II*, *Comm. Math. Phys.* 122 (1989), 
+355–392, p. 355, read on 29 October 2026: "If the sequence of the effective coupling constants is contained in an interval ]0, γ] with a sufficiently small positive γ, then the effective 
+densities ρ_k have the form, and satisfy all the conditions and bounds, described in Sect. 2", followed by "Theorem 2 of [I] allows us to remove the assumption … The proof of Theorem 2 … has not 
+been published yet, so we have Theorem 1 with the assumption"; its bibliography names no paper proving Theorem 2.]] Dimock's expositions treat the abelian and scalar cases and state every threshold 
+the same way. Within the certified form the next widening is the same theorem in the Wasserstein metric of the three-sphere, whose one-link constant is 1/4, exact in the two symmetric directions and 
+supported to one per cent between them, against total variation's 4/(3π); with the constants proved so far it gains nothing over Theorem 8.7, it is predicted to close near β = 0.30 under two 
+constants not yet proved, and it is unguessed to the digit until they are. The tools that would cross the interval are named and not claimed: a finite-volume criterion with typical rather than 
+extremal boundary data, for which no theorem exists in a non-abelian gauge theory; a correlation inequality, Griffiths' second inequality for untruncated SU(2) Wilson loops, which holds on the exact 
+tube of §8.2 at β = 0.5 and 1.0, is undecided at 2.0 and 2.3, and from which, by the *r*⁻⁸ plaquette correlations of the U(1) Coulomb phase, no finite-volume criterion for truncated 
+correlations can follow; and the centre of the group, whose one published every-coupling argument rests on a matching inequality that its examiners found established only where the high-temperature 
+expansion converges, and which, as structured, would confine U(1) as well.[[fn:E. T. Tomboulis, "Confinement for all values of the coupling in four-dimensional SU(2) gauge theory", arXiv:0707.2179 
+(2007); K. R. Ito and E. Seiler, "On the recent paper on quark confinement by Tomboulis", arXiv:0711.4930 (2007), and "Further discussion of Tomboulis' approach to the confinement problem", 
+arXiv:0803.3019 (2008); Tomboulis's reply, arXiv:0712.2620 (2007). Sources [22]–[23].]]`));
+
+----- LINE 281
+  push(P0(`The ground, then, is this. A construction of the corpus's kind, as its manuscripts state it, delivers a limit that is controlled at short distances and silent at long ones: a theory whose 
+correlations obey the axioms of positivity and symmetry, whose coupling is seen to run, and whose large-distance behaviour is not controlled. Theorem 7.1 shows that the missing control is a single 
+spectral fact. Theorem 7.4 shows that this fact is a property of the rungs: an inequality on the lattice, where reflection positivity has made a quantum mechanics of the theory before any limit is 
+taken. The proof that follows takes up that inequality on that sequence.`));
+

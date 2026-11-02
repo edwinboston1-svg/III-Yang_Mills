@@ -1,0 +1,44 @@
+N=9 links=162 coarse=18 free=144 n=432 dimR=216 nT=216 gauge-fixing rows=216
+selftest expX/logX round trip max err = 4.44e-16
+selftest quaternion product vs 2x2 matrices max err = 1.57e-16; inverse err = 2.24e-16; expX vs matrix exponential err = 2.29e-16
+selftest contour_vars vectorised vs loop max err = 0.00e+00
+selftest: R preserves the constraint (max coarse-link change) = 4.44e-16; Wilson change = 0.00e+00
+selftest (sighted): a gauge transformation AT a centre moves the coarse links by 1.22e+00 (must be O(1))
+selftest complex-step gradient vs central difference (one entry): 0.2610487705 vs 0.2610487755
+=== seed 3: W random (scale 1.2); coarse-link check 3.3e-16
+   BFGS round 0: Phi=0.934386267860599 |grad|=6.04e-08 nit=135
+   Newton 0: |step|=6.57e-07 |grad|=5.24e-15 min eig Hess(Phi)=+3.238e-02
+[P1 seed3 background] n=432 dimR=216 rows(L)=216 |gradF|=5.05e-15 axial residual max|logU(y,x)|=1.27e-15 plaquette |angle| min 0.193 max 0.456; Hessian asymmetry 1.4e-11 (time 164.4s)
+[P1 seed3] |HG|/(|H||G|)=2.34e-13  sv(LG): min 1.000e+00 max 1.000e+00  rank L=216 dimG=216 nT=216
+   w=0.25  d=0.3          logdet q1=-546.49450782 mineig q1=+3.238e-02 |ratio/(1+d)^nT - 1| = 2.891e-11
+   w=0.25  d=-0.25        logdet q1=-546.49450782 mineig q1=+3.238e-02 |ratio/(1+d)^nT - 1| = 2.349e-11
+   w=0.25  d=(0.1+0.2j)   logdet q1=-546.49450782 mineig q1=+3.238e-02 |ratio/(1+d)^nT - 1| = 2.146e-11
+   w=1.0   d=0.3          logdet q1=-247.05492582 mineig q1=+4.518e-02 |ratio/(1+d)^nT - 1| = 7.226e-12
+   w=1.0   d=-0.25        logdet q1=-247.05492582 mineig q1=+4.518e-02 |ratio/(1+d)^nT - 1| = 5.954e-12
+   w=1.0   d=(0.1+0.2j)   logdet q1=-247.05492582 mineig q1=+4.518e-02 |ratio/(1+d)^nT - 1| = 5.312e-12
+   w=4.0   d=0.3          logdet q1=+52.38465618 mineig q1=+4.856e-02 |ratio/(1+d)^nT - 1| = 1.769e-12
+   w=4.0   d=-0.25        logdet q1=+52.38465618 mineig q1=+4.856e-02 |ratio/(1+d)^nT - 1| = 1.428e-12
+   w=4.0   d=(0.1+0.2j)   logdet q1=+52.38465618 mineig q1=+4.856e-02 |ratio/(1+d)^nT - 1| = 1.356e-12
+[N2 seed3 over-complete] |HG|/(|H||G|)=2.34e-13  sv(LG): min 1.000e+00 max 1.044e+00  rank L=222 dimG=216 nT=216
+   w=1.0   d=0.3          logdet q1=-237.67419826 mineig q1=+4.518e-02 |ratio/(1+d)^nT - 1| = 6.943e-01
+   w=1.0   d=-0.25        logdet q1=-237.67419826 mineig q1=+4.518e-02 |ratio/(1+d)^nT - 1| = 2.979e+00
+   w=1.0   d=(0.1+0.2j)   logdet q1=-237.67419826 mineig q1=+4.518e-02 |ratio/(1+d)^nT - 1| = 7.355e-01
+[N3 seed3 non-invariant] |HG|/(|H||G|)=4.30e-03  sv(LG): min 1.000e+00 max 1.000e+00  rank L=216 dimG=216 nT=216
+   w=1.0   d=0.3          logdet q1=-133.69559149 mineig q1=+1.452e-01 |ratio/(1+d)^nT - 1| = 1.192e+06
+   w=1.0   d=-0.25        logdet q1=-133.69559149 mineig q1=+1.452e-01 |ratio/(1+d)^nT - 1| = 1.000e+00
+   w=1.0   d=(0.1+0.2j)   logdet q1=-133.69559149 mineig q1=+1.452e-01 |ratio/(1+d)^nT - 1| = 1.531e+02
+[P3 abelian flux m=1 (critical, not a minimum)] n=432 dimR=216 rows(L)=216 |gradF|=7.64e-16 axial residual max|logU(y,x)|=1.16e+00 plaquette |angle| min 0.155 max 0.155; Hessian asymmetry 1.2e-11 (time 171.1s)
+   eigenvalues of q1 below 0: 0; smallest |eig| = 8.862e-02
+[P3 flux m=1] |HG|/(|H||G|)=8.22e-14  sv(LG): min 1.000e+00 max 1.000e+00  rank L=216 dimG=216 nT=216
+   w=1.0   d=0.3          logdet q1=-241.79997919 mineig q1=+8.862e-02 |ratio/(1+d)^nT - 1| = 4.172e-11
+   w=1.0   d=-0.25        logdet q1=-241.79997919 mineig q1=+8.862e-02 |ratio/(1+d)^nT - 1| = 3.483e-11
+   w=1.0   d=(0.1+0.2j)   logdet q1=-241.79997919 mineig q1=+8.862e-02 |ratio/(1+d)^nT - 1| = 3.109e-11
+   w=4.0   d=0.3          logdet q1=+57.63960282 mineig q1=+1.071e-01 |ratio/(1+d)^nT - 1| = 1.046e-11
+   w=4.0   d=-0.25        logdet q1=+57.63960282 mineig q1=+1.071e-01 |ratio/(1+d)^nT - 1| = 8.654e-12
+   w=4.0   d=(0.1+0.2j)   logdet q1=+57.63960282 mineig q1=+1.071e-01 |ratio/(1+d)^nT - 1| = 7.828e-12
+=== log|det q_1| at the backgrounds (S-P2): -247.054926, -241.799979
+=== SUMMARY (test, seed, worst |ratio/(1+d)^nT - 1|, |HG|/(|H||G|))
+   P1 constrained min     seed 3   worst 2.891e-11   HG 2.34e-13
+   N2 over-complete gf    seed 3   worst 2.979e+00   HG 2.34e-13
+   N3 non-invariant       seed 3   worst 1.192e+06   HG 4.30e-03
+   P3 flux m=1            seed 0   worst 4.172e-11   HG 8.22e-14

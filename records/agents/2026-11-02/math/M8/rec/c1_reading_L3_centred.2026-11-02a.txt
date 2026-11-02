@@ -1,0 +1,44 @@
+M8 C1 reading: L = 3, blocks = centred, nk = 6 per direction (midpoint grid on the coarse zone)
+contour steps aggregated: 216
+gauge covariance identity max residual over 200 random p: 4.424e-15
+Qhat(0) (expect L * identity): [3. 3. 3. 3.]  offdiag max 0.00e+00
+grid points: 1296, time 620.5 s
+(rank Q, gauge dim in ker Q, zero modes of M on ker Q) seen: [(4, 80, 80)]  expected (4, 80, 80)
+gauge-direction residual outside ker Q (max): 1.52e-15
+gamma0 = min over grid of the smallest eigenvalue of M on (ker Q minus residual gauge): 1.190708 at k = [-0.1745 -0.1745 -0.1745  0.8727]
+largest eigenvalue seen: 15.878160 (the Wilson form's norm is 16 per colour)
+unconditioned beta*Var(F) per orientation (known answer 0.5): min 0.50000000 max 0.50000000
+conditional beta*Var(F | coarse): min 0.473051 max 0.498424 mean 0.493827
+distinct conditional values (rounded 1e-6) and multiplicity:
+  0.473051  x6   e.g. x=(np.int64(0), np.int64(0), np.int64(1), np.int64(1)) plane=(2, 3)
+  0.478785  x24   e.g. x=(np.int64(0), np.int64(1), np.int64(1), np.int64(1)) plane=(1, 2)
+  0.483223  x24   e.g. x=(np.int64(1), np.int64(1), np.int64(1), np.int64(1)) plane=(0, 1)
+  0.490377  x24   e.g. x=(np.int64(0), np.int64(0), np.int64(0), np.int64(1)) plane=(0, 3)
+  0.492404  x96   e.g. x=(np.int64(0), np.int64(0), np.int64(1), np.int64(1)) plane=(0, 2)
+  0.493969  x96   e.g. x=(np.int64(0), np.int64(1), np.int64(1), np.int64(1)) plane=(0, 1)
+  0.497714  x24   e.g. x=(np.int64(0), np.int64(0), np.int64(0), np.int64(0)) plane=(0, 1)
+  0.498112  x96   e.g. x=(np.int64(0), np.int64(0), np.int64(0), np.int64(1)) plane=(0, 1)
+  0.498424  x96   e.g. x=(np.int64(0), np.int64(0), np.int64(1), np.int64(1)) plane=(0, 1)
+tree-level coarse kernel K'(k) against the coarse Wilson kernel (transverse eigenvalue ratio):
+  |k|L = 0.400 dir [1. 0. 0. 0.] : K' transverse eig [0.16165911 0.16165911 0.16165911] ; coarse Wilson [0.15787801 0.15787801 0.15787801] ; ratio [1.0239495 1.0239495 1.0239495] ; K'(kc) 1.02e-15
+  |k|L = 0.400 dir [0.707 0.707 0.    0.   ] : K' transverse eig [0.16177764 0.16177764 0.16274564] ; coarse Wilson [0.15893617 0.15893617 0.15893617] ; ratio [1.01787804 1.01787804 1.02396854] ; K'(kc) 1.95e-17
+  |k|L = 0.400 dir [0.5 0.5 0.5 0.5] : K' transverse eig [0.1623202 0.1623202 0.1623202] ; coarse Wilson [0.15946738 0.15946738 0.15946738] ; ratio [1.01788969 1.01788969 1.01788969] ; K'(kc) 5.96e-16
+  |k|L = 0.200 dir [1. 0. 0. 0.] : K' transverse eig [0.0401037 0.0401037 0.0401037] ; coarse Wilson [0.03986684 0.03986684 0.03986684] ; ratio [1.00594129 1.00594129 1.00594129] ; K'(kc) 1.03e-16
+  |k|L = 0.200 dir [0.707 0.707 0.    0.   ] : K' transverse eig [0.04011111 0.04011111 0.04017068] ; coarse Wilson [0.03993338 0.03993338 0.03993338] ; ratio [1.00445074 1.00445074 1.00594241] ; K'(kc) 1.59e-16
+  |k|L = 0.200 dir [0.5 0.5 0.5 0.5] : K' transverse eig [0.04014459 0.04014459 0.04014459] ; coarse Wilson [0.03996668 0.03996668 0.03996668] ; ratio [1.00445144 1.00445144 1.00445144] ; K'(kc) 6.08e-16
+  |k|L = 0.100 dir [1. 0. 0. 0.] : K' transverse eig [0.01000648 0.01000648 0.01000648] ; coarse Wilson [0.00999167 0.00999167 0.00999167] ; ratio [1.00148244 1.00148244 1.00148244] ; K'(kc) 8.54e-17
+  |k|L = 0.100 dir [0.707 0.707 0.    0.   ] : K' transverse eig [0.01000694 0.01000694 0.01001065] ; coarse Wilson [0.00999583 0.00999583 0.00999583] ; ratio [1.00111151 1.00111151 1.00148251] ; K'(kc) 4.38e-17
+  |k|L = 0.100 dir [0.5 0.5 0.5 0.5] : K' transverse eig [0.01000903 0.01000903 0.01000903] ; coarse Wilson [0.00999792 0.00999792 0.00999792] ; ratio [1.00111155 1.00111155 1.00111155] ; K'(kc) 2.43e-17
+  |k|L = 0.050 dir [1. 0. 0. 0.] : K' transverse eig [0.00250041 0.00250041 0.00250041] ; coarse Wilson [0.00249948 0.00249948 0.00249948] ; ratio [1.00037043 1.00037043 1.00037043] ; K'(kc) 3.73e-17
+  |k|L = 0.050 dir [0.707 0.707 0.    0.   ] : K' transverse eig [0.00250043 0.00250043 0.00250067] ; coarse Wilson [0.00249974 0.00249974 0.00249974] ; ratio [1.0002778  1.0002778  1.00037043] ; K'(kc) 2.31e-17
+  |k|L = 0.050 dir [0.5 0.5 0.5 0.5] : K' transverse eig [0.00250056 0.00250056 0.00250056] ; coarse Wilson [0.00249987 0.00249987 0.00249987] ; ratio [1.00027781 1.00027781 1.00027781] ; K'(kc) 3.98e-17
+  |k|L = 0.025 dir [1. 0. 0. 0.] : K' transverse eig [0.00062503 0.00062503 0.00062503] ; coarse Wilson [0.00062497 0.00062497 0.00062497] ; ratio [1.0000926 1.0000926 1.0000926] ; K'(kc) 5.73e-18
+  |k|L = 0.025 dir [0.707 0.707 0.    0.   ] : K' transverse eig [0.00062503 0.00062503 0.00062504] ; coarse Wilson [0.00062498 0.00062498 0.00062498] ; ratio [1.00006945 1.00006945 1.0000926 ] ; K'(kc) 7.44e-19
+  |k|L = 0.025 dir [0.5 0.5 0.5 0.5] : K' transverse eig [0.00062504 0.00062504 0.00062504] ; coarse Wilson [0.00062499 0.00062499 0.00062499] ; ratio [1.00006945 1.00006945 1.00006945] ; K'(kc) 5.53e-18
+xi-conditioning at k = [0.1033 0.0567 0.0367 0.0233] (plane 01, first 3 positions):
+  R-quotient (Balaban): [40.02241097 40.022411   40.02242084]
+  xi = 10    : [40.02241063 40.02241075 40.0224206 ]
+  xi = 1     : [40.02241094 40.02241097 40.02242081]
+  xi = 0.1   : [40.02241097 40.022411   40.02242084]
+  xi = 0.01  : [40.02241097 40.022411   40.02242084]
+  xi = 0.001 : [40.02241097 40.022411   40.02242084]

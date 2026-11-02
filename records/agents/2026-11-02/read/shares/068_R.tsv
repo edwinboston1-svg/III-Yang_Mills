@@ -1,0 +1,5 @@
+#path	first_line	last_line	total_lines	bytes	sha256_16	note
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.part1.shard0.out	1	110	110	11407	b171dd192d5b7c7e	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.part1.shard1.in	1	2236	2236	450455	548c8a864cb65ebe	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.part1.shard1.out	1	109	109	11314	df9cf36a11f1b140	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.part1.shard2.in	1	2236	2236	450350	6fcf7e26a01b63f6	III-UNTRACKED:STDLIB/build/aperanton

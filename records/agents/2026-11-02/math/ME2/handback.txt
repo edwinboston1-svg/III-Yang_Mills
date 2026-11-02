@@ -1,0 +1,20 @@
+ME2 - (E2) Euclidean invariance. Work: scratchpad/math/ME2/WORK.md (sections 0-15), records in ME2/rec/.
+
+FOR THE TRUNK (M3f). The sandwich applies verbatim: after one exact skew step R(aZ^4) -> LaZ^4 the rotated leading part S^R_1 differs from S_1 by Delta^R with no part below dimension six (Lemma 6.2': gauge covariance pins Q^R(0) = I, centring kills O(p), aliases enter at O(P^4) by M3f's Euler-Lagrange argument). Tree-level contraction L^{-2j}; (T_loc), (CB) unchanged. Theorem U does NOT apply as it stands: its kill-switch (K2) is MET for every admissible R (Theorem 4.1): the skew step leaves an anisotropic marginal remnant, relative size O(g0^2), which the scalar counterterm cannot remove. Repair: one extra row (Lemma Sigma_chi) contracting at the asymptotic-freedom rate: metric part, no one-loop log; Weyl part = the SME coefficient k_F, running as (g^2)^(-7/11) (Colladay-McDonald, PRD 75 (2007) 105002), decreasing toward the IR, exponent G-independent. Unit-scale size O(g0^2), rate polynomial in 1/log, as E1. Stated for generating functionals W_K(tau) on a common torus.
+
+PROVED:
+- Thm 3.2: closed H containing B4 is finite or O(4) (the trunk's proof checks).
+- Thm 3.3: the finite ones are exactly W(B4), W(F4), Aut(F4) (384, 1152, 2304); one element outside Aut(F4) forces O(4), finite order allowed.
+- Thm 4.1: for every R outside Aut(F4), B4 cap R B4 R^-1 fixes a Weyl-type term (via N(2T) = 2O).
+- q: infinite order (2/5 not an algebraic integer), 5R^{+-1} integral, [Z^4 : Z^4 cap RZ^4] = 25, one 625-point block; every odd L admits such R.
+- Lemma 5.3: equality up to dilation and field normalization suffices (both central; conjugation removes them); a finite gap forces lambda = 1.
+- Thm 7.1: averaged Dobrushin comparison; only the ORIGINAL theory needs Hypothesis I. vEFS is excluded by Hypothesis II for every coarse configuration (not by properties of the original measure, vEFK).
+- Thm 9.1: Wilson's action is reflection positive across the diagonal hyperplanes, every compact G.
+
+COMPUTED (stakes held): rec/me2_groups_run.2026-11-02a.txt; me2_search_run (6,827 rotations: Weyl rank >= 1 always, minimal anisotropic sector 2, planar arctan(4/3) best); me2_skewkernel_run (scalar analogue of 6.2', closed form met to 4 digits).
+
+VERDICT: reduction PROVED; (E2) CONDITIONAL on (E1-scale) (limits at different renormalization conditions form one dilation family - a separate input, not M3f's), E2-UV(T), (F2-Lip) (crossover steps Lipschitz), Hypotheses I-II at exit. New beyond the gap and E1: the skew single step and Lemma Sigma_chi.
+
+NEXT OBJECT: Lemma Sigma_chi: CMP 119 (3.56)-(3.64) without W(B4), the anisotropic tensor coupling carried with per-step factors 1+O(g^4) (metric), 1-c_W g^2 (Weyl). Verification target: Alpoge-Sussman's unvetted RPM1 claims O(d) from RP across coordinate and diagonal hyperplanes plus a growth bound; with Thm 9.1 it would remove all IR input, but its growth hypothesis fails for tr F^2 in d = 4; it needs an (E0) version (falsifier: growth used at coincident points).
+
+UNIFICATION: Lorentz invariance as a low-energy phenomenon (Nielsen-Ninomiya, Chadha-Nielsen) is exactly the anisotropic row: asymptotic freedom kills rotation breaking twice; U(1) is the control. The only near-misses of O(4) are the 24-cell's symmetries.

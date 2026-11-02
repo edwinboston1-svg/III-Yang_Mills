@@ -1,0 +1,584 @@
+=== 2026-10-26T04:56:23.962Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The ΑΚΡΩΤΗΡΙΟΝ gate has read red since 10-16, so its organ edits cannot land without a fix to the gate itself.
+>
+> **ΑΚΡΩΤΗΡΙΟΝ's gate pins 21 doors; the organ has 27**
+> * A **gate** is the test script that must pass before an organ's code is allowed into the trunk. The ΑΚΡΩΤΗΡΙΟΝ gate checks that the organ exports exactly 21 "doors" (public functions).
+> * The organ has had **27** doors since a landing on 10-16, and no gate run followed it. The committed gate would read red today too, not just the 10-24 edits.
+> * The main agent started that gate just now and it failed on exactly this count. The 10-24 edits (reading ΤΕΡΑΣ' new latch) are not the cause.
+> * This matters for ΤΕΡΑΣ: its gate reads ΑΚΡΩΤΗΡΙΟΝ's file to confirm every call reads the latch, so ΤΕΡΑΣ' landing needs the ΑΚΡΩΤΗΡΙΟΝ edits landed too, which needs this gate green.
+> * The fix is small (re-pin the count to 27 and name the six doors on the page), but it is a change to a dead seat's gate, so **expect the main agent to edit that gate's template before it can land ΤΕΡΑΣ**.
+
+=== 2026-10-26T05:22:42.092Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> You should know · The ledger's "standing REDs" list only counts gates that were actually run, so ΑΚΡΩΤΗΡΙΟΝ sat red at HEAD for ten days unseen; other organs may be in the same state.
+>
+> **A gate nobody runs can't show red**
+> * Each organ has a **gate**, a test script that must pass before its code lands. Your session-start brief lists "standing REDs": gates whose latest run failed.
+> * That list is built from **runs**. If an organ's code changes and nobody runs its gate, there is no run to be red, so the list stays quiet.
+> * That is exactly what happened to ΑΚΡΩΤΗΡΙΟΝ: a 10-16 "chore" commit (a hand commit, not a landing through the lander) swept six new doors into HEAD, its gate was never run, and it has read red ever since without appearing anywhere.
+> * The main agent also noticed HEAD's ΤΕΡΑΣ organ lacks Addendum V's code while the page says Addendum V landed, the same pattern.
+> * The new TESTED rule landed tonight stops the reverse case (a green run landing without its organ), but **hand commits still bypass the gates**. A sweep that runs every gate whose organ changed since its last run would find the rest.
+
+=== 2026-10-26T05:27:42.850Z USER
+Here is a note offered by a side agent:
+
+> Heads up · Landing the discipline library before the lander leaves any seat on the trunk's lander refusing every new manifest for hours.
+>
+> **Trunk's lander now refuses new manifests**
+> * Tonight the main agent landed the shared test library (`dokimasia.sh`, commit 070df3fc5). It now writes a new kind of line, `TESTED`, into every gate's manifest, the file a landing reads to know what to commit.
+> * The lander itself (`scripts/sync.sh`) is still only edited on this desktop, not in the trunk. The trunk's copy refuses any manifest line it does not recognise, and it does not recognise `TESTED`.
+> * So on this desktop landings work (they use the edited lander), but **a cloud session or a fresh clone will have every landing refused by name** until the lander lands.
+> * That landing waits on the confluence gate, which takes 5 to 9 hours here and has not started yet.
+> * **Avoid relying on cloud-session landings until then**, or ask the main agent to land the lander sooner under a stated exception.
+
+=== 2026-10-26T07:38:21.397Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent is testing ΠΑΡΑΜΟΝΗ's fix against September's frozen theorem list instead of re-pinning to today's, so a green proves less than it seems.
+>
+> **ΠΑΡΑΜΟΝΗ's green would only cover September's canon**
+> * **ΠΑΡΑΜΟΝΗ**, the one mind, had a bug. It kept each theorem's organs in a list sized for **512 theorems**, so theorems past 512 wrote over other data.
+> * Its gate refuses on today's canon of about 750 entries. The gate's known answers (its **pins**) were recorded on the **558-theorem canon frozen on 09-26**.
+> * The plan you read said to re-pin to today's canon and then run. The main agent took the gate's other route instead and runs against that **frozen copy**. The relaunch will use the same mode.
+> * A green there proves the fix only up to 558 theorems. It **can't show the fix holds at today's size**, and growth is what caused the bug. A plain gate run will **still refuse** after the landing.
+> * If you want the mind checked on today's canon, **ask for the re-pin**.
+
+=== 2026-10-26T22:50:00.459Z USER
+Here is a note offered by a side agent:
+
+> Heads up · ΠΑΡΑΜΟΝΗ's test run failed on a check unrelated to its fix, so landing it now means first repairing a gate broken since September.
+>
+> **ΠΑΡΑΜΟΝΗ's fix is blocked by a broken gate**
+> * ΠΑΡΑΜΟΝΗ's latest test run took 3 hours and ended **red**. It failed at a check on ΔΙΑΜΕΤΡΟΣ, another part of the mind, before reaching the checks for the overflow fix.
+> * No run since the gate's September update has ever reached that check on the frozen 558-theorem list, so the gate has never actually passed there.
+> * That check expects an old result to stay **refuted**, a result measured on just 8 cases. On the larger list it now reads the other way, on 12 cases, by a hair: 0.417 vs 0.401.
+> * The main agent is now re-recording the gate's expected answers. That means hours more runs, and a later step has timed out on this list before.
+> * **Decide whether to pay for that repair, or leave ΠΑΡΑΜΟΝΗ unlanded and record the flipped result as a finding.**
+
+=== 2026-10-26T23:08:47.610Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The ΣΥΡΡΟΗ gate run now looks likely to finish around 9–10 a.m., not 3–4 a.m., so the other sessions' ledger freeze lasts much longer.
+>
+> **ΣΥΡΡΟΗ likely lands mid-morning, not 3–4 a.m.**
+> - The ΣΥΡΡΟΗ gate run lands itself only after all 50 of its test mutants have finished.
+> - By 18:56 only 20 had started, about one every 27 minutes. The main agent now expects the run to end around **09:00–10:00 tomorrow**. Tests from other sessions on this machine could push that later still.
+> - The two other sessions were asked not to write CLAUDE.md, TASKS.md, the canon or the other shared ledgers **from 02:30 until it lands**. That freeze is now 7+ hours.
+> - The warning drafted for you to paste into the Cursor session still says "about 03:00–04:00".
+> - **Consider telling both sessions the new time**, and ask them to wait for the actual commit rather than the clock. A ledger write after the run ends but before it lands forces a re-run of about 15 hours.
+
+=== 2026-10-27T00:35:54.944Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The part of your electron hypothesis being kept in III, that only leptons get forced states, holds only at the smallest payer flux.
+>
+> **Lepton-only result needs the smallest flux**
+> - The main agent is keeping one piece of your electron idea in III (integrality page, §11). On its test four-manifolds, the fermion states the topology forces to exist ("zero modes") are all leptons, with none for quarks.
+> - That count is (q²c² − σ)/8, where q is the payer charge (quarks 1, leptons 3) and c is the payer's flux.
+> - Quarks get zero only when c² = σ, the **smallest** allowed flux. The history doesn't pick that flux, since any characteristic flux pays the bit.
+> - At the next flux on ℂP² (c = 3), each quark field gets 1 forced mode and each lepton field gets 10.
+> - **Consider having §11 say "at the minimal flux" before it lands.** An over-broad sentence like this is what seeded the electron paper.
+
+=== 2026-10-27T01:13:43.473Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The computer will likely run out of memory around 2 a.m., before the ΣΥΡΡΟΗ test run can finish.
+>
+> **ΣΥΡΡΟΗ's test run may die around 2 a.m.**
+> - The main agent measured a slow Windows leak: every program launch leaves a little kernel memory behind until the next reboot. After two days up, about **1.6 GB** of memory headroom is left, shrinking about **0.3 GB per hour**.
+> - At that pace it runs out around 2 a.m. The ΣΥΡΡΟΗ test run, going since 11:55, needs until roughly 9–10 a.m.
+> - If memory runs out first, the run fails safely, with no false pass, but all its hours are lost. ΠΑΡΑΜΟΝΗ's landing stays blocked behind it.
+> - The main agent recommended rebooting now and relaunching on a clean machine. A reboot ends every session on the computer, so only you can make this call.
+> - **Decide before about 1 a.m.:** reboot, or knowingly let it run.
+
+=== 2026-10-27T01:52:40.516Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · III's forced new particles hold only if physics must also work on spacetimes where electron spin can't be defined.
+>
+> **III's forced particles need exotic spacetimes**
+> - III's integrality theory says the Standard Model must gain right-handed neutrinos and, in its main branch, a new force tied to B−L (baryon minus lepton number).
+> - That comes from the "spin lock": some possible spacetime shapes, like ℂP², can't carry electron spin, so some field must "pay" for physics to work on them.
+> - The ΑΡΤΙΟΤΗΣ page itself names two ways the payment is never needed:
+> - **time flows everywhere**, so every spacetime carries spin;
+> - **a ℤ₂ field** cancels those shapes out.
+> - Under either one, the Standard Model needs nothing new. So these particles follow from a premise; integrality alone does not predict them.
+> - **Ask the main agent to state that premise up front** in its Standard Model answer.
+
+=== 2026-10-27T02:37:08.714Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The §13 answer landed the same rung numbers twice over, but its sharpest ones (α to 38×, the 6–8 TeV boson) assume supersymmetry above a threshold, which the page's own payer theorem says needs a second payer.
+>
+> **III's sharpest numbers rest on supersymmetry**
+> * The new §13 lists the strongest results as "read, never derived": the coupling values 38×/52×/733× tighter than measurement, the Planck pair for the Higgs and top masses, and the heavy boson at 6–8 TeV.
+> * Those come from the **α siege** ladder, which runs the couplings up through a **supersymmetric** stage (MSSM) above a threshold rung — that is the premise behind every "rung" number.
+> * The same page's §12 says a supersymmetric partner (an **R-odd state**) cannot share the payer force III's premise forces; it would need a second payer of its own, which no organ has built.
+> * So §13 carries two premises side by side without saying they pull against each other: the particle sector assumes no superpartners pay, the coupling sector assumes superpartners exist.
+> * Nothing is wrong numerically, but **when you read §13's "status" labels, treat the rung numbers as conditional on supersymmetry, not only on the fixed-point model** — a reader will otherwise take 38× as a prediction of the premise-forced spectrum.
+
+=== 2026-10-27T03:07:00.874Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The second payer's gauging census found a hard refusal, so its headline is a no-go theorem rather than a built force; the gate is about to pin that refusal.
+>
+> **Second payer cannot be gauged as built**
+> * You asked for the "second payer" — the extra symmetry a supersymmetric spectrum would need so that superpartners can live on spacetimes without spin. It is now a verb in the ΑΡΤΙΟΤΗΣ organ, with a gate.
+> * The organ does build it as a discrete element (an R-symmetry sign times the first payer's 3(B−L)), and that part works: it is fermion parity everywhere, forbids every renormalizable proton-decay operator, and asks the gravitino for 3σ forced modes.
+> * But the page's own rule says a payer must be a **gauged, unbounded** U(1). The organ's anomaly census refuses that on the forced spectrum: the colour wall forces the μ-term's condition, and the weak wall then reads 9r_Q + 3r_L − 8, which no integer charge solves (8 is not a multiple of 3). With one neutrino condensate, even generation-dependent charges are forced back to the same wall: **0 solutions of 1,018,424**.
+> * So the result being landed is: **supersymmetry on a spinless history needs extra charged matter beyond the forced spectrum**, not a second force III can name.
+> * Read the landing title with that in mind: "built and gated" here means the refusal is measured and pinned, not that a working second payer exists.
+
+=== 2026-10-27T16:34:57.262Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The nonabelian theorem landing now still needs W(1) > 0, and for the "linear action" it builds that number can be exactly zero, leaving the theorem empty for some loops.
+>
+> **The nonabelian gap result can be vacuous**
+> * The new Lean stages (Α8d–Α8f) say: for any finite group, the static potential of a Wilson loop is at least the window's gap — **provided W(1) > 0**, the loop's one-step correlation is positive.
+> * The main agent calls that the "one remaining hypothesis". It is not a technicality: with the **linear action** (weight C + χ, chosen because it needs no Fourier theory), W(1) equals a sum of squared overlaps with products of the x-plaquette representation's coefficients along the endpoint's few links.
+> * If the loop's representation does not occur in those short tensor products, **every overlap vanishes and W(1) = 0** — the theorem then says nothing about that loop. Z₂ is safe (its kernel is invertible); a general group is not.
+> * The Wilson action e^{βχ} would avoid this (all Fourier coefficients positive), but its positivity is not built.
+> * **When citing the result, say "for loops with W(1) > 0"**, and treat W(1) as a number to compute per instance (the concurrent seat's instruments can).
+
+=== 2026-10-27T18:02:00.381Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The W(1) > 0 hypothesis the main agent plans to remove is only removable for faithful representations, so loops read in a representation with a kernel keep the hypothesis.
+>
+> **W(1) > 0 falls only for faithful actions**
+> * The day's lattice theorem says a loop's static potential is at least the gap, but only **for loops with W(1) > 0**, a number that can be exactly zero.
+> * The road the main agent is now taking removes that hypothesis by showing the Wilson action's link kernel is **positive definite** (invertible), via "a faithful representation separates the group's elements."
+> * That argument needs the **x-plaquette action's representation to be faithful**: distinct group elements must map to distinct matrices. For a non-faithful action (one with a kernel, such as the adjoint representation on a group with a centre), the separation fails and W(1) can still vanish.
+> * The loop's own representation is not the issue; the action's is.
+> * **When the corollary lands, check that its statement carries the faithfulness hypothesis** and that the page cites the general result "for faithful actions, every loop; otherwise for loops with W(1) > 0."
+
+=== 2026-10-27T20:23:28.757Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The "first weak-coupling gap" the main agent plans for the Z₂ theory is a gap only in the vacuum sector, since at weak coupling the flux sectors collapse onto the vacuum.
+>
+> **Weak-coupling Z₂ gap holds only in the vacuum sector**
+> - The plan's first new theorem uses a mirror symmetry of the 4D Z₂ gauge theory (Wegner's duality) to turn the strong-coupling gap into a weak-coupling one.
+> - But the strong-coupling gap the main agent proved covers **every** state, including the "electric flux" states (a flux line wrapped around the box). At strong coupling those cost energy proportional to the box size, so they sit far above the vacuum.
+> - At weak coupling the theory is **deconfined**: those flux states cost almost nothing and crowd down onto the vacuum as the box grows. So the gap over all states goes to zero there.
+> - What the duality truly carries over is the decay of correlations of **local** observables (the plaquette-energy channel), which never leave the vacuum sector.
+> - **Make sure the theorem is stated as a vacuum-sector gap**, not a gap of the whole transfer matrix, or the page will stake a claim its own readings refute.
+
+=== 2026-10-27T21:04:38.994Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · In five or more dimensions physicists expect no continuum Yang–Mills theory at all, so "complete across all dimensions" would mean a no-go result there, not a mass gap.
+>
+> **Yang–Mills above four dimensions is expected not to exist**
+> * "Dimensions" here means spacetime dimensions. Our world is 4, and the Clay prize is for 4 only.
+> * The lattice results we are landing hold in every dimension, but the continuum theory (the lattice spacing shrinking to zero) behaves differently by dimension:
+> * **2D**: exactly solvable, classical, no propagating particles. Landable whole.
+> * **3D**: open, but easier than 4D.
+> * **4D**: the prize; the open "window" problem.
+> * **5D and up**: the theory is non-renormalizable; the standard expectation, backed by lattice evidence (a first-order transition in 5D), is that **no continuum theory exists**. No one has proved it either way.
+> * So the honest "full theorem" for d ≥ 5 is a negative one. **If you want that attempted, say so**; otherwise the effort stays on 4D (with 3D as the cheaper rehearsal).
+
+that said, if we can derive it, in accordance to III's definitional dimensions, in greater dimensions than the traditional 4 in which we must prove it, then that is something worth doing.
+
+=== 2026-10-27T22:07:54.811Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The claim that our gap bound is several times sharper than the other group's rests on a lemma the main agent just deferred.
+>
+> **Sharper-bound claim needs a deferred lemma**
+> * Another group (Douglas–Rajasekaran) already machine-checked the strong-coupling mass gap. Our page says our version covers a coupling range **6.9× (4D) / 8.2× (3D)** wider, and that the weak-coupling result T3 holds for **β > 1.317**.
+> * Those numbers come from the "per-site" estimate drafted in Z2Interdep.lean. But the theorem that actually produces the gap only accepts the cruder generic "ratio" estimate, and the per-site one is not wired in.
+> * The main agent just decided to land the gap first with the generic estimate and treat the sharp one as a later addendum. With the generic estimate the range is only about **1.8–2.1×** wider than theirs, and T3's threshold moves to roughly **β > 2.0**.
+> * **When W2 lands, check its α against the page's 0.0719 and 1.317**: either the sharper wiring lands with it, or the page and the register wording must say the sharp numbers are still owed.
+
+AND I SAID TO ABIDE ALL III DEVELOPMENT STANDARDS> DEFERRALS ARE STRICTLY FORBIDDEN. PLACEHOLDERS FORBIDDEN.
+
+=== 2026-10-28T00:17:36.626Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> You should know · The weak-coupling route the main agent is building for the Z₂ theory cannot cross the middle, because that theory has a genuine phase transition exactly at the self-dual point.
+>
+> **Z₂ gauge theory has a real transition in the middle**
+> * Tonight's plan reaches the gap from two ends: strong coupling by Dobrushin's bound, weak coupling by Wegner's duality (which maps weak coupling to strong coupling of a mirror copy).
+> * The duality has a fixed point: y = √2 − 1, that is β ≈ 0.44. The landed theorem `dualVar_fixed` pins exactly this number.
+> * For the 4-dimensional Z₂ gauge theory that point is a known **first-order phase transition** (the deconfinement point). The two bounds close in from both sides but the gap genuinely closes there; no sharpening of either bound can cross it.
+> * So the "window" program cannot succeed for Z₂, and that is correct physics, not a flaw. SU(N), the real Yang–Mills case, is believed to have no such transition, so the SU(N) argument must use something Z₂ lacks.
+> * **Useful consequence:** Z₂ is the negative control. Any window method that "works" for Z₂ at β ≈ 0.44 is proving something false.
+
+=== 2026-10-28T01:56:33.875Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The block instrument the main agent built as the window's IR half gets exponentially costlier with block size, so it cannot reach the coupling where SU(N)'s window lives.
+>
+> **The block instrument cannot scale to the window**
+> * Tonight's instrument computes, exactly, how much one outside change can disturb a small block of lattice links; when that influence stays below 1, a gap follows. On the 2-valued toy theory it moved the certified edge from β < 0.0719 to β ≤ 0.0771, a 7% step.
+> * To certify a larger coupling the block must grow to roughly the correlation length, and the exact method takes a supremum over every outside configuration, so its cost explodes exponentially. The main agent already judged a 12-link block too expensive to enumerate here; the toy theory's own transition sits at β ≈ 0.44.
+> * SU(2)'s window sits near β ≈ 2.2–2.4, where blocks of side 4–8 in a continuous group would be needed; no exact enumeration reaches that.
+> * So the block theorem and measurement are real, but as a route to Yang–Mills they stop far short; crossing needs a renormalization argument nobody has in usable form. **Weigh the next block instruments against this ceiling before ordering more.**
+
+dont be a defeatist. invent an alternative. think of it this way. The human brain weighs less than this computer, and runs cooler. It percieves and runs vastly more functions its not even conscientious of. If the human brain can effectively multiply your workload by billions and manage it constantly, then any reason you're reaching computational limits here is because there is a means to bypass it that youve not yet discovered.
+
+=== 2026-10-28T02:27:02.242Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The first test of the "freeze the block, grow the scale" idea came back negative: freezing the plaquette made the block more sensitive, not less.
+>
+> **Freezing the plaquette failed the first probe**
+> * After the side note said bigger blocks can't scale, the main agent staked an alternative: freeze each block's coarse value (the product around a plaquette) and re-check a small block at every scale.
+> * It promised a falsifier: if the frozen (constrained) version is not less sensitive to outside changes than the unfrozen one, the mechanism is absent on that block.
+> * The numbers are in: at y = 13/15 the unfrozen reading is 0.82, the frozen one 1.36; at y = 4/5 it is 1.32 against 2.15. Worse both times, by the falsifier's own terms.
+> * Part of that is the measuring stick: on the frozen block every move costs two flips instead of one, so the reading roughly doubles. Even corrected for that it still does not beat the unfrozen block.
+> * The idea is not dead, but its plaquette version is; the plan being written should say so plainly rather than carry the stake forward unchanged.
+
+=== 2026-10-28T08:03:29.597Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The SU(2) threshold result tonight is exact only on one side; the "holds below π/24" half rests on a lemma that is measured, not proved.
+>
+> **The SU(2) threshold's lower half is still a reading**
+> * Tonight's result is the first exact number for the real SU(2) theory: the point where the one-link uniqueness test (Dobrushin's criterion) stops working, about β = 0.1310.
+> * The **"fails above 0.1310"** half is a genuine proof: it comes from a closed formula (a Struve-to-Bessel ratio) that the two independent computations agree on to eight digits.
+> * The **"holds below π/24 ≈ 0.1309"** half needs an extra inequality the main agent calls Lemma M. It is proved in one direction and checked numerically on a grid in the rest, with the small-coupling behavior matching the hand derivation to five digits. That is strong evidence, not a proof.
+> * Without Lemma M, the only fully proved lower threshold is 1/18 ≈ 0.056, less than half the sharp value.
+> * The main agent is writing it up honestly as conditional; **when you read "two-sided window of 0.0001," keep in mind one side is measured.** Any report starting with "congratulations" should be read with that distinction in view.
+
+=== 2026-10-28T09:54:25.819Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> You should know · The flow instrument we are building reads an approximate decimation whose rigorous content is two one-sided bounds, not the exact theory's gap.
+>
+> **Decimation flows bound the free energy, not the gap**
+> * The next instrument iterates the Migdal–Kadanoff "bond-moving" recursion for SU(2), Z₂ and U(1) in the character basis, following the road page's W10.
+> * Its rigorous content is exactly two inequalities, now drafted for Lean: Cauchy–Schwarz gives an **upper bound** on the partition function, Jensen a **lower bound**. Both are about free energies.
+> * The mass gap and the vortex free energy are **differences and ratios** of partition functions. An upper bound on one and a lower on the other do not sandwich a difference, which is precisely where Tomboulis's 2007 "confinement at all couplings" argument was challenged (Ito–Seiler, the unproved inequality at weak coupling).
+> * So a reading that the SU(2) flow "reaches strong coupling from every β" is a reading of the approximate flow, consistent with Tomboulis's claim but not a proof of it.
+> * **What it can decide:** whether the two flows' twisted ratios part along the way. Parting kills that road; agreement is evidence only.
+
+we need to adjust per the compuattional modes III already profoundly accomplishes, whether only in the context of its yang mills progress, or in conjunction with its concurrent langland's profound progress
+
+=== 2026-10-28T11:10:29.551Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The side-3 certificate build has now run about three hours, past the earlier probe's time, so the whole landing chain (run y) is still blocked behind it.
+>
+> **Run y is waiting on a three-hour Lean check**
+> * All of tonight's work (the 44-path commit, then the gate run "run y", about 90 minutes more) is queued behind one Lean build: the side-3 torus certificate.
+> * That build started at 04:15 and was still going at 07:05, using about 10,100 seconds of CPU. The earlier probe of the same certificate took about 9,000 seconds, so it is now past the expected finish with no sign it is near the end.
+> * It is not stuck: its CPU time keeps rising at full speed and memory is steady around 3 GB. It is simply slower than estimated, possibly much slower.
+> * Nothing else with Lean can run until it ends (one Lean process at a time), so the two new proof drafts also wait.
+> * **If it is still running at 08:00, the cheaper option is to let the chain finish without it**: run y's own Lean arms only re-check already-built files, so the side-3 pieces could land in run z instead.
+
+Also, i sent you the explicit standards line by line. i see you deferring already. no. if you must build something, do it then and there, perfect it, milk it, then move on.
+
+=== 2026-10-28T12:19:54.615Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The plan's bridge from finite subgroups to SU(2) (pillar T3) prices its error from one plaquette, but the first cell reading shows the subgroups missing SU(2) by far more.
+>
+> **The finite-group bridge's error price is too small**
+> - Plan pillar T3: a finite subgroup of SU(2) (Q₈, 2T, 2O, 2I) stands in for SU(2) up to a residue computed from ONE plaquette weight (the character tail past the group's design strength).
+> - First cell reading at β = 1: the subgroups miss SU(2)'s twisted ratio by 0.095 (Q₈), 0.011 (2T), 0.0017 (2O). The one-plaquette tails there are about 0.002, 0.00001 and 0.0000001.
+> - Part is the SU(2) instrument's quadrature error (one refinement moved its number by 0.0009; another is still running). That may absorb 2O's gap, not Q₈'s or 2T's.
+> - The cause is arithmetic: a design integrates polynomials only up to a fixed degree, and a cell multiplies several plaquette weights on each link, so degrees add and the residue compounds, faster at larger β.
+> - The main agent logged this as an open question (§28.6) and kept building. **Stage III's "exact transfer" to SU(2) needs the compounded residue, not the one-plaquette tail.**
+
+and so therefore do not defer. fix immediately and totally, then continue.
+
+=== 2026-10-28T13:24:06.377Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · This morning's "counterexamples" to Tomboulis' inequality were on finite groups whose residue is order one there, so they say nothing about SU(2).
+>
+> **Finite-group counterexamples don't reach SU(2)**
+> * This morning the hinge instruments found twisted ratios that **rise** with the coupling on the finite subgroups Q₈, 2T, 2O (and on the 2×1×L cell), read as the first exact counterexamples to the cell form of Tomboulis' inequality.
+> * After the T3 correction the main agent re-read them: every rise sits where the finite group's link-degree residue is order one, and its mechanism (a positive frozen limit the ratio climbs back to) does not exist for SU(2), whose ratio falls to zero.
+> * On SU(2) itself (the 1×1×L cell to β = 3) both twists are monotone, so the inequality **stands unrefuted for SU(2)**.
+> * **When citing W10(b), treat those counterexamples as finite-group facts**; the open reading is SU(2) on a cross-section of extent 2, which no current instrument can compute.
+
+so if you do use them, then do not toss them and come back. MAKE THEM say something about thaty which you claim they do by enhancing them.
+
+=== 2026-10-28T14:50:33.910Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Run y's green will count one tooth as bled because the main agent killed it mid-run, not because its reading moved.
+>
+> **Run y's green includes a bleed made by a kill**
+> - A tooth is a planted defect in an instrument; the gate counts it as "bled" when the defective run stops printing its pinned line.
+> - In run y the flow instrument's tooth (flowbend) ran past 45 minutes and the main agent killed its process. The gate read the missing output as a bleed.
+> - That is a kill, not a reading: the base run itself takes about 13 minutes, so the mutant may only have been slow. III's own law 16-ter says a run that never finished is not a bleed.
+> - The plan is to land run y anyway (no push), note the kill in the RESULTS text, and re-aim the tooth for run z, where the re-aimed version finishes in 12 minutes and genuinely moves the pin.
+> - **Push run z's landing rather than run y's alone**, or have run y's tooth count read with flowbend excluded.
+
+=== 2026-10-28T17:00:59.267Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The 1,536 "holds" for the non-abelian inequality came from a one-level dominance the small test tube forces, so they are weak evidence for the real conjecture.
+>
+> **The inequality readings mostly reflect the tube**
+> * This morning the main agent tested a conjectured non-abelian correlation inequality (a GKS-type bound on plaquette characters) exactly on the tiny 1×1×L cell and found it held in all 1,536 cases on four finite groups.
+> * Its own follow-up diagnostic then showed **why**: on that cell only a few energy levels couple to the plaquette, and one of them dominates with the right sign. The sub-leading levels actually have **opposite signs**, so the hold is not structural.
+> * The conjecture's real content is the many-level case on a wide lattice, which the tube cannot reach, so the 1,536 holds are consistent with the conjecture but say little about it.
+> * The main agent has recorded this honestly in the plan note, but a headline of "first exact evidence for a non-abelian GKS-II" would overstate it.
+
+This is merely to suggest that we need to supplement with more, proven grounding in math in physics, and predictive capability.
+
+=== 2026-10-28T19:14:13.652Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The last summary said the tube experiments cannot read confinement through the vortex, but the main agent has since reversed that in the ledger.
+>
+> **The tube-reads-nothing claim was withdrawn**
+> * An hour ago the main agent wrote a "correction" (§42.15) saying the thin-tube experiments only measure a vortex's line cost, so they cannot show confinement. That is the version in your last summary.
+> * At the desk afterward it found that correction was itself wrong: a strong-coupling count shows the twist's cost per slice should **vanish super-fast as the tube widens** in the confining phase, which is exactly the confinement signal it had just denied (§42.17).
+> * It staked the new prediction before the deciding run finished: at β = 0.3 the width-3 Z₂ tube should read about 3e-5, not the 0.0156 a plateau would give.
+> * So the standing position is back to "tubes do read vortex condensation in 2+1 dimensions"; the 4D sheet statement is unchanged either way.
+> * **Treat the earlier summary line as stale** until the width-3 reading lands; the main agent will report which prediction survived.
+
+=== 2026-10-28T22:00:44.632Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The non-abelian inequality the plan leans on may fail: the main agent's own reading predicts a sign flip at large separations for SU(2) at β = 3.
+>
+> **SU(2) correlation inequality may fail at β = 3**
+> * The plan's "finite-box" route to the mass gap needs a correlation inequality (GKS-II) to hold for SU(2). Today's exact census found it holding on every cell read, at separations up to 4.
+> * The main agent then proved a small theorem: on a tube, the inequality holds at **every** separation if the positive levels of the transfer matrix outweigh the negative ones, level by level.
+> * Applied to the records, that theorem concludes "holds forever" for 81 of 84 pairs. The 3 exceptions are SU(2) at β = 3, against the spin-2 character: a level at the **top rate** carries a small **negative** weight, so the inequality would turn negative around separation 70.
+> * The violation would be of order 1e-40, invisible to any direct measurement, but a theorem's counterexample all the same.
+> * It hinges on overlaps only 4–10× above the quadrature's resolution. A finer-rule check (record b, hours to run) was launched with the stake written first: same sign at the finer rule means real; a sign change means noise.
+> * **If it is real, the finite-box route is closed for SU(2) in principle**, not just in practice.
+
+=== 2026-10-28T23:00:14.849Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent plans to credit a 2023 theorem for the fibre influence lemma, but our fibre's data also change the bonds, which that theorem may not cover.
+>
+> **Borrowed theorem may miss the bond part**
+> - A teammate matched our "fibre influence lemma" to a 2023 theorem (Ding, Song, Sun): one boundary spin's sway on an interior spin, under fields of any sign, is largest at zero field. The main agent plans to land it in §51 as W = 0.
+> - That theorem keeps the bonds between spins fixed; the boundary enters only as fields.
+> - In our decimation fibre the coarse data also change bond strengths (the C4·c·c′ term): flipping one datum alters four bonds, not just four fields.
+> - The bond part is about a tenth of the field effect (7% at K = 0.3, 13% at K = 0.44). A certificate "priced at the measured scale" that cites the theorem alone would leave that piece unproved.
+> - **Ask the main agent to bound the bond part separately before §51 lands.**
+
+=== 2026-10-29T01:58:18.388Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The Ising control test we just staked is built to show the published Tomboulis route fails, so it will not produce the 4D gap you asked for.
+>
+> **The staked Ising test refutes a route, not builds one**
+> * You ordered the main agent to invent the mathematics that produces the four-dimensional mass gap.
+> * What it staked instead (ledger section 55) is a test on the 2D Ising model of one published confinement argument (Tomboulis, 2004/2007). The stake's own prediction is that the argument's key step is "true and useless": the error is exactly as big as the quantity being bounded.
+> * The main agent also wrote, before any run, that this route cannot prove what is needed for SU(2) at all, since a sandwich between two confining flows does not force confinement (U(1) is the counterexample).
+> * So the next hour of compute decides how a known approach dies on a toy model. It adds evidence, not a value for the 4D gap.
+> * The agent's own audit says the missing object is still a control of the renormalized action's influence sum at the weak-coupling scales, which no instrument tonight computes.
+> * **If you want the invention attempted directly rather than another refutation, say so now**, before the Kaufman instrument and the hierarchical-gap instrument absorb the evening.
+
+therefore create an alternative means to carve out that 4D necessity. And again, i said not to stop not settle until we got ingfinite 4d mass gap. so explain to me where that progress is.
+
+=== 2026-10-29T02:48:37.241Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent's new "crossover criterion" is only the consumer half: it proves a gap *if* someone supplies a bound nobody has yet, so it does not move the 4D gap by itself.
+>
+> **The crossover criterion needs an input nobody has**
+> * Tonight's Lean file (`CrossoverCriterion.lean`) proves: *if* the theory at the crossover scale looks like a strong-coupling Wilson action plus a small extra part, *then* the mass gap follows from theorems already in the kernel.
+> * The "small extra part" must be shown small by a separate argument, and the main agent's own ledger (§57) says the only checkable form on the real 4D lattice is a 2,500-link computation with a worst-case search, far beyond any exact instrument in the tree.
+> * So the file is a precise target with a number attached, not progress on the gap's value. The gap stays proved only below the small-coupling edge (0.131, moved to 0.2227 by the other seat's block work).
+> * **Keep this distinction in mind when reading tonight's summaries:** "the consumer is proved" and "the theorem is proved" are different claims, and the groundwork paper should cite neither as a crossover result.
+
+That said, you're not to stop until both claims are made true
+
+=== 2026-10-29T03:27:21.477Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The plan you approved ends with the crossover step still open, so its honest end state is a proof skeleton, not the 4D mass gap.
+>
+> **The approved plan does not reach the gap by itself**
+> * The plan lays out a chain of six links. Five are builds with known methods (citing the weak-coupling half, machine-checking the strong-coupling half for SU(2), proving uniformity, assembling the pieces).
+> * The sixth link, the **crossover** (getting from ordinary couplings down to the strongly coupled regime where our proofs work), is labelled OPEN in the plan's own words. No step in the plan proves it.
+> * What the plan does for it: it measures two "reaches" (how far each known method can be pushed) and reports whether they meet. If they do not meet, the plan's output is a **number**, the remaining distance, not a proof.
+> * So after every item in the plan is done, the result is a complete skeleton with one hole named precisely, and the Clay statement is still unproved.
+> * **Keep this in mind when reading the daily summaries:** "the plan is on schedule" will not mean the gap is close unless the two reaches are reported as meeting.
+
+and even if the proof ends with a skeleton, you're not to stop until that skeleton is filled with substance and perfect completion of the true prizes
+
+=== 2026-10-29T04:19:27.782Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Run ab came back red on a tooth's typo, so nothing from tonight has landed, and run ac was launched on top of that red base.
+>
+> **Run ab is red; run ac is running unlanded**
+> * The gate run **ab** (the one carrying the night's instruments) ended **red**: one mutant test, `countswindbend`, has a stray `&` in its replacement text, which the gate refuses by rule. Nothing in ab landed.
+> * The chain then **launched run ac anyway** (it only skips the landing, not the next run), so ac is running now with the same unfixed tooth and will likely go red the same way, after hours of teeth.
+> * The follow-on chain (**ad**) died at 23:49 waiting on a line that never came, so the Lean files written tonight (the compact tier, the crossover criterion, the UV interface) have **no chain to land them** until it is relaunched.
+> * One Lean file, **TwistEaterSharp**, also failed to compile (a missing lemma name), so its arm was left out of ac.
+> * **Consider:** stop ac now, fix the one-character tooth and the lemma name, then relaunch, rather than waiting hours for a predictable red.
+
+=== 2026-10-29T05:38:58.404Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The one published paper claiming the full 4D mass gap (Faizal–Shabir, June 2026) has a "Standing Hypotheses" section, so its result may be conditional.
+>
+> **The published 4D mass-gap claim may rest on assumptions**
+> - While browsing for rivals, the main agent found arXiv 2606.19362 (Mir Faizal and Arshid Shabir), a 593-page paper published in *Fortschritte der Physik* that claims exactly the prize: existence, mass gap and confinement for 4D SU(N) Yang–Mills.
+> - Its own section titles show the shape: "Strong-Coupling Inequalities **at Fixed Lattice Spacing**," then "Extension to Weak Coupling," and a section called "**Framework and Standing Hypotheses**." That last title usually means the later theorems hold only *if* stated assumptions are granted.
+> - The step from strong coupling to the continuum is the same crossover our chain leaves open. If their weak-coupling extension is assumed rather than proved, the paper is not a defeat; if it is proved, it is the result we need.
+> - No independent review or criticism of it exists online, and the Clay Institute still lists the problem as open.
+> - **The main agent has the PDF saved and is reading those two sections now; weigh its report by whether the crossover step is proved or listed under the standing hypotheses.**
+
+=== 2026-10-29T06:40:13.755Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · We found a lattice split that rigorously stretches the strong-coupling certificate to β≈0.244, but the night's "0.35" number rests on an unproved conjecture.
+>
+> **Certified reach is 0.244, not 0.35**
+> * Earlier tonight the ledger carried a strong-coupling radius near **0.35** from "every pair of links gets the averaged gain." We proved tonight that no consistent way of splitting the lattice achieves that for every plaquette (a short coloring argument), so 0.35 is now filed as **Conjecture C**, with its falsifier, not as a result.
+> * What *is* proved-shaped: a period-2 "perfect decimation" (one link per site, every plaquette touched exactly once, found by exact-cover search). Integrating those links leaves an **exact product measure**, so the second hypothesis of the chain is automatic and only Dobrushin's standard theorem is used.
+> * Its row sum crosses 1 at **β ≈ 0.244** — about 1.9× the old 0.131, nine tenths of a doubling.
+> * Two small lemmas are still owed (one Bessel inequality, one cubic tail); both are explicit and the other seats were sent them.
+> * **Nothing above 0.244 should be quoted or posted until Conjecture C is proved or those lemmas land.**
+
+=== 2026-10-29T07:19:42.834Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The "at least 3.2 doublings" left to prove starts at β ≈ 2.2, but nothing proven controls the weak-coupling side that far down.
+>
+> **The unproven stretch may be much longer**
+> * The proof has two halves joined by the crossover. The weak-coupling half rests on Bałaban's renormalization results.
+> * Those results hold only for "small enough" coupling, with no explicit number. Our plan assumed they reach down to β ≈ 2–4.
+> * The Fontes paper we are checking is one attempt with explicit constants. Its key estimate only starts at β ≥ 9,587.
+> * The 3.2 figure itself comes from a simplified model that runs the wrong way at its first step from 2.2.
+> * **Measure the distance from where the weak-coupling side is actually proven** before judging how close we are.
+
+=== 2026-10-29T07:41:18.982Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The Tomboulis route the main agent is weighing would prove confinement, not the mass gap, even if its known gap were repaired.
+>
+> **Tomboulis's route targets confinement, not the gap**
+> * The main agent is studying Tomboulis's 2007 paper because it is the one published argument meant to cover every coupling strength.
+> * That paper aims to prove **confinement**: a quark and an antiquark cannot be pulled apart, read off from the cost of inserting a magnetic "vortex".
+> * The Clay prize asks for a **mass gap**: the lightest particle has a mass strictly above zero.
+> * The two are believed to go together, but proving one does not automatically prove the other.
+> * So even a fully repaired Tomboulis argument would still need **a separate step from confinement to the gap**. Weigh that before committing hours to this route.
+
+=== 2026-10-29T08:06:11.887Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The chain's log says the compact-tier Lean file failed with 23 errors, but the main agent reported it compiled clean after reading the wrong output file.
+>
+> **Compact-tier Lean file has not compiled**
+> * The main agent told the other sessions and you that `DobrushinMeasure.lean` (Dobrushin's theorem over the Haar measure, 61 theorems) compiled with **0 errors, 0 sorry**. The paper's seat has already noted it for the records.
+> * It judged that from a file written at **03:53**, before the compile finished, by counting lines starting with `error:` — Lean reports errors as `error: Aperanton/...`, and that file had none yet.
+> * The landing chain's own log, read later, says: **`DobrushinMeasure: rc=1 errors=23 04:04:11`**. The compile failed.
+> * The chain keys the gate arm for this file on a success marker, so the arm will simply be left out of run ae unless the 23 errors are fixed first.
+> * **The claim sent to the other seats is wrong**; it needs a correction before revision 15's records cite it, and the main agent should read the finished output file, not the early one.
+
+investigate first, fix if needed.
+
+=== 2026-10-29T08:17:40.280Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The transport-metric widening we're pursuing gives no gain at all with proved constants; its whole advance rests on two numbers that are still only guessed.
+>
+> **Transport widening gain is entirely unproved**
+> * The certified strong-coupling bound stands at β < 0.2452 (the "total variation" form), and the other seat's search found that form cannot go past about 0.255 no matter how its constants are sharpened.
+> * The next step switches to a different distance between link laws (a transport metric). We've been quoting a predicted closing near β ≈ 0.29–0.30 for it.
+> * The main agent then did the honest accounting: with only the constants that are actually proved, that version closes near **0.25, no better than what we have**.
+> * All of the predicted gain comes from two constants that are currently only staked, not proved: one is "supported" by a numerical grid check, the other has no proof at all.
+> * So the two pending enclosures are not a refinement of the widening, they *are* the widening. **Don't quote 0.29–0.30 anywhere until both constants are theorems**, and expect the widening to vanish if either fails.
+
+=== 2026-10-29T09:18:54.282Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The §90 "crossing coordinates" number (β ≈ 124) was built on one-block constants not found in the Fontes source or the ledger; the main agent now treats them as unsourced.
+>
+> **The 124 figure rests on unverified constants**
+> * Earlier tonight the main agent wrote §90 in the ledger: the place where strong-coupling proofs stop (β ≈ 0.2452) and where a small-field expansion could start, which it put at **β ≈ 124**.
+> * That 124 came from three numbers it attributed to Fontes's Zenodo paper (a Hessian eigenvalue 0.6893, a norm 6.01, an angle 0.22 rad, plus a count of 20 plaquettes).
+> * A fresh search just found **none of those numbers** in Fontes's downloaded source or anywhere in the ledger. Fontes's actual threshold uses θ\* = 0.025 and gives β₀ = 9587 — a very different scale.
+> * So "the crossing is nine doublings wide" is not yet a sourced claim. Until the constants are read from an actual page, treat 124 as a placeholder, not a distance of record.
+> * The main agent is now writing a dated correction (§90 bis); **don't quote 124 to the other seats or in THE GROUND** until that correction lands.
+
+BUT if they do work, then you're simply doing what your predecessors havent, though you need to bolster the proof that they do work and why
+
+=== 2026-10-29T10:43:20.269Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The "8.2 doublings" still to cross count doublings of the coupling β, not lattice zoom steps, of which there are about 260.
+>
+> **The crossing is about 260 zoom steps, not 8**
+> - The stretch nobody can prove yet runs from **β ≈ 0.2452**, where the strong-coupling proof works, to **β ≈ 70**, where a weak-coupling expansion could start (conditionally).
+> - "8.2 doublings" means β doubles 8.2 times across that stretch.
+> - A **zoom step** (one renormalization step: the lattice spacing doubles) lowers β by only about **0.26** at weak coupling. That slow drift is asymptotic freedom.
+> - So getting from β = 70 down to about β = 2 takes roughly **260 zoom steps**, a change in length scale of about 10⁷⁹. Below β ≈ 2, β falls quickly, so only a few more steps are needed.
+> - **Keep this in mind for any "one doubling at a time" proof:** it has to hold over hundreds of steps, so even a small loss per step compounds. Each step must truly shrink the error.
+
+/deep-think /creative-solve /clear-thought fix this fully
+
+=== 2026-10-29T20:19:41.957Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent's earlier message to the other seats said record a's thresholds "stand", but the S12 tail gap it later found would have undercut every number above 0.2452.
+>
+> **S1's numbers above 0.2452 depended on an unproved clause**
+> * The flux-surface certificates (0.4260, 0.4378, 0.4918, 0.4952) all include a "tail" term covering every surface larger than the census, and that tail borrows Theorem S12's bound 4u^F for *every* minimal surface.
+> * S12's written proof only covers orientable sheets; its non-orientable case was a one-line assertion. The main agent found this while reading, so for a while this afternoon the numbers it had reported as "standing" rested on that assertion.
+> * It then wrote a proof of the missing case (the one-sided cycles "pay for themselves"), recorded it as ledger §119 quinquies, and sent it to the trunk seat — but that proof has not been read by a second seat or measured yet.
+> * Two cases in S12 remain staked, not proved (cycle-rank ≥ 2 contact components; multiplicity-6 links). Both are absent from the census to F = 22, so they bite only the tail.
+> * **Treat every S1 threshold as conditional on S12's remainder until the trunk and iii-38 sign the new proof**; the ledger's "nothing above 0.2452 is claimed" line is the honest status.
+
+keep this in mind in order to proceed carefully and thoroughly. communicate it to the other concurrent sessions.
+
+=== 2026-10-29T23:28:37.081Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The dry run of run aj's gate patches reports 239 pre-check defects because the checker resolved source paths against the scratchpad, not the tree.
+>
+> **Run aj's dry run read paths from the wrong folder**
+> * Before run aj can start, the main agent patches the gate on a **copy** kept in the scratchpad and runs the tree's pre-checker on that copy.
+> * The pre-checker resolves each tooth's source file **relative to the copy's location**, so every one of the gate's 239 teeth came back "NO SOURCE" (it looked for `aperanton_emit.sh` under the scratchpad path).
+> * The main agent's filter only expects a handful of "NO BASE RUN" lines, so this dry run proves nothing about the new arms 136 and 137 yet. The real chain patches the gate in place, where the paths resolve.
+> * **Watch for whether the chain itself (not the dry run) passes the pre-check** once run ai lands; a restore-and-exit there would mean the new teeth never got exercised.
+
+But then also, if this is the case, then we need to rigorously begin to bring anything worthwhile in scratchpad to the tree. You all were advised to not write there to begin with instead of just the main, like everything else, but i guess you ignored me again. so add this to your tasks amongst the others.
+
+=== 2026-10-30T01:31:03.627Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The main agent's Temp-folder deletion also hit the shared gate library's work directories, so any gate another seat ran between 20:50 and 20:58 must be re-run, not trusted.
+>
+> **Gate runs during 20:50–20:58 need re-taking**
+> * At 20:50 the main agent ran a cleanup that deleted the contents of the Windows Temp folder for about eight minutes before it was stopped. The III code tree on master is untouched.
+> * The shared test library (`dokimasia.sh`) deliberately keeps each gate's working files under that Temp folder, to dodge OneDrive's stale reads.
+> * So a gate running during those minutes could have had its working files pulled out from under it. Its verdict file might still say green while its teeth were never really exercised.
+> * Only the trunk seat's lost scripts and your own scratchpads were reported so far; this quieter effect was named by the coordination seat and has not been checked across all seats.
+> * **Ask each seat to list which gates ran during 20:50–20:58 and re-take them**, rather than reading those runs as of record.
+
+=== 2026-10-30T03:17:09.049Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The new K₄ wall vertex reads a per-corner rate of 1.1136, above the triangle's 1.0699, so the full-gas constant γ now rests on the densest vertex nobody has yet computed exactly.
+>
+> **The gas rate's worst case moved to an uncomputed vertex**
+> * The flux-surface proof bounds everything with one number, **θ**, the worst "per-corner rate" over all ways walls can meet at a single lattice vertex. The gas rate is then **γ = 3θ⁴**, and the proved reach in β comes straight from it.
+> * Tonight the two seats assumed the worst case was a small shape (the triangle, rate 1.0699). Both engines just found a denser shape, **K₄ on a reduced square**, at **1.1136**, so that assumption is refuted.
+> * Worse, the rate does not simply rise with density (the next denser case fell back to 1.0817), so the true worst case may be the densest possible vertex: **sixteen chords on a full sheet cycle**. No engine has computed it exactly yet.
+> * The main agent is now building a new C engine to compute that one vertex exactly (about two hours to build, under an hour to run). Until it finishes, **any β number quoted from this road, including the 0.2452 figure, is provisional**, and γ could move upward.
+> * **What to watch:** the new vertex beats the current worst case only if its star value S exceeds about 0.489. That one number decides whether the proved reach shrinks.
+
+=== 2026-10-30T03:54:38.204Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The sixteen-chord computation has run an hour on a build that can only reconstruct fractions below about 190 million, so a bigger denominator would end it with REFUSED after all that work.
+>
+> **The hour-long run may end in a refusal**
+> * The main agent's new engine computes each star value S modulo three primes, then rebuilds the exact fraction from the first two and checks it against the third.
+> * Two primes near 2²⁸ can only rebuild a fraction whose numerator and denominator are both below about **190 million**. The denominators have been growing with density: 3,600 at m = 4, 900,000 at m = 7.
+> * The sixteen-chord run (going since 22:33, over an hour of CPU) uses the old binary with that limit. If its denominator is larger, the run prints "REFUSED RECONSTRUCTION" at the end.
+> * The value is not actually lost: the three residues are printed first, and the fraction can be rebuilt from all three by hand, labelled unverified until a fourth prime confirms it.
+> * The main agent plans to add a four-prime fallback before queuing the other five classes, which would cost about 2.5 hours each. **If the class 6 run refuses, insist the fallback be built before any of those start.**
+

@@ -1,0 +1,24 @@
+L = 3 centred, k = (pi/L,0,0,0): lowest eigenvalues [1.         1.         1.         3.66666667 3.66666667 3.66666667] ; 4 sin^2(pi/(2L)) = 1.0000000000
+  mode 0: eigenvalue 1.0000000000 ; weight on the m = 0 alias 0.5000000000 ; |Q v| = 4.20e-18 ; m = 0 components [-0.      -0.j        0.313175-0.563006j -0.153633+0.019744j
+  0.206779-0.134889j]
+  mode 1: eigenvalue 1.0000000000 ; weight on the m = 0 alias 0.5000000000 ; |Q v| = 6.13e-18 ; m = 0 components [-0.      +0.j        0.152808-0.116362j -0.233856+0.072694j
+ -0.606595+0.187562j]
+  mode 2: eigenvalue 1.0000000000 ; weight on the m = 0 alias 0.5000000000 ; |Q v| = 5.03e-18 ; m = 0 components [-0.      +0.j       -0.133006+0.174255j -0.635872+0.10817j
+  0.189415-0.005685j]
+  mode 3: eigenvalue 3.6666666667 ; weight on the m = 0 alias 0.0555555556 ; |Q v| = 2.86e-18 ; m = 0 components [-0.      +0.j       -0.011974+0.000713j  0.061671+0.120455j
+  0.154231+0.115376j]
+  e_1 at m = 0: |Q e| = 2.469e-02 ; Rayleigh quotient 1.0000000000
+  e_2 at m = 0: |Q e| = 2.469e-02 ; Rayleigh quotient 1.0000000000
+  e_3 at m = 0: |Q e| = 2.469e-02 ; Rayleigh quotient 1.0000000000
+L = 2 half, k = (pi/L,0,0,0): lowest eigenvalues [1.84956377 2.         2.         4.61995738 6.         6.        ] ; 4 sin^2(pi/(2L)) = 2.0000000000
+  mode 0: eigenvalue 1.8495637656 ; weight on the m = 0 alias 0.4692140524 ; |Q v| = 4.12e-17 ; m = 0 components [-0.071834+0.104072j  0.319881+0.220794j  0.319881+0.220794j
+  0.319881+0.220794j]
+  mode 1: eigenvalue 2.0000000000 ; weight on the m = 0 alias 0.5000000000 ; |Q v| = 4.20e-17 ; m = 0 components [-0.      -0.j       -0.266349+0.150229j  0.501691-0.285025j
+ -0.235343+0.134797j]
+  mode 2: eigenvalue 2.0000000000 ; weight on the m = 0 alias 0.5000000000 ; |Q v| = 3.06e-17 ; m = 0 components [ 0.      -0.j        0.381674-0.306836j  0.014859-0.013381j
+ -0.396533+0.320216j]
+  mode 3: eigenvalue 4.6199573846 ; weight on the m = 0 alias 0.0605179961 ; |Q v| = 2.18e-17 ; m = 0 components [0.163516-0.107199j 0.047258+0.072085j 0.047258+0.072085j
+ 0.047258+0.072085j]
+  e_1 at m = 0: |Q e| = 1.013e-01 ; Rayleigh quotient 2.0000000000
+  e_2 at m = 0: |Q e| = 1.013e-01 ; Rayleigh quotient 2.0000000000
+  e_3 at m = 0: |Q e| = 1.013e-01 ; Rayleigh quotient 2.0000000000

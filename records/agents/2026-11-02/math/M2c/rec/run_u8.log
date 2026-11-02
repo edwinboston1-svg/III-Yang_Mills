@@ -1,0 +1,7 @@
+== u8 n8 N3L2 ordered start 10:47:13
+   rc=0 end 11:07:09
+L2DOB-U1 u1_n8_N3L2_ordered.txt L=2 grid 720: min p_A 8.3979e-01 min p_B 8.3979e-01, joint negative at 0; rhoA=0.021200892 rhoB=0.021200892 sigmaH=0.021069964 (next 1.212e-02 2.134e-07) Cgrid=0.027162704 rho/C=0.780515
+== u8 n8 N3L2 cancel start 11:07:12
+   rc=0 end 11:32:39
+L2DOB-U1 u1_n8_N3L2_cancel.txt L=2 grid 720: min p_A 8.8133e-01 min p_B 8.8133e-01, joint negative at 0; rhoA=0.022137431 rhoB=0.022137431 sigmaH=0.022062701 (next 1.658e-02 2.483e-07) Cgrid=0.028282071 rho/C=0.782737
+U8-DONE

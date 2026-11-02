@@ -1,0 +1,17 @@
+== r2 ring0000_n4_W2L1_exact_ordered start 11:12:07
+   rc=0 end 11:13:24 W2-M2b peak memory 0.006 GB (S + N + snapshot), multiply-adds 1.0819e+09 W2-DONE 73.0 s 
+L2DOB-CENSUS ring0000_n4_W2L1_exact_ordered.txt joint density on 2541 x 2541 (degB=20): min 2.694400e-01, negative at 0
+L2DOB-RESULT ring0000_n4_W2L1_exact_ordered.txt rhoA=0.040244199 rhoB=0.040244199 sigmaH=0.038045651 Cgrid=0.077543026 rho/C=0.518992
+== r2 ring1111_n4_W2L1_exact_ordered start 11:13:31
+   rc=0 end 12:12:40 W2-M2b peak memory 1.070 GB (S + N + snapshot), multiply-adds 3.6512e+11 W2-DONE 3547.2 s 
+L2DOB-CENSUS ring1111_n4_W2L1_exact_ordered.txt joint density on 2541 x 2541 (degB=20): min 3.226774e-01, negative at 0
+L2DOB-RESULT ring1111_n4_W2L1_exact_ordered.txt rhoA=0.030248084 rhoB=0.030248084 sigmaH=0.029001147 Cgrid=0.056314690 rho/C=0.537126
+== r2 ring0000_n4_W2L1_exact_cancel start 12:12:44
+   rc=0 end 12:13:00 W2-M2b peak memory 0.006 GB (S + N + snapshot), multiply-adds 1.0819e+09 W2-DONE 14.5 s 
+L2DOB-CENSUS ring0000_n4_W2L1_exact_cancel.txt joint density on 2541 x 2541 (degB=20): min 5.183015e-01, negative at 0
+L2DOB-RESULT ring0000_n4_W2L1_exact_cancel.txt rhoA=0.047612276 rhoB=0.047612276 sigmaH=0.046523782 Cgrid=0.084897266 rho/C=0.560822
+== r2 ring1111_n4_W2L1_exact_cancel start 12:13:04
+   rc=0 end 12:34:56 W2-M2b peak memory 1.070 GB (S + N + snapshot), multiply-adds 3.6512e+11 W2-DONE 1311.1 s 
+L2DOB-CENSUS ring1111_n4_W2L1_exact_cancel.txt joint density on 2541 x 2541 (degB=20): min 5.585996e-01, negative at 0
+L2DOB-RESULT ring1111_n4_W2L1_exact_cancel.txt rhoA=0.036045095 rhoB=0.036045095 sigmaH=0.035412993 Cgrid=0.063521385 rho/C=0.567448
+R2-DONE 12:35:04

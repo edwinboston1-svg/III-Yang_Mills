@@ -1,0 +1,21 @@
+M2b. Proofs and records: scratchpad/math/M2b/WORK.md (§3–§9); repositories untouched.
+
+PROVED
+- (A) Theorem A1 (§3): no typical-environment form of Hypothesis I exists. The ordered low-temperature Ising torus satisfies, at arbitrarily small prices, every condition on the single-pair coefficients' law (L^p, p < ∞; chessboard-priced bad sets). The coarse supremum is necessary. Lemma A2 (§4) shows the fine-data supremum is removable.
+- (b), the universal road (§9):
+  - W-S1 is Lemma A2 on the centre-even subspace: (W-S) without the centre or a fibre-Dobrushin condition.
+  - W-S2: a twist moves only a sheet iff the twisting element is central. So my vortex bound, Theorem C1 (§5), has no analogue for G₂, F₄ or E₈.
+  - W-S3, a correction: Hom(½⊗½,½) = 0 puts SU(2)'s leading coupling (≥ 99.98 %) in the centre-odd sector. For G₂, Hom(7⊗7,7) ≠ 0 and the leading (7,7) channel lies inside (W-S). SU(2)'s small SO(3) channel is not evidence for G₂. Without a centre the road is Hypothesis I in full.
+
+READ (readings, not certificates)
+- (a) was read with only one ring row integrated (two steps) or two rows (one step); the rest of the outside was pinned (rec/frame). These are SU(2) readings of R̃. S̃ is a replica ratio that no linear contraction reads. My draft bracket on S̃ is WITHDRAWN: it is vacuous at β = 2.2.
+- Varying the frame extent (12 cells) shows a factor per integrated edge-adjacent plaquette: 0.979–0.980 on the SO(3) channel, 0.990–0.992 on the full coupling. It is multiplicative and the same at n = 2 and 4, at both caps and at both data. At two steps ρ = κ·m_A·m_B to 0.1 %: the ring acts only through the loop alignments.
+- The true bent pair (corner plaquettes integrated; gauge check passes at 4×10⁻¹⁶, against 0.33 for the record engine; rec/t7.log) is +10–25 % at one step and +13.6 % / +15.6 % at two steps (rec/bent2). SBent2 is REFUTED at the ordered datum (15.6 % > 15 %).
+- ARITHMETIC: the true pinned two-step row is 1.04–1.08 (cancelling) and 0.89–0.94 (ordered). Integrating the whole first ring would give 0.86–0.89 and 0.73–0.77.
+- The 0.4764 landing is a cap artefact (β_eff 0.292 → 0.565 as the cap rises).
+
+NEXT OBJECT
+The two-step pair with its whole first ring integrated and the coarse environment imposed by the Fourier delta Σ d_a χ_a(Cg⁻¹), read in every channel and taken to its supremum over environments. Out of this engine's reach (3.6 GB; "too many links"): build a four-sided-ring contraction at n = 4. The factorization splits the supremum into a local κ times global alignments. For G₂, the same engine on G₂'s recoupling data. The only instrument that reads S̃ itself is a one-link SU(2) quadrature.
+
+CROSS-FIELD
+A1 is Cheeger's bottleneck: the chessboard estimate proves order but cannot price disorder. C2′ makes the coarse theory an O(4) σ-model, with 20ρ < 1 its Dobrushin condition. W-S2 is 't Hooft's twist sectors indexed by Z(G). W-S3 is G₂ string breaking, 7 ⊂ 14⊗14⊗14 (Holland–Minkowski–Pepe–Wiese 2003).

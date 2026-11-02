@@ -57,8 +57,13 @@ The chain to the four-dimensional infinite-volume gap:
    physical units passes to every limit point).
 
 What the record holds at the crossover (readings on exact finite objects, not bounds):
-- the worst-case (sup) form of (8.5) two blocking steps up from β = 2.2 has adjacent sum ≥ 1.33 (aligned data); at the
-  Haar-random outside datum the same coefficient is 0.006; at the crude spin cap 0.53/0.60;
+- [CORRECTED 2026-11-02 10:2x] the old line "the worst-case (sup) form of (8.5) two blocking steps up from β = 2.2 has adjacent
+  sum ≥ 1.33" was WITHDRAWN by the crossing campaign's §18 (line 414) and must not be cited. It rested on a W3 reading, and the
+  W3 truncation is SIGNED (spins ≤ 3/2: the weight is −0.105 at U = −1 at β = 2.2, −0.405 at β = 3), so W3 readings are
+  signed-weight ratios, not measures. It also used the false inequality "moment influence ≤ TV": the true bound is
+  |ΔE[χ_a]|/d_a ≤ 2·TV (reader 048_R). Corrected one-step TV-row LOWER bounds: SU(2) below 1 at 2.2 and 3.0 (e.g. 0.81–0.91
+  cancelling at W2), U(1) at 1.2 above 1 (≥ 1.308). At the Haar-random outside datum the two-step coefficient read 0.006;
+  at the crude spin cap 0.53/0.60;
 - the influence ladder at 2.2 contracts ×0.55 (ordered) and ×0.36 (cancelling); U(1) at 1.2 rises ×1.24 at the ordered datum
   but falls ×0.90 at the cancelling one (so the ladder was withdrawn as a decider); SU(2) contracts at 1.5, 2.2, 3.0;
 - the blocked flow at the ordered datum (spins ≤ 2): 2.2 → 1.888 → 1.553 → 1.161 → 0.662 → 0.109;
@@ -90,8 +95,17 @@ Integrity errors found by the reading (fix or avoid before relying on the affect
   counts of the 15:35 box records do not certify S12-b's hypothesis; the same reader reuses refusal codes with new meanings;
 - boxenum.c caps link multiplicity at 4: the box censuses (676,738 minimal leaves to F = 26/28, no lattice contact cycle) never
   reach six-fold links, so they say nothing about S12's remainder;
-- kp_budget.sh ran GRADED=1 without LOCAL=1 (sub-gas mode); III HEAD's STDLIB/scripts/aperanton_kp_cert.awk is stale (the
-  current engine is at the table gate's path, b3c0b51b3);
+- kp_budget.sh ran GRADED=1 without LOCAL=1 (sub-gas mode). [UPDATED 2026-11-02] III HEAD's STDLIB/scripts/aperanton_kp_cert.awk
+  is CURRENT since 88e069862, byte-identical to the build copy, with the COEF+TILT defect fixed (the tilt used to be silently
+  dropped in the coefficient-supplied mode) and a zero spin-1 entry refused by name; its table gate is GREEN on the fixed copy;
+- [ADDED 2026-11-02] further integrity facts: (a) the W3 plaquette truncation is SIGNED (above); use positive truncations
+  (W2, W4 at 2.2 and 3) and check positivity at every β; (b) moment influence ≤ 2·TV, not ≤ TV (the crossing page's lines
+  198/221 are false by a factor up to 2); (c) the five .dob records published in III-Yang_Mills records/surface-gas/dob/ are
+  PRE-CLIMB versions, so use III's build directory; (d) U(1) at β = 1.2 is gapless by numerics only, since the rigorous
+  Coulomb-phase theorems hold above an uncomputed β₀; any crossover decider must refuse U(1) at 1.2 AND in a proved Coulomb
+  regime, at every scale; (e) Theorem PI-4 holds only at small or real coupling deviation d (M3dR); (f) Bałaban's ρ_K is not
+  the law of the block variables, so E1 and (E2) are statements about generating functionals (M3f); (g) §19's two-step landing
+  is NOT ESTABLISHED (crossing campaign §25);
 - the neck factor is 2.9×10⁻¹⁰ in the engine's record, not "about 10⁻¹¹";
 - mkflow compares c₁ with the β-threshold 0.131 (= 3π/72 rounded the wrong way); the disk in c₁ is c₁ < 0.0327 (step 8);
 - the published copies of several instruments in III-Yang_Mills dropped backslashes (g34_su2_square.pl:121,

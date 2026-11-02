@@ -1,0 +1,27 @@
+REQUIRED  0  block=1 content4=1  ok
+REQUIRED  1  block=1 content4=1  ok
+REQUIRED  2  block=1 content4=1  ok
+REQUIRED  3  block=1 content4=1  ok
+REQUIRED  4  block=1 content4=1  ok
+REQUIRED  5  block=1 content4=1  ok
+REQUIRED  6  block=1 content4=1  ok
+REQUIRED  7  block=1 content4=1  ok
+REQUIRED  8  block=1 content4=1  ok
+REQUIRED  9  block=1 content4=1  ok
+REQUIRED 10  block=1 content4=1  ok
+REQUIRED 11  block=1 content4=1  ok
+REQUIRED 12  block=1 content4=1  ok
+REQUIRED 13  block=1 content4=1  ok
+REQUIRED 14  block=1 content4=1  ok
+REQUIRED 15  block=1 content4=1  ok
+REQUIRED 16  block=1 content4=1  ok
+REQUIRED 17  block=1 content4=1  ok
+REQUIRED 18  block=1 content4=1  ok
+REQUIRED 19  block=1 content4=1  ok
+OPTIONAL  0  block=1 content4=1  ok
+OPTIONAL  1  block=1 content4=1  ok
+OPTIONAL  2  block=1 content4=1  ok
+OPTIONAL  3  block=1 content4=1  ok
+OPTIONAL  4  block=1 content4=1  ok
+block in content4 verbatim: True
+check_block: 0 mismatches

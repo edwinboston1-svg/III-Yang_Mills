@@ -1,0 +1,6 @@
+W4-c a'_1=1/1e12:
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+u in [0.09301735, 0.09301735] u~ in [0.09301735, 0.09301735] r_hi=0.468822 LHS in [0.0000332, 0.0000332] alpha=0.0009999 -> PASS mix=0.000000000000
+W4-c a'_1=954458429/1e12:
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+u in [0.09301735, 0.09301735] u~ in [0.09357023, 0.09357023] r_hi=0.471608 LHS in [0.0000344, 0.0000344] alpha=0.0009999 -> PASS mix=0.000000000000

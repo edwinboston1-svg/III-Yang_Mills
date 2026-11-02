@@ -1,0 +1,10 @@
+cond(Q0) = 1.000e+04
+[S-2 iid disc] ||K|| = 0.0814
+   M^B (M3d): |M^T Qd M - Q0|/|Q0| = 2.54e-14; ||Etilde|| (relative) = 0.0590; ||M - I|| (plain) = 0.0590; min_t lambda_min(Re S_t) = 0.9413
+   M^A (alt): |M^T Qd M - Q0|/|Q0| = 8.29e-15; ||Etilde|| (relative) = 0.0409; ||M - I|| (plain) = 1.0968; min_t lambda_min(Re S_t) = 0.9413
+[S-2' +-i theta0/2] ||K|| = 0.1053
+   M^B (M3d): |M^T Qd M - Q0|/|Q0| = 1.34e-14; ||Etilde|| (relative) = 0.0761; ||M - I|| (plain) = 0.0761; min_t lambda_min(Re S_t) = 1.0000
+   M^A (alt): |M^T Qd M - Q0|/|Q0| = 8.94e-15; ||Etilde|| (relative) = 0.0524; ||M - I|| (plain) = 1.4933; min_t lambda_min(Re S_t) = 1.0000
+[S-3 nearly constant] ||K|| = 0.1005
+   M^B (M3d): |M^T Qd M - Q0|/|Q0| = 1.33e-14; ||Etilde|| (relative) = 0.0501; ||M - I|| (plain) = 0.0501; min_t lambda_min(Re S_t) = 0.9995
+   M^A (alt): |M^T Qd M - Q0|/|Q0| = 9.20e-15; ||Etilde|| (relative) = 0.0501; ||M - I|| (plain) = 0.0542; min_t lambda_min(Re S_t) = 0.9995

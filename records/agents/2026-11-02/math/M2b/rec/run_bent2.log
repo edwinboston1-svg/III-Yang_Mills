@@ -1,1 +1,7 @@
 == bent_n4_W2L2_cancel start 07:11:25
+   rc=0 end 07:39:04 W2-M2b peak memory 0.816 GB (S + N + snapshot), multiply-adds 5.2093e+11 W2-DONE 1655.5 s 
+   rhoA=0.019805901 Cgrid=0.033958157  SO3 rhoA=0.000037931  E=+1.110827895073e-01  T_conn(A) = 0.030018872
+== bent_n4_W2L2_ordered start 07:39:50
+   rc=0 end 08:06:19 W2-M2b peak memory 0.816 GB (S + N + snapshot), multiply-adds 5.2093e+11 W2-DONE 1587.7 s 
+   rhoA=0.017586907 Cgrid=0.030446552  SO3 rhoA=0.000039990  E=+1.463745078242e-01  T_conn(A) = 0.026737629
+RUN-BENT2-DONE 08:06:56

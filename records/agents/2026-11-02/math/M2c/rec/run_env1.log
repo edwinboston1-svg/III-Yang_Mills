@@ -1,0 +1,9 @@
+== env1 trunc ordered start 10:23:40
+   rc=0 end 10:37:43 W2-M2c peak memory 0.028 GB, multiply-adds 2.9707e+10; 12 classes in 840.4 s W2-DONE 840.7 s 
+== env1 trunc cancel start 10:37:47
+   rc=0 end 10:46:36 W2-M2c peak memory 0.028 GB, multiply-adds 2.9707e+10; 12 classes in 526.4 s W2-DONE 527.3 s 
+== env1 exact ordered start 10:46:40
+   rc=0 end 11:06:18 W2-M2c peak memory 0.028 GB, multiply-adds 2.9707e+10; 12 classes in 1160.3 s W2-DONE 1173.3 s 
+== env1 exact cancel start 11:06:22
+   rc=0 end 11:53:07 W2-M2c peak memory 0.028 GB, multiply-adds 2.9707e+10; 12 classes in 2789.7 s W2-DONE 2803.3 s 
+ENV1-DONE

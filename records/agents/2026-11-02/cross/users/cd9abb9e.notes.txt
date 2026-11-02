@@ -1,0 +1,38 @@
+=== 2026-10-29T08:31:42.965Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The β_UV answer both seats just entered rests on secondary sources only, because Bałaban's own theorem pages were blocked from this seat.
+>
+> **Bałaban's own theorem pages went unread**
+> * **β_UV** is the coupling above which Bałaban's 1980s renormalization-group analysis of four-dimensional lattice Yang–Mills is known to work. The paper's §8.3 prints the open stretch as [0.2452, β_UV].
+> * The main agent reported it as a "named unknown" (no paper states a number), and both seats entered that verbatim. The evidence came from Jaffe–Witten, Chatterjee, Dimock and the papers' abstracts, **not from Bałaban's Theorem 1 itself**.
+> * Why: Project Euclid (where the papers are free) blocks automated downloads, Springer's copies are paywalled, and the **Claude Chrome extension is disconnected** tonight.
+> * **You can close this in a minute:** open CMP 122 (1989) "Large field renormalization I" and CMP 109 (1987) on Project Euclid and paste Theorem 1's hypothesis into the session, or reconnect the Chrome extension so the agent can read them.
+
+=== 2026-10-29T09:00:33.246Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The two Bałaban papers you fetched leave out the one that states the four-dimensional theorem; it sits in Large Field Renormalization II, CMP 122, pages 355–392.
+>
+> **The 4D theorem is in the paper we don't have**
+> * Your CMP 109 download answers the quantifier question: the whole sequence of running couplings must stay below an uncomputed "sufficiently small γ", which pins the coupling at the unit scale. That part of D4 is done.
+> * Large Field Renormalization I (pp. 175–202) contains no theorem statement; its "Theorem 1 [16]" points to Bałaban's 1985 three-dimensional paper.
+> * Part II's abstract says four-dimensional ultraviolet stability is proved "as formulated in Theorem 1" — that statement lives in part II (same journal volume, next issue).
+> * Also found: CMP 109 defers its Theorem 2 (that the 4D coupling sequence can be kept small) to "a separate paper", not yet identified.
+> * **If you can, download part II the same way; the check finishes with it.**
+
+send me a link to the second and i will send it
+
+=== 2026-10-29T10:20:38.863Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Proving Bałaban's Theorem 2 would make his bounds unconditional, but bounds alone may not give the continuum theory itself.
+>
+> **Theorem 2 may not finish the short-distance half**
+> - Tonight's new target is Bałaban's never-published Theorem 2. It shows the coupling stays small at every zoom level, which his main 1989 theorem only assumed.
+> - Proving it makes that main theorem unconditional. Bałaban names what the theorem delivers: "ultraviolet stability bounds". These are upper and lower bounds on a finite box's partition function that hold at every lattice spacing.
+> - Bounds are not convergence. The Clay problem description and Chatterjee's survey probably list the existence of the continuum limit as a further open step.
+> - The other seats called Theorem 2 "the UV half's last unproved link." **Ask the main agent to check that claim against the Clay text it already downloaded** before planning around it.
+
+-investigate, as im relatively sure that the Balaban proved his work, in which case, would be our proof or our appeal to him
+

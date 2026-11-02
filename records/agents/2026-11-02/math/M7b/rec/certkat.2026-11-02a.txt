@@ -1,0 +1,9 @@
+K3 (the gate's coef pin):
+KP-CERT dress=page coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.019543, 0.019543] root in [0.019543, 0.019543] u in [0.06233787, 0.06233787] u~ in [0.06356816, 0.06356816] r_hi=0.320393 LHS in [0.0000033, 0.0000033] alpha=0.0009999 -> PASS mix=0.000000000000
+K3 MET
+K2 (COEF + TILT now composed at HEAD): tilt 68/100 then 69/100:
+PASS mix=0.000000000000
+FAIL (the inequality's upper end is above alpha) mix=0.000000000000
+K4 (the number in the coefficient-supplied mode):
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0041, 0.0047]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the inequality's upper end is above alpha)

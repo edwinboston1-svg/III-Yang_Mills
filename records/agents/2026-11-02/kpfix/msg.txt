@@ -1,0 +1,16 @@
+THE KP CERTIFICATE — the tilt applied after the coefficient-supplied mode, and a zero spin-1 entry refused by name (2026-11-02 08:2x EST; the trunk seat iii-43; the defect found by the proof agent M7)
+
+bessel_table() multiplied AL/AH by the tilt e^{TILTN/TILTD} BEFORE the coefficient-supplied mode overwrote AL/AH with the COEF entries, so a run with COEF and TILT together ran untilted and printed nothing to say so (law 11's class). M7 found it: with COEF = the Bessel ratios at 0.25, the old copy PASSES at tilt 68/100 and 69/100 alike, while the plain Bessel mode at the same beta passes at 68 and FAILS at 69. The tilt block now follows the COEF block; with COEF unset the order Bessel -> tilt -> half is unchanged.
+
+A zero spin-1 entry divided the c2 sum by zero (line 92, div_hi(AH[j2], AL[2])); it is now refused by name ("the spin-1 entry a_1 is zero").
+
+Read two-sided before landing, the HEAD build copy against the fixed copy (scratchpad kpfix/):
+- byte-identical output in every single mode: the staked mode at Theorem 8.7's point (LOCAL=1 page, P=2452/10000; the table gate's arm-1 command), tilt only, COEF only, COEF with HALF;
+- COEF + TILT: old 68 PASS / 69 PASS; fixed 68 PASS / 69 FAIL, equal to the plain Bessel mode's 68 PASS / 69 FAIL (M7's K1/K2);
+- M7's K3 (coef.run's line byte for byte) and K4 (COEF = Bessel(0.4764) rounded up: PASS for alpha in [0.0041, 0.0047]; 0.4766 refused) MET on the fixed copy;
+- a1 = 0: old crashes in gawk, fixed refuses by name.
+No record in the tree or in III-Yang_Mills holds a line with both tilt= and coef=supplied, so no landed verdict used the pair.
+
+The two copies are made byte-identical: STDLIB/scripts/aperanton_kp_cert.awk (the table gate's CERT_TREE, whose HEAD version predated the 11-01 modes) and STDLIB/build/aperanton/kp_cert_table_wip.awk (CERT, in HEAD since b3c0b51b3).
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

@@ -29,3 +29,10 @@
    rc=0 end 07:16:42 W2-DONE 52.9 s
    rhoA=0.121272229 Cgrid=0.294919949  E[chi(A)]=+8.149156756914e-01  T_conn(A) = 0.150645863
 == bent_n2_W4L2_cancel start 07:17:08
+   rc=0 end 07:34:59 W2-DONE 1068.1 s
+   rhoA=0.215638641 Cgrid=0.417890112  E[chi(A)]=+5.646407473161e-01  T_conn(A) = 0.314047739
+== plan_n2_W4L2_cancel start 07:36:07
+   rc=0 end 07:36:42 W2-DONE 33.6 s
+   rhoA=0.196224891 Cgrid=0.380997291  E[chi(A)]=+5.606407358233e-01  T_conn(A) = 0.285261463
+== waiting for run_w4 07:37:38
+== bent_n4_W2L2_ordered start 07:37:41

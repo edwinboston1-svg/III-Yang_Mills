@@ -1,0 +1,9 @@
+start ordered W3 Mon, Nov  2, 2026  9:13:11 AM
+end ordered W3 rc=0 Mon, Nov  2, 2026  9:13:46 AM
+start cancel W3 Mon, Nov  2, 2026  9:13:47 AM
+end cancel W3 rc=0 Mon, Nov  2, 2026  9:14:11 AM
+start ordered W4 Mon, Nov  2, 2026  9:14:12 AM
+end ordered W4 rc=0 Mon, Nov  2, 2026  9:17:45 AM
+start cancel W4 Mon, Nov  2, 2026  9:17:46 AM
+end cancel W4 rc=0 Mon, Nov  2, 2026  9:20:56 AM
+TWOSTEP1 DONE Mon, Nov  2, 2026  9:20:56 AM

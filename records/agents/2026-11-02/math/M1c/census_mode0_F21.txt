@@ -1,0 +1,3 @@
+OMEGA-CENSUS FMAX=21 MODE=0 (census: closed sets with independent boundary vectors): box side 49
+OMEGA-CHECK rank recomputed from scratch at every closed node: 0 disagreements with the incremental basis
+OMEGA-END nodes 6273169905 pruned 8174038 (948 s)

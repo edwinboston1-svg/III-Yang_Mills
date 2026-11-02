@@ -1,0 +1,18 @@
+P-1  |G'| = 32, orientation-reversing = 16
+     preserves (01) and (23) planes: True; |block01| = 4 (dets [Fraction(1, 1)]), |block23| = 8, product order 32
+P-2  dim of G'-invariant symmetric forms on Lambda^2 = 3
+     basis form, diagonal entries w_{mn}: {'01': '1', '02': '0', '03': '0', '12': '0', '13': '0', '23': '0'} off-diagonal: []
+     basis form, diagonal entries w_{mn}: {'01': '0', '02': '1', '03': '1', '12': '1', '13': '1', '23': '0'} off-diagonal: []
+     basis form, diagonal entries w_{mn}: {'01': '0', '02': '0', '03': '0', '12': '0', '13': '0', '23': '1'} off-diagonal: []
+     every invariant form diagonal: True
+     rank(metric forms) = 9, <Iso,metric> = ['0', '0', '0']..., <Theta,metric> = ['0']
+     invariant: <B,Iso> = 1, <B,Theta> = 0, lies in iso+theta+metric span: False
+     invariant: <B,Iso> = 4, <B,Theta> = 0, lies in iso+theta+metric span: False
+     invariant: <B,Iso> = 1, <B,Theta> = 0, lies in iso+theta+metric span: False
+     metric stake: in invariant span: True; in iso+theta+metric span: True; <B,Iso> = 0
+     Weyl stake: in invariant span: True; in iso+theta+metric span: False; <B,Iso> = 0
+     Weyl stake orthogonal to every metric form: True; to Theta: True
+     metric stake equals form_metric(h=(1,1,-1,-1)) up to scale: True (FM diag = ['2', '0', '0', '0', '0', '-2'])
+P-3  metric invariant: mean (trivial part) = 0, row sums sum_n w_mn = ['2', '2', '-2', '-2']
+P-3  Weyl invariant: mean (trivial part) = 0, row sums sum_n w_mn = ['0', '0', '0', '0']
+     every off-diagonal pair carries a non-trivial sign character: True (15 pairs)

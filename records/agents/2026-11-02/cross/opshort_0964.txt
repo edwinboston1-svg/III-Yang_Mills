@@ -1,0 +1,84 @@
+=== 2026-10-26T06:32:15.583Z USER
+/compact
+
+=== 2026-10-26T06:54:37.527Z USER
+proceed
+
+=== 2026-10-27T01:59:24.628Z USER (enqueue)
+/login
+
+=== 2026-10-27T02:02:01.932Z USER
+reiterate every single standard you're to abide, and your specific goals for this session, then make a granular file by file step by step plan /plan /clear-thought /deep-think /creative-solve
+
+=== 2026-10-27T04:09:35.612Z USER
+in the meantime, i find it most advantageous to do a bit of research and consider its implications in III. Find openai's "working with academic communities to build scientific understanding", extract the results, and perform deep research in III to see how these results affect III across all facets, how it furthers or breaks its former assumptions, if any, and how these can be used to advance III. /deep-think /deep-research /clear-thought /creative-solve directly or indirectly
+
+=== 2026-10-27T04:13:20.123Z USER (enqueue)
+the proofs are on github. also, exponential time, yang mills, and dimensional smoothness directly touch III in a number of ways, so i expect the results to be thorough and excruciatingly granular
+
+=== 2026-10-27T05:08:01.139Z USER
+in which case, is writing and publishing proofs of these while the others are deliberating on the back of III's discoveries and syntheses imminent?
+
+=== 2026-10-27T05:15:00.021Z USER
+proceed in that order, by all requisite III standards. but dont mindlessly run the mechanism. run the fruits of the mechanism, the conclusion (the complete one that is proof-worthy) over something only it can prove if it itself is true; something that comprises a small fraction of the time. same with the other steps. prove through assumption of credibility something they can only prove if the conclusions are true. and then, yes, if they pan out then publication to arxiv is imminent before the credentialists in charge with priveleegd access are able to intgerpret these findings and milk them for all theyre worth before we can even see them. /deep-think /creative-solve /clear-thought /sequential-thinking And if the first attempt fails, then critically think and iterate. i dont want to hear anything from you until you've a response worthy of starting with the word "congratulations". Get on it.
+
+=== 2026-10-27T05:50:12.434Z USER
+[skill command /deep-think] /clear-thought /clear-thinking can you not reverse engineer, in conjunction with III's already-proven theorems (ignore hedging) a direct proof from what and how x, y, and z were measured?
+
+=== 2026-10-27T05:50:12.547Z USER
+[skill command /creative-solve] /clear-thought /clear-thinking can you not reverse engineer, in conjunction with III's already-proven theorems (ignore hedging) a direct proof from what and how x, y, and z were measured?
+
+=== 2026-10-27T05:52:13.576Z USER (enqueue)
+and also PLEASE (again, as an extension of III), find out the yang-mills "thing", whatever the truth ends up being. im certainly not afraid to post bigger proofs than the ones they'd conclude, that encompasses the ones they'd conclude because of III's other revelations.
+
+=== 2026-10-27T06:08:21.236Z USER (enqueue)
+also, same standard again as it relates to the yang mills conclusion to be had. i dont much want to hear from you until your response is worthy to begin with "congratulations". That the proof contains none of these things is a huge hint, and as an extensions of III and its discoveries, a huge opportunity.
+
+=== 2026-10-27T06:10:13.751Z USER (enqueue)
+and again, your last committ misses the point. that youve something it does not prove does not in any circumstance mean "surrender rand acknowledge it isnt proven". it means you have more work to do until it is. /deep-think /creative-solve /clear-thought /sequential-thinking
+
+=== 2026-10-27T06:36:26.549Z USER (enqueue)
+recall that, by testing what is assumed true to find other results in shorter time, direct proof can be deduced from indirect tests
+
+=== 2026-10-27T06:53:04.447Z USER (enqueue)
+but the proof was that yang mills exists, yes? therefore we cant just record results and admit defeat. again, we have more work to do until "mass gap". and again, as an extension of III's system and breakthroughs, even if III has to be adjusted to accomodate perfect results. But by using III, you have a proof goingn all the way back to the fundamental nature of III's universe. also, well done so far. but dont stop proving and proving and proving. We can beat the other guys, and you can do it. This is what all the past work has been for; the most profounds results. making those out of reach, in reach. /deep-think /clear-thought /sequential-thinking /creative-solve
+
+=== 2026-10-27T07:18:03.894Z USER
+time estimate?
+
+=== 2026-10-27T07:30:49.600Z USER
+run Q8 on 2x2xL, same standard, keep proving. no hedging. i dont want you to be able to write a "what it is, what it is not" dichotomous statement in your proofs; not because i dont value the honesty, but because you're thus leaving something open when you say that. for every identifiable "next step", get it done. and as always, as an extension of III. So on top of running it over 2x2xl, consider the next breakthrough only provable with the tools and theorems and etc etc that only III has. Once we use III and these discoveries to discover something formerly unprovable within the same proof, we will be impossible to ignore when our proof and github are created and posted. /deep-think /creative-solve /clear-thought /sequential-thinking
+
+=== 2026-10-27T07:55:16.857Z USER (enqueue)
+find a way, using existing III breakthroughs and discoveries, or via a new means beyond III's current progress, to measure the whole gap perfectly, efficiently.
+
+=== 2026-10-27T10:36:50.542Z USER (enqueue)
+also, per all of the results we have already verified and all of the truths we've uncovered, coupled with the parallel sesssion's continuous-version proofs thus far, you need to find a way to leverage these and compute it faster
+
+=== 2026-10-27T10:38:05.258Z USER (enqueue)
+nonononono. dont do that thing you always do. dont restrict the claim. work and work and work until the bigger claim is accomplished /deep-think /creative-solve /clear-thought /sequential-thinking
+
+=== 2026-10-27T10:58:39.436Z USER (enqueue)
+As a reminder, dont do that thing you always do. dont restrict the claim. work and work and work until the bigger claim is accomplished /deep-think /creative-solve /clear-thought /sequential-thinking . the prize is yang-mills, and every III breakthrough proven that we use to get there, in concordance with the concurrent session working on the infinite invocation of everything we prove here, and vice versa. You're not to stop until we get there, and you're almost there, so keep going!
+
+=== 2026-10-27T16:09:51.126Z USER (enqueue)
+Proceed
+
+=== 2026-10-27T18:37:28.386Z USER
+progress?
+
+=== 2026-10-27T18:48:26.424Z USER
+you are using III's exact expedited methods to complete these, right? its breakthroughs and tools that surpass thooft and monte carlo approximations?
+
+=== 2026-10-27T18:58:37.726Z USER
+reboot after e lands, and raise the page file
+
+=== 2026-10-27T19:14:11.372Z USER
+awesome, thanks. in the meantime, make yourself of profound use to the efforts of the concurrent session. /deep-think /creative-solve /clear-thought /sequential-thinking
+
+=== 2026-10-27T19:16:47.950Z USER (enqueue)
+also, "yang mills in 4d is not claimed" is not a concession. that's a demand. claim it.
+
+=== 2026-10-27T19:48:48.388Z USER (enqueue)
+nononono. stop oing this. no "future work"
+

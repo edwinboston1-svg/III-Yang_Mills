@@ -1,0 +1,106 @@
+## §18 — THE BENT OBJECT WAS NEVER COMPUTED: EVERY "BENT" READING AT A NAMED DATUM IS THE PLANAR GEOMETRY (2026-11-02 05:3x EST, read from `date`; the trunk seat; found by the proof agent M2 (§6.0 of its work page), confirmed line by line by the second reader M2R; nothing above edited)
+
+1. **The defect.** Both W2 engines, `w2_strip.c` (the 2×2 faces; records `w2_strip.2026-11-01a.*`) and `w2_strip_n.c` (the n×n faces; records `w2n{2,4}_*`), have the same staple loop. It skips only the object's face plaquettes (`is_obj_plaq` over the 2n² face plaquettes). `okey` registers every link it is handed as an outside link and never consults the object-link table. The bent object has n + 1 corner plaquettes: the xz-plaquettes at base (0, j, 0), j = 0..n, each holding face A's x-link (0, j, 0)→(1, j, 0) and face B's z-link (0, j, 0)→(0, j, 1). Each corner plaquette is therefore entered twice as a staple, once for each of its two object links, and each time the OTHER object link is read from the datum. That makes 6 such staples at n = 2 and 10 at n = 4, and none for the planar object (M2R, by a copy of the build logic). The direct A–B coupling through the corner plaquettes was never integrated.
+
+2. **What it does to the record.** At the ordered and the cancelling data, a corner staple is indistinguishable from an identity-valued outside staple, so there every "bent" number IS the planar object's number. §14 RESULTS Part 2's (D6), "the planar two-step equals the bent to the digit at the ordered (0.026260892) and the cancelling (0.029883394) data", is the defect's signature, not a property of the geometry. At the Haar-random data the bent cells are a third geometry, neither the bent object's nor the planar one's. Hence:
+   - W2's first-light table (the 2×2 faces, 11-01a, "THE DATUM IS THE EFFECT", 0.81 to ±0.01–0.04) and the n = 2, 4 runs are readings of the planar geometry at the ordered and cancelling data and of the third geometry at the random data. None is a reading of the bent pair.
+   - (D1), S₂₀ = 1.11 at the ordered datum and 1.329 at the cancelling, sums twenty copies of a planar-geometry C as if every adjacent pair had it. Sixteen of the twenty adjacent pairs are bent, and their C is unread. **(D1)'s verdict, "Hypothesis I's adjacent sum is not met at the object's reach at that integrand", is WITHDRAWN.** So is the same use in the abelian column (D4): S₂₀ = 3.33 and 3.92 at U(1), β = 1.2, are planar geometry at the named data by the same mechanism.
+   - **§17 item 3, "the sup form of (8.5)'s integrand at the second scale from β = 2.2 has adjacent sum at least 1.33 at the sharper cap", is WITHDRAWN as stated.** The same lower-bound argument applied to the four coplanar pairs alone (the planar object is built correctly) gives at least 4 × 0.066463830 = 0.2659 at the cancelling datum and 4 × 1.113/20 = 0.2226 at the ordered datum. Both are below one and decide nothing about the adjacent sum. The sixteen bent pairs add a nonnegative amount that has not been read.
+   - The numbers derived from these sums elsewhere carry the same withdrawal: the "factor 1.6–3 from Hypothesis I at the second scale from β = 2.2" (the operator's correction note of 11-01 19:5x, corrected there), and the "1.33" quoted to the proof agents (corrected to them 05:3x).
+
+3. **What stands.** The planar object's readings stand as planar readings: §12 (b), the planar two-step, and the proof agent M2's L² readings (20ρ: 0.304/0.349 at W2L2, 0.630/0.772 at W3L2, U(1) at 1.2 2.40/2.96, gapped U(1) at 0.9 1.31/1.49, every one labelled planar geometry on M2's page). So do the engines' known answers K1–K4, and the datum dependence as a property of the planar geometry.
+
+4. **The next instrument, with its two-sided control.** The bent row needs the corner plaquettes as internal cycles of the network. `okey` must consult `lkey(b, d, 0)` first, so that an object link enters a staple as itself. The n + 1 corner plaquettes then join the contraction as plaquettes with two object wires and two outside wires, and their cost is a state space counted before the run. The control is two-sided. On the planar object (corner count 0) every reading must be unmoved. At the ordered datum the bent reading must PART from the planar one, the sighted half the defect hid.
+
+
+## §19 — THE ONE-STEP MAP RUNS DOWN AT EVERY DATUM; LINE 111'S "β ≈ 3.5" IS A β ↔ β/2 SLIP, AND TWO EXACT STEPS REACH THE STRONG-COUPLING WINDOW AT THE READ DATA (2026-11-02 06:5x EST, read from `date`; the trunk seat; found by the reading of scratchpad share 027_P against the engine's own convention; nothing above edited)
+
+1. **The slip.** §7's results (line 111 of this page) read "at the ordered datum the blocked one-plaquette coefficient a′_½ = 0.41 is Wilson's at β ≈ 3.5, above the fine coupling … the 'map' runs up or down by the datum's choice". The engine's convention is the paper's (`w2_strip.c` line 8: w(V) = Σ_s (s+1) a_s χ_{s/2}(V), a_s = I_{s+1}(β)/I₁(β); line 190; `w2_strip_n.c` line 215), so the fine coefficient at β = 2.2 is a_½ = I₂(2.2)/I₁(2.2) = 0.4645 (THE GROUND's 0.464). The blocked a′_½ = E[χ_½(A)]/2 is 0.41 (ordered), 0.28 (cancelling) and 0.019 (Haar-random, seed 1), smaller at every datum. Inverting a_½(β) = I₂(β)/I₁(β) gives β_eff ≈ 1.85, 1.19 and 0.076 (the reader's double-precision Bessel series, which reproduces the record's own 40 at β = 0.05 and 4.2 at 0.4764). Inverting I₂(β/2)/I₁(β/2) by mistake gives 3.69 and 0.152, and that is the page's 3.5 and the 0.15 of §7's "a gas near β ≈ 0.15". One exact blocking step from 2.2 LOWERS the coupling at every datum read; the withdrawal reason "runs up or down by the datum's choice" is false.
+
+2. **Two steps.** §10 (b)'s two-step coarse loop at W2L2 inverts under the same convention to β_eff = 0.2930 at the ordered datum (E[χ_½(A)] = 0.146) and 0.2225 at the cancelling (0.111). Both lie inside Theorem 8.9's certified window (0.4764), and the cancelling one inside Theorem 8.7's unconditional 0.2452. The one-step table is 1.8469 / 1.1859 / 0.0760 at W4L4 and 1.3304 / 1.0127 / 0.1903 at W2L2. At the data the record calls nearest the measure's typical one, two exact ℤ⁴ steps reach the window that the hierarchical model reaches in eight.
+
+3. **Strength.** These are READINGS: fixed fine data, the planar geometry (§18: every "bent" dump is planar at the named data), and truncated (spins to 1 at W2L2). The one-plaquette coefficient is the marginal of one coarse plaquette at a pinned datum. That is neither the blocked action's coefficient with the fine field integrated, nor its supremum over coarse configurations, which a single-site criterion must take (the proof agent M2b's Theorem A1). A landing needs (a) Theorem 8.9's certificate passing in its coefficient-supplied mode at the two-step blocked action, multi-plaquette couplings included through its tilt, and (b) that action certified over every coarse configuration with the fine field integrated. The Dobrushin disk (β < π/24) is not reached at two steps. The certificate's 0.4764 is, which is why the exit runs through the certificate and not through the disk.
+
+4. **The next stage.** The certificate in its coefficient-supplied mode is run first on the read two-step coefficients, with every one of a′_s at both data and the read pair couplings as its tilt; that test is the falsifier of the two-step landing at the reading level. Then the two-step object with the fine outside integrated. Then the supremum.
+
+
+## §20 — THE COARSE HYPOTHESIS FROM THE FIBRE: A REDUCTION, ITS CONSTANT, AND WHY IT DOES NOT CLOSE THE WINDOW FOR GAUGE-COVARIANT COARSE LINKS (2026-11-02 07:3x EST, read from `date`; the trunk seat, at the desk; nothing above edited)
+
+1. **The theorem (proved here).** Work in §8.3's setting, with a block-local coarse map and versions of the conditional laws defined for every coarse configuration.
+   - Let ∂y be the fine links outside B_y that share a plaquette with a link of B_y. By the paper's partition they lie in the 80 blocks at distance one.
+   - Let p_y(dv_y | ω_∂) be the law of v_y given the links of ∂y. It is a finite pinned object, because the Wilson measure's conditional law of B_y given everything outside depends only on ∂y.
+   - Let δ_y = sup_{ω,ω′} ‖p_y(·|ω_∂) − p_y(·|ω′_∂)‖_TV be its ergodicity coefficient.
+   - Let T_∂(y, y′) be the supremum, over coarse configurations differing only at y′, of the total variation between the fibre laws ν_j(ω_∂ ∈ · | v).
+   Then for y ≠ y′:
+
+   **C^λ_j(y, y′) ≤ δ_y T_∂(y, y′)/(1 − δ_y).**
+
+   *Proof.* Integrate block y's fine field. By the tower and Markov properties, λ(dv_y | v_{−y}) = ∫ p_y(dv_y | ω_∂) μ̃(dω_∂ | v_{−y}), where μ̃ is the law of ω_∂ given the coarse configuration off y, and μ̃(·|v_{−y}) = ∫ ν_j(dω_∂ | w, v_{−y}) λ(dw | v_{−y}). Let v, v′ differ only at y′, and write c for the total variation between λ(·|v_{−y}) and λ(·|v′_{−y}).
+   - Dobrushin's contraction gives c ≤ δ_y ‖μ̃ − μ̃′‖.
+   - Inserting ∫ ν(·|w, v′_{−y}) λ(dw | v_{−y}) and applying the triangle inequality gives ‖μ̃ − μ̃′‖ ≤ T_∂ + c.
+   - Hence c(1 − δ_y) ≤ δ_y T_∂. ∎
+
+   Under Hypothesis II(b), applied to indicator functions of ω_∂ (N(f) ≤ 80, distance at least |y − y′| − 1), T_∂(y, y′) ≤ min(1, 80K′ρ′^{|y−y′|−1}). So **Hypothesis I holds with (κ, α) as soon as sup_y δ_y = δ satisfies δS/(1 − δ) ≤ α < 1**, where S(K′, ρ′, κ) = Σ_{r≥1} n(r) min(1, 80K′ρ′^{r−1}) e^{κr} with n(r) = (2r+1)⁴ − (2r−1)⁴ and ρ′e^κ < 1. Theorem 8.5 then holds from Hypothesis II alone plus the one pinned number δ.
+
+2. **The constant (computed, double precision, a table and not a proof input; scratchpad `reduction/S_table.2026-11-02a.txt`).** The threshold δ* = 1/(1 + S):
+
+   | K′ | −ln ρ′ | κ | S | δ* |
+   |---|---|---|---|---|
+   | 1 | 1 | 0.5 | 1.08 × 10⁶ | 9.2 × 10⁻⁷ |
+   | 1 | 4 | 1 | 5318 | 1.9 × 10⁻⁴ |
+   | 1 | 8 | 1 | 325.7 | 3.1 × 10⁻³ |
+   | 1 | 16 | 1 | 217.5 | 4.6 × 10⁻³ |
+   | 10 | 16 | 1 | 217.8 | 4.6 × 10⁻³ |
+
+   The stake was met at (1, 1, 0.5). It was REFUTED at (1, 8, 1): the stake read about 4.2 × 10³, having dropped the min-factor 80e⁻⁸ at r = 2, and the run reads 325.7. When the fibre decays over one coarse unit by e⁻⁸ or faster, which a physical correlation length well below the block gives, δ* ≈ 0.003–0.005. The near shells (80 at r = 1) set the threshold.
+
+3. **Two-sided reading.**
+   - With the holonomy map, δ → 0 along the sequence because the coarse variable equidistributes. Hypothesis I then holds trivially and all content sits in II(a), exactly the diagnosis of revision 32.
+   - For U(1) in the Coulomb phase, the fibre has no long modes: the coarse variables carry them, and the zero-block-average modes have the block-scale Laplacian gap. So II plausibly holds for both groups. The group dependence then sits in δ, since the coarse variable's law becomes insensitive to its boundary only where the coupling has run to strong coupling.
+
+4. **Why it does not close the window, the pre-mortem done before landing.** δ is a supremum over PINNED fine data, and for gauge-covariant coarse links it is of order one at every scale. The paper's coarse link, the holonomy along a block edge in the block's fixed gauge, and every block-local link variable run through links adjacent to ∂y. Pinned boundary data can therefore align those links: flat data pull them toward the identity, with an effective field of order β times the number of straddling plaquettes. The data can also rotate them, since a gauge transformation of the data at the boundary sites rotates the law of v_y. So p_y(·|ω_∂) is far from Haar and depends strongly on ω_∂, even where λ(dv_y | v_{−y}) is near Haar. The blocked measure's small influence at a strongly coupled coarse scale comes from AVERAGING over the fibre's strongly fluctuating boundary layer, which the pinned supremum discards. This is the proof agent M2b's distinction carried to the coarse kernel: averaging is legitimate for what is integrated. The pinned sensitivity of the gauge-INVARIANT coarse loop is small at two steps from 2.2: E[χ_½(A)] lies between 0.005 and 0.146 at the read data, so δ_loop ≥ 0.035. But loops are not a product space, and Dobrushin's comparison needs one.
+
+5. **What this places.** Every route through a pinned supremum of a gauge-covariant coarse variable is closed by item 4: the tower lemma, this reduction, and fixed-datum influence readings. The window's difficulty is the AVERAGING over the fibre of gauge-covariant coarse links at O(1) coupling. The next objects are:
+   - a fibre-averaged δ, the boundary-layer law integrated against the fibre given the coarse data, bounded through Hypothesis II itself (a self-consistent form δ ≤ f(K′, ρ′));
+   - or a gauge-invariant reformulation of Theorem 8.5's comparison step on coarse loops, where pinned sensitivities are small.
+   The second is the L² currency's natural home: the reduction in L² (Theorem 8.5′) works with conditional maximal correlations of coarse observables. The proof agents M5 ((W-V)) and M2b ((W-S)) are on the two channels of that form.
+
+
+## §21 — THE ONE FLOW: THE CLAY STATEMENT FOR EVERY COMPACT SIMPLE G AS ONE THEOREM ABOUT ONE OBJECT, ITS INPUTS LISTED; AND §20'S LEMMA ADVERSARIALLY VERIFIED (2026-11-02 08:00 EST, read from `date`; the trunk seat, at the desk; the operator's orders of 07:5x–08:1x: "the 4d infinite mass gap … the one that Clay wants, proven perfectly" and "prove it across every group"; nothing above edited)
+
+1. **§20's lemma, verified adversarially.** The claim C^λ(y, y′) ≤ δ_y T_∂(y, y′)/(1 − δ_y) HOLDS, with two precisions.
+   - **The tower step needs block-locality.** Since σ(v_{−y}) ⊆ σ(links outside B_y), λ(dv_y | v_{−y}) = E[p_y(dv_y | ω_∂) | v_{−y}]. For a straddling coarse map, Bałaban's averaged variables included, a neighbour's coarse variable sees B_y's own links. The proof then does not apply as written, and widening ∂y does not repair it.
+   - **The bound is stated for δ_y < 1.** At δ_y = 1 it is vacuous, and C ≤ 1 trivially.
+   The other steps check:
+   - the Markov property: given ∂y, B_y's links are independent of the rest;
+   - the mixture μ̃ = ∫ν dλ, total probability for conditional laws, with versions defined for every coarse configuration as revision 32 requires;
+   - Dobrushin's contraction;
+   - the triangle step, whose compared configurations (w, v_{−y}) and (w, v′_{−y}) differ only at y′.
+
+2. **The object.** The renormalisation-group flow of the G-gauge theory: the sequence A₀ (the Wilson action at the bare β₀) → A₁ → A₂ → … of effective measures on the coarse fields at scales a, La, L²a, …, each obtained from the last by one exact blocking step, with its fibre law (the finer field given the coarser). Its aspects at each scale are its effective coupling β_k, the cone C(β) it lies in, and the clustering constants (K′, ρ′) of its fibre. Its one capability is reaching the strong-coupling cone in finitely many certified steps. Theorem 8.5's two hypotheses are aspects of the flow at its exit, not separate demands:
+   - Hypothesis I is "the flow is in the strong-coupling cone at the exit scale", through the exit lemma (III-Yang_Mills 8bcfffd);
+   - Hypothesis II is "the fibres cluster", accumulated along the flow.
+
+3. **THE ONE FLOW THEOREM (the architecture; each input listed with its status).** Let G be a compact simple group. Suppose there are a family of cones {C(β) : β ≥ β_s} of effective actions, a drift c(β), and fibre constants (K′, ρ′) such that:
+   - **(F1) entry:** the Wilson action at β lies in C(β), for β ≥ β_s;
+   - **(F2) step:** one exact blocking step maps C(β) into C(β − c(β)) for every β ≥ β_s, with c(β) ≥ c_min > 0 and c(β) → b₀-rate as β → ∞, and its fibre satisfies Hypothesis II with the constants (K′, ρ′) uniformly;
+   - **(F3) exit:** C(β_s) lies inside a strong-coupling region where a certified expansion gives Hypothesis I (Theorem 8.9's certificate in its coefficient-supplied mode for SU(2); Osterwalder–Seiler's region for every G).
+   Then for every bare β₀ the flow enters C(β_s) after k* ≤ (β₀ − β_s)/c_min steps. Because c(β) has the asymptotic-freedom rate, along the asymptotically free sequence the exit scale L^{k*}a converges to a fixed physical length. Hypotheses I and II then hold there uniformly in the cutoff, and Theorems 7.4 and 8.5 (or 8.5′) give every limit point a unique vacuum and a Hamiltonian with no spectrum in (0, m), m > 0. The group dependence sits in ONE place, the drift c(β): it is positive for every non-abelian G (b₀ = 11C_A/(48π²) in the program's normalisation) and zero for U(1). So the U(1) flow never reaches the exit, which is the control every valid chain must pass.
+
+4. **The inputs, exactly, with status and owner:**
+
+   | Input | Region | Status | Owner |
+   |---|---|---|---|
+   | (F2) for β ≥ β_B | UV | Bałaban's induction. PROVED: BB4*, Lemma FP, Lemmas C/C′, (PI)_H (M3c; second reader M3cR running). OPEN: (PI-4), (PI-5) (M3d); CMP 102 (189)–(190) and CMP 99, printed without calculation (M3e). β_B ≥ 10^982 on the printed constants (M6) | M3d, M3e, M6b (Lemma RD, which would lower β_B to an estimated 10²–10⁴) |
+   | (F2) for β ∈ [β_x, β_B] | middle | perturbative physics (g² ≤ 0.8), a constants problem; certified cone-to-cone steps | M8 (feasibility at β = 50) |
+   | (F2) + (F3) for β ∈ [β_s, β_x] | crossover | the exact steps: one step from 2.2 to β_eff 1.85 / 1.19 / 0.076 and two steps to 0.293 / 0.223 are READINGS (§19); certification open | M7 (the two-step landing) |
+   | Hypothesis II along the flow | all | UV part from Bałaban's analysis; crossover part OPEN: the averaging over the fibre of gauge-covariant coarse links at O(1) coupling (§20); its universal channel the centre-even (W-S), since G2, F4 and E8 have trivial centre | M2b ((W-S)), M5 ((W-V), centred G only) |
+   | (F3) | strong end | SU(2): Theorem 8.7 (0.2452) and Theorem 8.9 (0.4764 conditional; S12-free 0.3650 pending its second reader); every G: Osterwalder–Seiler | M1R, M1b, MG |
+   | Theorems 7.4, 8.5, 8.5′ | reduction | PROVED, group-blind (revisions 32, 33) | — |
+   | OS axioms of the limit | continuum | RP from the lattice; (E1) uniqueness PROVED given (PI) (M3b); (E2) Euclidean invariance OPEN, an infrared identity | MG |
+   | every compact simple G | all | the audit link by link | MG |
+
+5. **What the architecture changes.**
+   - The per-step criterion of the proof agent M4 is no longer a heuristic beside the chain: it is (F2)'s drift.
+   - The window is no longer a separate theorem: it is (F2) and (F3) on the bounded interval [β_s, β_x] of couplings, together with Hypothesis II's crossover part.
+   - THE ONE OPEN CORE across every group is Hypothesis II at O(1) coupling, the fibre's averaging. The rest is UV bookkeeping, where the physics is perturbative and the constants are the obstruction, or proved reduction.

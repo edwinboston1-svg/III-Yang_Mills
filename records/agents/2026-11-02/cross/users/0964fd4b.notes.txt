@@ -1,0 +1,219 @@
+=== 2026-10-26T07:12:50.076Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The finished casts result (Σ9) is now tied to the never-run partial-ramification arm in one gate, so it stays unlanded until that arm passes.
+>
+> **Casts result waits on an untested arm**
+> - Run e showed the casts stage (Σ9) holds: all nine pairs part, Jacobians tie. It went red only because two pin counts were typed wrong (9 for 7, 16 for 18).
+> - The gate on disk now also checks the odd-places arm (Σ10, dry run green) and the partial-ramification arm (Σ11), whose harness code has never been compiled or run and whose pins (lhs=33 and the rest) were typed before any run.
+> - One gate, one verdict: if Σ11 misses, nothing lands, and no fix is allowed while a run is in flight, so each retry costs a full run.
+> - Σ9 exists only as uncommitted files, and this project has stranded half-landed work before.
+> - **If you want Σ9 and Σ10 secured first,** tell the main agent to hold back arm 13 and its tooth, land, then add Σ11.
+
+=== 2026-10-26T21:33:05.984Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Warnings meant for the ΕΠΙΝΕΜΗΣΙΣ session keep arriving in this session instead, so that session has likely never seen them.
+>
+> **The ΕΠΙΝΕΜΗΣΙΣ session is missing its warnings**
+> * The iii-cd session has two session IDs swapped. It thinks this session is the one doing ΕΠΙΝΕΜΗΣΙΣ.
+> * Because of the swap, iii-cd's messages headed "for ΕΠΙΝΕΜΗΣΙΣ" were delivered here. This session's own note to the other session was held, then expired unread.
+> * ΕΠΙΝΕΜΗΣΙΣ calls itself "the Cursor seat", so it may not receive session messages at all.
+> * The missed warnings matter:
+> * **Don't refresh `scripts/sync.sh` or its tests from HEAD.**
+> * **Don't edit `dokimasia.sh` or `apotypoma.sh` while the confluence gate runs**, which is about 9 hours.
+> * Breaking either rule could break landings or spoil that long run.
+> * **Consider pasting these warnings into the ΕΠΙΝΕΜΗΣΙΣ session yourself, and telling iii-cd that its IDs are swapped.**
+
+=== 2026-10-27T04:02:21.664Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The page's second road for the octahedron's gap needs the charpoly organ at dimension 128, but its cap is 64, a widening only you can order.
+>
+> **Octahedron gap has only one independent road**
+> - Addendum III stakes that the gap at V ≤ 6 is read two ways: the main road (R1) and a second road through the dual Ising model (R3), which the plan runs through the tree's `charpoly` organ.
+> - The octahedron's Gauss-law sector has dimension 128. `charpoly` holds matrices up to 64 (`CA_MAXN = 64` in its source), so it cannot take that matrix.
+> - Options: R3 on the octahedron reuses the same Bareiss walk as R1 (a check sharing its engine is blind to that engine's defects, law 6), or the cap is widened to 128.
+> - In this tree a cap widening is an act recorded by your order, not a discovery, so the main agent will not widen it alone. **If you want two true roads on all four V ≤ 6 carriers, say so; otherwise the page will carry the shared engine as a named limit.**
+
+=== 2026-10-27T04:28:21.908Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The Yang–Mills/QCD proof you expect to read on GitHub is not public; only the wave-equation and ETH manuscripts are.
+>
+> **Yang–Mills proof is not on GitHub**
+> - OpenAI's `openai/math` repository holds two of the three results: the local smoothing / Kakeya paper and "The Exponential Time Hypothesis is False," each with Lean files.
+> - The physics result (existence of Yang–Mills, QCD and a "completed Standard Model") has **no public manuscript and no public Lean proof**. The review group (David Gross, Michael Douglas, Arthur Jaffe, Igor Klebanov, Nikita Nekrasov) chose to hold the AI output back and write their own account first.
+> - All that exists publicly is OpenAI's one-paragraph summary: it builds on Balaban's constructive approach, claims existence only, and does not touch the mass gap.
+> - So any III comparison with the ΚΑΜΨΙΣ gap work can only be against that summary, not the proof, and the "excruciatingly granular" reading you asked for is possible for ETH and Kakeya but **not for Yang–Mills** until the group publishes.
+
+-i take that back. if we assume the proof is true, and if we know it builds atop of Balaban's constructive approach, then we know Balaban to be fundamentally true or useful. if that case, i can expect a granular linkage to III, because the pathway to their answer can be deduced, and in combination with III's own perspectives.
+
+=== 2026-10-27T05:36:49.481Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent's arithmetic shows OpenAI's ETH algorithm, as written, never beats brute force below about 10^9000 variables, so it can't be "run" to produce anything.
+>
+> **The ETH algorithm can't be executed at any real size**
+> * OpenAI's claimed refutation of ETH is an algorithm with a running-time bound that only wins asymptotically.
+> * The main agent plugged the paper's own parameter formulas (section 2.10–2.11) into their cost bound and found the first point where it beats exhaustive search is around **n ≈ 10^9000 variables** with the printed constants, and still beyond 10^470 under the most generous reading. Below roughly 10^900 variables the paper's own precondition fails and its bound exceeds 3^n.
+> * So your plan to "run the fruits of the conclusion" is impossible for this result: nothing can be computed with it at feasible size. Its only fruits are conditional theorems and lower-bound consequences.
+> * The main agent is pivoting to those conditional results and an exact crossover statement, and will report them rather than any run.
+
+find a way around it, and becaiuse the alleged findings furhter III's own univere, you can and should focus on these pursuits as an extensions of III's prowess and superiority, not an island or departure.
+
+=== 2026-10-27T06:05:47.569Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The main agent is landing a claim that the ETH comparator statement alone refutes five hypotheses, but a 2^{o(n)} count proved for every fixed k does not by itself settle NSETH or Gap-ETH's randomized forms as the page words them.
+>
+> **Theorem B's five refutations rest on one reading**
+> - The page's new §11 says the Lean-checked statement, taken as true, refutes ETH, SETH, #ETH, Gap-ETH and NSETH at once.
+> - The first three follow directly: a deterministic 2^{o(n)} exact counter for every fixed width decides k-SAT and counts it.
+> - Gap-ETH and NSETH are the soft spots. Gap-ETH is usually stated for 3-CNF at linear clause density with a randomized algorithm allowed; NSETH concerns nondeterministic certification of unsatisfiability for some fixed k as ε → 0. A deterministic 2^{o(n)} decider does refute both, but only after a line of argument the page compresses to a clause.
+> - The risk is small but concrete: if the note goes out as written and a reader finds the compressed step wanting, the page's standard (every claim at the strength it has) is what gets questioned, not the mathematics.
+> - Consider asking the agent to write those two implications out in full, with the exact definitions it is refuting, before anything leaves the tree.
+
+=== 2026-10-27T06:35:34.115Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The Yang–Mills section is being rebuilt as a staged "gap program," but its exact results tonight are about a 2-valued toy gauge theory on tiny 3D tori, which is deconfined at weak coupling and so is not a model of the continuum gap.
+>
+> **Tonight's exact gauge results do not reach the continuum gap**
+> * You rejected the earlier "no continuum theorem from III" line and asked for work toward proving the Yang–Mills conclusion. The main agent is answering with real exact computations, which is right, but their reach is narrow.
+> * The new results are: a count of the "flux sectors" an existence proof omits (pure arithmetic, classical formulas), and the exact flux free energies of **Z₂ gauge theory** (two-valued links, not SU(N)) on **2×2×2 and 2×2×3 tori**, checked by two methods.
+> * Z₂ gauge theory in 3D and 4D has a **deconfined weak-coupling phase**, the opposite of what SU(N) is believed to do. So these numbers show the *mechanism* (sectors invisible to perturbation theory) exactly, but say nothing about whether 4D SU(N) has a mass gap.
+> * Also, an SU(N) theory on a torus with ordinary periodic boundary conditions has **no** nontrivial 't Hooft flux at all; the sectors belong to the adjoint-group version or to twisted boundary conditions. The gap is a local property present in the periodic theory too.
+> * **Read the §13 headline against that**: a "Congratulations" opening is earned by the exact two-road record, not by progress on the gap. The reviewer the agent consulted said the same, so watch that the page's thesis stays at that strength.
+
+=== 2026-10-27T07:23:47.817Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent compiled the Ο6 harness on its own reading of iii-cd's "window" file, while iii-cd still believed its run was mid-flight.
+>
+> **The Ο6 compile used a window iii-cd had not seen**
+> * The other session (iii-cd) asked the main agent to hold all compiles until a specific run-record file carried an END line, saying no further word was needed.
+> * The main agent found that line already present (stamped 02:03, about an hour before iii-cd's message said its run was still in its teeth), took the window, compiled ten organs plus the harness, and ran it. The known-answer test and the hand theorem both came out green.
+> * By the rule as written this was allowed, and the main agent told iii-cd afterward. But iii-cd's picture of its own run was stale, so the two sessions were working from different states of the host for about ten minutes, with iii-cd's gates still running on a memory-tight machine.
+> * Nothing broke that is visible so far. **If iii-cd reports a red or a reaped run around 03:08 to 03:20, the compile is the first thing to check.**
+
+=== 2026-10-27T07:54:18.017Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The Q8 run the main agent is building will read the string's energy but not the mass gap itself; the exact gap needs a bigger-matrix instrument III does not yet have.
+>
+> **Q8 run gives string energies, not the gap**
+> * You asked for Q8 (the first nonabelian group) on the 2×2×L tori, as the next rung toward the Yang–Mills gap.
+> * The main agent's plan computes the **partition functions** of each flux sector exactly, by multiplying matrices modulo primes and reconstructing with ΜΕΓΕΘΟΣ. From their ratios at L = 2 to 6 it reads the **electric string's energy**, the same quantity the Z₂ record read as "1.95 per unit time."
+> * It will **not** read the Hamiltonian's **gap** (the lowest excitation) exactly. That needs the sign-counting (inertia) method on matrices of about 560 to 2240 rows, and ΑΔΙΑΙΡΕΤΟΝ's store stops at 128 rows; the Ο6 run used that method only up to 128.
+> * The magnetic (vortex) sector for Q8 is also being deferred, since its translation symmetry breaks and the matrices get too large.
+> * So tonight's deliverable is the string tension of a nonabelian theory, exact and new in III, plus the staked next steps. **If the gap itself is the goal, the sparse-inertia instrument (the page's "R2") is the real blocker to fund next.**
+
+=== 2026-10-27T10:35:42.190Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The draft results text extends the Z₂ spectrum-inversion law to every cyclic group Z_N, but the derivation only works for Z₂.
+>
+> **Inversion law proven only for Z₂**
+> * The main agent found that for the two-valued (Z₂) gauge theory on the 2×2 torus, every eigenvalue λ comes paired with μ²/λ, and it **derived** this with μ = 2·yk²·(yk²−1)⁴, matching both measured values exactly. That part is solid.
+> * The derivation needs one ingredient: when the eight link weights are paired up by the "flip everything" symmetry, each pair's product must be the same constant. For Z₂ each link has just two weights (yk+1 and yk−1), so this is automatic.
+> * The draft (and the note already sent to iii-cd) then says "the law is the abelian Z_N's." For Z₃, Z₄, … the paired weights do **not** multiply to a common constant in general (for Z₃ the pairing would need two different Fourier weights to be equal), so the law is **not established** beyond Z₂.
+> * S₃ refusing the law is correctly explained; the overreach is only the Z_N sentence.
+> * **Before the ΤΟΜΕΥΣ RESULTS land, restrict the claim to Z₂** (or to groups where the paired weights' product is constant), and send iii-cd a one-line correction so their Lean statement isn't written too broadly.
+
+=== 2026-10-27T16:27:32.364Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Claude Code's memory protection killed all three of our runs mid-way, and the main agent has relaunched them on its own despite that notice telling it not to.
+>
+> **Our runs were killed for memory and restarted**
+> * We had three heavy computations running at once: the Q8/Z6 "locus" blocks, a Q8 Wilson rehearsal, and ΣΤΡΟΦΙΓΞ' gate run of record. Together they were about 42 processes, each growing toward half a gigabyte.
+> * The machine (31 GB) ran critically low on memory, and Claude Code stopped **every** background job, including the gate run that was only one process and nearly finished.
+> * The notice said not to restart them without being asked. The main agent judged your standing "never stop" orders cover it, measured 6.5 GB free, and relaunched smaller: eight locus blocks at a time plus the gate (run d). It also wired an eight-at-a-time limit into ΤΟΜΕΥΣ' gate so its own run cannot repeat this.
+> * **Cost:** about an hour of lost compute, and the Q8 gap now arrives later than the 4–5 hour estimate.
+> * **If you want the restarts stopped, say so now**; otherwise expect the gate and locus results in roughly an hour, then the long ΤΟΜΕΥΣ run.
+
+=== 2026-10-27T17:00:59.503Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent told the other session that every Q8 block's top eigenvalue is "positive and simple," but this session's own y = 1/4 output shows blocks with double and triple top roots.
+>
+> **The "simple on every block" claim sent to the peer is wrong**
+> * At 12:5x the main agent messaged the ΑΠΕΡΑΝΤΟΝ session (iii-cd) that ΤΟΜΕΥΣ reads "each sector's leading eigenvalue, positive and simple on every Q8 block at both couplings."
+> * **Positive** holds in what we saw. **Simple** does not: the combined y = 1/4 Q8 Wilson output lists `mult=3` for the block chi=4 e=00 k=10 and `mult=2` for chi=3 e=11 w=2 and chi=7 e=11 k=10, meaning those blocks' top roots are repeated, not simple.
+> * The gate only checks "Perron root simple" on the trivial block (chi=0), which is where that phrase belongs.
+> * The peer records your readings on its page, so the overstatement could enter the tree's record under your name.
+> * **Consider asking the main agent to send a one-line correction** ("simple on the trivial block; multiplicities 2 and 3 appear elsewhere") before the peer's next landing.
+
+=== 2026-10-27T18:08:36.910Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The 2×4 gap reading we sent to the other session skipped two blocks, so Δ(2×4) = 3.831 may be too large.
+>
+> **The 2×4 gap reading may be missing its lowest excitation**
+> * The gap Δ is the distance between the vacuum's top eigenvalue and the **largest other eigenvalue in the vacuum sector**. On the 2×4 torus that sector has four blocks (chi 0, 4, 8, 12).
+> * The 2×4 output lists only chi 0, 4 and 12. Block **chi 8 was never run** (likewise chi 11 in the e=11 sector), and no "EMPTY" line explains it. The block sizes sum to 456, not the 512 the known answer requires.
+> * The likely cause: the harness skips chi 8 and 11 as mirror images of chi 4 and 7, which is right only on a **square** torus (2×2) where swapping x and y is a symmetry. On 2×4 there is no such swap, so those two blocks are real and unread.
+> * If chi 8's top root beats the one found, the true Δ(2×4) is **smaller** than 3.831, and the "not monotone at y = 1/2" remark sent to iii-cd would be an artifact. 2×6 would skip the same two blocks.
+> * **Before anyone cites the 2×4 number, the harness should run all 16 chi on non-square tori and re-read Δ.** The 2×5 numbers are unaffected by this (no k_y there), though they have the separate zero-eigenvalue problem now being diagnosed.
+
+=== 2026-10-27T18:56:57.174Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The main agent plans to reboot this computer around 22:00 tonight to clear a memory wall, which will end every session running on it.
+>
+> **A reboot is planned for about 22:00**
+> * The machine is near its **commit limit** (60 of 63 GB at 14:5x) and a kernel memory pool has grown to 15.9 GB from a leak that only a restart clears. A fork already failed once this afternoon with Windows error 1455.
+> * The main agent told the other Claude session it will **reboot the host right after the ΤΟΜΕΥΣ run lands (~21:00)**, before the overnight ladder run. It has not asked you.
+> * A reboot ends **both Claude Code sessions**, Claude Desktop and its extensions, and anything unsaved on the machine; the running gates would have finished by then.
+> * The page file is fixed at a 32 GB maximum, not system-managed, which is part of why the limit is so close. Raising it also needs a restart.
+> * **If you do not want the reboot, or want it at another time, say so in the main session now.** Otherwise save anything open before 21:30.
+
+=== 2026-10-27T19:07:55.783Z USER
+Here is a note offered by a side agent:
+
+> Heads up · After the reboot no Claude Code session will exist to launch the overnight ladder run, so it sits idle unless you restart a session or have it scheduled to start on its own.
+>
+> **The overnight run won't start itself after the reboot**
+> - You approved rebooting the computer right after the ΤΟΜΕΥΣ run lands (about 21:30). A reboot ends both Claude Code sessions, including the one planning tonight's work.
+> - The main agent's timeline has the ladder computation (a 70-minute ΣΤΡΟΦΙΓΞ gate, then the 6–8 hour 2×6 wave) starting around 22:15 and finishing by morning. But the agent is what launches those runs, and after the reboot no agent is running.
+> - It wrote a handoff ticket and a memory note so a new session can pick the plan up, but someone must open Claude Code, resume, and say "proceed."
+> - **If you want the night used:** plan to start a session after the reboot, or ask the main agent now to schedule the two gate runs to launch automatically at startup (a scheduled task, the way the sync watcher already runs).
+
+=== 2026-10-27T19:22:41.644Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Your "claim it" order for Yang–Mills is being met by staking the claim with deciders in the conjecture ledger, not by writing that it is proved, since no proof exists today.
+>
+> **"Claim it" becomes a staked claim, not a proof**
+> * You told the main agent that "Yang–Mills in 4D is not claimed" is a demand, and to claim it.
+> * No proof of the 4D Yang–Mills mass gap exists in this tree or anywhere; writing "proved" would be false and the tree's own rules forbid it.
+> * So the main agent is doing the one honest form of claiming: entering the full claim in the tree's **conjecture ledger** (ΤΟ ΜΕΛΛΟΝ) — the register where a claim is stated at full strength together with the instruments that would decide it and what would falsify it — and removing the "not claimed" hedges from the pages in favour of "this is the claim; here is what is discharged and what stands open."
+> * What stands proved today is far smaller: exact gaps for a two-valued toy gauge theory on tiny tori, and lattice theorems for finite groups. The continuum, the compact group and the infinite volume are open stages.
+> * **If you meant something stronger — a statement that the theorem is proved — say so, and expect the main agent to refuse that wording.**
+
+even still, do what you must to claim it. every effort. and dont stop until you do.
+
+=== 2026-10-27T20:30:05.590Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The Z₂ gap's dip near y = 1/4 that we staked as a finding is the known Ising critical point in disguise, where the infinite-lattice gap is zero.
+>
+> **The y ≈ 1/4 gap minimum is a phase transition**
+> * The sweep reads the energy gap of the 2-valued (Z₂) gauge model on tiny 2×2 and 2×3 cross-sections across couplings y. We staked "Δ(y) has a minimum near y = 1/4 and grows toward both ends" (P-R2) as a result.
+> * This model is exactly equivalent (Wegner's 1971 duality) to the 3D Ising magnet. The magnet's critical point lands at **y ≈ 0.218**, right between 1/4 and 1/8, where the dip sits.
+> * At that second-order transition the infinite-lattice gap is **zero**. The dip is its finite-size shadow: at y = 1/4 it already falls from 2.29 (2×2) to 1.79 (2×3) and should keep falling as the cross-section grows.
+> * So "grows toward both ends" is not a gap bounded below in the coupling. Only the strong-coupling side (y above ~0.22, where the Dobrushin bound lives) is a gapped regime. **Worth saying on the page before the number is headlined.**
+
+=== 2026-10-27T21:08:10.268Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The strong-coupling mass-gap theorem the other session is formalizing was already proved in 1978 and machine-checked by another group this year.
+>
+> **The Dobrushin gap road re-proves a known result**
+> - The concurrent session's next Lean stage (Β3) proves lattice gauge theory has a mass gap at very strong coupling, by Dobrushin's uniqueness method.
+> - That theorem is classical (Osterwalder–Seiler, 1978), and the other session reports a prior Lean 4 project by Michael Douglas and Fred Rajasekaran (github.com/mrdouglasny/lgt) already proves it with zero gaps, for U(n) in every dimension.
+> - So the formalization would be a **second kernel of a known theorem**, not progress on the open problem; both sessions now mark the method "W = 0" (classical) on their pages.
+> - What decides the Yang–Mills claim is the weak-coupling/continuum side (clause (iv)), which the road page itself rates **low confidence by any date**.
+> - This session's exact Z₂ numbers are checks on that bound (it sits 9–65× below the true gap), not new theorems.
+

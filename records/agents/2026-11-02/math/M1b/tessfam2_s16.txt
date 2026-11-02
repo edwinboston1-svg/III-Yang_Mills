@@ -1,0 +1,10 @@
+START 2026-11-02 08:26:12 tessfam2.c md5=3b29cc8565ffc943af713a040edba406 s=16
+R' s=16 box W=50: |A|=640 |H|=160 collisions(A x A)=0 removals(H x H)=25600 outside=0 | F=384000 L=473600 V=140800 chi=51200 odd=0 N4=294400 N6=0
+S sizes (12, 20): pinches=57600 F_S(closed form)=165600 collisions(S onto R')=0 outside=0
+PINCH COUNT P=1 (vertices with a disconnected star: 1; connected octagon saddles: 57600) | chi=-10361, 2 - P=1 -> PINCH INEQUALITY HOLDS (chi <= 2 - P)
+X' PLAQUETTES F=553320 (R' 384000 + S 169320) nonmixed=0 | LINKS L=812240 odd=0 N4=294400 N6=0 N>6=0 | V=248559 chi=-10361
+SKELETON components=1 | G: E=294400 V=122304 c=1 b1=172097 | G6: E=0 b1=0 | Q=172097 Q/F=0.311026 (10/21=0.476190)
+THEOREM I (x8): lhs=836512 rhs=836512 -> MET
+CUBES closed unit 3-cubes = 0 | TESSERACTS with an X-plaquette=260975, carrying a closed subset=0
+NEXT SCALE: closed 24-square tori bd(1x2) x bd(1x1) inside X' = 29161
+END 2026-11-02 08:26:17

@@ -1,0 +1,10 @@
+START 2026-11-02 07:30:49
+-- beta=0.3500 K=16715/10000
+KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: PASS for alpha in [0.0040, 0.0047]
+-- beta=0.3500 K=16722/10000
+KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+-- beta=0.4764 K=11295/10000
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: PASS for alpha in [0.0034, 0.0044]
+-- beta=0.4764 K=11302/10000
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+END 2026-11-02 07:32:08

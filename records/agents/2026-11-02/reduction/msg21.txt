@@ -1,0 +1,5 @@
+THE CROSSING CAMPAIGN §21 — the one flow: the Clay statement for every compact simple G as one theorem about one object, its inputs listed; §20's lemma adversarially verified (2026-11-02 08:00 EST; the trunk seat iii-43)
+
+The renormalisation-group flow is the object. Its aspects are the coupling, the cone and the fibre's clustering; its capability is entry into the strong-coupling cone in finitely many certified steps. The one flow theorem (F1) entry, (F2) step with a drift c(β) > 0, (F3) exit gives Hypotheses I and II at a fixed physical scale uniformly in the cutoff, and Theorems 7.4 and 8.5 give the gap. The group dependence is the drift alone: positive for every non-abelian G, zero for U(1). The inputs are tabulated with status and owner. The one open core across every group is Hypothesis II at O(1) coupling. §20's lemma HOLDS, with block-locality and δ < 1 made explicit.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

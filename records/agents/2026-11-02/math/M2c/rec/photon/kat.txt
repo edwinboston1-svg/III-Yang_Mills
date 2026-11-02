@@ -1,0 +1,6 @@
+PHOTON-KAT G(0) = 0.1549333900 (known 0.1549334) ; G(e1) = 0.0299333902, G(0) - G(e1) = 0.1249999997 (1/8 = 0.125) ; G(1,1,0,0) = 0.0127147038
+PHOTON-KAT (-Delta G)(e1) = 2.789e-10 (should be 0)
+PHOTON-KAT G(20 e1) = 6.348567e-05 against the continuum 1/(4 pi^2 r^2) = 6.332574e-05
+PHOTON-KAT wrapped: sigma2 = 0.01, r = 0.3 -> rho = -nan(ind) ; sigma2 = 9, r = 0.25 -> rho = 1.158015e-03 against e^{-sigma2 (1-r)} (e^{c} - 1) e^{-sigma2} / e^{...}: e^{-9}(e^{2.25}-1) = 1.047470e-03
+PHOTON-KAT wrapped: sigma2 = 0.01, r = 0.3 -> rho = -nan(ind) ; sigma2 = 9, r = 0.25 -> rho = 1.158015e-03 against e^{-sigma2 (1-r)} (e^{c} - 1) e^{-sigma2} / e^{...}: e^{-9}(e^{2.25}-1) = 1.047470e-03
+PHOTON-KAT wrapped: sigma2 = 0.01, r = 0.3 -> rho = 0.300000 ; sigma2 = 9, r = 0.25 -> rho = 1.158015e-03 against e^{-sigma2 (1-r)} (e^{c} - 1) e^{-sigma2} / e^{...}: e^{-9}(e^{2.25}-1) = 1.047470e-03

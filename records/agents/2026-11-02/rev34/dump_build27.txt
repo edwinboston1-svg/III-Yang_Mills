@@ -1,0 +1,24 @@
+===== build.js line 27 (3793 chars) =====
+[00]     children:
+[01]  runs(`A proof that quantum Yang–Mills theory has a mass gap must stand on a construction of the theory, and the most complete public construction now in view is the corpus of manuscripts that Levent Alpöge and Ethan Sussman have posted since 6 October 2026, carrying Bałaban's renormalisation group from the lattice to the continuum for the gauge group SU(2).
+[02]  This paper fixes that ground.
+[03]  It reads the corpus from its primary sources and proves, clause by clause and with exact references, what the corpus asserts and at what strength.
+[04]  In three dimensions an 854-page manuscript asserts continuum Schwinger functions of the plaquette-energy density, the lattice form of tr F², which satisfy the Osterwalder–Schrader axioms in the clustering components of infinite-volume limits taken along subsequences, together with a short-distance law that makes the theory non-trivial;
+[05]  it asserts no mass gap.
+[06]  In four dimensions a 153-page draft deduces, from inputs it declares clause by clause and from supporting statements two of which are not yet written, continuum limits on ℝ⁴ along subsequences with regularity, reflection positivity, symmetry and hypercubic invariance;
+[07]  its authors call the underlying argument extremely long and not understandable as it stands, and state that the corpus has not been satisfactorily vetted.
+[08]  The paper then proves that, for a reflection-positive theory, a mass gap is the same property as exponential clustering of the reflection-positive correlations, and that a lower bound on the lattice mass gap, uniform in physical units along the lattice sequence of such a construction, supplies at once the three properties the corpus withholds:
+[09]  a unique vacuum, the cluster property and a mass gap.
+[10]  It then reduces that bound to two finite statements:
+[11]  if, at a fixed physical scale, the blocked measure satisfies Dobrushin's condition with an exponential weight and the field inside the blocks clusters at the block scale, both uniformly in the cutoff, then every limit point has a unique vacuum and a mass gap of at least min(κ, log(1/ρ′))/a_c;
+[12]  the open mathematics of the problem is thereby two statements about one block at the crossover scale, stated in the form that is uniform in the cutoff, and the paper says why the form on the fine measure's blocks is not.
+[13]  Finally it proves a theorem at the strong end:
+[14]  for the SU(2) Wilson theory on ℤ⁴ at β ≤ 0.241, an exact decimation of one link in every plaquette and Dobrushin's criterion, with constants that Turán's inequality for the modified Bessel functions makes exact, give a unique infinite-volume Gibbs measure, exponential clustering and a mass gap of the lattice theory (Theorem 8.7), and the same construction on ℤ³, along a cover by three families of parallel lines, gives them at β ≤ 0.3739 (Theorem 8.8);
+[15]  on ℤ⁴ the flux-surface gas, which prices the surfaces of the polymer expansion by the representation theory of SU(2), extends them to β ≤ 0.4764, conditional on one stated lemma on contact leaves (Theorem 8.9).
+[16]  On the hierarchical model, where the Migdal–Kadanoff recursion is the exact renormalisation group, the crossover is crossed with certified numbers:
+[17]  from β = 2.2 and from β = 2.3 the eighth iterate of the Wilson weight satisfies Dobrushin's condition on ℤ⁴ with row sums at most 0.0336 and 0.2820, the first step at which the certified budget closes;
+[18]  the inequality that would carry that crossing to ℤ⁴ must depend on the gauge group, since the same recursion carries the U(1) weight into the disk while four-dimensional U(1) has a massless phase.
+[19]  These theorems lie at strong coupling and on the hierarchical model;
+[20]  the interval between them and the crossover of ℤ⁴ is the open part of the problem, and the object on which the proof that follows must stand.`, { size:
+[21]  20 }),
+

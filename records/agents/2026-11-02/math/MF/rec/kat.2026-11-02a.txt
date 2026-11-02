@@ -1,0 +1,16 @@
+K1: d=1 dec L=4, expect C(a,a)=a(L-a)/L within block (D=0), 0 across blocks
+F d=1 L=4 dec M=16 a0=1 b0=1 dir=0 D=0 C= 7.500000000000000e-01
+F d=1 L=4 dec M=16 a0=1 b0=1 dir=0 D=1 C=-2.081668171172169e-17
+F d=1 L=4 dec M=16 a0=1 b0=1 dir=0 D=2 C= 6.938893903907228e-18
+F d=1 L=4 dec M=16 a0=2 b0=2 dir=0 D=0 C= 1.000000000000000e+00
+F d=1 L=4 dec M=16 a0=2 b0=2 dir=0 D=1 C= 6.938893903907228e-17
+F d=1 L=4 dec M=16 a0=2 b0=2 dir=0 D=2 C= 6.938893903907228e-18
+F d=1 L=4 dec M=16 a0=3 b0=3 dir=0 D=0 C= 7.500000000000001e-01
+F d=1 L=4 dec M=16 a0=3 b0=3 dir=0 D=1 C= 2.775557561562891e-17
+F d=1 L=4 dec M=16 a0=3 b0=3 dir=0 D=2 C=-6.938893903907228e-18
+K1b: a=1,b=3 within block: expect a(L-b)/L = 1*1/4=0.25
+F d=1 L=4 dec M=16 a0=1 b0=3 dir=0 D=0 C= 2.500000000000001e-01
+F d=1 L=4 dec M=16 a0=1 b0=3 dir=0 D=1 C=-4.510281037539698e-17
+F d=1 L=4 dec M=16 a0=1 b0=3 dir=0 D=2 C=-3.989863994746656e-17
+K3 sum rule (kernel at K=0 -> sum_X Kern = 1): road A K0 summed
+sum_D K0 (two-sided) = -0.370791

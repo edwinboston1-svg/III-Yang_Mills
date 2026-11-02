@@ -1,0 +1,16 @@
+PHOTON-AVG n=1 beta*Var(Phibar)=0.499999999  r_planar=-0.137749 r_bent=-0.215563  flux row 4|r_pl|+16|r_bent| = 4.000000
+PHOTON-AVG n=1 betaV=0.749 sigma2=0.66756 compact rho_pl=1.369912e-01 rho_bent=2.143818e-01 compact row = 3.978073   [path-holonomy beta_eff = beta/(2 beta Var): averaged 0.7490]
+PHOTON-AVG n=1 betaV=2 sigma2=0.25000 compact rho_pl=1.377495e-01 rho_bent=2.155626e-01 compact row = 4.000000   [path-holonomy beta_eff = beta/(2 beta Var): averaged 2.0000]
+PHOTON-AVG n=1 betaV=10 sigma2=0.05000 compact rho_pl=1.377495e-01 rho_bent=2.155626e-01 compact row = 4.000000   [path-holonomy beta_eff = beta/(2 beta Var): averaged 10.0000]
+PHOTON-AVG n=2 beta*Var(Phibar)=0.499999999  r_planar=-0.147691 r_bent=-0.096035  flux row 4|r_pl|+16|r_bent| = 2.127319
+PHOTON-AVG n=2 betaV=0.749 sigma2=0.66756 compact rho_pl=1.468785e-01 rho_bent=9.550525e-02 compact row = 2.115598   [path-holonomy beta_eff = beta/(2 beta Var): averaged 0.7490]
+PHOTON-AVG n=2 betaV=2 sigma2=0.25000 compact rho_pl=1.476911e-01 rho_bent=9.603469e-02 compact row = 2.127319   [path-holonomy beta_eff = beta/(2 beta Var): averaged 2.0000]
+PHOTON-AVG n=2 betaV=10 sigma2=0.05000 compact rho_pl=1.476911e-01 rho_bent=9.603469e-02 compact row = 2.127319   [path-holonomy beta_eff = beta/(2 beta Var): averaged 10.0000]
+PHOTON-AVG n=4 beta*Var(Phibar)=0.500000000  r_planar=-0.150014 r_bent=-0.036140  flux row 4|r_pl|+16|r_bent| = 1.178303
+PHOTON-AVG n=4 betaV=0.749 sigma2=0.66756 compact rho_pl=1.491889e-01 rho_bent=3.594093e-02 compact row = 1.171810   [path-holonomy beta_eff = beta/(2 beta Var): averaged 0.7490]
+PHOTON-AVG n=4 betaV=2 sigma2=0.25000 compact rho_pl=1.500142e-01 rho_bent=3.614039e-02 compact row = 1.178303   [path-holonomy beta_eff = beta/(2 beta Var): averaged 2.0000]
+PHOTON-AVG n=4 betaV=10 sigma2=0.05000 compact rho_pl=1.500142e-01 rho_bent=3.614039e-02 compact row = 1.178303   [path-holonomy beta_eff = beta/(2 beta Var): averaged 10.0000]
+PHOTON-AVG n=8 beta*Var(Phibar)=0.500000000  r_planar=-0.150469 r_bent=-0.012239  flux row 4|r_pl|+16|r_bent| = 0.797693
+PHOTON-AVG n=8 betaV=0.749 sigma2=0.66756 compact rho_pl=1.496410e-01 rho_bent=1.217106e-02 compact row = 0.793301   [path-holonomy beta_eff = beta/(2 beta Var): averaged 0.7490]
+PHOTON-AVG n=8 betaV=2 sigma2=0.25000 compact rho_pl=1.504688e-01 rho_bent=1.223862e-02 compact row = 0.797693   [path-holonomy beta_eff = beta/(2 beta Var): averaged 2.0000]
+PHOTON-AVG n=8 betaV=10 sigma2=0.05000 compact rho_pl=1.504688e-01 rho_bent=1.223862e-02 compact row = 0.797693   [path-holonomy beta_eff = beta/(2 beta Var): averaged 10.0000]

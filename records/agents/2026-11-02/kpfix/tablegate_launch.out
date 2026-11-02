@@ -1,0 +1,2 @@
+[sync] run: aperanton_table_gate -> STDLIB/build/runs/aperanton_table_gate.2026-11-022026-11-02a.run (the gate's stdout; its manifest and END land beside it)
+[sync] RUN aperanton_table_gate verdict=GREEN rc=0 seconds=595 run=STDLIB/build/runs/aperanton_table_gate.2026-11-022026-11-02a.run manifest=STDLIB/build/runs/aperanton_table_gate.2026-11-022026-11-02a.manifest

@@ -1,0 +1,13 @@
+START C3p 2026-11-02 07:39:59
+KP-CERT SCAN dress=page beta=0.3500 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+KP-CERT SCAN dress=page beta=0.4100 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+KP-CERT SCAN dress=page beta=0.3800 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0106]
+KP-CERT SCAN dress=page beta=0.3950 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page beta=0.3874 gamma=6/1 F0=22: PASS for alpha in [0.0023, 0.0052]
+KP-CERT SCAN dress=page beta=0.3912 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page beta=0.3892 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page beta=0.3882 gamma=6/1 F0=22: PASS for alpha in [0.0031, 0.0039]
+KP-CERT SCAN dress=page beta=0.3886 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page beta=0.3884 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+BISECT beta* = 0.3882 (PASS), refused at 0.3884
+END C3p 2026-11-02 07:43:34

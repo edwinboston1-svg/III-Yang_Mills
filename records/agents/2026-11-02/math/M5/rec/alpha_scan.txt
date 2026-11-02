@@ -1,0 +1,16 @@
+S3'(i)  ordered page record call: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+S3'(ii) ordered page coplanar wall floor 75613532630 e-12: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+S4'(iii) ordered page H1 at r=+3.924877e-01 (u-coef 129917020663 e-12): PASS at alpha (1e-4): 20 30 40 47 55 65 80
+S4'(iv) ordered page one-plaquette part alone: PASS at alpha (1e-4): 1 2 5 10 20 30 40 47 55 65 80
+S3'(i)  ordered local record call: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+S3'(ii) ordered local coplanar wall floor 75613532630 e-12: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+S4'(iii) ordered local H1 at r=+3.924877e-01 (u-coef 129917020663 e-12): PASS at alpha (1e-4): 20 30 40 47 55 65 80
+S4'(iv) ordered local one-plaquette part alone: PASS at alpha (1e-4): 1 2 5 10 20 30 40 47 55 65 80
+S3'(i)  cancel page record call: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+S3'(ii) cancel page coplanar wall floor 84911163844 e-12: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+S4'(iii) cancel page H1 at r=+1.045870e+00 (u-coef 171138624454 e-12): NO PASS for alpha in [1, 80]e-4 (last: FAIL (the inequality's upper end is above alpha) mix=0.000000000000)
+S4'(iv) cancel page one-plaquette part alone: PASS at alpha (1e-4): 1 2 5 10 20 30 40 47 55 65 80
+S3'(i)  cancel local record call: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+S3'(ii) cancel local coplanar wall floor 84911163844 e-12: NO PASS for alpha in [1, 80]e-4 (last: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000)
+S4'(iii) cancel local H1 at r=+1.045870e+00 (u-coef 171138624454 e-12): NO PASS for alpha in [1, 80]e-4 (last: FAIL (the inequality's upper end is above alpha) mix=0.000000000000)
+S4'(iv) cancel local one-plaquette part alone: PASS at alpha (1e-4): 1 2 5 10 20 30 40 47 55 65 80

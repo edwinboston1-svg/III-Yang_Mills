@@ -1,0 +1,4 @@
+B d=4 L=2 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=1000000000.000000000 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=3.525494
+B d=4 L=4 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=1000000000.000000000 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=5.267832
+B d=4 L=8 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=1000000000.000000000 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=5.982555
+B d=4 L=16 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=1000000000.000000000 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=6.203953

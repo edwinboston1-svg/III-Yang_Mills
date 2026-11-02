@@ -1,0 +1,19 @@
+W2-KAT representations to spin 2/2 (GENINV=1): homomorphism and traces [MET]
+W2-FRAME the integrated ring: 0 rows above, 0 below, 1 columns left, 0 right of the core rectangle [-4, 4) x [0, 4)
+W2-LEAN: the blocks of each new state taken in groups of the persisting spins, the old state's blocks freed group by group
+W2-NOSNAP: no face-A snapshot; every slice swept from the first link with the four junction wires clamped at birth
+W2-DRY mode: every state counted, nothing allocated or computed (the values printed below are not read)
+W2-WEIGHT0: only the slices of zero U(1) weight (q - r) + (q' - r') = 0 are swept; the others are left at zero (exact at the e^{theta x}-fixed data, M2b Lemma 0.1)
+W2-OBJECT planar n=4 plaquettes=36 links=85 (shared=3) outside=596 staples five=26 four=59; rule degree 16, 1377 points; beta=2.2 WMAX=2 LMAX=2 datum=ordered order=fwd
+W2-TENSORS built in 0.0 s
+W2-SLICED mode=full: the junction wires clamped in an outer loop of slices; face A's part (order index 36 of 85) swept once per class and gathered per slice
+W2-DRY a=0 c=0: max state 38416 entries, open plaquettes at most 4, 1 slice sweeps; peak memory 0.001 GB (S + N + snapshot); multiply-adds so far 2.5930e+07
+W2-DRY a=0 c=1: max state 153664 entries, open plaquettes at most 4, 2 slice sweeps; peak memory 0.003 GB (S + N + snapshot); multiply-adds so far 1.8857e+08
+W2-DRY a=0 c=2: max state 345744 entries, open plaquettes at most 4, 3 slice sweeps; peak memory 0.007 GB (S + N + snapshot); multiply-adds so far 7.8013e+08
+W2-DRY a=1 c=0: max state 153664 entries, open plaquettes at most 4, 2 slice sweeps; peak memory 0.007 GB (S + N + snapshot); multiply-adds so far 9.1062e+08
+W2-DRY a=1 c=1: max state 307328 entries, open plaquettes at most 4, 6 slice sweeps; peak memory 0.007 GB (S + N + snapshot); multiply-adds so far 1.8086e+09
+W2-DRY a=1 c=2: max state 691488 entries, open plaquettes at most 4, 10 slice sweeps; peak memory 0.014 GB (S + N + snapshot); multiply-adds so far 5.1848e+09
+W2-DRY a=2 c=0: max state 345744 entries, open plaquettes at most 4, 3 slice sweeps; peak memory 0.014 GB (S + N + snapshot); multiply-adds so far 5.5921e+09
+W2-DRY a=2 c=1: max state 460992 entries, open plaquettes at most 4, 10 slice sweeps; peak memory 0.014 GB (S + N + snapshot); multiply-adds so far 8.2674e+09
+W2-DRY a=2 c=2: max state 1037232 entries, open plaquettes at most 4, 19 slice sweeps; peak memory 0.021 GB (S + N + snapshot); multiply-adds so far 1.9170e+10
+W2-DRY-TOTAL peak memory 0.021 GB, multiply-adds 1.9170e+10 (a dry run reads no values)

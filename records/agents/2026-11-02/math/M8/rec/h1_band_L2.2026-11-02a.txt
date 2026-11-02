@@ -1,0 +1,18 @@
+M8 (H1) reading, L = 2 half
+Mblock(c1=0) vs Wilson: max diff 1.78e-15
+  axis  |k|L = 0.050 : tau(c1=0)/(kL)^2 = [0.125013 0.125013 0.125013] ; d tau/d c1 /(kL)^2 = [-0.250104 -0.250104 -0.250104]
+  axis  |k|L = 0.025 : tau(c1=0)/(kL)^2 = [0.125003 0.125003 0.125003] ; d tau/d c1 /(kL)^2 = [-0.250026 -0.250026 -0.250026]
+  diag2 |k|L = 0.050 : tau(c1=0)/(kL)^2 = [0.093752 0.093752 0.125016] ; d tau/d c1 /(kL)^2 = [-0.125065 -0.125065 -0.250091]
+  diag2 |k|L = 0.025 : tau(c1=0)/(kL)^2 = [0.093751 0.093751 0.125004] ; d tau/d c1 /(kL)^2 = [-0.125016 -0.125016 -0.250023]
+  diag4 |k|L = 0.050 : tau(c1=0)/(kL)^2 = [0.093754 0.093754 0.093754] ; d tau/d c1 /(kL)^2 = [-0.125057 -0.125057 -0.125057]
+  diag4 |k|L = 0.025 : tau(c1=0)/(kL)^2 = [0.093751 0.093751 0.093751] ; d tau/d c1 /(kL)^2 = [-0.125014 -0.125014 -0.125014]
+Traceback (most recent call last):
+  File "C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\M8\bin\m8_h1_band.py", line 74, in <module>
+    dft = (ftau(0.01) - ftau(-0.01)) / 0.02 / 0.01 ** 2
+           ~~~~^^^^^^
+  File "C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\M8\bin\m8_h1_band.py", line 71, in ftau
+    Mc = Mblock(p[None, :], c1)
+  File "C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\M8\bin\m8_h1_band.py", line 26, in Mblock
+    v = ph[m]
+        ~~^^^
+IndexError: index 1 is out of bounds for axis 0 with size 1

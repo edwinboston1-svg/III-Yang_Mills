@@ -1,0 +1,6 @@
+== fr_n4_W2L2_left_ordered (frame 0,0,1,0) start 08:24:14
+   rc=0 end 08:25:22 W2-M2b peak memory 0.021 GB (S + N + snapshot), multiply-adds 1.9170e+10 W2-DONE 67.5 s 
+   full: rhoA=0.014722420 Cgrid=0.025410950  SO3: rhoA=0.000027183  E[chi_1/2(A)]: +1.455672900004e-01  census: min 5.542134e-01, negative at 0
+== fr_n4_W2L2_left_cancel (frame 0,0,1,0) start 08:25:32
+   rc=0 end 08:26:44 W2-M2b peak memory 0.021 GB (S + N + snapshot), multiply-adds 1.9170e+10 W2-DONE 70.7 s 
+   full: rhoA=0.016875392 Cgrid=0.028921111  SO3: rhoA=0.000026093  E[chi_1/2(A)]: +1.107069846533e-01  census: min 6.666711e-01, negative at 0

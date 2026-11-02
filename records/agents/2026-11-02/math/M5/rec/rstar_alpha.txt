@@ -1,0 +1,4 @@
+RSTAR ordered page alpha=20e-4: r* in [3985, 3986]e-4
+RSTAR ordered page alpha=40e-4: r* in [4135, 4136]e-4
+RSTAR cancel page alpha=20e-4: r* in [6842, 6843]e-4
+RSTAR cancel page alpha=40e-4: r* in [7040, 7041]e-4

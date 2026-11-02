@@ -1,0 +1,40 @@
+F_R: differences at k=1: d0..d5 = 3840 30720 72960 69120 23040 0
+F_R(s) = (15/4) s^4 + (30/1) s^3 + (60/1) s^2 + (0/1) s^1 + (0/1) s^0
+  s=4 fit=3840 data=3840 MET
+  s=8 fit=34560 data=34560 MET
+  s=12 fit=138240 data=138240 MET
+  s=16 fit=384000 data=384000 MET
+  s=20 fit=864000 data=864000 MET
+  s=24 fit=1693440 data=1693440 MET
+chi_R: differences at k=1: d0..d5 = 224 3104 9984 11712 4608 0
+chi_R(s) = (3/4) s^4 + (1/2) s^3 + (0/1) s^2 + (0/1) s^1 + (0/1) s^0
+  s=4 fit=224 data=224 MET
+  s=8 fit=3328 data=3328 MET
+  s=12 fit=16416 data=16416 MET
+  s=16 fit=51200 data=51200 MET
+  s=20 fit=124000 data=124000 MET
+  s=24 fit=255744 data=255744 MET
+b1G: differences at k=1: d0..d5 = 773 10508 33544 39168 15360 0
+b1G(s) = (5/2) s^4 + (2/1) s^3 + (1/4) s^2 + (0/1) s^1 + (1/1) s^0
+  s=4 fit=773 data=773 MET
+  s=8 fit=11281 data=11281 MET
+  s=12 fit=55333 data=55333 MET
+  s=16 fit=172097 data=172097 MET
+  s=20 fit=416101 data=416101 MET
+  s=24 fit=857233 data=857233 MET
+V_R: differences at k=1: d0..d5 = 2080 13152 26048 21120 6144 0
+V_R(s) = (1/1) s^4 + (15/1) s^3 + (54/1) s^2 + (0/1) s^1 + (0/1) s^0
+  s=4 fit=2080 data=2080 MET
+  s=8 fit=15232 data=15232 MET
+  s=12 fit=54432 data=54432 MET
+  s=16 fit=140800 data=140800 MET
+  s=20 fit=301600 data=301600 MET
+  s=24 fit=570240 data=570240 MET
+L_R: differences at k=1: d0..d5 = 5696 40768 89024 78528 24576 0
+L_R(s) = (4/1) s^4 + (89/2) s^3 + (114/1) s^2 + (0/1) s^1 + (0/1) s^0
+  s=4 fit=5696 data=5696 MET
+  s=8 fit=46464 data=46464 MET
+  s=12 fit=176256 data=176256 MET
+  s=16 fit=473600 data=473600 MET
+  s=20 fit=1041600 data=1041600 MET
+  s=24 fit=2007936 data=2007936 MET

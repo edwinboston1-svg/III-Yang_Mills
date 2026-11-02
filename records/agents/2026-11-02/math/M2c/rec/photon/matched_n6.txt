@@ -1,0 +1,10 @@
+PHOTON-PINNED n=6 ring w=0: 162 object links
+PHOTON-PINNED-PLANAR-w0 n=6  beta*Var(A)=3.942465105 beta*Var(B)=3.942465105 beta*Cov=-0.959047202  non-compact r=-0.243260797  [betaV=0.749: sigma2=5.2636 rho_wr=1.727409e-02]
+PHOTON-PINNED n=6 ring w=1: 246 object links
+PHOTON-PINNED-PLANAR-w1 n=6  beta*Var(A)=4.041044596 beta*Var(B)=4.041044596 beta*Cov=-0.961238015  non-compact r=-0.237868698  [betaV=0.749: sigma2=5.3953 rho_wr=1.518639e-02]
+PHOTON-PINNED-BENT n=6: 162 object links
+PHOTON-PINNED-BENT n=6  beta*Var(A)=3.936591562 beta*Var(B)=3.936591562 beta*Cov=-1.004388593  non-compact r=-0.255141682  [betaV=0.749: sigma2=5.2558 rho_wr=1.867363e-02]
+PHOTON-TRUE-PLANAR n=6  beta*Var(A)=5.203604522 beta*Var(B)=5.203604522 beta*Cov=-1.153818058  non-compact r=-0.221734387  [betaV=0.749: sigma2=6.9474 rho_wr=4.283551e-03]
+PHOTON-TRUE-BENT n=6  beta*Var(A)=5.203604522 beta*Var(B)=5.203604522 beta*Cov=-1.289956655  non-compact r=-0.247896751  [betaV=0.749: sigma2=6.9474 rho_wr=5.212721e-03]
+PHOTON-ROW-TRUE n=6 non-compact edge-adjacent row 4|r_pl| + 16|r_bent| = 4.853286
+PHOTON-ROW-TRUE n=6 betaV=0.749 compact edge-adjacent row 4 rho_pl + 16 rho_bent = 1.005377e-01 (rho_pl 4.2836e-03, rho_bent 5.2127e-03, sigma2 6.9474)

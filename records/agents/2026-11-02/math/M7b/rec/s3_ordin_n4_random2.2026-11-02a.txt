@@ -1,0 +1,37 @@
+W2-COEFM the fine coefficients SUPPLIED (a_0 = 1): a_1=1.440534000000000e-01 a_2=3.643763700000000e-03; staples carry all 2, face plaquettes those with s <= WMAX = 2
+W2-KAT representations to spin 2/2 (GENINV=1): homomorphism and traces [MET]
+W2-OBJECT planar n=4 plaquettes=32 links=76 (shared=3) outside=536 staples five=24 four=52; rule degree 16, 1377 points; beta=1 WMAX=2 LMAX=2 datum=random:2 order=fwd
+W2-TENSORS built in 0.2 s
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag -1.4e-19; max state 38416, open plaquettes at most 4; 0.9 s)
+W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = -9.948022696033e-10 (imag -1.5e-26; max state 614656, open plaquettes at most 4; 1.9 s)
+W2-CLASS a=0 c=2 E[chi_a(A) chi_c(B)] = -1.041176728633e-20 (imag 3.1e-36; max state 3111696, open plaquettes at most 4; 4.7 s)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +1.673092537034e-09 (imag 0.0e+00; max state 153664, open plaquettes at most 4; 1.2 s)
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = -2.962313797714e-14 (imag -7.9e-30; max state 2458624, open plaquettes at most 4; 7.4 s)
+W2-CHANNEL a=1 c=1 k=0 f_k = +1.481119228611e-14 (imag -4.1e-30; P_k idempotent to 6.7e-16; f_k/E = -0.499987284, free law d_k/(d_a d_c) = 0.250000000)
+W2-CHANNEL a=1 c=1 k=2 f_k = -4.443433026325e-14 (imag -4.0e-30; P_k idempotent to 2.9e-15; f_k/E = 1.499987284, free law d_k/(d_a d_c) = 0.750000000)
+W2-CHANNEL-SUM a=1 c=1 sum_k f_k = -2.962313797714e-14 against the class moment -2.962313797714e-14 (sum_k P_k = 1 to 2.7e-15)
+W2-CLASS a=1 c=2 E[chi_a(A) chi_c(B)] = -3.269964369548e-24 (imag 5.4e-41; max state 12446784, open plaquettes at most 4; 23.0 s)
+W2-CHANNEL a=1 c=2 k=1 f_k = +1.089985544311e-24 (imag 2.5e-40; P_k idempotent to 3.2e-16; f_k/E = -0.333332545, free law d_k/(d_a d_c) = 0.333333333)
+W2-CHANNEL a=1 c=2 k=3 f_k = -4.359949913859e-24 (imag -2.7e-40; P_k idempotent to 1.6e-15; f_k/E = 1.333332545, free law d_k/(d_a d_c) = 0.666666667)
+W2-CHANNEL-SUM a=1 c=2 sum_k f_k = -3.269964369548e-24 against the class moment -3.269964369548e-24 (sum_k P_k = 1 to 1.8e-15)
+W2-CLASS a=2 c=0 E[chi_a(A) chi_c(B)] = -8.144810719505e-22 (imag -4.4e-37; max state 345744, open plaquettes at most 4; 3.1 s)
+W2-CLASS a=2 c=1 E[chi_a(A) chi_c(B)] = +1.265452780099e-24 (imag 0.0e+00; max state 5531904, open plaquettes at most 4; 9.7 s)
+W2-CHANNEL a=2 c=1 k=1 f_k = -4.218161810560e-25 (imag -3.0e-40; P_k idempotent to 3.1e-16; f_k/E = -0.333332217, free law d_k/(d_a d_c) = 0.333333333)
+W2-CHANNEL a=2 c=1 k=3 f_k = +1.687268961155e-24 (imag 1.1e-40; P_k idempotent to 1.7e-15; f_k/E = 1.333332217, free law d_k/(d_a d_c) = 0.666666667)
+W2-CHANNEL-SUM a=2 c=1 sum_k f_k = +1.265452780099e-24 against the class moment +1.265452780099e-24 (sum_k P_k = 1 to 2.0e-15)
+W2-CLASS a=2 c=2 E[chi_a(A) chi_c(B)] = +1.077267220946e-30 (imag -2.7e-46; max state 28005264, open plaquettes at most 4; 44.5 s)
+W2-CHANNEL a=2 c=2 k=0 f_k = +3.590736733683e-31 (imag 4.6e-47; P_k idempotent to 8.9e-16; f_k/E = 0.333319038, free law d_k/(d_a d_c) = 0.111111111)
+W2-CHANNEL a=2 c=2 k=2 f_k = -1.077232570315e-30 (imag 2.5e-47; P_k idempotent to 8.9e-16; f_k/E = -0.999967835, free law d_k/(d_a d_c) = 0.333333333)
+W2-CHANNEL a=2 c=2 k=4 f_k = +1.795426117892e-30 (imag -3.4e-46; P_k idempotent to 1.1e-15; f_k/E = 1.666648797, free law d_k/(d_a d_c) = 0.555555556)
+W2-CHANNEL-SUM a=2 c=2 sum_k f_k = +1.077267220946e-30 against the class moment +1.077267220946e-30 (sum_k P_k = 1 to 1.3e-15)
+W2-Z beta=1 datum=random:2 n=4 Z = 2.131915075791e-01
+W2-CONN a=0 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.000000000e+00)
+W2-CONN a=0 c=1 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, -9.948022696e-10)
+W2-CONN a=0 c=2 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, -1.041176729e-20)
+W2-CONN a=1 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.673092537e-09, +1.000000000e+00)
+W2-CONN a=1 c=1 <chi_a chi_c>_c = -2.962147358088e-14 (marginals +1.673092537e-09, -9.948022696e-10)
+W2-CONN a=1 c=2 <chi_a chi_c>_c = -3.269946949698e-24 (marginals +1.673092537e-09, -1.041176729e-20)
+W2-CONN a=2 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals -8.144810720e-22, +1.000000000e+00)
+W2-CONN a=2 c=1 <chi_a chi_c>_c = +1.265451969852e-24 (marginals -8.144810720e-22, -9.948022696e-10)
+W2-CONN a=2 c=2 <chi_a chi_c>_c = +1.077267220938e-30 (marginals -8.144810720e-22, -1.041176729e-20)
+W2-DONE 96.6 s

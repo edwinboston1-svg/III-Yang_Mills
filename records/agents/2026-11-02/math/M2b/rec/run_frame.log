@@ -11,3 +11,9 @@
    rc=0 end 07:26:40 W2-M2b peak memory 0.017 GB (S + N + snapshot), multiply-adds 5.6761e+09
    full: rhoA=0.123121847 Cgrid=0.231292614  SO3: rhoA=0.008385016  E[chi_1/2(A)]: +4.717716022775e-01
 == fr_n2_W3L2_tb_ordered (frame 1,1,0,0) start 07:27:16
+   rc=0 end 07:48:19 W2-M2b peak memory 0.356 GB (S + N + snapshot), multiply-adds 2.3288e+11
+   full: rhoA=0.101049608 Cgrid=0.226633769  SO3: rhoA=0.020258457  E[chi_1/2(A)]: +7.461433063846e-01
+== fr_n2_W3L2_tb_cancel (frame 1,1,0,0) start 07:49:08
+   rc=0 end 08:07:11 W2-M2b peak memory 0.356 GB (S + N + snapshot), multiply-adds 2.3288e+11
+   full: rhoA=0.175552906 Cgrid=0.324399313  SO3: rhoA=0.020354440  E[chi_1/2(A)]: +4.886366159718e-01
+RUN-FRAME-DONE 08:07:40

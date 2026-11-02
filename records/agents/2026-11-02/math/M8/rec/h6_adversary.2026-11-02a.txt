@@ -1,0 +1,41 @@
+Part 2. torus extents [4 2 2 2] : sites 32, links 128, variables 384, plaquettes 192
+  constraint rows 24 (rank 24); residual gauge columns 90; Q G max |entry| = 1.39e-16 (gauge covariance at the trivial background)
+  slice dimension 270 (expected 270)
+  lambda_min of the free form on the slice (torus gamma0 at k in {0, pi/2}): 1.849564
+  lowest free eigenvalues on the slice: [1.849564 1.849564 1.849564 2.       2.       2.      ]
+  b = 0.20 start 0: lambda_min reached 1.669438 (max plaquette angle 0.5655)  [13 s]
+  b = 0.20 start 1: lambda_min reached 1.643250 (max plaquette angle 0.5642)  [24 s]
+  b = 0.20 start 2: lambda_min reached 1.625851 (max plaquette angle 0.5829)  [36 s]
+  b = 0.20 start 3: lambda_min reached 1.668994 (max plaquette angle 0.5779)  [50 s]
+  b = 0.20 start 4: lambda_min reached 1.630219 (max plaquette angle 0.5771)  [63 s]
+  b = 0.20 start 5: lambda_min reached 1.636052 (max plaquette angle 0.6051)  [77 s]
+  b = 0.20 start 6: lambda_min reached 1.656706 (max plaquette angle 0.5929)  [92 s]
+  b = 0.20 start 7: lambda_min reached 1.665293 (max plaquette angle 0.5569)  [104 s]
+b = 0.20 : most negative lambda_min found 1.625851 at max plaquette angle 0.5829 -> convex on all configurations tried
+  b = 0.30 start 0: lambda_min reached 1.394839 (max plaquette angle 0.7810)  [118 s]
+  b = 0.30 start 1: lambda_min reached 1.310668 (max plaquette angle 0.9707)  [135 s]
+  b = 0.30 start 2: lambda_min reached 1.411690 (max plaquette angle 0.8751)  [150 s]
+  b = 0.30 start 3: lambda_min reached 1.419476 (max plaquette angle 0.9245)  [166 s]
+  b = 0.30 start 4: lambda_min reached 1.450311 (max plaquette angle 0.8356)  [180 s]
+  b = 0.30 start 5: lambda_min reached 1.404889 (max plaquette angle 0.8461)  [196 s]
+  b = 0.30 start 6: lambda_min reached 1.415221 (max plaquette angle 0.9629)  [213 s]
+  b = 0.30 start 7: lambda_min reached 1.397000 (max plaquette angle 0.8507)  [228 s]
+b = 0.30 : most negative lambda_min found 1.310668 at max plaquette angle 0.9707 -> convex on all configurations tried
+  b = 0.40 start 0: lambda_min reached 0.909592 (max plaquette angle 1.2245)  [242 s]
+  b = 0.40 start 1: lambda_min reached 1.077471 (max plaquette angle 1.1341)  [254 s]
+  b = 0.40 start 2: lambda_min reached 1.149761 (max plaquette angle 1.2477)  [266 s]
+  b = 0.40 start 3: lambda_min reached 1.085397 (max plaquette angle 1.3428)  [282 s]
+  b = 0.40 start 4: lambda_min reached 1.004760 (max plaquette angle 1.2014)  [295 s]
+  b = 0.40 start 5: lambda_min reached 1.157744 (max plaquette angle 1.2297)  [307 s]
+  b = 0.40 start 6: lambda_min reached 1.109721 (max plaquette angle 1.1126)  [319 s]
+  b = 0.40 start 7: lambda_min reached 0.988952 (max plaquette angle 1.1309)  [332 s]
+b = 0.40 : most negative lambda_min found 0.909592 at max plaquette angle 1.2245 -> convex on all configurations tried
+  b = 0.50 start 0: lambda_min reached 0.630414 (max plaquette angle 1.3730)  [344 s]
+  b = 0.50 start 1: lambda_min reached 0.368546 (max plaquette angle 1.5047)  [356 s]
+  b = 0.50 start 2: lambda_min reached 0.534686 (max plaquette angle 1.4014)  [371 s]
+  b = 0.50 start 3: lambda_min reached 0.198619 (max plaquette angle 1.5605)  [388 s]
+  b = 0.50 start 4: lambda_min reached 0.382777 (max plaquette angle 1.4369)  [403 s]
+  b = 0.50 start 5: lambda_min reached 0.585986 (max plaquette angle 1.5916)  [419 s]
+  b = 0.50 start 6: lambda_min reached 0.306407 (max plaquette angle 1.6045)  [435 s]
+  b = 0.50 start 7: lambda_min reached 0.269650 (max plaquette angle 1.7728)  [450 s]
+b = 0.50 : most negative lambda_min found 0.198619 at max plaquette angle 1.5605 -> convex on all configurations tried

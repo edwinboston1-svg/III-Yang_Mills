@@ -1,0 +1,9 @@
+covariances computed: 1296 k-points, 1.4 s
+beta * sum_{y,nu} |C((x0,mu0),(y,nu))| (per colour), largest five sources:
+  source ((0, 0, 0, 1), 3): l1 = 2.70255 ; variance (diag) = 0.13145 ; max |C| at coarse distance 0..3: 1.31e-01 2.64e-02 1.24e-03 1.10e-04
+  source ((0, 0, 1, 0), 2): l1 = 2.70255 ; variance (diag) = 0.13145 ; max |C| at coarse distance 0..3: 1.31e-01 2.64e-02 1.24e-03 1.10e-04
+  source ((0, 1, 0, 0), 1): l1 = 2.70255 ; variance (diag) = 0.13145 ; max |C| at coarse distance 0..3: 1.31e-01 2.64e-02 1.24e-03 1.10e-04
+  source ((1, 0, 0, 0), 0): l1 = 2.70255 ; variance (diag) = 0.13145 ; max |C| at coarse distance 0..3: 1.31e-01 2.64e-02 1.24e-03 1.10e-04
+  source ((0, 1, 1, 1), 0): l1 = 2.25137 ; variance (diag) = 0.09910 ; max |C| at coarse distance 0..3: 9.91e-02 2.29e-02 1.69e-03 9.23e-05
+smallest: ((1, 0, 1, 1), 3) l1 = 1.96881
+max over sources of the l1 norm: 2.70255 ; mean 2.11683

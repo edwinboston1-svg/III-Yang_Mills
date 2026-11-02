@@ -1,0 +1,20 @@
+START 2026-11-02 09:55:59
+9fcc99a2f249a1253653b9b1bb250c10 */c/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/M1c/kp_cert_m1c_ref.awk
+== controls: eps = 0 must PASS (the record's verdicts)
+KP-CERT SCAN dress=page graded=S24-table beta=0.3650 gamma=6/1 F0=22: PASS for alpha in [0.0039, 0.0050]
+KP-CERT SCAN dress=page graded=S24-table beta=0.5100 gamma=6/1 F0=22: PASS for alpha in [0.0033, 0.0038]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0041, 0.0047]
+== refined bracket: the step above each threshold of record
+KP-CERT SCAN dress=page graded=S24-table beta=0.3652 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.3658 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4766 gamma=6/1 F0=20: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.4818 gamma=6/1 F0=20: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page graded=S24-table beta=0.5102 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5200 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+NECK-PRICE beta=0.3650 dress=page F0=22 mode=w: PASS at eps = 937 e-5, refused at eps = 946 e-5
+NECK-PRICE beta=0.3650 dress=page F0=22 mode=a: PASS at eps = 468 e-5, refused at eps = 477 e-5
+NECK-PRICE beta=0.5100 dress=page F0=22 mode=w: PASS at eps = 195 e-5, refused at eps = 204 e-5
+NECK-PRICE beta=0.5100 dress=page F0=22 mode=a: PASS at eps = 39 e-5, refused at eps = 48 e-5
+NECK-PRICE beta=0.4764 dress=page F0=20 mode=w: PASS at eps = 204 e-5, refused at eps = 214 e-5
+NECK-PRICE beta=0.4764 dress=page F0=20 mode=a: PASS at eps = 58 e-5, refused at eps = 68 e-5
+END 2026-11-02 10:18:54

@@ -1,0 +1,19 @@
+### a = 0.1440534,1e-12
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.14405340, 0.14405340] u~ in [0.14405340, 0.14405340] r_hi=0.726052 LHS in [0.0109938, 0.0109938] alpha=0.0009999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000000
+### a = 0.1440534,0.003643763670
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.024728, 0.024728] root in [0.024728, 0.024728] u in [0.14405340, 0.14405340] u~ in [0.14766005, 0.14766005] r_hi=0.744230 LHS in [0.0195025, 0.0195025] alpha=0.0009999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000000
+### a = 0.0953632,0.0009544584290
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.005926, 0.005926] root in [0.005926, 0.005926] u in [0.09536320, 0.09536320] u~ in [0.09593002, 0.09593002] r_hi=0.483502 LHS in [0.0000403, 0.0000403] alpha=0.0009999 -> PASS mix=0.000000000000
+### a = 0.0953632,1e-12
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.09536320, 0.09536320] u~ in [0.09536320, 0.09536320] r_hi=0.480645 LHS in [0.0000388, 0.0000388] alpha=0.0009999 -> PASS mix=0.000000000000
+### a = 0.0953632,0.002
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.012818, 0.012818] root in [0.012818, 0.012818] u in [0.09536320, 0.09536320] u~ in [0.09659348, 0.09659348] r_hi=0.486846 LHS in [0.0000422, 0.0000422] alpha=0.0009999 -> PASS mix=0.000000000000
+### a = 0.0953632,0.004
+KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.027521, 0.027521] root in [0.027521, 0.027521] u in [0.09536320, 0.09536320] u~ in [0.09802415, 0.09802415] r_hi=0.494057 LHS in [0.0000465, 0.0000465] alpha=0.0009999 -> PASS mix=0.000000000000
+u* (LOCAL scan, a1 = 9.5446e-4): largest passing a_1/2 in [0.1338992, 0.1339031]

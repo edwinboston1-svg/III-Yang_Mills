@@ -1,0 +1,14 @@
+== SU(2) beta=2.2 datum=free grid=256 Cspan=30 CK=300 (span 11 of 34 irreps, top dim 34) a_rho=0.464479 tail(phiX)=0.0e+00 rho_link min/max=1.0e+00 | MAXCORR=0.000000 next=0.000000 | centre-even (SO(3)) MAXCORR=0.000000
+rc=0 (SU2 2.2 256 30 300 free)
+== SU(2) beta=2.2 datum=ordered grid=256 Cspan=30 CK=300 (span 11 of 34 irreps, top dim 34) a_rho=0.464479 tail(phiX)=2.6e-46 rho_link min/max=3.4e-06 | MAXCORR=0.032057 next=0.001483 | centre-even (SO(3)) MAXCORR=0.029970
+rc=0 (SU2 2.2 256 30 300)
+== SU(2) beta=2.2 datum=ordered grid=256 Cspan=60 CK=400 (span 15 of 40 irreps, top dim 40) a_rho=0.464479 tail(phiX)=3.8e-48 rho_link min/max=3.4e-06 | MAXCORR=0.032057 next=0.001483 | centre-even (SO(3)) MAXCORR=0.029985
+rc=0 (SU2 2.2 256 60 400)
+== SU(2) beta=2.3 datum=ordered grid=256 Cspan=30 CK=300 (span 11 of 34 irreps, top dim 34) a_rho=0.479279 tail(phiX)=6.2e-45 rho_link min/max=1.6e-06 | MAXCORR=0.031861 next=0.001443 | centre-even (SO(3)) MAXCORR=0.030179
+rc=0 (SU2 2.3 256 30 300)
+== G2 beta=12.5774 datum=free grid=96 Cspan=30 CK=80 (span 23 of 64 irreps, top dim 40579) a_rho=0.464479 tail(phiX)=0.0e+00 rho_link min/max=1.0e+00 | MAXCORR=0.000000 next=0.000000
+rc=0 (G2 12.5774 96 30 80 free)
+== G2 beta=12.5774 datum=ordered grid=96 Cspan=30 CK=80 (span 23 of 64 irreps, top dim 40579) a_rho=0.464479 tail(phiX)=2.7e-06 rho_link min/max=-5.1e-08 | MAXCORR=0.033264 next=0.001244
+rc=0 (G2 12.5774 96 30 80)
+== G2 beta=12.5774 datum=ordered grid=128 Cspan=40 CK=110 (span 30 of 89 irreps, top dim 89726) a_rho=0.464479 tail(phiX)=2.4e-08 rho_link min/max=-2.4e-09 | MAXCORR=0.033264 next=0.001244
+rc=0 (G2 12.5774 128 40 110)

@@ -1,0 +1,3 @@
+L2DOB-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+L2DOB-RECORD kat_n4_N3L3_ord.txt: U(1), LMAX=3, 28 moments read
+L2DOB-U1 kat_n4_N3L3_ord.txt L=3 grid 720: min p_A 4.2387e-01 min p_B 4.2387e-01, joint negative at 0; rhoA=0.117466885 rhoB=0.117466885 sigmaH=0.109732342 (next 4.064e-02 2.533e-04) Cgrid=0.162300491 rho/C=0.723762

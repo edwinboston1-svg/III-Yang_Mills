@@ -1,0 +1,7 @@
+single n=1: N=6 bonds=60 blockbonds=60 |R^2-R|,|R-R^T|=9.7e-16 lam_min(That)=0.117387 lam_max(That)=1.000000 |QE-M|=0.0e+00 |QA_B-B|=0.0e+00 worstB: comp/min energy=8.5188/8.5188 randomB: comp/min=2.9402/2.9402 [0.5s]
+single n=2: N=12 bonds=264 blockbonds=60 |R^2-R|,|R-R^T|=1.4e-15 lam_min(That)=0.036190 lam_max(That)=1.000000 |QE-M|=0.0e+00 |QA_B-B|=5.6e-17 worstB: comp/min energy=28.2985/27.6318 randomB: comp/min=6.8322/5.7710 [1.6s]
+single n=4: N=24 bonds=1104 blockbonds=60 |R^2-R|,|R-R^T|=1.4e-15 lam_min(That)=0.022143 lam_max(That)=0.999999 |QE-M|=2.2e-16 |QA_B-B|=1.4e-16 worstB: comp/min energy=49.4225/45.1604 randomB: comp/min=14.5450/8.0421 [2.3s]
+single n=8: N=48 bonds=4512 blockbonds=60 |R^2-R|,|R-R^T|=1.8e-15 lam_min(That)=0.019014 lam_max(That)=1.000000 |QE-M|=2.8e-17 |QA_B-B|=5.6e-17 worstB: comp/min energy=62.8170/52.5925 randomB: comp/min=22.0705/9.0754 [13.7s]
+three scales 1/2/4: N=32 bonds=1984 blockbonds=928 |R^2-R|,|R-R^T|=5.8e-15 lam_min(That)=0.030831 lam_max(That)=1.012638 |QE-M|=2.2e-16 |QA_B-B|=1.1e-16 worstB: comp/min energy=39.5965/32.4344 randomB: comp/min=3.8333/3.2810 [6.8s]
+ratio lam_min(n=8)/lam_min(n=4) = 0.8586848392604323
+lam_min(3scale)/min(single) = 1.6215040323506933

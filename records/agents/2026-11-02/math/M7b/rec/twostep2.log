@@ -1,0 +1,9 @@
+start Q2 ordered Mon, Nov  2, 2026  9:21:45 AM
+end Q2 ordered rc=0 Mon, Nov  2, 2026  9:32:07 AM
+start Q2 cancel Mon, Nov  2, 2026  9:32:07 AM
+end Q2 cancel rc=0 Mon, Nov  2, 2026  9:45:05 AM
+start Q3 ordered Mon, Nov  2, 2026  9:45:07 AM
+end Q3 ordered rc=0 Mon, Nov  2, 2026  9:55:54 AM
+start Q3 cancel Mon, Nov  2, 2026  9:55:55 AM
+end Q3 cancel rc=0 Mon, Nov  2, 2026 10:17:06 AM
+TWOSTEP2 DONE Mon, Nov  2, 2026 10:17:07 AM

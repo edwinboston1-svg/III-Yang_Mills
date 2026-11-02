@@ -1,0 +1,13 @@
+#path	first_line	last_line	total_lines	bytes	sha256_16	note
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_dense.sorted	4217	4970	4970	153976	0503cf833e49a9a9	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_nosplit.in	1	382	382	72554	43ab90da52663076	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_pass1.out	1	22	22	1991	e7921e25828d5272	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_pass1.read.ids	1	21372	21372	170974	42e86e6aa77146e0	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_pass1a.done.ids	1	226	226	1808	7acd94d0a3656fd8	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_pass1a.shard0.out	1	60	60	6161	927d112c65c97460	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_pass1a.shard1.out	1	61	61	6204	76988cb62a2d74cf	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_pass1a.shard2.out	1	61	61	6245	ce49679edca57693	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_pass1a.shard3.out	1	64	64	6562	66cf25782ab1d315	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_pass1b.shard0.out	1	1789	1789	169643	438647d8cdc8e5d5	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_pass1b.shard1.out	1	1779	1779	168777	ffb2656cbc246d32	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/local_tail_pass1b.shard10.out	1	1839	1839	174325	f2b046996b3abfd3	III-UNTRACKED:STDLIB/build/aperanton

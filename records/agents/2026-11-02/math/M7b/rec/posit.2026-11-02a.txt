@@ -1,0 +1,14 @@
+POSIT beta=2.2 W=2: min_phi w_W = +0.071033 at phi = 2.0920 (exact w there 0.192176; w(pi) exact 0.063677) POSITIVE
+POSIT beta=2.2 W=3: min_phi w_W = -0.105011 at phi = 3.1416 (exact w there 0.063677; w(pi) exact 0.063677) SIGNED
+POSIT beta=2.2 W=4: min_phi w_W = +0.086769 at phi = 2.6179 (exact w there 0.085514; w(pi) exact 0.063677) POSITIVE
+POSIT beta=2.2 W=5: min_phi w_W = +0.053935 at phi = 3.1416 (exact w there 0.063677; w(pi) exact 0.063677) POSITIVE
+POSIT beta=2.2 W=6: min_phi w_W = +0.065435 at phi = 3.1416 (exact w there 0.063677; w(pi) exact 0.063677) POSITIVE
+POSIT beta=2.2 W=7: min_phi w_W = +0.063404 at phi = 3.1416 (exact w there 0.063677; w(pi) exact 0.063677) POSITIVE
+POSIT beta=2.2 W=8: min_phi w_W = +0.063714 at phi = 3.1416 (exact w there 0.063677; w(pi) exact 0.063677) POSITIVE
+POSIT beta=3 W=2: min_phi w_W = -0.171165 at phi = 1.9713 (exact w there 0.117786; w(pi) exact 0.018890) SIGNED
+POSIT beta=3 W=3: min_phi w_W = -0.404966 at phi = 3.1416 (exact w there 0.018890; w(pi) exact 0.018890) SIGNED
+POSIT beta=3 W=4: min_phi w_W = +0.003721 at phi = 2.4165 (exact w there 0.040178; w(pi) exact 0.018890) POSITIVE
+POSIT beta=3 W=5: min_phi w_W = -0.025656 at phi = 3.1416 (exact w there 0.018890; w(pi) exact 0.018890) SIGNED
+POSIT beta=3 W=6: min_phi w_W = +0.023953 at phi = 2.7401 (exact w there 0.023980; w(pi) exact 0.018890) POSITIVE
+POSIT beta=3 W=7: min_phi w_W = +0.016601 at phi = 3.1416 (exact w there 0.018890; w(pi) exact 0.018890) POSITIVE
+POSIT beta=3 W=8: min_phi w_W = +0.019313 at phi = 3.1416 (exact w there 0.018890; w(pi) exact 0.018890) POSITIVE

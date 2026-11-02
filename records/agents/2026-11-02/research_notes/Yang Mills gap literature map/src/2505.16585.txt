@@ -1,0 +1,582 @@
+
+=== PAGE 1 ===
+EXPANDED REGIMES OF AREA LAW FOR LATTICE YANG–MILLS THEORIES
+SKY CAO, RON NISSIM, AND SCOTT SHEFFIELD
+Abstract. We extend the parameter regimes for which area law is proven for pure UpNq lattice Yang–
+Mills theories, in particular when N is large. This improves on a classical result of Osterwalder-Seiler from
+1978. To do so, we view the master loop equation as a linear inhomogeneous equation for Wilson string
+expectations, and then prove an a priori bound for solutions to the equation. The main novelty is in how
+we deal with the merger term in the master loop equation. This is done by introducing a truncated model
+for which the merger term is unproblematic, and then showing that the truncated model well approximates
+the original model.
+Contents
+1.
+Introduction
+1
+2.
+Preliminaries
+6
+2.1.
+Parameters
+7
+2.2.
+General master loop equation
+9
+3.
+Truncated model
+12
+4.
+Original model
+18
+4.1.
+Bad plaquette reduction
+19
+4.2.
+Modified master loop equation
+22
+4.3.
+A priori estimate
+25
+References
+33
+1. Introduction
+The problem of quark confinement in four dimensions is one of the major open problems in Yang–Mills
+theory. For instance, it is mentioned as one of the natural extensions to the Yang–Mills millennium problem
+in [JW06]. The problem amounts to showing a rapid decay property for a family of observables known as
+Wilson loop expectations. This rapid decay property is known as area law, and was introduced by Wilson
+[Wil74] as a potential explanation for the phenomenon of quark confinement (that is, single quarks are never
+observed in nature). The conjecture is that in four dimensions, area law should hold for non-Abelian Yang–
+Mills theories at all values of the inverse coupling constant β, which is a parameter that governs the amount
+of order/disorder in the system. Due to physical reasons, the main theory of interest is SUp3q Yang–Mills
+theory, but it would already be mathematically interesting to show area law at all β for any non-Abelian
+theory.
+As far as we are aware, the only prior result showing area law in dimension four in some regime of β
+is the classical result of Osterwalder-Seiler [OS78], which works in the strong coupling regime (where β is
+small). We briefly survey other relevant works. Fr¨ohlich-Spencer [FS82] showed that area law does not hold
+for the Up1q Yang–Mills theory in four dimensions at large enough β (so that the non-Abelian assumption
+is necessary). In dimension three, area law is known to hold for the Up1q theory at all β [GM81], and then
+by a general result of [Fr¨o79], this implies that the same is true for UpNq Yang–Mills theory for any N ě 1.
+We remark that [Fr¨o79] also applies in general dimensions, but by tracking the constants in that paper, one
+sees that in general dimensions, it reproves the Osterwalder-Seiler result [OS78]. The works [Cha19a, Jaf16]
+showed area law in the large-N limit, under certain conditions on β. The works [DF80, Cha21] gave sufficient
+conditions for area law to hold, in terms of strong enough mass gap assumptions.
+1
+arXiv:2505.16585v3  [math.PR]  26 Sep 2025
+
+=== PAGE 2 ===
+2
+SKY CAO, RON NISSIM, AND SCOTT SHEFFIELD
+Remark 1.1. Although [OS78] is the strongest prior result, we should note that since this paper first appeared
+on the arXiv, there has been a posterior result: namely, the current authors in [CNS25] were able to establish
+area law for a larger range of β values (albeit with weaker constants for the exponential decay rates) using a
+completely different approach—one that combines dynamical techniques recently introduced in [SZZ23] with
+more classical area-law-proof techniques from [DF80]. Nonetheless, is is worth noting that several features
+distinguish the current paper from [CNS25]. First, the proof in this paper is inspired by the ideas of gauge
+string duality (string trajectories, surfaces) and it has long been of independent interest to explore what
+results could be obtained from this duality. Second, as noted above, the “string tension” bound obtained in
+this paper is better than the one in [CNS25], see item 4 in Remark 1.3, so at least for now there is also some
+technical advantage to the string theoretic point of view. Finally, as further discussed below, it remains a
+major open problem to show area law for large β and d “ 4 for arbitrary N ą 1 (e.g. N “ 2 or N “ 3)
+and to control the corresponding string tension constants in the large β limit. Area law is known not to hold
+for large β and d “ 4 when N “ 1, so any proof will have to use N ą 1 in a crucial way. The dynamical
+and string-theoretic approaches provide different answers to the question of why one might expect taking
+N ą 1 to make a difference: in the dynamical approach of [SZZ23] and [CNS25], the difference is the positive
+curvature of groups like SUpNq when N ą 1 and the implications for the mixing rates of a type of Glauber
+dynamics on the configuration space. In the surface sum or string trajectory formulation, the difference is
+that when N ą 1, there is a bias toward surface configurations with many small and low genus components.
+Introducing a large Wilson loop effectively forces the existence of a large “defect” (e.g. a large surface or
+string trajectory) and one expects to pay a “cost” proportional to the size of the defect (although controlling
+this cost becomes more challenging when β is large and N is small, see Remark 1.4).
+In recent years, there have also been a number of works in probability studying other aspects of Yang–Mills,
+see e.g. [She21, GS23, SSZ24b, SZZ23, CS23, CPS23, CG25, AN23, Cha24, BCS24, CC24b, SSZ24a, SZZ24,
+BCS25] for results on the lattice, and [Che19, CCHS22, CC23, CC24a, CCHS24, Che22, BC23, BC24, CS25]
+for results in the continuum. For additional discussion and even more references about area law and Yang–
+Mills more broadly, see the survey [Cha19b].
+In this paper, we improve on the classical Osterwalder-Seiler result [OS78] by showing area law for pure
+UpNq Yang–Mills theories in an extended regime, in particular when N is large. For a visualization of the
+difference between the two regimes, see Figure 1. Our main theorem is as follows. Any unfamiliar notation
+will be defined in Section 2.
+Theorem 1.2 (Area law). Consider lattice Yang–Mills theory with gauge group G “ UpNq. For all d ě 2,
+there exists β0pdq ą 0 such that for all β ď β0pdq and all N ě 1, for any rectangular loop ℓbelonging to a
+finite lattice Λ, we have that
+|xWℓyΛ,β,N| ď C1,dC|ℓ|
+N expp´C2,dareapℓqq,
+where |ℓ| denotes the perimeter of ℓ, and C1,d, C2,d are constants depending on d, and CN is a constant
+depending on N.
+Remark 1.3. We make the following remarks regarding Theorem 1.2.
+(1) The result is really a result about large enough N, because if N is bounded, then we could apply the
+Osterwalder-Seiler result [OS78]. Thus throughout this paper, one should think of N as larger than
+some dimensional constant. One main point behind Theorem 1.2 is that when N becomes large, it
+should become easier to prove area law. This is due to various reasons which we will discuss later.
+Our proof manages to take advantage of these reasons, whereas the Osterwalder-Seiler result does
+not, which is why it gives a threshold which becomes worse with N.
+(2) The result is uniform in the lattice Λ, and thus the same estimate will hold for any infinite-volume
+subsequential limit. In fact, in our current regime, one would expect the infinite volume limit to
+be unique, as was shown for SOpNq, SUpNq in [SZZ23]. One would expect that their proof can be
+extended to UpNq, althought currently this is not written anywhere, to our knowledge.
+(3) As long as ℓis a (sequence of) rectangular loop(s) with both side lengths tending to infinity, the
+factor C|ℓ|
+N will be swamped by the factor expp´C2,dareapℓqq, because in this case |ℓ| ! areapℓq.
+Thus for such sequences of rectangular loops (which indeed are of primary interest), the area decay
+becomes more manifest.
+
+=== PAGE 3 ===
+EXPANDED REGIMES OF AREA LAW FOR LATTICE YANG–MILLS THEORIES
+3
+N
+β
+[OS78]
+[CNS25]
+1
+N
+˜β
+[OS78]
+1
+[CNS25]
+Figure 1. Left: The two curves correspond to the β thresholds below which area law is
+proven to hold. The dark red curve corresponds to the Osterwalder-Seiler result [OS78],
+which shows that taking β !d 1{N (i.e., β ď cpdq{N for some small dimensional constant
+cpdq) suffices. We show that taking β !d 1 suffices, which corresponds to the violet line.
+In particular, our threshold does not decay with N. Due to various choices of dimensional
+constants in our argument, our threshold may initially start out lower than the Osterwalder-
+Seiler threshold, but once N is large enough, our threshold is better. Right: If one uses
+the normalized trace in defining lattice Yang–Mills (i.e. if one uses eigenvalue mean instead
+of eigenvalue sum; see Section 2), then the parameter β is effectively replaced by ˜β “ Nβ.
+With this scaling, [OS78] proves area law for ˜β !d 1 (dark red line), while we establish area
+law for ˜β !d N (violet line). This scaling is natural for some purposes, see Remark 2.4.
+From either perspective, it is an open problem to further extend the purple region upward
+and leftward. Treating small N and large β (or equivalently, large ˜β) is of particular interest.
+(4) (Comparison with the dynamical approach) The area law upper bound proved in [CNS25, Theorem
+1.6] at present exhibits poor dependence on the parameter N. That is, the analog of the constant
+C2,d (which governs the rate of area law decay) from Theorem 1.2 actually decays with N in [CNS25,
+Theorem 1.6] (see the footnote on [CNS25, Page 6], which is related to [SZZ23, Remark 4.12]). On
+the other hand, the constant C2,d in Theorem 1.2 does not decay with N. Thus, in the regime
+β ď β0pdq of the current paper, the upper bound of Theorem 1.2 is better than the corresponding
+upper bound of [CNS25, Theorem 1.6].
+(5) We expect that our proof approach should work for various other groups such as SUpNq, and perhaps
+even SOpNq, after various minor adjustments. In this paper, we focus on the most concrete case of
+UpNq, where the master loop equation (to be discussed soon) is the simplest.
+In order to prove Theorem 1.2, we introduce new techniques for analyzing lattice Yang–Mills theory. In
+particular, we develop a way of analyzing the finite-N Master loop equation, which is a recursive equation
+satisfied by Wilson string expectations. In the past, this equation has only been understood in the large
+N-limit, see [Cha19a, Jaf16, CJ16].
+In this limit, the solution to the equation may be expressed as an
+absolutely convergent expansion (essentially by Picard iteration), while at finite N, the same does not hold,
+which forms an immediate barrier to understanding the finite-N equation.
+To circumvent this issue, we compare the lattice Yang-Mills theory to a “truncated model” for which
+solutions to the “truncated Master loop equation” may indeed be expressed as a convergent expansion. We
+then extend this argument back to the original model, by essentially showing that the truncated model very
+well approximates the original model. We sketch the argument in more detail in the paragraphs following
+the next two remarks.
+As discussed more thoroughly in Remark 1.8, one can interpret our approach as implementing a “surface
+exploration process” for the surfaces constructed in [CPS23]. In particular, our argument can be thought
+of as analyzing lattice Yang–Mills theory via a geometric representation for its correlation functions (i.e.
+Wilson string expectations). For more discussion on this general approach towards understanding statistical
+
+=== PAGE 4 ===
+4
+SKY CAO, RON NISSIM, AND SCOTT SHEFFIELD
+mechanical models, see [BCS25, Section 1.1]. We hope that our approach can be further developed, for
+instance to handle the future directions discussed in Remark 1.4.
+Remark 1.4 (Future directions). It would be natural to try to extend Theorem 1.2 to the case where β is
+allowed to depend linearly in N, e.g. β „ cdN, where cd is a small dimensional constant. In other words,
+the natural next step is to further develop the approach of the present paper to reprove the main result of
+[CNS25]. This is the regime of the large-N limit, in that upon sending N to infinity, we obtain the limiting
+theory described in [Cha19a, Jaf16, BCS24].
+While much is known about the limiting N Ñ 8 theory,
+comparatively less is known about more quantitative questions related to rates of convergence to the limit.
+We remark that while the result [CNS25] covers the regime β „ cdN, at present it does not imply such
+quantitative statements, due the poor dependence on N of certain constants, which was discussed in item 4
+in Remark 1.3 (in principle it may be possible to refine the arguments of [SZZ23, CNS25] to obtain such
+quantitative statements, but so far this has not yet been done).
+If we are able to extend the approach of the current paper to the linear regime β „ cdN, then we expect
+that by necessity, we will be able to obtain quantitative estimates on rates of convergence. In order to obtain
+the extension, it appears that new ideas are needed even for the truncated model. If one wants to still
+perform some type of contraction mapping argument, then the main question is in finding an ansatz for the
+norm appearing in the contraction estimate (1.1). Presumably, it needs to account for certain cancellations
+that occur in the regime β „ cdN, which currently we are not utilizing. To put it differently, if a proof were
+formulated in terms of surface sums, it might require showing that a certain sum of surface weights is small,
+even though the sum of the absolute values of those weights is large; to this end, one would have to show
+that the positive and negative weights very nearly cancel each other out. This issue may become even more
+delicate when one goes beyond the β „ cdN regime, which would be the natural next step after achieving
+the linear regime β „ cdN.
+Next, we discuss some of the main ideas in the proof of Theorem 1.2 in more detail. The main property we
+use is that the Wilson string expectations satisfy a linear inhomogeneous equation, known as the master loop
+equation. This equation appeared in various forms in [Cha19a, CJ16, Jaf16, SSZ24b, CPS23, AN23, BCS24],
+as well as in many physics references (see [Cha19a]). The approach is then to prove an a priori estimate for
+solutions to this equation, which amounts to proving a contraction estimate for the linear operator appearing
+in the equation. More explicitly, we are just using the simple fact that if we have a matrix G and vectors
+f˚, g such that
+f˚ “ Gf˚ ` g,
+and moreover G satisfies the contraction estimate
+}Gf} ď 1
+2}f} for all vectors f,
+(1.1)
+where }¨} is some appropriate norm, then we automatically have that (assuming of course that }f˚}, }g} ă 8)
+}f˚} ď 2}g}.
+In the context of Yang–Mills, one should think of f˚ as a function mapping strings to Wilson string expec-
+tations, and the norm } ¨ } is defined so that if }f˚} À 1, then area law decay holds.
+This PDE viewpoint was first introduced in the context of Yang–Mills by Chatterjee in [CJ16], and
+subsequently applied in [CJ16, Jaf16]. All these cited works dealt with the large-N limit (or expansions
+around the large-N limit), because in this case the master loop equation simplifies, and so it is more
+manageable to prove the contraction estimate (1.1), which then directly leads to area law.
+When N is finite, the master loop equation becomes more complicated, due to the presence of the so-called
+“merger term”. These merger terms come with a prefactor of N ´2, which is why they are not present in the
+large-N limit, and also why we expect that area law is easier to prove when N becomes large.
+Nevertheless, even with the N ´2 prefactor, this merger term forms an essential obstruction towards proving
+the contraction estimate (1.1). In particular, the previous arguments in [Cha19a, CJ16, Jaf16, BCS24] do
+not directly apply. One of the main novelties in the present work is a new approach towards managing
+this problematic term, at least when N is large. To do so, we first introduce a truncated version of lattice
+Yang–Mills, which is defined precisely so that the merger term becomes unproblematic. Thus the contraction
+estimate (1.1) can be proven for this truncated model, from which area law follows. On the other hand,
+
+=== PAGE 5 ===
+EXPANDED REGIMES OF AREA LAW FOR LATTICE YANG–MILLS THEORIES
+5
+in our regime of parameters, one expects the truncated model to approximate the original model very well.
+Therefore, one hopes to be able to extend some form of the contraction estimate to the original model. The
+main idea in the extension step is that it should be extremely rare for the merger term to be problematic,
+and thus instead of trying to prove the contraction estimate in all situations, we content ourselves with
+proving the contraction estimate in the “typical” situation. In the atypical scenarios where we come across
+a problematic merger term, we a priori know that this is quite rare, and so such a term already comes with
+a huge cost.
+In slightly more detail, the truncated model is defined by imposing an upper bound on the number of
+copies of each plaquette in the system. As a consequence of this upper bound, the number of possible merger
+terms itself becomes bounded, which ultimately is why these terms become unproblematic. On the other
+hand, the imposed upper bound is still large enough so that it is extremely rare to see plaquettes with more
+copies than the upper bound, which in the end is the reason why we are able to obtain the result for the
+original model. In this discussion, we have neglected one key idea which is needed to handle this extension
+step, because the discussion of this idea would perhaps be too detailed in current introductory section. Thus,
+we include an even more detailed discussion of the extension step near the beginning of Section 4.
+At a high level, this strategy for extending the contraction estimate to the original model is analogous
+to following way of refining the second moment method in probability. In various problems of probability,
+the main thing to show is that for some given random variable, the second moment is of the same order as
+the square of the first moment. However, there are certain situations where this is not the case, because the
+second moment is much larger. On the other hand, if one can show that this largeness arises from events
+of very low probability, then one can hope to make a modified version of the second moment method work,
+where one computes the second moment after excluding these low probability problematic events.
+Remark 1.5 (Comparison to the proof of [OS78]). To compare with the proof strategy of Osterwalder-Seiler
+[OS78], there the authors set the truncation level to be at one plaquette, in that they assumed that β was
+small enough so that it is very rare to see even a single plaquette. The corresponding truncated model is
+then a system with no plaquettes, for which area law trivially holds.
+Our refinement of [OS78] arises because we allow our truncation level to depend on N; as N increases,
+so does our truncation level. The additional input needed is an area law result for more general truncated
+models, where the truncation level is allowed to be much larger than 0. As previously discussed, we are able
+to show such a result via a contraction argument, recall (1.1).
+Remark 1.6 (Relation to the Dyson-Schwinger equation). The master loop equation can also be thought
+of as the Yang–Mills analog of the Dyson-Schwinger equation for matrix models. The Dyson-Schwinger
+equation has been an important tool for studying matrix models and interacting particle systems, see e.g.
+[BG13, GN15, BGK15, Gui19, GH24]. However, similar to the previous works [Cha19a, CJ16, Jaf16, BCS24]
+in the lattice Yang-Mills setting, in these other settings the Dyson-Schwinger equation was used to recover
+1{N asymptotic expansions or other asymptotic properties for N Ñ 8. In contrast, we are able to prove a
+non-asymptotic result, i.e. area law at finite N.
+Remark 1.7 (Relation to bootstrap). The idea to use the master loop equation to deduce results about Wilson
+loop expectations has also recently appeared in physics, under the name “bootstrap”. See the recent works
+[KZ23, KZ25] which obtain numerical results along these lines. In other areas of physics, the bootstrap has
+been quite successful in numerically determining observable expectation values, see e.g. the breakthrough
+work [ESPP`12] on the 3D Ising model.
+Remark 1.8 (Relation to the surface sums of [CPS23]). The work [CPS23] gave a formula for Wilson loop
+and string expectations in terms of weighted surface sums. Given a loop, the formula involves a sum over
+all surfaces spanning the loop. Although these surface sums do not appear directly in the present work, we
+found it conceptually quite helpful to think in terms of surfaces. In terms of surfaces, our proof strategy
+proceeds by exploring the surface spanned by the loop, one face at a time. This is exactly analogous to how
+one analyzes models of random planar maps via peeling [Cur23]. In the context of planar maps, conditioning
+on the first step of the peeling process leads to Tutte’s equation, which is absolutely central in the analysis
+of planar maps. In our context, conditioning on the first step of the exploration process of our surfaces
+precisely leads to the master loop equation. Thus, one should think of the master loop equation as the
+analog of Tutte’s equation for the surface models described in [CPS23].
+
+=== PAGE 6 ===
+6
+SKY CAO, RON NISSIM, AND SCOTT SHEFFIELD
+In terms of the surfaces, it becomes clear why one should expect area law (at least in our regime of β):
+every time we see a plaquette in the exploration, this comes with a huge cost. Thus if we know that we
+must see at least areapℓq many plaquettes (since our sum only involves surfaces which span the loop ℓ), we
+should expect to have to pay a cost which is exponential in areapℓq. The way to make this rigorous is via
+the contraction estimate (1.1).
+From the surface viewpoint, the problematic merger term is related to understanding the contribution of
+higher genus surfaces. On the one hand, each surface is weighted by their genus g like N ´2g. Thus, when N
+is large, we prefer to have lower genus surfaces. This gives another heuristic towards why it should be easier
+to prove area law at large N, because in general, sums over planar maps or low-genus surfaces are easier to
+understand than sums over very high genus surfaces. Nevertheless, when N is large but finite, we still need
+to quantitatively understand the contributions of the very high genus surfaces, which in general is a difficult
+problem. See e.g. [BL21, BL22] for recent results in this vein.
+Finally, for a surface interpretation of the extension argument from the truncated model to the original
+model, we can imagine a modified exploration process, where we allow ourselves only to explore those
+plaquettes which have a limited number of copies (recall the upper bound we imposed in the truncated
+model). As previously mentioned, it is extremely rare for a plaquette to have too many copies, and so if we
+ever come across such a plaquette, we already know there is a huge associated cost, and so there is no need
+to explore at this plaquette.
+We briefly summarize the remainder of the paper. In Section 2, we make definitions and introduce some
+preliminary results. In Section 3, we introduce the truncated model, and then show that area law holds for
+this model. In Section 4, we extend the argument to the original model, ultimately proving Theorem 1.2.
+Acknowledgements: We thank Jacopo Borga and Jasper Shogren-Knaak for helpful conversations. S.C.
+was partially supported by the NSF under Grant No. DMS-2303165. R.N. was supported by the NSF under
+Grant No. GRFP-2141064. S.S. was partially supported by the NSF under Grant No. DMS-2153742.
+2. Preliminaries
+The present section serves as a preliminary section which will set notation and discuss preliminary results
+to be used in the rest of the paper. First, we fix some notation. The parameter N ě 1 denotes the size
+of the matrices in our matrix group UpNq. In this paper, whenever we refer to a lattice Λ, we will mean
+a square lattice of the form Λ “ r´L, Lsd Ď Zd. One should think of L " 1, and in this paper, all of our
+estimates will be uniform in L. Let E`
+Λ (resp. EΛ) be the collection of positively oriented (resp. oriented)
+edges in Λ. Similarly, let P`
+Λ (resp. PΛ) denote the set of positively oriented (resp. oriented) plaquettes in
+Λ. For oriented edges e P EΛ, we denote by e´1 the oppositely oriented version of e. Similarly, for oriented
+plaquettes p P PΛ, we denote by p´1 the oppositely oriented version of p.
+Definition 2.1 (Lattice gauge configuration). A lattice gauge configuration U is a function U : E`
+Λ Ñ UpNq.
+We always implicitly extend U : EΛ Ñ UpNq to oriented edges, by imposing that Ue´1 :“ U ´1
+e
+for all e P E`
+Λ .
+Definition 2.2 (Plaquette variable). Given a lattice gauge configuration U : E`
+Λ Ñ UpNq and an oriented
+plaquette p “ e1e2e3e4, we define the plaquette variable (abusing notation)
+Up :“ Ue1Ue2Ue3Ue4.
+Next, we define the lattice Yang–Mills measure.
+Definition 2.3 (Lattice Yang–Mills). The lattice Yang-Mills measure with Wilson action and gauge group
+UpNq is the measure on UpNqE`
+Λ given by
+dµΛ,β,NpUq “
+1
+ZΛ,β,N
+ź
+pPP`
+Λ
+expp2βReTrpUpqqdU,
+where dU “ ś
+ePE`
+Λ dUe is an independent copy of Haar measure on UpNq for each edge e P E`
+Λ , and
+ZΛ,β,N :“
+ˆ
+UpNqE`
+Λ
+ź
+pPP`
+Λ
+expp2βReTrpUpqqdU.
+We denote by x¨yΛ,β,N expectation with respect to the probability measure µΛ,β,N.
+
+=== PAGE 7 ===
+EXPANDED REGIMES OF AREA LAW FOR LATTICE YANG–MILLS THEORIES
+7
+Remark 2.4 (Trace versus normalized trace). In this paper, we choose to use the trace instead of the normal-
+ized trace in the definition of lattice Yang–Mills. On the other hand, the normalized trace is a natural choice
+from certain points of view. For instance, trpUq “ 1
+N TrpUq P r´1, 1s for unitary matrices U P UpNq, for any
+N ě 1. That is, the range of the normalized trace does not depend on N. Note also that βTrpUq “ ˜βtrpUq,
+where ˜β “ Nβ is the scaled analog of β mentioned in the caption of Figure 1 (right). For x P r´1, 1s, one
+can approximate the function x Ñ e2 ˜βx by a polynomial of x that does not depend on N.
+Next, we define a collection of quantities associated to the lattice Yang–Mills measure. These quantities
+are associated to loops and strings, which we first define.
+Definition 2.5 (Loops and strings). We will represent loops ℓin Λ by the sequence of oriented edges
+ℓ“ e1 ¨ ¨ ¨ en that are traversed by ℓ. We denote |ℓ| :“ n the perimeter (i.e., length) of the loop. For x P Zd,
+we denote by ∅x the null loop at x, i.e. the loop starting and ending at x with no edges.
+We say that a loop ℓcontains a backtrack if ℓis of the form ℓ“ aee´1b. We say that ℓ1 “ ab is the loop
+obtained by erasing the backtrack ee´1. We denote by rℓs the loop obtained by erasing all backtracks in ℓ
+(note the order of erasure does not matter).
+A string s “ pℓ1, . . . , ℓnq is a sequence of loops ℓ1, . . . , ℓn. We let |s| :“ řn
+i“1 |ℓi| denote the perimeter of
+the string s. Let SΛ be the set of finite collections of nonempty loops s “ ps1, . . . , snq contained in Λ with
+no backtracks. By convention, the null loops ∅x are elements of SΛ.
+Definition 2.6 (Loop variables and observables). Let U : E`
+Λ Ñ UpNq be a lattice gauge configuration.
+For loops ℓ“ e1e2 . . . en, let Uℓ:“ Ue1Ue2 . . . Uen denote the corresponding loop variable. We define
+WℓpUq :“ trpUℓq,
+where tr “ 1
+N Tr is the normalized trace. For strings s “ pℓ1, . . . , ℓnq, we define
+WspUq :“
+ź
+iPrns
+WℓipUq.
+We refer to Wℓas a Wilson loop observable, and Ws as a Wilson string observable.
+One can think of the Wilson string expectations as the multipoint functions of the lattice Yang–Mills
+measure, and one typically studies the measure via its multipoint functions. We remark that at this point,
+we have introduced all the notation appearing in Theorem 1.2.
+Next, due to the identity UU ´1 “ id for unitary matrices U, we have that Uℓ“ Urℓs and WℓpUq “ WrℓspUq
+for all loops ℓ, that is, the Wilson loop observables are invariant under backtrack erasure. Note also that
+U∅x “ id and W∅xpUq “ 1.
+Notation 2.7. Often in this paper, we will have a function J : PΛ Ñ N, and we will raise a number x to
+the power J, i.e. we will write
+xJ :“
+ź
+pPPΛ
+xJppq “ x
+ř
+pPPΛ Jppq.
+We will also write B ´ J where B is a number. This should be taken to mean the function PΛ Ñ N which
+takes value pB ´ Jqppq “ B ´ Jppq. The same considerations apply if J : P`
+Λ Ñ N is a function of the
+positively oriented plaquettes.
+2.1. Parameters. Throughout this paper, we will assume that N is large enough depending on d such that
+N ě 1010d10.
+(2.1)
+In Section 4, we will comment on the case where N is smaller than 1010d10. We will take parameters β, B ě 0
+such that
+β ď 10´10dd´1,
+(2.2)
+1
+2d10´3N ď B ď 1
+d10´3N.
+(2.3)
+Moreover, we will assume that B is odd, which will be convenient later. One should always think of relative
+sizes of β, B as satisfying
+dNβ ! B, d5 ! B, dB ! N.
+
+=== PAGE 8 ===
+8
+SKY CAO, RON NISSIM, AND SCOTT SHEFFIELD
+In particular, at many intermediate places, there will be constants C floating around, and due to our choices
+of N, β, B, we will always e.g. have that
+CdNβ ď 10´3B, Cd5 ď 10´3B.
+Remark 2.8. In plain terms, one should think of β as tiny, B as huge, and N as even larger than B by a
+dimensional factor. Of course, the precise values such as 1010d10 are somewhat arbitrary, and are chosen so
+that we always have a lot of room in the estimates.
+The assumptions (2.1)-(2.3) are always implicitly assumed to hold (unless otherwise stated). Nonetheless,
+at various points in the statements of results we will still explicitly recall these parameter assumptions.
+Definition 2.9 (Truncated exponential). For k0 ě 0, define the truncated exponential
+expk0pxq :“
+k0
+ÿ
+k“0
+xk
+k! .
+Define also the exponential tail function
+τk0pxq :“ exppxq ´ expk0pxq “
+8
+ÿ
+k“k0`1
+xk
+k! .
+Remark 2.10. As we will see later in Section 3, the truncated model will be defined by replacing the usual
+exponential exp in Definition 2.3 by the truncated exponential expB. One outcome of the next lemma is
+that τB is tiny compared to expB, which is related to the discussion in Section 1 about why it is extremely
+rare for a plaquette to have too many copies.
+We will need the following properties of the truncated exponential.
+Lemma 2.11 (Properties of truncated exponential). Under the parameter assumptions (2.1)-(2.3), the
+following properties hold for all |x| ď 2Nβ:
+(1)
+0 ă expBpxq ď exppxq.
+(2.4)
+(2)
+|τBpxq| ď expp´B{10q expBpxq.
+(2.5)
+(3) For all k ď B,
+| expkpxq| ď eB´k expBpxq.
+(2.6)
+Proof. We begin by proving one half of (2.4). Since B is odd and B ě 4p2Nβq, for all |x| ď 2Nβ,
+exppxq ´ expBpxq “
+xB`1
+pB ` 1q! `
+8
+ÿ
+k“B`2
+xk
+k! ě
+xB`1
+pB ` 1q!
+ˆ
+1 ´
+8
+ÿ
+k“1
+ˆ
+|x|
+B ` 2
+˙k˙
+ě
+ˆ
+1 ´
+8
+ÿ
+k“1
+p1{4qk
+˙ xB`1
+pB ` 1q! ą 0,
+proving that exppxq ´ expBpxq ě 0.
+To prove the other half of (2.4) as well as (2.5), we recall the classical Poisson concentration inequality
+(see e.g. [BLM13, Chapter 2]):
+PpX ě λ ` tq ď exp
+ˆ
+´
+t2
+2pλ ` tq
+˙
+, t ě 0, X „ Poissonpλq.
+(2.7)
+Applying this with λ “ 2Nβ and t “ B ` 1 ´ λ " λ, we obtain
+e´2Nβ
+8
+ÿ
+k“B`1
+p2Nβqk
+k!
+ď expp´B{4q,
+which implies that for |x| ď 2Nβ,
+|τBpxq| ď e2Nβ expp´B{4q ď expp´B{6q.
+(2.8)
+
+=== PAGE 9 ===
+EXPANDED REGIMES OF AREA LAW FOR LATTICE YANG–MILLS THEORIES
+9
+It follows that
+expBpxq “ exppxq ´ τBpxq ě exppxq ´ |τBpxq|
+ě expp´2Nβq ´ expp´B{6q
+ě expp´2Nβq
+`
+1 ´ expp´B{6 ` 2Nβq
+˘
+ě expp´2Nβqp1 ´ expp´B{8qq.
+In summary, we obtain the lower bound
+expBpxq ě expp´2Nβqp1 ´ expp´B{8qq ą 0,
+(2.9)
+which proves the other half of (2.4). Next, to prove (2.5), we combine the above with (2.8), and claim that
+expp´B{6q ď expp´B{10q expp´2Nβqp1 ´ expp´B{8qq.
+This can be seen by rearranging and using our parameter assumptions, since B " Nβ and B " d ě 1.
+Lastly, we prove (2.6) by splitting into two cases.
+Case 1: B{10 ď k ď B. If k “ B there is nothing to prove. Thus, assume further that k ă B. Again by
+Poisson concentration (2.7), we have that (since k ´ 2Nβ " 2Nβ)
+e´2Nβ| expkpxq ´ expBpxq| ď expp´pk ´ 2Nβq{4q ` expp´pB ´ 2Nβq{4q
+ď expp´B{50q.
+It follows that
+| expkpxq| ď expp2Nβ ´ B{50q ` e´2Nβ expBpxq
+ď 2 expBpxq ď 2B´k expBpxq
+where we used the lower bound (2.9), as well as the fact that k ă B.
+Case 2: k ă B{10. In this case, we may bound
+ek´B| expkpxq| ď e´9B{10
+kÿ
+j“0
+|x|k
+k! ď e´9B{10 expp2Nβq.
+To finish, we again use the lower bound (2.9) to reduce to the claim that
+e´9B{10 expp2Nβq ď expp´2Nβqp1 ´ expp´B{8qq,
+which follows from our parameter choices.
+□
+2.2. General master loop equation. In this section, we recall the master loop equation which will be
+central to our analysis. At a high level, the master loop equation relates a given string expectation to a
+weighted sum of string expectations, over strings which “neighbor” the original string. Such neighboring
+strings are obtained by performing one of a finite set of string operations, which we next discuss.
+Let s “ ps1, . . . , snq P SΛ, that is, s is a string without backtracks. To define our string operations, will
+assume that s is not a null loop (otherwise, there would be no operations). There are six total types of string
+operations, grouped into three categories: splittings, mergers, and deformations.
+Notation 2.12. We reserve the letter e for edges of the lattice Λ, and e for edges of strings s.
+Definition 2.13 (Splitting). Suppose that ℓ1 contains two edges e, e1 which are the same lattice edge, so
+that ℓ1 “ aebe1c. Define loops pℓ1
+1,1, ℓ1
+1,2q :“ pae1c, ebq. The positive splitting of s at pe, e1q is defined to be
+the string s1 “ prℓ1
+1,1s, rℓ1
+1,2s, ℓ2, . . . , ℓnq.
+Similarly, if ℓ1 contains edges e, e1 such that e, pe1q´1 are the same lattice edge, so that ℓ1 “ aebe1c or
+ℓ1 “ ae1bec, then define loops pℓ1
+1,1, ℓ1
+1,2q :“ pac, bq. The negative splitting of s at pe, e1q is defined to be the
+string s1 :“ prℓ1
+1,1s, rℓ1
+1,2s, ℓ2, . . . , ℓnq.
+The definitions directly extend to the case where the edges e, e1 are on some other loop ℓj. Given an edge
+e of s, we let S`ps, eq{S´ps, eq to be the sets of all positive/negative splittings of s at pe, e1q for some other
+edge e1 (which must necessarily be on the same loop as e). We will frequently use the notation S˘ps, eq to
+denote the set of positive or negative splittings of s at e.

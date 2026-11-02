@@ -1,0 +1,24 @@
+START 2026-11-02 10:34:08
+9fcc99a2f249a1253653b9b1bb250c10 */c/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/M1c/kp_cert_m1c_ref.awk
+KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: PASS for alpha in [0.0025, 0.0070]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4300 gamma=6/1 F0=22: no passing alpha in [0.0025, 0.0070] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4150 gamma=6/1 F0=22: no passing alpha in [0.0025, 0.0070] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4074 gamma=6/1 F0=22: PASS for alpha in [0.0025, 0.0070]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4112 gamma=6/1 F0=22: no passing alpha in [0.0025, 0.0070] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4092 gamma=6/1 F0=22: PASS for alpha in [0.0025, 0.0066]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4102 gamma=6/1 F0=22: PASS for alpha in [0.0030, 0.0055]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4106 gamma=6/1 F0=22: PASS for alpha in [0.0035, 0.0050]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4108 gamma=6/1 F0=22: PASS for alpha in [0.0039, 0.0044]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4110 gamma=6/1 F0=22: no passing alpha in [0.0025, 0.0070] (last: the inequality's upper end is above alpha)
+READER-ROUTE dress=page beta' = 0.4108 (PASS), refused at 0.4110
+KP-CERT SCAN dress=tree graded=S24-table beta=0.4000 gamma=6/1 F0=22: PASS for alpha in [0.0025, 0.0070]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.4300 gamma=6/1 F0=22: no passing alpha in [0.0025, 0.0070] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.4150 gamma=6/1 F0=22: no passing alpha in [0.0025, 0.0070] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.4074 gamma=6/1 F0=22: PASS for alpha in [0.0025, 0.0070]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.4112 gamma=6/1 F0=22: PASS for alpha in [0.0027, 0.0063]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.4130 gamma=6/1 F0=22: no passing alpha in [0.0025, 0.0070] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.4120 gamma=6/1 F0=22: PASS for alpha in [0.0032, 0.0054]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.4124 gamma=6/1 F0=22: PASS for alpha in [0.0038, 0.0046]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.4126 gamma=6/1 F0=22: no passing alpha in [0.0025, 0.0070] (last: the inequality's upper end is above alpha)
+READER-ROUTE dress=tree beta' = 0.4124 (PASS), refused at 0.4126
+END 2026-11-02 10:55:53

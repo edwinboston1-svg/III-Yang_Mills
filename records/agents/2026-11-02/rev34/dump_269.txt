@@ -1,0 +1,75 @@
+===== content4.js line 269 (9194 chars) =====
+[00]   push(P(`*The open part.* Theorem 8.7 certifies the gap for β ≤ 0.2452 by Dobrushin's comparison, on proved lemmas alone;
+[01]  Theorem 8.9 below extends it to β ≤ 0.4764 by the flux-surface gas, conditional on the one lemma its statement names;
+[02]  nothing above 0.2452 is proved unconditionally, and nothing above 0.4816, where the same inequality holds in the tree dressing (0.4764 in the dressing of the page), is proved at all.
+[03]  The inequality that produces it, Dobrushin's comparison theorem, is group-blind, and correctly so:
+[04]  it holds for every compact single-spin space, and the four-dimensional U(1) theory at weak coupling, whose photon is massless, satisfies its unweighted finite-volume form as readily as a massive theory does, since a boundary's influence there decays as the fourth power of the distance and the unweighted block sum is of order *L*³ log *L* against the block's volume *L*⁴.
+[05]  The group enters only through the evaluation of Hypothesis I, the weighted row sums Σ_{y} *C*(*x*, *y*)*e*^{κ|x−y|} of the blocked measure, which diverge for every κ > 0 in a Coulomb phase and converge in a massive one;
+[06]  what is open is a certified evaluation of those sums at a coupling where neither the strong-coupling nor the weak-coupling expansion converges.
+[07]  The weak end has no published number.
+[08]  Bałaban's ultraviolet stability theorem in four dimensions, Theorem 1 of his paper of record, is proved under the hypothesis that every effective coupling of the sequence, from the bare one at the cutoff to the one at the unit lattice, is at most a constant γ that exists and is never computed ("the constant γ depends on all other constants");
+[09]  the coupling grows toward coarse scales, so the condition binds at the unit lattice, where his action weighs a plaquette exactly as (8.12)'s does with β = 1/*g*², and the distance is the interval [0.2452, 1/γ²] on proved lemmas, [0.4764, 1/γ²] under Theorem 8.9's condition, with γ unread.
+[10]  The hypothesis's own proof, his Theorem 2 of 1987 with its two-sided bound on the couplings, was announced there, stated in the 1989 paper to be unpublished ("so we have Theorem 1 with the assumption"), and never appeared:
+[11]  his complete list of publications after 1989 contains no paper on four-dimensional gauge theory,[[fn:The zbMATH author listing for T.
+[12]  Bałaban, 1989–2022, read on 29 October 2026:
+[13]  the Euclidean fermion block renormalisation (1989), the two large-field papers (1989), the classical N-vector series (1995–1999), and the bosonic many-body series with Feldman, Knörrer and Trubowitz (2008–2022);
+[14]  no paper on four-dimensional gauge theory.]] so the four-dimensional ultraviolet half of every construction of the corpus's kind has stood on it as an assumption.
+[15]  It is not an assumption here but a theorem on this work's path.
+[16]  Its content is exact:
+[17]  his equations (0.18) and (0.20) define the effective coupling at each step by subtracting from the inverse coupling the coefficient β_{k+1} that his extraction (0.28) reads off the step's output as the marginal term, and Theorem 2 is the statement that this coefficient stays between two positive multiples of log *L* at every step, from which the existence of the bare coupling, the bound (0.31) and asymptotic freedom follow by summation and the intermediate value theorem.
+[18]  The coefficient has two parts per step, the background dependence of the fluctuation determinant of his Gaussian normalisation — the one-loop coefficient of the block scheme, whose continuum value for SU(2) is 0.2575 per doubling in Wilson's normalisation of the coupling — and a second-order part bounded through Theorem 1's own estimates;
+[19]  both are stated with their pages on the open ledger, with the falsifier beside them:
+[20]  for U(1) the one-loop coefficient vanishes, so the lower bound and the theorem fail, and the chain separates the groups at the ultraviolet end as Theorem 8.7 separates them at the infrared end.
+[21]  When the bound is proved here, γ becomes a number this work produces and the interval has two ends of its own.
+[22]  Below that ceiling the first rung of the renormalisation step, the small-field split of one block of side two with its Peierls and Kotecký–Preiss conditions, has its constants re-derived on the open ledger (the block Hessian's least eigenvalue 3, the entropy 54.4 per plaquette, the large-field weight the exact one-plaquette marginal):
+[23]  the coupling at which that split converges is about 70, conditional on the activity bound of the small-field expansion and on the chessboard constant, neither proved there, and, proved, it would mark where a Bałaban-type analysis has a verified foothold and not where decay begins, since the same expansion converges for the free massless field, which has no gap.
+[24]  The lower end of the interval is Theorem 8.7's.
+[25]  Osterwalder and Seiler proved a gap at every sufficiently small β with no coupling named;
+[26]  Shen, Zhu and Zhu named one, which for SU(2) on ℤ⁴ is β < 1/12 in Wilson's normalisation;[[fn:H.
+[27]  Shen, R.
+[28]  Zhu and X.
+[29]  Zhu, "A stochastic analysis approach to lattice Yang–Mills at strong coupling", *Comm.
+[30]  Math.
+[31]  Phys.* (2023), doi:10.1007/s00220-022-04609-1, arXiv:2204.12737, (1.2)–(1.3):
+[32]  their action is Nβ Re Σ Tr Q_{p}, so their β is one quarter of Wilson's for SU(2), and their condition |β| < 1/(16(d − 1)) is β < 1/12 on ℤ⁴ and β < 1/8 on ℤ³ in Wilson's normalisation.]] Douglas and Rajasekaran formalised in Lean, for the U(n) theories, the Dobrushin route of Chatterjee's lecture notes, at β < 1/(32n(d − 1)) for the action β Σ_{p} (n − Re Tr U_{p}), which for n = 2 on ℤ⁴ is β < 1/96 in Wilson's normalisation.[[fn:M.
+[33]  R.
+[34]  Douglas and F.
+[35]  Rajasekaran, *lgt — Lattice Gauge Theory in Lean 4*, github.com/mrdouglasny/lgt, the headline theorems of LGT/MassGap/StrongCoupling.lean proved on 4 May 2026 (version 0.1.0, 6 September 2026):
+[36]  for U(n) Wilson theory on (ℤ/Nℤ)^d, d ≥ 2, N ≥ 3, and β < 1/(32n(d − 1)), the connected correlation of two plaquette traces is at most 32n²/(1 − α) α^{(dist − 1)/2} with α < 1, uniformly in N;
+[37]  other compact groups in U(n) by an instance.
+[38]  Their action is β Σ(n − Re Tr U_{p}), so their β is one half of Wilson's for n = 2:
+[39]  β < 1/96 on ℤ⁴ and β < 1/64 on ℤ³ in Wilson's normalisation.
+[40]  They cite S.
+[41]  Chatterjee, *Gauge Theory Lecture Notes* (2026), Chapters 15–16, for the route.]] Theorem 8.7 reaches 0.2452, about three times the first of these thresholds and more than twenty times the second, and Theorem 8.8 reaches 0.3739 on ℤ³, against 1/8 and 1/64 there, with the rate and the certified constants.[[fn:T.
+[42]  Bałaban, *Comm.
+[43]  Math.
+[44]  Phys.* 109 (1987), 249–301:
+[45]  Theorem 1 (p.
+[46]  259) and Theorem 3 (p.
+[47]  267), the recursion (0.20) (p.
+[48]  256), the action (0.2) with the normalised trace (p.
+[49]  252), read from the pages on 29 October 2026.
+[50]  The statement that the sequence can be kept small in four dimensions, his Theorem 2 (pp.
+[51]  259–260), is deferred there to "a separate paper";
+[52]  the four-dimensional stability theorem itself is Theorem 1 of *Large field renormalization II*, *Comm.
+[53]  Math.
+[54]  Phys.* 122 (1989), 355–392, p.
+[55]  355, read on 29 October 2026:
+[56]  "If the sequence of the effective coupling constants is contained in an interval ]0, γ] with a sufficiently small positive γ, then the effective densities ρ_k have the form, and satisfy all the conditions and bounds, described in Sect.
+[57]  2", followed by "Theorem 2 of [I] allows us to remove the assumption … The proof of Theorem 2 … has not been published yet, so we have Theorem 1 with the assumption";
+[58]  its bibliography names no paper proving Theorem 2.]] Dimock's expositions treat the abelian and scalar cases and state every threshold the same way.
+[59]  Within the certified form the next widening is the same theorem in the Wasserstein metric of the three-sphere, whose one-link constant is 1/4, exact in the two symmetric directions and supported to one per cent between them, against total variation's 4/(3π);
+[60]  with the constants proved so far it gains nothing over Theorem 8.7, it is predicted to close near β = 0.30 under two constants not yet proved, and it is unguessed to the digit until they are.
+[61]  The tools that would cross the interval are named and not claimed:
+[62]  a finite-volume criterion with typical rather than extremal boundary data, for which no theorem exists in a non-abelian gauge theory;
+[63]  a correlation inequality, Griffiths' second inequality for untruncated SU(2) Wilson loops, which holds on the exact tube of §8.2 at β = 0.5 and 1.0, is undecided at 2.0 and 2.3, and from which, by the *r*⁻⁸ plaquette correlations of the U(1) Coulomb phase, no finite-volume criterion for truncated correlations can follow;
+[64]  and the centre of the group, whose one published every-coupling argument rests on a matching inequality that its examiners found established only where the high-temperature expansion converges, and which, as structured, would confine U(1) as well.[[fn:E.
+[65]  T.
+[66]  Tomboulis, "Confinement for all values of the coupling in four-dimensional SU(2) gauge theory", arXiv:0707.2179 (2007);
+[67]  K.
+[68]  R.
+[69]  Ito and E.
+[70]  Seiler, "On the recent paper on quark confinement by Tomboulis", arXiv:0711.4930 (2007), and "Further discussion of Tomboulis' approach to the confinement problem", arXiv:0803.3019 (2008);
+[71]  Tomboulis's reply, arXiv:0712.2620 (2007).
+[72]  Sources [22]–[23].]]`));
+

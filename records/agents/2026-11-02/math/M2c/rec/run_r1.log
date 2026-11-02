@@ -1,0 +1,9 @@
+== r1 ring1111 n4 W2L1 trunc ordered start 09:34:48
+   rc=0 end 10:15:47 W2-M2b peak memory 1.070 GB (S + N + snapshot), multiply-adds 3.6512e+11 W2-DONE 2456.8 s 
+L2DOB-CENSUS ring1111_n4_W2L1_trunc_ordered.txt joint density on 2541 x 2541 (degB=20): min 5.751941e-01, negative at 0
+L2DOB-RESULT ring1111_n4_W2L1_trunc_ordered.txt rhoA=0.012599302 rhoB=0.012599302 sigmaH=0.012450353 Cgrid=0.021938121 rho/C=0.574311
+== r1 ring1111 n4 W2L1 trunc cancel start 10:16:02
+   rc=0 end 11:11:47 W2-M2b peak memory 1.070 GB (S + N + snapshot), multiply-adds 3.6512e+11 W2-DONE 3338.9 s 
+L2DOB-CENSUS ring1111_n4_W2L1_trunc_cancel.txt joint density on 2541 x 2541 (degB=20): min 6.841976e-01, negative at 0
+L2DOB-RESULT ring1111_n4_W2L1_trunc_cancel.txt rhoA=0.014385508 rhoB=0.014385508 sigmaH=0.014288237 Cgrid=0.024773448 rho/C=0.580683
+R1-DONE 11:11:55

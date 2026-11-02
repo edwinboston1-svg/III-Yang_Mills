@@ -1,0 +1,6 @@
+OMEGA-CENSUS FMAX=8 MODE=2 (control: every closed set): box side 23
+OMEGA-REL: the four links of p0 exempt from closing (a planted positive: {p0} is relatively closed and independent)
+OMEGA F=1 links=4 m2=0 m3=0 m4=0 m5=0 m6=0 rank=1 plaquettes: (0,0,0,0)12
+OMEGA-COUNT F=1: closed 1 (odd 1), leafless 1
+OMEGA-CHECK rank recomputed from scratch at every closed node: 0 disagreements with the incremental basis
+OMEGA-END nodes 15291 pruned 36 (0 s)

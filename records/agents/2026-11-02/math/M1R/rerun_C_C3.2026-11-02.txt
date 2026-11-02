@@ -1,0 +1,13 @@
+START C3 2026-11-02 07:30:51
+KP-CERT SCAN dress=tree beta=0.3500 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+KP-CERT SCAN dress=tree beta=0.4100 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree beta=0.3800 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+KP-CERT SCAN dress=tree beta=0.3950 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree beta=0.3874 gamma=6/1 F0=22: PASS for alpha in [0.0014, 0.0079]
+KP-CERT SCAN dress=tree beta=0.3912 gamma=6/1 F0=22: PASS for alpha in [0.0032, 0.0042]
+KP-CERT SCAN dress=tree beta=0.3930 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree beta=0.3920 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree beta=0.3916 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree beta=0.3914 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+BISECT beta* = 0.3912 (PASS), refused at 0.3914
+END C3 2026-11-02 07:46:35

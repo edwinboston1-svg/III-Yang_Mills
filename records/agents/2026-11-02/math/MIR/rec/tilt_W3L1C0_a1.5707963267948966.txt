@@ -1,0 +1,12 @@
+W2-KAT representations to spin 3/2 (GENINV=1): homomorphism and traces [MET]
+W2-OBJECT planar n=4 plaquettes=32 links=76 (shared=3) outside=536 staples five=24 four=52; rule degree 20, 2541 points; beta=2.2 WMAX=3 LMAX=1 datum=ordered order=fwd
+W2-DATUM C:/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/MIR/rec/datum_a1.5707963267948966.txt: all 536 outside links set from the file (the named datum ordered overridden link by link)
+W2-TENSORS built in 1.1 s
+W2-SLICED mode=full: the junction wires clamped in an outer loop of slices; face A's part (order index 36 of 76) swept once per class and gathered per slice
+W2-CMAX 0: face B's loop representation capped at 0/2 for this run (the classes a <= 1, c <= 0; the connected moments and channels for c <= 0 alone)
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag 8.2e-18; max state 810000, open plaquettes at most 4; 20.9 s; 1 slices)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +1.032161312666e-04 (imag -2.3e-20; max state 3240000, open plaquettes at most 4; 73.5 s; 4 slices)
+W2-Z beta=2.2 datum=ordered n=4 Z = 3.303416877952e-45
+W2-CONN a=0 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.000000000e+00)
+W2-CONN a=1 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.032161313e-04, +1.000000000e+00)
+W2-DONE 95.5 s

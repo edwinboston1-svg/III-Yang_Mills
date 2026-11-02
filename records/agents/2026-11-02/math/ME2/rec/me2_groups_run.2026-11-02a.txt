@@ -1,0 +1,23 @@
+S-2  |B4| = 384, |W(F4)| = 1152, |G2304| = 2304
+S-2  number of left cosets of B4 in G2304 (besides B4): 5
+S-2  subgroups K with B4 <= K <= G2304: 3, orders [384, 1152, 2304]
+     W(F4) among them: True; G2304 among them: True
+     double cosets B4\G2304/B4 besides B4: sizes [768, 1152]
+S-1  B4: commutant dim on Lambda^2 = 1; invariant symmetric forms dim = 1; rank of components: isotropic 1, theta 0, metric(1,1) 0, Weyl(2,0)+(0,2) 0
+     W(F4): commutant dim on Lambda^2 = 1; invariant symmetric forms dim = 1; rank of components: isotropic 1, theta 0, metric(1,1) 0, Weyl(2,0)+(0,2) 0
+S-3  R = L_q, q = (1+2i+2j+4k)/5:
+     5R = [[1, -2, -2, -4], [2, 1, -4, 2], [2, 4, 1, -2], [4, -2, 2, 1]]
+     5R^-1 = 5R^T = [[1, 2, 2, 4], [-2, 1, 4, -2], [-2, -4, 1, 2], [-4, 2, -2, 1]]
+     trace R = 4/5 (= 4 cos theta, cos theta = 1/5)
+L_q: R not in G2304: True; #b in B4 with R^-1 b R outside G2304: 376/384; |G'| = 8 (orientation-reversing: 0)
+     G' for L_q: commutant dim on Lambda^2 = 12; invariant symmetric forms dim = 9; rank of components: isotropic 1, theta 1, metric(1,1) 0, Weyl(2,0)+(0,2) 7
+S-4  rank of M^T mod 5 = 2; [Z^4 : Z^4 cap R Z^4] = 5^2 = 25; [Z^4 : 5Z^4] = 625
+     points of R(Z^4) in the centred cube [-5/2,5/2)^4: 625 (one block type: 5Z^4 <= R Z^4)
+planar rotation (3/5,4/5) in (01): R not in G2304: True; #b in B4 with R^-1 b R outside G2304: 352/384; |G'| = 32 (orientation-reversing: 16)
+     G' for planar rotation (3/5,4/5) in (01): commutant dim on Lambda^2 = 4; invariant symmetric forms dim = 3; rank of components: isotropic 1, theta 0, metric(1,1) 1, Weyl(2,0)+(0,2) 1
+L_u, u=(3i+4j)/5 (order 4): R not in G2304: True; #b in B4 with R^-1 b R outside G2304: 352/384; |G'| = 32 (orientation-reversing: 0)
+     G' for L_u, u=(3i+4j)/5 (order 4): commutant dim on Lambda^2 = 5; invariant symmetric forms dim = 4; rank of components: isotropic 1, theta 1, metric(1,1) 0, Weyl(2,0)+(0,2) 2
+L_q3, q3=(1+2i+2j)/3 (L = 3): R not in G2304: True; #b in B4 with R^-1 b R outside G2304: 368/384; |G'| = 16 (orientation-reversing: 0)
+     G' for L_q3, q3=(1+2i+2j)/3 (L = 3): commutant dim on Lambda^2 = 7; invariant symmetric forms dim = 6; rank of components: isotropic 1, theta 1, metric(1,1) 0, Weyl(2,0)+(0,2) 4
+x -> q x qb' (two-sided): R not in G2304: True; #b in B4 with R^-1 b R outside G2304: 380/384; |G'| = 4 (orientation-reversing: 2)
+     G' for x -> q x qb' (two-sided): commutant dim on Lambda^2 = 18; invariant symmetric forms dim = 12; rank of components: isotropic 1, theta 0, metric(1,1) 6, Weyl(2,0)+(0,2) 5

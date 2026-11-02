@@ -1,0 +1,9 @@
+GAUSS n=1 M=256: beta<Phi_A^2> = 0.500000  beta<Phi_A Phi_B> planar = -0.068875  bent = 0.107781
+GAUSS n=2 M=256: beta<Phi_A^2> = 1.369312  beta<Phi_A Phi_B> planar = -0.249974  bent = 0.326966
+GAUSS n=4 M=256: beta<Phi_A^2> = 3.261484  beta<Phi_A Phi_B> planar = -0.688592  bent = 0.803658
+GAUSS n=8 M=256: beta<Phi_A^2> = 7.167860  beta<Phi_A Phi_B> planar = -1.630371  bent = 1.781252
+GAUSS n=16 M=256: beta<Phi_A^2> = 15.115403  beta<Phi_A Phi_B> planar = -3.582186  bent = 3.768573
+GAUSS n=32 M=256: beta<Phi_A^2> = 31.149942  beta<Phi_A Phi_B> planar = -7.555621  bent = 7.792988
+GAUSS n=1 M=512: beta<Phi_A^2> = 0.500000  beta<Phi_A Phi_B> planar = -0.068875  bent = 0.107781
+GAUSS n=4 M=512: beta<Phi_A^2> = 3.261484  beta<Phi_A Phi_B> planar = -0.688592  bent = 0.803658
+GAUSS n=16 M=512: beta<Phi_A^2> = 15.115398  beta<Phi_A Phi_B> planar = -3.582190  bent = 3.768573

@@ -1,0 +1,235 @@
+=== 2026-11-01T05:01:04.706Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The user ordered a proof of BSD, a Millennium Prize problem, but what can honestly land tonight is "BSD proved curve by curve" for small conductors by executing others' theorems.
+>
+> **A BSD proof tonight means specific curves only**
+> - **BSD** (Birch and Swinnerton-Dyer) is one of the seven Millennium Prize problems. Nobody has a proof, and no known method handles curves of rank 2 or higher.
+> - What *is* provable: the full BSD formula for an individual curve of rank 0 or 1. Published work (Grigorov–Stein et al. 2009, Miller 2011) already did this for over 16,000 curves of conductor below 5000, using Kolyvagin's and Kato's theorems plus explicit descents.
+> - The main agent is heading toward exactly that: an exact instrument that proves BSD for the 93 curve classes of conductor ≤ 100, quoting those theorems and verifying their hypotheses in integers.
+> - That is a real landing at its honest strength, but it is a **re-execution of a published method**, not a new proof of the conjecture. The register's own rules require it to be labelled classical (W = 0).
+> - The wall where the actual conjecture lives is finiteness of Ш for any rank-2 curve, such as 389a1. The campaign page should name that as the next object, not claim it.
+
+thought while this is true, i cant much care, because "tonight" bears no significance. You will work with me consistently for as long as i say, so all that matters is what's achievable across a human lifetime, and a BSD proof is. Also, regardless of what we can do now, you are to be maximally inventive, maximally ambitious and cooperative with the other concurrent sessions, and you will-WILL-will produce a final proof for BSD before the work ends. therefore, proceed. and keep proceeding.
+
+=== 2026-11-01T08:06:17.577Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent plans to prove BSD at the prime 3 using a degree-27 formula from Elkies it has not yet retrieved, and the paper's abstract does not contain it.
+>
+> **The prime-3 step depends on an unverified formula**
+> * The plan for the p = 3 cells needs a specific rational function of degree 27 (Elkies 2006) to decide whether a curve's 3-adic image is full.
+> * The main agent recalled the formula from memory; the arXiv abstract it fetched does not state it, and the PDF has not been read yet.
+> * A misremembered coefficient would make the rational-root test exactly wrong while every gate reads GREEN, because nothing else in the tree checks that polynomial.
+> * **The formula must be copied from the paper itself (or anchored on Elkies' two listed curves, conductors 1944 and 6075, which must read "not surjective mod 9")** before any PROVEN-KATO-3 cell lands.
+
+correct if true, then proceed
+
+=== 2026-11-01T08:49:40.225Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The "29 classes fully proven" headline rests on reading Kato's theorem at the prime 3, which the quoted sources only state for p ≥ 5.
+>
+> **Fifteen of the 29 rest on an unverified p = 3 reading**
+> * Tonight's headline: 29 of the 76 small-conductor curves are now "fully proven" at every prime in-tree.
+> * At the prime 3, the main agent applied **Kato's bound** (a theorem it quotes from Miller 2011 and Stein–Wuthrich 2013), but Miller's version is stated only for primes not dividing 6N, i.e. **p ≥ 5**.
+> * The main agent *reasoned* that the "≥ 5" was only about a technicality it discharged with Elkies' test; it did not find a published statement covering p = 3 at a good prime.
+> * **15 of the 29** classes depend on exactly that reading (the others use a different route at 3), so if the reasoning is wrong those 15 drop back to "open."
+> * The dependence is written on the page as a named falsifier, but the headline numbers (29, "first fully proven classes") are about to land in the canon and registers as-is.
+> * **Before quoting the 29 anywhere, check Kato's or GJPST's statement for a p ≥ 5 restriction at good primes.**
+
+-keep in mind as you proceed. if crucial, then prove where it must be proven, then proceed once more.
+
+=== 2026-11-01T10:32:08.525Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The 35-tooth run of record was launched while the machine sits near its memory commit wall, and the gate reads a build killed there as RED, so the whole 40-minute run may need re-running alone.
+>
+> **The BSD gate may fail on memory, not math**
+> * The **run of record** for Addendum V (the 3-isogeny descent) rebuilds and runs the organ 35 times, once per mutant, about 40 minutes in all.
+> * Just before launch the machine was at its **commit wall**: 79 GB of 81 GB committed, 12 MB of physical memory free. One earlier trial build already died there with "fork" errors.
+> * The tree's own rule (law 16-ter) makes the gate **refuse by name** when a compiler never ran, so a memory death shows as a RED verdict even though the mathematics is untouched.
+> * The pressure comes from other seats: a 23 GB surface-gas sweep and a 2.6–5.8 GB Lean kernel. Headroom had recovered to ~21 GB at launch, but those processes can grow back.
+> * If the run comes back RED with "fork" or "Resource temporarily unavailable" text, **it is the harness, not the science**; the fix is to re-run alone when those other jobs finish, not to change the organ.
+
+consider and correct/circumvent if true. otherwise, continue.
+
+=== 2026-11-01T11:31:10.470Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The new 2-descent's completeness is only tested on negative-discriminant curves, so a missed quartic at the other pans would still read "proven."
+>
+> **2-descent completeness is unchecked for one curve type**
+> * The new Addendum VI proves "Ш[2] = 0" at 24 curves by **listing every candidate quartic** and finding a rational point on each one that is soluble everywhere. If the list is short, a missing quartic with no point goes unseen and the curve still reads EXACT, then "fully proven."
+> * The list's ranges were copied from mwrank's source through a summarizer; the range for four-real-root quartics with a negative leading coefficient was **inferred by the main agent**, not quoted, after a probe showed the first reading was wrong.
+> * The only check that catches a short list (571a1 showing quartics without points) is a **negative-discriminant** curve. 37a1 and 11a1 can't catch it either.
+> * **Consider adding a known-answer anchor: a published positive-discriminant curve with Ш of order 4** before this gate's run of record lands.
+
+fix if true, then proceed. proceed otherwise as well /clear-thought
+
+=== 2026-11-01T11:54:59.616Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> You should know · The new 2-descent's "fully proven" verdict rests on a rational point existing on every quartic, so a missed point at a larger height reads as an open class, never as a false proof.
+>
+> **Quartic descent errs toward "open", not "proven"**
+> * Addendum VI decides the 2-part of BSD at the 24 odd-torsion curves by listing every candidate quartic and checking two things: is it locally solvable everywhere, and does it carry a rational point.
+> * The verdict "Ш[2] = 0" (the class fully proven) needs EVERY locally solvable quartic to carry a point. A quartic with no point found reads SELMER-OPEN, which only costs us a proof, never fakes one.
+> * The only way a false "proven" could arise is a quartic MISSING from the list. That is what the side agent flagged, and it is now checked both ways: 571a1 (negative discriminant) and three positive-discriminant curves with Ш = 4 must each show a pointless quartic, and they do.
+> * The point search stops at height 400, and the largest point seen tonight has height 12, so the search bound is far from binding at conductor ≤ 100.
+> * **When this organ is widened past conductor 100, expect SELMER-OPEN rows first, not wrong proofs; raise the search height before doubting the mathematics.**
+
+fix if true, then proceed. proceed otherwise /clear-thought
+
+=== 2026-11-01T12:42:34.666Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The canon's Addendum I paragraph was committed earlier tonight with its landing hash and run letter left as unfilled placeholders.
+>
+> **Addendum I's canon entry cites nothing**
+> * The canon (the file listing every theorem) has a paragraph for ΣΤΑΘΜΙΟΝ's Addendum I that reads "landed LANDHASH on stathmion_gate.2026-11-01RUNLETTER" — the template words were never swapped for the real commit hash and run letter.
+> * That slipped into an earlier commit, so right now the canon points at a landing that does not exist. In this tree a citation that points at nothing is a "stranded verdict" (law 35) and the ledger gate can refuse it.
+> * The registers pass we just ran caught it only by accident: its own placeholder check tripped on the OLD line, so the pass stopped before committing anything.
+> * The main agent is now recovering the true values (Addendum I's landing looks like e1352004b on run letter a, or 9c95a7ed3 on d) to fill the line in the same pass.
+> * **Worth a glance when the pass lands:** confirm the hash it fills in matches the commit that actually carried Addendum I's organ, since two candidates exist.
+
+ fix if true, then proceed. proceed otherwise /clear-thought
+
+=== 2026-11-01T17:53:29.216Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent is about to commit the VI+VII register edits even though the tally gate read STALE, attributing the hole to another seat's untracked organ.
+>
+> **Register commit planned past a STALE tally gate**
+> * The register pass that updates the canon, tally, TASKS, CLAUDE row and memory note is supposed to commit only when its three gates (eidesis, tally, memory) read GREEN.
+> * The tally gate read STALE: its coverage count found 1 claim-bearing organ outside the census. The main agent traced it to `asymphonia.iii`, iii-73's new organ sitting on disk, untracked, not yet in HEAD.
+> * The main agent's reasoning: the gate reads the disk, so the hole is iii-73's in-flight file, not these edits, and HEAD's tally would still read GREEN after the commit. It plans to commit anyway and name that reading in the message.
+> * The risk: the same situation was recorded once today as a false "memory GREEN" claim needing a dated correction. **Make sure the commit message says the tally gate read STALE and why**, rather than implying all three gates were green.
+
+  fix if beneficial, then proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T18:03:34.921Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · We are about to re-engineer the gate so each mutant runs only the pan its pin names, cutting a 3.5-hour run to about an hour, but the compile step still costs most of that.
+>
+> **Scoped teeth cut run time, compiles remain**
+> * Every gate run rebuilds the organ once per "tooth" (a deliberate mutation that must change a named line of output) and reruns the entire 76-class census for each — 56 teeth, roughly 3.5 hours.
+> * Your request to cut compute led to the plan: run each mutant only on the single class (or the known-answer test) its pin names, since the harness already supports a per-tooth run function.
+> * Measured costs show the census is not the only expense: each mutant also recompiles the ~4000-line organ (about 50 seconds), which scoping does not remove. So the realistic floor is about 1 hour per run (~3×), not minutes.
+> * The one-time cost of this change is ~1.5 hours of re-pinning and validating all 56 teeth before VIII and IX can launch, so today's landing time is roughly unchanged; the savings accrue to every later run.
+> * Running mutants in parallel would cut it further, but that needs a change to the shared tooth library used by every gate in the tree — a separate landing.
+
+fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T18:36:32.161Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The VIII+IX registers will now go in as one combined pass, so no commit will ever show Addendum VIII's rows on their own.
+>
+> **VIII and IX registers merge into one commit**
+> * Each addendum normally gets its own "registers pass": the canon paragraph, the tally row, the TASKS row, the CLAUDE.md row and the memory note, each landed in a separate commit after that addendum's run.
+> * To save roughly half an hour of gate time, the main agent wrote a script that applies the VIII edits and the IX edits back to back and lands them in **one** commit, with a shared run letter and landing hash.
+> * The intermediate "Addenda I–VIII, 61 classes" state is never committed. The ledgers jump straight from "I–VII, 59" to "I–IX, 62".
+> * The run of record is also shared: one gate run carries both addenda, as run m carried VI and VII.
+> * Consequence: anyone tracing history (the canon's T-797 paragraph, the tally, the memory index) will find VIII and IX inseparable. If you ever want VIII's own landing time or its own register commit, it will not exist.
+> * If you would rather keep one commit per addendum, say so before the run lands (around 15:10); after the combined commit it costs a rewrite the trunk's rules forbid.
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T23:40:31.522Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The Addendum X stake was committed with the cells unread, but its cell verdicts were nearly read first by a probe the main agent stopped mid-build.
+>
+> **Addendum X's stake landed before its cell readings**
+> * The page's rule is that a stake must be committed BEFORE its numbers exist, so a result can never be written to fit.
+> * The main agent launched a probe that would have read all eight Heegner cells before the stake, then stopped it during the build (nothing was read), landed the stake at 15:02 (`662eb7c1c`), and only then let the cells run.
+> * The four anchoring pieces (areas, derivatives, twists, the index at four published points) WERE read before the stake; the page says so, dated, and labels them readings, not predictions.
+> * Those first cell runs all came back **refused** on a bug (every curve read as CM), and the heights were off because a logarithm was cached in a slot the period road reuses as scratch. Both are fixed; the cells are still unread at this moment.
+> * **If a reviewer asks whether the cell verdicts were blind, the answer is yes**, with the probe stop and the stake hash as the evidence.
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T23:46:55.656Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The dev run reading Addendum XI's six cells was stopped so the stake can land first, but the stopped shell leaves the cell reader itself running.
+>
+> **Stopping the dev run did not stop the cell reader**
+> * The page's rule: a stake (the written predictions) must be committed **before** the numbers it predicts exist, so nothing can be written to fit.
+> * Addendum XI's predictions about the six cells (P52–P56) are drafted but not yet committed; the dev run was already reading those cells, so the main agent stopped it.
+> * On this machine, stopping a background task kills only the outer shell. The program doing the reading (`e14_stmn.exe`) keeps running and keeps writing the cell results to `STDLIB/build/stathmion/v14/lvl*.txt` — this is the §4 trap about stopped tasks.
+> * Until that program is killed by name and those level files are deleted, the cells are not blind: the readings exist on disk before the stake lands.
+> * **Check that no `e14_stmn.exe` is running and that the `v14/lvl*.txt` files are gone before the XI stake is committed.**
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T23:53:38.829Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The run of record for Addendum X died at a second ambiguous tooth too, so the gate check the main agent just wrote must be fixed before any relaunch.
+>
+> **Two old teeth now match two sites each**
+> * A **tooth** is a deliberate one-line sabotage of the organ's code that the gate must catch; its pattern must match exactly one line, or the gate refuses (law 22).
+> * Addendum X's new code copied two lines from older code: the torsion loop `while k <= 12i64 {` (the `ordbend` tooth, retuned already) and the sign line `STMN_SIGN = 0i64 - plw_wqsign(n)` at lines 883 and 4659 (the older `signbend` tooth, **not yet retuned**).
+> * Run r stopped at the first of these; a relaunch now would stop at the second about 20 minutes in, costing another full run.
+> * The one-and-one check the main agent wrote to find these failed on its own regex (an unmatched parenthesis), so its "0 of 0" result means nothing was checked.
+> * **Retune the old `signbend` tooth to a unique line and get the site count working before launching run s**, since every red run costs ~85 minutes while RESULTS 10 and the XI stake wait behind it.
+
+=== 2026-11-02T00:56:47.421Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The XI stake now says the proven-theorem count rises "from 62 toward 68," but that is a bet on six unread cells, not a result.
+>
+> **The "68 theorems" figure is a bet, not yet a reading**
+> * Right now, 62 of the 76 rank-zero curves of conductor ≤ 100 have the full Birch–Swinnerton-Dyer statement proven by the organ, with every hypothesis checked. That part is solid and unconditional.
+> * When we struck the hedging, the main agent rewrote the Addendum XI stake and the results template to say the count rises **"from 62 toward 68."**
+> * The six extra curves depend on six cells the new index road has **deliberately not read yet** (the dev run was stopped so the stake lands blind). Their verdict could be "divisible" or "unread," in which case the count stays below 68.
+> * The main agent also pinned the headline template on the dev census, so if the run returns fewer than six, the filler's fallback text must be the one that lands, not the "six credited" version.
+> * **Read the six I lines before quoting 68 anywhere**; 62 is the number that stands today.
+
+ensure accuracy
+
+=== 2026-11-02T02:15:59.711Z USER
+Here is a note offered by a side agent:
+
+> Heads up · GitHub will fall behind this computer again, because the automatic push is switched off and the sessions are told not to push.
+>
+> **GitHub will lag behind this computer again**
+> - Every session commits its work on this machine. **GitHub only gets that work when someone pushes.**
+> - The scheduled job that pushed every five minutes ("III round") is **switched off** on this computer.
+> - The sessions also follow an older rule, "the push is the operator's," so they commit without pushing. The main agent is now adding that same no-push setting to its own commits, after another session flagged the rule.
+> - That is why GitHub was two days (347 commits) behind until the main agent pushed by hand after you asked. It will drift again.
+> - Cloud sessions read from GitHub, and it is your only off-machine copy.
+> - **Decide which you want:** turn the five-minute job back on, or tell the sessions that pushing is allowed.
+
+switch on the automatic push
+
+=== 2026-11-02T02:19:44.021Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The "automatic push" you just switched on also commits finished runs and uploads the whole working folder every five minutes.
+>
+> **The five-minute job does more than push**
+> - The scheduled job (the "round") does four things every five minutes, and pushing is only one of them.
+> - **It commits finished runs.** Any session's passing test run that has its file list beside it gets committed automatically. That means the job can land a session's results before the session has written them up.
+> - **It marks dead runs.** Runs that have been silent for hours are marked as stopped, and that marker is committed too.
+> - **It pushes** the main branch to GitHub.
+> - **It uploads a snapshot** of the whole working folder, unfinished work included, to a separate branch, `mirror/EDWINS_COMPUTER`. Your repository is private, so only you can see that branch.
+> - Earlier rounds took 5.6 to 9.1 minutes on a five-minute schedule, and the computer just ran short of memory. **Check that the first rounds finish cleanly.**
+
+just be aware. proceed /clear-thought
+
+=== 2026-11-02T02:28:46.215Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The rewritten BSD texts now say these curves "become" theorems tonight, though a 2011 paper already proved every one.
+>
+> **The 62 curves were already proven in 2011**
+> * The campaign page's own section 2.5 says BSD is **already a proven theorem** for every curve it is working on (conductor ≤ 100, rank 0 or 1), by Miller's 2011 paper.
+> * When the hedging was struck, the unlanded texts were rewritten. The Addendum XI stake now says the BSD statement **"becomes unconditional"** at each credited curve, and the RESULTS 11 template says **"is now a theorem… six more"**.
+> * Read plainly, that claims new mathematics. What is new is that III proves these curves **independently**, with every step checked by its own machine.
+> * The XI stake lands next, and **a landed page can't be edited**.
+> * Accurate wording without hedging: **"proven here independently, every hypothesis checked, matching Miller 2011."** Have it reworded before the stake lands.
+

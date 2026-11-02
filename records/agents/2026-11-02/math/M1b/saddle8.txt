@@ -1,0 +1,13 @@
+START 2026-11-02 08:18:07 saddle8.c md5=6d1fdeb2812e0080ed12b3cc7d67adfd
+ROW PATTERNS 18 | CONSISTENT matrices 144930 | ALL 16 STARS ONE 8-CYCLE: 5760
+histogram of #connected stars (of 16) over consistent matrices: 0:162 4:4608 6:12288 8:34560 10:30720 12:44544 14:12288 16:5760
+WITNESS g (rows e-class h00 h01 h10 h11 v00 v01 v10 v11; columns f-class same order):
+  h00: 1 1 1 1 0 0 0 0
+  h01: 1 0 1 0 1 0 1 0
+  h10: 1 1 1 1 0 0 0 0
+  h11: 1 0 1 0 1 0 1 0
+  v00: 0 1 0 1 0 1 0 1
+  v01: 0 0 0 0 1 1 1 1
+  v10: 0 1 0 1 0 1 0 1
+  v11: 0 0 0 0 1 1 1 1
+END 2026-11-02 08:18:10

@@ -1,0 +1,250 @@
+# launch order of the reading shares (one agent each; 20 concurrent at most). RUNNING and DONE are marked as they go.
+RUNNING crossing C1 C2 C3 C4 C5a C5b C5c C6a C6b C7
+DONE 001_P
+DONE 002_P
+DONE 003_P
+DONE 004_P
+DONE 005_P
+DONE 006_P
+DONE 007_P
+DONE 008_P
+DONE 009_P
+DONE 010_P
+DONE 011_P
+DONE 012_P
+DONE 013_P
+DONE 021_P
+DONE 022_P
+DONE 023_P
+DONE 024_P
+DONE 108_LOG
+DONE 109_LOG
+DONE 110_LOG
+DONE 111_LOG
+DONE 112_LOG
+DONE 113_LOG
+DONE 114_LOG
+DONE 115_LOG
+DONE 116_LOG
+DONE 117_LOG
+DONE 118_LOG
+DONE 119_LOG
+DONE 120_LOG
+DONE 121_LOG
+DONE 122_LOG
+DONE 123_LOG
+DONE 124_LOG
+DONE 125_LOG
+DONE 126_LOG
+DONE 127_LOG
+DONE 128_LOG
+DONE 129_LOG
+DONE 130_LOG
+DONE 131_LOG
+DONE 132_LOG
+DONE 133_LOG
+DONE 134_LOG
+DONE 025_P
+DONE 026_P
+DONE 027_P
+DONE 028_P
+DONE 029_P
+DONE 030_P
+DONE 031_P
+DONE 032_P
+DONE 033_P
+DONE 034_P
+DONE 035_P
+DONE 036_P
+DONE 037_P
+DONE 038_P
+DONE 039_P
+DONE 040_P
+DONE 041_P
+DONE 042_P
+QUEUED 043_P
+DONE 014_P
+DONE 015_P
+RUNNING 016_P
+RUNNING 017_P
+RUNNING 018_P
+RUNNING 019_P (relaunched 07:5x)
+QUEUED 020_P
+QUEUED 044_R
+QUEUED 045_R
+QUEUED 046_R
+QUEUED 047_R
+QUEUED 048_R
+QUEUED 049_R
+QUEUED 050_R
+QUEUED 051_R
+QUEUED 052_R
+QUEUED 053_R
+QUEUED 054_R
+QUEUED 055_R
+QUEUED 056_R
+QUEUED 057_R
+QUEUED 058_R
+QUEUED 059_R
+QUEUED 060_R
+QUEUED 061_R
+QUEUED 062_R
+QUEUED 063_R
+QUEUED 064_R
+QUEUED 065_R
+QUEUED 066_R
+QUEUED 067_R
+QUEUED 068_R
+QUEUED 069_R
+QUEUED 070_R
+QUEUED 071_R
+QUEUED 072_R
+QUEUED 073_R
+QUEUED 074_R
+QUEUED 075_R
+QUEUED 076_R
+QUEUED 077_R
+QUEUED 078_R
+QUEUED 079_R
+QUEUED 080_R
+QUEUED 081_R
+QUEUED 082_R
+QUEUED 083_R
+QUEUED 084_R
+QUEUED 085_R
+QUEUED 086_R
+QUEUED 087_R
+QUEUED 088_R
+QUEUED 089_R
+QUEUED 090_R
+QUEUED 091_R
+QUEUED 092_R
+QUEUED 093_R
+QUEUED 094_R
+QUEUED 095_R
+QUEUED 096_R
+QUEUED 097_R
+QUEUED 098_R
+QUEUED 099_R
+QUEUED 100_R
+QUEUED 101_R
+QUEUED 102_R
+QUEUED 103_R
+QUEUED 104_R
+QUEUED 105_R
+QUEUED 106_R
+QUEUED 107_R
+DONE 135_LOG
+DONE 136_LOG
+DONE 137_LOG
+DONE 138_LOG
+DONE 139_LOG
+DONE 140_LOG
+DONE 141_LOG
+DONE 142_LOG
+DONE 143_LOG
+DONE 144_LOG
+DONE 145_LOG
+DONE 146_LOG
+DONE 147_LOG
+DONE 148_LOG
+DONE 149_LOG
+DONE 150_LOG
+DONE 151_LOG
+DONE 152_LOG
+DONE 153_LOG
+DONE 154_LOG
+DONE 155_LOG
+DONE 156_LOG
+DONE 157_LOG
+DONE 158_LOG (with 133)
+DONE 159_LOG
+QUEUED 160_LOG
+QUEUED DUMPS-1 DUMPS-2 DUMPS-3 DUMPS-4
+QUEUED BINARIES
+DONE C2 01:02
+DONE C4 01:05
+DONE C6b 01:08
+DONE C3 01:09
+DONE C5a 01:21
+DONE C5c 01:25
+DONE C6a 01:26
+DONE C1 01:32 (its read-only git log -S still running)
+DONE C7 01:45
+DONE C5b 02:05
+DONE M4 (the window) 06:1x
+DONE M3R 05:1x (REVIEW.md)
+DONE M2R 05:3x (REVIEW.md)
+DONE 161_ROAD 05:4x
+DONE M3b 05:5x
+RUNNING M3c (BB4*) 06:0x
+DONE M2R-draft 06:3x; DONE M2R-convert 06:5x (rev33_l2.py, 68 push, 5 fn)
+RUNNING M5 (Lemma W, vortex half) 06:1x
+RUNNING M4R (second reader of M4) 06:2x
+RUNNING M6 (Bałaban's threshold computed) 06:4x
+RUNNING M7 (two-step landing test) 06:5x
+RUNNING M2RR (second reader of revision 33 text) 06:5x
+DONE M3c (BB4* PROVED) 07:0x
+DONE M1 (S12-free 0.3650; conditional 0.5100) 07:1x
+RUNNING M3cR, M3d, M1R, M1b 07:1x
+RUNNING M3e (Bałaban CMP 102 (189)–(190) carried out; CMP 99 audit) 07:4x
+DONE M4R 08:0x (REVIEW.md)
+RUNNING MG (every compact simple G) 08:1x
+DONE M6 (β_B ≥ 10^982 on printed inequalities) 08:2x
+DONE M2RR (revision 33 ships with R1–R6) 08:2x
+RUNNING M6b (Lemma RD) 08:2x
+DONE M5 ((W-V)) 09:1x
+RUNNING M8 (middle-region certified step) 08:4x
+RUNNING 020_P 08:4x
+LANDED §21 (III 270108249, YM addcbf0); revision 33 (a633563, stamp 43ec518); findings 3066c43; ALL PUSHED 09:1x
+DONE M7 (two-step landing) 08:1x
+DONE M1R (second reader of M1) 08:2x
+DONE 016_P 08:2x
+DONE 017_P 08:2x
+DONE 018_P 08:2x
+DONE M3d ((PI-4),(PI-5)) 08:2x
+LANDED 88e069862 the KP certificate fix (M7 defect) 08:2x
+RUNNING M1c (strong end floor, Bing class, S12-free inputs) 08:4x
+RUNNING M3dR (second reader of M3d) 08:4x
+RUNNING M7b (crossover steps 3-4, cap limit, wall floors) 08:4x
+RUNNING ME2 ((E2) reduction) 08:4x
+RUNNING M3f (two-cutoff comparison, Lemma B, D) 08:4x
+DONE M3cR 08:3x
+DONE M1b (c=1/2 exact; floor 1/3) 08:3x
+DONE M2b (A1 proved; W-S1,2,3; 0.4764 landing a cap artefact) 08:4x
+RUNNING 160_LOG 044_R 045_R 046_R 047_R 048_R 049_R 08:5x
+DONE M3e ((189),(190) given kernel bounds; CMP 99 (3.132) the one estimate) 09:0x
+DONE MG (every-G audit, 29 rows) 09:0x
+DONE 019_P 020_P 09:0x
+DONE 160_LOG (no proof content; an unrelated assignment session) 09:0x
+LANDED §22 (III 7be654102; YM 455b715 pushed, manifest 561/561) 09:0x
+RUNNING table gate run of record on the fixed certificate (aperanton_table_gate.2026-11-022026-11-02a) 08:5x
+RUNNING lane gates memory/eidesis/ledger for the TASKS.md strike 09:0x
+RUNNING M3g (CMP 99 (3.132)) MG2 (every G strong end, G2 window) M2c (direct Hyp I row, ring integrated, env sup) MIR (IR large-field expansion) 09:1x
+DONE M6b (Lemma RD proved; thresholds 641-747 after RD; printed 2022; entropy floor 10^28850) 09:1x
+GREEN table gate on the fixed certificate (aperanton_table_gate.2026-11-022026-11-02a, GATE_RC=0, 13 teeth bled) 09:05
+DONE M8 (the tube cone; one monotone inequality; nothing certified; thresholds 7-27 conditional) 09:2x
+RUNNING M6c (UV constants in Bałaban format) M8b (the tube route: centre, large fields, N1-N3) 09:2x
+LANDED §23 (III 7f629f7e2; YM 552ef66 pushed) 09:23 — header label reads 09:3x, date read 09:23: correct in the next landing
+DONE M3f (E1 given BB+ROB+W+B-SUP+(T_loc)+(CB); Lemma B; Lemma D; Thm 7.1; rho_K not the block law) 09:3x
+RUNNING M3fR (second reader of M3f) 09:3x; ME2 and M8b messaged with M3f findings
+DONE 046_R (confirms §22 cap; §20 range stale; §22 U(1) overstated) 09:5x
+DONE M3dR (PI-4 AS STATED HAS A HOLE; repair |d| small or real; S1 survives on the disc; PI-5 etc hold with repairs) 09:5x
+LANDED §24 (III 505ae8680; YM f6abc9c pushed) — header reads 09:5x, date read 09:48: correct in the next landing; READ date BEFORE writing any header
+DONE 045_R (W3 SIGNED; .dob records pre-climb; 7L+5 vs 8L+4; spin tail; ordered-datum positivity) 10:0x
+RUNNING R34 (revision 34 draft) 10:0x
+DONE ME2 ((E2) reduction PROVED; finite H in {W(B4),W(F4),Aut(F4)}; Lemma Sigma_chi needed; RP across diagonals) 10:0x
+LANDED §25 (III ca101738c; YM 036f6c1 pushed) 10:04
+RUNNING ME2b (Lemma Sigma_chi, E1-scale, the RPM1 target) 051_R 052_R 10:0x
+DONE 047_R (absorbable loss -> 0.3424/0.3461 projected; beta=3 ladder sign flips; W3 signed at 3) 10:1x
+DONE 048_R (moment influence <= 2 TV, page lines 198/221 false; corrected rows; beta=3 flips at W2) 10:2x; MATH_BRIEF corrected (1.33 withdrawn line; kp_cert current; integrity facts a-g)
+DONE M3g ((3.132) proved given named inputs; Thm L-prime; Thm 3.10 completed; CMP 89 not needed) 10:2x
+DONE 049_R (ratio tv/|dE1| 0.7304-0.7621; corner defect 7.28%; forest idea fails the U(1) gate at 0.888) 10:2x
+LANDED §26 (III e084931fc pushed; YM 24bf8f5 pushed) 10:28
+RUNNING M3gR (second reader of M3g) 10:3x
+DONE M6c (KP, M_w, Theorem B proved given; certified FLOOR 124.30; projected 13.1; mu_d >= sqrt 11489) 10:3x
+RUNNING M6d (LF-prime, PS history half, toward a sufficient threshold) 10:3x
+DONE 044_R (8.7 row certified [0,0.2414]; block-split lead toward 0.284; S1:813 220 not none; blocked loop row 2.518 at one step) 10:3x
+RUNNING M87 (Theorem 8.7 block-split row) 10:3x
+12:21 launched PM (MIR's pair moments ≤ 0.0161, ring integrated), CC (M87's covariance composition ≥ 2.153, Perron certificate), AD (M2c's averaged deficit at a_c, exterior integrated), EI (engine integrity: §18 geometry KAT, positive squared truncation, osc gate) — Opus, max effort, the operator's eight-point plan
+12:40 launched UV1 (K2 = 32b1 ln L check, chessboard C two-sided, K3 by Helffer-Sjostrand), UV2 (Demko-Moss-Smith rate for (QGQ*)^-1, slice Poincare), UV3 (LF in full), CVX (convexity certificate, Nielsen-Olesen threshold), PK ((P_k) k<4, (SD2), Thm 9.1 on tori) -- the operator: no deferrals

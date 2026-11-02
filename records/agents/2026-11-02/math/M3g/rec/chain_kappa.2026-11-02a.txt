@@ -1,0 +1,7 @@
+L=2: a=3/2 b=1/4 a'=1/4 Gershgorin a'-b=0  min_K lambda_min/a: one end truncated 0.1333, both ends 0.1046
+L=3: a=19/9 b=4/9 a'=5/9 Gershgorin a'-b=1/9  min_K lambda_min/a: one end truncated 0.2030, both ends 0.1579
+L=4: a=11/4 b=5/8 a'=7/8 Gershgorin a'-b=1/4  min_K lambda_min/a: one end truncated 0.2424, both ends 0.1906
+L=5: a=17/5 b=4/5 a'=6/5 Gershgorin a'-b=2/5  min_K lambda_min/a: one end truncated 0.2674, both ends 0.2124
+L=6: a=73/18 b=35/36 a'=55/36 Gershgorin a'-b=5/9  min_K lambda_min/a: one end truncated 0.2845, both ends 0.2279
+L=7: a=33/7 b=8/7 a'=13/7 Gershgorin a'-b=5/7  min_K lambda_min/a: one end truncated 0.2970, both ends 0.2394
+L=8: a=43/8 b=21/16 a'=35/16 Gershgorin a'-b=7/8  min_K lambda_min/a: one end truncated 0.3064, both ends 0.2483

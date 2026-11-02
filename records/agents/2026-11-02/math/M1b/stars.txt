@@ -1,0 +1,11 @@
+START 2026-11-02 07:39:03 stars.c md5=a963958e32968390ae259be137dc1a85
+TRIANGLE-FREE beta star: +1+3 +1-3 +1+4 +1-4 -1+3 -1-3 -1+4 -1-4 +2+3 +2-3 +2+4 +2-4 -2+3 -2-3 -2+4 -2-4
+TRIANGLE-FREE beta star: +1+2 +1-2 +1+4 +1-4 -1+2 -1-2 -1+4 -1-4 +2+3 +2-3 -2+3 -2-3 +3+4 +3-4 -3+4 -3-4
+TRIANGLE-FREE beta star: +1+2 +1-2 +1+3 +1-3 -1+2 -1-2 -1+3 -1-3 +2+4 +2-4 -2+4 -2-4 +3+4 +3-4 -3+4 -3-4
+STARS even nonempty = 131071 (expect 131071)
+IDENTITY 3e-2K+(8-a)=d and d-a=e: failures = 0
+TRIANGLE-FREE even stars = 9248
+KIND alpha (2-factors) = 1035, triangle-free 843; cycle types 3+5: 192 (tf 0), 4+4: 99 (tf 99), 8: 744 (tf 744)
+KIND beta (4-regular spanning) = 1035, triangle-free 3
+KIND gamma (full star) = 1, its triangles = 32
+END 2026-11-02 07:39:12

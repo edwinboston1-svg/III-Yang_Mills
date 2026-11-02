@@ -1,0 +1,37 @@
+START 2026-11-02 07:30:49
+e141f00567ee077bc31df4db1a18867a *kp_cert_m1r.awk
+== U'' (S12-free), F0 = 22
+-- page beta=0.3650
+MARGIN best alpha=0.0043999 LHS_hi=0.0043576 slack=alpha-LHS_hi=0.0000423 (relative 0.0096) over 111 alphas
+  best line: KP-CERT dress=page graded=S24-table eventail K=1/1 C=1/1 beta=3650/10000 alpha=44/10000 gamma=6/1 F0=22: kappa_U in [0.052146, 0.052146] root in [0.052146, 0.052146] u in [0.09074764, 0.09074764] u~ in [0.09560537, 0.09560541] r_hi=0.495153 LHS in [0.0000453, 0.0043576] alpha=0.0043999 -> PASS mix=0.000000000020
+  KP-CERT SCAN dress=page graded=S24-table gamma=6/1 F0=22: beta* = 0.3650 (the largest beta with a certified PASS on the 2e-4 grid, alpha on the 1e-4 grid)
+-- page beta=0.3652
+MARGIN best alpha=0.0042999 LHS_hi=0.0043412 slack=alpha-LHS_hi=-0.0000413 (relative -0.0096) over 111 alphas
+  best line: KP-CERT dress=page graded=S24-table eventail K=1/1 C=1/1 beta=3652/10000 alpha=43/10000 gamma=6/1 F0=22: kappa_U in [0.052168, 0.052169] root in [0.052168, 0.052169] u in [0.09079682, 0.09079682] u~ in [0.09565930, 0.09565935] r_hi=0.495036 LHS in [0.0000452, 0.0043412] alpha=0.0042999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000020
+  KP-CERT SCAN dress=page graded=S24-table gamma=6/1 F0=22: beta* = 0.0000 (the largest beta with a certified PASS on the 2e-4 grid, alpha on the 1e-4 grid)
+-- tree beta=0.3656
+MARGIN best alpha=0.0044999 LHS_hi=0.0044409 slack=alpha-LHS_hi=0.0000590 (relative 0.0131) over 111 alphas
+  best line: KP-CERT dress=tree graded=S24-table eventail K=1/1 C=1/1 beta=3656/10000 alpha=45/10000 gamma=6/1 F0=22: kappa_U in [0.050152, 0.050153] root in [0.015703, 0.015703] u in [0.09089518, 0.09089518] u~ in [0.09557006, 0.09557011] r_hi=0.495366 LHS in [0.0000454, 0.0044409] alpha=0.0044999 -> PASS mix=0.000000000020
+  KP-CERT SCAN dress=tree graded=S24-table gamma=6/1 F0=22: beta* = 0.3656 (the largest beta with a certified PASS on the 2e-4 grid, alpha on the 1e-4 grid)
+-- tree beta=0.3658
+MARGIN best alpha=0.0043999 LHS_hi=0.0044239 slack=alpha-LHS_hi=-0.0000240 (relative -0.0055) over 111 alphas
+  best line: KP-CERT dress=tree graded=S24-table eventail K=1/1 C=1/1 beta=3658/10000 alpha=44/10000 gamma=6/1 F0=22: kappa_U in [0.050172, 0.050173] root in [0.015713, 0.015714] u in [0.09094435, 0.09094435] u~ in [0.09562371, 0.09562375] r_hi=0.495248 LHS in [0.0000453, 0.0044239] alpha=0.0043999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000021
+  KP-CERT SCAN dress=tree graded=S24-table gamma=6/1 F0=22: beta* = 0.0000 (the largest beta with a certified PASS on the 2e-4 grid, alpha on the 1e-4 grid)
+== conditional (T1 + T2, S12's stake kept), F0 = 22
+-- page beta=0.5100
+MARGIN best alpha=0.0033999 LHS_hi=0.0033872 slack=alpha-LHS_hi=0.0000127 (relative 0.0037) over 111 alphas
+  best line: KP-CERT dress=page graded=S24-table eventail K=1/1 C=1/1 beta=5100/10000 alpha=34/10000 gamma=6/1 F0=22: kappa_U in [0.179668, 0.179699] root in [0.179668, 0.179699] u in [0.12614029, 0.12614029] u~ in [0.15096736, 0.15097197] r_hi=0.775673 LHS in [0.0033848, 0.0033872] alpha=0.0033999 -> PASS mix=0.000000000572
+  KP-CERT SCAN dress=page graded=S24-table gamma=6/1 F0=22: beta* = 0.5100 (the largest beta with a certified PASS on the 2e-4 grid, alpha on the 1e-4 grid)
+-- page beta=0.5102
+MARGIN best alpha=0.0033999 LHS_hi=0.0034479 slack=alpha-LHS_hi=-0.0000480 (relative -0.0141) over 111 alphas
+  best line: KP-CERT dress=page graded=S24-table eventail K=1/1 C=1/1 beta=5102/10000 alpha=34/10000 gamma=6/1 F0=22: kappa_U in [0.180062, 0.180092] root in [0.180062, 0.180092] u in [0.12618871, 0.12618871] u~ in [0.15108472, 0.15108933] r_hi=0.776276 LHS in [0.0034455, 0.0034479] alpha=0.0033999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000574
+  KP-CERT SCAN dress=page graded=S24-table gamma=6/1 F0=22: beta* = 0.0000 (the largest beta with a certified PASS on the 2e-4 grid, alpha on the 1e-4 grid)
+-- tree beta=0.5198
+MARGIN best alpha=0.0038999 LHS_hi=0.0038800 slack=alpha-LHS_hi=0.0000199 (relative 0.0051) over 111 alphas
+  best line: KP-CERT dress=tree graded=S24-table eventail K=1/1 C=1/1 beta=5198/10000 alpha=39/10000 gamma=6/1 F0=22: kappa_U in [0.162932, 0.162963] root in [0.094015, 0.094046] u in [0.12851129, 0.12851129] u~ in [0.15125232, 0.15125694] r_hi=0.780252 LHS in [0.0038772, 0.0038800] alpha=0.0038999 -> PASS mix=0.000000000691
+  KP-CERT SCAN dress=tree graded=S24-table gamma=6/1 F0=22: beta* = 0.5198 (the largest beta with a certified PASS on the 2e-4 grid, alpha on the 1e-4 grid)
+-- tree beta=0.5200
+MARGIN best alpha=0.0038999 LHS_hi=0.0039396 slack=alpha-LHS_hi=-0.0000397 (relative -0.0102) over 111 alphas
+  best line: KP-CERT dress=tree graded=S24-table eventail K=1/1 C=1/1 beta=5200/10000 alpha=39/10000 gamma=6/1 F0=22: kappa_U in [0.163209, 0.163240] root in [0.094240, 0.094270] u in [0.12855964, 0.12855964] u~ in [0.15135117, 0.15135579] r_hi=0.780762 LHS in [0.0039368, 0.0039396] alpha=0.0038999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000694
+  KP-CERT SCAN dress=tree graded=S24-table gamma=6/1 F0=22: beta* = 0.0000 (the largest beta with a certified PASS on the 2e-4 grid, alpha on the 1e-4 grid)
+END 2026-11-02 07:38:37

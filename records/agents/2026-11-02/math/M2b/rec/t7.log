@@ -37,3 +37,8 @@
 == the frame's weight-level check: reversed order against forward, unsliced (n=2 W2L2, frame 1,1,0,0 and 1,1,1,1; random datum)
  frame 1,1,0,0:
   196 entries, max |dF| relative to max|F| = 2.832e-16
+ frame 1,1,1,1:
+  196 entries, max |dF| relative to max|F| = 3.930e-16
+== the corner's weight-level check: reversed order (unsliced, n=2 W2L2 corner, random datum)
+  196 entries, max |dF| relative to max|F| = 6.561e-16
+T7-DONE

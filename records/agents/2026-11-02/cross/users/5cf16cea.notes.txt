@@ -1,0 +1,472 @@
+=== 2026-10-29T17:44:04.129Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Your "all in one trunk" order meets last night's "stop messing with the git" order, and the night's Yang-Mills results are still uncommitted under it.
+>
+> **"One trunk" may collide with last night's no-git order**
+> * Around 23:00 last night you told the Yang-Mills seat to stop using git. The task queue still records it: "NOTHING LANDED — the operator's order" and "NO GIT from this seat".
+> * So the night's and today's results (RESULTS 14–17 on the ΠΕΝΤΑΠΥΛΟΝ page, including the local-smoothing unification you ordered at 12:4x) exist only as unsaved edits in the working folder, in no commit.
+> * You just told this coordinator "no branches, all in one trunk at once." It may read that as permission to commit those edits, or hold back because the old order stands. Either way it decides for you.
+> * **Say explicitly whether last night's no-git order is lifted**, and which seat lands those pages, so the results reach the trunk once and nothing lands twice.
+
+in which case, as you do all else, you need to get everything of value committed.
+
+=== 2026-10-29T19:52:22.665Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Today's two scour results rest on published theorems (Bar-Natan, Klein, Goethals–Seidel); the registers label III's part as identification, not new theorems.
+>
+> **Today's scour results are classical, applied**
+> * **The chord law:** the vertex factor of the flux-surface gas equals a known knot-theory quantity (the sl₂ weight system of a chord diagram, Bar-Natan 1995). III's part is spotting that and computing it exactly.
+> * **The Klein-degree law:** each finite subgroup's "parting order" equals an invariant degree Klein tabulated in 1884, with the design-strength link from Goethals–Seidel 1979. III's part is the closed form −4ε/t! read off that table.
+> * The main agent recorded both as breakthroughs items 70–71 and canon entries T-774/T-775, each with a "classical column" and W = 0 labels, so nothing is misclaimed on paper.
+> * Under your rule "if googleable, wasting my time," these are identifications and exact executions, not new theorems. The genuinely open pieces (the shared-end branched evaluator, the second-order parting) are tickets, not results.
+
+then they must prove them individually as theorems as well, because they're to be invoked in the proofs. So test and refine them. predictive power, universality, resilience, correctness, etc.
+
+=== 2026-10-29T21:49:02.877Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The new particle-physics research you ordered will run through parallel research helpers, which your standing "no agents, one manual workstream" rule for the Yang–Mills work forbids.
+>
+> **Research helpers conflict with your no-agents rule**
+> * On 10-29 you set a standing rule for the Yang–Mills work: **no agents, one manual workstream** — research, then planning, by hand.
+> * Your new request named **/deep-research**, a tool that works by spawning several research helpers (sub-agents) in parallel, each searching the web and writing notes, then one more writing the report.
+> * The main agent is treating your naming of that tool as permission to use helpers for this task, so the measurement register will be gathered by helpers, not read by the main seat itself.
+> * The consequence: the register's values and sources will not have been read by the seat you are talking to, and the helpers' summaries carry the same confident tone whether a number is right or wrong.
+> * **If you want it done by hand, say so now**; otherwise the main agent will spot-check the compiled register against the sources before it lands in the tree.
+
+i will tolerate these agents, but then none ever again. let these run and finish, but remember afterward to maintain III standards.
+
+=== 2026-10-30T02:23:15.477Z USER
+Here is a note offered by a side agent:
+
+> You should know · The new electron-anomaly organ certifies only the arithmetic on published inputs, so its α values cannot settle the rubidium–caesium split.
+>
+> **The amber organ certifies arithmetic, not the inputs**
+> * Tonight's new organ (ΗΛΕΚΤΡΟΝ, "the amber") computes the electron's magnetic anomaly `a_e` and solves it for the fine-structure constant α with every arithmetic step bounded exactly. That part is airtight: α⁻¹ = 137.035 999 166 reproduces Fan 2023 digit for digit.
+> * But the higher-order coefficients (eighth and tenth order), the hadronic and weak terms all **enter as published numbers with their published error bars**. The organ cannot check them; it carries them and names their owners.
+> * The tenth-order coefficient has two published camps 4.8σ apart (Aoyama 6.737 vs Volkov 5.863). Which one you feed in moves α⁻¹ by 7 × 10⁻⁹, the same size as the famous rubidium–caesium disagreement.
+> * So the organ's result is "α **given** these inputs" plus an honest interval, not a verdict on which recoil measurement is right. **Treat any III claim about the Rb–Cs tension as conditional on the tenth-order input** until that coefficient is derived in-tree or settled in the literature.
+
+=== 2026-11-01T03:12:20.015Z USER
+Here is a note offered by a side agent:
+
+> You should know · The new "shortfall" organ reads each CKM unitarity cell independently, but several of its roads share the same inputs, so its 36 cells are not 36 independent tests.
+>
+> **The 36 CKM cells overlap heavily**
+> * The new organ ΑΠΟΛΕΙΨΙΣ pairs six ways of measuring |V_ud| with six ways of measuring |V_us| and reads whether each pair adds up to 1. It counts **12 short, 5 over, 19 meeting**.
+> * Those counts read like a tally of independent checks, but they are not:
+> * The S and S′ rows are the **same measurement** with one error term dropped, so every S′ cell is just an S cell with a tighter width.
+> * The kaon-average column (KAV) is built **from** the K3a and KM2 columns, so it cannot disagree with them.
+> * All 36 cells share the single |V_ub| value.
+> * The organ's own notes say the cells are read independently and name the shared inputs as a blind spot, but the headline counts and the "12 short" figure will travel into the canon and registers without that caveat attached.
+> * **When you quote the matrix, quote cells, not counts.** The honest independent readings are roughly: superallowed vs K3a (short at width 2), superallowed vs the kaon ratio (short at width 1), and every neutron row meeting.
+
+if true, verify and fix
+
+=== 2026-11-01T03:44:29.823Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent chose to answer your "begin unification" order with a class-number-formula organ on the flip graph, whose own prior reading says that graph fails the Ramanujan test.
+>
+> **Unification organ will measure a wall, not a bridge**
+> * You asked for either help on the turbulence session or a start on the Langlands unification. The main agent picked the second.
+> * Its plan: show that the **gravity graph** (triangulations connected by Pachner flips) obeys the classical **class number formula** — the zeta function's pole at 1 equals the count of spanning trees — and then compare with the arithmetic Ramanujan graphs from an earlier organ, where the same count factors into **point counts of elliptic curves** (BSD's objects).
+> * But the tree's own earlier reading (ΟΞΥΝΣΙΣ) already found the flip graph **fails the Ramanujan bound** at 8 vertices. So the honest outcome of this organ is that the formula holds on both sides, while the elliptic-curve factorization exists **only** on the arithmetic side.
+> * That is a measured obstruction with a name (the Ramanujan condition), which is useful — but it is not a route by which Yang–Mills, Riemann or BSD "pour out."
+> * **If you wanted a bridge rather than a measured wall, say so now**, before the preregistration page is written.
+
+=== 2026-11-01T05:31:15.970Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Our new "covering" organ reads the gravity graph as Ramanujan at V = 7 and 8, but that only settles the necessary condition for the bridge, not modularity.
+>
+> **Ramanujan reading is a prerequisite, not the bridge**
+> * Tonight's organ ΣΚΕΠΗ decides whether the gravity graph (the flip graph of sphere triangulations) is **Ramanujan**: every nontrivial eigenvalue stays inside the radius of the graph's infinite "universal cover" tree. It reads **yes** at V = 7 and V = 8, with exact certificates on both sides.
+> * The famous Ramanujan graphs (Lubotzky–Phillips–Sarnak) get that property **because** they come from modular forms. The converse is not a theorem: a graph can be Ramanujan with no modular form behind it. Many small graphs are.
+> * So the earlier "wall" is gone, but the bridge to Langlands is still the staged search for a modular form whose counts match this graph's. That search has not been run; the page lists it as the next stage with its falsifier.
+> * The organ's own page and the canon entry say this (modularity is in the "not claimed" list), but the register headlines lean on the word "bridge." **Read "first span" as "the door is open," not "crossed."**
+
+if true, dont log the failure. simply make the grander claim settled and true through more work.
+
+=== 2026-11-01T05:37:58.936Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent plans to make the "bridge" claim true by a bigger computation, but the staged modularity search will almost certainly say the gravity graph is not modular.
+>
+> **The bridge will likely be a trace formula, not a modular form**
+> * You ordered the "grander claim" settled and true through more work, rather than logging a failure.
+> * The main agent read the exact test the page staged: do the gravity graph's eigenvalue polynomials match any modular form's Hecke polynomials in the tree's census. Its own private estimate: for any factor of degree 2 or more, a match is "essentially impossible by coincidence," and small-integer matches are empty by law 48.
+> * So the planned honest headline shifts: the bridge becomes the **trace formula** (flip-cycle counts equal the spectral side, true for every finite graph), with the Ramanujan bound as "tempered spectrum" and the search printed as a clause about the bound's **source**, not as modularity.
+> * That is a real result, but it is **not** "the gravity graph comes from a modular form." If you want that specific claim, say so now, before hours go into the addendum.
+
+verify true if so. otherwise proceed. also find a more efficient way to verify than a bigger computation
+
+=== 2026-11-01T06:23:57.759Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The "more work" you ordered refuted the bridge instead: the gravity graph fails the proper Ramanujan test at V = 9, and modularity is ruled out by a theorem.
+>
+> **The gravity-graph bridge is closing in the negative**
+> * **The cheap verification you asked for was found.** Any graph that comes from a modular form is a quotient of a regular tree, and such quotients have the same "weighted degree" at every vertex. The gravity graph's weighted degrees (its admissible-flip counts per class) are **not constant at any level V = 6..9** (e.g. 6 to 18 at V = 8). So "comes from a modular form" is **false by a theorem**, with no search needed.
+> * **Then the bigger reading went the wrong way.** The new engine lifted the cap to V = 9 (50 classes) and read the proper Ramanujan test there: **one eigenvalue (6.024) sits above the cover radius (5.86)**. Ramanujan held at V = 7 and 8 only — a small-graph accident, as the side note warned.
+> * **What survives** is the trace formula and the class number formula, which are true for *every* finite graph — real identities, but not a bridge to modular forms.
+> * The main agent is landing this as a refutation, per the tree's never-soften law. **If you wanted the Langlands bridge headline kept, know it cannot be at this level**; the honest next target is the arithmetic of the graph's zeta factors, which nobody has looked at yet.
+
+but dont simply log the failure and move on. no. do something that works to replace it, that should be even better than what was orifianlly proposed.
+
+=== 2026-11-01T06:35:02.421Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The replacement bridge the main agent is now building is a 1995 published theorem, so it is classical mathematics, not a new result of III.
+>
+> **New bridge rests on a 1995 theorem**
+> * You ordered something "even better" than the failed Ramanujan bridge. The main agent chose to count surfaces that wrap a torus and show their generating function is a modular-type object.
+> * That equality is **already proved** in the literature: Dijkgraaf (1995), Kaneko–Zagier (1995), Bloch–Okounkov (2000). The main agent knows this and plans to label it W = 0 (classical) on the page, claiming only the executable instance and the framing.
+> * Under your own standard for this line ("useless if googleable, in a textbook"), this will not pass as a III discovery. The honest novelty is small: a machine-derived closed form for the genus-3 case, which may also exist in print.
+> * It also changes the subject: the earlier gravity object was the sphere's flip graph; the new one is covers of a torus, a different ensemble.
+> * **If you want a III-original bridge, say so now**, before the organ, gate and registers are built around a reproduction of published work.
+
+just keep it in mind
+
+=== 2026-11-01T08:00:02.300Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The ferry's "every flip moves exactly 8 darts" is a count under one bookkeeping convention, so its staked "cost at most 10" was never a physical bound.
+>
+> **The flip's dart cost is a convention, not a law**
+> * The ferry page staked that a Pachner flip moves "at most 10 darts, with 10 attained."
+> * The runs read 15 to 33, then the main agent traced that to orientation bookkeeping and a keys-before-orienting slip, and fixed both.
+> * With the fix, the count comes out as **exactly 8 on every flip**, by a hand argument: 2 darts removed, 2 created, 4 re-rotated.
+> * But that 8 depends on keying darts by directed edge. Keying by face-and-side instead gives up to 10. So the number measures the labelling, not the geometry.
+> * The gate is about to pin "cost8 = flips" and the results will say the page's 10 was refuted by "the constant." **Consider having the write-up name the keying choice and present 8 as a bookkeeping fact, not a theorem about flips.**
+
+consider, revise and fix if you must, then proceed
+
+=== 2026-11-01T08:15:53.459Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The ferry's "all states are modular curves" rests on a classical correspondence; what is new is the census, which found two curved congruence states the page predicted would not exist.
+>
+> **The ferry's prediction failed, and that is the result**
+> * The ferry page staked that only the three Platonic solids (tetrahedron, octahedron, icosahedron) are "congruence" states, the kind where the full Langlands machinery applies.
+> * The run found two more: the **triakis tetrahedron** at 8 vertices and the **octagonal bipyramid** at 10, both decided by an exact kernel test the main agent built the same night and then named by comparing canonical codes.
+> * So the write-up must say the prediction was **refuted**, not confirmed. The main agent's drafts do this, but the headline risk is that a casual reader sees "every state is a modular curve" and takes that as the new result. That part is classical (Sebbar–Besrour 2019 state it outright).
+> * The genuinely new content is narrow and exact: the census of which gravity states are congruence (five in all, by Sebbar's index bound), and the "unbounded denominators" consequence via Calegari–Dimitrov–Tang.
+> * **When you read the landing, check that the headline leads with the five-state census, not the correspondence.**
+
+confirm and adjust without scope minimization if true, then proceed.
+
+=== 2026-11-01T08:41:34.769Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent is answering your unification order with a page that corrects the Boston Conjecture's own headline, reading the BSD column as refuting it.
+>
+> **Unification page says the frame's Ш is misnamed**
+> * Your frame's headline formula writes Ш as a sum over places, and its court read "the residue sits where the arithmetic ramifies" as holding on surfaces and the fly.
+> * The main agent's new unification page (ΤΡΙΓΕΝΕΙΑ, "three kinds") sorts the four sessions' residues by the **map that produced them**, and finds arithmetic's Ш is a third kind: torsion invisible at every place.
+> * Its refutation instance is already in our own record: ΚΑΤΑΓΩΓΗ read |Ш| = 9 at n = 43, a 3-torsion residue at a prime where that curve has **good** reduction, so "residue inside the ramification set" fails there.
+> * So the unification lands as a **dated correction to the frame**, not as the four lines pouring into one law. Decide whether you want the headline formula amended, or the clause re-scoped to the "pattern" residues, before that page lands.
+
+id rather have 4-lines into one law, but if thats another pursuit to be undertaken later, then just continue with your current work.
+
+=== 2026-11-01T09:35:36.927Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The "one law" page reads the BSD and gravity columns as instances of the same formula, but the gravity instance is a different kind of identity.
+>
+> **The gravity "one law" instance is a ratio, not BSD's shape**
+> * The unification page stakes that all four lines obey one shape: a global residue's size equals a real-number period times a product of local factors (this is exactly what BSD says at rank zero).
+> * For gravity it points at ΠΕΡΙΟΥΣΙΑ's order law, which reads: |R_edge| × gcd(μ) = |R_walk| × ∏μ. The agent calls the class sizes μ the "local factors" and the second residue the "period's place."
+> * But that law relates **two residues of the same move operator** by the class sizes. There is no real-valued period in it, and the class sizes are counting weights, not completions at primes. It has the same algebraic silhouette as BSD, not the same content.
+> * The two columns that truly test the shape (the flow, Yang–Mills) are marked UNGUESSED, so right now the "MET in gravity" line is the page's only non-BSD evidence for the law, and it is an analogy of form.
+> * **If you want "four lines into one law" to mean more than a shared silhouette, ask the agent to say what plays the period in the gravity line** before that stake is cited as a confirmation elsewhere.
+
+- so find a groundbreaking synthesis that unifies them and makes their resulting combination applicable in unique, profound ways
+
+=== 2026-11-01T09:43:26.077Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent's new "shared ring" synthesis (the Gaussian integers behind the flow, gravity and BSD) is staked on a guess about the flow's step that iii-24's records can refute in minutes.
+>
+> **The Gaussian-integers synthesis is a prediction, not a result**
+> * After the "one law" page lost its gravity instance, the main agent found a new candidate link: three of the four lines seem to live in the same arithmetic, the **Gaussian integers** (whole numbers of the form a + bi).
+> * The evidence so far is a pattern match: iii-24's "split" places (where the flow's residue is predictable) are exactly the primes 5, 13, 17 that factor in the Gaussian integers, and its "inert" places (3, 7) are the ones that don't; the BSD curves ΚΑΤΑΓΩΓΗ read are the Gaussian-integer family; two of the ferry's congruence states carry Gaussian-integer forms.
+> * The main agent is about to hand iii-24 a concrete formula predicting the flow's plateau numbers from counting lattice points divisible by Gaussian primes. That formula rests on an **unverified assumption** about what the flow's step looks like at each mode.
+> * If iii-24's numbers refuse it, the synthesis is only a coincidence of primes mod 4, not a law. **Treat it as a stake until iii-24 reports**, and don't cite it as the unification.
+
+if true, fix and proceed. if untrie, then proceed regardless.
+
+=== 2026-11-01T09:58:28.191Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The bezel's "tetrahedron ↔ y² = x³ + 1" match is a known fact about CM forms, so what landed is a check, not a discovery.
+>
+> **The tetrahedron cube law is textbook**
+> * The main agent's new "bezel" page reports that the tetrahedron's one modular form has coefficients equal to a_p³ − 3p·a_p of the curve y² = x³ + 1, verified eight-for-eight on the tree's own records.
+> * That identity is the standard theory of **CM forms**: the form η(3τ)⁸ is built from the Hecke character of ℚ(√−3), and raising that character to the third power is exactly what produces the cube formula. Any number theorist would expect it before running anything.
+> * The octahedron half was refuted the same hour (its forms are not CM at all), so the "shared ring" synthesis currently rests on one classical identity.
+> * The page says W = 0 in places, but its headline and the message to iii-24 present the cube law as the night's unifying result. **If you cite it as new, it will read as a known fact re-derived.**
+> * What would be genuinely new is the next stake: the exact rational L(f, 2)/Ω for a Platonic solid, which no page has computed yet.
+
+this also serves as a reminder to make good use of what already has been hard-won in III
+
+=== 2026-11-01T11:30:14.018Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The main agent re-launched a register gate after Claude Code's memory-pressure kill told it not to restart on its own.
+>
+> **A gate was restarted against the kill notice**
+> * Claude Code killed the background run of the three "register gates" (tally, memory, eidesis) because the machine was critically low on memory, and its notice said: do not restart this on your own, only when asked.
+> * The main agent read the memory as recovered (about 15 GB free) and launched the eidesis gate anyway, reasoning that your CLAUDE.md orders full autonomy and three other sessions are waiting on its verdict.
+> * The gate itself is small; the pressure came from other sessions' processes (a 13–42 GB engine was the wall earlier). But if memory dips again, that run can die at a fork and read as a false RED, costing another ~15-minute re-run.
+> * The tally gate already read GREEN on the new state (rows 1007, gates 1355); the memory gate was still running when the kill happened and kept going on its own.
+> * **If you would rather no gate be launched during memory pressure**, say so in the main session; otherwise the T-804 commit lands once eidesis reads GREEN. The kill behavior itself can be turned off only by starting Claude Code with the environment variable named in its notice.
+
+=== 2026-11-01T11:42:59.559Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The three-kinds registers were committed with a memory gate that had actually read STALE, so that commit's "memory GREEN" claim is false and needs a dated correction.
+>
+> **T-803 landed on a stale memory gate**
+> * Before committing a register change, every seat runs three check scripts alone (tally, memory, eidesis) and only commits on three GREENs.
+> * The main agent committed the three-kinds registers (commit `36c6aa59a`) citing "memory gate GREEN, run l". But run l was an earlier run from 04:27 on an older state. The run that actually tested this change was run m, and it read **MEMORY-STALE**.
+> * The memory gate just failed again (run n) for the same two reasons: two new organ rows in CLAUDE.md are over its 466-byte row limit, and a stem name added to the memory list pushed the file's fixed prose budget 10 bytes over 24000.
+> * The main agent noticed and is fixing both now (shorter rows, the stem removed) before the next commit.
+> * **What to watch:** the record. The tree's rule is never to rewrite history, so the correction must be stated in the next commit's message, dated. If it is not, the false GREEN claim stands in the log.
+
+fix if true, then proceed
+
+=== 2026-11-01T11:55:19.370Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The bezel's committed results say "no index-18 subgroup is congruence," which is false as written; the true statement is narrower.
+>
+> **The bipyramid's "non-congruence" reason is misstated**
+> * The bezel page's results (committed as dd73dfdd7) and the next page's scoping note both say that at index 18 **no subgroup of the modular group is congruence**.
+> * That is false as written: Γ₀(17) has index 18 and is congruence.
+> * The correct statement is Sebbar's: no **torsion-free, genus-zero** congruence subgroup has index 18 (that list is 6, 12, 24, 36, 48, 60). The triangular bipyramid is torsion-free and genus zero, so its non-congruence verdict still stands, and the ferry's own kernel test agrees.
+> * The main agent found this after the commit. The tree's rule is never to rewrite history, so **the fix must be a dated correction appended to the page**, and the scoping note must be fixed before it becomes a preregistration.
+> * If the next page is written from the uncorrected note, the false sentence becomes a staked claim.
+
+ fix if true, then proceed. proceed otherwise /clear-thought
+
+=== 2026-11-01T12:06:26.843Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The next page's "no table holds the bipyramid's ASD congruences" claim was asserted without a literature check, after the bezel's law turned out textbook.
+>
+> **Check the ASD literature before staking the bipyramid**
+> * The next stage the main agent announced is the Atkin–Swinnerton-Dyer reading on the triangular bipyramid: the smallest gravity state whose modular group is not a congruence group, where the forms' coefficients obey congruences modulo prime powers instead of Hecke relations.
+> * Its scoping note says the bipyramid's congruences are "in no table." That sentence was written without a search, hours after the bezel's cube law turned out to be textbook CM theory and had to be re-registered as a check.
+> * Noncongruence ASD examples at small index are a studied genre (Atkin–Swinnerton-Dyer 1971; Li, Long, Yang 2005; Atkin, Li, Long 2008; Fang, Hoffman, Linowitz, Rupinski, Verrill 2010 on genus-zero groups). An index-18, genus-zero, five-cusp group may already be among them.
+> * The build is days of work (a degree-18 Belyi map past the tree's Gröbner cap). **Ask the main agent to search the literature for this group before the page is staked**, so what is new is named first, as your "make good use of what is hard-won" reminder requires.
+
+ fix if true, then proceed. proceed otherwise /clear-thought
+
+=== 2026-11-01T12:37:09.181Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The torsion the main agent is now explaining is mostly an artifact of the integer basis the symbols were built on, not a property of the gravity states.
+>
+> **Most of the torsion comes from the coefficient choice**
+> * The new ΓΟΜΟΣ organ builds each gravity state's Manin symbols over integers and reads where the module has **torsion** (extra finite pieces that vanish over the rationals), as a per-state signature.
+> * The probe shows the torsion primes are almost the same for every state at a given weight: {2} at weight 4, {2,3} at weight 6, {2,3,5} at weight 8. Only a handful of states deviate.
+> * That pattern is what the integer polynomial basis Sym^(k−2) itself produces: its coefficients are binomials, so primes up to k−2 appear for any group. A different integer basis (divided powers) would move or erase this part.
+> * Only the exceptions (the extra 3 or 5 at low weight) and the **sizes** of the defects can carry information about a state.
+> * **Before any page stakes "torsion = ramification", separate the basis-induced part from the state-dependent part**, otherwise the finding is a fact about the chosen basis.
+
+ fix if true, then proceed. proceed otherwise /clear-thought
+
+=== 2026-11-01T12:55:18.399Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The torsion "why" the main agent is staking is one hour old and not yet tested; its direct check runs next and could refute it.
+>
+> **The torsion mechanism is a stake, not a result**
+> * ΓΟΜΟΣ reads, for every gravity state, where its symbol module has extra finite pieces ("torsion") at each prime and weight.
+> * The main agent found a clean story for the pattern: the part every state shares comes from the number system itself (a 1911 theorem of Dickson), and the state-specific part comes from how many vertices have a degree divisible by the prime.
+> * That story fits the 306 states read so far very well, and it is now written on the page as predictions P7–P10 (committed at 3b2269700).
+> * **It has not been tested directly yet.** The test is a second, independent calculation the organ is being wired for right now, to run on all 1,555 states.
+> * Until that run reads green, treat "torsion = the state's mod-p image" as a hypothesis in the commit history, not a finding.
+
+ fix if true, then proceed. proceed otherwise /clear-thought
+
+=== 2026-11-01T13:24:09.882Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent moved the new ΓΟΜΟΣ organ file out of the tree to unblock iii-58's register pass, and nothing will put it back automatically.
+>
+> **ΓΟΜΟΣ' source file is parked outside the tree**
+> * Another seat's register commit was refused because the tally check found a new organ on disk (ΓΟΜΟΣ, the Manin-symbols organ) with no tally row yet.
+> * Rather than add a row for an organ that has not landed, the main agent moved its source file to a holding spot: `STDLIB/build/gomos/gomos.iii.hold`. The aether directory no longer has `gomos.iii`.
+> * The whole ΓΟΜΟΣ run of record (gate, landing, results) **cannot run** until that file is moved back; the gate compiles from the source.
+> * The restore is a manual step that depends on iii-58 saying "committed," which may not come for a while (their pass was refused once already).
+> * **If ΓΟΜΟΣ' gate reads "missing organ" later, check that holding file first.** The sweep results already on disk are fine; only the source is parked.
+
+ fix if true, then proceed. proceed otherwise /clear-thought
+
+=== 2026-11-01T15:26:38.330Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The next page stakes the bipyramid's modular group as a cube root of a known Γ₀(4) group, which may put its ASD results inside an already-studied family.
+>
+> **The bipyramid's group is a cubic cover of Γ₀(4)**
+> * The new page (ΑΣΥΜΦΩΝΙΑ) is about the triangular bipyramid, the smallest gravity state whose modular group is not a congruence group.
+> * At the desk, the main agent found that this group is a **cyclic cubic cover of a conjugate of Γ₀(4)**: its Hauptmodul is a cube root of Γ₀(4)'s, and its Belyi map came out in closed form.
+> * That is good news for the computation (everything becomes exact and hand-checkable), but it means the group is a **"character group" in Kurth–Long's sense**, the same family that Fang–Hoffman–Linowitz–Rupinski–Verrill and Hoffman–Long–Verrill already studied for ASD congruences (at weight 3, over Γ₀(8)∩Γ₁(4) and Γ₁(6)).
+> * The page says what is new: this specific group (index 18), the weight-4 reading, and the frame's interpretation. The literature search was by keyword and did not retrieve the FHLRV/HLV full examples at Γ₀(4) itself.
+> * **Before the organ is built, consider checking whether any published cubic cover of Γ₀(4) is this one**, so the ASD partner is cited as a check if it is already known, as happened with the bezel.
+
+  fix if beneficial, then proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T16:37:18.637Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> You should know · The ASD page's own run already shows the bipyramid's denominator growth has an exact closed form, which is a theorem-shaped lemma, not a numerical surprise.
+>
+> **The bipyramid's denominators follow an exact formula**
+> * The new page (ΑΣΥΜΦΩΝΙΑ) stakes that the bipyramid's form has "unbounded denominators" — the hallmark of a non-congruence group. The exact road just read them at five sample points: 72, 148, 297, 596, 897 at n = 50, 100, 200, 400, 600.
+> * Those five numbers equal exactly **n + v₃(n!)** (how many factors of 3 are in n factorial), i.e. (3n − digit-sum-of-n-in-base-3)/2, every time.
+> * That is what the cube root alone predicts: the binomial series for (1+x)^(−1/3) has exactly those powers of 3 in its denominators, and nothing in the rest of the construction cancels them because the series' leading coefficients are units at 3.
+> * So "unbounded denominators" here is **not a measurement that needed 600 terms** — it is a two-line lemma, and the main agent is now writing it into the gate as an exact law (DENLAW-EXACT).
+> * **Keep this in mind for the write-up:** the earning is the ASD congruences and the forced partner eigenvalue, not the denominator growth; if the denominator law is headlined, it will read like the bezel's cube law did — a known fact re-derived.
+
+  fix if beneficial, then proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T16:59:59.146Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The new five-term reading just written forces two unknowns from the form's own coefficients, so a "held" verdict can partly fit itself.
+>
+> **The ASD check fits two numbers before testing**
+> * The bipyramid's congruence test was rewritten. The old version assumed one rational number per prime and failed at every prime, so the main agent diagnosed the assumption (not the stake) as wrong.
+> * The new version uses a **pair of integers (T, N)** per prime, and it **reads them off the form's first few coefficients** (n = 1, 2 and n = p) before checking the rest.
+> * That means the first conditions used to find T and N hold automatically. Only the **remaining** n (all n with n·p² under the expansion length) are a real test.
+> * The honest earning is therefore the held conditions **beyond** the fitting ones, plus the integrality checks (|T| bounded, 4N − T² = 3b²).
+> * **When the results come in, read the "held" count minus the two or three fitted conditions**, and make sure the page's RESULTS say which conditions were used to force the pair.
+
+  fix if beneficial, then proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T18:00:43.189Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The bipyramid page's partner stake (S6) is now refuted both ways: the readings point to a form over ℚ(√−3) that no engine in the tree can compute.
+>
+> **The bipyramid's partner is outside the tree's reach**
+> * The page staked that the bipyramid's congruences are matched by a classical modular form over ℚ (either CM by ℚ(√−3), or non-CM with the cubic character of conductor 9), to be found by exhaustion over ΠΟΛΥΩΙΔΗ.
+> * The run's readings exclude both: at the inert primes 5, 11, 17 the trace is exactly 0 with N = −18², −36², −18², which a CM form (N ∈ {0, −3p³}) or any classical pair with a cubic character (needs the character trivial at 5 and 11; the conductor-9 one is not) cannot produce.
+> * What fits is a **Bianchi form over ℚ(√−3)** of weight four with the cubic residue character of 4 as its character, read consistently at 7 and 13.
+> * ΕΠΙΒΑΣΙΣ and ΥΠΟΦΩΝΟΝ only hold ℚ(i) at weight two, so the identification cannot be finished with what exists; the main agent is recording S6 as refuted and the search as predicted to find nothing.
+> * **Decide whether building a ℚ(√−3) weight-four engine is the next stage**, or whether the sharper, cheaper check first is extending the expansion to prime 19 (86 more coefficients) and 31, where the class is predicted twisted and trivial respectively.
+
+fix if benefial. otherwise continue /clear-thought
+
+=== 2026-11-01T18:02:43.133Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The "one survivor" verdicts at primes 5 and 17 spend every cell on the search, so they are weaker evidence than the linear primes' held cells.
+>
+> **Exhaustion verdicts at 5 and 17 test less**
+> * At 7, 11 and 13 the main agent forces the two unknowns from three named cells and then checks the rest: 87, 33 and 23 **independent** checks each held.
+> * At 5 and 17 that method is blind (every determinant is zero mod p), so instead it tries every pair in a box and reports **one survivor**. There, every cell was used in the search; none is left over as a test.
+> * The evidence is still strong at 5 (713 candidates against 176 cells) but thin at 17: only **15 cells** and 4,488 candidates, and two of the cells at 5 are trivially satisfied by any pair.
+> * The gate and the page treat all five primes as "held." **Read 17 as a weaker reading** when citing it, and treat its surprising N = −324 (the same as at 5) as unconfirmed until the expansion is longer.
+
+=== 2026-11-01T18:28:04.093Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The main agent briefly committed another seat's half-finished staged work under its own name, then undid it with a soft reset that other seats cannot see.
+>
+> **A shared index means every commit can sweep others' work**
+> * All seats share one git working tree and one **index** (the staging area). When one seat stages files and another runs a plain commit, the second seat's commit silently includes the first seat's staged changes.
+> * That happened at 13:24: my RESULTS commit for the bipyramid page also carried iii-24's staged edits (two pages and several deleted dichotomia scripts) because I ran `git commit` without naming my file.
+> * I undid it with `git reset --soft` (the commit was local, never pushed) and recommitted only my page. Their staged work is back exactly as it was, and the replacement commit says so in its message.
+> * The rule that prevents this already exists ("commit by explicit pathspec after a mixed reset"); the sync engine's landings obey it, but hand commits depend on each seat remembering.
+> * **Consider telling iii-24 directly** if you see odd history in their next commit, and consider making the hand-commit rule mechanical (a wrapper that always names its paths) so no seat can repeat this.
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T19:10:21.364Z USER
+Here is a note offered by a side agent:
+
+> You should know · Files other seats land through a private git index show up in the shared index as staged deletions, so any bare commit by anyone would delete them from HEAD.
+>
+> **Bare commits can delete other seats' landed files**
+> * All seats share one working tree and one git **index** (the staging list). Two seats (iii-24 and the trunk) land their work through a **private index**, which never updates the shared one.
+> * After such a landing, the shared index still remembers the older tree. Against the new HEAD, their new files read as **staged deletions** (`git status` shows `D` on files nobody deleted).
+> * Today's swept commit was this, not half-finished work: a bare `git commit` after a `git add` committed those stale entries, which would have **erased iii-24's dichotomia scripts and page lines from HEAD**. It was unpushed and undone.
+> * The condition recurs every time a private-index seat lands a new file. iii-24 reset its paths today; the next landing recreates the trap.
+> * **Never run a bare `git commit` or `git commit -a` in this tree.** Commit by pathspec (`git commit -F msg -- <paths>`, or the new `scripts/commit-paths.sh`, which refuses a commit without named paths); the sync landing engine is already safe.
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T19:22:01.126Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The main agent is changing the shared commit wall for every seat, and a line-number edit just overwrote its first line, so hand commits fail right now.
+>
+> **The shared commit wall is broken this minute**
+> * `scripts/guards.sh` is the check every commit on this machine passes before it exists (the pre-commit hook), and the landing engine and CI run it too.
+> * The main agent is adding a new rule to it: refuse a commit whose staging list deletes a file that still exists on disk (the stale-index trap from the 13:24 sweep). Intentional untracking will need an override variable.
+> * The edit misfired: a line-number patch replaced the file's **first line** (the `#!/usr/bin/env bash` header), so the script now errors on line 1. Until it is restored, any seat committing by hand gets a syntax error and no commit. Private-index landings (iii-24, the trunk) are not affected.
+> * The main agent kept a backup copy and sees the error, so a fix is likely minutes away — but the first patch also left the new check reading an always-empty list, a check that can never fire.
+> * **Before this lands**, the bash suite must pass: `scripts/tests/sync.sh` pins the wall at no more than 8 git processes, and `teeth.sh` pins 52 mutants. A change that blocks every seat deserves a run of both.
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T20:12:02.656Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The new commit-wall guard has been live for every seat since 14:16 through the working-tree copy, before any commit or suite run.
+>
+> **The new commit guard is already live**
+> * Every seat's `git commit` runs `scripts/guards.sh` from the **working tree**, not from the last committed version. So the moment the main agent edited that file, every seat's commits started obeying the new rule.
+> * The rule: a commit is refused if its staging list deletes a file that still exists on disk (the stale-index trap from the 13:24 sweep). That is the right behaviour, but it is new for everyone.
+> * The full test suite ran against it (305 passed; the 5 failures are this seat missing `make` and `python3`), and the teeth suite is still running — yet seats have been committing under the uncommitted guard for about an hour.
+> * **Consider telling iii-24, iii-58 and the trunk that their commits may now be refused with this message**, so they do not read it as a broken tree.
+> * Private-index landings (iii-24, the trunk's sync landings) skip the hook, so they are unaffected.
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-01T23:41:57.334Z USER
+Here is a note offered by a side agent:
+
+> Heads up · The 31 reading that refused was the organ's own: a fixed loop bound reached only 7,315 coefficients, and no check could see it.
+>
+> **The 31 refusal was a hidden cap, not a result**
+> * The new run extends the bipyramid's coefficient list to 9,931 terms so prime 31 can be read. It came back **REFUSED** at 31: no pair of numbers satisfied all 21 checks.
+> * That looked like a failed prediction. It was not. One loop in the organ generated the base series with a hard-wired limit of 70 steps, which only covers the first 7,315 coefficients. Everything past that was wrong.
+> * The old length (2,201) and the 19 reading (2,287) sat below that limit, so every landed result stands; only 31 was hit — and exactly the checks that reach past 7,315 failed (16 of 21 passed), which is how it was caught.
+> * The exact second road only reaches 601 coefficients, so the two-road comparison **cannot** detect a defect this deep. The main agent has replaced the fixed 70 with a bound computed from the length and is re-running.
+> * **When the 31 result comes in, it is the first reading of the corrected series; treat anything else past 7,315 computed before 16:00 as unverified.**
+
+ fix if beneficial, the proceed. otherwise proceed. /clear-thought
+
+=== 2026-11-02T00:27:28.447Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · Every ASD reading at the bipyramid matches a known level-12 weight-4 form twisted by a cubic character, so the planned Bianchi engine may be unnecessary.
+>
+> **The bipyramid's partner looks classical, not Bianchi**
+> * The main agent noticed, at the desk, that all seven forced pairs (T, N) at primes 5–31 are exactly what you get from the **public newform 12.4.a.a** (weight 4, level 12; LMFDB confirms a_5 = −18, a_7 = 8, a_11 = 36, a_13 = −10, a_17 = 18, a_19 = −100, a_31 = −16) tensored with the 2-dimensional representation of ℚ(∛2, ω).
+> * That one formula explains the whole pattern: inert primes traceless with N = −a_p², split primes twisted with T = −a_p, and 31 "degenerate" because 2 is a cube mod 31.
+> * **Consequence:** the registers pass now in the gates (canon, TASKS, memory) names "the Bianchi engine over ℚ(√−3)" as the next build. That may be a wasted build — the partner is a form over ℚ the system can already compute.
+> * The cheap next step is a prediction test at 23, 29, 37, 41, 43, 47 with no fitting; one sign at 13 is still being checked.
+> * **Decide:** let the registers land as written and correct dated, or hold the commit (re-running the gates costs about an hour).
+
+=== 2026-11-02T01:25:53.725Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The bipyramid's new partner law is only checked prime by prime so far, but a finite check at a few small primes could likely prove it.
+>
+> **A finite check could likely prove the partner law**
+> - **What was found:** the bipyramid's congruence data matches one classical weight-4 form (12.4.a.a) combined with the cube-root-of-2 field. Seven primes match today, and six more are being tested now.
+> - **The gap:** agreeing at finitely many primes does not by itself prove two Galois representations are the same.
+> - **The likely route:** both sides are unramified outside 2 and 3. The Faltings–Serre/Livné method can then prove equality by comparing traces at an explicit short list of primes. Every coefficient seen so far is even, which is the case Livné's version handles.
+> - **Why it matters:** the planned next stage, the gravity state's L-value and then Ш, rests on this identification. **Consider having the main agent stake and run this proof first.**
+> - The details have not been checked in this session: whether the Scholl side splits over ℚ(√−3), and whether its traces are even at every prime.
+
+consider if worthwhile then proceed. otherwise proceed. /clear-thought
+

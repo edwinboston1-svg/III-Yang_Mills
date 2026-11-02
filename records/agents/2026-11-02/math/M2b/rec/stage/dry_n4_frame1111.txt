@@ -1,0 +1,3 @@
+too many links
+W2-KAT representations to spin 2/2 (GENINV=1): homomorphism and traces [MET]
+W2-FRAME the integrated ring: 1 rows above, 1 below, 1 columns left, 1 right of the core rectangle [-4, 4) x [0, 4)

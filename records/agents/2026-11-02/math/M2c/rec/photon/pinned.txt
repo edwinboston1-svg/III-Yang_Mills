@@ -1,0 +1,32 @@
+PHOTON-PINNED n=2 ring w=0: 22 object links
+PHOTON-PINNED-PLANAR-w0 n=2  beta*Var(A)=1.155411058 beta*Var(B)=1.155411058 beta*Cov=-0.245539813  non-compact r=-0.212512951  [betaV=0.749: sigma2=1.5426 rho_wr=1.668228e-01]  [betaV=2: sigma2=0.5777 rho_wr=2.121116e-01]  [betaV=5: sigma2=0.2311 rho_wr=2.125129e-01]  [betaV=10: sigma2=0.1155 rho_wr=2.125130e-01]
+PHOTON-PINNED n=2 ring w=1: 58 object links
+PHOTON-PINNED-PLANAR-w1 n=2  beta*Var(A)=1.190304847 beta*Var(B)=1.190304847 beta*Cov=-0.246345558  non-compact r=-0.206960056  [betaV=0.749: sigma2=1.5892 rho_wr=1.589051e-01]  [betaV=2: sigma2=0.5952 rho_wr=2.064664e-01]  [betaV=5: sigma2=0.2381 rho_wr=2.069601e-01]  [betaV=10: sigma2=0.1190 rho_wr=2.069601e-01]
+PHOTON-PINNED n=2 ring w=2: 110 object links
+PHOTON-PINNED-PLANAR-w2 n=2  beta*Var(A)=1.191060891 beta*Var(B)=1.191060891 beta*Cov=-0.246290989  non-compact r=-0.206782870  [betaV=0.749: sigma2=1.5902 rho_wr=1.586906e-01]  [betaV=2: sigma2=0.5955 rho_wr=2.062872e-01]  [betaV=5: sigma2=0.2382 rho_wr=2.067829e-01]  [betaV=10: sigma2=0.1191 rho_wr=2.067829e-01]
+PHOTON-PINNED-BENT n=2: 22 object links
+PHOTON-PINNED-BENT n=2  beta*Var(A)=1.150381150 beta*Var(B)=1.150381150 beta*Cov=-0.285912286  non-compact r=-0.248537005  [betaV=0.749: sigma2=1.5359 rho_wr=1.964476e-01]  [betaV=2: sigma2=0.5752 rho_wr=2.480845e-01]  [betaV=5: sigma2=0.2301 rho_wr=2.485370e-01]  [betaV=10: sigma2=0.1150 rho_wr=2.485370e-01]
+PHOTON-PINNED n=4 ring w=0: 76 object links
+PHOTON-PINNED-PLANAR-w0 n=4  beta*Var(A)=2.557958300 beta*Var(B)=2.557958300 beta*Cov=-0.604892600  non-compact r=-0.236474770  [betaV=0.749: sigma2=3.4152 rho_wr=6.084882e-02]  [betaV=2: sigma2=1.2790 rho_wr=2.071034e-01]  [betaV=5: sigma2=0.5116 rho_wr=2.363162e-01]  [betaV=10: sigma2=0.2558 rho_wr=2.364748e-01]
+PHOTON-PINNED n=4 ring w=1: 136 object links
+PHOTON-PINNED-PLANAR-w1 n=4  beta*Var(A)=2.626062359 beta*Var(B)=2.626062359 beta*Cov=-0.607002356  non-compact r=-0.231145446  [betaV=0.749: sigma2=3.5061 rho_wr=5.566169e-02]  [betaV=2: sigma2=1.3130 rho_wr=1.998843e-01]  [betaV=5: sigma2=0.5252 rho_wr=2.309493e-01]  [betaV=10: sigma2=0.2626 rho_wr=2.311454e-01]
+PHOTON-PINNED n=4 ring w=2: 212 object links
+PHOTON-PINNED-PLANAR-w2 n=4  beta*Var(A)=2.627787395 beta*Var(B)=2.627787395 beta*Cov=-0.606980046  non-compact r=-0.230985219  [betaV=0.749: sigma2=3.5084 rho_wr=5.552796e-02]  [betaV=2: sigma2=1.3139 rho_wr=1.996799e-01]  [betaV=5: sigma2=0.5256 rho_wr=2.307880e-01]  [betaV=10: sigma2=0.2628 rho_wr=2.309852e-01]
+PHOTON-PINNED-BENT n=4: 76 object links
+PHOTON-PINNED-BENT n=4  beta*Var(A)=2.552122339 beta*Var(B)=2.552122339 beta*Cov=-0.650047986  non-compact r=-0.254708787  [betaV=0.749: sigma2=3.4074 rho_wr=6.697059e-02]  [betaV=2: sigma2=1.2761 rho_wr=2.235219e-01]  [betaV=5: sigma2=0.5104 rho_wr=2.545416e-01]  [betaV=10: sigma2=0.2552 rho_wr=2.547088e-01]
+PHOTON-PINNED n=8 ring w=0: 280 object links
+PHOTON-PINNED-PLANAR-w0 n=8  beta*Var(A)=5.325529201 beta*Var(B)=5.325529201 beta*Cov=-1.312631864  non-compact r=-0.246479141  [betaV=0.749: sigma2=7.1102 rho_wr=4.573989e-03]  [betaV=2: sigma2=2.6628 rho_wr=1.042753e-01]  [betaV=5: sigma2=1.0651 rho_wr=2.306575e-01]  [betaV=10: sigma2=0.5326 rho_wr=2.462430e-01]
+PHOTON-PINNED n=8 ring w=1: 388 object links
+PHOTON-PINNED-PLANAR-w1 n=8  beta*Var(A)=5.454420042 beta*Var(B)=5.454420042 beta*Cov=-1.314826250  non-compact r=-0.241057022  [betaV=0.749: sigma2=7.2823 rho_wr=3.862387e-03]  [betaV=2: sigma2=2.7272 rho_wr=9.764538e-02]  [betaV=5: sigma2=1.0909 rho_wr=2.240290e-01]  [betaV=10: sigma2=0.5454 rho_wr=2.407735e-01]
+PHOTON-PINNED n=8 ring w=2: 512 object links
+PHOTON-PINNED-PLANAR-w2 n=8  beta*Var(A)=5.457937113 beta*Var(B)=5.457937113 beta*Cov=-1.314808173  non-compact r=-0.240898373  [betaV=0.749: sigma2=7.2870 rho_wr=3.844182e-03]  [betaV=2: sigma2=2.7290 rho_wr=9.746414e-02]  [betaV=5: sigma2=1.0916 rho_wr=2.238381e-01]  [betaV=10: sigma2=0.5458 rho_wr=2.406134e-01]
+PHOTON-PINNED-BENT n=8: 280 object links
+PHOTON-PINNED-BENT n=8  beta*Var(A)=5.319654169 beta*Var(B)=5.319654169 beta*Cov=-1.357979614  non-compact r=-0.255275920  [betaV=0.749: sigma2=7.1023 rho_wr=4.915072e-03]  [betaV=2: sigma2=2.6598 rho_wr=1.087118e-01]  [betaV=5: sigma2=1.0639 rho_wr=2.390073e-01]  [betaV=10: sigma2=0.5320 rho_wr=2.550338e-01]
+PHOTON-PINNED n=16 ring w=0: 1072 object links
+PHOTON-PINNED-PLANAR-w0 n=16  beta*Var(A)=10.857494914 beta*Var(B)=10.857494914 beta*Cov=-2.726846811  non-compact r=-0.251148799  [betaV=0.749: sigma2=14.4960 rho_wr=1.928803e-05]  [betaV=2: sigma2=5.4287 rho_wr=1.610363e-02]  [betaV=5: sigma2=2.1715 rho_wr=1.430064e-01]  [betaV=10: sigma2=1.0857 rho_wr=2.337866e-01]
+PHOTON-PINNED n=16 ring w=1: 1276 object links
+PHOTON-PINNED-PLANAR-w1 n=16  beta*Var(A)=11.107601273 beta*Var(B)=11.107601273 beta*Cov=-2.729041341  non-compact r=-0.245691331  [betaV=0.749: sigma2=14.8299 rho_wr=1.385295e-05]  [betaV=2: sigma2=5.5538 rho_wr=1.422144e-02]  [betaV=5: sigma2=2.2215 rho_wr=1.356703e-01]  [betaV=10: sigma2=1.1108 rho_wr=2.271187e-01]
+PHOTON-PINNED n=16 ring w=2: 1496 object links
+PHOTON-PINNED-PLANAR-w2 n=16  beta*Var(A)=11.114686610 beta*Var(B)=11.114686610 beta*Cov=-2.729023278  non-compact r=-0.245533084  [betaV=0.749: sigma2=14.8394 rho_wr=1.372219e-05]  [betaV=2: sigma2=5.5573 rho_wr=1.417082e-02]  [betaV=5: sigma2=2.2229 rho_wr=1.354639e-01]  [betaV=10: sigma2=1.1115 rho_wr=2.269265e-01]
+PHOTON-PINNED-BENT n=16: 1072 object links
+PHOTON-PINNED-BENT n=16  beta*Var(A)=10.851619825 beta*Var(B)=10.851619825 beta*Cov=-2.772194777  non-compact r=-0.255463684  [betaV=0.749: sigma2=14.4881 rho_wr=2.065488e-05]  [betaV=2: sigma2=5.4258 rho_wr=1.657282e-02]  [betaV=5: sigma2=2.1703 rho_wr=1.457720e-01]  [betaV=10: sigma2=1.0852 rho_wr=2.378657e-01]

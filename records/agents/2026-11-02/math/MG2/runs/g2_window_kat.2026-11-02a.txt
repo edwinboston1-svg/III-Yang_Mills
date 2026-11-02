@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\MG2\code\g2_window.py", line 179, in <module>
+    print('==', g.name, '|W| =', len(g.W), 'irreps', len(L), 'first:', [(tuple(l), g.dim(l), round(g.C2(l), 4)) for l in L[:8]])
+                                                                                   ~~~~~^^^
+  File "C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\MG2\code\g2_window.py", line 61, in dim
+    num += e * np.exp(2j * np.pi * t @ (np.array(lam) + self.delta) @ w)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+ValueError: matmul: Input operand 0 does not have enough dimensions (has 0, gufunc core with signature (n?,k),(k,m?)->(n?,m?) requires 1)

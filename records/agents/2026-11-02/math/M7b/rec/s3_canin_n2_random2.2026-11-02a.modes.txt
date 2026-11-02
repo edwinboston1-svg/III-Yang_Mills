@@ -1,0 +1,29 @@
+W2-MODES L=2 N=256: sup|delta_2| = 1.531504e-10, sup|e^delta_2 - 1| = 1.531504e-10 on the grid; W2-OBJECT planar n=2 plaquettes=8 links=22 (shared=3) outside=176 staples five=12 four=10; rule degree 16, 1377 points; beta=1 WMAX=2 LMAX=2 datum=random:2 order=fwd
+W2-MODE a=0 c=0 bhat(e^delta-1)=+2.860666381e-18 delta-mode=+2.859935257e-18 unit=1.000000e+00 ratio=+2.860666e-18 kind=constant
+W2-MODE a=0 c=1 bhat(e^delta-1)=-6.445960524e-15 delta-mode=-6.445960523e-15 unit=1.627530e-04 ratio=-3.960578e-11 kind=creating
+W2-MODE a=0 c=2 bhat(e^delta-1)=+3.600047832e-18 delta-mode=+3.599316708e-18 unit=-2.222011e-11 ratio=NO-UNIT kind=modifying
+W2-MODE a=1 c=0 bhat(e^delta-1)=-6.224643199e-15 delta-mode=-6.224643199e-15 unit=1.686380e-04 ratio=-3.691128e-11 kind=creating
+W2-MODE a=1 c=1 bhat(e^delta-1)=+3.823932879e-11 delta-mode=+3.823932879e-11 unit=2.744634e-08 ratio=+1.393240e-03 kind=creating
+W2-MODE a=1 c=2 bhat(e^delta-1)=-2.199099619e-14 delta-mode=-2.199099619e-14 unit=-3.747154e-15 ratio=NO-UNIT kind=creating
+W2-MODE a=2 c=0 bhat(e^delta-1)=-2.169623274e-19 delta-mode=-2.176934513e-19 unit=2.157318e-10 ratio=-1.005704e-09 kind=modifying
+W2-MODE a=2 c=1 bhat(e^delta-1)=-9.769997296e-15 delta-mode=-9.769997295e-15 unit=3.511101e-14 ratio=-2.782602e-01 kind=creating
+W2-MODE a=2 c=2 bhat(e^delta-1)=+4.221389181e-18 delta-mode=+4.220658057e-18 unit=-4.793585e-21 ratio=NO-UNIT kind=modifying
+W2-CONTENT L=2: r_mod = 8.038399e-18 (c_rel,mod = 20 r e^{7 alpha} = 1.618973e-16); r_create = 2.796535e-01 (c_rel,create = 5.632358e+00); sup|delta_2| = 1.531504e-10
+W2-COEF j2=1 aprime=8.431897839365e-05 rational=84318978/1000000000000
+W2-COEF j2=2 aprime=7.191060799050e-11 rational=72/1000000000000
+W2-COEF j2=3 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=4 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=5 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=6 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=7 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=8 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=9 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=10 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=11 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=12 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=13 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=14 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=15 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-COEF j2=16 aprime=0.000000000000e+00 rational=0/1000000000000
+W2-SHARES NPAIR=16: s_half = 6.430933e-06 s_one = 2.471369e-07 s_high = 0.000000e+00 per pair; half factor 1 + NPAIR r_mod = 1.000000000; wall floor a'_1 + NPAIR s_one/3 = 1.318135438e-06
+W2-CERT-CALL COEF=84318978/1000000000000,72/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000,0/1000000000000 HALFN=1000000000000 HALFD=1000000000000 WALLN=1318135 WALLD=1000000000000

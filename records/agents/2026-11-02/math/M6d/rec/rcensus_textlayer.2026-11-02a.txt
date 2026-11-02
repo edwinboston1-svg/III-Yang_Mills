@@ -1,0 +1,93 @@
+=================== cmp119
+awk: cmd. line:5: (FILENAME=/c/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/M3b/src/cmp119.txt FNR=52) warning: Invalid multibyte data detected. There may be a mismatch between your data and your locale
+cmp119 p~245 L52: At first we introduce two additional partitions of the lattice T into large cubes. The first is a partition into cubes of the size MR0, where Ro is the smallest power of L such that R0^(\oggQ2)r, r ^ 2 , and M=Lm is sufficiently large. The second is a partitio
+cmp119 p~245 L61: where the sum is over sets Po, which are unions ofthe cubes ofthe second partition introduced above, i.e.,unions of the LM2R0-cubes. There are two convenient choices of the positive constant 0. The first is the same as in [16], i.e., in the first step we take 
+cmp119 p~245 L65: lattice 7j. The first isinto cubes ofthe size LMR, where R isthe smallest power of L such, that R1 >(logg1~~2)'\ The second is into cubes of the size LLM2R. For the more natural scale L " 1 these are partitions of the lattice TL-into MR1 -cubes and LM2R1 -cube
+cmp119 p~245 L98: where the sum is over sets Px CZ(PQ~)C, which are unions of the L2M2R1 -cubes,P{ denotes the complement to (P~)c> a n d ^i=0iA)(0i)
+cmp119 p~247 L148: where the sum is over sets Qx d{B(P\)Y~ =((B(Pl)c)~)c, which areunions of the L2M2R-cubes, and o = goA1po(go) =(AJA0)0. We assume that the constant Ao is much larger than A. The superscript * used in(1.8) means that wetake the setof all bonds with at least one
+cmp119 p~247 L159: We take Q[again asthe union ofLMR1 -cubes which intersect Q, and we surround the sets Q[,(B(P\)C)~ by two layers of LMT^-cubes. Denote
+cmp119 p~247 L165: thus x is a union of LMRX -cubes, and a distance between  and the union ofthe large field regions is at least 2LMR1. On the set ^ we have only the small field characteristic functions, and it is easy to see that the functions 0, Ax localized in i are equal to 
+cmp119 p~249 L255: Here the summation is over sets R1 a Q^ ~1,which are unions of L2M2 Rx -cubes, and Rl means the complement to ^ ~1. Consider a cube ·' c R£. For this cube we now
+cmp119 p~249 L266: between these configurations is very small. More precisely | U1 U[^ -- 11< 0(1)B3 · exp (-- LM2R1)1, and the bound can be made much smaller than 0, if M2R is large enough. Thus the second function in the product (1.19) is equal to 1, and we
+cmp119 p~251 L295: where the function H 1 > A x depends onits argument restricted to a small neighborhood of dA (in fact one layer of M-cubes touching d and contained in {). The dependence is analytic, and the function t ^ Ax has the exponential decay property. It wasformulated 
+cmp119 p~253 L407: We consider also a third family ofsequences {Sj},j =1,2,....,/:, where Sj <= jj, and Sj is either empty, or it is a union ofLM2Rj -cubes in thelattice TLJ. For the
+cmp119 p~255 L434: These large field regions satisfy the following condition: if a component of Z7 is contained in a cube of the size 100 MRj (in the ZJ-lattice), then it is a rectangular parallelepiped.
+cmp119 p~255 L484: formation, but not by the R-operation, are unions of MRj-cubes in the lattice TL-3. They satisfy also other conditions, e.g., the distance between their boundaries is at
+cmp119 p~255 L486: least equal to 2MRj, which will be determined inductively by the operations in the
+cmp119 p~257 L577: where thecubes Dbelong to thepartition of the lattice T into cubes of the size LM2Rk. This partition is compatible with all other partitions of this lattice. The density k(Vk) canbe represented as
+cmp119 p~259 L691: Localization properties of E 0 ) are crucial for our analysis. We need adifferent, more detailed description than the one in (1.1.27), because now wemust obtain more information about bounds for (2.25), and for localized expressions. Let us denote by ® theset 
+cmp119 p~259 L733: Each function Rij)(j,Uk) has the localized renormalization of the form (1.1.7), but with the summation over localization domains Xe j contained in f ~1, Xcz j~ ~1, which are unions of the MRj-cubQs in the lattice T. Terms of this representation have the proper
+cmp119 p~263 L976: ontroduced by the characteristic function k imply that the new fields Vk+  satisfy the bounds \Vk+ 1(dp') -- l\<2L2k forp'eJ^K We introduce new restrictions on these fields. The term has a large field region Zk = Ak, and we denote by Zk the union of all LMRk +
+cmp119 p~265 L982: four layers of the LMRk + 1 -cubes, i.e., we take the domain Zk~4, and we introduce the following decomposition of unity for the domain (Z^~4)c:
+cmp119 p~265 L996: L2M2Rk +  -cubes. The cubes are from the partition of the lattice T into cubes of the
+cmp119 p~265 L998: size L2M2 Rk + ,or the partition of the lattice TL- into cubes of the size LM2 Rk + -
+cmp119 p~265 L1002: union of all LMRk + x -cubes intersecting Pk + 1 - and we surround the union
+cmp119 p~265 L1004: Pk'+1uZk~4 by a layer of LMRk + -cubes. In the complement (Pk"^1uZk^5)c
+cmp119 p~265 L1028: surround the domain P ^ u Z ^ 5 by a layer of LMRk + 1 -cubes, or we take off
+cmp119 p~265 L1050: The summation is over subdomains Qk + 1^(Bk + 1 (Pkx+ ))~~1, which are unions of L2M2Rk + 1 -cubes, and the complement is relative to the domain (Bk + 1(Pk+1))~ "1. The configuration V{$ is defined on (D/~)(/c) by
+cmp119 p~265 L1056: and k = gkA/Aopo(gk). We denote again by Qk+1 the union of LMRk + x-cubes
+cmp119 p~265 L1106: exp(-2M2Rk)30d2L2B3(l+0)k)
+cmp119 p~267 L1208: obtained by taking off one layer of LMRk+1 -cubes from k . +1 Onthis domain introduce thedecomposition of unity
+cmp119 p~267 L1221: where the summation is over the subdomains of k\, which are unions of L2M2Rk +1 -cubes of the partition of unity, andthecomplement Rk+1 means the complement of Rk+ to the domain k+\. For a cube '^Rck+ there are now two small field characteristic functions in t
+cmp119 p~267 L1237: LM2Rk+)44d2B3k+i
+cmp119 p~267 L1239: <,44d2B2(+0)exp(-Rk)k onD ^ 2 , and
+cmp119 p~267 L1247: = O(l)44d2B2(l+0)^exp(-Rk)k<k
+cmp119 p~269 L1256: integral. The domain Rk + 1 is defined, as usual, as a union of the LMRk + 1 -cubes intersecting Rk +  . We surround the domain (k+ 1)~uRk +  by a layer ofLMRk - + 1 cubes, and we denote the complement of the so-obtained domain by k + , hence
+cmp119 p~269 L1260: In fact we modify the domain k +  in the same way as in Sect. 1; we consider components of Ak , + 1 and if a component is contained in a cube of the size 100LfjRk + 1 , then we replace it by the smallest rectangular parallelepiped containing it. On the domain 
+cmp119 p~269 L1349: into L~{k~j)MRj-cubes. For k --jlarge enough, more precisely forj <Lkx, where k1 is
+cmp119 p~269 L1351: the largest integer satisfying L'{k~kl)MRj^L,
+matches: 36
+=================== cmp122a_lfr1
+cmp122a_lfr1 p~177 L77: In this section we describe in detail the fundamental part of the [R-operation. For simplicity of notation we consider the kth density, instead of fc -f 1st. Each term in the expansion (2.18) [III] has a large field region ck. It is a union of connected compon
+cmp122a_lfr1 p~177 L78: (i) it is contained in a cube of the size 100 MRk, (ii) in the preceding N renormalization steps no new large field regions were
+cmp122a_lfr1 p~177 L135: The cubes  in(1.3) are theLM2i^7-cubes of the partition of the lattice TL-J, or theL ^ - ^ L M ^ - c u b e s of the lattice T9 and thecubes Q 'in(1.4), (1.7)-(1.9) are theLM2Rj+-cubes of the partition of the lattice TL-U+D.
+cmp122a_lfr1 p~179 L143: this. The first is that the functions (1.5)--(1.9) are not gauge invariant with respect to gauge transformations of the variables Vj9 and we would like to choose a convenient gauge fixing for the integration with respect to Vj restricted to j in (1.2). The sec
+cmp122a_lfr1 p~179 L145: k-No+1 ~ K^k-No) -- \dk-N0+ 1
+cmp122a_lfr1 p~179 L148: Zf; = (r5)cnZ for ; =k - No, k-N0 - l , . . . , / c - N + 1=h + 1,
+cmp122a_lfr1 p~181 L400: k --N0, and for j>k0. In the first case the integration regions are disjoint, and
+cmp122a_lfr1 p~183 L685: B3Qxp(-2M2Rj)22d2j< (/l)j. Estimating dUjn as in (3.8) [III] we obtain
+cmp122a_lfr1 p~185 L772: Qxp{-MRj+i)22d2j+1+txp{-6LMRj+1)22d2j)
+cmp122a_lfr1 p~185 L774: ^ B3{4'j + e x p ( - MRj+1)44d2(l + o)j)
+cmp122a_lfr1 p~185 L802: bounded on  ' ^ 2 by B3 exp( -- LM2Rj+1)22d2j+1,
+awk: cmd. line:5: (FILENAME=/c/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/M3b/src/cmp122a_lfr1.txt FNR=1013) warning: Invalid multibyte data detected. There may be a mismatch between your data and your locale
+cmp122a_lfr1 p~187 L1013: + ··· + i V i ) ~ MRk)44d2B3k
+cmp122a_lfr1 p~187 L1015: <44d2B2(l+0)exp(-Rj)j.
+cmp122a_lfr1 p~187 L1039: by 0(1) exp (-- Rj)Sj. This bound is very small, smaller than any positive power of
+cmp122a_lfr1 p~191 L1393: l)(N0 + l)oRk
+cmp122a_lfr1 p~193 L1471: 2L(L + l)N01Rkk. The above reasoning implies that Vk has an extension to A,
+cmp122a_lfr1 p~197 L1725: The function Hhn and it derivatives can be bounded on ~ by B3 exp (-- 2LM2Rh)l ld2h < 1ld2B3 exp (-- Rh)h < och, where a is a small, absolute constant, which will be fixed later. Estimating as in (1.46) we get
+cmp122a_lfr1 p~197 L1752: can be satisfied by N to the positive power of logg^2. From the representation
+cmp122a_lfr1 p~199 L1799: £ 23d2B,(l + o)2(l + (j - h)°) exp ( - (j - h))exp ( - Rh)cj < fij .
+cmp122a_lfr1 p~199 L1893: because k--j^N0 and we use the above bound again. Thus we have proved that the configuration U'k\z satisfies all the conditions in the definition (1.24), hence k = 1, and the equality (1.89) is proved.
+matches: 20
+=================== cmp122b_lfr2
+cmp122b_lfr2 p~357 L106: form bounded by O(exp(-- Rk)). Now the leading quadratic form is equal to
+cmp122b_lfr2 p~359 L211: Hk z, and from the exponential decay in the scaled distance of this function (the inequality (190)[15]). From this exponential decay, and the localization of 0, we get an additional exponential factor exp( --(l/2)<5MjRk). It suppresses all powers of loggfk~2, 
+cmp122b_lfr2 p~361 L250: term is bounded by O ( l ) | B 0 | ^ 3 ^ O{l){100MRk)dN2k3 ^ gl{\)MdRdk +2 A\p\(gk), and dividing thenumber on theright-hand side by g\ we get still asmall number,
+cmp122b_lfr2 p~361 L252: if gk is small enough. We have assumed here that N ^Rk. Consider the quadratic form in (1.20). According to theformulas (79) [15], (3.10) [13], it is equal to a sum
+cmp122b_lfr2 p~361 L270: with a larger power of loggk2 only, if we extend the configuration Uoto Gc-valued
+cmp122b_lfr2 p~361 L312: ^ o ( B i ) H B i | <B3exp(-MRh+
+awk: cmd. line:5: (FILENAME=/c/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/M3b/src/cmp122b_lfr2.txt FNR=334) warning: Invalid multibyte data detected. There may be a mismatch between your data and your locale
+cmp122b_lfr2 p~361 L334: MRh + 1)lld2(l + Q)2Rk°k
+cmp122b_lfr2 p~361 L343: provides the additional exponential factor exp(-- (l/4)0MRh+1). We represent H"lkZ as a sum of the first term and the sum of the remaining terms:
+cmp122b_lfr2 p~363 L409: gk(100MRk)d-4dB3Aopo(gk)Qp(-SMRk)3(d-l)k,
+cmp122b_lfr2 p~363 L417: The number multiplying gk is small if L~N is small enough, for example if L~N ^ (log gk2)'v for sufficiently large v, or N ^ (v/log L) logloggk 2. For the smallness of the above bound we need v ^ 2 p o + dr0. Thus, with the above assumptions, the second term o
+cmp122b_lfr2 p~363 L425: the support of the field B. The distance is larger than 8MRki hence a bound for
+cmp122b_lfr2 p~363 L427: this term has the additional exponential factor exp(-- SMRk\ and the term is
+cmp122b_lfr2 p~365 L526: o(100MRk)4(O(l)B3B5M5k
+cmp122b_lfr2 p~365 L530: O(l)B23B2M9Rk2,
+cmp122b_lfr2 p~379 L1124: From the inequality (1.73) it isclear that we have to find a bound of k(X,(U,Q))\9 which we denote for simplicity by 'k(X)\. At first we bound all the expressions in the exponential, except the Wilson action and the quadratic forms. The expression V(X~) is bou
+cmp122b_lfr2 p~379 L1133: exp(-o\j(LM2Rjra\Rj\\
+cmp122b_lfr2 p~379 L1141: by the same positivity bound for the quadratic form. Take the cover of the large field region PJUQJURJ byMRy-cubes, i.e., the smallest domain containing this region, which is a union of MRj-cubes. This domain is a union ofcomponents denoted by Z(j\ hence it is
+cmp122b_lfr2 p~381 L1186: I V^b) - 1| < 6(100MRj-N + 1)2 g 6(100M(L + l)NoRj)2,
+cmp122b_lfr2 p~381 L1251: All the integrals with respect to the group valued variables in the definition (1.71) are estimated by 1. Similar to the integral with respect to J5, we have to include only the constant with the logarithms in the last line into the integration measure, and we
+cmp122b_lfr2 p~381 L1262: conditions (i),(ii). For the last regions we will prove that the expression onthe right-hand side can be estimated by exp(-- 2po(gk)). For general regions we will prove the inductive statement below. The expression on the right-hand side of (1.79) is a product
+cmp122b_lfr2 p~381 L1263: The factor exp(-- Kj(Z)) controls K renormalization steps, under the assumption that nolarge fields arecreated in these steps, where the number K is the smallest positive integer having the property that the domain SK(Z\ considered as a domain in the lattice o
+cmp122b_lfr2 p~381 L1272: a union of Ld^jMRn-cubes, where
+cmp122b_lfr2 p~381 L1275: The MKn-cube in the center of S"1 "·'(·) contains ·· Denote by Z ~ (n j) the cover of Z by MKn-cubes in the corresponding scale (i.e., by LnjMRn -cubes in L~J-scale). Thus Sn" j(Z) c (J · o 3 1 , and this implies
+cmp122b_lfr2 p~385 L1285: for n -- j > 1. The square root appears here, because for some steps we do not gain the scaling factor L~ (then Rm + 1 = LRm). Consider now the sum in (1.80). Let n0 be the last index n such that d'n(Z{n~j)) > 0. Then Sno + 1 ~j(Z) is contained in a cube of th
+cmp122b_lfr2 p~385 L1333: domain, it is contained in a cube of the size 100MRj+ x, hence K = Rj+1 for Z. In
+cmp122b_lfr2 p~385 L1339: by the operations of the last step, in particular by adding layers of MRj+1 -cubes.
+cmp122b_lfr2 p~387 L1396: contains at least a cube of the size 20MRn.
+cmp122b_lfr2 p~387 L1401: size l00MRj+1+Kl,
+matches: 28

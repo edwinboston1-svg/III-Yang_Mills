@@ -1,0 +1,10 @@
+START 2026-11-02 08:24:18 family2.c md5=81b7b59830d06428d9800819f5be0fb2 m=17 s=20 NOW=1
+PINCH COUNT P=160001 (vertices with a disconnected star: 160001; connected octagon saddles: 0) | chi=-94465, 2 - P=-159999 -> PINCH INEQUALITY FAILS
+FAMILY m=17 s=20 box W=44: collisions=0 outside=0
+PLAQUETTES F=759600 nonmixed=0 | LINKS L=1222240 odd=0 N4=296960 N6=0 N>6=0 | VERTICES V=368175 chi=-94465
+SKELETON components=1 | G: E=296960 V=100352 c=1 b1=196609 | G6: E=0 V=0 c=0 b1=0 | Q=196609 Q/F=0.258832
+CLOSED FORMS F=521232 Q=196609 chi=-1 -> PARTED
+CUBES closed unit 3-cubes = 0
+THEOREM I (x8): lhs=1465536 rhs=1465536 -> MET | Delta(G)=104444/4 sum(8-a)=500920
+TESSERACTS with an X-plaquette=375788, carrying a closed subset=66049, of them the flat-torus pattern (16 mixed, 2 components)=66049
+END

@@ -1,0 +1,22 @@
+U1-VILLAIN a_n = exp(-n^2/(2 beta)), beta=8
+U1-OBJECT planar n=4 plaquettes=32 links=76 (shared=3) outside=536 staples five=24 four=52; beta=8 NMAX=14 (dropped weight I_15/I_0 = 7.81e-07) LMAX=8 datum=ordered
+U1-Z beta=8 datum=ordered n=4 Z = 1.119920269679e+213 (imag 0.0e+00)
+U1-CLASS a=0 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +1.000000000000e+00 +0.000000000000e+00 i
+U1-CLASS a=1 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +8.522524818375e-01 +0.000000000000e+00 i
+U1-CLASS a=2 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +5.275615011021e-01 +0.000000000000e+00 i
+U1-CLASS a=3 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +2.371998731392e-01 +0.000000000000e+00 i
+U1-CLASS a=4 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +7.746264617554e-02 +0.000000000000e+00 i
+U1-CLASS a=5 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +1.837412631168e-02 +0.000000000000e+00 i
+U1-CLASS a=6 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +3.165610811982e-03 +0.000000000000e+00 i
+U1-CLASS a=7 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +3.961363935631e-04 +0.000000000000e+00 i
+U1-CLASS a=8 c=0 E[e^{ia Phi_A} e^{ic Phi_B}] = +3.600545396435e-05 +0.000000000000e+00 i
+U1-CONN a=0 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +1.000000000e+00 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=1 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +8.522524818e-01 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=2 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +5.275615011e-01 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=3 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +2.371998731e-01 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=4 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +7.746264618e-02 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=5 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +1.837412631e-02 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=6 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +3.165610812e-03 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=7 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +3.961363936e-04 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-CONN a=8 c=0 <e^{ia Phi_A} e^{ic Phi_B}>_c = +0.000000000000e+00 +0.000000000000e+00 i (marginals +3.600545396e-05 +0.000000000e+00 i, +1.000000000e+00 +0.000000000e+00 i)
+U1-DONE

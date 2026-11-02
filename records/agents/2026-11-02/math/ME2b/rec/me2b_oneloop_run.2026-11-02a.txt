@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\ME2b\bin\me2b_oneloop.py", line 15, in <module>
+    import sympy as sp
+ModuleNotFoundError: No module named 'sympy'
+rc=1

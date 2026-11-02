@@ -1,0 +1,10 @@
+n= 1 Gram diag=1 off=0 formula_ok=True
+n= 2 Gram diag=3/2 off=1/4 formula_ok=True
+n= 3 Gram diag=19/9 off=4/9 formula_ok=True
+n= 4 Gram diag=11/4 off=5/8 formula_ok=True
+n= 8 Gram diag=43/8 off=21/16 formula_ok=True
+n=16 Gram diag=171/16 off=85/32 formula_ok=True
+n=32 Gram diag=683/32 off=341/64 formula_ok=True
+S1a all Gram entries equal the closed forms for n=1..32: True
+S1b Q(1)E(1) == M entrywise (d=2,3,4; n=1,2,3,4,5,8; K=1..12): True
+S1c min over cases of [lambda_min(M) - (n^2+2)/(3n^2)] = 0.0 (must be >= 0)

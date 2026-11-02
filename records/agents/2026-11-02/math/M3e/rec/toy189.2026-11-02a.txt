@@ -1,0 +1,11 @@
+toy189: N=96 b=4 m=0.60 kap2=0.50 kap3=0.30 g3=0.50 g4=0.20 j0=0.050
+S1 Lemma A vs finite differences: max|adj-fd|/max|fd| = 4.445e-11
+S1 control (Lambda term dropped): rel err = 2.926e-02
+kernel rates (fit on tails): mu_G=0.5913 mu_H=0.4369 mu_Pi=0.4364 mu_frakD=0.4375
+  exact lattice rate of G: arccosh(1+m^2/2) = 0.5913
+S2 Hess V profile P(r), r=0..40 step 4: 3.67e-01 2.34e-03 4.47e-04 7.55e-05 1.28e-05 2.60e-06 3.60e-07 7.57e-08 1.07e-08 2.30e-09 4.71e-10
+S2 fitted rate of Hess V = 0.4412 ; min(mu_H,mu_frakD,mu_Pi) = 0.4364 ; ratio = 1.011 (stake >= 0.9)
+S3 max|Hess V(tA')| at t=0.25, 0.5: 9.9006e-02 1.9317e-01 ratio 1.951 (stake 2 +- 10%)
+S4 Newton converged in 3 iterations; check Q A* + C(A*) - B = 2.08e-17
+S4 dA*/dB column profile r=0..40 step 4: 1.14e+00 1.67e-01 3.05e-02 5.58e-03 9.72e-04 1.64e-04 2.81e-05 4.75e-06 8.00e-07 1.44e-07 2.51e-08
+S4 rate(dA*/dB) = 0.4391 ; rate(dA*/dB - H) = 0.4396 ; min rates = 0.4364 ; ratios 1.006 1.007 (stake >= 0.9)

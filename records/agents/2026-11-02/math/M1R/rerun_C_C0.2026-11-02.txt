@@ -1,0 +1,6 @@
+START C0 2026-11-02 07:30:50
+KP-CERT SCAN dress=page beta=0.4260 gamma=6/1 F0=20: PASS for alpha in [0.0021, 0.0025]
+KP-CERT SCAN dress=page beta=0.4262 gamma=6/1 F0=20: no passing alpha in [0.0010, 0.0120] (last: the dressing iteration leaves [0, 3]: no root)
+KP-CERT SCAN dress=tree beta=0.4378 gamma=6/1 F0=20: PASS for alpha in [0.0026, 0.0036]
+KP-CERT SCAN dress=tree beta=0.4380 gamma=6/1 F0=20: no passing alpha in [0.0010, 0.0120] (last: rho >= 1 at the upper bracket: the s-sum's tail is not closed)
+END tree 2026-11-02 07:36:22

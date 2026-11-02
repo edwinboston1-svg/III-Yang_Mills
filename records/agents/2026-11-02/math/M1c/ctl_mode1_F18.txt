@@ -1,0 +1,12 @@
+OMEGA-CENSUS FMAX=18 MODE=1 (control: every closed set): box side 43
+OMEGA-COUNT F=6: closed 4 (odd 0), leafless 0
+OMEGA-COUNT F=10: closed 60 (odd 0), leafless 0
+OMEGA-COUNT F=11: closed 66 (odd 66), leafless 0
+OMEGA-COUNT F=12: closed 320 (odd 0), leafless 0
+OMEGA-COUNT F=14: closed 1316 (odd 224), leafless 0
+OMEGA-COUNT F=15: closed 2520 (odd 2520), leafless 0
+OMEGA-COUNT F=16: closed 12552 (odd 1568), leafless 0
+OMEGA-COUNT F=17: closed 12580 (odd 12580), leafless 0
+OMEGA-COUNT F=18: closed 63216 (odd 10788), leafless 0
+OMEGA-CHECK rank recomputed from scratch at every closed node: 0 disagreements with the incremental basis
+OMEGA-END nodes 259917914 pruned 0 (32 s)

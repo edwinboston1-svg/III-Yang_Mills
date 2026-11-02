@@ -1,0 +1,29 @@
+W2-EXACT the staple weights EXACT, w(V) = beta e^{beta V.w}/(2 I_1(beta)) = 5.746842245565092e-01 e^{2.200000 V.w}; face plaquettes truncated at spin WMAX/2 = 3/2; rule degree DEGX = 50 plus the slots
+W2-KAT representations to spin 3/2 (GENINV=1): homomorphism and traces [MET]
+W2-OBJECT planar n=4 plaquettes=32 links=76 (shared=3) outside=536 staples five=24 four=52; rule degree 60, 58621 points; beta=2.2 WMAX=3 LMAX=2 datum=cancel order=fwd
+W2-TENSORS built in 29.4 s
+W2-SLICED mode=diag: the junction wires clamped in an outer loop of slices; face A's part (order index 36 of 76) swept once per class and gathered per slice
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag -1.0e-20; max state 810000, open plaquettes at most 4; 7.1 s; 1 slices)
+W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = +1.900583135441e-01 (imag -9.7e-21; max state 3240000, open plaquettes at most 4; 17.1 s; 2 slices)
+W2-CLASS a=0 c=2 E[chi_a(A) chi_c(B)] = +6.152489540394e-03 (imag -6.8e-22; max state 7290000, open plaquettes at most 4; 38.7 s; 3 slices)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +1.900583135441e-01 (imag 2.6e-21; max state 3240000, open plaquettes at most 4; 14.3 s; 2 slices)
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +6.957294259185e-02 (imag -8.5e-22; max state 6480000, open plaquettes at most 4; 40.7 s; 4 slices)
+W2-CHANNEL a=1 c=1 REFUSED: the diagonal slices hold the class moment only
+W2-CLASS a=1 c=2 E[chi_a(A) chi_c(B)] = +4.204067151544e-03 (imag -1.6e-22; max state 14580000, open plaquettes at most 4; 137.6 s; 6 slices)
+W2-CHANNEL a=1 c=2 REFUSED: the diagonal slices hold the class moment only
+W2-CLASS a=2 c=0 E[chi_a(A) chi_c(B)] = +6.152489540394e-03 (imag -6.0e-23; max state 7290000, open plaquettes at most 4; 28.6 s; 3 slices)
+W2-CLASS a=2 c=1 E[chi_a(A) chi_c(B)] = +4.204067151544e-03 (imag -2.1e-22; max state 9720000, open plaquettes at most 4; 106.3 s; 6 slices)
+W2-CHANNEL a=2 c=1 REFUSED: the diagonal slices hold the class moment only
+W2-CLASS a=2 c=2 E[chi_a(A) chi_c(B)] = +5.486322616180e-04 (imag -3.4e-23; max state 21870000, open plaquettes at most 4; 356.4 s; 9 slices)
+W2-CHANNEL a=2 c=2 REFUSED: the diagonal slices hold the class moment only
+W2-Z beta=2.2 datum=cancel n=4 Z = 5.449385695387e+122
+W2-CONN a=0 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.000000000e+00)
+W2-CONN a=0 c=1 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +1.900583135e-01)
+W2-CONN a=0 c=2 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.000000000e+00, +6.152489540e-03)
+W2-CONN a=1 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +1.900583135e-01, +1.000000000e+00)
+W2-CONN a=1 c=1 <chi_a chi_c>_c = +3.345078004461e-02 (marginals +1.900583135e-01, +1.900583135e-01)
+W2-CONN a=1 c=2 <chi_a chi_c>_c = +3.034735365399e-03 (marginals +1.900583135e-01, +6.152489540e-03)
+W2-CONN a=2 c=0 <chi_a chi_c>_c = +0.000000000000e+00 (marginals +6.152489540e-03, +1.000000000e+00)
+W2-CONN a=2 c=1 <chi_a chi_c>_c = +3.034735365399e-03 (marginals +6.152489540e-03, +1.900583135e-01)
+W2-CONN a=2 c=2 <chi_a chi_c>_c = +5.107791340733e-04 (marginals +6.152489540e-03, +6.152489540e-03)
+W2-DONE 776.5 s

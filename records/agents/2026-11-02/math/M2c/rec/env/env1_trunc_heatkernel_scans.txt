@@ -1,0 +1,40 @@
+== ordered heat-kernel tau=0.5 (t1=0.687289279 t2=0.367879441)
+L2ENV-KERNEL min over the class circle of sum_{e<=LN} d_e t_e chi_e = -5.316450e-01 -> SIGNED (the truncated profile is not a density)
+L2ENV-CERT-INPUT N00 grid min 2.161274e-01 (20x grid), rigorous min 2.155504e-01; sup ||N^{00}'|| <= 1.4692e+00; rigorous s = 12.2302, s_A = 5.9317, s_B = 3.0270; s' = 94.6394, s'_A = 46.4013, s'_B = 22.6169
+L2ENV-CERT REFUSED: the crude bounds do not certify (N00 min 2.156e-01, s_A 5.932, s_B 3.027)
+L2ENV-SCAN-RESULT grid max rho = 0.019109597 at phi = 0.000000; grid min 0.005806661 at phi = 3.141593; E[chi(A)] range [0.055140, 0.180878]; min marginal 0.6397
+== ordered heat-kernel tau=0.8 (t1=0.548811636 t2=0.201896518)
+L2ENV-KERNEL min over the class circle of sum_{e<=LN} d_e t_e chi_e = -1.029639e-01 -> SIGNED (the truncated profile is not a density)
+L2ENV-CERT-INPUT N00 grid min 3.170213e-01 (20x grid), rigorous min 3.166054e-01; sup ||N^{00}'|| <= 1.0591e+00; rigorous s = 6.7005, s_A = 3.1752, s_B = 1.7784; s' = 27.7269, s'_A = 13.4096, s'_B = 6.9232
+L2ENV-CERT REFUSED: the crude bounds do not certify (N00 min 3.166e-01, s_A 3.175, s_B 1.778)
+L2ENV-SCAN-RESULT grid max rho = 0.018290018 at phi = 0.000000; grid min 0.006940311 at phi = 3.141593; E[chi(A)] range [0.066560, 0.173304]; min marginal 0.6555
+== ordered heat-kernel tau=1.2 (t1=0.406569660 t2=0.090717953)
+L2ENV-KERNEL min over the class circle of sum_{e<=LN} d_e t_e chi_e = 1.204732e-01 -> POSITIVE
+L2ENV-CERT-INPUT N00 grid min 4.574920e-01 (20x grid), rigorous min 4.572126e-01; sup ||N^{00}'|| <= 7.1151e-01; rigorous s = 3.6663, s_A = 1.6871, s_B = 1.0541; s' = 8.0677, s'_A = 3.8526, s'_B = 2.0935
+L2ENV-CERT REFUSED: the crude bounds do not certify (N00 min 4.572e-01, s_A 1.687, s_B 1.054)
+L2ENV-SCAN-RESULT grid max rho = 0.017449606 at phi = 0.000000; grid min 0.009442127 at phi = 3.141593; E[chi(A)] range [0.090321, 0.165513]; min marginal 0.6717
+== ordered heat-kernel tau=2.0 (t1=0.223130160 t2=0.018315639)
+L2ENV-KERNEL min over the class circle of sum_{e<=LN} d_e t_e chi_e = 2.723201e-01 -> POSITIVE
+L2ENV-CERT-INPUT N00 grid min 6.827223e-01 (20x grid), rigorous min 6.825843e-01; sup ||N^{00}'|| <= 3.5140e-01; rigorous s = 1.7614, s_A = 0.7701, s_B = 0.5716; s' = 1.6451, s'_A = 0.7748, s'_B = 0.4442
+L2ENV-CERT Lemma E2: positivity of p_C on SU(2)^2 for every phi certified iff s < 1: NOT CERTIFIED (s = 1.7614); L_rho <= 2.463388e+01; grid step 1.571e-02 -> sup_phi rho <= 0.016354179 + 1.935e-01 = 0.209828243 (grid max at phi = 0.000000;
+L2ENV-SCAN-RESULT grid max rho = 0.016354179 at phi = 0.000000; grid min 0.012356697 at phi = 3.141593; E[chi(A)] range [0.117864, 0.155325]; min marginal 0.6929
+== cancel heat-kernel tau=0.5 (t1=0.687289279 t2=0.367879441)
+L2ENV-KERNEL min over the class circle of sum_{e<=LN} d_e t_e chi_e = -5.316450e-01 -> SIGNED (the truncated profile is not a density)
+L2ENV-CERT-INPUT N00 grid min 2.161275e-01 (20x grid), rigorous min 2.155505e-01; sup ||N^{00}'|| <= 1.4692e+00; rigorous s = 9.9563, s_A = 4.5086, s_B = 2.3021; s' = 77.1063, s'_A = 35.2684, s'_B = 17.2012
+L2ENV-CERT REFUSED: the crude bounds do not certify (N00 min 2.156e-01, s_A 4.509, s_B 2.302)
+L2ENV-SCAN-RESULT grid max rho = 0.021802091 at phi = 0.000000; grid min 0.006654168 at phi = 3.141593; E[chi(A)] range [0.041989, 0.137537]; min marginal 0.7261
+== cancel heat-kernel tau=0.8 (t1=0.548811636 t2=0.201896518)
+L2ENV-KERNEL min over the class circle of sum_{e<=LN} d_e t_e chi_e = -1.029639e-01 -> SIGNED (the truncated profile is not a density)
+L2ENV-CERT-INPUT N00 grid min 3.170214e-01 (20x grid), rigorous min 3.166055e-01; sup ||N^{00}'|| <= 1.0591e+00; rigorous s = 5.4454, s_A = 2.4136, s_B = 1.3525; s' = 22.5672, s'_A = 10.1926, s'_B = 5.2654
+L2ENV-CERT REFUSED: the crude bounds do not certify (N00 min 3.166e-01, s_A 2.414, s_B 1.353)
+L2ENV-SCAN-RESULT grid max rho = 0.020875914 at phi = 0.000000; grid min 0.007951843 at phi = 3.141593; E[chi(A)] range [0.050669, 0.131782]; min marginal 0.7380
+== cancel heat-kernel tau=1.2 (t1=0.406569660 t2=0.090717953)
+L2ENV-KERNEL min over the class circle of sum_{e<=LN} d_e t_e chi_e = 1.204732e-01 -> POSITIVE
+L2ENV-CERT-INPUT N00 grid min 4.574921e-01 (20x grid), rigorous min 4.572127e-01; sup ||N^{00}'|| <= 7.1151e-01; rigorous s = 2.9732, s_A = 1.2825, s_B = 0.8016; s' = 6.5603, s'_A = 2.9284, s'_B = 1.5922
+L2ENV-CERT REFUSED: the crude bounds do not certify (N00 min 4.572e-01, s_A 1.283, s_B 0.802)
+L2ENV-SCAN-RESULT grid max rho = 0.019924928 at phi = 0.000000; grid min 0.010812628 at phi = 3.141593; E[chi(A)] range [0.068726, 0.125862]; min marginal 0.7504
+== cancel heat-kernel tau=2.0 (t1=0.223130160 t2=0.018315639)
+L2ENV-KERNEL min over the class circle of sum_{e<=LN} d_e t_e chi_e = 2.723201e-01 -> POSITIVE
+L2ENV-CERT-INPUT N00 grid min 6.827224e-01 (20x grid), rigorous min 6.825844e-01; sup ||N^{00}'|| <= 3.5140e-01; rigorous s = 1.4233, s_A = 0.5855, s_B = 0.4347; s' = 1.3364, s'_A = 0.5890, s'_B = 0.3378
+L2ENV-CERT Lemma E2: positivity of p_C on SU(2)^2 for every phi certified iff s < 1: NOT CERTIFIED (s = 1.4233); L_rho <= 7.813842e+00; grid step 1.571e-02 -> sup_phi rho <= 0.018683567 + 6.137e-02 = 0.080053342 (grid max at phi = 0.000000;
+L2ENV-SCAN-RESULT grid max rho = 0.018683567 at phi = 0.000000; grid min 0.014138474 at phi = 3.141593; E[chi(A)] range [0.089656, 0.118121]; min marginal 0.7665

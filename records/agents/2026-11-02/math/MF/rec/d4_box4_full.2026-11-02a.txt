@@ -1,0 +1,12 @@
+F-RATE d=4 L=2 box4 D=1 C=1.321057e-03 logratio=4.577049
+F-RATE d=4 L=2 box4 D=2 C=2.036453e-04 logratio=1.869808
+F-RATE d=4 L=2 box4 D=3 C=-1.143609e-05 logratio=2.879605
+F-RATE d=4 L=2 box4 D=4 C=1.815357e-06 logratio=1.840492
+F-RATE d=4 L=2 box4 D=5 C=-2.032958e-07 logratio=2.189375
+F-RATE d=4 L=2 box4 D=6 C=2.751642e-08 logratio=1.999879
+F-RATE d=4 L=2 box4 D=7 C=-3.709936e-09 logratio=2.003769
+F-RATE d=4 L=4 box4 D=1 C=2.145982e-04 logratio=6.519611
+F-RATE d=4 L=4 box4 D=2 C=1.164572e-06 logratio=5.216413
+F-RATE d=4 L=4 box4 D=3 C=9.688297e-08 logratio=2.486606
+F-RATE d=4 L=4 box4 D=4 C=7.615161e-09 logratio=2.543363
+F-RATE d=4 L=4 box4 D=5 C=-3.608633e-09 logratio=0.746812

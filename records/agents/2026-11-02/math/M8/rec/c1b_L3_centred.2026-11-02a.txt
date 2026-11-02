@@ -1,0 +1,17 @@
+M8 C1b: L = 3 centred
+scan of the 5^4 lattice {0, h/4, h/2, 3h/4, h}^4 (h = pi/L), k != 0: min gamma0 = 1.000000 at k/h = [1. 0. 0. 0.]
+  near k=0, k = (0.1,0,0,0)*h: gamma0 = 2.802315 ; k = 0.1*(1,1,1,1)*h: 2.811441
+  near k=0, k = (0.01,0,0,0)*h: gamma0 = 2.981698 ; k = 0.01*(1,1,1,1)*h: 2.981805
+  near k=0, k = (0.001,0,0,0)*h: gamma0 = 2.998185 ; k = 0.001*(1,1,1,1)*h: 2.998186
+local minimisation from the scan minimum: gamma0 = 1.00000000 at k/h = [1. 0. 0. 0.] (Optimization terminated successfully.)
+grid 256 points, 78.8 s
+slice-gauge link variance beta*Var(B_l^a | coarse): min 0.102960 max 0.109871 mean 0.107824
+  0.10296 x4  e.g. ((0, 0, 0, 1), 3)
+  0.10456 x24  e.g. ((0, 0, 1, 1), 2)
+  0.10547 x8  e.g. ((0, 0, 0, 0), 0)
+  0.10673 x48  e.g. ((0, 1, 1, 1), 1)
+  0.10677 x48  e.g. ((0, 0, 0, 1), 0)
+  0.10849 x32  e.g. ((1, 1, 1, 1), 0)
+  0.10853 x96  e.g. ((0, 0, 1, 1), 0)
+  0.10987 x64  e.g. ((0, 1, 1, 1), 0)
+unconstrained Landau-gauge link variance (midpoint grid on the fine zone, reading): 0.115827  [known: 0.75*0.154933 = 0.116200]

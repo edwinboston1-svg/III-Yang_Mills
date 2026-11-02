@@ -1,0 +1,45 @@
+== SU(2) type=Q d=2 n=4 h=2 kappa=4 hk=8 | t3=0 t4=1/8 o3=0 m4=1/8 (t4/m4 shows the m4 loss: 1.0) c3exact=0
+   CERTIFIED alpha_G < 1 on [0, 0.1704]: alpha=0.9986139 12Cdir=0.337734 90Cmed=0.660879 M*sqrt(n)=1.28982 omega=0.0266894 | at 5b: mu=0.235871 s=0.311541 (1/n=0.25) D=0.240259 | T(6b)=0.58216 Tx(5b)=0.416037 c3=0.0
+   lambda* = h kappa / beta* = 46.9484   |   beta_BE = h kappa/96 = 0.0833333   |   beta*/beta_BE = 2.045   |   S_D (MG, uniform) = 0.0556
+== SU(3) type=C d=3 n=18 h=3 kappa=6 hk=18 | t3=1/108 t4=1/108 o3=1/108 m4=1/108 (t4/m4 shows the m4 loss: 1.0) c3exact=1/108
+   CERTIFIED alpha_G < 1 on [0, 0.3568]: alpha=0.9999242 12Cdir=0.282182 90Cmed=0.717742 M*sqrt(n)=1.42458 omega=0.0670471 | at 5b: mu=0.149642 s=0.101422 (1/n=0.0555556) D=0.133692 | T(6b)=0.175986 Tx(5b)=0.101586 c3=0.00925926
+   lambda* = h kappa / beta* = 50.4484   |   beta_BE = h kappa/96 = 0.1875   |   beta*/beta_BE = 1.903   |   S_D (MG, uniform) = 0.0556
+== SU(4) type=C d=4 n=32 h=4 kappa=8 hk=32 | t3=0 t4=7/2048 o3=0 m4=7/2048 (t4/m4 shows the m4 loss: 1.0) c3exact=0
+   CERTIFIED alpha_G < 1 on [0, 0.4741]: alpha=0.9999746 12Cdir=0.254954 90Cmed=0.745021 M*sqrt(n)=1.4654 omega=0.076893 | at 5b: mu=0.120819 s=0.0563114 (1/n=0.03125) D=0.0790408 | T(6b)=0.110707 Tx(5b)=0.0569228 c3=0.0
+   lambda* = h kappa / beta* = 67.4963   |   beta_BE = h kappa/96 = 0.333333   |   beta*/beta_BE = 1.422   |   S_D (MG, uniform) = 0.0556
+== SU(5) type=C d=5 n=50 h=5 kappa=10 hk=50 | t3=0 t4=3/2500 o3=0 m4=3/2500 (t4/m4 shows the m4 loss: 1.0) c3exact=0
+   CERTIFIED alpha_G < 1 on [0, 0.5777]: alpha=0.9997739 12Cdir=0.242856 90Cmed=0.756918 M*sqrt(n)=1.50873 omega=0.0856233 | at 5b: mu=0.1063 s=0.0368934 (1/n=0.02) D=0.0563488 | T(6b)=0.0757425 Tx(5b)=0.0347429 c3=0.0
+   lambda* = h kappa / beta* = 86.5501   |   beta_BE = h kappa/96 = 0.520833   |   beta*/beta_BE = 1.109   |   S_D (MG, uniform) = 0.0556
+== Sp(2) type=Q d=4 n=16 h=3 kappa=8 hk=24 | t3=0 t4=3/256 o3=0 m4=3/256 (t4/m4 shows the m4 loss: 1.0) c3exact=0
+   CERTIFIED alpha_G < 1 on [0, 0.3519]: alpha=0.9999419 12Cdir=0.284827 90Cmed=0.715115 M*sqrt(n)=1.41602 omega=0.0596642 | at 5b: mu=0.150621 s=0.0982426 (1/n=0.0625) D=0.118 | T(6b)=0.181598 Tx(5b)=0.106481 c3=0.0
+   lambda* = h kappa / beta* = 68.2012   |   beta_BE = h kappa/96 = 0.25   |   beta*/beta_BE = 1.408   |   S_D (MG, uniform) = 0.0556
+== SO(3) type=R d=3 n=9 h=2 kappa=3/2 hk=3 | t3=1/27 t4=1/27 o3=1/27 m4=1/27 (t4/m4 shows the m4 loss: 1.0) c3exact=1/27
+   CERTIFIED alpha_G < 1 on [0, 0.2427]: alpha=0.9999264 12Cdir=0.30039 90Cmed=0.699537 M*sqrt(n)=1.35152 omega=0.0527331 | at 5b: mu=0.188755 s=0.198713 (1/n=0.111111) D=0.23927 | T(6b)=0.365555 Tx(5b)=0.227833 c3=0.037037
+   lambda* = h kappa / beta* = 12.3609   |   beta_BE = h kappa/96 = 0.03125   |   beta*/beta_BE = 7.766   |   S_D (MG, uniform) = 0.0556
+== SO(5) type=R d=5 n=25 h=3 kappa=5 hk=15 | t3=0 t4=3/625 o3=0 m4=3/625 (t4/m4 shows the m4 loss: 1.0) c3exact=0
+   CERTIFIED alpha_G < 1 on [0, 0.4335]: alpha=0.9992201 12Cdir=0.26946 90Cmed=0.72976 M*sqrt(n)=1.4575 omega=0.0703348 | at 5b: mu=0.131316 s=0.0667308 (1/n=0.04) D=0.088526 | T(6b)=0.125372 Tx(5b)=0.0675329 c3=0.0
+   lambda* = h kappa / beta* = 34.6021   |   beta_BE = h kappa/96 = 0.15625   |   beta*/beta_BE = 2.774   |   S_D (MG, uniform) = 0.0556
+== SO(6) type=R d=6 n=36 h=4 kappa=6 hk=24 | t3=0 t4=1/432 o3=0 m4=1/432 (t4/m4 shows the m4 loss: 1.0) c3exact=0
+   CERTIFIED alpha_G < 1 on [0, 0.507]: alpha=0.9990537 12Cdir=0.255786 90Cmed=0.743267 M*sqrt(n)=1.48689 omega=0.0786707 | at 5b: mu=0.117473 s=0.0487996 (1/n=0.0277778) D=0.0698582 | T(6b)=0.0951467 Tx(5b)=0.0473176 c3=0.0
+   lambda* = h kappa / beta* = 47.3373   |   beta_BE = h kappa/96 = 0.25   |   beta*/beta_BE = 2.028   |   S_D (MG, uniform) = 0.0556
+== SO(7) type=R d=7 n=49 h=5 kappa=7 hk=35 | t3=0 t4=3/2401 o3=0 m4=3/2401 (t4/m4 shows the m4 loss: 1.0) c3exact=0
+   CERTIFIED alpha_G < 1 on [0, 0.5732]: alpha=0.9992425 12Cdir=0.243561 90Cmed=0.755681 M*sqrt(n)=1.50736 omega=0.0851723 | at 5b: mu=0.106935 s=0.0375268 (1/n=0.0204082) D=0.0570847 | T(6b)=0.0767413 Tx(5b)=0.0353916 c3=0.0
+   lambda* = h kappa / beta* = 61.0607   |   beta_BE = h kappa/96 = 0.364583   |   beta*/beta_BE = 1.572   |   S_D (MG, uniform) = 0.0556
+== SO(8) type=R d=8 n=64 h=6 kappa=8 hk=48 | t3=0 t4=3/4096 o3=0 m4=3/4096 (t4/m4 shows the m4 loss: 1.0) c3exact=0
+   CERTIFIED alpha_G < 1 on [0, 0.6344]: alpha=0.9996891 12Cdir=0.2271 90Cmed=0.772589 M*sqrt(n)=1.50393 omega=0.0907254 | at 5b: mu=0.0952912 s=0.0300414 (1/n=0.015625) D=0.0475241 | T(6b)=0.0653003 Tx(5b)=0.0276719 c3=0.0
+   lambda* = h kappa / beta* = 75.662   |   beta_BE = h kappa/96 = 0.5   |   beta*/beta_BE = 1.269   |   S_D (MG, uniform) = 0.0556
+== G2 type=R d=7 n=49 h=4 kappa=7 hk=28 | t3=1/343 t4=4/2401 o3=1/343 m4=5/2401 (t4/m4 shows the m4 loss: 0.8) c3exact=None
+   CERTIFIED alpha_G < 1 on [0, 0.5171]: alpha=0.9992675 12Cdir=0.240639 90Cmed=0.758628 M*sqrt(n)=1.49637 omega=0.0869023 | at 5b: mu=0.115899 s=0.0574309 (1/n=0.0204082) D=0.0769104 | T(6b)=0.0911506 Tx(5b)=0.0440582 c3=0.00651915
+   lambda* = h kappa / beta* = 54.1481   |   beta_BE = h kappa/96 = 0.291667   |   beta*/beta_BE = 1.773   |   S_D (MG, uniform) = 0.0556
+== F4 type=R d=26 n=676 h=9 kappa=26/3 hk=78 | t3=1/17576 t4=5/456976 o3=1/17576 m4=701/11881376 (t4/m4 shows the m4 loss: 0.1854) c3exact=None
+   CERTIFIED alpha_G < 1 on [0, 1.0139]: alpha=0.9997429 12Cdir=0.161448 90Cmed=0.838295 M*sqrt(n)=1.46708 omega=0.125263 | at 5b: mu=0.0527073 s=0.0120054 (1/n=0.00147929) D=0.0220816 | T(6b)=0.0274226 Tx(5b)=0.00739592 c3=0.000295428
+   lambda* = h kappa / beta* = 76.9307   |   beta_BE = h kappa/96 = 0.8125   |   beta*/beta_BE = 1.248   |   S_D (MG, uniform) = 0.0556
+== E6 type=C d=27 n=1458 h=12 kappa=9 hk=108 | t3=1/78732 t4=1/472392 o3=1/78732 m4=1/52488 (t4/m4 shows the m4 loss: 0.1111) c3exact=None
+   CERTIFIED alpha_G < 1 on [0, 1.1706]: alpha=0.9993948 12Cdir=0.151639 90Cmed=0.847756 M*sqrt(n)=1.44298 omega=0.128789 | at 5b: mu=0.0430433 s=0.00785975 (1/n=0.000685871) D=0.0153323 | T(6b)=0.0204976 Tx(5b)=0.00440446 c3=0.000114312
+   lambda* = h kappa / beta* = 92.2604   |   beta_BE = h kappa/96 = 1.125   |   beta*/beta_BE = 1.041   |   S_D (MG, uniform) = 0.0556
+== E7 type=Q d=56 n=3136 h=18 kappa=28/3 hk=168 | t3=0 t4=1/2458624 o3=0 m4=547/280283136 (t4/m4 shows the m4 loss: 0.2084) c3exact=0
+   CERTIFIED alpha_G < 1 on [0, 1.4563]: alpha=0.9990162 12Cdir=0.125742 90Cmed=0.873274 M*sqrt(n)=1.29428 omega=0.116511 | at 5b: mu=0.0228545 s=0.00313871 (1/n=0.000318878) D=0.00645584 | T(6b)=0.0122123 Tx(5b)=0.00211287 c3=0.0
+   lambda* = h kappa / beta* = 115.361   |   beta_BE = h kappa/96 = 1.75   |   beta*/beta_BE = 0.8322   |   S_D (MG, uniform) = 0.0556
+== E8 type=R d=248 n=61504 h=30 kappa=124/15 hk=248 | t3=1/15252992 t4=5/3782742016 o3=1/15252992 m4=8213/234530004992 (t4/m4 shows the m4 loss: 0.03775) c3exact=None
+   CERTIFIED alpha_G < 1 on [0, 2.0503]: alpha=0.9990813 12Cdir=0.12131 90Cmed=0.877772 M*sqrt(n)=1.20695 omega=0.120063 | at 5b: mu=0.0104105 s=0.00101551 (1/n=1.62591e-5) D=0.00210773 | T(6b)=0.00542308 Tx(5b)=0.000450654 c3=7.54571e-7
+   lambda* = h kappa / beta* = 120.958   |   beta_BE = h kappa/96 = 2.58333   |   beta*/beta_BE = 0.7937   |   S_D (MG, uniform) = 0.0556

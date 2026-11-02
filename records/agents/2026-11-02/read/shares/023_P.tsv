@@ -1,0 +1,12 @@
+#path	first_line	last_line	total_lines	bytes	sha256_16	note
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/TorusLCert3.reemit.lean	36	160	160	137259	6554497091ee6566	III-UNTRACKED:STDLIB/build/aperanton LONGLINES(max 32067 bytes)
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/TorusLTrans3.mut.lean	1	36	36	8073	84d021aecb20a86c	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/TorusLTrans3.reemit.lean	1	36	36	8031	ce7361dee2fb8386	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_boxchibend.c	1	210	210	22771	b060fed0a5f986a0	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_boxdegbend.c	1	210	210	22760	0ea365e611f6b8da	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_boxprodbend.c	1	210	210	22756	d0f8b148709684b0	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_gradedformbend.awk	1	149	149	15267	8127635828e34aee	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_gradedprefbend.awk	1	149	149	15271	b6dab0701b7cf176	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_gradedsignbend.awk	1	149	149	15267	ba8feb7cd4e53b7b	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_gradedsupbend.awk	1	149	149	15273	377a598b6a2ee3a6	III-UNTRACKED:STDLIB/build/aperanton
+C:/Users/Edwin Boston/OneDrive/Desktop/III/STDLIB/build/aperanton/hand_juncchebbend.c	1	190	190	21161	e7d1c5446c8db8ba	III-UNTRACKED:STDLIB/build/aperanton

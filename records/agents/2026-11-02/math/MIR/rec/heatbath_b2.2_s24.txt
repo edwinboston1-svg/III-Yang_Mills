@@ -1,0 +1,44 @@
+HB beta=2.2 L=12 outside links read=536
+HB sweep 0 plaquette 0.694679
+HB sweep 20 plaquette 0.569694
+HB sweep 40 plaquette 0.570160
+HB sweep 60 plaquette 0.567466
+HB sweep 80 plaquette 0.568700
+HB sweep 100 plaquette 0.571489
+HB sweep 120 plaquette 0.572163
+HB sweep 140 plaquette 0.571771
+HB sweep 160 plaquette 0.569104
+HB sweep 180 plaquette 0.569041
+HB sweep 200 plaquette 0.570254
+HB sweep 220 plaquette 0.569067
+HB sweep 240 plaquette 0.569986
+HB sweep 260 plaquette 0.567671
+HB sweep 280 plaquette 0.569036
+HB sweep 300 plaquette 0.569228
+HB sweep 320 plaquette 0.572078
+HB sweep 340 plaquette 0.568434
+HB sample 0 (sweep 349) plaquette 0.569085  <W2x2>=0.13485 <W4x4>=0.00048  P(|W4x4|>=cos30,45,60)= 0.05821 0.18232 0.39302  P(|W2x2|>=...)= 0.05986 0.18695 0.39804  -> C:/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/MIR/rec/hbd_s24_0.txt
+HB sweep 360 plaquette 0.571960
+HB sweep 380 plaquette 0.565758
+HB sample 1 (sweep 399) plaquette 0.570262  <W2x2>=0.13757 <W4x4>=0.00429  P(|W4x4|>=cos30,45,60)= 0.05899 0.18294 0.39158  P(|W2x2|>=...)= 0.06078 0.18850 0.40100  -> C:/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/MIR/rec/hbd_s24_1.txt
+HB sweep 400 plaquette 0.570428
+HB sweep 420 plaquette 0.569052
+HB sweep 440 plaquette 0.566957
+HB sample 2 (sweep 449) plaquette 0.567120  <W2x2>=0.13155 <W4x4>=0.00146  P(|W4x4|>=cos30,45,60)= 0.05773 0.18158 0.39128  P(|W2x2|>=...)= 0.06069 0.18867 0.40009  -> C:/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/MIR/rec/hbd_s24_2.txt
+HB sweep 460 plaquette 0.568675
+HB sweep 480 plaquette 0.568912
+HB sample 3 (sweep 499) plaquette 0.572359  <W2x2>=0.13885 <W4x4>=0.00033  P(|W4x4|>=cos30,45,60)= 0.05716 0.18219 0.39215  P(|W2x2|>=...)= 0.06054 0.18588 0.39798  -> C:/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/MIR/rec/hbd_s24_3.txt
+HB sweep 500 plaquette 0.569024
+HB sweep 520 plaquette 0.568238
+HB sweep 540 plaquette 0.567444
+HB sample 4 (sweep 549) plaquette 0.570119  <W2x2>=0.13844 <W4x4>=0.00214  P(|W4x4|>=cos30,45,60)= 0.05761 0.18052 0.39068  P(|W2x2|>=...)= 0.06047 0.18926 0.39889  -> C:/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/MIR/rec/hbd_s24_4.txt
+HB sweep 560 plaquette 0.569756
+HB sweep 580 plaquette 0.567735
+HB sample 5 (sweep 599) plaquette 0.572045  <W2x2>=0.13685 <W4x4>=0.00087  P(|W4x4|>=cos30,45,60)= 0.05683 0.17916 0.38897  P(|W2x2|>=...)= 0.06096 0.18916 0.40157  -> C:/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/MIR/rec/hbd_s24_5.txt
+HB sweep 600 plaquette 0.569806
+HB sweep 620 plaquette 0.571074
+HB sweep 640 plaquette 0.569964
+HB sample 6 (sweep 649) plaquette 0.568101  <W2x2>=0.13311 <W4x4>=0.00138  P(|W4x4|>=cos30,45,60)= 0.05789 0.17982 0.39013  P(|W2x2|>=...)= 0.06073 0.18727 0.39923  -> C:/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/MIR/rec/hbd_s24_6.txt
+HB sweep 660 plaquette 0.571514
+HB sweep 680 plaquette 0.569755
+HB sample 7 (sweep 699) plaquette 0.568087  <W2x2>=0.13529 <W4x4>=0.00151  P(|W4x4|>=cos30,45,60)= 0.05725 0.18122 0.38912  P(|W2x2|>=...)= 0.06006 0.18778 0.40055  -> C:/Users/EDWINB~1/AppData/Local/Temp/claude/C--Users-Edwin-Boston-OneDrive-Desktop-III/59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb/scratchpad/math/MIR/rec/hbd_s24_7.txt

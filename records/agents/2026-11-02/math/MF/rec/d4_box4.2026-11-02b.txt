@@ -1,0 +1,32 @@
+A-RATE d=4 L=2 box4 dir=0 D=1 logratio_C=4.571890 logratio_K=1.762747 sign_C=-1
+A-RATE d=4 L=2 box4 dir=0 D=2 logratio_C=0.677899 logratio_K=1.762747 sign_C=1
+A-RATE d=4 L=2 box4 dir=0 D=4 logratio_C=1.744480 logratio_K=1.762747 sign_C=1
+A-RATE d=4 L=2 box4 dir=0 D=8 logratio_C=1.762732 logratio_K=1.762747 sign_C=1
+A-RATE d=4 L=2 box4 dir=0 D=16 logratio_C=1.762484 logratio_K=1.762679 sign_C=1
+A-RATE d=4 L=2 box4 dir=0 D=32 logratio_C=-0.107765 logratio_K=0.111678 sign_C=1
+B line=ReK=0 d=4 L=2 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=1000000000.000000000 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=3.525494
+B line=ReK=pi d=4 L=2 box4 dir=0 kappa(Kperp=0)=1.762747174 kappa_min=1.762747174 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=3.525494
+A-RATE d=4 L=4 box4 dir=0 D=1 logratio_C=4.462176 logratio_K=1.425417 sign_C=-1
+A-RATE d=4 L=4 box4 dir=0 D=2 logratio_C=1.320085 logratio_K=1.425417 sign_C=1
+A-RATE d=4 L=4 box4 dir=0 D=4 logratio_C=1.425383 logratio_K=1.425417 sign_C=1
+A-RATE d=4 L=4 box4 dir=0 D=8 logratio_C=1.425417 logratio_K=1.425417 sign_C=1
+A-RATE d=4 L=4 box4 dir=0 D=16 logratio_C=1.425440 logratio_K=1.425416 sign_C=1
+A-RATE d=4 L=4 box4 dir=0 D=32 logratio_C=-0.083808 logratio_K=0.298296 sign_C=1
+B line=ReK=0 d=4 L=4 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=1000000000.000000000 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=5.267832
+B line=ReK=pi d=4 L=4 box4 dir=0 kappa(Kperp=0)=1.425416943 kappa_min=1.425416943 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=5.267832
+A-RATE d=4 L=8 box4 dir=0 D=1 logratio_C=5.633850 logratio_K=1.344024 sign_C=-1
+A-RATE d=4 L=8 box4 dir=0 D=2 logratio_C=1.306365 logratio_K=1.344024 sign_C=1
+A-RATE d=4 L=8 box4 dir=0 D=4 logratio_C=1.344021 logratio_K=1.344024 sign_C=1
+A-RATE d=4 L=8 box4 dir=0 D=8 logratio_C=1.344024 logratio_K=1.344024 sign_C=1
+A-RATE d=4 L=8 box4 dir=0 D=16 logratio_C=1.344002 logratio_K=1.344024 sign_C=1
+A-RATE d=4 L=8 box4 dir=0 D=32 logratio_C=-0.504648 logratio_K=0.437199 sign_C=1
+B line=ReK=0 d=4 L=8 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=1000000000.000000000 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=5.982555
+B line=ReK=pi d=4 L=8 box4 dir=0 kappa(Kperp=0)=1.344024470 kappa_min=1.344024470 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=5.982555
+A-RATE d=4 L=16 box4 dir=0 D=1 logratio_C=6.974010 logratio_K=1.323724 sign_C=-1
+A-RATE d=4 L=16 box4 dir=0 D=2 logratio_C=1.295003 logratio_K=1.323724 sign_C=1
+A-RATE d=4 L=16 box4 dir=0 D=4 logratio_C=1.323722 logratio_K=1.323724 sign_C=1
+A-RATE d=4 L=16 box4 dir=0 D=8 logratio_C=1.323724 logratio_K=1.323724 sign_C=1
+A-RATE d=4 L=16 box4 dir=0 D=16 logratio_C=1.325145 logratio_K=1.323723 sign_C=1
+A-RATE d=4 L=16 box4 dir=0 D=32 logratio_C=0.212096 logratio_K=0.420164 sign_C=-1
+B line=ReK=0 d=4 L=16 box4 dir=0 kappa(Kperp=0)=1000000000.000000000 kappa_min=1000000000.000000000 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=6.203953
+B line=ReK=pi d=4 L=16 box4 dir=0 kappa(Kperp=0)=1.323723772 kappa_min=1.323723772 at Kperp=(0.0000,0.0000,0.0000) first_transverse_pole=6.203953

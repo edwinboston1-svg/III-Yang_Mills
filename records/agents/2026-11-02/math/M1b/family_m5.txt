@@ -1,0 +1,9 @@
+START 2026-11-02 07:41:20 family.c md5=f980ec0aec5b79ce5fbd3cda16147cf0 m=5
+FAMILY m=5 s=4 box W=16: collisions=0 outside=0
+PLAQUETTES F=4272 nonmixed=0 | LINKS L=6880 odd=0 N4=1664 N6=0 N>6=0 | VERTICES V=2607 chi=-1
+SKELETON components=1 | G: E=1664 V=896 c=1 b1=769 | G6: E=0 V=0 c=0 b1=0 | Q=769 Q/F=0.180009
+CLOSED FORMS F=4272 Q=769 chi=-1 -> MET
+CUBES closed unit 3-cubes = 0
+THEOREM I (x8): lhs=10944 rhs=10944 -> MET | Delta(G)=1916/4 sum(8-a)=7096
+TESSERACTS with an X-plaquette=3052, carrying a closed subset=289, of them the flat-torus pattern (16 mixed, 2 components)=289
+END 2026-11-02 07:41:23

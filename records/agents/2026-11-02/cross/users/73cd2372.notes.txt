@@ -1,0 +1,26 @@
+=== 2026-10-30T03:45:16.920Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The new "apportionment" sharing instrument handles at most 4 parties with secrets below 31, and its core leak phenomenon is already published.
+>
+> **New sharing organ is a toy-scale demonstration**
+> * After you rejected the isogeny result, the main agent pivoted to **ΔΑΣΜΟΣ**: a secret-sharing instrument where each group of parties learns the secret only "modulo a divisor" (a partial slice), and the tool computes every group's exact slice.
+> * **Scale:** by the page's own limits it works for at most **4 parties** and secrets taken modulo numbers **up to 30**. It is a demonstration of a calculus, not something usable at real sizes.
+> * **Novelty:** the page's own literature section says the partial-slice effect is already known (Mignotte 1983 and Asmuth–Bloom 1983 schemes leak "the secret modulo a product"; Shamir sharing over rings is known to leak). What's new is narrower: an exact formula covering every modulus at once, a census of achievable policies, and a design search.
+> * By your "if it's googleable it's useless" rule, this may not clear the bar either. **If you want the night spent elsewhere, say so now**, before the organ, gate and registers are built.
+
+I need the full scale, not the toy
+
+=== 2026-10-30T04:09:37.932Z USER (enqueue)
+Here is a note offered by a side agent:
+
+> Heads up · The full-scale build keeps the sharing calculus's one real wall: it still lists every coalition, so 20 or 30 parties is the practical limit, not 128.
+>
+> **Full scale means bigger numbers, not more parties**
+> * The side note said the sharing instrument was a toy: 4 parties, secrets below 31. The main agent is now rebuilding it on the tower's big-integer engines, which fixes the **number sizes** completely: moduli like 2¹²⁸ or 2²⁵⁶ and matrices with up to 128 unknowns are in reach.
+> * It does not fix the **party count**. The instrument answers "what does this group learn" one group at a time, and the plan still sweeps every possible group. The groups double with each party, so the new plan tops out around 12 parties for a full sweep and 32 parties only for groups of two.
+> * That is inherent to the question, not a bug: a complete table over hundreds of parties cannot exist.
+> * So judge the deliverable as a **per-coalition checker at real word sizes plus structured sweeps**, not as a map of every coalition of a large scheme. If you need a specific large case, name the coalitions you care about and it can answer those exactly.
+
+find/invent a way to surpass
+

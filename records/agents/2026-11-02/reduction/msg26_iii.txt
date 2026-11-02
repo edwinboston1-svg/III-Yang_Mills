@@ -1,0 +1,3 @@
+THE CROSSING CAMPAIGN §26 — the ladder's inequality is false by a factor of two (moment influence ≤ 2·TV, not ≤ TV; readers 048_R and 049_R, the measured ratio 0.7304–0.7621 over 174 rows); the corrected one-step TV-row lower bounds (SU(2) below one at 2.2 and 3.0, U(1) at 1.2 at least 1.308); the exact TV by Haar orthogonality named; the β = 3.0 flips not the signed weight's; CMP 99's (3.132), the UV half's deepest black box, PROVED GIVEN NAMED INPUTS (M3g: Theorem L′, QGQ* ≥ C₁′⁻¹ℓ² uniform in k and every compact G; Theorem 3.10 completed; CMP 89 not needed); the shared brief corrected (2026-11-02 10:2x EST; the trunk seat iii-43; the page alone, by pathspec)
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

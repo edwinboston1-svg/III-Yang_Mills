@@ -1,0 +1,18 @@
+[sync] run: memory_gate -> STDLIB/build/runs/memory_gate.2026-11-02lane.run (the gate's stdout; its manifest and END land beside it)
+[sync] RUN memory_gate verdict=RED rc=1 seconds=2974 run=STDLIB/build/runs/memory_gate.2026-11-02lane.run manifest=none
+[sync] RUN memory_gate: not GREEN, nothing lands (the run's last lines):
+  [memory] ledger pointers: 0 missing
+  [memory] laws: 62 numbered, 62 extracted, 62 distinct
+  [memory] preferences: 3 present verbatim
+  [memory] traps: 7 sampled, 0 missing
+  MEMORY-STALE
+[sync] run: eidesis_gate -> STDLIB/build/runs/eidesis_gate.2026-11-02lane.run (the gate's stdout; its manifest and END land beside it)
+[sync] RUN eidesis_gate verdict=GREEN rc=0 seconds=8226 run=STDLIB/build/runs/eidesis_gate.2026-11-02lane.run manifest=STDLIB/build/runs/eidesis_gate.2026-11-02lane.manifest
+[sync] run: ledger_gate -> STDLIB/build/runs/ledger_gate.2026-11-02lane.run (the gate's stdout; its manifest and END land beside it)
+[sync] RUN ledger_gate verdict=RED rc=8 seconds=1071 run=STDLIB/build/runs/ledger_gate.2026-11-02lane.run manifest=none
+[sync] RUN ledger_gate: not GREEN, nothing lands (the run's last lines):
+  [ledger] RED-LATCHED: arm 5: the tally reads [TALLY-STALE] -- re-count and re-pin before citing
+  [ledger] arm 5: 1 reading(s) RED-LATCHED above (its closing line withheld: a run must not contradict itself)
+  [ledger] arm 6 DECAY CLAUSES: present verbatim
+  [ledger] arm 7 ODONTOGRAPH: the ledger DELEGATES its count (pin table live at 1102 gates, floor 150)
+  [ledger] RED: 1 arm reading(s) RED, each named above as RED-LATCHED: arm 5: the tally reads [TALLY-STALE] -- re-count and re-pin before citing

@@ -1,0 +1,21 @@
+THE GROUND, revision 31 and the records it cites, through c52c0fc (Edwin Boston III)
+Manifest written 2026-11-02T09:35:05Z.
+
+  c52c0fc7c1a07f656758548eab13c08f642cb3c5  2026-11-02 04:35:01 -0500  THE GROUND, revision 31 (Edwin Boston III, 2026-11-02 04:34 EST): Theorem 8.8 restored, and the hierarchical crossing stated at i
+  5c6415542bba6d87683ba14bc17c71891cee5304  2026-11-01 23:41:11 -0500  TIMESTAMPS: the untracked Yang–Mills material of 2026-11-01 by sha256, and its OpenTimestamps proof (2026-11-01 23:39 EST)
+  b1810c7f1fcc45744bfe1b0892ce90f7b30d7a90  2026-11-01 20:37:03 -0500  THE STANDING — where the Yang–Mills proof stands, every item at its strength, written to the operator's order of 20:0x; with 
+  5b85f3aa5c0b213044cc0b35249ecb732d82645d  2026-11-01 20:32:17 -0500  TIMESTAMPS: revision 30's manifest and its OpenTimestamps proof (2026-11-01 20:4x EST)
+
+507904e24962829c41f3f0807d0080ec936b196c249851d99a27e2c57841f1f3 *THE-GROUND-Edwin-Boston-III.pdf
+2ad92bb986e65bc025ff6702c90e79c089e5c11263cf37cf4b882fb7ddcd73fa *THE-GROUND-Edwin-Boston-III.docx
+c017ac8335729c04fa4371cdcf0d5350b41f870b1a34a120dcd99db09f72e105 *source/ground/build.js
+3db892e007615d9fbd1619735c0c79f2e31284750196e8793d2097aadf9b6fd2 *source/ground/content1.js
+4ded19be6b9d08799bb3e9d74dc3db8f7796646a3acc49489ff5a3c1e3ed7aec *source/ground/content4.js
+6414915215321aa343dabbabd585acb1c25aafa28644f757ab33a51aeb6a9145 *records/pentapylon/MANIFEST.md
+75cc4d70c9549f9e424dd274c0e4be407ebfbf57acf8e76796655b99d6f1764e *records/aperanton/MANIFEST.md
+8c7da91a5ec6480a056c8808d50d69f8bd867e5e3bd4516e2f962ec1f6e1aa88 *records/pentapylon/aperanton_tilt_cert.awk
+847e29b0c3d7bdbbda7fa03c77b731f4e22bbe4246c3c25df1f3b4fb82b249ac *records/pentapylon/tilt_cert.2026-10-29a.txt
+6ab4fb0550d215210d34ebf48ffc943bfee814ef47d291760143bacd74dbb8af *records/pentapylon/tilt_cert.2026-10-29b.txt
+90ac96a0533ab6bae0cc18d3ab3fd6bfba3d047608c6299e13cd2a669c424937 *records/pentapylon/CrossoverCriterion.lean
+3994a008b29c3d016645f964a572985c7f534c617782943aa8fd450df13d0804 *records/pentapylon/mk_flow.2026-10-28a.txt
+98cf20e5b7613a2838ece8affd883ff36c4ab49e3877aa8ed5af5895b89f4d68 *records/aperanton/runs/aperanton_gate.2026-11-01d.run

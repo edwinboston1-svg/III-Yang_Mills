@@ -1,0 +1,6 @@
+[aperanton] provenance: prereg 52f1e5db strictly precedes organ d7546afe
+[aperanton] arm 1 (CUSTODY): FluxCore.lean re-emitted byte for byte from the committed record, the record's commit stamped in it
+[aperanton] arm 2 (THE STRUCTURE): 15 theorems, decide the only proof term (13 by the elaborator's reduction, 2 sent to the kernel directly), no import, no axiom, no sorry, no native_decide
+[aperanton] arm 3 (THE LITERALS): a_w[k] and J_h[k] at all eight sectors, d(w) = [0, 2, 2, 4, 2, 4, 4, 6], m(w) = [1, 4, 4, 24, 4, 24, 24, 288], Theorem S's 36 and 261 -- the record's, re-derived by a second reading
+[aperanton] arm 4 (THE KERNEL, OD:2): KERNEL-ACCEPTED FluxCore theorems=15 errors=0 (Lean 4.35.0) -- every theorem reduced; CUSTODY is ours, the verdict the kernel's
+[aperanton] arm 5: the page carries its stages, their deciders, the theorems they stand on, and Addendum I's two mechanisms

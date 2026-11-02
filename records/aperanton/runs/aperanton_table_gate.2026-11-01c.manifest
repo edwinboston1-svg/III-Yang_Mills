@@ -1,0 +1,28 @@
+# dk_manifest organ=aperanton_table instant=2026-11-01T06:17:02Z head=65c1270b422f522115741a5bb9c747f9b6d7d4fa run=aperanton_table_gate.2026-11-01c.run
+TITLE S1: THE-TABLE-MODE-NUMBER-FROM-THE-FINITE-STAR-TABLE-EVERY-ENTRY-EXACT-OR-CERTIFIED-THE-REALIGNED-BOUND-UNDER-3416-EXACT-VALUES-THE-CERTIFICATE-PASSING-AT-THE-NUMBER-AND-REFUSED-ONE-STEP-ABOVE
+PAGE DOCS/III-S1-THE-FLUX-SURFACE-GAS.md
+OWN STDLIB/build/aperanton/kp_cert_table_wip.awk
+OWN STDLIB/build/aperanton/local_tail_table.awk
+OWN STDLIB/build/aperanton/surface-gas/realign_cert.py
+OWN STDLIB/build/aperanton/surface-gas/realign_bound.py
+OWN STDLIB/build/aperanton/local_tail_table.2026-10-31g.txt
+OWN STDLIB/build/aperanton/local_tail_table.cand.2026-10-31g.rows
+OWN STDLIB/build/aperanton/kp_cert_table_scan_page.2026-10-31g.txt
+OWN STDLIB/build/aperanton/kp_cert_table_scan_tree.2026-10-31g.txt
+OWN STDLIB/build/aperanton/realign_census.2026-10-31a.txt
+OWN STDLIB/build/aperanton/realign_census.2026-10-31b.txt
+OWN STDLIB/build/aperanton/realign_census.2026-10-31a.in
+OWN STDLIB/build/aperanton/realign_unread.2026-10-31a.in
+OWN STDLIB/build/aperanton/realign_bound.2026-10-31a.txt
+OWN STDLIB/build/aperanton/realign_bound.2026-10-31b.txt
+OWN STDLIB/build/aperanton/realign_bound.2026-10-31c.txt
+OWN STDLIB/build/aperanton/realign_bound.2026-10-31d.txt
+OWN STDLIB/build/aperanton/class_exact.2026-10-31a.txt
+OWN STDLIB/scripts/aperanton_table_gate.sh
+RUNS STDLIB/build/runs/aperanton_table_gate.2026-11-01c.run
+RUNS STDLIB/build/runs/aperanton_table_gate.2026-11-01c.start
+RUNS STDLIB/build/aperanton_table/g_verdict.txt
+TESTED STDLIB/build/aperanton/surface-gas/realign_cert.py 6f58159234fe1a94633340a53a3463a53cbff116
+TESTED STDLIB/build/aperanton/local_tail_table.awk cc27a5ede47fca3587131d7c587bf8a18b13025a
+TESTED STDLIB/build/aperanton/kp_cert_table_wip.awk 77703f50ba5cfe9847346e26c25f425e3ff4828a
+RUNS STDLIB/build/runs/aperanton_table_gate.2026-11-01c.manifest

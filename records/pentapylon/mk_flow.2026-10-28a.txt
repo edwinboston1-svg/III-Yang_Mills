@@ -1,0 +1,196 @@
+# mk_flow record a, 2026-10-28T20:44:21-0400: THE MIGDAL-KADANOFF FLOW OF SU(2) IN THE CHARACTER BASIS AND ITS U(1) CONTROL (aperanton_mk_flow.awk, aperanton_mk_flow_u1.awk; the master plan note §53, the stakes (i)-(iv) and the kill-switch written before the first run, RESULTS 1-2 after it).  Sections: the d = 2 known answer (c -> c^4); d = 4 from beta = 1, 2.3, 4, 6, 10 to the kernel's one-link threshold 0.131 (K*); d = 3 from 2.3; the heat-kernel start at beta = 10..160 against the second-order law t' = t + t^2/4 (the cubic remainder); the cut doubled at 2.3; U(1) from the same five couplings in doubles (a stall to double precision) and from 1, 1.5, 2.3 at 256 bits (the exponentially slow descent, 7e-5, 5e-8, 3e-13 per step -- Ito 1985 permanent confinement of the hierarchical U(N) model; the discriminator is the rate, not confinement).  Every number a reading of an exact recursion cut at n <= NMAX; the stake (iii) on the cut held at 2.3 to twelve digits.
+# --- d = 2, the known answer
+MK-FLOW d=2 beta=2.3 NMAX=60 HK=0 c_1=0.479279078305 c_2=0.166471168166 c_3=0.045006465698 c_NMAX=4.837e-81 (the d = 2 known answer is c -> c^4)
+MK-STEP d=2 beta=2.3 step=1 c_1=0.052765965064 beta_eff=0.211456724 descent=2.088543276 c_2=0.000767990961 (Wilson at beta_eff 0.001857889948, dev -1.090e-03) c_3=0.000004102982 (dev -4.498e-05) c_NMAX=5.484e-322 descent
+MK-FLOW d=2 beta=2.3 K*=-1 (steps to beta_eff < 0.131) rises=0 final_beta_eff=0.211456724 NOT-REACHED-IN-KMAX
+# mk_flow done
+# --- d = 4, beta = 1
+MK-FLOW d=4 beta=1 NMAX=60 HK=0 c_1=0.240193723870 c_2=0.039225104520 c_3=0.004843096752 c_NMAX=1.518e-102 (the d = 2 known answer is c -> c^4)
+MK-STEP d=4 beta=1 step=1 c_1=0.187511695151 beta_eff=0.768270458 descent=0.231729542 c_2=0.013673015767 (Wilson at beta_eff 0.023720393723, dev -1.005e-02) c_3=0.000443493392 (dev -1.818e-03) c_NMAX=6.076e-266 descent
+MK-STEP d=4 beta=1 step=2 c_1=0.089640150549 beta_eff=0.360496945 descent=0.407773514 c_2=0.001906035273 (Wilson at beta_eff 0.005371314343, dev -3.465e-03) c_3=0.000010893105 (dev -2.308e-04) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=1 step=3 c_1=0.011031741006 beta_eff=0.044130545 descent=0.316366400 c_2=0.000015003224 (Wilson at beta_eff 0.000081136165, dev -6.613e-05) c_3=0.000000003228 (dev -4.443e-07) c_NMAX=0.000e+00 descent
+MK-FLOW d=4 beta=1 K*=3 (steps to beta_eff < 0.131) rises=0 final_beta_eff=0.044130545 DESCENDS-TO-STRONG-COUPLING
+# mk_flow done
+# --- d = 4, beta = 2.3
+MK-FLOW d=4 beta=2.3 NMAX=60 HK=0 c_1=0.479279078305 c_2=0.166471168166 c_3=0.045006465698 c_NMAX=4.837e-81 (the d = 2 known answer is c -> c^4)
+MK-STEP d=4 beta=2.3 step=1 c_1=0.502521840299 beta_eff=2.465395726 descent=-0.165395726 c_2=0.161500065391 (Wilson at beta_eff 0.184679627580, dev -2.318e-02) c_3=0.033719856641 (dev -1.935e-02) c_NMAX=1.257e-185 RISE
+MK-STEP d=4 beta=2.3 step=2 c_1=0.463273000532 beta_eff=2.192018914 descent=0.273376812 c_2=0.128761181477 (Wilson at beta_eff 0.154618607232, dev -2.586e-02) c_3=0.021534463761 (dev -1.852e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=2.3 step=3 c_1=0.411737646452 beta_eff=1.871605003 descent=0.320413910 c_2=0.093995916455 (Wilson at beta_eff 0.120033028963, dev -2.604e-02) c_3=0.011928650355 (dev -1.501e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=2.3 step=4 c_1=0.349583632202 beta_eff=1.528269904 descent=0.343335099 c_2=0.060857716463 (Wilson at beta_eff 0.085021222369, dev -2.416e-02) c_3=0.005301433864 (dev -1.049e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=2.3 step=5 c_1=0.274530328024 beta_eff=1.157817872 descent=0.370452032 c_2=0.032106690570 (Wilson at beta_eff 0.051559542445, dev -1.945e-02) c_3=0.001617418855 (dev -5.723e-03) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=2.3 step=6 c_1=0.184485832742 beta_eff=0.755278627 descent=0.402539245 c_2=0.011338395815 (Wilson at beta_eff 0.022952186213, dev -1.161e-02) c_3=0.000239331691 (dev -1.912e-03) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=2.3 step=7 c_1=0.083239188532 beta_eff=0.334505475 descent=0.420773151 c_2=0.001517760065 (Wilson at beta_eff 0.004629882954, dev -3.112e-03) c_3=0.000006680338 (dev -1.866e-04) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=2.3 step=8 c_1=0.008599832378 beta_eff=0.034401026 descent=0.300104450 c_2=0.000008607104 (Wilson at beta_eff 0.000049305960, dev -4.070e-05) c_3=0.000000001286 (dev -2.107e-07) c_NMAX=0.000e+00 descent
+MK-FLOW d=4 beta=2.3 K*=8 (steps to beta_eff < 0.131) rises=1 final_beta_eff=0.034401026 REACHES-STRONG-COUPLING-WITH-RISES
+# mk_flow done
+# --- d = 4, beta = 4
+MK-FLOW d=4 beta=4 NMAX=60 HK=0 c_1=0.658047267359 c_2=0.341952732641 c_3=0.145118168398 c_NMAX=4.965e-67 (the d = 2 known answer is c -> c^4)
+MK-STEP d=4 beta=4 step=1 c_1=0.679186621505 beta_eff=4.304951764 descent=-0.304951764 c_2=0.357126434344 (Wilson at beta_eff 0.368925220366, dev -1.180e-02) c_3=0.145792774913 (dev -1.921e-02) c_NMAX=3.652e-137 RISE
+MK-STEP d=4 beta=4 step=2 c_1=0.663483701303 beta_eff=4.075102776 descent=0.229848988 c_2=0.334946728056 (Wilson at beta_eff 0.348744080574, dev -1.380e-02) c_3=0.128699910239 (dev -2.131e-02) c_NMAX=1.253e-201 descent
+MK-STEP d=4 beta=4 step=3 c_1=0.643556122263 beta_eff=3.809869784 descent=0.265232992 c_2=0.308751508660 (Wilson at beta_eff 0.324327435031, dev -1.558e-02) c_3=0.110442278272 (dev -2.234e-02) c_NMAX=2.566e-230 descent
+MK-STEP d=4 beta=4 step=4 c_1=0.620940580560 beta_eff=3.538934952 descent=0.270934831 c_2=0.280665337586 (Wilson at beta_eff 0.298161069454, dev -1.750e-02) c_3=0.092363062888 (dev -2.307e-02) c_NMAX=2.361e-249 descent
+MK-STEP d=4 beta=4 step=5 c_1=0.595273555325 beta_eff=3.263310166 descent=0.275624786 c_2=0.250796871331 (Wilson at beta_eff 0.270343883950, dev -1.955e-02) c_3=0.074805214044 (dev -2.341e-02) c_NMAX=5.845e-270 descent
+MK-STEP d=4 beta=4 step=6 c_1=0.565923561967 beta_eff=2.981808493 descent=0.281501673 c_2=0.219180407401 (Wilson at beta_eff 0.240831779420, dev -2.165e-02) c_3=0.058116651331 (dev -2.320e-02) c_NMAX=4.551e-294 descent
+MK-STEP d=4 beta=4 step=7 c_1=0.532064195924 beta_eff=2.692685427 descent=0.289123066 c_2=0.185957041667 (Wilson at beta_eff 0.209615515340, dev -2.366e-02) c_3=0.042717237617 (dev -2.227e-02) c_NMAX=8.399e-323 descent
+MK-STEP d=4 beta=4 step=8 c_1=0.492618439987 beta_eff=2.393599518 descent=0.299085909 c_2=0.151464768045 (Wilson at beta_eff 0.176773831672, dev -2.531e-02) c_3=0.029094846436 (dev -2.041e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=4 step=9 c_1=0.446174295669 beta_eff=2.081405241 descent=0.312194277 c_2=0.116368610949 (Wilson at beta_eff 0.142551797467, dev -2.618e-02) c_3=0.017770585395 (dev -1.747e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=4 step=10 c_1=0.390886416020 beta_eff=1.751882302 descent=0.329522939 c_2=0.081859079066 (Wilson at beta_eff 0.107505302929, dev -2.565e-02) c_3=0.009212319947 (dev -1.348e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=4 step=11 c_1=0.324416798399 beta_eff=1.399511429 descent=0.352370872 c_2=0.049922750909 (Wilson at beta_eff 0.072771278291, dev -2.285e-02) c_3=0.003667304633 (dev -8.764e-03) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=4 step=12 c_1=0.244159594764 beta_eff=1.017923536 descent=0.381587893 c_2=0.023578878893 (Wilson at beta_eff 0.040558210228, dev -1.698e-02) c_3=0.000914735845 (dev -4.180e-03) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=4 step=13 c_1=0.148932434613 beta_eff=0.604739072 descent=0.413184464 c_2=0.006528268493 (Wilson at beta_eff 0.014897885843, dev -8.370e-03) c_3=0.000088159278 (dev -1.033e-03) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=4 step=14 c_1=0.049447189730 beta_eff=0.198111948 descent=0.406627124 c_2=0.000434259905 (Wilson at beta_eff 0.001631346593, dev -1.197e-03) c_3=0.000000782653 (dev -3.960e-05) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=4 step=15 c_1=0.001335201447 beta_eff=0.005340812 descent=0.192771136 c_2=0.000000169856 (Wilson at beta_eff 0.000001188509, dev -1.019e-06) c_3=0.000000000003 (dev -7.907e-10) c_NMAX=0.000e+00 descent
+MK-FLOW d=4 beta=4 K*=15 (steps to beta_eff < 0.131) rises=1 final_beta_eff=0.005340812 REACHES-STRONG-COUPLING-WITH-RISES
+# mk_flow done
+# --- d = 4, beta = 6
+MK-FLOW d=4 beta=6 NMAX=60 HK=0 c_1=0.762726075749 c_2=0.491515949501 c_3=0.271210126249 c_NMAX=4.722e-57 (the d = 2 known answer is c -> c^4)
+MK-STEP d=4 beta=6 step=1 c_1=0.774719083331 beta_eff=6.341980850 descent=-0.341980850 c_2=0.506549472644 (Wilson at beta_eff 0.511370909726, dev -4.821e-03) c_3=0.279759026650 (dev -1.116e-02) c_NMAX=1.426e-105 RISE
+MK-STEP d=4 beta=6 step=2 c_1=0.767158223118 beta_eff=6.122382770 descent=0.219598081 c_2=0.493228743679 (Wilson at beta_eff 0.498784540598, dev -5.556e-03) c_3=0.265780448778 (dev -1.256e-02) c_NMAX=1.946e-137 descent
+MK-STEP d=4 beta=6 step=3 c_1=0.757782367623 beta_eff=5.868631609 descent=0.253751160 c_2=0.477301274695 (Wilson at beta_eff 0.483503195935, dev -6.202e-03) c_3=0.249893623118 (dev -1.356e-02) c_NMAX=2.675e-148 descent
+MK-STEP d=4 beta=6 step=4 c_1=0.747528238854 beta_eff=5.612064452 descent=0.256567158 c_2=0.460271768059 (Wilson at beta_eff 0.467199106281, dev -6.927e-03) c_3=0.233437839371 (dev -1.460e-02) c_NMAX=9.130e-156 descent
+MK-STEP d=4 beta=6 step=5 c_1=0.736360827112 beta_eff=5.354585172 descent=0.257479280 c_2=0.442164740067 (Wilson at beta_eff 0.449921289120, dev -7.757e-03) c_3=0.216517842832 (dev -1.569e-02) c_NMAX=1.341e-163 descent
+MK-STEP d=4 beta=6 step=6 c_1=0.724159476267 beta_eff=5.096158508 descent=0.258426664 c_2=0.422898077414 (Wilson at beta_eff 0.431603648009, dev -8.706e-03) c_3=0.199168703785 (dev -1.684e-02) c_NMAX=3.162e-172 descent
+MK-STEP d=4 beta=6 step=7 c_1=0.710774729072 beta_eff=4.836577989 descent=0.259580519 c_2=0.402376495518 (Wilson at beta_eff 0.412167254909, dev -9.791e-03) c_3=0.181435707400 (dev -1.803e-02) c_NMAX=8.302e-182 descent
+MK-STEP d=4 beta=6 step=8 c_1=0.696026629528 beta_eff=4.575567429 descent=0.261010561 c_2=0.380498952843 (Wilson at beta_eff 0.391527594868, dev -1.103e-02) c_3=0.163383972957 (dev -1.923e-02) c_NMAX=1.645e-192 descent
+MK-STEP d=4 beta=6 step=9 c_1=0.679697143678 beta_eff=4.312769398 descent=0.262798031 c_2=0.357161242276 (Wilson at beta_eff 0.369595653253, dev -1.243e-02) c_3=0.145104579160 (dev -2.040e-02) c_NMAX=1.526e-204 descent
+MK-STEP d=4 beta=6 step=10 c_1=0.661519746797 beta_eff=4.047720440 descent=0.265048958 c_2=0.332259992323 (Wilson at beta_eff 0.346279214014, dev -1.402e-02) c_3=0.126721757017 (dev -2.150e-02) c_NMAX=3.625e-218 descent
+MK-STEP d=4 beta=6 step=11 c_1=0.641165464598 beta_eff=3.779817453 descent=0.267902987 c_2=0.305699592950 (Wilson at beta_eff 0.321485259448, dev -1.579e-02) c_3=0.108401541395 (dev -2.245e-02) c_NMAX=1.020e-233 descent
+MK-STEP d=4 beta=6 step=12 c_1=0.618223992467 beta_eff=3.508272540 descent=0.271544913 c_2=0.277403912008 (Wilson at beta_eff 0.295124326450, dev -1.772e-02) c_3=0.090361763089 (dev -2.313e-02) c_NMAX=1.249e-251 descent
+MK-STEP d=4 beta=6 step=13 c_1=0.592177903822 beta_eff=3.232051772 descent=0.276220768 c_2=0.247335796572 (Wilson at beta_eff 0.267118294354, dev -1.978e-02) c_3=0.072882688522 (dev -2.342e-02) c_NMAX=1.770e-272 descent
+MK-STEP d=4 beta=6 step=14 c_1=0.562367149135 beta_eff=2.949791113 descent=0.282260659 c_2=0.215529228226 (Wilson at beta_eff 0.237414274188, dev -2.189e-02) c_3=0.056316441268 (dev -2.314e-02) c_NMAX=4.857e-297 descent
+MK-STEP d=4 beta=6 step=15 c_1=0.527940089673 beta_eff=2.659679707 descent=0.290111405 c_2=0.182141989300 (Wilson at beta_eff 0.206009523322, dev -2.387e-02) c_3=0.041091024573 (dev -2.211e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=6 step=16 c_1=0.487786688797 beta_eff=2.359297242 descent=0.300382466 c_2=0.147541170767 (Wilson at beta_eff 0.172996636205, dev -2.546e-02) c_3=0.027700474031 (dev -2.013e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=6 step=17 c_1=0.440451261198 beta_eff=2.045391818 descent=0.313905424 c_2=0.112439415459 (Wilson at beta_eff 0.138646674436, dev -2.621e-02) c_3=0.016665475385 (dev -1.708e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=6 step=18 c_1=0.384034290089 beta_eff=1.713605190 descent=0.331786628 c_2=0.078102025271 (Wilson at beta_eff 0.103564129492, dev -2.546e-02) c_3=0.008439212060 (dev -1.298e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=6 step=19 c_1=0.316146207627 beta_eff=1.358273933 descent=0.355331257 c_2=0.046622873122 (Wilson at beta_eff 0.068976588955, dev -2.235e-02) c_3=0.003229681509 (dev -8.221e-03) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=6 step=20 c_1=0.234203440783 beta_eff=0.973066519 descent=0.385207415 c_2=0.021137065220 (Wilson at beta_eff 0.037256194453, dev -1.612e-02) c_3=0.000747996914 (dev -3.731e-03) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=6 step=21 c_1=0.137498627497 beta_eff=0.557060349 descent=0.416006170 c_2=0.005323256796 (Wilson at beta_eff 0.012684152882, dev -7.361e-03) c_3=0.000061129182 (dev -8.187e-04) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=6 step=22 c_1=0.039992309724 beta_eff=0.160140080 descent=0.396920268 c_2=0.000264365726 (Wilson at beta_eff 0.001066825495, dev -8.025e-04) c_3=0.000000339700 (dev -2.101e-05) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=6 step=23 c_1=0.000597946625 beta_eff=0.002391787 descent=0.157748293 c_2=0.000000032423 (Wilson at beta_eff 0.000000238360, dev -2.059e-07) c_3=0.000000000000 (dev -7.105e-11) c_NMAX=0.000e+00 descent
+MK-FLOW d=4 beta=6 K*=23 (steps to beta_eff < 0.131) rises=1 final_beta_eff=0.002391787 REACHES-STRONG-COUPLING-WITH-RISES
+# mk_flow done
+# --- d = 4, beta = 10
+MK-FLOW d=4 beta=10 NMAX=60 HK=0 c_1=0.854185308324 c_2=0.658325876671 c_3=0.459189782321 c_NMAX=4.781e-45 (the d = 2 known answer is c -> c^4)
+MK-STEP d=4 beta=10 step=1 c_1=0.859086413586 beta_eff=10.359316875 descent=-0.359316875 c_2=0.667032545629 (Wilson at beta_eff 0.668284531132, dev -1.252e-03) c_3=0.468169739422 (dev -3.854e-03) c_NMAX=4.552e-72 RISE
+MK-STEP d=4 beta=10 step=2 c_1=0.856191345846 beta_eff=10.144124488 descent=0.215192387 c_2=0.660986733979 (Wilson at beta_eff 0.662389259182, dev -1.403e-03) c_3=0.460120417816 (dev -4.284e-03) c_NMAX=4.211e-83 descent
+MK-STEP d=4 beta=10 step=3 c_1=0.852675334217 beta_eff=9.894090255 descent=0.250034233 c_2=0.653768611072 (Wilson at beta_eff 0.655278934300, dev -1.510e-03) c_3=0.450736151262 (dev -4.563e-03) c_NMAX=2.741e-86 descent
+MK-STEP d=4 beta=10 step=4 c_1=0.848949151213 beta_eff=9.641743679 descent=0.252346576 c_2=0.646177556011 (Wilson at beta_eff 0.647802646709, dev -1.625e-03) c_3=0.440972657580 (dev -4.853e-03) c_NMAX=1.066e-88 descent
+MK-STEP d=4 beta=10 step=5 c_1=0.845026957633 beta_eff=9.389153309 descent=0.252590370 c_2=0.638247271672 (Wilson at beta_eff 0.639998653843, dev -1.751e-03) c_3=0.430880066830 (dev -5.165e-03) c_NMAX=3.565e-91 descent
+MK-STEP d=4 beta=10 step=6 c_1=0.840895099113 beta_eff=9.136443350 descent=0.252709960 c_2=0.629959191757 (Wilson at beta_eff 0.631850133825, dev -1.891e-03) c_3=0.420448808517 (dev -5.504e-03) c_NMAX=8.673e-94 descent
+MK-STEP d=4 beta=10 step=7 c_1=0.836536445231 beta_eff=8.883612254 descent=0.252831095 c_2=0.621289457434 (Wilson at beta_eff 0.623335003252, dev -2.046e-03) c_3=0.409664999946 (dev -5.870e-03) c_NMAX=1.477e-96 descent
+MK-STEP d=4 beta=10 step=8 c_1=0.831931798369 beta_eff=8.630649020 descent=0.252963234 c_2=0.612211857538 (Wilson at beta_eff 0.614429090355, dev -2.217e-03) c_3=0.398514147129 (dev -6.268e-03) c_NMAX=1.703e-99 descent
+MK-STEP d=4 beta=10 step=9 c_1=0.827059722327 beta_eff=8.377540357 descent=0.253108663 c_2=0.602697813940 (Wilson at beta_eff 0.605106182940, dev -2.408e-03) c_3=0.386981471240 (dev -6.701e-03) c_NMAX=1.281e-102 descent
+MK-STEP d=4 beta=10 step=10 c_1=0.821896216788 beta_eff=8.124270793 descent=0.253269564 c_2=0.592716145926 (Wilson at beta_eff 0.595337852364, dev -2.622e-03) c_3=0.375052044462 (dev -7.171e-03) c_NMAX=6.032e-106 descent
+MK-STEP d=4 beta=10 step=11 c_1=0.816414323412 beta_eff=7.870822220 descent=0.253448573 c_2=0.582232793840 (Wilson at beta_eff 0.585093246631, dev -2.860e-03) c_3=0.362710953797 (dev -7.681e-03) c_NMAX=1.696e-109 descent
+MK-STEP d=4 beta=10 step=12 c_1=0.810583656520 beta_eff=7.617173285 descent=0.253648935 c_2=0.571210512036 (Wilson at beta_eff 0.574338865006, dev -3.128e-03) c_3=0.349943518727 (dev -8.237e-03) c_NMAX=2.698e-113 descent
+MK-STEP d=4 beta=10 step=13 c_1=0.804369841703 beta_eff=7.363298605 descent=0.253874680 c_2=0.559608530266 (Wilson at beta_eff 0.563038314829, dev -3.430e-03) c_3=0.336735579178 (dev -8.841e-03) c_NMAX=2.285e-117 descent
+MK-STEP d=4 beta=10 step=14 c_1=0.797733840704 beta_eff=7.109167747 descent=0.254130858 c_2=0.547382182772 (Wilson at beta_eff 0.551152050930, dev -3.770e-03) c_3=0.323073873788 (dev -9.498e-03) c_NMAX=9.604e-122 descent
+MK-STEP d=4 beta=10 step=15 c_1=0.790631134897 beta_eff=6.854743915 descent=0.254423831 c_2=0.534482505863 (Wilson at beta_eff 0.538637098835, dev -4.155e-03) c_3=0.308946534026 (dev -1.021e-02) c_NMAX=1.846e-126 descent
+MK-STEP d=4 beta=10 step=16 c_1=0.783010731724 beta_eff=6.599982236 descent=0.254761680 c_2=0.520855807433 (Wilson at beta_eff 0.525446764099, dev -4.591e-03) c_3=0.294343726980 (dev -1.099e-02) c_NMAX=1.477e-131 descent
+MK-STEP d=4 beta=10 step=17 c_1=0.774813947924 beta_eff=6.344827516 descent=0.255154720 c_2=0.506443216210 (Wilson at beta_eff 0.511530331778, dev -5.087e-03) c_3=0.279258488892 (dev -1.183e-02) c_NMAX=4.410e-137 descent
+MK-STEP d=4 beta=10 step=18 c_1=0.765972909181 beta_eff=6.089211317 descent=0.255616199 c_2=0.491180225477 (Wilson at beta_eff 0.496832762503, dev -5.653e-03) c_3=0.263687803306 (dev -1.273e-02) c_NMAX=4.316e-143 descent
+MK-STEP d=4 beta=10 step=19 c_1=0.756408686602 beta_eff=5.833048108 descent=0.256163209 c_2=0.474996257053 (Wilson at beta_eff 0.481294395250, dev -6.298e-03) c_3=0.247633992666 (dev -1.370e-02) c_NMAX=1.190e-149 descent
+MK-STEP d=4 beta=10 step=20 c_1=0.746028964178 beta_eff=5.576230228 descent=0.256817880 c_2=0.457814288744 (Wilson at beta_eff 0.464850672416, dev -7.036e-03) c_3=0.231106510763 (dev -1.475e-02) c_NMAX=7.704e-157 descent
+MK-STEP d=4 beta=10 step=21 c_1=0.734725095048 beta_eff=5.318621256 descent=0.257608972 c_2=0.439550615983 (Wilson at beta_eff 0.447431911592, dev -7.881e-03) c_3=0.214124246056 (dev -1.585e-02) c_NMAX=9.432e-165 descent
+MK-STEP d=4 beta=10 step=22 c_1=0.722368353790 beta_eff=5.060047313 descent=0.258573942 c_2=0.420114861742 (Wilson at beta_eff 0.428963162528, dev -8.848e-03) c_3=0.196718472398 (dev -1.700e-02) c_NMAX=1.679e-173 descent
+MK-STEP d=4 beta=10 step=23 c_1=0.708805120651 beta_eff=4.800285620 descent=0.259761693 c_2=0.399410417694 (Wilson at beta_eff 0.409364211415, dev -9.954e-03) c_3=0.178936612470 (dev -1.819e-02) c_NMAX=3.153e-183 descent
+MK-STEP d=4 beta=10 step=24 c_1=0.693850632223 beta_eff=4.539049437 descent=0.261236183 c_2=0.377335609191 (Wilson at beta_eff 0.388549834629, dev -1.121e-02) c_3=0.160847005891 (dev -1.939e-02) c_NMAX=4.207e-194 descent
+MK-STEP d=4 beta=10 step=25 c_1=0.677280787594 beta_eff=4.275968203 descent=0.263081234 c_2=0.353786052558 (Wilson at beta_eff 0.366430473407, dev -1.264e-02) c_3=0.142544888077 (dev -2.056e-02) c_NMAX=2.435e-206 descent
+MK-STEP d=4 beta=10 step=26 c_1=0.658821288796 beta_eff=4.010561236 descent=0.265406968 c_2=0.328658957158 (Wilson at beta_eff 0.342913622234, dev -1.425e-02) c_3=0.124159764948 (dev -2.165e-02) c_NMAX=3.279e-220 descent
+MK-STEP d=4 beta=10 step=27 c_1=0.638133089666 beta_eff=3.742202689 descent=0.268358546 c_2=0.301860586375 (Wilson at beta_eff 0.317906438945, dev -1.605e-02) c_3=0.105864266733 (dev -2.256e-02) c_NMAX=4.621e-236 descent
+MK-STEP d=4 beta=10 step=28 c_1=0.614792687057 beta_eff=3.470074480 descent=0.272128209 c_2=0.273318846086 (Wilson at beta_eff 0.291320470991, dev -1.800e-02) c_3=0.087884290259 (dev -2.320e-02) c_NMAX=2.408e-254 descent
+MK-STEP d=4 beta=10 step=29 c_1=0.588265164570 beta_eff=3.193102327 descent=0.276972153 c_2=0.243004203613 (Wilson at beta_eff 0.263080096702, dev -2.008e-02) c_3=0.070509618298 (dev -2.341e-02) c_NMAX=1.169e-275 descent
+MK-STEP d=4 beta=10 step=30 c_1=0.557867061581 beta_eff=2.909867801 descent=0.283234527 c_2=0.210964145981 (Wilson at beta_eff 0.233137585864, dev -2.217e-02) c_3=0.054102911544 (dev -2.305e-02) c_NMAX=8.154e-301 descent
+MK-STEP d=4 beta=10 step=31 c_1=0.522715183476 beta_eff=2.618486070 descent=0.291381730 c_2=0.177379563574 (Wilson at beta_eff 0.201500150108, dev -2.412e-02) c_3=0.039102435392 (dev -2.190e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=10 step=32 c_1=0.481656994779 beta_eff=2.316435687 descent=0.302050383 c_2=0.142656132203 (Wilson at beta_eff 0.168279097993, dev -2.562e-02) c_3=0.026009238561 (dev -1.977e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=10 step=33 c_1=0.433180739839 beta_eff=2.000327678 descent=0.316108009 c_2=0.107569303547 (Wilson at beta_eff 0.133780440937, dev -2.621e-02) c_3=0.015341868491 (dev -1.656e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=10 step=34 c_1=0.375318482360 beta_eff=1.665628162 descent=0.334699516 c_2=0.073482297913 (Wilson at beta_eff 0.098674023538, dev -2.519e-02) c_3=0.007532142973 (dev -1.234e-02) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=10 step=35 c_1=0.305620451933 beta_eff=1.306501830 descent=0.359126332 c_2=0.042626760897 (Wilson at beta_eff 0.064309149951, dev -2.168e-02) c_3=0.002734645114 (dev -7.551e-03) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=10 step=36 c_1=0.221559527672 beta_eff=0.916743298 descent=0.389758532 c_2=0.018275607107 (Wilson at beta_eff 0.033275604345, dev -1.500e-02) c_3=0.000572589846 (dev -3.201e-03) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=10 step=37 c_1=0.123193234125 beta_eff=0.497835584 descent=0.418907714 c_2=0.004028147121 (Wilson at beta_eff 0.010169316819, dev -6.141e-03) c_3=0.000037169717 (dev -5.937e-04) c_NMAX=0.000e+00 descent
+MK-STEP d=4 beta=10 step=38 c_1=0.029406422266 beta_eff=0.117693558 descent=0.380142026 c_2=0.000130371990 (Wilson at beta_eff 0.000576658028, dev -4.463e-04) c_3=0.000000104882 (dev -8.377e-06) c_NMAX=0.000e+00 descent
+MK-FLOW d=4 beta=10 K*=38 (steps to beta_eff < 0.131) rises=1 final_beta_eff=0.117693558 REACHES-STRONG-COUPLING-WITH-RISES
+# mk_flow done
+# --- d = 3, beta = 2.3
+MK-FLOW d=3 beta=2.3 NMAX=60 HK=0 c_1=0.479279078305 c_2=0.166471168166 c_3=0.045006465698 c_NMAX=4.837e-81 (the d = 2 known answer is c -> c^4)
+MK-STEP d=3 beta=2.3 step=1 c_1=0.236642827640 beta_eff=0.984014547 descent=1.315985453 c_2=0.023977929419 (Wilson at beta_eff 0.038051507145, dev -1.407e-02) c_3=0.001151118816 (dev -3.474e-03) c_NMAX=4.786e-252 descent
+MK-STEP d=3 beta=2.3 step=2 c_1=0.029094981919 beta_eff=0.116445662 descent=0.867568885 c_2=0.000109756757 (Wilson at beta_eff 0.000564504630, dev -4.547e-04) c_3=0.000000063659 (dev -8.152e-06) c_NMAX=0.000e+00 descent
+MK-FLOW d=3 beta=2.3 K*=2 (steps to beta_eff < 0.131) rises=0 final_beta_eff=0.116445662 DESCENDS-TO-STRONG-COUPLING
+# mk_flow done
+# --- the heat-kernel start, beta = 10, one step
+MK-HK beta=10 t=1/beta=0.100000000: the heat-kernel start; the second-order law predicts after one step t1 = t + t^2/4 = 0.102500000, c_1 = 0.857486365809, c_2 = 0.663650250136, c_3 = 0.463592196526
+MK-HK-STEP beta=10 after one step: c_1=0.857374873718 (predicted 0.857486365809, residual -1.115e-04) c_2=0.663420963128 (predicted 0.663650250136, residual -2.293e-04) c_3=0.463293378347 (predicted 0.463592196526, residual -2.988e-04); the width read from c_1: t1=0.102586687, t1 - t - t^2/4 = 8.669e-05, over t^3 = 0.08669 (the cubic coefficient; 1/12 = 0.08333)
+# --- the heat-kernel start, beta = 20, one step
+MK-HK beta=20 t=1/beta=0.050000000: the heat-kernel start; the second-order law predicts after one step t1 = t + t^2/4 = 0.050625000, c_1 = 0.926874134383, c_2 = 0.816686482598, c_3 = 0.684075149298
+MK-HK-STEP beta=20 after one step: c_1=0.926859366984 (predicted 0.926874134383, residual -1.477e-05) c_2=0.816651841711 (predicted 0.816686482598, residual -3.464e-05) c_3=0.684020870367 (predicted 0.684075149298, residual -5.428e-05); the width read from c_1: t1=0.050635622, t1 - t - t^2/4 = 1.062e-05, over t^3 = 0.08497 (the cubic coefficient; 1/12 = 0.08333)
+# --- the heat-kernel start, beta = 40, one step
+MK-HK beta=40 t=1/beta=0.025000000: the heat-kernel start; the second-order law predicts after one step t1 = t + t^2/4 = 0.025156250, c_1 = 0.962968695482, c_2 = 0.904272071339, c_3 = 0.828058168709
+MK-HK-STEP beta=40 after one step: c_1=0.962966796370 (predicted 0.962968695482, residual -1.899e-06) c_2=0.904267319542 (predicted 0.904272071339, residual -4.752e-06) c_3=0.828050019176 (predicted 0.828058168709, residual -8.150e-06); the width read from c_1: t1=0.025157565, t1 - t - t^2/4 = 1.315e-06, over t^3 = 0.08414 (the cubic coefficient; 1/12 = 0.08333)
+# --- the heat-kernel start, beta = 80, one step
+MK-HK beta=80 t=1/beta=0.012500000: the heat-kernel start; the second-order law predicts after one step t1 = t + t^2/4 = 0.012539062, c_1 = 0.981367184080, c_2 = 0.951080806514, c_3 = 0.910243649369
+MK-HK-STEP beta=80 after one step: c_1=0.981366943328 (predicted 0.981367184080, residual -2.408e-07) c_2=0.951080184568 (predicted 0.951080806514, residual -6.219e-07) c_3=0.910242533910 (predicted 0.910243649369, residual -1.115e-06); the width read from c_1: t1=0.012539226, t1 - t - t^2/4 = 1.635e-07, over t^3 = 0.08374 (the cubic coefficient; 1/12 = 0.08333)
+# --- the heat-kernel start, beta = 160, one step
+MK-HK beta=160 t=1/beta=0.006250000: the heat-kernel start; the second-order law predicts after one step t1 = t + t^2/4 = 0.006259766, c_1 = 0.990654296661, c_2 = 0.975271814729, c_3 = 0.954136780345
+MK-HK-STEP beta=160 after one step: c_1=0.990654266355 (predicted 0.990654296661, residual -3.031e-08) c_2=0.975271735185 (predicted 0.975271814729, residual -7.954e-08) c_3=0.954136634472 (predicted 0.954136780345, residual -1.459e-07); the width read from c_1: t1=0.006259786, t1 - t - t^2/4 = 2.039e-08, over t^3 = 0.08353 (the cubic coefficient; 1/12 = 0.08333)
+# --- the cut doubled at beta = 2.3
+MK-TAIL d=4 beta=2.3 NMAX=120 first-step c_1=0.502521840299 (against NMAX=60 above)
+# --- U(1), d = 4, beta = 1
+MKU1-FLOW d=4 beta=1 NMAX=120 c_1=0.446389965897 c_2=0.107220068207 c_NMAX=8.901e-236
+MKU1-STEP d=4 beta=1 step=1 c_1=0.556025687272 beta_eff=1.347189493 descent=-3.472e-01 c_2=0.104261319168 (Wilson at beta_eff 0.174539750652) RISE
+MKU1-STEP d=4 beta=1 step=2 c_1=0.567659464464 beta_eff=1.389697835 descent=-4.251e-02 c_2=0.104365461179 (Wilson at beta_eff 0.183046199005) RISE
+MKU1-STEP d=4 beta=1 step=3 c_1=0.568341342449 beta_eff=1.392232458 descent=-2.535e-03 c_2=0.104383990183 (Wilson at beta_eff 0.183553954635) RISE
+MKU1-STEP d=4 beta=1 step=12 c_1=0.568214029594 beta_eff=1.391758848 descent=7.252e-05 c_2=0.104258094539 (Wilson at beta_eff 0.183459073783) descent
+MKU1-FLOW d=4 beta=1 K*=-1 rises=4 final_beta_eff=1.391758848 NOT-REACHED-IN-KMAX
+# --- U(1), d = 4, beta = 2.3
+MKU1-FLOW d=4 beta=2.3 NMAX=120 c_1=0.741375415377 c_2=0.355325725759 c_NMAX=1.027e-192
+MKU1-STEP d=4 beta=2.3 step=1 c_1=0.794051439776 beta_eff=2.800146724 descent=-5.001e-01 c_2=0.399028190809 (Wilson at beta_eff 0.432850119671) RISE
+MKU1-STEP d=4 beta=2.3 step=2 c_1=0.796156303736 beta_eff=2.824880869 descent=-2.473e-02 c_2=0.401871428571 (Wilson at beta_eff 0.436325749222) RISE
+MKU1-STEP d=4 beta=2.3 step=3 c_1=0.796284076204 beta_eff=2.826397469 descent=-1.517e-03 c_2=0.402048050656 (Wilson at beta_eff 0.436537794243) RISE
+MKU1-STEP d=4 beta=2.3 step=12 c_1=0.796292579580 beta_eff=2.826498463 descent=2.967e-13 c_2=0.402059820771 (Wilson at beta_eff 0.436551910374) descent
+MKU1-FLOW d=4 beta=2.3 K*=-1 rises=11 final_beta_eff=2.826498463 NOT-REACHED-IN-KMAX
+# --- U(1), d = 4, beta = 4
+MKU1-FLOW d=4 beta=4 NMAX=120 c_1=0.863522611025 c_2=0.568238694488 c_NMAX=1.817e-164
+MKU1-STEP d=4 beta=4 step=1 c_1=0.878840600691 beta_eff=4.449914288 descent=-4.499e-01 c_2=0.596896778425 (Wilson at beta_eff 0.605007852407) RISE
+MKU1-STEP d=4 beta=4 step=2 c_1=0.879548146909 beta_eff=4.473528531 descent=-2.361e-02 c_2=0.598486080990 (Wilson at beta_eff 0.606776556404) RISE
+MKU1-STEP d=4 beta=4 step=3 c_1=0.879591740841 beta_eff=4.474992776 descent=-1.464e-03 c_2=0.598584604740 (Wilson at beta_eff 0.606885738201) RISE
+MKU1-STEP d=4 beta=4 step=12 c_1=0.879594644539 beta_eff=4.475090345 descent=1.066e-14 c_2=0.598591169642 (Wilson at beta_eff 0.606893011420) descent
+MKU1-FLOW d=4 beta=4 K*=-1 rises=11 final_beta_eff=4.475090345 NOT-REACHED-IN-KMAX
+# --- U(1), d = 4, beta = 6
+MKU1-FLOW d=4 beta=6 NMAX=120 c_1=0.912359304353 c_2=0.695880231882 c_NMAX=4.304e-144
+MKU1-STEP d=4 beta=6 step=1 c_1=0.918383842721 beta_eff=6.416752386 descent=-4.168e-01 c_2=0.711489488780 (Wilson at beta_eff 0.713754314484) RISE
+MKU1-STEP d=4 beta=6 step=2 c_1=0.918701602040 beta_eff=6.440474261 descent=-2.372e-02 c_2=0.712364484822 (Wilson at beta_eff 0.714709953092) RISE
+MKU1-STEP d=4 beta=6 step=3 c_1=0.918721283063 beta_eff=6.441949703 descent=-1.475e-03 c_2=0.712418816762 (Wilson at beta_eff 0.714769184672) RISE
+MKU1-STEP d=4 beta=6 step=12 c_1=0.918722594392 beta_eff=6.442048036 descent=0.000e+00 c_2=0.712422437417 (Wilson at beta_eff 0.714773131397) descent
+MKU1-FLOW d=4 beta=6 K*=-1 rises=11 final_beta_eff=6.442048036 NOT-REACHED-IN-KMAX
+# --- U(1), d = 4, beta = 10
+MKU1-FLOW d=4 beta=10 NMAX=120 c_1=0.948599825955 c_2=0.810280034809 c_NMAX=4.910e-119
+MKU1-STEP d=4 beta=10 step=1 c_1=0.950620988980 beta_eff=10.397132788 descent=-3.971e-01 c_2=0.816665576103 (Wilson at beta_eff 0.817137857459) RISE
+MKU1-STEP d=4 beta=10 step=2 c_1=0.950736440245 beta_eff=10.420804415 descent=-2.367e-02 c_2=0.817036508606 (Wilson at beta_eff 0.817531084482) RISE
+MKU1-STEP d=4 beta=10 step=3 c_1=0.950743618236 beta_eff=10.422279834 descent=-1.475e-03 c_2=0.817059590688 (Wilson at beta_eff 0.817555538067) RISE
+MKU1-STEP d=4 beta=10 step=12 c_1=0.950744096612 beta_eff=10.422378179 descent=0.000e+00 c_2=0.817061129072 (Wilson at beta_eff 0.817557167795) descent
+MKU1-FLOW d=4 beta=10 K*=-1 rises=11 final_beta_eff=10.422378179 NOT-REACHED-IN-KMAX
+# --- U(1), d = 4, beta = 1, at 256 bits (gawk -M): the descent the doubles could not see
+MKU1-FLOW d=4 beta=1 NMAX=80 c_1=0.446389965897 c_2=0.107220068207 c_NMAX=9.157e-144
+MKU1-STEP d=4 beta=1 step=2 c_1=0.567659464464 beta_eff=1.389697835 descent=-4.251e-02 c_2=0.104365461179 (Wilson at beta_eff 0.183046199005) RISE
+MKU1-STEP d=4 beta=1 step=4 c_1=0.568366513448 beta_eff=1.392326116 descent=-9.366e-05 c_2=0.104372041719 (Wilson at beta_eff 0.183572717765) RISE
+MKU1-STEP d=4 beta=1 step=8 c_1=0.568291923827 beta_eff=1.392048598 descent=7.230e-05 c_2=0.104315227728 (Wilson at beta_eff 0.183517120771) descent
+MKU1-STEP d=4 beta=1 step=16 c_1=0.568135879657 beta_eff=1.391468212 descent=7.274e-05 c_2=0.104200797548 (Wilson at beta_eff 0.183400849764) descent
+MKU1-STEP d=4 beta=1 step=24 c_1=0.567978806450 beta_eff=1.390884257 descent=7.319e-05 c_2=0.104085708403 (Wilson at beta_eff 0.183283866513) descent
+MKU1-FLOW d=4 beta=1 K*=-1 rises=4 final_beta_eff=1.390884257 NOT-REACHED-IN-KMAX
+# --- U(1), d = 4, beta = 1.5, at 256 bits (gawk -M): the descent the doubles could not see
+MKU1-FLOW d=4 beta=1.5 NMAX=80 c_1=0.596133238831 c_2=0.205155681558 c_NMAX=8.641e-130
+MKU1-STEP d=4 beta=1.5 step=2 c_1=0.697871456890 beta_eff=2.000589580 descent=-2.998e-02 c_2=0.237417641543 (Wilson at beta_eff 0.302334207996) RISE
+MKU1-STEP d=4 beta=1.5 step=4 c_1=0.698181843427 beta_eff=2.002482029 descent=-1.110e-04 c_2=0.237616081081 (Wilson at beta_eff 0.302683536339) RISE
+MKU1-STEP d=4 beta=1.5 step=8 c_1=0.698183025085 beta_eff=2.002489239 descent=4.634e-08 c_2=0.237616817423 (Wilson at beta_eff 0.302684866976) descent
+MKU1-STEP d=4 beta=1.5 step=16 c_1=0.698182962133 beta_eff=2.002488855 descent=4.803e-08 c_2=0.237616731710 (Wilson at beta_eff 0.302684796087) descent
+MKU1-STEP d=4 beta=1.5 step=24 c_1=0.698182899162 beta_eff=2.002488471 descent=4.803e-08 c_2=0.237616645985 (Wilson at beta_eff 0.302684725176) descent
+MKU1-FLOW d=4 beta=1.5 K*=-1 rises=6 final_beta_eff=2.002488471 NOT-REACHED-IN-KMAX
+# --- U(1), d = 4, beta = 2.3, at 256 bits (gawk -M): the descent the doubles could not see
+MKU1-FLOW d=4 beta=2.3 NMAX=80 c_1=0.741375415377 c_2=0.355325725759 c_NMAX=3.601e-115
+MKU1-STEP d=4 beta=2.3 step=2 c_1=0.796156303736 beta_eff=2.824880869 descent=-2.473e-02 c_2=0.401871428571 (Wilson at beta_eff 0.436325749222) RISE
+MKU1-STEP d=4 beta=2.3 step=4 c_1=0.796292048173 beta_eff=2.826492151 descent=-9.468e-05 c_2=0.402059085157 (Wilson at beta_eff 0.436551028190) RISE
+MKU1-STEP d=4 beta=2.3 step=8 c_1=0.796292579572 beta_eff=2.826498463 descent=-1.444e-09 c_2=0.402059820760 (Wilson at beta_eff 0.436551910361) RISE
+MKU1-STEP d=4 beta=2.3 step=16 c_1=0.796292579579 beta_eff=2.826498463 descent=3.300e-13 c_2=0.402059820771 (Wilson at beta_eff 0.436551910374) descent
+MKU1-STEP d=4 beta=2.3 step=24 c_1=0.796292579579 beta_eff=2.826498463 descent=3.300e-13 c_2=0.402059820771 (Wilson at beta_eff 0.436551910373) descent
+MKU1-FLOW d=4 beta=2.3 K*=-1 rises=11 final_beta_eff=2.826498463 NOT-REACHED-IN-KMAX
+# mk_flow record a done

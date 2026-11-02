@@ -1,0 +1,12 @@
+[pentapylon] provenance: prereg c8f58b1a strictly precedes organ aea98a3a
+[pentapylon] ARM 0: the pinned lines exact rationals; the page before the instrument; the record bound to the instrument and to ΑΠΕΡΑΝΤΟΝ's awk by sha256; the pins named by the record's sha256
+[pentapylon] ARM 1: the known answers live -- the Catalan numbers to C_7, every shadow's class sizes summing to |G| with m_2 = 1, the hand's even moments at n = 4..12, the parting orders 2, 4, 6, 10 -- misses 0
+[pentapylon] frozen pins: 38 of 38 from g6_pins.txt present in g_rec.txt
+[pentapylon] ARM 2: the record re-derived whole and its pins read back; the moments at n = 4, 6, 8, 12 as the page's hand wrote them (SU(2) the Catalan numbers 2, 5, 14, 132; Q8 4, 16, 64, 1024; 2T 2, 6, 22, 342; 2O 2, 5, 15, 187; 2I 2, 5, 14, 133); the gap series' parting coefficients pinned from the record -- Q8 -4/3 at b^2, 2T -1/30 at b^4, 2O -1/1260 at b^6, 2I -1/9979200 at b^10 (UNGUESSED on the page, regression guards now)
+[pentapylon] ARM 3: Q8 -- design strength t = 3 from the quaternion table, the gap series parting at b^2 = t - 1
+[pentapylon] ARM 3: 2T -- design strength t = 5 from the quaternion table, the gap series parting at b^4 = t - 1
+[pentapylon] ARM 3: 2O -- design strength t = 7 from the quaternion table, the gap series parting at b^6 = t - 1
+[pentapylon] ARM 3: 2I -- design strength t = 11 from the quaternion table, the gap series parting at b^10 = t - 1
+[pentapylon] ARM 3: THE DESIGN LADDER -- the tube gap's strong-coupling series parts from SU(2)'s at b^(t-1) at every rung, t = 3, 5, 7, 11 derived from the tables, the parting coefficients -4/3, -1/30, -1/1260, -1/9979200 falling seven million-fold from Q8 to 2I
+[pentapylon] provenance: prereg c8f58b1a strictly precedes organ c3847938
+[pentapylon] RED: ARM 4: the ladder record was not made beside this tube record

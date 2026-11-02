@@ -1,0 +1,3 @@
+START 2026-11-01 01:30:32 HEAD=d4897423afd8837da72eaaf6fab890b74821dfd8 by=sync-run seat=EDWINS_COMPUTER gate=STDLIB/scripts/aperanton_table_gate.sh
+END 2026-11-01 01:38:34 rc=8 manifest=none
+END 2026-11-01 01:38:38 rc=8 by=sync-run

@@ -769,3 +769,74 @@ THE INTEGRAND BEING EXACTLY THE TWO QUANTITIES THE OBJECTS READ POINTWISE — §
    - **The unification:** Bałaban's averaging is a multilevel splitting, and uniform invertibility across scales is hierarchical multigrid's strengthened Cauchy–Schwarz constant (measured γ ≈ 0.93).
 
 6. **The shared brief the proof agents read is corrected.** It still carried "the worst-case (sup) form of (8.5) two blocking steps up from β = 2.2 has adjacent sum ≥ 1.33", which this page withdrew at §18 (line 414). That line rested on a W3 reading (signed) and on item 1's false inequality. It also still called the certificate copy in HEAD stale, which 88e069862 fixed. Seven integrity facts were added: the signed W3, moment influence ≤ 2·TV, the pre-climb .dob records, the U(1) gate at 1.2 and in a proved Coulomb regime, PI-4 only at small or real d, generating functionals for E1 and (E2), and §19's landing not established. Agents launched before 10:2x read the old brief, and the facts that bind their work were sent to each of them directly.
+
+
+## §27 — THE U(1) GATE REFUTES THE READINGS PIPELINE AS A DECIDER; §25'S "FRAME" PREMISE WITHDRAWN AND §22'S REFUTATION OF §19 REINSTATED ON CONVERGED READINGS; THE TWO-SECTOR THEOREM; THEOREM 8.7 FOR EVERY COMPACT G; THE STRONG END'S OPEN CLASS PRICED; THE LITERATURE MAP (2026-11-02 11:0x EST, read from `date` before this header; the trunk seat, with the proof agents M7b, MF, MG2, M1c and M3fR, the reader 050_R, and the operator's order of 10:4x: "work in conjunction with your agents AND relevant research, but only conduct research manually"; nothing above edited)
+
+1. **THE U(1) GATE REFUTES THE READINGS PIPELINE AS A DECIDER** (the proof agent M7b; the gate staked in §25 item 5).
+   - **P1, pinned exact steps composed:** it lands Wilson U(1) at β = 1.2 within four steps, and Villain U(1) at β_V = 2 and 4. The drift is SCALE-FREE: the two-step pinned map reads β_eff = 0.391·β_V at β_V = 2, 4, 8. From any β_V it therefore reaches the window in O(log β_V) steps, including above Guth's and Fröhlich–Spencer's (uncomputed) β₀, where the photon is massless by theorem.
+   - **P2, typical datum with one plaquette plus adjacent pairs, sharply priced:** it lands the free photon at n* ≈ 16β_V for every β_V (exact Gaussian flux variances; a U(1) Monte Carlo reading at 1.2 matches them to 2%).
+   - **Verdict.** Both are refuted outright as deciders. Every two-, three- and four-step PASS on this page therefore says nothing about the gap. That covers the two-step typical-datum PASS (a Monte Carlo ⟨W(4,4)⟩ = 0.00136) and the three- and four-step pinned PASSes.
+   - **The mechanism:** fixed-datum objects are IR-truncated. The coarse angles forget the integer fluxes, which is Polyakov's and Guth's monopole Coulomb gas seen through the holonomy map.
+   - **The requirement on any decider:** carry the long-range modes, with an integrated, not pinned, exterior.
+
+2. **§25 item 2's premise is WITHDRAWN; §22 item 1's refutation of §19 is REINSTATED** (M7b).
+   - **The premise was false.** The "L" in W2L2 / W4L1 is the loop-representation cap, not a frame: E[χ_½] agrees to 12 digits at L1 and L2. So §25's "W2L2 → W4L1 mixes the spin cap with the frame" is withdrawn.
+   - **The cap problem was the staples.** The engines truncated the staple weights pointwise (328 of 360 plaquettes; reader 050_R: at the identity a link's five staples carry 0.3727 (W2), 0.7556 (W3), 0.9354 (W4) of the exact weight).
+   - **Converged readings.** With exact staples the series converges by face cap 4. The two-step a′_½ is 0.1441 at the ordered datum (β_eff = 0.5845, outside every window) and 0.0954 at the cancelling one (β_eff = 0.3839, inside only the conditional 0.4764). §19's two-step landing at the ordered datum is REFUTED on converged readings. By item 1, that verdict is about the pipeline's objects, not about SU(2)'s flow.
+   - **The β = 3.0 sign flips** are the W2 truncation's. W2 is signed inside the range at β = 3 (minimum −0.171 at φ = 1.97, exactly the flips' angles), not only at U = −1, as this page's §26 item 4 and the shared brief assumed. Every flipping link read so far lowers under W4 and under exact staples (56/56, 22/22).
+   - **M7b's Lemma 3.1 (proved)** reconciles M5's and M7's wall floors: one (½,1) share, counted ×4 against ×32, under one ceiling W* ≈ 0.014. The certificate's input is the per-plaquette sum over a polymer's bonds; the literal maximum is not a bound (2.37 short on a 2×2 wall).
+   - **M7b's Lemma 9.1 (proved):** the blocked action's mixed second derivative between two coarse links equals the fibre covariance of two local forces. That is Bałaban/Gawędzki–Kupiainen locality in exact form.
+
+3. **THE TWO-SECTOR THEOREM** (the proof agent MF; every item proved on its page, no second reader yet).
+   - **What Theorem 8.5′ uses.** It needs Hypothesis II′ only as a rate ρ′: the mass is min(κ, log 1/ρ′)/a_c. It needs it only on a class generating the Hilbert space, and for the gap only at reflected pairs.
+   - **The Scale Lemma:** the averaged fibre covariance is exactly the sum of the per-step averaged fibre covariances.
+   - **Theorem 2.5/2.6:** the span of coarse-observable states REDUCES the Hilbert space, and Hypothesis I alone gives that coarse sector the gap κ/a_c in every limit point. The FULL gap needs Hypothesis I plus either (C), completeness of the coarse sector (proved for the free field), or (F), a fibre-sector bound.
+   - **Lemma 3.2:** every sub-box averaging map is decimation in its codimension, and the fibre is uniformly massive iff that codimension is ≤ 1. **THE GROUND's holonomy coarse map is the line case: its Gaussian fibre is provably NOT uniformly massive**, with rate falling like L^{−1/2} (κ = 1.718, 1.123, 0.746, 0.512 at L = 2 … 16). The averaged map's rate rises to the alias bound (≈ 6.2 at L = 16). Revision 34 must compose with averaging maps.
+   - **The Gaussian fibre's exact rate** (Theorem 3.1): cosh κ = 2 + 3/(L² − 1), κ_∞ = log(2 + √3).
+   - **The fibre's single-pair L² row is at least 14·a_½(β)** (6.5027 at 2.2, certified), and the fibre is reflection positive at reflection-symmetric coarse data.
+   - **The obstruction:** the large-field content of the first crossover step's fibre. Its linearisation is massive (κ ≥ 1.72), and no method yet reaches its O(1)-coupling large fields.
+
+4. **THEOREM 8.7 FOR EVERY COMPACT G** (the proof agent MG2; one reader).
+   - **What carries over.** THE GROUND's decimation proof goes through for every compact G and faithful irreducible ρ. Lemma I (Schur over ℝ) gives the Haar covariance I/n. The five SU(2)-only facts are named and replaced: radial Z, Turán, the sharp MAD lemma, quaternions, and vanishing odd Haar moments, which fail wherever ρ has a cubic invariant.
+   - **CERTIFIED β*_G** (256- and 200-bit intervals; MG2's normalization):
+
+     | SU(2) | SU(3) | SU(4) | SU(5) | Sp(2) | SO(3) | SO(5) | SO(6) | SO(7) | SO(8) | G₂ | F₄ | E₆ | E₇ | E₈ |
+     |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+     | 0.1704 | 0.3568 | 0.4741 | 0.5777 | 0.3519 | 0.2427 | 0.4335 | 0.5070 | 0.5732 | 0.6344 | 0.5171 | 1.0139 | 1.1706 | 1.4563 | 2.0503 |
+
+     The SU(2) entry rises to 0.2452 with its own Turán and MAD facts; the known answers [0, 0.2414] and [0, 0.2452] are met on an evaluator sharing no line with the certificate.
+   - **Against Shen–Zhu–Zhu:** wider for 13 of 15 groups, narrower for E₇ and E₈. MG2 read Shen–Zhu–Zhu in full: their theorems hold for every compact G at λ > 32(d−1), and they do not prove DLR uniqueness.
+
+5. **THE STRONG END'S OPEN CLASS, PRICED** (the proof agent M1c).
+   - **Theorem 8.7 does not use the gas.** Its proof integrates the perfect-cover links exactly (von Mises–Fisher laws given L₀) and runs Dobrushin on the finite-range L₀ measure; 0.2452 stands.
+   - **M1R's class Ω is real and was unpriced.** Ω is the closed supports with no Z₂-even subset, all of integer spin. Finner's inequality prices it at ≤ 4.74a₁ per plaquette (certified). No member exists below F = 22, so every threshold is unchanged.
+   - **The neck premise was false** (a cup piece, or four walls, isolates one leaf plaquette) and is repaired (Lemma N1, Corollary N2).
+   - **Gluing:** Lemma G costs 2·2^{β_×} per cycle. **Lemma D1.1′** prices the sources.
+   - **§25(c), the realigned bound, is SIGNED.**
+   - **The reader 047_R's route certifies 0.4108 (page) / 0.4124 (tree)**, CONDITIONAL on the contact leaves' mixed-spin sum. That route and U″'s 0.3650 prove complementary halves. The next object is the mixed-spin star table.
+   - **The S1 page's "none in 3×3×2×1"** contradicts its own record (220 at F = 26). Nothing certified rests on it.
+
+6. **M3f's second reading** (M3fR).
+   - **What holds:** the structural finding, Corollary 5.1 (on the surviving τ-disc), the two-cutoff E1 (CONDITIONAL, as labelled), Lemma D, Theorem 7.1, Lemma 7.2, the alias analysis and Theorem B1.
+   - **Holding with repairs:** Lemma RL and Theorem U's rows, which used complex d beyond PI-4's repaired range; they need the radius r_k = cε_*/(C_WC₁p₁(g_k)) and an unwritten bootstrap δ_j ≤ r_j/2.
+   - **ONE HOLE:** that old history terms enter the large-field exponent with weight and no ε₁ factor is asserted, not proved, and Corollary 5.1's "→ 0" depends on it. M3fR expects it to be a reading task in LFR II §1.
+   - **Repairs among the rest:** Lemma 6.2's "Qᵐ preserves regularity" is FALSE (constant abelian flux averages to ≈ L^{2m}α₀).
+
+7. **THE LITERATURE MAP** (manual research by the trunk seat; the full sourced report is in the session's research folder, reports/Yang Mills gap literature map.md).
+   - **No published explicit threshold beats the program's numbers.**
+     - Shen–Zhu–Zhu, CMP 400 (2023), arXiv:2204.12737: SU(N) |β| < 1/(16(d−1)) in 't Hooft scaling.
+     - Cao–Nissim–Sheffield, arXiv:2505.16585: an area law for U(N) at β ≤ β₀(d), unspecified, better than Osterwalder–Seiler only for large N.
+     - Osterwalder–Seiler 1978: β ≲ c(d)/N.
+   - **The multiscale log-Sobolev machinery** (Bauerschmidt–Bodineau–Dagallier: arXiv:2202.02295, 2307.07619; Probab. Surveys 21 (2024)) turns decay into a log-Sobolev inequality through a Gaussian decomposition the Wilson action lacks. It does not create decay, and no gauge-theory version was found.
+   - **Computer-assisted Dobrushin–Shlosman criteria** exist for discrete spins only (Dobrushin–Kolafa–Shlosman 1985; Salas–Sokal). None for continuous spins or gauge theories, which would be new.
+   - **Adhikari–Cao** (Ann. Probab. 53 (2025), arXiv:2202.10375): finite non-abelian groups at weak coupling have a gap from discreteness. This BOUNDS finite-subgroup approximations of SU(2) at weak coupling.
+   - **DeGrand–Hasenfratz–Zhu**'s eight-parameter SU(2) fixed-point action (hep-lat/9604018, Eq. 4, Table 1): its plaquette part is radially convex to ≈ 136° against Wilson's 90° (the trunk seat's computation; with M8b).
+   - **No accepted 4D proof** exists as of 2026. Self-published claims are unrefereed. No public "Alpöge–Sussman" work on Bałaban or Yang–Mills was found.
+
+8. **THE OPERATOR'S PAIRINGS** (an outside analysis relayed at 10:4x; checked against what III holds).
+   - **Pairing 1, the strong end with "Dobrushin implies log-Sobolev":** its open caveat (the block structure) is answered by M1c's reading of Theorem 8.7 (a finite-range L₀ specification and exactly integrated, conditionally independent cover links). It extends to every compact G through MG2.
+     - The literature road, by the trunk seat's research: Zegarlinski 1992's condition is not Dobrushin's. Stroock–Zegarlinski (CMP 1992, finite range, compact continuous spins) give uniform log-Sobolev ⟺ Dobrushin–Shlosman mixing, and the two-scale step is Otto–Reznikoff (2007) and Menz (arXiv:1309.0862).
+   - **Pairing 2, with Chatterjee's confinement theorem** (CMP 2021, arXiv:2006.16229): it needs decay under ARBITRARY boundary conditions and a nontrivial centre. That excludes G₂, F₄ and E₈, which have no centre and whose fundamental Wilson loops break.
+   - **Both are with the proof agent MPAIR.** Neither reaches the band or the continuum gap.
+   - **Pairings 3 and 4** are the U(1) gate (item 1, now decisive) and the fixed-point action (item 7, with M8b).

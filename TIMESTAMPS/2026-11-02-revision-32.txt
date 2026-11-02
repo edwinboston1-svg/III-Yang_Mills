@@ -1,0 +1,12 @@
+THE GROUND, revision 32, through 90766be (Edwin Boston III)
+Manifest written 2026-11-02T11:24:01Z.
+
+  90766bee50cd6c8cd8c047cc95a6c151ce92c816  2026-11-02 06:23:57 -0500  THE GROUND, revision 32 (Edwin Boston III, 2026-11-02 06:23 EST): the reduction for every block map and every L, its example map 
+  dea7f8be839347369a3de7c83f816d7d3a29b7e3  2026-11-02 05:38:05 -0500  THE CROSSING CAMPAIGN §18: the bent object was never computed; every "bent" W2 reading at a named datum is the planar geometry; 
+  23afbfd0c984840d46437e4ce26dd9a84adaa41f  2026-11-02 04:35:16 -0500  TIMESTAMPS: revision 31's manifest and its OpenTimestamps proof (2026-11-02 04:35 EST)
+
+b8b747e6c853ee40843eee46a033498a9d49f6b57786cec136ddb433169f1c22 *THE-GROUND-Edwin-Boston-III.pdf
+5c82a353b3b1bced2145e60804e70d339d08fbb42fef57d08db2e6ffe4e6f8a3 *THE-GROUND-Edwin-Boston-III.docx
+c5ceba0e81a1643e50e4bcdf689ca9bb864e231a7da680003b5ef96b4e522fc6 *source/ground/content4.js
+3027ca1a346e1a6c0ecdb794a2f4b1a3cfe9300c2e0eeea5dae7f93ccb88388d *README.md
+2ec03bbb75c5348133f6adb2de4d8eab874cb0f743e59f2f0fe36bb6428609da *ARXIV.md

@@ -1,0 +1,14 @@
+THE GROUND, revision 28 and the OPEN pages through c64779e (Edwin Boston III)
+Manifest written 2026-11-02T01:10:06Z.
+
+  c64779e035374993291700c8226cb739a006c963  2026-11-01 20:10:01 -0500  THE GROUND, revision 28 (Edwin Boston III, 2026-11-01 20:1x EST): Theorem 8.9's STATEMENT carries its own condition
+  a720ba1578f38da76bcc9a4b2c6122e22edb6ef0  2026-11-01 19:31:20 -0500  THE CROSSING CAMPAIGN §16 — the worst-configuration ascent staked before any number: a coordinate ascent of (8.5)'s C_ω over 
+  f38385b9bd42dcf473b3c26c276c6d4eadf34de1  2026-11-01 18:58:38 -0500  THE CROSSING CAMPAIGN §15 CORRECTED — the inequality is an upper bound on the blocked coefficient, so a large integrand convic
+  693dfb838175a7f8a2ecdf7e23337cedbf526bf2  2026-11-01 18:53:16 -0500  THE CROSSING CAMPAIGN §15 — the window theorem's shape after §14: the blocked coefficient (8.5) between adjacent coarse loops
+
+  82dc5a4c8b6693405869cfcee7eb9e8d066cc077a419b17c6d0f433223252363  THE-GROUND-Edwin-Boston-III.pdf
+  cf862fec8e6b7323d05d7b5f098ce128f71c0c8de518bba69dca27997119396c  THE-GROUND-Edwin-Boston-III.docx
+  14f71a7a585bf0692438a7791a4958b90ab6097311bbaac3f04020c0464caf51  source/ground/content4.js
+  1694ab2ae7541c848e0f7c2716e2a591d5c8e379b5b7b3220b8165a2b2f7150e  OPEN/the-crossing-campaign.md
+  ce72778a85d0a8ffceb05a2b19b64a3a06580ea6521a5c170afa7339ede5f41d  OPEN/ledger/s1-the-flux-surface-gas.md
+  a359dcc5bb4b051e2afa958f5ee26ac8ec70e250fa6a7dc9042fce2d60cb3134  OPEN/the-far-shore.md

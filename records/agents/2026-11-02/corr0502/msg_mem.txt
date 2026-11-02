@@ -1,0 +1,5 @@
+MEMORY.md: the index line for the operator's 11-01 19:5x correction, naming a lemma "owed" is scope minimization (2026-11-02 05:55 EST; the trunk seat iii-43)
+
+The ledger lane: HEAD plus exactly this one line, through a private index. The two unlanded index lines of other seats stay in the working tree, untouched.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

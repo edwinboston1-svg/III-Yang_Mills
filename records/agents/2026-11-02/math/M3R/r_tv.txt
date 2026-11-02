@@ -1,0 +1,5 @@
+Gaussian limit TV = 0.185637458871 ; times 18 = 3.34147
+  beta_eff = 2: vMF TV(|S|=6 vs |S|=4) = 0.18016213
+  beta_eff = 10: vMF TV(|S|=6 vs |S|=4) = 0.18467582
+  beta_eff = 100: vMF TV(|S|=6 vs |S|=4) = 0.18552879
+  beta_eff = 1000: vMF TV(|S|=6 vs |S|=4) = 0.18564431

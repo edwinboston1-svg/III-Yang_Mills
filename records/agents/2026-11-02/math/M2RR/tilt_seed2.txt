@@ -1,0 +1,8 @@
+M2RR tilt_test seed=2 (numpy 2.3.3, double precision; readings, not certificates)
+8.4' random 200000: violations(>1e-12)=0  max(lhs-rhs)=0.000e+00  max increment ratio=0.999195  worst rec=(np.float64(3.0), np.float64(3.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0))
+8.4' first order 20000: max slope/(bound slope)=0.997094  rec=(np.float64(2.0), np.float64(2.0), np.float64(0.001774), np.float64(0.002721), np.float64(0.4181), np.float64(2.65911), np.float64(0.0))
+8.4' adversarial ascent 60x1500: max increment ratio=0.985503  max(lhs-rhs) seen=-7.821e-05  rec=(np.float64(2.0), np.float64(2.0), np.float64(3e-06), np.float64(0.986323), np.float64(5.16762), np.float64(6.283948), np.float64(10.133031))
+facts 50000: |fact1 - (1-rho)| max=2.55e-15 ; fact2 max[(a/b)(1-rho)-(1-rho'')]=3.442e-16 (<=0 holds) ; fact3 max rho1/(fac rho0)=0.999898 (<=1 holds) ; product-tilt exponent max log(rho1/rho0)/(oX+oW)=0.4995
+systems 1500: Cor8.5F(i) max R/(1-e^-Delta(A))=0.999900 ; Cor8.5F(ii) max(R_j - bound)=-4.879e-02, max ratio=0.876634 ; (8.8c) complex max |Cov|/l^T D l=0.649456 ; var max=0.806851 ; 8.5E max R^2/(C C)=1.000000 ; complex pairs=3416
+8.1' 400 kernels k=1..4: norm abs err max=1.05e-15 ; chi^2 identity abs err max=1.78e-15 ; max norm/delta(P^k)=0.999961
+complex variance: three equiprobable cube roots of unity: Var=1.000000 osc=1.732051  l/osc=0.577350  (1/2 claimed; 1/sqrt3=0.577350)

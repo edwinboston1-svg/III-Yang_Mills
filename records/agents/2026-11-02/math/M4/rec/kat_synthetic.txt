@@ -1,0 +1,60 @@
+M4CHAN-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+M4CHAN-KAT SYN-chi K-real: P(0,0) = 1.000000000000004, max|Im P| = 0.000e+00 [MET]; basis 14 real functions to spin 2/2
+M4CHAN-KAT SYN-chi[G30,T16] K-sum: max|Phi - E - K| = 2.220e-16 [MET]
+M4CHAN-POS SYN-chi[G30,T16] min joint density on the tau rule 8.1910e-01; min p_A 1.0000e+00, min p_B 1.0000e+00; min eigenvalue of Phi_A 1.000e+00
+M4CHAN-RHO SYN-chi[G30,T16] rho = 0.050000000 | SO(3) channel rho_EE = 0.000000000 | O-channel: rho_OO = 0.050000000 rho_EO = 0.000000000 rho_OE = 0.000000000 rho_O. = 0.050000000 rho_.O = 0.050000000 | half-integer PW rho_oo = 0.050000000
+M4CHAN-SHARE SYN-chi[G30,T16] rho_EE/rho = 0.000000   rho_OO/rho = 1.000000   rho_EE/rho_OO^2 = 0
+M4CHAN-TAU SYN-chi[G30,T16] tau_A = 0.095105652 tau_B = 0.095105652 | Delta_A = osc_V F = 0.731659 (max|F| 0.365829) -> bound 0.185983 | Delta_B = 0.731659 (max|F| 0.365829) -> bound 0.185983 [tau <= bound: MET]
+M4CHAN-BOUND SYN-chi[G30,T16] Lemma 3.1: (rho_EE^2 + tau_A^2 + tau_B^2)^(1/2) = 0.134499702, ratio to rho 2.6900 [MET]; exact blocks (rho_EE^2 + rho_EO^2 + rho_O.^2)^(1/2) = 0.050000000 [MET]
+M4CHAN-KAT SYN-chi expected: chi: rho=rho_OO=rho_oo=0.05, rho_EE=0, tau_A=tau_B=0.10 | chiE: rho=rho_EE=0.05, rho_OO=0, tau=0 | chiM: rho=0.05, rho_EE=0.03, rho_OO=0.05 | chiA: consistency only
+---
+M4CHAN-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+M4CHAN-KAT SYN-chiE K-real: P(0,0) = 1.000000000000004, max|Im P| = 8.674e-19 [MET]; basis 14 real functions to spin 2/2
+M4CHAN-KAT SYN-chiE[G30,T16] K-sum: max|Phi - E - K| = 2.220e-16 [MET]
+M4CHAN-POS SYN-chiE[G30,T16] min joint density on the tau rule 8.6910e-01; min p_A 1.0000e+00, min p_B 1.0000e+00; min eigenvalue of Phi_A 1.000e+00
+M4CHAN-RHO SYN-chiE[G30,T16] rho = 0.050000000 | SO(3) channel rho_EE = 0.050000000 | O-channel: rho_OO = 0.000000000 rho_EO = 0.000000000 rho_OE = 0.000000000 rho_O. = 0.000000000 rho_.O = 0.000000000 | half-integer PW rho_oo = 0.000000000
+M4CHAN-SHARE SYN-chiE[G30,T16] rho_EE/rho = 1.000000   rho_OO/rho = 0.000000   rho_EE/rho_OO^2 = -1
+M4CHAN-TAU SYN-chiE[G30,T16] tau_A = 0.000000000 tau_B = 0.000000000 | Delta_A = osc_V F = 0 (max|F| 0) -> bound 0 | Delta_B = 0 (max|F| 0) -> bound 0 [tau <= bound: MET]
+M4CHAN-BOUND SYN-chiE[G30,T16] Lemma 3.1: (rho_EE^2 + tau_A^2 + tau_B^2)^(1/2) = 0.050000000, ratio to rho 1.0000 [MET]; exact blocks (rho_EE^2 + rho_EO^2 + rho_O.^2)^(1/2) = 0.050000000 [MET]
+M4CHAN-KAT SYN-chiE expected: chi: rho=rho_OO=rho_oo=0.05, rho_EE=0, tau_A=tau_B=0.10 | chiE: rho=rho_EE=0.05, rho_OO=0, tau=0 | chiM: rho=0.05, rho_EE=0.03, rho_OO=0.05 | chiA: consistency only
+---
+M4CHAN-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+M4CHAN-KAT SYN-chiM K-real: P(0,0) = 1.000000000000004, max|Im P| = 3.524e-19 [MET]; basis 14 real functions to spin 2/2
+M4CHAN-KAT SYN-chiM[G30,T16] K-sum: max|Phi - E - K| = 2.220e-16 [MET]
+M4CHAN-POS SYN-chiM[G30,T16] min joint density on the tau rule 8.9268e-01; min p_A 1.0000e+00, min p_B 1.0000e+00; min eigenvalue of Phi_A 1.000e+00
+M4CHAN-RHO SYN-chiM[G30,T16] rho = 0.050000000 | SO(3) channel rho_EE = 0.030000000 | O-channel: rho_OO = 0.050000000 rho_EO = 0.000000000 rho_OE = 0.000000000 rho_O. = 0.050000000 rho_.O = 0.050000000 | half-integer PW rho_oo = 0.050000000
+M4CHAN-SHARE SYN-chiM[G30,T16] rho_EE/rho = 0.600000   rho_OO/rho = 1.000000   rho_EE/rho_OO^2 = 12
+M4CHAN-TAU SYN-chiM[G30,T16] tau_A = 0.091822431 tau_B = 0.091822431 | Delta_A = osc_V F = 0.604759 (max|F| 0.30238) -> bound 0.152921 | Delta_B = 0.604759 (max|F| 0.30238) -> bound 0.152921 [tau <= bound: MET]
+M4CHAN-BOUND SYN-chiM[G30,T16] Lemma 3.1: (rho_EE^2 + tau_A^2 + tau_B^2)^(1/2) = 0.133276846, ratio to rho 2.6655 [MET]; exact blocks (rho_EE^2 + rho_EO^2 + rho_O.^2)^(1/2) = 0.058309519 [MET]
+M4CHAN-KAT SYN-chiM expected: chi: rho=rho_OO=rho_oo=0.05, rho_EE=0, tau_A=tau_B=0.10 | chiE: rho=rho_EE=0.05, rho_OO=0, tau=0 | chiM: rho=0.05, rho_EE=0.03, rho_OO=0.05 | chiA: consistency only
+---
+M4CHAN-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+M4CHAN-KAT SYN-chiA K-real: P(0,0) = 1.000000000000004, max|Im P| = 0.000e+00 [MET]; basis 14 real functions to spin 2/2
+M4CHAN-KAT SYN-chiA[G30,T16] K-sum: max|Phi - E - K| = 9.250e-15 [MET]
+M4CHAN-POS SYN-chiA[G30,T16] min joint density on the tau rule 4.3868e-01; min p_A 6.0681e-01, min p_B 1.0000e+00; min eigenvalue of Phi_A 8.627e-01
+M4CHAN-RHO SYN-chiA[G30,T16] rho = 0.052178038 | SO(3) channel rho_EE = 0.000000000 | O-channel: rho_OO = 0.052178038 rho_EO = 0.000000000 rho_OE = 0.000000000 rho_O. = 0.052178038 rho_.O = 0.052178038 | half-integer PW rho_oo = 0.051031036
+M4CHAN-SHARE SYN-chiA[G30,T16] rho_EE/rho = 0.000000   rho_OO/rho = 1.000000   rho_EE/rho_OO^2 = 0
+M4CHAN-TAU SYN-chiA[G30,T16] tau_A = 0.102837737 tau_B = 0.099248526 | Delta_A = osc_V F = 0.865062 (max|F| 1.26953) -> bound 0.261318 | Delta_B = 0.865062 (max|F| 0.60145) -> bound 0.226119 [tau <= bound: MET]
+M4CHAN-BOUND SYN-chiA[G30,T16] Lemma 3.1: (rho_EE^2 + tau_A^2 + tau_B^2)^(1/2) = 0.142919104, ratio to rho 2.7391 [MET]; exact blocks (rho_EE^2 + rho_EO^2 + rho_O.^2)^(1/2) = 0.052178038 [MET]
+M4CHAN-KAT SYN-chiA expected: chi: rho=rho_OO=rho_oo=0.05, rho_EE=0, tau_A=tau_B=0.10 | chiE: rho=rho_EE=0.05, rho_OO=0, tau=0 | chiM: rho=0.05, rho_EE=0.03, rho_OO=0.05 | chiA: consistency only
+---
+M4CHAN-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+M4CHAN-KAT SYNU-1 K-real: P(0,0) = 1.000000000000001, max|Im p| on the grid = 3.469e-18 [MET]; basis 5 real functions to charge 2
+M4CHAN-KAT SYNU-1[NG2048,NT256] K-sum: max|Phi - E - K| = 2.220e-16 [MET]
+M4CHAN-POS SYNU-1[NG2048,NT256] min joint density on the tau rule 9.0000e-01; min p_A 1.0000e+00, min p_B 1.0000e+00; min eigenvalue of Phi_A 1.000e+00
+M4CHAN-RHO SYNU-1[NG2048,NT256] rho = 0.050000000 | SO(3) channel rho_EE = 0.000000000 | O-channel: rho_OO = 0.050000000 rho_EO = 0.000000000 rho_OE = 0.000000000 rho_O. = 0.050000000 rho_.O = 0.050000000 | half-integer PW rho_oo = 0.050000000
+M4CHAN-SHARE SYNU-1[NG2048,NT256] rho_EE/rho = 0.000000   rho_OO/rho = 1.000000   rho_EE/rho_OO^2 = 4.16897e-15
+M4CHAN-TAU SYNU-1[NG2048,NT256] tau_A = 0.070710678 tau_B = 0.070710678 | Delta_A = osc_V F = 0.401341 (max|F| 0.200671) -> bound 0.100841 | Delta_B = 0.401341 (max|F| 0.200671) -> bound 0.100841 [tau <= bound: MET]
+M4CHAN-BOUND SYNU-1[NG2048,NT256] Lemma 3.1: (rho_EE^2 + tau_A^2 + tau_B^2)^(1/2) = 0.100000000, ratio to rho 2.0000 [MET]; exact blocks (rho_EE^2 + rho_EO^2 + rho_O.^2)^(1/2) = 0.050000000 [MET]
+M4CHAN-KAT SYNU-1 expected: k=1: rho=rho_OO=0.05, rho_EE=0, tau_A=tau_B=0.070710678 | k=2: rho=rho_EE=0.05, rho_OO=0, tau=0
+---
+M4CHAN-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+M4CHAN-KAT SYNU-2 K-real: P(0,0) = 1.000000000000004, max|Im p| on the grid = 3.469e-18 [MET]; basis 5 real functions to charge 2
+M4CHAN-KAT SYNU-2[NG2048,NT256] K-sum: max|Phi - E - K| = 7.204e-17 [MET]
+M4CHAN-POS SYNU-2[NG2048,NT256] min joint density on the tau rule 9.0000e-01; min p_A 1.0000e+00, min p_B 1.0000e+00; min eigenvalue of Phi_A 1.000e+00
+M4CHAN-RHO SYNU-2[NG2048,NT256] rho = 0.050000000 | SO(3) channel rho_EE = 0.050000000 | O-channel: rho_OO = 0.000000000 rho_EO = 0.000000000 rho_OE = 0.000000000 rho_O. = 0.000000000 rho_.O = 0.000000000 | half-integer PW rho_oo = 0.000000000
+M4CHAN-SHARE SYNU-2[NG2048,NT256] rho_EE/rho = 1.000000   rho_OO/rho = 0.000000   rho_EE/rho_OO^2 = 1.68295e+32
+M4CHAN-TAU SYNU-2[NG2048,NT256] tau_A = 0.000000000 tau_B = 0.000000000 | Delta_A = osc_V F = 8.88178e-16 (max|F| 8.88178e-16) -> bound 2.22045e-16 | Delta_B = 8.88178e-16 (max|F| 8.88178e-16) -> bound 2.22045e-16 [tau <= bound: MET]
+M4CHAN-BOUND SYNU-2[NG2048,NT256] Lemma 3.1: (rho_EE^2 + tau_A^2 + tau_B^2)^(1/2) = 0.050000000, ratio to rho 1.0000 [MET]; exact blocks (rho_EE^2 + rho_EO^2 + rho_O.^2)^(1/2) = 0.050000000 [MET]
+M4CHAN-KAT SYNU-2 expected: k=1: rho=rho_OO=0.05, rho_EE=0, tau_A=tau_B=0.070710678 | k=2: rho=rho_EE=0.05, rho_OO=0, tau=0
+---

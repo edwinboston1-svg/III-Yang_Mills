@@ -1,0 +1,25 @@
+START 2026-11-02 05:47:20 rate_table.awk md5=047685d47b7f0f55dc0abd8b981933bd table md5=ac52a7d28cf5ebcd0900b423ba12d300
+RATE-TABLE rows=559; r^{4/E} vs 2^{2/3} decided exactly: ABOVE 0, EQUAL 3
+-- top 14 by rate
+1.587401 EQUAL r=2.828427 deg=42222222 E=9 a=8 n4=1 n6=0 orbit=192
+1.587401 EQUAL r=2.000000 deg=22222200 E=6 a=6 n4=0 n6=0 orbit=16
+1.587401 EQUAL r=2.000000 deg=22222020 E=6 a=6 n4=0 n6=0 orbit=96
+1.515717 below r=2.828427 deg=42422222 E=10 a=8 n4=2 n6=0 orbit=96
+1.485994 below r=2.000000 deg=22222220 E=7 a=7 n4=0 n6=0 orbit=192
+1.485994 below r=2.000000 deg=22222022 E=7 a=7 n4=0 n6=0 orbit=96
+1.414214 below r=2.000000 deg=22222222 E=8 a=8 n4=0 n6=0 orbit=48
+1.414214 below r=2.000000 deg=22222222 E=8 a=8 n4=0 n6=0 orbit=3
+1.414214 below r=2.000000 deg=22222222 E=8 a=8 n4=0 n6=0 orbit=24
+1.414214 below r=2.000000 deg=22222222 E=8 a=8 n4=0 n6=0 orbit=24
+1.414214 below r=2.000000 deg=22222222 E=8 a=8 n4=0 n6=0 orbit=192
+1.385133 below r=7.062339 deg=66666666 E=24 a=8 n4=0 n6=8 orbit=1
+1.360790 below r=2.000000 deg=42422220 E=9 a=7 n4=2 n6=0 orbit=192
+1.360790 below r=2.000000 deg=42402222 E=9 a=7 n4=2 n6=0 orbit=384
+-- the reader's three stars and the 4D full star
+1.587401 EQUAL r=2.000000 deg=22222200 E=6 a=6 n4=0 n6=0 orbit=16
+1.385133 below r=7.062339 deg=66666666 E=24 a=8 n4=0 n6=8 orbit=1
+1.259921 below r=1.414214 deg=22402200 E=6 a=5 n4=1 n6=0 orbit=48
+1.238273 below r=1.898667 deg=44444400 E=12 a=6 n4=6 n6=0 orbit=4
+-- count of orbits with rate > 1.260 (the reader's rho^4)
+135
+END 2026-11-02 05:47:24

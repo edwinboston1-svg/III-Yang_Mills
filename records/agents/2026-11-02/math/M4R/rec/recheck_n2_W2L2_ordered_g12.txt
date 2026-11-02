@@ -1,0 +1,14 @@
+M4R-IRR homomorphism and characters of D^1, D^2 to 4.0e-15 [MET]
+M4R-PROJ all P_k (a,c <= 2) idempotent, hermitian, trace d_k to 1e-12 [MET]
+M4R-INPUT dob_n2_W2L2_planar_ordered.txt E[chi_1/2(A)] = 0.621038904493 E[chi_1(A)] = 0.131198321279 E[chi_1/2 chi_1/2] = 0.402990736815 f_0 = 4.460978e-02 f_2 = 3.583810e-01
+M4R-FAST pfast against the literal formula: 2.2e-15 [MET]
+M4R-RULE dob_n2_W2L2_planar_ordered.txt[12,8,16] 1536 points, antipode map exact to 1.4e-15; row sums / w_i against p_A: max dev 1.33e-14; column sums against p_B: 1.38e-14
+M4R-LAW dob_n2_W2L2_planar_ordered.txt[12,8,16] n=1536 total mass 0.999999999999960, min pi_ij 2.110e-11
+M4R-TOP dob_n2_W2L2_planar_ordered.txt[12,8,16] the marginal pair is a singular pair of value 1: |Mv-u| 2.01e-16, |M^T u - v| 1.94e-16
+M4R-RHO dob_n2_W2L2_planar_ordered.txt[12,8,16] rho (all functions) = 0.081207503   next singular values 0.081207503 0.081207503 0.024028637
+M4R-CHAN dob_n2_W2L2_planar_ordered.txt[12,8,16] rho_EE = 0.009661687 | rho_OO = 0.072364560 rho_EO = 0.025160395 rho_OE = 0.025160395 rho_O. = 0.076611386 | half-integer rho_oo = 0.079003091
+M4R-SHARE dob_n2_W2L2_planar_ordered.txt[12,8,16] rho_EE/rho = 0.118975 rho_OO/rho = 0.891107 rho_EE/rho_OO^2 = 1.84502 | exact block bound 0.081213903 (ratio 1.0000788) [MET]
+M4R-TAU dob_n2_W2L2_planar_ordered.txt side A at U = 1 (theta = 0): rho(L, other | orbit) = 0.015068564, osc F there 0.279197
+M4R-TAU dob_n2_W2L2_planar_ordered.txt side A: sup over theta in [0,pi/2] (400+1 points, theta = 0 included) = 0.178155223 at theta = 1.5708 | on M4's degree-16 thetas k pi/10: 0.178155223 | osc F = 1.819221, max|F| = 2.929881 | max|mean t - t0| = 3.1e-14 | axis check 5.41e-16
+M4R-TAU dob_n2_W2L2_planar_ordered.txt side B at U = 1 (theta = 0): rho(L, other | orbit) = 0.015068564, osc F there 0.279197
+M4R-TAU dob_n2_W2L2_planar_ordered.txt side B: sup over theta in [0,pi/2] (400+1 points, theta = 0 included) = 0.178155223 at theta = 1.5708 | on M4's degree-16 thetas k pi/10: 0.178155223 | osc F = 1.819221, max|F| = 2.929881 | max|mean t - t0| = 3.1e-14 | axis check 2.91e-16

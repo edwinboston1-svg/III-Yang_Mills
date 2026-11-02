@@ -1,0 +1,3 @@
+  if (!TKN) { TKN = 1; TKD = 1 } if (!TKD) TKD = 1; if (!TCN) { TCN = 1; TCD = 1 } if (!TCD) TCD = 1
+  KTL = g_lo(TKN, TKD); KTH = g_hi(TKN, TKD); CTL = g_lo(TCN, TCD); CTH = g_hi(TCN, TCD)
+  if (EVENTAIL) TTAG = TTAG " eventail K=" TKN "/" TKD " C=" TCN "/" TCD

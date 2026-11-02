@@ -1,0 +1,17 @@
+geometry bent n=4: object plaquettes 32, object links 76 (engine's check value 76)
+  OBJECT LINK READ AS OUTSIDE: staple of object link 0 (0,0,0,0 dir 1) in plaquette base (0,0,0,0) plane (1,3): its link (0,0,0,0 dir 3) is object link 42, outside index 5
+  OBJECT LINK READ AS OUTSIDE: staple of object link 2 (0,1,0,0 dir 1) in plaquette base (0,1,0,0) plane (1,3): its link (0,1,0,0 dir 3) is object link 40, outside index 24
+  OBJECT LINK READ AS OUTSIDE: staple of object link 5 (0,2,0,0 dir 1) in plaquette base (0,2,0,0) plane (1,3): its link (0,2,0,0 dir 3) is object link 43, outside index 46
+  OBJECT LINK READ AS OUTSIDE: staple of object link 8 (0,3,0,0 dir 1) in plaquette base (0,3,0,0) plane (1,3): its link (0,3,0,0 dir 3) is object link 45, outside index 67
+  OBJECT LINK READ AS OUTSIDE: staple of object link 11 (0,4,0,0 dir 1) in plaquette base (0,4,0,0) plane (1,3): its link (0,4,0,0 dir 3) is object link 47, outside index 91
+  OBJECT LINK READ AS OUTSIDE: staple of object link 40 (0,1,0,0 dir 3) in plaquette base (0,1,0,0) plane (1,3): its link (0,1,0,0 dir 1) is object link 2, outside index 292
+  OBJECT LINK READ AS OUTSIDE: staple of object link 42 (0,0,0,0 dir 3) in plaquette base (0,0,0,0) plane (1,3): its link (0,0,0,0 dir 1) is object link 0, outside index 305
+  OBJECT LINK READ AS OUTSIDE: staple of object link 43 (0,2,0,0 dir 3) in plaquette base (0,2,0,0) plane (1,3): its link (0,2,0,0 dir 1) is object link 5, outside index 311
+  OBJECT LINK READ AS OUTSIDE: staple of object link 45 (0,3,0,0 dir 3) in plaquette base (0,3,0,0) plane (1,3): its link (0,3,0,0 dir 1) is object link 8, outside index 321
+  OBJECT LINK READ AS OUTSIDE: staple of object link 47 (0,4,0,0 dir 3) in plaquette base (0,4,0,0) plane (1,3): its link (0,4,0,0 dir 1) is object link 11, outside index 331
+TOTAL bent n=4: 10 staples hold an object link read from the datum, over 5 distinct non-object plaquettes; staples five=24 four=52 other=0; outside links 532
+  plaquette base (0,0,0,0) plane (1,3)
+  plaquette base (0,1,0,0) plane (1,3)
+  plaquette base (0,2,0,0) plane (1,3)
+  plaquette base (0,3,0,0) plane (1,3)
+  plaquette base (0,4,0,0) plane (1,3)

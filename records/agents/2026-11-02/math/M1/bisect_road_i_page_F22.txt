@@ -1,0 +1,14 @@
+START 2026-11-02 06:23:42 engine=kp_cert_m1.awk md5=3d17b9b8cd661c6fcbdd313acbcfe8f6 dress=page F0=22 lo=1800 hi=2800 extra=-v EVENTAIL=1 -v NCSIG=1 -v TKN=2829 -v TKD=1000
+KP-CERT SCAN dress=page graded=S24-table beta=0.1800 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+KP-CERT SCAN dress=page graded=S24-table beta=0.2800 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+KP-CERT SCAN dress=page graded=S24-table beta=0.2300 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page graded=S24-table beta=0.2050 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+KP-CERT SCAN dress=page graded=S24-table beta=0.2174 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page graded=S24-table beta=0.2112 gamma=6/1 F0=22: PASS for alpha in [0.0021, 0.0084]
+KP-CERT SCAN dress=page graded=S24-table beta=0.2142 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page graded=S24-table beta=0.2126 gamma=6/1 F0=22: PASS for alpha in [0.0031, 0.0063]
+KP-CERT SCAN dress=page graded=S24-table beta=0.2134 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=page graded=S24-table beta=0.2130 gamma=6/1 F0=22: PASS for alpha in [0.0039, 0.0052]
+KP-CERT SCAN dress=page graded=S24-table beta=0.2132 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+BISECT beta* = 0.2130 (PASS), refused at 0.2132
+END 2026-11-02 06:27:22

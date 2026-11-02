@@ -1,0 +1,52 @@
+C:\Users\Edwin Boston\AppData\Local\Temp\claude\C--Users-Edwin-Boston-OneDrive-Desktop-III\59ca2c52-22a2-4ac6-93d9-5dadb2bb3bcb\scratchpad\math\M3\m3_blockmap.py:61: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  v, e = quad(g, a, b, limit=400, epsabs=1e-15, epsrel=1e-12)
+== S-1 (interval arithmetic, mpmath.iv, 40 digits)
+  8b0 = 11/(3 pi^2)      in [[0.371511006688571828627558031769001342649299229, 0.371511006688571828627558031769001342649299229], [0.371511006688571828627558031769001342649322187, 0.371511006688571828627558031769001342649322187]]
+  c(2) = 8b0 ln 2        in [[0.257511806833170546832774864822322368653859871, 0.257511806833170546832774864822322368653859871], [0.257511806833170546832774864822322368653888569, 0.257511806833170546832774864822322368653888569]]
+  c(3) = 8b0 ln 3        in [[0.40814655732352530412950404264813260735129675, 0.40814655732352530412950404264813260735129675], [0.408146557323525304129504042648132607351336928, 0.408146557323525304129504042648132607351336928]]
+  32b1 = 17/(3 pi^4)     in [[0.0581738994432112327385324385136726001370196692, 0.0581738994432112327385324385136726001370196692], [0.0581738994432112327385324385136726001370261263, 0.0581738994432112327385324385136726001370261263]]
+  4 b1/b0                in [[0.156587283810885646776904624960488169215809378, 0.156587283810885646776904624960488169215809378], [0.156587283810885646776904624960488169215840947, 0.156587283810885646776904624960488169215840947]]
+== S-2 the block-map test
+  G(0) = nan  (quad err nan; known 0.154933390231...)
+  4 G(0) = nan
+   n    Var_path/g2   Var_path/(g2 n)   Var_one/g2    Var_avg/g2
+     1           nan            nan            nan           nan   (errs nan,nan,nan)
+     2           nan            nan            nan           nan   (errs nan,nan,nan)
+     3           nan            nan            nan           nan   (errs nan,nan,nan)
+     4           nan            nan            nan           nan   (errs nan,nan,nan)
+     6           nan            nan            nan           nan   (errs nan,nan,nan)
+     8           nan            nan            nan           nan   (errs nan,nan,nan)
+    12           nan            nan            nan           nan   (errs nan,nan,nan)
+    16           nan            nan            nan           nan   (errs nan,nan,nan)
+    24           nan            nan            nan           nan   (errs nan,nan,nan)
+    32           nan            nan            nan           nan   (errs nan,nan,nan)
+    48           nan            nan            nan           nan   (errs nan,nan,nan)
+    64           nan            nan            nan           nan   (errs nan,nan,nan)
+  AF sequence x_c = 4.0: n, g_YM^2, g^2 Var_path, g^2 Var_avg, <cos(theta_path/2)>~exp(-3/8 g^2 Var)
+        1  1.00000         nan         nan  nan
+        2  0.93952         nan         nan  nan
+        3  0.90741         nan         nan  nan
+        4  0.88593         nan         nan  nan
+        6  0.85733         nan         nan  nan
+        8  0.83813         nan         nan  nan
+       12  0.81248         nan         nan  nan
+       16  0.79522         nan         nan  nan
+       24  0.77210         nan         nan  nan
+       32  0.75649         nan         nan  nan
+       48  0.73554         nan         nan  nan
+       64  0.72136         nan         nan  nan
+  AF sequence x_c = 16.0: n, g_YM^2, g^2 Var_path, g^2 Var_avg, <cos(theta_path/2)>~exp(-3/8 g^2 Var)
+        1  0.25000         nan         nan  nan
+        2  0.24604         nan         nan  nan
+        3  0.24378         nan         nan  nan
+        4  0.24220         nan         nan  nan
+        6  0.24001         nan         nan  nan
+        8  0.23849         nan         nan  nan
+       12  0.23636         nan         nan  nan
+       16  0.23488         nan         nan  nan
+       24  0.23282         nan         nan  nan
+       32  0.23138         nan         nan  nan
+       48  0.22938         nan         nan  nan
+       64  0.22798         nan         nan  nan

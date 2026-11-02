@@ -1,0 +1,7 @@
+dob_n2_W2L2_planar_ordered         rho=0.081207503 C=0.166380055 | T_conn(A) 0.109435990 (deg32 0.109451695, deg40 0.109446282) T_full(A) 0.539578337 odd/all 0.9980 | rho/T_conn 0.7421 (leading 1.3879) C/T_conn 1.5203 (leading 2.3562)
+dob_n2_W2L2_planar_cancel          rho=0.132155408 C=0.249284935 | T_conn(A) 0.163789184 (deg32 0.163784818, deg40 0.163786323) T_full(A) 0.443797634 odd/all 0.9944 | rho/T_conn 0.8069 (leading 1.3879) C/T_conn 1.5220 (leading 2.3562)
+dob_n4_W2L2_planar_ordered         rho=0.015210922 C=0.026282676 | T_conn(A) 0.022974133 (deg32 0.022978189, deg40 0.022976791) T_full(A) 0.125579433 odd/all 0.9999 | rho/T_conn 0.6621 (leading 1.3879) C/T_conn 1.1440 (leading 2.3562)
+dob_n4_W2L2_planar_cancel          rho=0.017433784 C=0.029896286 | T_conn(A) 0.026083359 (deg32 0.026085349, deg40 0.026084663) T_full(A) 0.097028890 odd/all 0.9999 | rho/T_conn 0.6684 (leading 1.3879) C/T_conn 1.1462 (leading 2.3562)
+dob_n4_W3L2_cancel                 rho=0.038581180 C=0.066499862 | T_conn(A) 0.060063427 (deg32 0.060070901, deg40 0.060068325) T_full(A) 0.141096865 odd/all 0.9998 | rho/T_conn 0.6423 (leading 1.3879) C/T_conn 1.1072 (leading 2.3562)
+dob_n4_W3L1_planar_ordered         rho=0.032262225 C=0.060262666 | T_conn(A) 0.046495955 (deg32 0.046497034, deg40 0.046496662) T_full(A) 0.211730028 odd/all 1.0000 | rho/T_conn 0.6939 (leading 1.3879) C/T_conn 1.2961 (leading 2.3562)
+RUN-TWIST-DONE

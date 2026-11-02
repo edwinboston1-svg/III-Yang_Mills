@@ -1,0 +1,1400 @@
+Proof. Just copy the proof of Theorem 4.1.4. The only difference lies in proving the analoguous of Claim 4.1.5, which is where one needs the κ(Uk) to be bounded. Observe that we use the non-asymptotic form of our intermediate bounds to get a result independent of the precise shape of the Uk.
+
+4.1.9 Remark. Another generalization of the CLT, still based on the idea that the ﬁeld f (X i) looks like a Gaussian white noise at large scales, is the statement that for ϕ a continuous function with compact support,
+
+1 ln
+
+i∈Zn
+
+ϕ(X i
+
+÷
+
+l)
+
+f
+
+(X
+
+i)
+
+l→∞
+
+N
+
+(σ2
+
+Rn ϕ(x)2 dx).
+
+(OZ)
+
+This can be proved with the same methods as before.
+
+4.2 Spectral gap for the Glauber dynamics
+
+4.2.a Introduction
+
+In this section we are looking at a probabilistic system made of a large number of ‘elementary’ random variables (X i)i∈I — I may be seen as lattice and X i as the state of the particle being at site i. As is customary by now, theorems will only be stated in the case where I is ﬁnite, the inﬁnite case being got by passing to the limit.
+
+→
+4.2.1 Deﬁnition. Denoting by Ω the states space of X I, let P be a probability measure on Ω. The Glauber dynamics [20, 16] associated to P is the Markov process on Ω
+
+having the following law: on each i ∈ I there is an alarm clock, all the clocks being
+
+independent and ringing with law Poisson(1). When a clock rings, the state of spin X i
+
+—and
+
+only it—is →
+
+ﬂipped
+
+so
+
+that
+
+the
+
+state
+
+of
+
+Xi
+
+immediately
+
+after
+
+the
+
+ﬂip
+
+follows
+
+the
+
+law P (X i|X I {i}).
+
+In formal terms, the Glauber dynamics is the Markov process whose generator L on L∞(Ω) is deﬁned by:
+
+(L f )(→xI ) =
+
+E
+
+[
+
+f
+
+(
+
+→
+X
+
+I
+
+)
+
+−
+
+f
+
+(→xI
+
+)|
+
+→
+X
+
+I
+
+{i} = →xI
+
+{i}].
+
+(PA)
+
+i∈I
+
+Let us recall some basic facts on the Glauber dynamics (see [28, Chapter IV] for more details). By construction P is a reversible equilibrium measure for the dynamics, so L is self-adjoint on L2(P). Since obviously L 1 ≡ 0, one can also deﬁne L on L2(P), on which it is self-adjoint too. This leads to the following deﬁnition:
+4.2.2 Deﬁnition. The energy of f ∈ L2(P) is
+
+E (f , f ) = 〈L f , f 〉
+
+(PB)
+
+The following immediate identity shows that E is always a nonnegative bilinear form:
+
+92
+
+4.2.3 Proposition.
+
+E(f, f)=
+
+dP[→xI ]
+
+→
+Var ( f |X I
+
+{i} = →xI
+
+{i}).
+
+(PC)
+
+Ω
+
+i
+
+4.2.4 Deﬁnition. For λ > 0, the Glauber dynamics is said to have spectral gap λ if, for all f ∈ L2(P),
+
+E ( f , f ) λ Var( f ).
+
+(PD)
+
+What makes spectral gap interesting is that its positiveness is equivalent to exponential convergence to 0 of the semigroup (e−tL )t 0 on L2(P), the rate of convergence being equal to the width of the spectral gap. As the Glauber dynamics is one of the easiest ways to simulate the law P for complicated models, the stake of having exponential convergence for it is evident.
+Many works have been done on the spectral gap of the Glauber dynamics, see for instance Martinelli’s St-Flour course [29]. Several results state that, the less spins are correlated, the larger the spectral gap is. Yet the researchers who work on this topic generally express the decorrelation between the spins in terms of β-mixing (cf. Deﬁnition 0.1.4), while it seems be more natural to look at them in terms of Hilbertian decorrelations, since the formula (PD) stating the spectral gap problem takes place in a Hilbertian frame itself. Thus my goal here will be to ﬁnd a control on the spectral gap expressed in terms of ρ-mixing conditions. Since Hilbertian correlations look to be the minimal frame to study the spectral gap for the Glauber dynamics, hopefully the bounds yielded by this method will be sharp.
+Another noticeable feature of my approach is that it remains at a quite abstract level: no symmetry property of I or P need be assumed, all the work essentially consisting in manipulating relevant quadratic forms.
+
+4.2.b A lower bound for the spectral gap
+
+The central theorem of this section is the following:
+
+4.2.5 Theorem. Take I = {1, . . . , N}. Suppose that for all distinct i, j ∈ I one has
+
+{X i : X j}∗ denote
+
+εi j < 1 —we will make the costless assumption that ε ji = εi j. For i ∈ I,
+
+1i ··=
+
+i< j
+
+1 N (1
+
+− ε2i j)
+
+=
+
+εiN εiN
+
+,
+
+(PE)
+
+and for i < j, denote
+
+εi j ··=
+
+i< j
+
+εi j j (1
+
+−
+
+ε2i j
+
+)
+
+.
+
+(PF)
+
+Then the Glauber dynamics has spectral gap at least M −2, where M is the (N × N)
+
+matrix deﬁned by
+
+1 −ε12 · · · −ε1N −1 11 0 · · · 0 
+
+M
+
+=
+
+0
+
+  
+
+...
+
+... ...
+
+...
+
+...
+
+ 
+
+ 
+
+0
+
+...
+
+...
+
+...
+
+
+
+−ε(N
+
+−1)N
+
+ 
+
+  
+
+...
+
+... ...
+
+...
+
+
+
+ 
+
+.
+
+0
+
+ 
+
+(PG)
+
+0 ··· 0
+
+1
+
+0 ··· 0 1N
+
+93
+
+4.2.6 Remark. The form of the ﬁrst matrix in the right-hand side of (PG) ensures that
+it is invertible. Since moreover all the εi j were supposed < 1, all the εi j and the 1i are ﬁnite; thus, the lower bound M −2 is strictly positive.
+
+Proof. Let f be a centered square-integrable function on (Ω, P). For I ⊂ I, denote →
+FI ··= σ(X I ). For i ∈ I, I ⊂ I {i}, denote
+
+f
+
+I i
+
+··= f FI
+
+{i} − E[ f |FI ];
+
+(PH)
+
+deﬁne moreover
+
+f
+
+= i
+
+··=
+
+f
+
+I i
+
+{i};
+
+f
+
+< i
+
+··=
+
+f
+
+{1,..., i
+
+i−1}.
+
+(PI) (PJ)
+
+Then by Proposition 4.2.3, one has
+
+E ( f , f ) = Var( fi=),
+
+(PK)
+
+i
+
+while the usual telescopic argument shows that
+
+Var( f ) = Var( fi<).
+
+(PL)
+
+i
+
+So to prove the theorem, we have to establish links between the different values
+
+Var(
+
+f
+
+I i
+
+).
+
+It
+
+will be
+
+convenient to
+
+introduce the
+
+shorthands
+
+∆iI
+
+=
+
+Sd(
+
+f
+
+I i
+
+).
+
+One has the
+
+following
+
+4.2.7 Claim. For I ⊂ I and i, j ∈ I I with j = i,
+
+∆Ii ∆iI { j} + εi j∆Ij .
+
+(PM)
+
+Proof. Assume in a ﬁrst time that I =
+
+,
+
+and
+
+denote
+
+fi
+
+··=
+
+fi
+
+,
+
+fj
+
+··=
+
+fj
+
+,
+
+f
+
+j i
+
+··=
+
+f
+
+{ i
+
+j}
+
+and
+
+Fi ··= F{i}.
+
+Projecting
+
+the
+
+decomposition
+
+“fi
+
+=
+
+f
+
+j i
+
++
+
+(
+
+f
+
+i
+
+−
+
+f
+
+j i
+
+)”
+
+on
+
+L2 (F i ),
+
+one
+
+has
+
+fi =
+
+(
+
+f
+
+j i
+
+)Fi
+
++
+
+(
+
+f
+
+j)Fi ,
+
+whence
+
+by
+
+the
+
+Cauchy–Shwarz
+
+inequality:
+
+Sd( fi)
+
+Sd
+
+((
+
+f
+
+j i
+
+)Fi
+
+)
+
++
+
+Sd
+
+((
+
+f
+
+j
+
+)Fi
+
+).
+
+(PN)
+
+One
+
+has
+
+trivially
+
+Sd
+
+((
+
+f
+
+j i
+
+)Fi
+
+)
+
+Sd(
+
+f
+
+j i
+
+);
+
+on
+
+the
+
+other
+
+hand,
+
+fj
+
+is
+
+X j-measurable,
+
+so
+
+Sd (( f j)Fi ) εi j Sd( f j). In the end, (PN) becomes
+
+Sd( f i) Sd( f ij) + εi j Sd( f j),
+
+(PO)
+
+which is (PM) for I = .
+
+In the case I = , the same reasoning can be performed, except that one have to
+
+work
+
+conditionally
+
+to
+
+FI
+
+.
+
+Then,
+
+taking
+
+fi =
+
+f
+
+I i
+
+,
+
+fj
+
+=
+
+f
+
+I j
+
+,
+
+f
+
+j i
+
+=
+
+f
+
+I i
+
+{j}, Fi = FI
+
+{i}, one
+
+gets
+
+Sd( f i|FI )
+
+Sd(
+
+f
+
+j i
+
+|FI
+
+) + εij
+
+Sd( f j|FI
+
+).
+
+(PP)
+
+94
+
+Now
+
+Sd( fi) =
+
+→
+Sd ( fi|X I
+
+= →xI )2dP[→xI ],
+
+(PQ)
+
+with
+
+similar
+
+formulas
+
+for
+
+fj
+
+and
+
+f
+
+j i
+
+,
+
+since
+
+all
+
+these
+
+functions
+
+are
+
+centered
+
+w.r.t.
+
+FI
+
+.
+
+Therefore, integrating (PP) and applying Minkowski’s inequality yields:
+
+Sd( fi)
+
+Sd(
+
+f
+
+j i
+
+)
+
++
+
+εi
+
+j
+
+Sd(
+
+f
+
+j
+
+),
+
+(PR)
+
+i.e. (PM).
+
+For i j, let us denote
+
+∆[ij] = ∆{i1,..., j} {i}.
+
+(PS)
+
+Claim 4.2.7 will be used through the following corollary:
+
+4.2.8 Claim. For all i < j,
+
+∆[i j−1]
+
+1
+
+1 − ε2i j
+
+(∆[i
+
+j]
+
++
+
+εi
+
+j
+
+∆<j ).
+
+(PT)
+
+Proof. We have to bound ∆[ij−1], which here we rather denote ∆[ab−1] to avoid confusion with the notation of Claim 4.2.7. Applying Claim 4.2.7 with I = {1, . . . , b − 1} {a}, i = a
+and j = b, one has
+
+∆[ab−1] = ∆{a1,...,b−1} {a} ∆{a1,...,b} {a} + εab∆{b1,...,b−1} {a} = ∆[ab] + εab∆{b1,...,b−1} {a}.
+
+(PU)
+
+But applying again Claim 4.2.7, this time with I = {1, . . . , b − 1} {a}, i = b and j = a,
+
+one has
+
+∆{b1,...,b−1} {a} ∆{b1,...,b−1} + εab∆{a1,...,b−1} {a} = ∆<b + εab∆[ab−1].
+
+(PV)
+
+Combining (PU) and (PV) then yields (PT).
+
+Now let us show how Claim 4.2.8 implies the theorem. To avoid heavy formalism, I will detail the computations for I = {1, 2, 3, 4} (rather denoted by I = {a, b, c, d} here to avoid confusions with “1” and “2” taken as numbers), hoping that generalizing is obvious then.
+
+First, note that
+
+∆<d = ∆=d .
+
+(PW)
+
+Now, by a direct use of Claim 4.2.8,
+
+∆<c = ∆[cc]
+
+1
+
+1 − ε2cd
+
+(∆[cd]
+
++
+
+εcd
+
+∆<d )
+
+=
+
+1c
+
+∆=c
+
++
+
+εcd
+
+∆=d .
+
+(PX)
+
+To bound ∆<b , we have to iterate Claim 4.2.8 twice:
+
+∆<b = ∆[bb]
+
+1
+
+1 − ε2bc
+
+∆[bc]
+
++
+
+εb
+
+c
+
+∆<c
+
+(1
+
+−
+
+ε2b
+
+1 c)(1
+
+−
+
+ε2bd
+
+)
+
+(∆[bd]
+
++
+
+εcd
+
+∆<d
+
+)
+
++
+
+εb
+
+c ∆<c
+
+=
+
+1b
+
+∆=b
+
++
+
+εbd
+
+∆=d
+
++
+
+εb
+
+c ∆<c
+
+(PX) 1b∆=b + 1cεbc∆=c + (εbd + εbcεcd)∆=d .
+
+(PY)
+
+95
+
+Last, bounding ∆<a requires iterating Claim 4.2.8 three times:
+
+∆<a = ∆[aa]
+
+1
+
+1 − ε2ab
+
+∆[ab]
+
++
+
+εab
+
+∆<b
+
+(1
+
+−
+
+ε2ab
+
+1 )(1
+
+−
+
+ε2a
+
+c)
+
+∆[ac]
+
++
+
+εac
+
+∆<c
+
++
+
+εa b ∆<b
+
+1a∆=a + εad∆<d + εac∆<c + εab∆<b
+
+(PX,PY) 1a∆=a + 1bεab∆=b + 1c(εac + εabεbc)∆=c + (εad + εacεcd + εabεbd + εabεbcεcd)∆=d .
+
+(PZ)
+
+One can sum up Equations (PW)–(PZ) into the matricial expression
+
+∆<a  ∆<b  ∆<c 
+∆<d
+
+ 1
+
+εab
+
+0 1 
+
+0 0 
+
+00
+
+εac + εabεbc εbc 1
+0
+
+εad + εacεcd + εabεbd + εabεbcεcd 1a∆=a 
+
+εbd + εbcεcd εcd
+
+   
+
+1b∆=b 1c∆=c
+
+   
+
+.
+
+1
+
+∆=d
+
+(QA)
+
+If we look back at how the square matrix in (QA) has been constructed, we ﬁnd that
+
+
+
+
+
+square
+
+ 0
+
+εab
+
+εac
+
+εad k
+
+ 1
+
+−εab
+
+−εac
+
+−εad −1
+
+matrix ∞ 0
+
+  
+
+in
+
+  
+
+=
+
+k=0
+
+ 0 
+
+0 0
+
+εbc 0
+
+εbd
+
+ 
+
+εcd
+
+ 
+
+0
+
+=
+
+ 0
+
+
+
+1 0
+
+−εbc
+
+−εbd
+
+ 
+
+1
+
+−εcd
+
+ 
+
+,
+
+(QB)
+
+(QA)
+
+00 0 0
+
+00 0 1
+
+so in the end we obtain that
+
+∆<a  ∆<b  ∆<c 
+∆<d
+
+∆=a 
+
+M
+
+∆=b  ∆=c 
+
+,
+
+∆=d
+
+where M is given by (PG). Then it is immediate that Var( f ) =
+M 2 i (∆=i )2 = M 2 E ( f , f ), QED.
+
+(QC)
+i (∆<i )2
+
+The bound we have obtained for the spectral gap is not symmetric by permutation of the indexes in I. It can however can be bounded by a simpler expression, which is nearly as good as the original one in concrete situations:
+
+4.2.9 Corollary. In Theorem 4.2.5, M can be replaced by the matrix
+
+ 1 −ε12
+
+···
+
+−ε1N −1
+
+M
+
+=
+
+    
+
+−ε12 ...
+
+... ...
+
+... ...
+
+...
+
+
+
+ 
+
+,
+
+−ε(N
+
+−1)N
+
+ 
+
+(QD)
+
+−ε1N · · · −ε(N−1)N
+
+1
+
+provided ρ(IN − M ) < 1.
+
+Proof. Each entry of M is actually bounded by the corresponding entry of M . To see
+it, we ‘expand’ the entries of M, resp. M . First, notice that 1/(1 − ε2i j) can be expanded into 1 + εi jε ji + εi jε jiεi jε ji + · · · , so that one has the expansions
+
+k
+
+1i =
+
+εi jl εjl i
+
+i< j1 ··· jk l=1
+
+(QE)
+
+96
+
+and
+
+k
+
+εi j =
+
+( ) εi jl ε jl i εi j.
+
+i< j1 ··· jk j l=1
+
+(QF)
+
+Then, using the inversion formula (I−A)−1 =
+
+∞ k=0
+
+Ak
+
+for
+
+triangular
+
+arrays,
+
+one
+
+obtains
+
+that
+
+k−1
+
+Mij =
+
+εil il+1 ,
+
+(QG)
+
+(i0,i1,...,ik) l=0 ﬁrst condition
+
+where the meaning of “ﬁrst condition” is given by the following
+
+4.2.10 Deﬁnition. A sequence (i0, . . . , ik) is said to satisfy the ﬁrst condition if:
+
+(i) i0 = i and ik = j; (ii) il = il+1 for all l; (iii) il+1 < il only if l (iv) If il+1 < il and l
+
+1 and il+1 = il−1; k − 2, then il+2 il.
+
+One has a similar formula for M :
+
+k−1
+
+Mij =
+
+εil il+1 ,
+
+(i0,i1,...,ik) l=0
+
+second condition
+
+(QH)
+
+where
+
+4.2.11 Deﬁnition. A sequence (i0, . . . , ik) is said to satisfy the second condition if it satisﬁes Conditions (i) and (ii) of Deﬁnition 4.2.10.
+
+Since the second condition is obviously weaker than the ﬁrst condition, one has Mij Mij.
+
+There is a still weaker but even simpler formula:
+
+4.2.12 Corollary. Deﬁning
+
+ε : L2(I) → L2(I)
+(ai)i∈I → ( j=i εi ja j)i∈I,
+
+(QI)
+
+the spectral gap of the Glauber dynamics is at least
+
+(1 − ε )+2 .
+
+(QJ)
+
+Proof. One has M = (I − ε)−1, so, provided A < 1,
+
+∞
+
+∞
+
+M = (I − A)−1 =
+
+Ak
+
+A k = (1 − A )−1.
+
+(QK)
+
+k=0
+
+k=0
+
+In the case A 1, (QJ) is trivial.
+
+97
+
+4.2.c Avoiding the articial phase transition
+
+A common situation in which we would like to apply the previous results is when I = Zn and εi j is of the form ε( j − i) for some symmetric function ε : Zn → [0, 1]. Then Corollary 4.2.12 tells that the Glauber dynamics has a (strictly) positive spectral gap
+as soon as z=0 ε(z) < 1. But like in § 3.6.c, we are going to prove that that bound is somehow ‘artiﬁcial’ and that it can be relaxed into the neater condition “ z=0 ε(z) < ∞”:
+4.2.13 Theorem. Suppose that I = Zn and that for all i, j ∈ Zn one has {X i : X j}∗ ε( j − i) for some symmetric function ε : Zn → [0, 1] such that ε(z) < 1 as soon as z = 0. Then if z∈Zn ε(z) < ∞, the spectral gap of the Glauber dynamics is positive.
+
+Proof. The assumption on z ε(z) allows us to take l < ∞ large enough so that
+
+ε(z) < 1.
+
+(QL)
+
+z∈lZn {0}
+
+We split Zn into a partition of ln =·· N sublattices Z1, . . . , ZN , each lattice Zu being of
+
+the form lZn + zu for some zu ∈ Zn/lZn. Then we deﬁne an auxiliary dynamics:
+
+→
+
+4.2.14
+
+Deﬁnition.
+
+The
+
+sublattice
+
+Glauber
+
+dynamics is
+
+→
+
+→
+
+the
+
+Glauber
+
+dynamics
+
+for
+
+XZn
+
+considered as the ﬁnite-dimensional vector (XZ1, . . . , XZN ). In other words, on each u ∈
+
+{1, . . . , N} there is an independent Poisson(1) alarm clock, and when clock u rings, the
+
+→
+
+→
+
+state of the whole X Zu is ﬂipped in one shot according to P (X Zu |XZn Zu ).
+
+Now let f ∈ L2(Ω). In addition to the notation of the proof of Theorem 4.2.5, we introduce the following deﬁnition:
+
+4.2.15 Deﬁnition. For u ∈ {1, . . . , N}, we deﬁne
+
+f(=u)
+
+··=
+
+f
+
+−
+
+E[f
+
+→
+|XZn
+
+Zu ].
+
+(QM)
+
+4.2.16
+
+Remark.
+
+The
+
+f
+
+= (u)
+
+are
+
+the
+
+equivalent
+
+of
+
+the
+
+f
+
+= i
+
+for
+
+the
+
+sublattice
+
+Glauber
+
+dynam-
+
+ics.
+
+to
+
+Fixing
+
+some
+
+‘boundary
+
+condition’ →
+
+→xZn
+
+Zu
+
+the Glauber dynamics for XZu under the
+
+on Zn law P
+
+[·|ZX→uZ,nwZeuc=an→xZanppZluy].CAorfotellrairnyt4eg.2r.a1t2-
+
+ing, one gets that
+
+Var
+
+(
+
+f
+
+= (u)
+
+)
+
+(1 − ζ )−2
+
+Var ( fi=),
+
+(QN)
+
+i∈Zu
+
+where ζ is the operator on L2(lZn) deﬁned by
+
+(ζg)(i) =
+
+ε(z)g(i + z),
+
+(QO)
+
+z∈lZn {0}
+
+whose norm is obviously bounded by z∈lZn {0} =·· ζ < 1. Then, summing (QN) for all u:
+
+N
+
+Var ( f(=u)) (1 − ζ)−2E ( f , f ).
+
+(QP)
+
+u=1
+
+Now, let us apply Theorem 4.2.5 to the sublattice Glauber dynamics [Deﬁnition 4.2.14]. It yields that
+
+N
+
+Var( f ) M 2 Var ( f(=u)),
+
+(QQ)
+
+u=1
+
+98
+
+

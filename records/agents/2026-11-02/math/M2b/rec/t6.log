@@ -1,0 +1,29 @@
+C0: unset against the engine; the free datum with corners against without
+  IDENTICAL (unset)
+  IDENTICAL (free, corners off)
+C1: gauge at the corner vertex (0,1,1,0), random datum
+ engine: 2 outside links leaving, 2 entering transformed
+  196 entries, max |dF| relative to max|F| = 3.317e-01
+  half (sighted):
+  196 entries, max |dF| relative to max|F| = 4.346e+00
+ corner: 2 outside links leaving, 2 entering transformed
+  196 entries, max |dF| relative to max|F| = 4.162e-16
+  half (sighted):
+  196 entries, max |dF| relative to max|F| = 1.077e+01
+C2: zipper against the engine's order, both with corners (random and cancelling data)
+ random:3:
+  196 entries, max |dF| relative to max|F| = 5.593e-16
+ cancel:
+  196 entries, max |dF| relative to max|F| = 1.170e-17
+ ordered:
+  196 entries, max |dF| relative to max|F| = 6.099e-17
+C3: the corners move the bent object off the planar one at the named data (n = 2, W2L2): class moments
+ ordered: planar +4.029907368150e-01  bent-engine +4.029907368150e-01  bent-corner +4.146018328000e-01
+ cancel: planar +3.075944345081e-01  bent-engine +3.075944345081e-01  bent-corner +3.198282454903e-01
+D: staging the corner objects
+ n=2 W3 L2: W2-DRY-TOTAL peak memory 0.045 GB, multiply-adds 2.1880e+10 (a dry run reads no values)
+ n=2 W4 L2: W2-DRY-TOTAL peak memory 0.260 GB, multiply-adds 2.6720e+11 (a dry run reads no values)
+ n=4 W2 L2: W2-DRY-TOTAL peak memory 0.816 GB, multiply-adds 5.2093e+11 (a dry run reads no values)
+ n=4 W3 L1: W2-DRY-TOTAL peak memory 6.724 GB, multiply-adds 2.1589e+12 (a dry run reads no values)
+ n=4 W3 L2: 
+T6-DONE

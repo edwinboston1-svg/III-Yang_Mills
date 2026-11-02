@@ -1,0 +1,7 @@
+START 2026-11-02 05:45:35 sparsity_X.awk md5=e5575aafd4adfae045088c0c9f3922f6
+SPARSITY-X cubes=13 face-adjacencies=12 F=|X|=54 (6*13 - 2*adj = 54)
+SPARSITY-X V=49 E(links)=101 chi=2 odd-links=0 four-fold=7 six-fold=0 plaquettes-at-v=12
+SPARSITY-X four-fold links: [0,-1,0;2] [0,0,0;1] [0,0,0;2] [0,0,0;3] [1,1,-1;3] [-1,0,0;1] [0,0,-1;3]
+SPARSITY-X F2 rank of the boundary vectors=53 nullity=1 (Z2-minimal iff nullity 1)
+SPARSITY-X contact graph: 7 links; a star K_1,7 at v iff every four-fold link has v as an endpoint
+END 2026-11-02 05:45:36

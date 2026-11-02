@@ -1,0 +1,2 @@
+W2-DRY a=2 c=2: max state 247066875 entries, open plaquettes at most 4, 9 slice sweeps; peak memory 9.224 GB (S + N + snapshot); multiply-adds so far 6.6158e+12
+W2-DRY-TOTAL peak memory 9.224 GB, multiply-adds 6.6158e+12 (a dry run reads no values)

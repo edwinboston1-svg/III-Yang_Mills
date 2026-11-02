@@ -1,0 +1,5 @@
+the crossing campaign memory note: the dated correction of its bent-object readings (THE CROSSING CAMPAIGN §18) (2026-11-02 05:54 EST; the trunk seat iii-43)
+
+The note quoted the W2 "bent" readings (the 0.81 / 0.56 table, bent = planar to twelve digits, D6, the 1.11 / 1.33 sums). The engines never integrated the bent object's corner plaquettes, so those numbers are the planar geometry at the named data; the correction says so where the readings are quoted.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

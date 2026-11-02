@@ -1,0 +1,15 @@
+M4R-TWIST Q8 Wilson beta = 0.700 on the 4x2 torus, 8^9 = 134217728 configurations summed exactly; Z (unnormalised) = 1.015204413484e+09
+M4R-TWIST the coarse law lambda on Q8^3: min mass 7.1534e-04 (positive: yes)
+M4R-T1 (2.1a) max_v |lambda(sigma_a v) - lambda(v) nu(B_f|v)|/lambda(sigma_a v): f = 1.38e-16, f' = 3.89e-16; path b: 2.16e-16 | CONTROL (twist on path b read as a flip of v_a): 6.914
+M4R-T2 (2.1c) max_v |nu(B_g|v) - 1| (g a fibre link) = 6.00e-15; max_v |nu(B_{f+dg}|v) - nu(B_f|v)|/nu(B_f|v) = 6.09e-15 | CONTROL max_v |nu(B_f|v) - 1| = 2.264
+M4R-T3 (2.1b) max_v |nu(B_f|v) nu(B_f|sigma_a v) - 1| = 2.22e-16;  two coarse flips at once (B_{f+h} flips a and b): 2.16e-16 | CONTROL (read as a flip of a alone): 2.264
+M4R-T4 (2.2) max_v' |exp(-F_{k+1}(v')) - E_lambda_k[exp(-F_k) | c(v) = v']| / exp(-F_{k+1}) = 3.20e-12 | CONTROL (unweighted average over the fibre of c): 6.914
+M4R-T5 v_c = 0: rho = 0.020511, V4-orbit channel rhot = 0.006155, tau_a = 0.036285, tau_b = 0.036285 -> Lemma 3.1 bound 0.051683; Delta_a (from nu(B_f|v)) = 0.2972, Delta_b = 0.2972 -> 2 sinh: 0.6033 0.6033
+M4R-T5 v_c = 1: rho = 0.020511, V4-orbit channel rhot = 0.006155, tau_a = 0.036285, tau_b = 0.036285 -> Lemma 3.1 bound 0.051683; Delta_a (from nu(B_f|v)) = 0.2972, Delta_b = 0.2972 -> 2 sinh: 0.6033 0.6033
+M4R-T5 v_c = 2: rho = 0.002722, V4-orbit channel rhot = 0.002722, tau_a = 0.000000, tau_b = 0.000000 -> Lemma 3.1 bound 0.002722; Delta_a (from nu(B_f|v)) = 0.0000, Delta_b = 0.0000 -> 2 sinh: 0.0000 0.0000
+M4R-T5 v_c = 3: rho = 0.002722, V4-orbit channel rhot = 0.002722, tau_a = 0.000000, tau_b = 0.000000 -> Lemma 3.1 bound 0.002722; Delta_a (from nu(B_f|v)) = 0.0000, Delta_b = 0.0000 -> 2 sinh: 0.0000 0.0000
+M4R-T5 v_c = 4: rho = 0.002722, V4-orbit channel rhot = 0.002722, tau_a = 0.000000, tau_b = 0.000000 -> Lemma 3.1 bound 0.002722; Delta_a (from nu(B_f|v)) = 0.0000, Delta_b = 0.0000 -> 2 sinh: 0.0000 0.0000
+M4R-T5 v_c = 5: rho = 0.002722, V4-orbit channel rhot = 0.002722, tau_a = 0.000000, tau_b = 0.000000 -> Lemma 3.1 bound 0.002722; Delta_a (from nu(B_f|v)) = 0.0000, Delta_b = 0.0000 -> 2 sinh: 0.0000 0.0000
+M4R-T5 v_c = 6: rho = 0.002722, V4-orbit channel rhot = 0.002722, tau_a = 0.000000, tau_b = 0.000000 -> Lemma 3.1 bound 0.002722; Delta_a (from nu(B_f|v)) = 0.0000, Delta_b = 0.0000 -> 2 sinh: 0.0000 0.0000
+M4R-T5 v_c = 7: rho = 0.002722, V4-orbit channel rhot = 0.002722, tau_a = 0.000000, tau_b = 0.000000 -> Lemma 3.1 bound 0.002722; Delta_a (from nu(B_f|v)) = 0.0000, Delta_b = 0.0000 -> 2 sinh: 0.0000 0.0000
+M4R-T5 summary: max over environments of |label free energy - (-log nu(B_f|v))| = 2.22e-16; worst rho/(Lemma 3.1 bound) = 1.000000; worst tau/(2 sinh Delta) = 0.064784; min price 1.0000

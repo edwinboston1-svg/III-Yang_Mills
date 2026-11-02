@@ -1,0 +1,16 @@
+M4R-C2 b0 = 0.046438876, c(2) = 8 b0 ln 2 = 0.257511807 (M4 writes 0.25752)
+M4R-DELTA K =   7: admissible uniform loss c(2) - 1.75/K = +0.007512
+M4R-DELTA K =   8: admissible uniform loss c(2) - 1.75/K = +0.038762
+M4R-DELTA K =  10: admissible uniform loss c(2) - 1.75/K = +0.082512
+M4R-DELTA K =  20: admissible uniform loss c(2) - 1.75/K = +0.170012
+M4R-DELTA K = 100: admissible uniform loss c(2) - 1.75/K = +0.240012
+M4R-DELTA as K -> infinity the admissible uniform loss tends to c(2) = 0.257512; the one-loop K needed for zero loss: 1.75/c(2) = 6.796 steps
+M4R-RUNG1 delta_1 = 2.34 - (2.2 - c(2)) = 0.397512
+M4R-MK from 2.2: beta_MK(7) <= B7_upper pi/24 = 0.272154, so sum_{k<7}(c(2) - delta_k) = 2.2 - beta_MK(7) >= 1.927846 against the required 2.2 - 0.45 = 1.75 [MET at K = 7]
+M4R-MK from 2.3: beta_MK(7) <= 4.9420 pi/24 = 0.646906; beta_MK(8) <= 0.28192 pi/24 = 0.036903
+M4R-FIBRE beta = 0.1310: C(i,j) >= TV(vMF(beta e), vMF(-beta e)) = 0.055543, so the single-link row sum >= 18 x that = 0.9998; the record's linear bound 18*4*beta/(3 pi) = 1.0008
+M4R-FIBRE beta = 0.2452: C(i,j) >= TV(vMF(beta e), vMF(-beta e)) = 0.103703, so the single-link row sum >= 18 x that = 1.8666; the record's linear bound 18*4*beta/(3 pi) = 1.8732
+M4R-FIBRE beta = 0.4764: C(i,j) >= TV(vMF(beta e), vMF(-beta e)) = 0.199555, so the single-link row sum >= 18 x that = 3.5920; the record's linear bound 18*4*beta/(3 pi) = 3.6394
+M4R-FIBRE beta = 1.0000: C(i,j) >= TV(vMF(beta e), vMF(-beta e)) = 0.401240, so the single-link row sum >= 18 x that = 7.2223; the record's linear bound 18*4*beta/(3 pi) = 7.6394
+M4R-FIBRE beta = 2.2000: C(i,j) >= TV(vMF(beta e), vMF(-beta e)) = 0.735602, so the single-link row sum >= 18 x that = 13.2408; the record's linear bound 18*4*beta/(3 pi) = 16.8068
+M4R-FIBRE beta = 3.0000: C(i,j) >= TV(vMF(beta e), vMF(-beta e)) = 0.859169, so the single-link row sum >= 18 x that = 15.4650; the record's linear bound 18*4*beta/(3 pi) = 22.9183

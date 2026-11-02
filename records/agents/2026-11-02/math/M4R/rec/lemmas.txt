@@ -1,0 +1,30 @@
+M4R-LEMMAS group Z2, 6000 random laws (orbits 1..4 per side, four strength regimes):
+   worst L3.1: rho/sqrt(rhot^2+tauX^2+tauY^2)                         0.999996984757
+   worst C3.1': rho/sqrt(rEE^2+rEO^2+rO.^2)                           1.000000000006
+   worst C3.1': rho_O./tauX                                           1.000000000300
+   worst C3.1': rho_EO/tauY                                           0.999982703193
+   worst rhot vs rho_EE |diff|                                        0.000000000000
+   worst L3.2(i) identity |sd(t)/sqrt(1-t0^2) - svd|                  0.000000005266
+   worst L3.2(i): tauX/((1/4) osc F cosh(max|F|/2))                   0.999561787784
+   worst L3.2(ii): tauX/(2 sinh DeltaX)                               0.124963979246
+   worst rhot/rho (must be <= 1)                                      0.999996594653
+   worst price: sqrt(rhot^2+tauX^2+tauY^2)/rho (min over cases)       1.000003015252
+M4R-LEMMAS group Z3, 6000 random laws (orbits 1..4 per side, four strength regimes):
+   worst L3.1: rho/sqrt(rhot^2+tauX^2+tauY^2)                         0.953318879197
+   worst C3.1': rho/sqrt(rEE^2+rEO^2+rO.^2)                           1.000000000000
+   worst C3.1': rho_O./tauX                                           1.000000000000
+   worst C3.1': rho_EO/tauY                                           0.999989188267
+   worst rhot vs rho_EE |diff|                                        0.000000000000
+   worst L3.2(ii): tauX/(2 sinh DeltaX)                               0.102471031342
+   worst rhot/rho (must be <= 1)                                      0.999994590818
+   worst price: sqrt(rhot^2+tauX^2+tauY^2)/rho (min over cases)       1.048966953053
+M4R-LEMMAS group Z2xZ2, 6000 random laws (orbits 1..4 per side, four strength regimes):
+   worst L3.1: rho/sqrt(rhot^2+tauX^2+tauY^2)                         0.860397943102
+   worst C3.1': rho/sqrt(rEE^2+rEO^2+rO.^2)                           1.000000000000
+   worst C3.1': rho_O./tauX                                           1.000000000000
+   worst C3.1': rho_EO/tauY                                           0.999988261196
+   worst rhot vs rho_EE |diff|                                        0.000000000000
+   worst L3.2(ii): tauX/(2 sinh DeltaX)                               0.083704704031
+   worst rhot/rho (must be <= 1)                                      0.999990205092
+   worst price: sqrt(rhot^2+tauX^2+tauY^2)/rho (min over cases)       1.162252894742
+M4R-HIDDEN-LABEL given the full environment v_w: rho(v_y, v_z) = 0.000000002809, SO(3) channel R~(y,z) = 0.000000000000; given only the projected environment (orbit of w): rho(orbit_y, orbit_z) = 0.360000000000 (exact: 0.36)

@@ -1,0 +1,11 @@
+W2-DRY mode: every state counted, nothing allocated or computed (the values printed below are not read)
+W2-DRY a=0 c=0: max state 810000 entries, open plaquettes at most 4, 1 slice sweeps; peak memory 0.039 GB (S + N + snapshot); multiply-adds so far 9.4128e+08
+W2-DRY a=0 c=1: max state 3240000 entries, open plaquettes at most 4, 4 slice sweeps; peak memory 0.117 GB (S + N + snapshot); multiply-adds so far 1.0505e+10
+W2-DRY a=0 c=2: max state 7290000 entries, open plaquettes at most 4, 9 slice sweeps; peak memory 0.246 GB (S + N + snapshot); multiply-adds so far 6.2161e+10
+W2-DRY a=1 c=0: max state 3240000 entries, open plaquettes at most 4, 4 slice sweeps; peak memory 0.246 GB (S + N + snapshot); multiply-adds so far 6.6988e+10
+W2-DRY a=1 c=1: max state 6480000 entries, open plaquettes at most 4, 16 slice sweeps; peak memory 0.259 GB (S + N + snapshot); multiply-adds so far 1.3022e+11
+W2-DRY a=1 c=2: max state 14580000 entries, open plaquettes at most 4, 36 slice sweeps; peak memory 0.518 GB (S + N + snapshot); multiply-adds so far 5.1014e+11
+W2-DRY a=2 c=0: max state 7290000 entries, open plaquettes at most 4, 9 slice sweeps; peak memory 0.518 GB (S + N + snapshot); multiply-adds so far 5.2470e+11
+W2-DRY a=2 c=1: max state 9720000 entries, open plaquettes at most 4, 36 slice sweeps; peak memory 0.518 GB (S + N + snapshot); multiply-adds so far 7.5815e+11
+W2-DRY a=2 c=2: max state 21870000 entries, open plaquettes at most 4, 81 slice sweeps; peak memory 0.816 GB (S + N + snapshot); multiply-adds so far 2.2509e+12
+W2-DRY-TOTAL peak memory 0.816 GB, multiply-adds 2.2509e+12 (a dry run reads no values)

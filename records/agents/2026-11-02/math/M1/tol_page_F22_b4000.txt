@@ -1,0 +1,17 @@
+START 2026-11-02 06:34:52 engine md5=3d17b9b8cd661c6fcbdd313acbcfe8f6 dress=page F0=22 beta=0.4000
+K=1.0000 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=4.0000 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=2.5000 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=1.7500 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=1.3750 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=1.5625 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.4687 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.4218 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: PASS for alpha in [0.0022, 0.0071]
+K=1.4452 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.4335 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.4276 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: PASS for alpha in [0.0029, 0.0059]
+K=1.4305 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: PASS for alpha in [0.0036, 0.0049]
+K=1.4320 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.4312 KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: PASS for alpha in [0.0039, 0.0045]
+TOL beta=0.4000 kappa* in [1.4312, 1.4320) (PASS at the lower, FAIL at the upper)
+END 2026-11-02 06:40:41

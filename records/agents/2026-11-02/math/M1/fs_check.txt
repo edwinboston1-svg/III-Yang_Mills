@@ -1,0 +1,13 @@
+START 2026-11-02 05:39:02 fs_check.awk md5=9740f5cb0f56585f3ccbedf3b1e88639
+FS-CHECK units=24 (doubled norm 4 each)
+FS-CHECK j=1/2 (A) int D_ab D_cd = eps_ac eps_bd/d: 16 of 16 entries hold, 0 fail
+FS-CHECK j=1/2 (C) RP2 sum tr((2U)^2) = -96+0i (staked -96 = 4*24*nu2) -> HOLDS
+FS-CHECK j=1/2 (B) MOBIUS CUP sum tr(2U 2X 2U 2Y) = -48 tr((2X)^+ 2Y): 576 of 576 pairs hold, 0 fail
+FS-CHECK j=1/2 (B-controls) chi(XY) placement fails at 460 pairs; nu2 -> +1 fails at 432 pairs (both must be > 0)
+FS-CHECK j=1/2 (D) ORIENTABLE sum tr(2U 2X (2U)^+ 2Y) = 48 tr(2X) tr(2Y): 576 of 576 hold, 0 fail
+FS-CHECK j=1 (A) int D_ab D_cd = delta_ac delta_bd/3: 81 of 81 entries hold, 0 fail
+FS-CHECK j=1 (C) RP2 sum tr((4R)^2) = 384 (staked 384 = 16*24*nu2) -> HOLDS
+FS-CHECK j=1 (B) MOBIUS CUP sum tr(4R 4X 4R 4Y) = 128 tr((4X)^T 4Y): 576 of 576 pairs hold, 0 fail
+FS-CHECK j=1 (B-control) chi(XY) placement fails at 256 pairs (must be > 0)
+FS-CHECK j=1 (D) ORIENTABLE sum tr(4R 4X (4R)^T 4Y) = 128 tr(4X) tr(4Y): 576 of 576 hold, 0 fail
+END 2026-11-02 05:39:18

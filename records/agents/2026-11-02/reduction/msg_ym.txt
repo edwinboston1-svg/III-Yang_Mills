@@ -1,0 +1,3 @@
+THE CROSSING CAMPAIGN §20: the coarse hypothesis from the fibre, C^λ ≤ δT_∂/(1 − δ); the constant S tabulated; the route closed for gauge-covariant coarse links (Edwin Boston III, 2026-11-02 07:3x EST)
+
+Hypothesis I follows from Hypothesis II(b) and the coarse kernel's ergodicity coefficient δ once δS/(1 − δ) < 1; the threshold δ* is about 0.003–0.005 for a fibre decaying by e⁻⁸ per coarse unit. For gauge-covariant coarse links δ is of order one at every scale, because pinned boundary data align and gauge-rotate the block-edge links. The coarse measure's small influence comes from averaging over the fibre, which a pinned supremum discards. The next objects are a fibre-averaged δ, or the comparison step on gauge-invariant coarse loops.

@@ -1,0 +1,95 @@
+START 2026-11-02 04:17:27 engine=kp_cert_m1.awk md5=5713766b45bbadd0d8aff874c57d5554 dress=tree F0=22 beta=[5160,5340] alpha=[10,80] extra=-v EVENTAIL=1 -v NCSIG=1
+KP-CERT LOCAL TABLE (S1 section 24: the exact table through k = 8, then the k = 9..24 upper bounds of R2TAB): gamma(s) = 3 max_{k<=s} (r2max(k)^2)^{1/k}: s=1 [3.000000, 3.000000] s=2 [3.000000, 3.000000] s=3 [3.931112, 3.931112] s=4 [3.931112, 3.931112] s=5 [4.149485, 4.149485] s=6 [4.612474, 4.612474] s=7 [4.612474, 4.612474] s=8 [4.612474, 4.612474] s=9 [4.612474, 4.612474] s=10 [4.612474, 4.612474] s=11 [4.612474, 4.612474] s=12 [4.612474, 4.612474] s=13 [4.612474, 4.612474] s=14 [4.612474, 4.612474] s=15 [6.438394, 6.438394] s=16 [6.793160, 6.793160] s=17 [6.793160, 6.793160] s=18 [6.793160, 6.793160] s=19 [6.793160, 6.793160] s=20 [6.793160, 6.793160] s=21 [6.793160, 6.793160] s=22 [6.793160, 6.793160] s=23 [6.793160, 6.793160] s=24 [6.793160, 6.793160]; s>=25 at gamma(24) (the family ends at k = 24); no prefactor 3
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5160 gamma=6/1 F0=22: PASS for alpha in [0.0019, 0.0075]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5162 gamma=6/1 F0=22: PASS for alpha in [0.0019, 0.0073]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5164 gamma=6/1 F0=22: PASS for alpha in [0.0020, 0.0072]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5166 gamma=6/1 F0=22: PASS for alpha in [0.0020, 0.0071]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5168 gamma=6/1 F0=22: PASS for alpha in [0.0020, 0.0070]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5170 gamma=6/1 F0=22: PASS for alpha in [0.0021, 0.0068]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5172 gamma=6/1 F0=22: PASS for alpha in [0.0021, 0.0067]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5174 gamma=6/1 F0=22: PASS for alpha in [0.0022, 0.0066]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5176 gamma=6/1 F0=22: PASS for alpha in [0.0023, 0.0065]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5178 gamma=6/1 F0=22: PASS for alpha in [0.0023, 0.0063]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5180 gamma=6/1 F0=22: PASS for alpha in [0.0024, 0.0062]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5182 gamma=6/1 F0=22: PASS for alpha in [0.0024, 0.0060]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5184 gamma=6/1 F0=22: PASS for alpha in [0.0025, 0.0059]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5186 gamma=6/1 F0=22: PASS for alpha in [0.0026, 0.0057]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5188 gamma=6/1 F0=22: PASS for alpha in [0.0027, 0.0055]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5190 gamma=6/1 F0=22: PASS for alpha in [0.0028, 0.0054]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5192 gamma=6/1 F0=22: PASS for alpha in [0.0029, 0.0052]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5194 gamma=6/1 F0=22: PASS for alpha in [0.0031, 0.0049]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5196 gamma=6/1 F0=22: PASS for alpha in [0.0033, 0.0047]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5198 gamma=6/1 F0=22: PASS for alpha in [0.0036, 0.0043]
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5200 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5202 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5204 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5206 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5208 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5210 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5212 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5214 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5216 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5218 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5220 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5222 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5224 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5226 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5228 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5230 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5232 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5234 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5236 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5238 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5240 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5242 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5244 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5246 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5248 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5250 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5252 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5254 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5256 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5258 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5260 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5262 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5264 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5266 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5268 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5270 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5272 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5274 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5276 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5278 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5280 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5282 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5284 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5286 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5288 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5290 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5292 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5294 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5296 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5298 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5300 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5302 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5304 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5306 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5308 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5310 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5312 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5314 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5316 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5318 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5320 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5322 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5324 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5326 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5328 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5330 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5332 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5334 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5336 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5338 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table beta=0.5340 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0080] (last: the inequality's upper end is above alpha)
+KP-CERT SCAN dress=tree graded=S24-table gamma=6/1 F0=22: beta* = 0.5198 (the largest beta with a certified PASS on the 2e-4 grid, alpha on the 1e-4 grid)
+END 2026-11-02 05:25:26

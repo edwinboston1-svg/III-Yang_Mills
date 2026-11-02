@@ -1,0 +1,8 @@
+S1 ordered page:
+KP-CERT dress=page coef=supplied half=1004952559825/1000000000000 wall=299753710213/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.07314411, 0.07314411] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+S1 ordered local:
+KP-CERT dress=page graded=S24-table coef=supplied half=1004952559825/1000000000000 wall=299753710213/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.07314411, 0.07314411] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+S1 cancel page:
+KP-CERT dress=page coef=supplied half=1005026545648/1000000000000 wall=338036594825/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.05563173, 0.05563173] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+S1 cancel local:
+KP-CERT dress=page graded=S24-table coef=supplied half=1005026545648/1000000000000 wall=338036594825/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.05563173, 0.05563173] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000

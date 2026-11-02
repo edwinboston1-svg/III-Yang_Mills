@@ -1,0 +1,22 @@
+M4R-TURAN beta | kappa_1/2 direct, I2/I1 | kappa_1 direct, I3/I1 | ratio direct (M4) | U(1) I2 I0/I1^2 (M4)
+M4R-TURAN 0.1000 | 0.024989590 0.024989590 | 0.000416406 0.000416406 | 0.666805 (0.666805) | 0.500416 (0.500416)
+M4R-TURAN 0.4764 | 0.117989464 0.117989464 | 0.009324400 0.009324400 | 0.669783 (0.669783) | 0.509259 (0.509259)
+M4R-TURAN 1.0000 | 0.240193724 0.240193724 | 0.039225105 0.039225105 | 0.679893 (0.679893) | 0.538080 (0.538080)
+M4R-TURAN 2.2000 | 0.464479025 0.464479025 | 0.155492681 0.155492681 | 0.720739 (0.720739) | 0.637994 (0.637994)
+M4R-TURAN 2.3000 | 0.479279078 0.479279078 | 0.166471168 0.166471168 | 0.724706 (0.724706) | 0.646473 (0.646473)
+M4R-TURAN 3.0000 | 0.567923649 0.567923649 | 0.242768468 0.242768468 | 0.752683 (0.752683) | 0.701153 (0.701153)
+M4R-TURAN 5.0000 | 0.719340581 0.719340581 | 0.424527535 0.424527535 | 0.820421 (0.820421) | 0.805187 (0.805187)
+M4R-TURAN 10.0000 | 0.854185308 0.854185308 | 0.658325877 0.658325877 | 0.902270 (0.902270) | 0.900470 (0.900470)
+M4R-TURAN max deviation from M4's printed six-digit ratios: 4.9e-07
+M4R-MILLER beta = 2.2: I2/I1 by recurrence 0.464479025270, by quadrature 0.464479025270; I3/I2 0.334767928941 vs 0.334767928941
+M4R-LOGCONCAVE min over beta in [0.01, 30] and n <= 40 of (I_{n+1}^2 - I_n I_{n+2})/I_{n+1}^2 = 1.9431e-02 at beta = 30.00, n = 40 [POSITIVE]
+M4R-MONOTONE I3 I1/I2^2 on beta in [0.01, 30]: nondecreasing, range [0.666668, 0.966741]
+M4R-CONV the 1-fold convolution of Wilson weights at beta = 0.01: kappa_1/kappa_1/2^2 = 0.666668 (the claimed bracket's floor 2/3 = 0.666667)
+M4R-CONV the 2-fold convolution of Wilson weights at beta = 0.01: kappa_1/kappa_1/2^2 = 0.444446 (the claimed bracket's floor 2/3 = 0.666667)
+M4R-CONV the 3-fold convolution of Wilson weights at beta = 0.01: kappa_1/kappa_1/2^2 = 0.296298 (the claimed bracket's floor 2/3 = 0.666667)
+M4R-CONVLAW beta = 2.2: expected rho = kappa_1/2 = I2/I1 = 0.464479025, SO(3) channel = kappa_1 = I3/I1 = 0.155492681, kappa_3/2 = I4/I1 = 0.040408076
+M4R-LAW Wilson-convolution beta=2.2 [14,10,20] n=2800 total mass 0.999999999999956, min pi_ij 5.877e-12
+M4R-TOP Wilson-convolution beta=2.2 [14,10,20] the marginal pair is a singular pair of value 1: |Mv-u| 1.77e-16, |M^T u - v| 1.77e-16
+M4R-RHO Wilson-convolution beta=2.2 [14,10,20] rho (all functions) = 0.464479025   next singular values 0.464479025 0.464479025 0.464479025
+M4R-CHAN Wilson-convolution beta=2.2 [14,10,20] rho_EE = 0.155492681 | rho_OO = 0.464479025 rho_EO = 0.000000000 rho_OE = 0.000000000 rho_O. = 0.464479025 | half-integer rho_oo = 0.464479025
+M4R-SHARE Wilson-convolution beta=2.2 [14,10,20] rho_EE/rho = 0.334768 rho_OO/rho = 1.000000 rho_EE/rho_OO^2 = 0.720739 | exact block bound 0.489815005 (ratio 1.0545471) [MET]

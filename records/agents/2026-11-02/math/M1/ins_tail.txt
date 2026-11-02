@@ -1,0 +1,11 @@
+  if (EVENTAIL) {   # M1 2026-11-02 (WORK.md section 1): the tail over EVEN F >= F0 + 2 only (Lemma T1, closed sets have even size) with
+    # N(F) <= 5^{F-2} (Lemma T2, the last closing step is forced): 3 (4C/25) sigma(F0+2) (rK)^{F0+2} / (1 - (rK)^2).
+    # K = TKN/TKD and C = TCN/TCD multiply the TAIL ONLY (default 1): never the enumerated leaves, never the dressing.
+    rkh = mul_hi(rh, KTH); rkl = mul_lo(rl, KTL)
+    if (rkh >= SCALE) { WHY = "rK >= 1: the even tail does not close"; return }
+    r2h = mul_hi(rkh, rkh); r2l = mul_lo(rkl, rkl)
+    sgh = SCALE; for (j2 = 2; j2 <= 2 * J; j2++) sgh += (j2 + 1) ^ 2 * pow_hi(div_hi(AH[j2], UL), F0 + 2); sgh += 3 * (2 * J + 2) ^ 2 * pow_hi(div_hi(AH[2 * J + 1], UL), F0 + 2)
+    sgl = SCALE; for (j2 = 2; j2 <= 2 * J; j2++) sgl += (j2 + 1) ^ 2 * pow_lo(div_lo(AL[j2], UH), F0 + 2)
+    tail = mul_hi(mul_hi(cdiv(4 * pow_hi(rkh, F0 + 2) * SCALE, 25 * (SCALE - r2h)), sgh), CTH)
+    tl = mul_lo(mul_lo(fdiv(4 * pow_lo(rkl, F0 + 2) * SCALE, 25 * (SCALE - r2l)), sgl), CTL) }
+  SUMH = sum_h; TAILH = tail

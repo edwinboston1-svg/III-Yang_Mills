@@ -1,0 +1,29 @@
+START 2026-11-02 05:31:27 lp_check.awk md5=acee6a7206654128d76dd3d75da5d382 table md5=ac52a7d28cf5ebcd0900b423ba12d300
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=3
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=96
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=24
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=96
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=24
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=24
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=192
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=48
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=96
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=192
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=192
+EQUALITY deg=22222222 d=8 a=8 n4=0 n6=0 K=-4 beta2=0 orbit=48
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=3
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=96
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=24
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=192
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=96
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=192
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=192
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=24
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=24
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=48
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=96
+EQUALITY deg=44444444 d=16 a=8 n4=8 n6=0 K=4 beta2=7 orbit=48
+EQUALITY deg=66666666 d=24 a=8 n4=0 n6=8 K=12 beta2=14 orbit=1
+LP-CHECK rows=559 (empty star skipped: 1) members=131071 odd-degree=0 degree-sum-mismatch=0 identity d=a+n4+2n6 fails=0
+LP-CHECK violations=0 equality-orbits=25 equality-members=2071 smallest-positive-slack=3/48
+END 2026-11-02 05:31:30

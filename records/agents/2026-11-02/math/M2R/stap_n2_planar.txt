@@ -1,0 +1,2 @@
+geometry planar n=2: object plaquettes 8, object links 22 (engine's check value 22)
+TOTAL planar n=2: 0 staples hold an object link read from the datum, over 0 distinct non-object plaquettes; staples five=12 four=10 other=0; outside links 176

@@ -1,0 +1,4 @@
+S3 ordered page: W* in [8349609375, 8422851562]e-12 ; at lo: PASS mix=0.000000000000 ; at hi: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+S3 ordered local: W* in [14062500000, 14135742187]e-12 ; at lo: PASS mix=0.000000000000 ; at hi: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+S3 cancel page: W* in [8349609375, 8422851562]e-12 ; at lo: PASS mix=0.000000000000 ; at hi: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+S3 cancel local: W* in [14062500000, 14135742187]e-12 ; at lo: PASS mix=0.000000000000 ; at hi: FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000

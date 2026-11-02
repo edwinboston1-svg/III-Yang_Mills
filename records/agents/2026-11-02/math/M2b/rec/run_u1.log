@@ -1,0 +1,17 @@
+u1_n4_b1.2_N1_L1_ordered rc=0 3 s: rhoA=0.028175546 Cgrid=0.036298518
+u1_n4_b1.2_N2_L2_ordered rc=0 3 s: rhoA=0.098062918 Cgrid=0.132984184
+u1_n4_b1.2_N3_L3_ordered rc=0 6 s: rhoA=0.117466885 Cgrid=0.162300491
+u1_n4_b1.2_N4_L4_ordered rc=0 9 s: rhoA=0.120029163 Cgrid=0.166245986
+u1_n4_b1.2_N1_L1_cancel rc=0 3 s: rhoA=0.030596981 Cgrid=0.039189527
+u1_n4_b1.2_N2_L2_cancel rc=0 4 s: rhoA=0.116699136 Cgrid=0.153440684
+u1_n4_b1.2_N3_L3_cancel rc=0 4 s: rhoA=0.144059893 Cgrid=0.191013120
+u1_n4_b1.2_N4_L4_cancel rc=0 5 s: rhoA=0.147489818 Cgrid=0.195794131
+u1_n4_b0.9_N1_L1_ordered rc=0 3 s: rhoA=0.015521285 Cgrid=0.019857142
+u1_n4_b0.9_N2_L2_ordered rc=0 3 s: rhoA=0.056303000 Cgrid=0.073586505
+u1_n4_b0.9_N3_L3_ordered rc=0 8 s: rhoA=0.064726015 Cgrid=0.085036342
+u1_n4_b0.9_N4_L4_ordered rc=0 10 s: rhoA=0.065396369 Cgrid=0.085951032
+u1_n4_b0.9_N1_L1_cancel rc=0 4 s: rhoA=0.016112492 Cgrid=0.020549973
+u1_n4_b0.9_N2_L2_cancel rc=0 5 s: rhoA=0.063217970 Cgrid=0.081273661
+u1_n4_b0.9_N3_L3_cancel rc=0 8 s: rhoA=0.073646349 Cgrid=0.094857236
+u1_n4_b0.9_N4_L4_cancel rc=0 9 s: rhoA=0.074471523 Cgrid=0.095933956
+RUN-U1-DONE

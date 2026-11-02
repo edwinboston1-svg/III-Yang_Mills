@@ -1,0 +1,9 @@
+M4CHAN-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+M4CHAN-SCHUR w2n4_W3L2.2026-11-01b.ordered.txt: LMAX=2, 0 channel blocks missing; class moments recovered to 1.28e-14 [MET]
+M4CHAN-KAT w2n4_W3L2.2026-11-01b.ordered.txt[SCHUR] K-real: P(0,0) = 0.999999999999991, max|Im P| = 8.674e-19 [MET]; basis 14 real functions to spin 2/2
+M4CHAN-KAT w2n4_W3L2.2026-11-01b.ordered.txt[SCHUR][G30,T16] K-sum: max|Phi - E - K| = 7.300e-15 [MET]
+M4CHAN-POS w2n4_W3L2.2026-11-01b.ordered.txt[SCHUR][G30,T16] min joint density on the tau rule 3.4680e-01; min p_A 5.5310e-01, min p_B 5.5310e-01; min eigenvalue of Phi_A 8.414e-01
+M4CHAN-RHO w2n4_W3L2.2026-11-01b.ordered.txt[SCHUR][G30,T16] rho = 0.031498032 | SO(3) channel rho_EE = 0.000274590 | O-channel: rho_OO = 0.031300941 rho_EO = 0.002480764 rho_OE = 0.002480764 rho_O. = 0.031399089 rho_.O = 0.031399089 | half-integer PW rho_oo = 0.031034503
+M4CHAN-SHARE w2n4_W3L2.2026-11-01b.ordered.txt[SCHUR][G30,T16] rho_EE/rho = 0.008718   rho_OO/rho = 0.993743   rho_EE/rho_OO^2 = 0.280266
+M4CHAN-TAU w2n4_W3L2.2026-11-01b.ordered.txt[SCHUR][G30,T16] tau_A = 0.063077536 tau_B = 0.063077536 | Delta_A = osc_V F = 0.531433 (max|F| 1.08812) -> bound 0.153011 | Delta_B = 0.531433 (max|F| 1.08812) -> bound 0.153011 [tau <= bound: MET]
+M4CHAN-BOUND w2n4_W3L2.2026-11-01b.ordered.txt[SCHUR][G30,T16] Lemma 3.1: (rho_EE^2 + tau_A^2 + tau_B^2)^(1/2) = 0.089205529, ratio to rho 2.8321 [MET]; exact blocks (rho_EE^2 + rho_EO^2 + rho_O.^2)^(1/2) = 0.031498133 [MET]

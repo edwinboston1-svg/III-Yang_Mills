@@ -1,0 +1,1960 @@
+Commun. Math. Phys. 122, 175-202 (1989)
+
+Communications in
+MathPehmyasticicsal
+© Springer-Verlag 1989
+
+Large Field Renormalization. I. The Basic Step of the IR Operation
+Tadeusz Balaban*
+Department of Mathematics, Boston University, Boston, MA 02215, USA
+
+Abstract. We construct the renormalization operation of the expressions connected with the large field regions. This operation, denoted by IR, removes the main obstacle to prove the ultraviolet stability offour-dimensional gauge field theories. The proof will be completed inthe second part ofthis paper.
+
+O. Introduction
+Let us repeat briefly why it is necessary to renormalize the large field expressions, and what is a general structure of the operation U. Consider a large plaquette variable in the first step. The restrictions on these variables are the same as in [16] (this refers to References in the paper [I]), so we have | U(dp) -- 11 ^ #oPo(#o) f ° r a plaquette peTl9 where po{go) = A0{\ogg02)Po with a positive integer p 0 . The term in the Wilson action, corresponding to the plaquette p, gives the estimate
+
+exp
+
+-i-[l - Retr t/(p)]"U exp(-po(flfo)) = ^o(te^'a)M"1.
+
+(0.1)
+
+0
+
+J
+
+For d<4 we have g0 = g1/m~d\ and the bound above can beestimated by an arbitrarily large power of . This is enough tocontrol expressions arising inthe
+
+large field regions surrounding the plaquette p for all steps of the procedure, i.e.,
+
+until we reach the unit lattice. For d= 4 the bare coupling constant behaves asymptotically as (a + blog"1)"1/2, for-»0, with some positive constants a,b,
+
+hence the bound does not give any positive power of. It is still small for  small,
+
+and it controls a large number ofsteps, but this number is a small fraction of the
+
+total number of steps. Thus, for some large field regions there is a difficulty in
+
+continuing the procedure of [16], the small factor arising from large fields in this
+
+region does not control further steps. Insuch situations we have to change the
+
+procedure in order to improve the small factor, i.e., we have to be able to renormalize
+
+the expression corresponding to the large field region. There are several possible
+
+* Research supported in part bythe National Science Foundation under Grant DMS-86 02207
+
+176
+
+T, Balaban
+
+ways of doing it, the one chosen in this paper is closest to the method of G. Gallavotti etal. in [19,20], and can be described in the simplest way as follows: a large field expression is replaced by the corresponding small field expression in such a way, that integrals of the densities are unchanged. Let us elaborate this description. A density p after some number of steps is represented in the form
+
+where the sum is over large field regions Z, and V is a gauge field variable. A region Z is decomposed into disjoint subregions Z', Z", Z = Z' u Z'', in the following way: Z" is a union of components of the region Z, for which the small factors connected with large field control some number of next steps, Z' is a union of remaining components, i.e. components for which the corresponding expressions require a renormalization. For such a decomposition we take the density p(Z", V\ and we define the operation U as follows:
+
+We will prove that the densities are positive, and the inegration domains in the integrals above are nonempty, hence the denominators are positive, and the operation 1R is well defined. It satisfies the basic normalization property
+
+$dV(Rp)(V)= $dVp(V).
+
+(0.4)
+
+Consider now the expression on the right-hand side of the definition. It can be written as a double sum over domains Z', Z", Z' c Z"\ and the summation over Z1 can be applied to the quotients. The quotients are still small, because some small factors in the regions Z' are left for the densities in the numerator. We localize them, trying to decouple components of Z', i.e., we write a polymer expansion, and then we exponentiate it. Thus, we obtain the representation
+
+where the last sum is over X such, that Xc\Z"c 0. Using this representation, we rewrite the definition of the operation U:
+(Up)(V) = 
+Z"
+Now the advantages of applying such an operation are clear, the densities on the right-hand side still have enough small factors to control the given number of steps, and the expression in the exponential can be treated in the same way, as the small field effective actions are treated in [I],in particular it can be renormalized in the same way. This renormalization is the necessary renormalization of the expressions connected with the large field regions, and it makes the whole renormalization group procedure convergent, i.e., we can apply all the transformations needed to reach the unit lattice, and we control all the steps of the procedure.
+The above description stresses only some general ideas underlying the method
+
+Large Field Renormalization
+
+177
+
+used in this paper. The actual procedure is more complicated, and it also differs from the one presented above in some technical aspects, for example in (0.3), (0.5) we take the denominators equal not the integrals of the whole densities (Z'\ V), but to the integrals of some parts of these densities. More precisely, we take the parts localized in neighborhoods of the domains Z', so they do not depend on the large field regions Z", and they are determined by small field effective actions only. These general ideas are very simple and natural. They have many possible variations, and they can be realized in many different ways. Let us mention, that similar ideas were expressed in private conversations by other people, in particular by G. Gallavotti and G. Benfatto, J. Imbrie and D. Brydges, J. Feldman and J. Magnen.
+
+1. The Basic Step of the Operation U
+In this section we describe in detail the fundamental part of the [R-operation. For simplicity of notation we consider the kth density, instead of fc -f 1st. Each term in the expansion (2.18) [III] has a large field region ck. It is a union of connected components. We consider components of almost the minimal possible size. Each renormalization step adds at least ten layers of MKfc-cubes, hence the size must be greater than 20 MRk. Passing to the next step it is usually rescaled by I T 1 , but in some steps the number Rk decreases by the factor L"1, and adding ten new layers of M/^-cubes we get a region with a size greater than 40 MRk. It is easy to see that the minimal size is approximately equal to 42(L/(L-- \))MRk. We consider components of sizes smaller than, or equal to 100 MRk. More precisely, we consider the class of components such that each satisfies the following two properties:
+(i) it is contained in a cube of the size 100 MRk, (ii) in the preceding N renormalization steps no new large field regions were
+created inside this component, and the previous regions contained in it satisfy the condition (i) on the corresponding scales.
+According to our ru)e of construction of the large field regions, for such a component all the regions connected with the last N steps are rectangular parallelepipeds. It will simplify some geometric considerations in the future. Conditions on N will be formulated in constructions of this section. Let us denote the union of the above class of components by Z. For simplicity we denote intersections of the regions Zj with Z by Z} also, hence Zk is identified with Z. We write the intersections explicitly only if it may lead to a misunderstanding. Thus we write the factorization property (2.19) [III],
+
+k(Zk) = k(ZknZc)Jk(Z) = Jk(ZknZc)  W,),
+= 1
+
+(1.1)
+
+where Z = (J Xt is the decomposition into disjoint components. In this section
+i= 1
+we do not make any changes in the operation Jk(Zk n Zc), therefore we will usually omit it in the formulas.
+
+178
+
+T. Balaban
+
+We consider Tk(Z)exp Ak, and weusethe above described simplified notation. Using theconditions (i), (ii), andthe factorization property (2.22) [III], we write
+h
+j = k-l
+where h=k -- N, and we have written explicitly the first and the last characteristic functions in theproduct of the last N one-step operations. These operations are given bythe formula (2.21) [III], inwhich the functions (,  have the simplest form, namely bythecondition (ii) no large field characteristic functions areincludedin them. Wewrite these functions now, because we have tocompare them with other characteristic functions. Thus (cj+1 nZj±)(j+ x n Z 7 + x)is equal tothe product of the following seven groups of functions:
+
+Usuv\Ujn{Vj,dp)-\\<0->)2\ for ·c(;V;+1)nZ,
+\ sup \U]+a.(Vi+1,dp)- 1| <j+1(Lk-J-)2)
+
+(1.3)
+(1.4)
+
+x({\Vj(y,x)-l\<£j}) for y  (  7 ~  \  / + 1 )  + 1 ) n Z ) xeB(y), xy,
+
+iexp--2-[l-Retr^O;,x)]l
+
+z
+
+L 9j
+
+J
+
+for ye(j\\j+iyJ~> unZ,xeB(y),x y,
+
+sup \Vj(b)(Vm)y-'\<2X]
+
+(1-5)
+(1.6)
+(1.7)
+
+sup ^lexpigjAjW^^^ibWgib))-1
+
+- 1| < 2<5 J (1.8)
+
+for ·'c (j+1\J.t
+
+(\ sup \Aj(b)\<grJ
+
+(1.9)
+
+for 'cW+i\^;+i)Z.
+The cubes  in(1.3) are theLM2i^7-cubes of the partition of the lattice TL-J, or theL ^ - ^ L M ^ - c u b e s of the lattice T9 and thecubes Q 'in(1.4), (1.7)-(1.9) are theLM2Rj+-cubes of the partition of the lattice TL-U+D.
+As a first step ofthe [R-operation wetrytodoa part ofthe integrations in the operations TU)(Zj) in(1.2), namely theintegrations with respect to the variables
+localized ina neighborhood of the boundary <9Z; . There are two reasons for doing
+
+Large Field Renormalization
+
+179
+
+this. The first is that the functions (1.5)--(1.9) are not gauge invariant with respect to gauge transformations of the variables Vj9 and we would like to choose a convenient gauge fixing for the integration with respect to Vj restricted to j in (1.2). The second, more important reason, is that we would like toget a new, much smaller large field region Z, in order to be able to fit theconstructions of this section to the inductive assumptions on the effective action. To specify the integrations wedefine a new sequence of the large field regions. Let us recall that the domains fn are unions of L~{k~j)MRf cubes of the lattice T. Take the smallest positive integer iV0 such, that L~No+MRk_No +1 =M. It is easy to see that either there is exactly one such integer, or there are two. We assume that N > No, in fact it will become clear later that N is much greater than No. Define
+
+k-No+1 ~ K^k-No) -- \dk-N0+ 1
+and complete these two sets toa sequence Z"k, Z"k _,..., Z"k _No +2 , Z'k _No +1 in such a way that the complements of these sets form anadmissible sequence of domains based onpartitions into M-cubes in the corresponding scales. Thus Z'k\ Z'k\Z"k_ are unions of M-cubes of the lattice T,and Z'k'\ Zk_1 are separated by one layer of M-cubes. Similarly, Z £ _ l 5 Zk_1\Zk_2 a r e unions of L'1 M-cubes of this lattice, and Z'k_ 1, Z^_2 are separated by one layer ofL~1 M-cubes, and so on. Next, define
+
+Zf; = (r5)cnZ for ; =k - No, k-N0 - l , . . . , / c - N + 1=h + 1,
+
+Z"j=ZJ for ; =M - 1 , . . . , 1 .
+
+' (
+
+}
+
+This is the new sequence of the large field regions. We define new domains  by
+
+c) for j = k, k- 1,.. ., 1, 'j = j for ; =/z,/z-l,...,l.
+
+' (
+
+}
+
+The sequence {'j} is an admissible sequence, and the corresponding generating set is denoted by Uk. Thus
+
+k -- v fe / ?
+
+0 --   .
+
+yl. 1 J J
+
+By the definition all components of the domains Z) are also rectangular
+parallelepipeds for j =h, h + 1,..., fc. We would like todo the integrations in Jij)(Zj+ x) with respect to the variables
+localized in Z ;+x \Z'-+ 1J =h,...ik--l.Itis most convenient to do the integrations successively in this order, starting with j --h, because then we have almost the
+same situation as inthe one-step renormalization transformations, and wecan use
+the results of the third section. Infact, the situation is simpler than there, and we
+have to make only few comments.
+Each integration gives a newbackground field, connected with some deter-
+mining sets. Wedescribe now this sequence of determining sets. We start with Bfc, which we write as
+
+Z\ (1.14)
+
+180
+
+T. Balaban
+
+Here, and in the subsequent formulas, the symbols j mean the intersections of
+
+these sets with the region Z. Thefirst integration is with respect to the variables
+
+localized in Z+1\ZJ,'+1. The relevant part of the integration is with respect to the
+
+variables Vh on (ch+\Zl+)nZ,
+
+restricted by theconditions Vh=Vh+1.ln effect,
+
+the set h is resplaced by the two sets {hr\Z'i+f\ hnZ^+1. The first set is
+
+combined with h+1, and the union can be written as (ch + 2\Z'J+1)ih \ +1 Hence
+
+the next determining set is defined by
+
+u(Bkn/2£nZ),
+
+(1.15)
+
+In the second integration we integrate with respect to the variables Vh+ 1 on
+
+{ch+2\Zl +2)nZ.
+
+In effect,
+
+the
+
+set
+
+{ch+
+
+\Zl ){h+1)
+2 +
+
+is replaced by the two sets
+
+(ch+2\Z'U2){h \ +2 ( Z ; ; + 2 \ Z  + 1 ) ( h + 1 ) =  + i . The first set is combined with h + 2,
+
+and the union can be written as (ch+3\Z^+2)(h \ +2 This determines the set Uk2).
+
+In
+
+general,
+
+the set
+
+U ~ j h) k
+
+is
+
+defined
+
+by
+
+^^ (1.16)
+
+for j = h -f 1,... ,fc -- 1. For j = k we replace the sequence in the curly bracket above
+by (k\Zk)ik\ k^1,...,'l , +1 hCZl+. The first set in this sequence is equal to cknk, and we combine it with the set k in Bkn(kuZc). The union is equal to k, hence
+
+Take any of the determining sets defined above. The gauge field Vj is defined on the whole / h component of the set, therefore the collection of the restrictions of these fields defines a gauge field on the determining set, analogously to the field V defined on Uk. We denote these fields by V also, in fact they are defined by the same equality in (2.10) [III]. The determining set B£°andthegauge field V define the function
+
+UP = U{kn\V) = U(Ekn\ V).
+
+(1.18)
+
+These configurations are background fields in the successive integrations.
+We need also a sequence of determining sets, and the corresponding sequence of functions, localized in the region Z. Thedetermining sets B[l)(Z) are defined as above, by the equalities (1.14)--(1.17), but the set Bfcn(2feuZc) is replaced by Ek(Z)nk. Thus, according to the definition (2.14) [III], they may be defined as
+
+Uikn)(Z) = Eikn)uEk(Z).
+
+(1.19)
+
+The corresponding functions are defined by the gauge fields V restricted to k,
+
+and
+
+by
+
+M (Qs Bk{Z) k
+
+Vk) restricted to Zc\k,
+
+thus
+
+n i V V[Znai)).
+
+(1.20)
+
+These functions play an important role in subsequent definitions of characteristic functions, and in other constructions. For the last functions in the sequences
+
+Large Field Renormalization
+
+181
+
+(1.18)--(1.20) we introduce the following notations
+
+We do the first integration with respect to the variables Ah, Vh restricted to Zh+i\Z'i+1 We follow the procedure of Sect. 3 [III], so we introduce at first new
+characteristic functions in such a way that the function restricting the fluctuation
+field does not depend on the background field. We start with the decomposition of unity 1 = [0) + (1 - [0)), where
+
+(1.22)
+
+More precisely, we introduce this decomposition in each component of Z separately.
+
+In
+
+components with
+
+the function
+
+1
+
+--
+
+{ 0) k
+
+we
+
+have
+
+introduced new
+
+large fields,
+
+therefore they do not satisfy the condition (ii), and we exclude them from the region
+
+Z. They are not changed by the subsequent operations, and we treat them in the
+
+same way as the remaining large field regions. We denote the union of components
+
+with functions j<0) by Z again. The restrictions in the function (1.22) imply that
+
+the characteristic functions (1.3) for j = h and \Z]^-{^+1)c\Zh are equal to 1.
+
+Thus the function h{h\^+t) in (1.2) is replaced by }kO)h{Zhnh). We introduce
+
+the
+
+next
+
+decomposition
+
+of
+
+unity
+
+1
+
+=
+
+ 1] k
+
++ (1 -- [1})
+
+in
+
+components
+
+of
+
+Z,
+
+where
+
+{Lk-h~)2 ox peU2\Zl+X\.
+
+(1.23)
+
+We redefine Z again removing these components, for which the functions 1 -- }k) were introduced. For components of Z the restrictions in (1.23) imply that all the
+
+functions (1.4) for; = h are equal to 1. To remove {k\ and the other characteristic functions in (1.5)-(1.8), we have to introduce restrictions on the fluctuation field.
+
+This, and the other operations connected with the integration, will be discussed
+
+in a general case.
+
+We assume, that after n integrations the only characteristic functions which
+
+remain, and which are connected with these integrations, are kn)h(Zh n h). The
+
+definition
+
+of
+
+{ n) k
+
+is
+
+rather
+
+complicated,
+
+and
+
+it
+
+has
+
+a
+
+different
+
+form
+
+for j
+
+=h+n^
+
+k0
+
+=
+
+k --N0, and for j>k0. In the first case the integration regions are disjoint, and
+
+the functions are defined by generalizations of (1.22) and (1.23). In the second case
+
+some integration regions overlap, more exactly the regions with indices greater
+
+than fc0, and for these we change the regularity conditions by a factor, which is a power of some number, the power being proportional to a number of overlapping
+
+regions. We write the definition in the second case,
+
+-- 1| < ( 1 -- (l -~2~{j~h + 1)))h(Lk~h)2 for p e Z J + 1 n i 2 A ,
+
+182
+
+T. Balaban
+
+-- 1\ <(1 ~ (l -2-^k^^))k0(Lk-^)2 -il<0-iff(i-2~0"~^
+
+for peZ'k'0+\Z'^
+
+i8(l -2--fc0-1)))JLgfc0 +2(I-k°-2/7)2 for
+
+_1(Lfc-^17/)2 for 2 for for
+
+\U£&dp)-l\<c(l -±)j(Lk-j)2 forpej-\j+  ,
+
+(1.24)
+
+where c=\ for j < k, and c= 3 for j =fc.Wechoose the number  satisfying
+
+0 < ^ 1/2, but not too small, e.g., we can take = 1/2. The number Lo satisfies 2 ^ L O < 1 / 2 L , e.g., we can take LO = (1/2)(L-1). The definition (1.24) is so complicated because of the needs of this inductive construction, butbasic properties
+
+of
+
+ n) k
+
+are
+
+simple.
+
+They
+
+will
+
+be described
+
+for n = N, i.e., for j =
+
+k.
+
+We assume further that the effective action Akn\ obtained after the n integrations,
+
+depends on the background field U(k\ and has the form (2.23) [III], with some
+
+new boundary terms only, i.e., some new terms in B>k. Now we will analyze the
+
+next, n + 1st integration. We integrate with respect to thevariables Aj9 Vj localized
+
+in Zj+\Z'j+1. Itis a part of the operation T(j)(Zj+1), and we have toconsider
+
+the following integral
+
+UApC*(^ CAj)^ 'jo^^ ^iVjVr^i^^oxpA^^ ' '
+
+(1.25)
+
+where n=j -- h, and the quadratic form in the exponential is written explicitly in
+
+(2.21)
+
+[III],
+
+in this
+
+integral
+
+we introduce
+
+the decomposition
+
+of unity
+
+1
+
+=
+
+ n+1) k
+
++
+
+(1
+
+--
+
+ ) n+1) k
+
+for
+
+each
+
+component
+
+of Z,
+
+and we exclude
+
+from
+
+Z thecomponents
+
+with
+
+the
+
+large
+
+field
+
+functions
+
+1--
+
+ . ( +1) k
+
+The function
+
+( +1) k
+
+does not depend on
+
+integration variables, and we have to consider the integral (1.25) multiplied by
+
+ . n+1) k
+
+In this integral the gauge fixing terms (1.6) were introduced on the domain
+
+J+1\j+1, andthey constitute apart of the function (cj+1). All the expressions
+
+and the functions in (1.25) are invariant with respect to gauge transformations v
+
+defined on the set ((J+^XZj+JnT^, and equal to 1 on the intersection of
+
+this set with Tu+1\ Using the Faddeev- Popov procedure we introduce the gauge
+
+fixing terms (1.5), (1.6) on this set, thus we get the gauge fixing terms on the whole
+
+integration region (cj+\Z"j+)nTU).
+
+Next, we introduce restrictions on an
+
+approximate fluctuation field. Define the configuration
+
+«),
+
+(1.26)
+
+and the characteristic function
+
+) ) " 1 - 1|<2'j for be{cj+x\Z'j+)W}\
+
+(1.27)
+
+Large Field Renormalization
+
+183
+
+where ] = gy4iPi(#/), P i ( ^) = (\og gj2)p\ and p1 < po; other conditions on p1 will be formulated later. Introduce the decomposition of unity 1 = 'j + (1 -- }), for each
+
+component of Z, under the integral (1.25), and exclude from Z the components
+
+with the large field functions 1 --'j. In the remaining region, which we denote
+
+again
+
+by
+
+Z, we
+
+obtain
+
+the
+
+integral
+
+(1.25)
+
+multiplied
+
+by
+
+ \ n+ k
+
+and with the function
+
+'j inside. Finally, let us recall that the functions ($, given by (1.9), are present
+
+in (Zj+nJ ) + 1 for ' <^Zj+1\ZJ+l. We complete them to the whole domain
+
+Zj+1nj+1,
+
+introducing the decomposition of unity
+
+1=  Z? +( l -  X®)
+
+(1-28)
+
+D'cr +/i1
+
+\
+
+Q'<=J+1\j+l
+
+/
+
+for each component of Z, and excluding from Z the components with the large
+
+field functions. Let us notice that all the characteristic functions introduced above
+
+depend on the field variables localized in the corresponding components of the
+
+large field region Zk. This is an important part of the inductive assumption for the effective density, more precisely for the operation Tk(Zk). It is also clear how this operation has been changed by the above decompositions, but we will not
+
+attempt to give a systematic description of all possible cases; there are too many
+
+of them, and we need only general properties of the operation.
+
+Now we will prove that the restrictions introduced by the new characteristic
+
+functions
+
+imply
+
+that
+
+the functions
+
+(1.3),
+
+(1.4),
+
+(1.5),
+
+(1.7),
+
+(1.8),
+
+{ n) k
+
+are
+
+equal
+
+to
+
+1.
+
+More precisely, we have
+
+Xk /^j+ nt2j+i)\
+
+11
+
+
+y((jl )c\Z"J+ 1 )  +eB(v),#v
+
+
+
+cZj41n
+
+
+
+ -exp-^Cl-Retr^x^)]"])
+
+(1.29)
+
+for j + 1 < k, and for j + 1 = k the right-hand side above is multiplied by
+Let us start with a function (1.3). The cube  is contained in j\J+1, hence D ^ C ^ J - I W J + I . On this domain the configuration U^ satisfies the last inequality in (1.24) (with c = 1), and the constraints MJ(kn)) = Vj. The same constraints are satisfied by Uu on ~3 Reasoning as in the part of Sect. 3 [III] between the formulas (3.6), (3.8), we get
+
+The field in the argument of the function H  is equal to 0 on almost the whole cube L P 4 , except a boundary layer of the width 2M1 in the lattice T,  = L~j. On this boundary the field can be bounded by 22d2r.j9 by the argument leading
+
+184
+
+T. Balaban
+
+to theestimate (1.65) in [14]. Theexponential decay property of H j  implies that on the cube ~ this function and its covariant derivatives can be bounded by
+B3Qxp(-2M2Rj)22d2j< (/l)j. Estimating dUjn as in (3.8) [III] we obtain
+
+^ ~ ^ ~' 2 <  y ( L / c
+
+) 2 f o r pcz
+
+(131)
+
+Thus thefunctions (1.3) in the product on the left-hand side of (1.29) are equal to 1. The same holds for the functions (1.4), because the argument above applies to an arbitrary j , hence for j + 1, except when j + 1 = k. In this case we leave the functions (1.4)as k(k4) on the right-hand side of (1.29). For the functions (1.5) we use the inequality (3.9)[III], only with k replaced by j , and the configuration V{^> replaced by V. From the restrictions (1.27) we get the bound O(\)'j<&p hence the functions (1.5)are equal to 1 also.
+Now we consider the functions (1.7), (1.8). We start with the second, more difficult case. At first, notice that the restrictions introduced by the functions {$ in (1.29) imply the bound
+
+j^^^^
+
+j
+
+j
+
++
+
+
+
+j
+
+$
+
+(1.32)
+
+The configuration V z is defined on Z]^\\Z] by
+
+y% ^ = Mj(U(U(Zj+ x\Zj)u Bk, M(QS*V)\
+
+(1.33)
+
+where the determining set was defined in (2.14) [III]. In fact in the above case it
+
+is simply given by Ej+1(Zj+1)\
+
+uEj(Zcj)[c , and the configuration QS*V is
+
+equal to Qf+{Vj+ x on j+ nZj+J1, and to QfPj on cj+1nZCj. Now we represent
+
+the configuration U( ) in the standard way, as in (1.30)
+
+= U{E{Zj+ A Z ^ u Uk9 lM'(Qs)(M'(U(kn
+
+This implies
+
+Vj+Zj = (Mj{exp H)Mj{U{n + 1)))u^
+
+= expM{j)V,
+
+(1.34) (1.35)
+
+where
+
+expM\b) = u(b-)expiQj(H,b)Rj(uj(b+)).
+
+(1.36)
+
+From the equalities and bounds (106)-(108), (159)--(163) in [12] we obtain
+
+sup | H|.
+
+(1.37)
+
+Large Field Renormalization
+
+185
+
+Consider now the field in the argument of the function H. On the domain
+
+j+1nZj+,
+
+except a boundary layer of the width 2LM1 at the boundary cZj+1,
+
+this field is equal to 0. On the boundary layer it can be bounded by 22d2j+.
+
+Similarly, on the domain ^nZp except a boundary layer of the width 2M1 at
+
+the boundary ZcJf the field is equal to (i/)\og [Vj(V)~~], hence it can be bounded
+
+by 4p as it follows from the restrictions in (1.27). On the boundary layer it can
+
+be bounded by 22d28j. From this, and the exponential decay property, it follows that
+
+\H\<B3{4/j +
+
+Qxp{-MRj+i)22d2j+1+txp{-6LMRj+1)22d2j)
+
+^ B3{4'j + e x p ( - MRj+1)44d2(l + o)j)
+
+on '~2, for  ' c  j + A ^ j + i The quotient on the right-hand side of the last equality is a negative power of log g~f2, hence the coefficient at j can be arbitrarily small, also after multiplying it by O(1)L from (1.37), if  is sufficiently small. We assume that it is so small that the expression on the left-hand side of (1.37) can be bounded by l/2j. From this we obtain
+
+IVJ+1\Zj(b) ~ V$(b)\ < H + I V%(!>) - V(b)\.
+
+(1.39)
+
+The configuration V{$ is equal to Mj(UJ+n>). For U > J+U we have the representation (1.30), with j , n, , and  replaced by j+ 1, n+ 1, ', and L~1. This
+
+representation implies
+
+where
+
+V$ = (Mj(exp iL~1HJ+n')Mj(U^+1)))u^'a'
+
+= exp iM$ V,
+
+(1.40)
+
+exp/H<^) = v l , D ^
+
+0.41)
+
+For the configuration (1.41) we have again the bound (1.37), with H replaced by
+
+H ' y + 1 D on the right-hand side, and without the factor L. The function H ' / + 1 D is
+
+bounded on  ' ^ 2 by B3 exp( -- LM2Rj+1)22d2j+1,
+
+hence
+
+l + j8o)--<5j^H
+
+(L42)
+
+on '~2 The inequalities (1.32), (1.39), and (1.42) imply that the functions (1.8) in the product in (1.29) are equal to 1. For the functions (1.7) the argument is simpler. We have
+
+^
+
+j
+
+$ - v(b)\
+
+<2) + 12j<2j
+
+on  ^ 2 ,
+
+(1-43)
+
+for ' c:j'+^j+ x . Here we have used the restrictions from (1.27), and the estimate (1.42). The above inequality implies that the functions (1.7) are equal to
+1 also. It remains to be proven that the function }"] in (1.29) is equal to 1. Consider
+
+186
+the configuration Ufy. Representing the field Vjncj+1\Z'j+ we have
+
+T. Balaban as [V}(V)
+
+(1.44)
+
+The field in the argument of the function H^} is bounded by 4'j9 and is localized
+
+in
+
+the
+
+domain
+
+c J+
+
+1\Ztj+1,
+
+therefore the following estimate holds:
+
+sup L\ Hj^l, sup(L^)2| V J  n + n H ^ ^ B3Qxp( -- d(y,Cj+1\Z'j+1))4fj.
+
+B(y)
+
+'
+
+B(y)
+
+k
+
+(1.45)
+
+Here d( , ·) is the scaled distance, y is a point ofthe ith component ofthe determining set B>[n). Using the representation (1.44), and the above estimate, we obtain
+
+for peB\y\ where ye(Z- + x\Z'l){i) ='[ for
+
+i = j -- 1, j --2,..., and j ; e (  5 + 1 \ Z ; ' )  for i = j .
+
+(1.46)
+
+Let us remark that the scaled distance in the above estimates is defined in terms of M^cubes oncorresponding scales. Thus, by the definition of the domains Z", we obtain
+
+exp(-d(y,cj+1\Z]+1))^exp(-~(j-i)J
+
+for ye'l, i<j. (1.47)
+
+We choose M large enough, sothat iM/M^ ^ 2. Then the product of 1 4- (7 -- i)1/2
+and the exponential factor in (1.47) can be estimated by exp( -- (j -- i)). The
+remaining numerical factors in front of the exponential can be estimated by
+9B3(A1/A0)(p(y)/p0())(l -f Q), and can be made arbitrarily small by choosing 7, or AJAQ sufficiently small. Notice, that the conditions on M, 7, Ao, and A introduced above do not depend on any scale, i.e., on z, j ,fc,and so on. This applies also to other conditions introduced before. The numerical factor 8J33L~(5j< W^yA^^y) canbe also chosen arbitrarily small for y sufficiently small. Let us
+choose a bound for these two factors in the form oc, where an absolute constant
+a will be chosen later. Then the estimate (1.46) and the above bounds imply
+
++ o2-u~i)i(Lk~i)2
+
+for peB\y\
+
+(1.48)
+
+where y is as in(1.46). Now consider the conditions in the definition (1.24) of ^K
+The condition on the domain Z " + \Z", for  =h, h + 1,... j -- 1, can bewritten in the form
+
+Large Field Renormalization
+
+187
+
+The corresponding condition forthe configuration U^ 1} is of the same form, only j is replaced by j + 1. Introducing this bound into (1.48) we obtain
+
+·(1 + o2-(j-)) + oc2'u~i)i{Lk~)2
+
+j-i))Llmax{o^k°-1]i{Lk-i)\
+
+(1.50)
+
+and the last inequality implies (1.49) if 8  ^ l . On the domain t\+1, for
+
+Z =fco+ l , . . . j ,
+
+and on the domain
+
+c ko
+
++
+
+1\Z'j
+
+for
+
+l = k0,
+
+the condition
+
+on
+
+the
+
+configuration U^z is
+
+1| <(1 -^L^'-'-'hjil-J)2.
+
+(1.51)
+
+The condition on the configuration U^J n a s the same form, only j is replaced by j + 1. Introducing this bound into the inequality (1.48), which holds on those domains with i =j , we obtain
+
++ j(Lk->')2 < ((1 +o)(l +
+
+(1-52)
+
+The above inequality implies (1.51), under the usual restrictions on o,,Lo (i.e.,  0 g 1/2, j8 ^ 1/2, L o < (1/2)L), and  ^ 1/4. Thus taking  = 1/8in(1.48) we satisfy all theconditions. We have proved that the function [n) in (1.29) is equal to1.
+
+This completes the proof of the equality (1.29).
+
+Now let us come back to the integral (1.25) with all the newly introduced
+
+functions. Using theequality (1.29) we get theintegral of the same form multi-
+
+plied by {k+1\ in which theonly characteristic functions arethe functions (1.9),
+
+(1.27) restricting thefluctuation field on thedomains
+
+j+nZj+1,cj+1nZrjC+1
+
+correspondingly. There are also the gauge fixing terms (4.6) on the last domain.
+
+For this integral we perform all the operations discussed in Sect. 3 [HI]. We
+
+introduce the fluctuation field V] on (cj+1\Z'j)u\
+
+V'j = Vj(Vu)y\
+
+V{j) =Mj{U£+1)), B) =log Vj.
+
+(1.53)
+
+This field is small, because
+
+Vj -11 ^ I Vjiyy1 -11 +1 viv^y1 -11 < w
+
+(1.54)
+
+by (1.27), andby thefact that the second expression on the right-hand side is
+much smaller than ).This we will show later. Thus B] is small, \B]\< 6'pand we expand all the expressions in the integral with respect to B'p we linearize the expressions in the^-functions, we remove the^-functions using theoperator C,
+and finally we perform the scaling transformation B] =g^By All the formulas are the same as in Sect. 3, or in Sect. 2[I], only we have to replace the function te^C))"2 i n theWilson term of the action by gj2, theterm with the difference (g{"X'))~2 --gj2 is put into the interaction. We obtain anequality with an expres-
+
+188
+
+T. Balaban
+
+sion analogous to the expression on the right-hand side of (3.15) [III]. The
+differences are obvious, mainly that the integration variable is denoted by Bp and that there is the additional integration with respect to the variables Aj9 the first integration in (1.25). In the obtained integral we introduce the decomposition of unity 1 = 'U) + (1 --'(j)) in each component of Z, where
+
+'U) = ({\Bj(b)\<)orbe(cj+\Z'}+)W}).
+
+(1.55)
+
+We exclude from Z the components with the large field function 1 --/{J\ In these components we have to localize the dependence on the field V in the characteristic functions (1.27). Once more we write the representation
+
+:log[M"(l/in+1))(M (Kk))-
+
+(3.56)
+
+The field in the argument of the function H j ^ 1 } has a support in the boundary
+
+layer of the width 2MX at the boundary of Z, and is bounded by 44d2B3k. Thus
+
+the
+
+function considered
+
+on
+
+the
+
+domain
+
+c j
+
+ZJ+1
+
+satisfies
+
+the bound
+
+l^tz  l S{Lj" 1*B3Qxp{-\0M{RJ+1
+
++ ··· + i V i ) ~ MRk)44d2B3k
+
+<44d2B2(l+0)exp(-Rj)j.
+
+(1.57)
+
+For the averages Vu\ V^} we have, as in (1.40)
+
+VU) = exp iMV,
+
+(1.58)
+
+where H is given by the formula corresponding to (1.41). It is an analytic function
+
+of the configuration
+
+U( n+1) k
+
+restricted
+
+to Z, and
+
+on (cj+\Z'j)U)
+
+it is bounded
+
+by 0(1) exp (-- Rj)Sj. This bound is very small, smaller than any positive power of
+
+g- Now we make the change of variables (1.22) [III], with H ^ instead of H^AX? for the bonds belonging to (2J+1\ZJ+1) /)*. or rather to the components of this set with the large field function 1 --'). This change of variables transforms the
+
+function }(l -- ')) into
+
+<2>j for be{)+\Z]+1)^}){\-'^\
+
+(1.59)
+
+which has the required property, in fact it does not depend at all on the background fields. The change of variables gives also the usual new terms in the action.
+Let us consider the components of Z with the small field function 'u\ or rather we assume that Z is a union of such components. The integral corresponding to (1.25) has the form of the fluctuation field integral in (3.25) [III], more precisely it has the form
+
+ "exp [ 4 " > ( t / r l ) , Aj = 0) + E\j\)+, \Z'j+,)] 3J.+  ) e x p [ - k / l J ,C*zl^+iC/lJ.>]
+
+-HBj, C*{i)CB}) +
+
+Large Field Renormalization
+
+189
+
+W g)
+
+(L60)
+
+The notation used here is the same as in Sect. 3 [III], in particular the constant
+
+E(cj+1\Zf )+1 is equal to the constant in the first exponential in (3.15) [III],
+
+only for k replaced by j , and the sets B(k+1)*,k+1 replaced by
+
+(cj+1\Z'j+1)ij)\
+
+(cj+1\Z'
+
+)u+1)
++1
+
+correspondingly. The fundamental difference in comparison
+
+with the integral in Sect. 3 [III] is, that now the integration in (1.60) is localized
+
+in the large field region Z, therefore the integral contributes to the boundary terms
+
+only. Thus in the previous n integrations new boundary terms were created, and
+
+their sum is denoted by Ekn\ We may specify the structure of this term a bit more writing it as the sum
+
+B*°=  Ck\
+i= 1
+
+(1.61)
+
+where Cj^ is the one-step contribution, i.e., the contribution from the zth integration.
+
+Now
+
+it
+
+is
+
+clear
+
+that
+
+the
+
+integral
+
+in
+
+(1.60)
+
+determines
+
+a
+
+main
+
+contribution
+
+to
+
+C \ ( n+1 k
+
+another comes from the renormalization of the Wilson action, thus
+
+c r ··=
+
+Bn k
+
++
+
+v
+
+=
+
+n n) k
+
++ C£+1\
+
+(1.62)
+
+The integral in (1.60) is of the same type as the integral studied in Sect. 3 [III],
+
+therefore we can apply the results of this section and write the term C["+ 1) as a
+
+sum of localized terms with the corresponding exponential decay and analyticity
+
+properties. There is one peculiar feature of this expansion, namely its localization
+
+domains are not from DJ+ 1 only, but they are of a more general type, and can
+
+be described by the following properties: XncJ + 2eBj+1, X n(m\m + )e)m,
+
+m~j + 2,...,k (where k + 1 = 0 ) , and Xn(Zj+1\Z'j+1)
+
+ 0. For a given X there
+
+is a minimal index m such, that X acm . + 1 We take the smallest domain from
+
+Om containing X, and we resum over all X determining the same domain. As a
+
+result we obtain the representation
+
+CI+1) = c f+1)(r,t/?+1)),
+
+(1.63)
+
+x
+
+where the summation is over the localization domains X satisfying the following
+
+properties: Xccm +  for some m^j+1,
+
+X cm 0 , XeDm, and
+
+Xn(Zj+\Zfj+)
+
+ 0 . The terms in the sum satisfy an exponential decay bound,
+
+which will be formulated later. These results are standard, but there are some new
+
+aspects of the basic properties, like analyticity properties and bounds, which we have
+
+to discuss carefully.
+
+190
+
+T. Balaban
+
+Let us start with the analyticity properties. The aim of this whole preliminary
+step is to gain a larger domain of analyticity for the effective action, in order to
+perform thebasic step in the ^-operation. This is achieved by two ways for the two parts of the action Akn). The regularity properties of the configuration U{k\ and correspondingly of the complex field U which replaces it, are improved in comparison with Uk; therefore the old action Ak has effectively alarger analyticity domain with respect tothe new field. For the new term Bjf} ofthe action we have
+to enlarge the analyticity domain by proper inductive assumptions, inagreement with the restrictions introduced by the characteristic function {k\ In order to describe the assumptions we have to define new spaces of complex gauge field
+configurations. They are modelled on the definition (1.24) of the characteristic functions {k\ and or the definition of the spaces Uck(X, 0, t).
+The space U(kn)c(X, 0, t), for one of the domains X in the representation (1.63), is the setof configurations (U, JJ) defined on X, such that U = U'U, U has
+values inthe group G, U'= xpiA\ A' and J have values in the complex algebra gc. For any cube  from the family of cubes described below there exists a gauge transformation u defined on   X, and such that Uu--exp iA, A has values in
+the algebra g. The configurations U, UPtX(M'(V)) = L7(Bp(X)u{^}/</?, M'(LI)), J, JptX(M'(V)), U, A\ and A satisfy the following conditions:
+
+(i)
+
+\dUPX(M'(U))-
+
+1317-11, \A'\, \V
+
+q = m+ 1
+
+on (r^\l+)nX
+
+for m-- 1 , . . . J -- 1 , and on ('j\ko +1)r\X for m=j,
+
+Lm\Al{Lm)2\A\<Llm'Am-ko}BCMaOm
+
+for
+
+, \(^'n +0 if m = 1,... J -- 1, a n d for
+
+if m = ; ,  is ofthe size CMLm.
+
+( i i ) | d U - l | , |317P^(M ( U ) ) - 1 | , | J | , | J P ^ ( M ' ( U ) ) | , | 5  7 - l | , \A
+
+< [-
+
+2
+
+k RV
+
+-(1~J) \ / 2(j-m)
+
+(1.65) O^'-,
+
+aQ^2{lJy2,(iuj{Uy\aUj{Uy2^
+
+(1.66)
+
+o n (  2 m \  2 m +1 ) n X for m = k0 + l,...J -- 1, j .
+
+Lj\A\,(Lj)2\VA\<L2U~m)BCMa0J
+
+(1.67)
+
+for  c: m, nccm +0,
+
+is ofthe size CMLJ, m = k0 +1,..., j - 1, .
+
+Large Field Renormalization
+(i) au - 1 | ,
+
+i=h+l
+
+191
+, \du-\, \A'\,
+
+(1.68)
+
+on (m\m+)nX
+
+for m =j + l,...,fe -- 1, and on
+
+c = 1 for m < k, and c = 3 for m = fc,
+
+for m = k, where
+
+> \A I, (Lm/?)2 IVMI < BCMaOm
+
+(1.69)
+
+for  < =  m ,
+
+1 / 0 if m - j + l , . . . , f c - 1, and for · cz k if m = k, 
+
+is of the size CMLP.
+
+The constant C above is a positive integer. It is usually small, because of geometric
+
+constraints on the cubes, for example we can assume that C g 2. The constant 5
+
+is a fixed absolute constant, for example we can take the constant B = B3 from Theorem 1 [16].
+
+The above definition is so complicated because of the needs of the inductive
+
+procedure. It has been written for the case where j > k0. For j g k0 it is simpler, there are no powers of Lo in the point (i), and the point (ii) is empty. Let us discuss briefly basic properties of these spaces. They are invariant with respect to G-valued
+
+gauge transformations. For n = j -- h = 0 the above space coincides with the space
+
+Uck(X, 0, 1). They form a descending sequence for increasing n, if  and Lo satisfy certain conditions, for example if  g 1/4 and L\ g (1/3)L. Notice that we
+
+get the stronger restriction on Lo because of the bounds for A'. We can improve the restriction to the previous one changing the bounds, but it does not matter.
+
+In fact we need not only the statement that the sequence is descending, but a
+
+stronger statement connected with the expressions we have to consider in the
+
+n + 1st step. For example, we have to prove that if U is an element of the space
+
+tfj^^ojj,
+
+then Q\^> iU{kn\gfB} - hD{gfB ^))l} is an element of the space
+
+U{kn)c{X, 0,  j , and the corresponding statement for J. The proof is almost
+
+identical to the proof of a similar statement for the configurations U^\ given in
+
+(44)-(52), and we will not repeat it. Finally let us remark that if in a component
+
+of Z we finish the integrations for some n, because some new large field has been
+
+introduced,
+
+then
+
+we
+
+leave
+
+the
+
+new
+
+terms
+
+U n) k
+
+as
+
+a
+
+part
+
+of
+
+all
+
+boundary
+
+terms,
+
+and it is easy to generalize the definition of the spaces in such a case for the
+
+next steps.
+
+Now we can formulate bounds for terms in the representations (1.63). They
+
+are easily obtained estimating the integral (1.60), after the renormalization and the
+
+localization. All the expressions in the exponential in this integral can be uniformly
+
+bounded in the usual way, except possibly expressions connected with B["}.
+
+Assuming uniform bounds for C[), if^ri, we still have a problem with a bound
+
+for the whole term, because the basic localization regions Zh + i\Z'l + i contain the common domain cko+1\k' for h + i>k0, hence the bounds from the corresponding terms cumulate. There are at most No such terms, and to estimate their
+
+192
+
+T. Balaban
+
+sum we usethe fact that they aremultiplied by gr More precisely, thebounds of
+
+the terms involve 'j9 but 5)^(1 +o)2(k-j)o'k^(l
+
++ o)2No°'ki so No'j^
+
+0 +fc)2Nj+/f°(5/k<4No(5/k, and we assume that Nl makes only a logarithmic
+
+contribution to k, e.g., No = O(\oggk2). In fact we will see that it is smaller.
+
+With such an assumption we get uniform bounds for thesumof the terms also.
+
+Let us formulate the bounds for Ckn\ It has the representation (1.63), with n instead of n + 1, and each term Ckn)(X, U[n)) can be extended to an analytic function defined on thespace kn)c(X, 0, ax) andsatisfying thebound
+
+\CP(X,(V9A))\uCoexp(-(l +3)dm(X))
+
+(1.70)
+
+for Xe)m in therepresentation (1.63). There is one additional remark we have to make in connection with the
+
+definitions of the newbackground fields and thenewspaces. In these definitions
+
+there arepowers of LQ, thehighest power appearing is k - k0 =No. This number
+
+is defined by the equality L~No+1Rk-No +1 = 1, from which we get LNo~~ =
+
+R _k No+ ^(L+ 1)(NO + l)oRk. The number L o satisfies the restriction Ll^
+
+(1/3)L,
+
+hence
+
+L2 No o
+
+^ ( l / 3 f °L{L+
+
+l)(N0 + l)oRk
+
+< L(L+ 1)JVO % .
+
+Thus the
+
+powers of Lo make only unessential logarithmic contributions to the constants
+
+cx.0ip0Llfp8jin the definitions.
+
+Let us write nowtheexpressions we obtain after theN integrations, omiting
+
+the T-operations for thelarge field regions not satisfying the conditions (i), (ii).
+
+These expressions have he form
+
+k(;4)  T^(Zfj+1)h(hnZh)h(ZMoxp',
+j =k - l
+
+(1.71)
+
+where the superscript (N)in symbols of the characteristic function and the action has been replaced by the double prime, and theoperations T"{}) aredefined by
+
+J"^(Z'j+) = Vjlz:J(VJVr+\y
+
+(1.72)
+
+The newaction depends on thebackground field Uk = U(kN\ and it has the form
+k =k + Wk\where Wk is thesumof the newboundary terms described above. The newlarge field region Z'k is given by (1.10), i.e., Zk =(ko5+)cnZ, hence
+it is a union of M-cubes, by thedefinition of the index /c0,and it is a rectangular
+parallelepiped. Define
+
+=(ko4+nZ.
+
+(1.73)
+
+This domain, obtained by adding one layer of M-cubes to Z'k\ is also a union of M-cubes, and by thecondition (i) it is a rectangular parallelepiped contained in
+a cube of the size 100M. The domain  plays a fundamental role in the definition
+of the [R-operation, it is thedomain on which we integrate outall field variables.
+Now we want to restrict further the variables Vk outside . Take the function Uk,z(Vk) given by
+
+Uk,z = Uk,z(vk) = U(Bk(Z), M'(QkVk))
+
+074)
+
+This function is also important for subsequent constructions. It is defined in each
+
+component of Z separately. In thecomponents introduce thedecompositions of
+
+Large Field Renormalization
+unity 1 =   >  + (1 - kj, where
+
+193
+
+j)
+
+(1.75)
+
+The restriction introduced by this function is on the field Vk\Zrc only. It means that this field has an extension on the whole domain Z, such that the extended
+
+field satisfies the regularity condition in (1.75). Let us elaborate a bit this point,
+
+because we want to understand also a meaning of the restriction established by
+
+the function 1--k . Take a configuration Vk defined on Zc\c and satisfying the regularity condition | Vk(dp') -- 11< for p' a Z n c,  > 0 is sufficiently small. There are many ways of extending it to thedomain A. Theway we describe here depends
+
+only on V restricted to d+ A -- {yeAc: there exists a nearest neighbor point y'eA,
+
+or <y,y'}eA}. Introduce a generalized axial gauge on the surface d+A. The
+
+configuration Vk[+ is transformed into a small configuration V'k, \V'k{b')-- 1| < O(l)M2 for b ' c d M . We extend it putting V'k{b')=\ for b'eA. The extended configuration satisfies theregularity condition | V'k(dp') -- 11 < O(l)M2 for p' c A u d+ A. Now we apply the inverse gauge transformation on d+ , and we get a
+
+configuration Vk defined on the whole domain, equal to the given one on Z n / l c , and satisfying the regularity condition \dVk -- 1| < O(\)M2. The corresponding configuration UkZ satisfies the condition \dUk>z -- 11 < O(l)B3M22. We have a couple of conclusions from the above reasoning. At first, recall that the functions
+
+k(k% k restrict the field variables Vk on k, e.g.,
+
+\dVk-l\<2L%Nok<
+
+2L(L + l)N01Rkk. The above reasoning implies that Vk has an extension to A,
+
+satisfying the regularity condition \Vk-- 1| < O(l)M2L2Rkk on Z, hence the
+
+function UkfZ is defined for all those fields, and the condition in (1.75) has a
+
+meaning. Now, take a field Vk in the domain determined by the function l--kt,
+
+and denote  = supp'czZnc\Vk(dp') -- 11. Of course  < L2Rkk. By the above reason-
+
+ing the field Vk[Znc has an extension, for which \dUktZ-- 1| < O(\)B3M22. On
+
+the other hand, for any extension we have \dUkZ-- \^2k2, hence 2k <
+
+O(i)B3M2, and | Vk{pp') - 11 > (0{l)B3M2)~k for s o m e p ' a Z n  * . This condition
+
+is enough to get the exponential small factor, estimating in the usual way the Wilson
+
+action. Thus 1--k^is a large field function, and we exclude from Z the components with this function. Theunion of the remaining components is denoted by Z again,
+
+and the corresponding expressions aregiven by the formula (1.71) multiplied by k . All the above transformations preserve the kth density k, they change only the
+representation of this density. It is represented in the same general form (2.18)
+
+[III], but with different operations ki and different effective actions. Now we define the next operation, which changes the density. Theequality sign is replaced
+
+by theequivalence sign, theequivalence means that both sides have equal integrals
+
+over the space of fields Vk. To define the operation we formulate briefly the result of the previous operations. We have represented the density k as a sum of terms of the general form (2.18) [III]. Each term determines uniquely a large field region,
+
+and in particular the components of this region, satisfying the conditions (i), (ii).
+
+Such a term is represented as a Tk-operation for the remaining components, acting on the corresponding expression of the form (1.71) multiplied by the function k . The next operation is an integration of this term with respect to thefield variables
+
+194
+
+T. Balaban
+
+Vk over the domain A. We obtain a new expression, which we consider as a function of all field variables Vk, but independent of Vk[ . This operation changes essentially the sum of these terms, and we can write only that the density is
+equivalent to the sum of the new, integrated terms. We remark also that regions
+of integration are usually different for terms in the sum. Let us write the effect of
+this operation for each term. Omitting the T^-operation for the remaining components, as in (1.71), and using the form (1.72) of the operations T "{J\ we
+obtain the expressions
+
+X*(Vfdnz(fcnZ^
+
+(1.76)
+
+The variables V" are determined by, and defined on the set B'k, i.e., V" = V-3 on j,j = 0, l,...,/c -- 1, k. The two integrals above are over the disjoint regions of
+integrations, hence we can consider them independently. In fact the first integral,
+over the region Zh, is left unchanged in the following discussion. The above integral should be analyzed now in the same way as small field
+integrals are analyzed, i.e., we should find a minimum of the Wilson action A(U'kr) on the domain of integration, we should expand the whole action around the
+minimum, introduced a fluctuation field together with a gauge fixing, restrict the
+fluctuation field and analyze the fluctuation field integral. Instead, we will do these
+steps on the domain An Zh only, except the first one, the solution of the variational problem, which we will consider on the whole domain of integration. Let us start
+with this problem. The integration in (1.76) does not involve any (5-functions, they
+are all integrated out, therefore we look for a minimum of the function A(U'k') for V"\ A restricted by regularity conditions only. This problem can be divided into two steps, at first we look for a minimum of A(Uk) with the averages Mh(Uk) fixed, and then we look for a minimum removing the restrictions on the averages
+on the domain A. A solution of the last problem should give a solution of the
+original problem. These remarks serve only as a justification of the following
+construction. Consider the function
+
+Vk{-*A(UkmZ(Vk)).
+
+(1.77)
+
+It is defined on configurations Vk satisfying mild regularity conditions, e.g., \dVk -- 1| <ax on Z. The function is invariant with respect to the group of all gauge transformations defined on A, hence it is natural to consider it on orbits
+of this group. We look for a minimal orbit. We will prove later the following
+theorem.
+
+Proposition 1. For a configuration Vk\Znc, satisfying the regularity condition \dVk--l\< on the domain Z n A\for  > 0 sufficiently small, there exists exactly one critical orbit of the function {1.77). An element of the orbit is a minimum of the
+function, and is denoted by V= V(Vk[Znc). It satisfies the regularity condition
+
+\V(dp')~l\<B5M5
+
+for p.
+
+(1.78)
+
+The orbit-valued function V(Vk[Znc) has an analytic extension for Gc-valued configurations Vk = V'kVk = QxpiB'Vk satisfying the same regularity condition as Vk, with Bgc and small, e.g., \B'\ < .
+
+Large Field Renormalization
+
+195
+
+The constant B5 is determined by the geometry of the problem, more precisely by the condition (i). The power M 5 is not the optimal one, in fact we can take just M, but we will not prove it.
+Extend the function V on the whole domain Z putting V = Vk on Zr\A\ and define
+
+U0=UktZ(V^
+
+(1.79)
+
+This is a fundamental background field for the constructions of this and the next
+sections. In particular we expand the action Ak in (1.76) around this configuration on nZch; therefore it is important to understand its regularity properties. To simplify the description we take into account the characteristic function k . The restrictions introduced by this function, and the method of construction of the
+function V, imply the estimate
+
+I U0(dp) - 11 < 2k2 + O(1)B3B5M5 e x p ( -  dist (p, ))k2
+
+(1.80)
+
+for pek. We will discuss it together with the proof of Proposition 1, because then it will be immediate, but it follows also quite generally from the definition (1.79)
+
+and the bound (1.78). From the estimate (1.80) we can see easily that the configura-
+
+tion Uo belongs to the integration domain determined by the characteristic function k in (1.76), and to the analyticity domains of terms in the effective action Ak. In fact, it is the reason why we have done the preliminary integrations, and why
+
+we have introduced the function 'k\ and the spaces U(k)c(X,0,j. We do not show the above statement now, because we will need a stronger statement in the
+
+future.
+
+Now we define the fluctuation field V on the set B ^ n / l n f ^ ' ^ . Let us
+
+recall that ^+1 = 2^+1 = Z'h~3, hence l+\= 'l1=(Z'h~)c, Ao = A nl+\. We put
+
+and denote
+
+V" = V'VQ on o, V0 = MB»{U0).
+
+(1.81)
+
+More precisely the equality is on the set Bo = UknA0. Let us recall that according to our convention, bonds intersecting dA belong to Bo, and bonds intersecting dl+l do not belong to Bo.
+The measure and the underintegral expressions in the second integral in (1.76)
+are gauge invariant; more precisely they are invariant with respect to the gauge
+transformations defined on Bo. We remove this invariance by fixing a gauge for the variables V. We fix a gauge which is a modification and a generalization of
+the axial gauge in cubes used in the previous papers. At this point we make an
+essential use of the fact that the domains A ^>Z'k ^ <- =3ZJ+1 ^(^lf are rectangular parallelepipeds. This allows us to give a simple description of the gauge
+fixing. Consider two successive rectangular parallelepipeds in the sequence, for
+example
+
+hence [a', b'~\ a [a, b~]. We have to fix a gauge in P\P2, more precisely in the intersection with the corresponding lattice. We may assume, rescaling properly,
+that it is the unit lattice. The gauge is fixed by a tree graph built of bonds contained
+
+196
+
+T. Balaban
+
+i n P\P2- W efix t h ei n i t i a l p o i n t y = ( y l 9 . . . , y d ) = (a1 + l / 2 , . . . , a d + l / 2 ) , a n d a number ae(a\, b\). Fora given point x of the lattice in Pi\P2 w e choose a contour connecting x to y.I x1^a, then we take the usual contour
+
+ry,x = [y,(yl9...,yd-l9xd)]u
+
+· u[(y1?x2,...,xd),x].
+
+If xx > , then we take the contour
+ry,x = ly>O  , - ,yd-i> *<*)] u u [(y1?y2, _y3,  4 5 . . . , d),(3/l9 y2, 3> 4> > **)]
+^ [(3>i, J>2> 3> »*<*)>(^i -1/2, y2>  3 - , d)]
+u [(&! - 1/2, j>2, x3,..., xd), (b1 - 1/2, x2, x3,..., xd)]
+u[(b1- l/2,x2,x3,...,xd),x].
+This slightly awkward definition describes a simplest family of contours connecting points of Pi\P2 with the point y. The union of all the contours is a tree graph T on P1\P2, hence T = (J 7"^. This definition has the important property that
+xe/vP2
+if we enlarge P2> ie ?w e replace it by a rectangular parallelepiped P'2, P 2 c P'2 c P ^ and we remove thecontours corresponding to points of P 2 \ P 2 , then the remaining contours build the corresponding graph T" on P^P^ We fix the gauge putting the bond variables equal to 1 for bonds belonging to the tree graph. We use all gauge degrees of freedom connected with points of P i \ P 2 , except one, so weadd an external bond to the graph. If is one of the bonds intersecting the boundary dPu but they are bonds of the larger scale (they are L-bonds for the unit scale in Px\ except when P1 = A, so it is simpler to describe the corresponding bond for P2. We assume that P 2 is not the last domain in the sequence, i.e., P 2 {"hXx)\ because no gauge is fixed in this domain, and no external bonds intersecting d P 2 are added to the graph. For the remaining domains P 2 we choose the bond
+[(a\ - 1/2, 2 + 1/2,..., a'd + 1/2), (a\+ 1/2, a'2 + 1/2,..., a'd + 1/2)],
+
+and add it to the graph. For P= we add also the additional bond [(ji -- 1 J yi > - »yd\ y\- The union of the above described tree graphs and bonds is
+denoted by To. It is a tree graph in Bo, fixing completely a gauge in this set. Using the Faddeev-Popov procedure we introduce the gauge fixing (5-function
+To(V) in the integral (1.76). The regularity conditions for V", Vo, and the gauge fixing for V introduce
+restrictions on this field. We can prove that it satisfies | V -- 11< O(\)M2NR*k on Bo.We introduce stronger restrictions on the fluctuation field by thedecomposition of unity 1 = ' + (1 --'\ where
+
+' = ({\B'(b)\<'k for beB0}),
+
+(1.82)
+
+and V = exp iB'. The decomposition of unity is introduced in each component of
+Z, and we exclude from Z the components with the large field function 1 --'. In
+the remaining components, denoted by Z, the functions k, ' should allow us to remove thefunction £, except that they do notgive restrictions on the variables
+V" = Vh on ZJ,~ \Zh. We shall introduce such additional restrictions, but at first we ix a gauge for the configuration Uo. We would like to represent it locally, on a
+
+Large Field Renormalization
+
+197
+
+subdomain of A, as expi^A0, with Ao sufficiently small. Such a representation can be obtained in two steps. The configuration Mk(U0) = VA satisfies the regularity condition (1.78). We fix for it the axial gauge in A{k\ hence the field V is small inside A{k\ More precisely, it satisfies the bound
+
+\V(b)-l\<O(l)B5M6k
+
+for b c (k\
+
+(1.83)
+
+Consider the configuration Uo inside the domain A. We take it in the axial gauge
+
+in /c-blocks, hence \Mj(U0)- Q-jV\ < Ud2O(l)B3B5M5k
+
+inside A, by the
+
+estimate (1.80), and (1.65) [14]. This and (1.83) imply
+
+\Mj(U0) - 11 < 0{l)B3B5M6k
+
+inside A.
+
+(1.84)
+
+The field Uo can be represented inside A as follows:
+
+U0 = U(Bk(A\M'(U0)).
+
+(1.85)
+
+The field in the argument of the function on the right-hand side of the above equation is small, hence we can expand the function around the configuration identically equal to 1. We transform thefunction to the Landau gauge constructed around this configuration, and we get
+
+Uo = (expwyHfc/logM (l/0) ) ) ° .
+
+(1.86)
+
+Thus UUQ is in the required gauge, and we have
+
+where
+
+Uu0° =
+
+U{ L} 0
+
+=
+
+exp i A o
+
+inside
+
+A,
+
+\A0\,\A0\,\dri*drl/\0\<O(l)BlB5M6k
+
+on Z"k.
+
+(1.87)
+
+The function Ao = H*.((l/i)\ogM'(U0)) is also an analytic function of (l/i)log M'(U0), on a much larger domain than the onedetermined by the bounds (1.84). The superscript (AL) in (1.87) indicates the mixture of the axial andthe
+Landau gauges. Changing the gauge of Uo in the integral (1.76) requires the corresponding compensating gauge transformations of the variables Vh, the gauge transformation restricted to d+(Zrh~)ih\ and of the variables V, the gauge transformation in the adjoint representation. The expressions in the integral (1.76) are
+invariant with respect to these transformations. We can also choose from the
+beginning the configuration Uo in the AL-gauge. Finally, we introduce the last decompositions of unity on components of (jQ{[+1)cn2f:
+
+1 =  U/[I P SU Ihd(l>
+
+Vdp)-\\<(L*)
+
+·  x\ \ SUP I\D((i, vh). dp)- 11 ^h{Lk-»n
+(1-
+The summation above is over subsets P of a component of the domain (^-^ which are unions of LM2J^-cubes (for the L^-scale). The symbol (1, Vh) means
+
+198
+
+T. Balaban
+
+the configuration (lf^ V ^h('^+\f)' ^ e ^ a v e n e w l a r  e fields in components with nonempty sets P, so we exclude these components from Z. In the remaining components, which form a new domain Z, we have the function Xh,i/2((^h+ if n h). Notice, that if a cube · is contained in /2J,'+i, and is not touching the boundary
+of this domain, then Uh(l, Vh) = Uh(\) = 1, and the condition defining the corresponding characteristic function is always satisfied, i.e., the function is
+identically equal to 1. Therefore the above characteristic function is defined by
+the product over cubes  intersecting the domain (H\)\ and contained in h. Now we prove that, with the new functions introduced in the integral, we can
+drop the function JJ, i.e., we have the equality
+
+(1.89)
+We have assumed that  S 1/4- The equality h(hnZh) = 1 is immediate, so we have to prove that £ = 1. We have already done several reasonings of this type, so now we will sketch only main points. Take a cube · cz(f^1)cnh, and represent the functions U'^z o n D~ m the usual way:
+
+^^
+
+(L90)
+
+The function Hhn and it derivatives can be bounded on ~ by B3 exp (-- 2LM2Rh)l ld2h < 1ld2B3 exp (-- Rh)h < och, where a is a small, absolute constant, which will be fixed later. Estimating as in (1.46) we get
+
+IU'tZ{dp) - 11 < I hn{V\ dp) - 11(1 + L~hah) + (x + 8a2h)h(Lk-h)2 for p c  ~ .
+The field V" is equal to Vh on ('^l)cn ^4, and on '^\n V" = V'Mh{U{0L)) = exp iB' exp iQh{\0\
+Expanding Uhn(V") with respect to the above field, we get
+
+(1.91) ^4 it is equal to
+(1.92)
+
+H^
+
+Vh . (1.93)
+
+The function H/7 above, and its derivatives, can be bounded on  ^ by
+
+B3'k + L~{k-hW)BlB5Mbk
+
+^ B3(l +
+
+^ o Poih)
+
++ LNNll2O(\)BlB5M%
+
+< och. (1.94)
+
+The last inequality holds under two restrictions on N. At first, we assume that
+N ^ O ( l ) ( l o g ^ 2 ) v ^ O ( l ) ( l + ^ 0 ) ( l o g ^ " 2 ) v with a positive integer v satisfying (l/2)v ^po --p1 -- l. The second is that N has to be sufficiently large, so that the constant in the second term above can be bounded by (l/2). These two conditions
+can be satisfied by N to the positive power of logg^2. From the representation
+
+Large Field Renormalization
+
+199
+
+(1.93) and the above bounds we get
+
+I Uhn(V\ dp)-l\<\ Uhn((l Vh\ dp) - 11(1 + L-hah) + ( + 822h)h(Lfc-V
+
+< i ( l + L"h0Lh)ch(Lk-h)2 + ( + 82)(L*-h)2.
+
+(1.95)
+
+The estimates (1.91), (1.95) yield
+
+~ 11 < hhifi~hn)2 < 0 - j»(l - 2" <*"fc+ ^ ( L * - ^ ) 2
+
+(1.96)
+
+for p c [ ] ~ , hence on the whole domain (^/+1)cn2h. We have chosen  = 1/12 in (1.91), (1.94), (1.95).
+Consider now the function U'k\z on the domain ^+nck. We localize it in the domain Zn^+l, introducing the usual boundary conditions at the boundary
+
+l tdo(l+1.l90)t,hrwoiuthghBthh(\eJ~de4)4terrmepilnaicnegd
+
+set by
+
+Uh(l+\). We write E^zuB^'+l), a n
+
+the
+dw
+
+identity corresponding i t n t h e argument
+
+M'(U',z) = VM\z){M\^)yw\^AL)).
+
+The above field is equal to V" outside the layer of thickness 2MX (in L^^-scale) at the boundary dl+l. Denote this layer by ^ . We expand the function with respect
+
+to (l/01°g[ " ]  r by the usual formula. This field can be bounded by
+
+22d2msLx{l,L-2NNll2O(l)B3B5M5{l
+
++ o)}h + 2'k
+
+ 22dhh + 2(1 + / y j V ^ ^  ^ < »- 23dh
+The H-function in the expansion can be bounded on the domain Z'-+\Z'- for h<j<k, Zh+\(hZ for j = h, and ck\Z'k' for j = k, by
+
+£ 23d2B,(l + o)2(l + (j - h)°) exp ( - (j - h))exp ( - Rh)cj < fij .
+This yields the bound (1.91) with h replaced by j , and the configuration hu(V") replaced by
+
+U{WizyjUh(+\),{^iB'M (U(0AL))\,,M\U^)\ )).
+
+(1.97)
+
+We expand the above function with respect to the variables B'. The corresponding H-function can be bounded on the same domains as above by
+
+B33k  B33((l + //o?o)()(l + ((k j-j))112)) ^ ^ ^
+
+.
+
+The plaquette variables for the configuration (1.97) are bounded again as in (1.91),
+with h replaced by j\ and with Uhn(V") replaced by (1.97) for B' = 0. This configuration is equal to Uu0°, where 0 is a gauge transformation constant in blocks of the determining set of (1.97), the constant equal to the value of u0 at centers of the blocks. The plaquette variables of Uu0° satisfy the estimate (1.80). Combining the above estimates, and using the inequality
+
+*>72  (1 + o){k -j)1/2L-2(k-j)j{Lk'j)2
+
+g
+
+L-(k~j)j(Lk'j)2
+
+200
+
+T. Balaban
+
+for j < fc, we obtain
+
+- 11 < (2k2 + O(1)B3B5M5 exp ( -  dist (p, A))k2)
+·(1+ L- 'y)2 + (2 -f I'e^ +   ^  / L ^ ) 2 ^ (2(/< "  + 4 + O(l)B3B5M5
+·exp(- (5 dist (p,/I))Lik~j))j(Lk~j)2,
+
+(1.98)
+
+on t h e / h domain described above. Now we have to analyze this bound on all the
+
+domains in the definition (1.24). Consider m\m + 1 for ko<m<k. j = fc, and the exponential can be bounded by
+
+We have
+
+hence the last term in the bound (1.98) can be made arbitrarily small for M large
+
+enough. Making it smaller than , and taking  ^ 1/8, we estimate the right-hand
+
+side of (1.98) by (21/8)^2 ^ 3(1 - (l/2))k2 for ro = fc-l, and (21/8)^2 ^
+
+(1 -(\/2))Ll{k~m~1)k2
+
+for the remaining m. Next, on the domain  2 £ o f l n
+
+'l11 the right-hand side of (1.98) can be bounded by (4 +
+
+0(l)5355M5L0"2(/c"j))J (^c""^)2, with an increased 0(1). On the domain Z'j+^Z'j
+
+for k0 < j < /c, and on i^^0+1 \Z^ for y = /c, we have
+
+(4 + O(l)B3B5MbL02{k-j))j(Lk~j)2
+
+£ (1 - )L$J~k°- ^ e / L * " ^ ) 2
+
+if 0 ( l ) 5 3 5 5 M 5 L 0 " 2 (   o ~ 1 ) ^ l / 4 . From the definition of the number IV0 (recall
+
+that
+
+it
+
+is
+
+defined
+
+by
+
+the
+
+equation
+
+L ~ ^ _ i V o + 1
+
+o+1
+
+= 1) we get
+
+where  0 = (logLo)/(logL). The number on the right-hand side is ^ 1/4 for Rj~ao9
+
+or y sufficiently small. Finally, on the domain Z"j+ x \Z' for h<jS k0, and on
+
+Z'^1IX1
+
+for j = /z, we have
+
+(4 + 0(l)B3B5M5Lo2{k'j))j(Lk~j)2
+
+^ (I - )j{U~j)2,
+
+because k--j^N0 and we use the above bound again. Thus we have proved that the configuration U'k\z satisfies all the conditions in the definition (1.24), hence k = 1, and the equality (1.89) is proved.
+Let us now summarize the result of all the transformations we have done on
+the density pk. We have obtained a density, which may not be equal to pk, but is equivalent to it, in the sense that they have equal integrals. This density is written
+as a sum over large field regions. The components of the regions are divided into
+two classes: the components satisfying the conditions (i), (ii), for which the corres-
+ponding integral operations are given by the integrals in (1.76), and the remaining
+components, for which the integral operations have many forms, varying from the
+old T-operations to the integrals as in (1.76), but with some large field characteristic
+functions, through the intermediate operations described above. These operations
+are denoted by k. Thus we have obtained the equivalence
+
+Large Field Renormahzation
+
+201
+
+·SdV'lBoTo(V')'xpA'l.
+
+(1.99)
+
+The operation Jk above includes a summation over all possible forms of this operation in various components of Zk\Z. Now we rearrange the sum above. We denote Zk\Z by Zfc, we write Z explicitly as a union of components, Z = X u u X^, and we separate the summation over the admissible Zk, n, Xu...,Xn9 from the remaining summations, which are factorized in those domains. In such a
+representation it is natural to replace the summation over {p j} by summations over the corresponding sequences {cp Zj} localized in the components. Denote the sequence localized in Xi by [cUpZUj], and Bo, To, A localized in Xt by B5 TbAt. The integrations in (1.99) are also factorized in those components. This way we write the expression in (1.99) in a form similar to a polymer expansion,
+suggesting explicitly localization operations and an exponentiation. Finally, we
+are ready to define an operation, which is not a complete [R-operation yet, but is
+a basic part of it:
+
+- ~ A(i9 9k
+
+Uk.X(V'kV))
+
+dV'lMV'Mexp
+
+L
+
+-
+
+-i-
+9k
+
+A(h
+
+UktX(V))]J
+
+'$dVht{::hlihI2((l^ (1.100)
+where Gf is a graph in A{ fixing the axial gauge,  GCJ(Xi), i changes from 0 to 1 in a neighborhood of dX~ 2, and (i) is given by
+
+-ogV') <Mok for bel
+
+(1.101)
+
+Because of the gauge fixing terms the expressions in (1.100) are not Euclidean invariant, and we have introduced the averaging over families of graphs, such that the averaged expressions are invariant. With our prescription of building the graphs, dependent on the chosen coordinate system, these averages can be replaced by averages over Euclidean rotations leaving the lattice invariant, or even simpler, by averages over d\ permutations of coordinates, and 2d reflections in subsets of coordinates. Then Nt = /(2dd\). We can also choose other ways of fixing a gauge, generalizing the Landau gauge, which are Euclidean invariant, but they are analytically much more complicated.
+The above operation has the fundamental normalization property
+
+In fact, the R'-operaion changes essentially the initial density pk only in a neighbor-
+
+202
+
+T. Balaban
+
+hood of the large field region; the changes are decaying exponentially fast with the distance to the region. It is now clear what the next operations are. At first, we have to extract from the expression in the curly bracket { } the density exp Ak, where Ak is the effective action determined by the assumption that Zk is the only large field region. The remaining expression should be localized around the components Xl9..., Xm represented as a polymer expansion, and finally exponentiated. All these operations will be described in the next paper.
+
+References
+[I] Balaban, T.: Renormalization group approach to lattice gauge field theories. I. Commun. Math. Phys. 109, 249-301 (1987)
+[II] Balaban, T: Renormalization group approach to lattice gauge theories: II. Cluster Expansions. Commun. Math. Phys. 116, 1-22 (1988)
+[III] Balaban, T.: Convergent renormalization expansions for lattice gauge theories. Commun. Math. Phys 119, 243-285 (1988)
+Communicated by A. Jaffe
+Received June 5, 1987; in revised form June 10, 1988
+
+

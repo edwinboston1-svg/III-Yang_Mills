@@ -1,0 +1,5 @@
+THE CROSSING CAMPAIGN §19 — the one-step map runs down at every datum; line 111's "β ≈ 3.5" is a β ↔ β/2 slip, and two exact steps reach the strong-coupling window at the read data (2026-11-02 06:42 EST; the trunk seat iii-43)
+
+Under the engine's own convention a_s = I_{s+1}(β)/I₁(β), the blocked a′_½ = 0.41 / 0.28 / 0.019 lies below the fine 0.4645 at every datum. It inverts to β_eff ≈ 1.85 / 1.19 / 0.076, and the two-step coarse loop at W2L2 inverts to 0.2930 (ordered) and 0.2225 (cancelling), inside Theorem 8.9's 0.4764. These are readings: fixed fine data, planar geometry, truncated. A landing needs the certificate in coefficient-supplied mode at the two-step blocked action, then the fine-integrated object, then the supremum, in that order.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

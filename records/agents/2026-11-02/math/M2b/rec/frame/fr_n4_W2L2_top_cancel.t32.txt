@@ -1,0 +1,2 @@
+TWIST fr_n4_W2L2_top_cancel.txt deg=32 (9537 points a factor): mass 1.000000000000, min p 6.681651e-01; T_full(A) = 0.093793716, T_full(B) = 0.093793716; T_conn(A) = 0.024468440, T_conn(B) = 0.024468440, int|c| = 0.024469861
+TWIST-LEADING fr_n4_W2L2_top_cancel.txt: the leading-mode values rho/T = 9 pi^2/64 = 1.387913, C/T = 3 pi/4 = 2.356194; this law's T_conn(A)/int|c| = 0.999942 (1 iff the coupling is wholly centre-odd in A)

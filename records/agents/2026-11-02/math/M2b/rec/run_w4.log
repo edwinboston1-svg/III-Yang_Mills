@@ -1,0 +1,28 @@
+== dob_n4_W3L1_planar_ordered start 2026-11-02 05:59:34
+   rc=0 end 06:01:48
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag 3.5e-19; max state 810000, open plaquettes at most 4; 5.6 s; 1 slices, 0 skipped by weight)
+W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = +2.432512322177e-01 (imag 8.9e-20; max state 3240000, open plaquettes at most 4; 17.1 s; 2 slices, 2 skipped by weight)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +2.432512322177e-01 (imag 8.9e-20; max state 3240000, open plaquettes at most 4; 19.6 s; 2 slices, 2 skipped by weight)
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +7.297820336837e-02 (imag 3.2e-20; max state 6480000, open plaquettes at most 4; 89.2 s; 6 slices, 10 skipped by weight)
+W2-M2b peak memory 0.119 GB (S + N + snapshot), multiply-adds 4.5062e+10
+W2-DONE 132.2 s
+L2DOB-RESULT dob_n4_W3L1_planar_ordered.txt rhoA=0.032262225 rhoB=0.032262225 sigmaH=0.030919377 Cgrid=0.060262666 rho/C=0.535360
+== dob_n4_W4L1_planar_cancel start 2026-11-02 06:01:51
+   rc=0 end 06:28:23
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag 2.3e-19; max state 9150625, open plaquettes at most 4; 40.7 s; 1 slices, 0 skipped by weight)
+W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = +1.860347140245e-01 (imag 6.0e-20; max state 36602500, open plaquettes at most 4; 171.7 s; 2 slices, 2 skipped by weight)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +1.860347140245e-01 (imag 4.1e-20; max state 36602500, open plaquettes at most 4; 162.7 s; 2 slices, 2 skipped by weight)
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +6.668574750842e-02 (imag 1.8e-20; max state 73205000, open plaquettes at most 4; 1212.6 s; 6 slices, 10 skipped by weight)
+W2-M2b peak memory 1.281 GB (S + N + snapshot), multiply-adds 8.8783e+11
+W2-DONE 1589.2 s
+L2DOB-RESULT dob_n4_W4L1_planar_cancel.txt rhoA=0.046755229 rhoB=0.046752393 sigmaH=0.045643328 Cgrid=0.083499599 rho/C=0.559946
+== dob_n4_W4L1_planar_ordered start 2026-11-02 06:28:53
+   rc=0 end 07:00:15
+W2-CLASS a=0 c=0 E[chi_a(A) chi_c(B)] = +1.000000000000e+00 (imag 3.2e-19; max state 9150625, open plaquettes at most 4; 54.3 s; 1 slices, 0 skipped by weight)
+W2-CLASS a=0 c=1 E[chi_a(A) chi_c(B)] = +2.789044077418e-01 (imag 1.0e-19; max state 36602500, open plaquettes at most 4; 252.7 s; 2 slices, 2 skipped by weight)
+W2-CLASS a=1 c=0 E[chi_a(A) chi_c(B)] = +2.789044077418e-01 (imag 8.0e-20; max state 36602500, open plaquettes at most 4; 401.7 s; 2 slices, 2 skipped by weight)
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +9.386540522560e-02 (imag 2.9e-20; max state 73205000, open plaquettes at most 4; 1169.6 s; 6 slices, 10 skipped by weight)
+W2-M2b peak memory 1.281 GB (S + N + snapshot), multiply-adds 8.8783e+11
+W2-DONE 1881.3 s
+L2DOB-RESULT dob_n4_W4L1_planar_ordered.txt rhoA=0.039579359 rhoB=0.039579359 sigmaH=0.037371974 Cgrid=0.076495007 rho/C=0.517411
+RUN-W4-DONE 07:00:20

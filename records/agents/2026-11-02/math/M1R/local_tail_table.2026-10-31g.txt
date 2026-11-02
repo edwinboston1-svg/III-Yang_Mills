@@ -1,0 +1,35 @@
+# local_tail_table.2026-10-31g.txt -- the per-k upper bounds on r2max(k), k = 9..24, from the pass records as of 2026-11-01 01:48:11 (exact where read, else the lesser of the Frobenius sieve and the certified realigned bound; inputs frozen in local_tail_table.2026-10-31g.inputs.txt); the trunk seat
+CENSUS k=9 rows=227646 read=227639 open=7 realigned=0
+CENSUS k=10 rows=242847 read=242845 open=2 realigned=0
+CENSUS k=11 rows=207529 read=207529 open=0 realigned=0
+CENSUS k=12 rows=145262 read=145262 open=0 realigned=0
+CENSUS k=13 rows=84432 read=84432 open=0 realigned=0
+CENSUS k=14 rows=41576 read=41576 open=0 realigned=0
+CENSUS k=15 rows=17613 read=15456 open=2157 realigned=2157
+CENSUS k=16 rows=6609 read=4461 open=2148 realigned=2148
+CENSUS k=17 rows=2237 read=1070 open=1167 realigned=1167
+CENSUS k=18 rows=723 read=464 open=259 realigned=259
+CENSUS k=19 rows=212 read=31 open=181 realigned=181
+CENSUS k=20 rows=64 read=0 open=64 realigned=64
+CENSUS k=21 rows=17 read=0 open=17 realigned=17
+CENSUS k=22 rows=5 read=0 open=5 realigned=5
+CENSUS k=23 rows=1 read=0 open=1 realigned=1
+CENSUS k=24 rows=1 read=0 open=1 realigned=1
+TABLE k=9 rows=1 read=1 open=0 realigned=0 r2max<= 323/80 = 4.037500 per-corner 1.080620 (EXACT at id=421860)
+TABLE k=10 rows=1 read=1 open=0 realigned=0 r2max<= 862/243 = 3.547325 per-corner 1.065357 (EXACT at id=628861)
+TABLE k=11 rows=1 read=1 open=0 realigned=0 r2max<= 61031/12960 = 4.709182 per-corner 1.072972 (EXACT at id=950205)
+TABLE k=12 rows=1 read=1 open=0 realigned=0 r2max<= 3866011/607500 = 6.363804 per-corner 1.080160 (EXACT at id=1077888)
+TABLE k=13 rows=1 read=1 open=0 realigned=0 r2max<= 26869/4320 = 6.219676 per-corner 1.072827 (EXACT at id=1204159)
+TABLE k=14 rows=1 read=1 open=0 realigned=0 r2max<= 218023697/24300000 = 8.972169 per-corner 1.081514 (EXACT at id=1255706)
+TABLE k=15 rows=4 read=0 open=4 realigned=4 r2max<= 307200878907088192183/1000000000000000000 = 307.200879 per-corner 1.210359 (REALIGNED at id=1274133)
+TABLE k=16 rows=1 read=0 open=1 realigned=1 r2max<= 691201977540948432411/1000000000000000000 = 691.201978 per-corner 1.226698 (REALIGNED at id=1281037)
+TABLE k=17 rows=4 read=0 open=4 realigned=4 r2max<= 407294865453817581397/1000000000000000000 = 407.294865 per-corner 1.193334 (REALIGNED at id=1281587)
+TABLE k=18 rows=6 read=0 open=6 realigned=6 r2max<= 240000915528653424661/1000000000000000000 = 240.000916 per-corner 1.164440 (REALIGNED at id=1283345)
+TABLE k=19 rows=2 read=0 open=2 realigned=2 r2max<= 120000457764326712331/1000000000000000000 = 120.000458 per-corner 1.134267 (REALIGNED at id=1284013)
+TABLE k=20 rows=3 read=0 open=3 realigned=3 r2max<= 30000114441081678083/500000000000000000 = 60.000229 per-corner 1.107781 (REALIGNED at id=1284217)
+TABLE k=21 rows=1 read=0 open=1 realigned=1 r2max<= 51961722444834258363/1000000000000000000 = 51.961722 per-corner 1.098625 (REALIGNED at id=1284286)
+TABLE k=22 rows=3 read=0 open=3 realigned=3 r2max<= 4500008583072940391/1000000000000000000 = 4.500009 per-corner 1.034775 (REALIGNED at id=1284298)
+TABLE k=23 rows=1 read=0 open=1 realigned=1 r2max<= 1562504470352621419/250000000000000000 = 6.250018 per-corner 1.040643 (REALIGNED at id=1284302)
+TABLE k=24 rows=1 read=0 open=1 realigned=1 r2max<= 9375035762838024393/500000000000000000 = 18.750072 per-corner 1.062970 (REALIGNED at id=1284303)
+R2TAB=323/80,862/243,61031/12960,3866011/607500,26869/4320,218023697/24300000,307200878907088192183/1000000000000000000,691201977540948432411/1000000000000000000,407294865453817581397/1000000000000000000,240000915528653424661/1000000000000000000,120000457764326712331/1000000000000000000,30000114441081678083/500000000000000000,51961722444834258363/1000000000000000000,4500008583072940391/1000000000000000000,1562504470352621419/250000000000000000,9375035762838024393/500000000000000000
+TABLE DISCORD: 0 read rows above their own Frobenius bound; 0 read rows above their own realigned bound (of 1 read rows carrying one; 17457 REALIGN lines read)

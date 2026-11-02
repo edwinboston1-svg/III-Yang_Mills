@@ -1,0 +1,8 @@
+v_inf head = 0.18648726817781897224  tail K t^-3 with K = 0.0063325739539 (at T/10: 0.00633257374017 ) tail = 3.1663e-19
+v_inf      = 0.186487268177819
+  record n=64: 0.18661644   n*(v - v_inf) = 0.0082669966
+  record n=96: 0.18654471   n*(v - v_inf) = 0.0055144149
+  record n=128: 0.18651959   n*(v - v_inf) = 0.0041371932
+  3-point fit of the record: v_inf = 0.18648721  a = 1.856e-5  b = 0.52813824
+  v = 88.17984: E cos(|Phi|/2) = (1-v/4)e^(-v/8) = -0.00034367336  (quadrature -0.00034367336);  record column exp(-3v/8) = 4.35505e-15
+  v = 28.74138: E cos(|Phi|/2) = (1-v/4)e^(-v/8) = -0.17024959  (quadrature -0.17024959);  record column exp(-3v/8) = 2.08529e-5

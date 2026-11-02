@@ -1,0 +1,31 @@
+== bent_n2_W2L2_ordered start 06:55:54
+   rc=0 end 06:56:04 W2-DONE 9.3 s
+   rhoA=0.101385149 Cgrid=0.207401038  E[chi(A)]=+6.238894517100e-01  T_conn(A) = 0.137401074
+== plan_n2_W2L2_ordered start 06:56:18
+   rc=0 end 06:56:22 W2-DONE 3.0 s
+   rhoA=0.081207503 Cgrid=0.166380055  E[chi(A)]=+6.210389044928e-01  T_conn(A) = 0.109451695
+== bent_n2_W2L2_cancel start 06:56:36
+   rc=0 end 06:56:48 W2-DONE 10.1 s
+   rhoA=0.150761558 Cgrid=0.282021148  E[chi(A)]=+4.893492990770e-01  T_conn(A) = 0.192979427
+== plan_n2_W2L2_cancel start 06:57:04
+   rc=0 end 06:57:08 W2-DONE 2.4 s
+   rhoA=0.132155408 Cgrid=0.249284935  E[chi(A)]=+4.863121380084e-01  T_conn(A) = 0.163784818
+== bent_n2_W3L2_ordered start 06:57:22
+   rc=0 end 06:59:06 W2-DONE 103.3 s
+   rhoA=0.133181760 Cgrid=0.304755199  E[chi(A)]=+7.704371328858e-01  T_conn(A) = 0.170762020
+== plan_n2_W3L2_ordered start 06:59:19
+   rc=0 end 06:59:29 W2-DONE 8.2 s
+   rhoA=0.109877830 Cgrid=0.252353735  E[chi(A)]=+7.698012864895e-01  T_conn(A) = 0.140119030
+== bent_n2_W3L2_cancel start 06:59:45
+   rc=0 end 07:01:04 W2-DONE 73.8 s
+   rhoA=0.207627360 Cgrid=0.386888782  E[chi(A)]=+5.110350558275e-01  T_conn(A) = 0.301141888
+== plan_n2_W3L2_cancel start 07:01:19
+   rc=0 end 07:01:24 W2-DONE 4.1 s
+   rhoA=0.189480725 Cgrid=0.351406872  E[chi(A)]=+5.011675523389e-01  T_conn(A) = 0.273665911
+== bent_n2_W4L2_ordered start 07:01:40
+   rc=0 end 07:15:28 W2-DONE 824.5 s
+   rhoA=0.145159076 Cgrid=0.350610374  E[chi(A)]=+8.140514173086e-01  T_conn(A) = 0.181436618
+== plan_n2_W4L2_ordered start 07:15:47
+   rc=0 end 07:16:42 W2-DONE 52.9 s
+   rhoA=0.121272229 Cgrid=0.294919949  E[chi(A)]=+8.149156756914e-01  T_conn(A) = 0.150645863
+== bent_n2_W4L2_cancel start 07:17:08

@@ -1,0 +1,13 @@
+== fr_n4_W2L2_top_ordered (frame 1,0,0,0) start 06:33:12
+   rc=0 end 06:58:27 W2-M2b peak memory 0.272 GB (S + N + snapshot), multiply-adds 2.7794e+11
+   full: rhoA=0.014262657 Cgrid=0.024622557  SO3: rhoA=0.000025010  E[chi_1/2(A)]: +1.409516789026e-01
+== fr_n4_W2L2_top_cancel (frame 1,0,0,0) start 06:59:03
+   rc=0 end 07:22:27 W2-M2b peak memory 0.272 GB (S + N + snapshot), multiply-adds 2.7794e+11
+   full: rhoA=0.016328764 Cgrid=0.027987780  SO3: rhoA=0.000023995  E[chi_1/2(A)]: +1.071988296370e-01
+== fr_n2_W2L2_tb_ordered (frame 1,1,0,0) start 07:23:10
+   rc=0 end 07:24:28 W2-M2b peak memory 0.017 GB (S + N + snapshot), multiply-adds 5.6761e+09
+   full: rhoA=0.075824953 Cgrid=0.153847391  SO3: rhoA=0.008242181  E[chi_1/2(A)]: +6.029787221331e-01
+== fr_n2_W2L2_tb_cancel (frame 1,1,0,0) start 07:25:09
+   rc=0 end 07:26:40 W2-M2b peak memory 0.017 GB (S + N + snapshot), multiply-adds 5.6761e+09
+   full: rhoA=0.123121847 Cgrid=0.231292614  SO3: rhoA=0.008385016  E[chi_1/2(A)]: +4.717716022775e-01
+== fr_n2_W3L2_tb_ordered (frame 1,1,0,0) start 07:27:16

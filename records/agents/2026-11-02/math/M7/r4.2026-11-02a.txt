@@ -1,0 +1,42 @@
+=== w2n4_W2L2.2026-11-01a.ordered  [HALFN=1004952559825 HALFD=1000000000000 WALLN=299753710213 WALLD=1000000000000] (from w2n4_W2L2_modes.2026-11-01a.ordered.txt)
+R4 COEF+HALF+WALL LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the dressing iteration leaves [0, 3]: no root)
+R4 COEF+HALF+WALL GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied half=1004952559825/1000000000000 wall=299753710213/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.07314411, 0.07314411] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+R4 COEF+HALF only LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+R4 COEF+WALL only LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the dressing iteration leaves [0, 3]: no root)
+R4 COEF+WALL only GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied wall=299753710213/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.07278364, 0.07278364] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+WMAX largest wall floor passing (x1/10000, bare COEF, LOCAL page scan): 141
+HMAX largest half factor passing (x1/10000, bare COEF, LOCAL page scan): 18404
+=== w2n4_W2L2.2026-11-01a.cancel  [HALFN=1005026545648 HALFD=1000000000000 WALLN=338036594825 WALLD=1000000000000] (from w2n4_W2L2_modes.2026-11-01a.cancel.txt)
+R4 COEF+HALF+WALL LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the dressing iteration leaves [0, 3]: no root)
+R4 COEF+HALF+WALL GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied half=1005026545648/1000000000000 wall=338036594825/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.05563173, 0.05563173] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+R4 COEF+HALF only LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+R4 COEF+WALL only LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the dressing iteration leaves [0, 3]: no root)
+R4 COEF+WALL only GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied wall=338036594825/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.05535349, 0.05535349] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+WMAX largest wall floor passing (x1/10000, bare COEF, LOCAL page scan): 142
+HMAX largest half factor passing (x1/10000, bare COEF, LOCAL page scan): 24260
+=== w2n4_W3L2.2026-11-01b.ordered  [HALFN=1021464856259 HALFD=1000000000000 WALLN=493236444955 WALLD=1000000000000] (from w2n4_W3L2_modes.m7.ordered.txt)
+R4 COEF+HALF+WALL LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the dressing iteration leaves [0, 3]: no root)
+R4 COEF+HALF+WALL GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied half=1021464856259/1000000000000 wall=493236444955/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.12423629, 0.12423629] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+R4 COEF+HALF only LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0009, 0.0080]
+R4 COEF+WALL only LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the dressing iteration leaves [0, 3]: no root)
+R4 COEF+WALL only GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied wall=493236444955/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.12162561, 0.12162561] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+WMAX largest wall floor passing (x1/10000, bare COEF, LOCAL page scan): 102
+HMAX largest half factor passing (x1/10000, bare COEF, LOCAL page scan): 10753
+=== w2n4_W3L2.2026-11-01b.cancel  [HALFN=1017814467872 HALFD=1000000000000 WALLN=536359800741 WALLD=1000000000000] (from w2n4_W3L2_modes.m7.cancel.txt)
+R4 COEF+HALF+WALL LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the dressing iteration leaves [0, 3]: no root)
+R4 COEF+HALF+WALL GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied half=1017814467872/1000000000000 wall=536359800741/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.07729749, 0.07729749] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+R4 COEF+HALF only LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+R4 COEF+WALL only LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: no passing alpha in [0.0001, 0.0080] (last: the dressing iteration leaves [0, 3]: no root)
+R4 COEF+WALL only GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied wall=536359800741/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.000000, 0.000000] root in [0.000000, 0.000000] u in [0.07594458, 0.07594458] u~ in [0.00000000, 0.00000000] r_hi=0.000000 LHS in [0.0000000, 0.0000000] alpha=0.0000000 -> FAIL (the dressing iteration leaves [0, 3]: no root) mix=0.000000000000
+WMAX largest wall floor passing (x1/10000, bare COEF, LOCAL page scan): 141
+HMAX largest half factor passing (x1/10000, bare COEF, LOCAL page scan): 17631
+=== U(1) control, beta = 1.2, two steps, fed MECHANICALLY into the SU(2) certificate (a category crossing, labelled as such):
+U1 ordered E[e^{iPhi}]=Phi_B}] E[e^{2iPhi}]=Phi_B}] (d = 1: a'_1 = E, a'_2 = E2 in the u and next slots)
+U1 ordered LOCAL page: KP-CERT REFUSED: COEF entries 1 and 2 are not non-increasing in the spin
+U1 ordered GRADED a=1/1000: KP-CERT REFUSED: COEF entries 1 and 2 are not non-increasing in the spin
+U1 ordered with SU(2)'s d_j division (u = E/2, next = E2/3) LOCAL page: KP-CERT REFUSED: COEF entries 1 and 2 are not non-increasing in the spin
+U1 cancel E[e^{iPhi}]=Phi_B}] E[e^{2iPhi}]=Phi_B}] (d = 1: a'_1 = E, a'_2 = E2 in the u and next slots)
+U1 cancel LOCAL page: KP-CERT REFUSED: COEF entries 1 and 2 are not non-increasing in the spin
+U1 cancel GRADED a=1/1000: KP-CERT REFUSED: COEF entries 1 and 2 are not non-increasing in the spin
+U1 cancel with SU(2)'s d_j division (u = E/2, next = E2/3) LOCAL page: KP-CERT REFUSED: COEF entries 1 and 2 are not non-increasing in the spin
+R4-END rc=0

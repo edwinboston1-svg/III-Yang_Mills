@@ -1,0 +1,14 @@
+WINDING KAT HELD: int chi^2 = 1, chi(U)chi(U^3) = -1, chi(U^3)^2 = 2, chi^4 = 2
+windings (1,1) k=2 J=1 bound 2^(4-k)|J| = 4
+windings (1,1,1,1) k=4 J=2 bound 2^(4-k)|J| = 2
+windings (1,1,1,1,1,1) k=6 J=5 bound 2^(4-k)|J| = 1.25
+windings (1,1,1,1,2) k=5 J=1 bound 2^(4-k)|J| = 0.5
+windings (1,1,1,3) k=4 J=-1 bound 2^(4-k)|J| = 1
+windings (1,1,2) k=3 J=0 bound 2^(4-k)|J| = 0
+windings (1,1,2,2) k=4 J=1 bound 2^(4-k)|J| = 1
+windings (1,1,4) k=3 J=-1 bound 2^(4-k)|J| = 2
+windings (1,2,3) k=3 J=1 bound 2^(4-k)|J| = 2
+windings (1,3) k=2 J=-1 bound 2^(4-k)|J| = 4
+windings (1,5) k=2 J=0 bound 2^(4-k)|J| = 0
+windings (3,3) k=2 J=2 bound 2^(4-k)|J| = 8
+MU=6: the largest bound over admissible m = 2 winding systems is 8 at (3,3); m = 1 gives 4

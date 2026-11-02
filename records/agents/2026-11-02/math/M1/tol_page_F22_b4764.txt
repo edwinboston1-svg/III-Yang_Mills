@@ -1,0 +1,17 @@
+START 2026-11-02 06:34:52 engine md5=3d17b9b8cd661c6fcbdd313acbcfe8f6 dress=page F0=22 beta=0.4764
+K=1.0000 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=4.0000 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=2.5000 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=1.7500 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=1.3750 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=1.1875 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.0937 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0105]
+K=1.1406 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.1171 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: PASS for alpha in [0.0018, 0.0073]
+K=1.1288 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: PASS for alpha in [0.0031, 0.0047]
+K=1.1347 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.1317 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.1302 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.1295 KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=22: PASS for alpha in [0.0034, 0.0044]
+TOL beta=0.4764 kappa* in [1.1295, 1.1302) (PASS at the lower, FAIL at the upper)
+END 2026-11-02 06:40:59

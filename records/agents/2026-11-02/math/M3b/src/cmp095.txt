@@ -1,0 +1,1302 @@
+Commun. Math. Phys. 95, 17-40 (1984)
+
+Communications in
+Mathematical
+Physics
+© Springer-Verlag1984
+
+Propagators and Renormalization Transformations for Lattice Gauge Theories. I
+T. Balaban*
+Department of Physics, Harvard University, Cambridge, MA 02138, USA
+Abstract. Lattice gauge theories may be looked at as perturbations of the theory of a vector field with a Gaussian action. We study this theory here and in following papers obtaining crucial results for understanding the renormalization group method in more complicated non-Abelian gauge field theories.
+Introduction
+In paper [3] a general strategy of constructing Yang-Mills field theories was described. It is based on the renormalization group ideas, as in the case of Abelian Higgs models [1]. We take a lattice regularization of the theory and we apply renormalization transformations similar to those proposed by Wilson [8]. To calculate results of these transformations we apply perturbative methods based on the expansion (18) of the action (11) in [3]. Main terms in this expansion are quadratic terms (20) in [3] equal to the simplest quadratic action for Abelian vector fields. Together with renormalization transformations and gauge fixing conditions they define propagators, i.e. covariances of the Gaussian measure defined by these terms. Understanding properties of the propagators is the most fundamental problem in the method. Properties we are especially interested in are local regularity properties and an exponential decay, the same as in paper [2]. Here we will prove these properties for the simplest propagators appearing in our constructions. We will apply the methods and results of paper [2].
+A. An Action, Its Symmetries, and a Renormalization Transformation
+We consider the theory of one vector field with a quadratic action. Field configurations are real valued functions A defined at bonds of the lattice . This is a d-dimensional torus which we identify with the subset {xe Zd: --L ^x < L ,  = 1, ..., d] of the lattice Zd. Bonds of T are ordered pairs of nearest neighbor
+^Research supported in part by the National Science Foundationunder Grant PHY-82-03669
+
+18
+
+T. Balaban
+
+points. We denote them by b, V, c, or <x, x'>, <x, x -f e> Thus ^4 are functions ^4 : {fo ci Tj -> [R. We identify them with vector valued functions defined on T by the formula
+
+
+
+=l,...,d.
+
+(1.1)
+
+Other important geometric objects are plaquettes. They are oriented elementary squares of the lattice T (or other lattices). We denote them by p, p' and so on. If p is a plaquette p = <x, y, z, w>, where x, y, z, w are corners of the square p
+written in an order indicated by the orientation of p, then we define a plaquette variable
+
+F(p) = (dA)(p) = ~ lA(dp) = z~l(A(x, y) + A(y, z) + A(z9 w) + A(w, x))
+
+= (dAv)(x) - (dvA)(x) =Fv(x) = - Fv(x).
+
+(1.2)
+
+The last equalities hold if we identify p with <x, x + e, x + e + ev, x -f ev> for some  <v. For an explanation of other symbols the reader is referred to [1].
+We assume that Ab is defined for bonds b with arbitrary orientation and that A< /> = --A<l > . The action is defined by the quadratic form
+
+SV) = i  d|F(p)|2=f  d|(^)(p)|2=t  £" F,vW|2'
+
+pc
+
+pce
+
+xeT,,v
+
+1-3)
+
+The covariant derivative dA, and so the action above, are invariant with respect to a group of guage transformations. A guage transformation is determined by a real valued function  : Tg -> R, and is defined by
+
+- (b_)\ b = <b_,b^. (1.4)
+
+This invariance of the action (1.3) is a fundamental symmetry of the theory.
+We will introduce renormalization transformations which preserve this symmetry. To make the considerations more clear we rescale the action from the -lattice to the unit lattice by transformation A(x) = ~(d~2}l2A(x\ xeT15 and we get
+
+X \(dA)(p)\2.
+
+(1.5)
+
+Let us introduce some new definitions and notations. We define a new lattice T[ = 7\ nLZd and we divide T1 into blocks B(y) parametrized by the points of
+T(!) 1L'
+
+B(y)={xT1:y^x<y + L,=l,...,d},yeT\
+
+(1.6)
+
+In each block B(y) we introduce a family of contours ^ connecting the points y and x :
+
+(y9 ...,x,x+1, ...,xd)]u...u[();1,x29 ...,xd),x],
+
+(1.7)
+
+where [x1?x2] is a line segment connecting points x 1 ? x 2 . We consider y, and all other contours appearing in the paper, as oriented contours, with initial
+point y and final point x. To introduce a renormalization transformation we have
+to define an averaging operation. It transforms field configurations on the old
+
+Propagators for Lattice Gauge Theories. I
+
+19
+
+lattice T into field configurations on the new lattice T^ and is given by the formula
+
+Bc=  L-«+
+jceB(c-)
+
+(1.8)
+
+where A() =  \ f°r arbitrary contour , andx(c) denotes a point in the block
+bc
+B(c+) obtained by translation of x by the bond c, so if c = <y, j; + Le > then x(c) = x + Le.
+If we make a gauge transformation A, then for the averaged field B we have
+
+B c
+
+=Bc-
+
+L~\(c+}-
+
+(c_}}
+
+= Bc-
+
+(d)(c)9
+
+(1.9)
+
+so fixing the average, we restrict the gauge transformations by the condition (y) = 0, ye T(£\ for nonconstant . We still have the invariance with respect to the restricted transformations and we remove it by introducing Axial (Ax) gauge fixing conditions A(y X) = Q, xeB(y), x ^ y, yeT^ If we denote
+
+<U^)=  
+ye7> xxeBy(y)
+
+(QA\= £ L~^VA(\x,x(c)-}),(B-QA)= \\ (Bc-(QA\), (1.11)
+
+xeB(c-)
+
+cc(1)
+
+then the renormalization transformation T is defined by
+
+(Te~s)(B) = $dA(B - QA)^(A)e-S(A\
+
+(1.12)
+
+We may look at this expression also in a little bit different way. We may define the averaging operation as given by Q directly. Then the average field B transforms as
+
+xeB(c +)
+
+xeB(c _ )
+
+= Bc - L-\(Q')(c+) - (Qf)(c_)) = Bc- (d'Q')(c).
+
+(1.13)
+
+Fixing it we restrict the gauge transformations by the condition (Q)(y) = 0.
+The remaining gauge degrees of freedom are removed by the term A(A). In the future we will use both points of view.
+The integral in (1.12) is obviously a Gaussian integral. We will prove later that
+the quadratic form (A, Ay is positive on the subspace of A satisfying QA = 0, A(yx) = Q, xeB(y\ yeT(L1}. A result of the integration is obviously a Gaussian density
+
+(Te-s)(B) = Z(0) exp( - \<£,z^B)) =Z(0) exp(- S^B)).
+
+(1.14)
+
+The form <£, ABy is gauge invariant. l f   is a gauge transformation on T(£\ then defining  on Tl as constant on each block, (x) = (y) for xB(y), we have
+Z(0) exp( - ^<5l, AlBy) = $dA(B - QA)^(A) exp( - S(A))
+- d^ -QA +dQ')A(A) exp(- S(A)) = Z(0) exp(- ^<5, AB».
+(1.15)
+
+20
+
+T. Balaban
+
+The density (1.14) is defined on the L-lattice T^0 and our final operation is the rescaling from this lattice to the unit lattice T(^\ The operation of rescaling is denoted by S.
+
+B. Compositions of Renormalization Transformations. Basic Sequence of Actions
+
+We can apply the renormalization transformation again to (1.14). A composition of two transformations is easy to calculate:
+
+((ST)2e~s)(C) = z(2^dB(C - QB)A(B)$dA(B - QA)A(A)exp( - SL~\A))
+
+= z^$dA($dA(C - QB)(B - QA)A(B))A(A) exp( - SL'2(A))
+
+= zTM$dA(C - Q2A)/JiQA)^(A)ap( - SL~\A))9
+
+(1.16)
+
+where z(2) is a numerical factor coming from scaling transformations and Q2 is defined as Q only with the number L replaced by L2 in all definitions. It is easily seen that a composition of k transformations is given by
+
+((Syte-s)(B) = z<k^dA(B^QkA)AJiQk_1A) ..... ^A^e'^^ where
+
+(1.17)
+
+(QkA\ =  d+1A([x,X(b)-])9bcTM = Z.dnT, = L-k,
+xeB*(b _ )
+
+(1.18)
+
+and x(b) is a point in Bk(b+) obtained from x by translation by b. If b = <y, y + ^>, then x(b) -- x + e . We define
+
+((ST)ke-s)(B) = Zk Aexp( - ±<B, AkBy).
+
+(1.19)
+
+It is easily seen that Zk A = Z " (/c 1} ..... Z(0), where ZO) is a normalization factor connected with j + 1 integration. Under a gauge transformation A the field A
+and the averaged field QkA transform as follows
+
+ *)-  f
+
+fc(b + )
+
+xefc(b_)
+
+/
+
+or denoting (Q'k)(y) = X r/dA(x), we have QkA = QkA - dQk.
+
+(1.20)
+
+The ^-function (B -- QkA) is invariant with respect to gauge transformations  satisfying Q'k = 0 and we can look at the integral (1.17) as obtained by removing this gauge freedom by the help of the ^-functions £A .
+
+C. Change of Gauge
+To calculate the integral (1.17) and to introduce some important Green's functions we have to change the gauge fixing terms. In continuum the best gauge from the point of view of regularity properties of Green's functions is the Feynman gauge. We will introduce a similar gauge for the lattice theory using the Faddeev-Popov
+
+Propagators for Lattice Gauge Theories. I
+
+21
+
+procedure. The action can be written as
+
+(dA,dAy=± ] d\F v(x)|2 = £ \(d ^4v)(x)|2
+
+xeT,,v
+
+x,,v
+
+x,,v
+
+
+
+X
+
+
+
+
+
+where A is ^-lattice Laplace operator for scalar functions and d* is the divergence operator for vector functions, d*A = Y d*A . We want to remove the second term
+
+in the action by a gauge fixing term, so we introduce under the integral (1.17) the identity
+
+1=- - - .
+
+The restrictions on the gauge transformations given by the (5-functions above are chosen in such a way that all the expressions in the integral (1.17) with the exception of gauge fixing terms <5A are invariant. Next we will calculate the expression in the numerator and denominator above and we will see that it is different from 0, but now let us transform (1.17). We change the order of integrations \dA ^d' ..., and we make the gauge transformation -- ' in the integral §dA.... We change the order of integrations again and we make a translation  ->  + ' in the integral $d.... We get
+(1.17) =z(k^dA(B - QkA)(\d'(Qk')
+
+2 --
+
+(1.23)
+
+Now we will calculate the integral inside the above expression:
+
+\
+
+/
+
+exp(-- inf i||5M - d*d\\2 Y
+
+\ --21"| d*dI'
+
+(1.24)
+
+and the infimum can be calculated using Lagrange multipliers. Introducing
+
+22
+g(, ) = \ II d*A -- ||2 + < , ^l >, we have the equations
+= ; = o.
+
+T. Balaban
+(1.25)
+
+Now we use spectral properties of the Laplace operator A on the torus T . It is a symmetric, non-negative operator, and 0 is its eigenvalue. Constant functions form the eigenspace corresponding to the eigenvalue 0, and on the subspace orthogonal to constant functions the operator  is positive. Hence it is an invertible operator and by  ~l we denote its inverse on this subspace. We extend it to the whole space by linearity, putting its value on constant functions equal to 0. Let us notice further that the operator Q'k transforms constant functions on the lattice into constant functions on the unit lattice, and similarly for the orthogonal subspaces. This implies the corresponding property for ^*, and for other operators constructed with the help of these mentioned above. Let us consider Eqs. (1.25). In the first equation the terms A2 and Ad*A are orthogonal to constant functions, hence ^* has to be orthogonal also. We assume that  is orthogonal and we get  = A~ld*A --A~2Q'*. Substituting in the second equation we get Qk = Q'kA~ld*A -- Q'kA~2Q'* = 0. The operator A~2 is positive on the subspace orthogonal to constant functions, hence QkA~2Q'* is positive also on the corresponding subspace on the unit lattice. Because  belongs to the subspace, so  = (Q'kA ~2Q'*) ~1Q'kA ~*d*A and the infimum in (1 .24) is acquired at the function
+0 = -ld*A--2Q(*(Q-2Q'*1Q'kA-lB*A.
+The value of the infimum is equal to
+
+= 2(d*A,-Q'*(Q:k-2Q'*lQ'k-id*Ay,
+
+(1.26)
+
+where we have used the fact that the quadratic form in d* A is defined by a projection operator. We have finally
+
+pe -^-<
+
+(1.27)
+
+It is easy to verify that the operator I --  ~lQ*(Qk~2Q*)~lQk ~l is a projection in the space L2(T) of scalar functions, so we can write also
+
+1
+
+'2
+
+//
+
+~iQ'*(Q'~2Q'*)~1Q'~)d*A\\2 I. (1.28)
+
+Propagators for Lattice Gauge Theories. I
+
+23
+
+To understand better regularity properties and bounds of the operators involved
+we write them in momentum representation. The momentum representation on an arbitrary torus Ti ' -= {ix^e^Z/dd' : --L'^ x < I/ ,  = 1, . .. , d} is introduced by the Fourier transform
+
+7(P) = 
+
+,
+
+/(*) = (2d  (  7 K'P/(P)>
+pef'r,\=lLj/
+
+(1.29)
+
+where TJ is a dual torus f'n = {p = (p15 ...5Jpd): p = (/L)n, n is an integer,
+1 ^n<L~l, = l,...,d}. In the case considered now we have the torus T with L' = L(Ltkfe))'1 . Let us write in the momentum representation the equations we have solved:
+
+' 2(p)(p) - A(p)(d*A)(p) + uk(p](p') = 0,
+
+X«t(p' + /)I(p' + 0 = 0,
+
+(1.30)
+
+= d |3(p)|2,a(p) = - ^^/^ -- 1 ,
+
+(L31)
+
+where p' belongs to a dual torus T[k} = {p1 = (p'9... 9p'd): p'^ = (/L)Lkn, n is an integer, - L/Lk<^n< L/Lk, =l,...,d}9 pef is represented as a sum p = p' + /,p' G f(k} and /= (/!,..., /,), / -2m, m is an integer, - (Lk - l)/2 ^ m ^ (Lk - l)/2 for L odd, - Lk/2 ^m< Lk/2 for L even.
+The first equation in (1.30) can be solved uniquely for p ^ 0 and we get
+
+= A ~ \p)(d*A}(p] - -2(p}uk(p}(p'\ p + 0,
+
+(1.32)
+
+for p = 0 the equation implies (0) = 0. The second equation gives
+
+Because uk() = 0 for / ^ 0, wfc(0) = 1, so this equation implies also 1(0) = 0. Thus we get the solution
+
+for
+
+p'^0,I0(/) = ( ) ( / ) f o r / ^ 0 , I 0 ( 0 ) = 0.
+
+(1.34)
+
+24
+Substituting it into the expression in the exponent of (1.24) we get || d*A - 0 P =(2d
+
+T. Balaban
+
+(1.35)
+
+/d
+
+\
+
+where § dp ... denotes the sum   ]j[ (/L)Lk 1. . . , similarly J dp ... , and we
+
+have
+
+T*
+used
+
+the
+
+decomposition pp=ep, '\+ =/i, writing
+
+/
+j
+
+dp . . . =
+
+J
+
+f)
+dp' 2] .... We have
+
+__
+
+f,,
+
+ffc>
+
+i
+
+used also the equality (d*A)(p)= 5(p)^(p), more exactly its consequence
+
+)= 0. The expression (1.34) can be rewritten in a way which makes clear its possible bounds. From (1.30) we have (p)= 0(|p |2) in a neighbourhood of 0. Let us
+d introduce the unit lattice operator AQ(pf) = £ \eip' -- 1 12. It has the same asymp-
+=l
+totic behaviour ^0(pr) = 0(|p'|2) in a neighbourhood of 0 as (p\ so the quotient Q(p)/(p) is bounded, more exactly we have 0(p')/^(p'+ /)<; 0(1)1/(1 + |/|2). Similarly we have
+
+\uk(p' + 01 g 0(1)  J^LgOd)  T-^-I.
+
+ = l l^ "f" V l
+
+-"=1
+
+I VI
+
+The expression in the exponent in (1.28) can be written as
+
+(1.36)
+
+Now all the expressions above are well defined and bounded even at p' = 0 if we extend them by continuity. The expression in | |2 defines the projection
+operator acting on d*A and appearing in (1.27). Let us denote the projection operator by R, so we have
+
+The gauge fixing density has the form '
+
+, (1.39)
+
+Propagators for Lattice Gauge Theories. I
+
+25
+
+and from its definition it follows that ld(Q'k)^(d^A) = 1. The projection operator R has a clear meaning. It is an orthogonal projection on the linear
+subspace N(Q'k] of L2(T\ N(Q'k) = {:Q'k = 0}. Indeed R =  if Qk = 0, and if R =  then A0Q'kA ~ 1 = 0, and taking  = A ~ l we have  =  and ^l = 0. Let us denote this subspace by R also, R = AN(Q'k). We have
+
+=f
+N(Q'k)
+
+(1.40)
+
+
+
+\ /
+
+/
+
+so the density <^ has a limit as  -> 0
+
+9f(d*A) -> |det(J Ufc))|<y3*),
+-»0
+
+(1.41)
+
+where 3 is a -uncon concentrated at the origin of the sub-space R. By definition
+
+$dR()f() = $dR(R)f() = J d^d, R(,}f(, + 2) = j d2/2).Let us
+
+R
+
+R
+
+
+
+recall also that the operator  is positive definite on N(Q'k), thus invertible, as it follows from [2].
+Let us sketch briefly another possible approach to the calculation of the
+integral (1.23). We write
+
+(1.24) =\d(Q'k) exp( - ~ \\ d*A -- aQ'*Q'k ||2),
+
+(1.42)
+
+with a > 0 (we will take eventually a = 1), and let us denote 'a =  + aQ'k*Q'k = A + aP'k. The properties of this operator were investigated in [2], its inverse is a bounded operator G'k with good regularity properties described in Theorem of [2]. We repeat the calculations done after the formula (1.24) with the operator A'a instead of A and we get the following formulas for the minimizing function 0 ,
+
+0 = G'kd*A - G'k2Q'k*(Q'kG'k2Q'* lQ'kG'kd*A,
+
+(1.43)
+
+and for the projection operator R
+
+Now all the operators appearing in these formulas are well defined. We have to verify it only for (Q^G^Q'*)'1. It is enough to prove that QfifQ'* is positive definite. This operator is of course nonnegative and if for some  defined on Tf} we have <, Q'fi'Q'fy = || G'kQ'*\\2 = 0, then Q'* = 0, hence  = 0. We have bounds 0 < Q^G'^Q'* ^a~2, and they imply the existence of the inverse operator and a bound from below. To understand better the properties of this
+operator we calculate the Fourier transform. It is a translation invariant operator
+on the unit lattice T^ and its Fourier transform can be written using formula (2.48)
+
+26
+from [2].
+
+T. Balaban
+
+From this representation and from the bounds (2.51), (2.52) of that paper, it follows that there are positive constants 70,71? in fact y0 dependent only on d, yl = ~2, such that y0 ^ Q'kG'kQ'^ ^ y. This property and the representation (1.44) are crucial for the later considerations when we will have operators dependent on external gauge field. The operator J^ given by (1.44) is of course by definition independent of a and we can take arbitrary a in the representation, e.g.a = 1, which is most convenient for bounds.
+
+D. Operators Hk and a Calculation of the Actions
+The equality (1.23) gives us a composition of k renormalization transformations with the new gauge fixing density ^. In the sequel it will be convenient to take the limit  -> 0, i.e. to consider Landau gauge. We may introduce this gauge from the beginning using the equation
+
+\d(Qk)\z( \N(Qk))\R(d*A - ) = 1. We have to calculate the integral
+
+(1.46)
+
+((ST)ke~s)(B) = z/(/c)|det(zl \N(Qk))\$dA(B - QkA)R(d*A)exp(-±(dA, dAy). (1.47)
+
+With this integral an operator of fundamental importance is connected. It is defined on configurations B on the lattice T^ and its value on such a configuration is equal to a configuration A on T minimizing the form ^(dA, dA) under the conditions QkA = B, Rd*A = 0. Let us calculate this minimum. We introduce the function
+h(A, , ) = ^(dA, dAy -f <, QkA -- J5) + <, Rd*Ay
+
+, QkA - By + </l, Rd*Ay,
+
+R = ,
+
+(1.48)
+
+and we consider the equations
+
+~ ~hA =A- dd*A + * + d = 0,
+
+^-=QkA-B = 0,  = Rd*A = Q.
+
+(1.49)
+
+We have Rd*A = d*A- A~iQ^(Q'k~2Q'^lQk~ld*A = 0, so the first equation has the form
+
+A A - dA ''Q'^QA-iQ'*)- 1Q'A ~ld*A + Q* + d = 0.
+
+(1.50)
+
+Propagators for Lattice Gauge Theories. I
+
+27
+
+It implies that  is orthogonal to constant functions. Introducing the new variables A' = A112 A, and dividing by A1/2, we have
+
+= Q^ (1.51)
+
+Let us notice that A is orthogonal to constant functions also. This can be written as
+
+(/ - P)A + A- l/2Q* + A- l/2d = 0.
+
+(1.52)
+
+A solvability condition for this equation is
+
+PA ~1/26* + PA ~l/2d = PA~ l/2Q* + d ~1/2(/ - R) = PA~ 1/2Q* - 0.
+
+(1.53)
+
+We have the decomposition
+
+A' = (I- P)A + PA' = A\ + A'2
+
+A[= -A' 1/2* -A' Il2d, A2 = dA~ 3/2Q'*(QkA ~2;*l'.
+
+(1.54)
+
+where ' = QkA~3/2d*A'. The configuration A can be expressed in terms of A' as follows: A = A ~ A l/2 + A0, where AQ is a constant configuration.
+Substituting it into the other two equations in (1.49) and using the identity
+
+Qk3 = 8&, di is the unit lattice differentiation, we get
+
+(1-55)
+
+Qk -1/2A[ + d^' + QkAQ = - QkA ^Qfa - QkA ~ld + d,' + QkA0 = B,
+
+- R8*A -lQ* - Rd*A ~ld H- RA ~lQ'*(Q!kA-2Q'*Y l'
+
+= -RA ~lQk*d* - R = -  = 0,
+
+(1.56)
+
+so for  = 0 the third equation in (1.49) is satisfied automatically. The second equation gets the form
+
+- Qk-lQ* + d^' + QkA0 = B.
+
+(1.57)
+
+It implies that B -- QkA0 is orthogonal to constant functions. Taking the decomposition B = B' + J30, where BQ is a constant configuration and B' is in the orthogonal subspace, we can identify QkA0 = B0, or A0 = Q*B0. Further we have the solvability condition (1.53)
+
+p^-^^^^-^ ^^^ -^ j-^af-o,
+
+which is equivalent to 3* -- 0. Let us introduce the operator
+
+ = Qk~lQ*.
+
+(1.58)
+
+Equation (1.57) can be solved with respect to  and we get  = -f ~1d1f -- ~lB'. The solvability condition gives the equation * = d*"d/ - d*~iBf = 0. This equation can be solved with respect to ', and we get ' = (d*~ 1d1}~ ld* ~ lBf. These calculations lead to the following result for the minimal configuration
+
+28
+A, i.e. for the solution of Eq.. (1.49) :
+
+T. Balaban
+
+This defines the operator HkB = A, thus we have HkB = ·(d*-ld,S*-B' + Q*B0.
+Let us write this operator in momentum representation.
+
+0. (1.59)
+(1.60)
+
+(QkA)(pr) = £' + l)v(p' + l)A(p' + I), v(p) =
+
+'
+
+I
+
+U\P)
+
+and operator  as
+
+(1.61)
+
+where we have omitted the subscript k. Multiplying (p'} by Q(p'\ we get a welldefined positive function for all p'T(*\ 0 < y0 ^ Q(p')(p'} ^  . We have the following momentum representation for HkB :
+
+' + O ( P ' +
+
+[ v (p' (pf
+-B(p'\ (1.63)
+This expression is well defined and bounded for all values of I and p', including p' -- 0 where it is defined as a limit for p' -> 0.
+Another important property is that the sum over / of the absolute value of this expression multiplied by | dv(p' + /) ]| p1 + /| is bounded by a constant dependent on
+
+Propagators for Lattice Gauge Theories. I
+
+29
+
+d only. This implies bounds on (l/\x'-x\*)\dv(HkB)(')--dv(HkB)(x)\ proof of Lemma 2.4 in [2].)
+
+(see the
+
+Using (1.60), or better (1.63), we can verify all the properties oHkB: QkHkB = B, Rd*HkB = 0, HkB is a minimum of ^<A, dAy on the hyperplane {A:QkA = B, Rd*A=Q}, which means that (dA',dHkB> = 0 on the subspace [A':QkA' = 0, Rd*Ar = 0}.
+
+Let us now come back to the integral (1.47). We make the translation A = A +
+
+HkB and using the above properties of HkB, we get
+
+) = Zk exp(- ±<dHkB, dHkBy).
+
+(1.64)
+
+The action Ak is thus defined by
+
+<B, kBy = <dHfc, d#k£>.
+
+(1.65)
+
+Using formulas (1.60) or (1.63) we obtain the following expression
+
+K««),,(rtl!
+
+(1.66)
+
+The function under the integral is bounded from below and above by positive constants yQ9y dependent on d only, so we have
+
+7o <31, ^B> ^ <, ZlfcJB> ^7l <31B, .B) .
+
+(1.67)
+
+We will need also a representation of Hk similar to the representation (1.44) of the projection #. It will be expressed in terms of well-defined bounded operators.
+We are going to define themnow.
+
+E. Operators G The integral (1.47) can be written in the following way
+((ST)k exp(- S))(B) -z'<k>| det( \N(Qk))\dA(B - QhA)R(d*A)
+
+(1.68)
+The additional terms vanish because of the delta-functions. The quadratic form in the fields A in the exponential is equal to
+
+- < Ay - < dPd*Ay + a(A, Q*QAy,
+A - d*d+aa*, R = I-P
+
+(1.69)
+
+30
+
+T. Balaban
+
+where we have omitted subscripts. The configuration d*A is orthogonal to constant functions and on such configurations the operator P is given by the formula
+
+p = A -lQf*(Q'-2Q'*lQ' ~ *.
+
+(1.70)
+
+We will obtain an explicit representation of
+
+A~l = Gfc, or simply G.
+
+(1.71)
+
+At first let us prove that a is a positive operator. Of course it is a symmetric operator and it is non-negative as a sum of two non-negative operators A -- dPd*
+and *, a > 0. Thus if for some A we have AaA = 0, then
+
+A A - dPd*A = Q9QA = 0.
+
+(1.72)
+
+From the first equation we get A = d~2Q'*(Q~2Q'*}~ 1  + AQ9 where AQ is a constant vector function and  is a function on unit lattice T/) orthogonal to constant functions. Using (1.55) we have
+
+QA = d&'-iQ'^Q'-tQ'*)- l + A0 = d^ + AQ = 0,
+hence *31 = 0, and this implies  --0. The above equation implies AQ -- 0, so A = 0 and the positivity of Aa follows. It is an invertible operator and the equation
+
+A A - dA -1Q'*(Q' ~2Q'* 1Q' ~ *d*A + aQ*QA = J
+
+(1.73)
+
+has a unique solution for the arbitrary vector function J. We consider A also as a vector valued function on the lattice T . To solve this equation explicitly we calculate at first a projection of A on the subspace of constant functions. For each component A we have from (1.73)
+
+*6 = a<\9 Ay = <1, J > ,
+
+(1.74)
+
+so <1,^> =«~1<1, J >, 1 denotes here a function on T identically equal to 1. From now on we will assume that each component of A and J is orthogonal to constant functions. Applying the operator QA~l to (1.73) and using (1.55) we get
+
+QA - dl Q ~l*A + aQ ~1Q*QA = QA~ 1J. Of course <1,QA > -<1,Q ~l J > = 0. Let us denote
+
+(1.75)
+
+ = I + aQA-lQ*.
+
+(1.76)
+
+It is a well-defined and positive operator on the subspace of vector functions defined on the unit lattice T(® and orthogonal to constant functions. Applying ~l to (1.75) we get
+
+-1Q-lJ.
+
+(1.77)
+
+Substituting it in (1.73) and applying A ~1 we have
+
+A - d-2Q'*(Q'-2Q*ylQ' ~ld*A + a~ lQ*~ldvQ' ~ld*A + aA~ lQ*~lQ -1J = A-1J.
+
+(1.78)
+
+Now we will calculate Q A~ld*A. Let us apply Q~ld* to the above equation:
+
+Propagators for Lattice Gauge Theories. I
+
+31
+
+aQ' ~2Q'*d*- ^Q ~1J = Q~2d*J. (1.79)
+We know that the operator Q'~2Qf* is positive on the considered subspace. It is easy to see that d*~dl is positive also because ~l is positive, so ~1 ^  > 0 and d*~1d ^ ud*d1 = u0 > 0. Thus we obtain from (1.79)
+Q ~ ld*A = (d*-dj- 1 [a~ \Q ~2Q'* 1Q' ~2d*J - d*~lQA "1 J] . (1.80)
+Substituting it in Eq. (1.78), we obtain finally
+
+(1.81)
+for J satisfying <( 1, J^> -- 0. Then the solution A satisfies also < 1, A > = 0. The right-hand side of (1.81)defines the operator Gon such functions J. For arbitrary J we take the decomposition J = J' + J0, J0 constant, J' orthogonal to constant functions, and we put
+
+GJ = GJ' + a~lJQ.
+
+(1.82)
+
+This gives the solution of Eq. (1.73), so G = ~l. To investigate better the operator
+
+G we write it in momentum representation :
+
++
+
+[(v
+'.vL \ r
+
++ n 2 '"(»"' +r + ' ' ) A2(p' + l')
+
+ (/>' + /'),
+
+(1.83)
+
+for p # 0, t(!} = ~J,<n, A,V>} = a-' J (0), where
+
+32
+
+T. Balaban
+
+We will prove that G is a bounded operator by transforming the formula (1.83) in a
+manner similar to that applied in the formula (1.63) for the operator Hk. Let us notice at first that the function
+
+has
+
+a limit as pf
+
+->
+
+0,
+
+lim
+p'->0
+
+Q(p')
+
+(p') = , and it is bounded from below and above
+
+by positve constants independent of fe and depending on d and a only. From this it
+
+follows that the function
+
+has the same property, hence also its inverse. Now we will analyze separately some groups of terms in (1.83). Let us start with the first two terms:
+V,
+
+· [u(p' + l')(p' + /') J(pf + /) - u(p'
+
+03
+
+0. (1.87)
+
+Owing to the cancellation of the terms with /' = /, the above expression can be
+extended by continuity to p' = 0. Using all the properties of the functions appearing
+above, e.g. the inequality (1.36), we can easily prove that this expression defines a bounded operator on L2(T). It is bounded also when differentiated two times at most. To analyze the third term in (1.83) we will consider the expression in square bracket :
+
+g,(p' + J
+V
+
+\u(p' +  \p' + 1")
+
+u(p' + l)vu(p' + I)
+
+A(p' + I)
+
+> (P
+
+'+0 I2(P')
+(p' + I)
+
+l)\20(p') (p' +1")
+
+(1.8
+
+Again taking into account the cancellation of the terms with /" = / the above
+expression is well defined by continuity for p' = 0, and we even get an additional factor A0(pr). Because there are two expressions in square brackets in the considered term, we get the additional factor ^(p'}. This factor multiplying the function
+between the square bracket expressions gives an inverse of the expression (1.86) which is also well defined. Thus the third term is well defined by continuity at
+p' = 0 and defines a bounded operator together with its derivatives up to the second
+
+Propagators for Lattice Gauge Theories. I
+
+33
+
+order. It can be easily calculated that the values at p' = 0 agree with the second and third equalities in (1.83). We may conclude the above considerations in the following
+
+Proposition 1.1. The operator G is a symmetric operator on L2(T ) and || GJ ||, ||VGJ ||, || GV*J ||, ||VGV*J ||, || VVGJ ||, || GV*V*J || ^ ~l \\J ||, (1.89)
+
+with a positive constant y0 independent ofk, T , and depending on d only (if we put a -- 1). This implies the bound from below:
+
+Aa = G~l^y0(A+I).
+
+(1.90)
+
+Let us now come back to the integral (1.68) and to a calculation of HkB. It is defined as a minimum of the form ^< AaAy --a(B, By under the conditions
+QA = B, Rd*A = 0. We introduce the function
+
+h(A9 , ) = ±(A, aAy + <, QA-By + <A, Rd*A)9 R = ,  and  are Lagrange multipliers, and we solve the equations
+
+(1.91)
+
+h _
+
+~A~ « + +
+
+,
+
+We get
+
+h
+
+h
+
+-- o =QA-B = Q, o-- = Rd*A = 0.
+
+A = - G* - Gd, Rd*A = - Rd*GQ* - Rd*Gd = 0.
+
+(1.92) (1.93)
+
+Let us calculate the operators Rd*GQ* and Rd*Gd. The operator d*G* acting on a constant configuration gives 0, so we have to calculate it on configurations orthogonal to constant configurations, * transforms them into configurations on the ^/-lattice and orthogonal to constant configurations. On such configurations G is given by the formula (1.81), and we have
+
+d*G* = d*A ~1Q* -- ad* A ~1Q*~1QA ~ 1* + [A-1Q'*(Q'-2Q'*l-
+
+= A-1Q'*(Q>A-2Q'*1a~1(3*-ldlld*-1.
+The operator R is given by the formula R = I - P = I - A~Qf* Q'~, so R~1Q'* = Q and we have
+
+(1.94) (Q~2Qf*)~l
+
+Rd*GQ* = 0, QGdR = 0.
+
+(1.95)
+
+Calculating d*Gd we get the formula
+
+d*Gd = I + ~^Q* [(Q' -2Q'*1 a~ \d* ~ ^J"1 (Q' ~2Q'*l
+
+-2Q'*i~]Q'-L,
+
+(1.96)
+
+34
+
+T. Balaban
+
+and from this it follows that
+
+Rd*Gd = d*GdR = R.
+
+(1.97)
+
+The equalities (1.95), (1.97) imply that the second equation in (1.93) has the form R =  = 0. Thus we have
+
+A = - G*,
+
+(1.98)
+
+and the condition Rd*A = 0 is satisfied automatically. We have to satisfy yet the condition QA = B, so we have to investigate the operator Gg*. It is given by the formula
+
+1-i+a-l-id1(d*-dd*-i, and can be bounded as follows
+
+(1.99)
+
+^a~lL
+
+(1.100)
+
+The operator a~i ( -- \)/ has the momentum representation
+
+(p')
+
+, .  o((P})
+
+n 1 10 j
+
+from which it follows that it is bounded from below and above by positive constants dependent on d only (for a = 1). The same property holds for QGQ*. The condition QA = B gives the equation
+
+- QGQ* =B,- = (QGQ*1B,
+
+(1.102)
+
+so finally we get the representation
+
+HkB = GQ*(QGQ* 1B.
+
+(1.103)
+
+This representation allows us to reduce a proof of properties of Hk to the corresponding properties of G.
+In a similar way we can construct another important operator with the help of
+G, namely an orthogonal projection in the metric {A, AaAy on the subspace of A satisfying the conditions QA = 0, Rd*A = 0. This projection can be found as a
+minimum of the form {A --AQ, a (A --AQ)y on the subspace of AQ satisfying the conditions QAQ = 0, Rd*AQ = 0. We consider the function
+
+g(A0, , )=^<AQ - A, a(AQ - A)y + <, QAoy + U RSM0>, R = , (1.104)
+and the equations
+
+(U05)
+
+Propagators for Lattice Gauge Theories. I
+
+35
+
+The first equation gives A0 = A - G* - Gd,and Rd*A0 = Rd*A - Rd*GQ* - Rd*Gd = Rd*A -  = 0,
+so AQ = A -- GdRd*A -- GQ*. The second equation gives QA0 = QA- QGdRd*A - QGQ* = QA- QGQ* = 0,
+so we get the following formula for the projection
+
+or
+
+A0 = PA = A- GdRd*A - G*(G*)~ *
+
+(1.106)
+
+P =I - GdRd* - G*(G* *
+
+(1.107)
+
+Thus all the important operators we will work with in the future are expressed in
+terms of the operators Gk and G'k. The operators G'k were investigated in paper [2]. In the next section we will use those results and the methods of that paper to prove
+the corresponding properties of Gk .
+
+F. Regularity and Decay Properties of G
+
+We want to prove that the operators Gfc have properties similar to those of the operators investigated in paper [2]. To formulate them we have to introduce several norms. The most fundamental are the supremum norm
+
+A =maxsup|A(x)|, 
+
+\VA\ = maxsup|(v)(x)|,
+
+and the Holder norm
+
+sup
+ x,x': \ -- ' \ ^ 1
+
+(1.108)
+
+,\ x,x': \ -- x'\ 1
+
+, x --x
+
+\(dAv)(x)-(dAv)(x')\. (1.109)
+
+Besides these we use also L2-norms. To describe decay properties we use two families of cubes, both parametrized by
+points of the unit lattice T(£\ Cubes (y) are simply unit cubes of T, or A(y) = B\y\ ye T(£\ Cubes 2(y} are sums of 2d unit cubes having the point y as a corner, thus they are cubes of size 2 and with a center at y.
+Let us omit the indices k and  in the following. We can formulate the basic
+result of this section.
+
+Proposition 1.2. There exists a positive constant Q depending on d only, such that
+
+- y / « | J | (1.110)
+
+for xe(y\ supp J c (y'\ with the constant 0(1) depending on d only,
+
+||CVGJ||, ||CGV*J||^(l)^^-^'(||C|| + |C|) J|
+
+(l.lii)
+
+for 0 rg  < 1,eCTM((y))9 supp J c: (y'\ with the constant O(l) depending on d
+
+36
+
+T. Balaban
+
+and (O(l) -» oo / -> 1),
+
+|(VGV*J)(x)|^0(l)-^-^(||J||e + |j|)
+
+(1.112)
+
+for 0 <  < 1, xe(y\ supp J c z(/), with the constant 0(1) depending on d and  (0(1) -> oo jf -><)),
+
+/or 0 ^  < l ,  > 0 ,  +  < l , CeC^(z(j;)), supp J c z(j/), wz/z fe constant 0(1) depending on d,  fl«d (O(l) -> oo z/ -» 1 or  -> 0).
+Finally there exists a constant 0(1) SMC/Z that
+|| CGJ II, IIVGJ II, IICGV*J II, IICVGV*J II, II CVVGJ II,
+
+l
+
+(1.114)
+
+for supp  <=. (y\ supp J
+Let us remark that in the inequalities (1.112), (1.113) the choice of derivatives
+VGV* is accidental; we can take arbitrary derivatives, like dGv, <3*Gdv, d*Gd*. The localized inequalities (1.110)-(1.114) imply immediately the following
+global inequalities
+
+|GJ|,|VGJ|,|GV*J|,|zlGJ|, ||VGJ||, ||GV*/|| ^ 0(1)|J|, (1.115)
+
+VGV*J ^0(l)(||J|| + |j|),
+
+(1.116)
+
+||VGV*J||^0(l)(||J||+ + |J|),
+
+(1.117)
+
+and (1.89), with the same dependence of the constants 0(1).
+
+A proof of Proposition 1.2 will be given in several steps. In the first step we will
+
+show that the inequalities (1.115)-(1.117), (1.89) imply the proposition. Probably
+
+the simplest proof of the exponential decay properties can be obtained by relating
+
+G on the torus to G on the whole lattice Zd in the usual way, and then proving
+
+that
+
+the
+
+operator
+
+~ ' A e ' <q xy
+
+<q xy
+
+e
+
+a
+
+-- Aa
+
+is
+
+a
+
+small
+
+perturbation
+
+of
+
+a
+
+for
+
+vectors
+
+qeRd sufficiently small. Instead we construct a random walk representation of the
+
+kind described in [2]. Such representations will be our basic tool in investigation
+
+of more complicated operators. We consider the lattice of cubes of size M0, M0 = Lm°, defined by the lattice T(^m°\ and cubes z of size 2M0 and with a center at the point ze T^m°\ These cubes cover the lattice T . We construct a partition of
+
+unity taking the functions
+
+h(t) = 1 for te [ -- ^, ^], h is chosen in such a way that
+
+h2(t-n)=l, hence £/zz2(x)=l.
+
+«
+
+z
+
+We define an operator C0 by the formula
+
+(1.118)
+
+Propagators for Lattice Gauge Theories. I
+
+37
+
+We will prove that C0 is a good approximation of G. We will be very sketchy with arguments because they are almost the same as in [2]. At first we calculate AhA. We have
+(hA)(x)=h(x)(A)(x)- 
+best(x)
+(QhA)(y) =
+
+ l" 
+
+eBk(y)
+
+xe[x,x
+
+= <QhA - S(dh)A,
+
+so
+*/z =*i - S*(dh),
+and *AX = Q*hQA + Q*S(dh)A = hQ*QA - S*(dh)QA + Q*S(dh)A,
+(dPd*hA(x) =  1d(dPd*)v(x, x')h(x')Av(x')
+
+= h(x)(dPd*A\(x)-  d(dh)(XtX,)(dPd*)v(x,x')Av(x')
+
+= h(x)(dPd*A)(x} - (Ptfh)A\(x). These equalities imply hA = (~ dPd* + aQ*Q)hA
+
+(1.120)
+
+= a h A ~  (dh)(b)(dA)(b) - (h)A + S*(dh)QA - Q*S(dh)A + P^
+L&es( )
+
+= haA-K(h)A9
+
+(1.121)
+
+hz = I-R, and we get the desired representation
+
+(1.122)
+
+V--t
+
+Ao GAoK(vAy)GA> .....
+
+ = (o>,...,n)
+
+hn- K(vh n^)Ghn',
+
+^(1.123')
+
+where the summation is over all finite sequences  with .e T(^+m°\ Of course the
+
+sum is convergent only if R is small in a proper sense. This holds if M0 is sufficiently large. For example let us prove the inequality (1.113) assuming the inequalities
+
+38
+
+T. Balaban
+
+(1.115)-(1.117). Let us consider (VGV*J. We represent G by the sum in (1.123) and we estimate the norm || £VGV*J \\a by the sum of norms. To estimate terms in this sum we have to understand properties of factors in each term. There are two types of factors, with the operator G and with the operator K(h). The factors with G are estimated by using (1.115). For the first factor we have
+
+Next we have to estimate \hz K(hz )A \. The operator K(h) is a simple, shortranged, first order differential operator, except the term P^dhJ. Let us write bounds for theoperator <9P<3*. They follow from the representation P = G'Qf*(Q'Gf2Q'*)~lQG, from Lemma 2.4 of [2], and the representation (1.45) and the analyticity method of
+proving an exponential decay (see the proof of Lemma 2.4 in [2]). We obtain
+
+-\
+
+(1.126)
+
+\(dPd*)tV(x9 x") - (dPd*)tV(x'9 x")\ ^ 0(l)e-'^-"\
+
+forx,x;':|x-x'|^l, < 1.
+
+(1.127)
+
+The constant 0(1) in (1.126) depends on d only, and in (1.127) it depends on  also
+
+(O(l)-» oo if  -> 1). This implies a bound on the operator hzK(hz ). We have to
+consider separately the cases when z , DZ2 are disjoint, and when they are overlapping. In the first case we have only the operator hz^Pl(dhz^} and (1.126) gives a bound with a small factor O(M^1) and the exponential factor
+
+exp(-±'Q z 1 - z ? | ) - e x p ( - ^ / 0 M 0 | z / 1 - z'2\\ where z'vz'2 are points z 1 ? z 2
+
+rescaled
+
+to
+
+the
+
+unit
+
+scale,
+
+i.e.,
+
+z\
+
+, z'2e
+
+T . ( /c+mo) 1
+
+In
+
+the
+
+second
+
+case
+
+we
+
+have
+
+the
+
+small
+
+factor 0(M~l) only, but we may include the factor exp( -- \z\ -- z'2|) because
+
+\z\ --z2 1 ^ 2d. Defining 2Q = mm {^'G, M'1}, we obtain
+
++\A\).
+
+(1.128)
+
+The last factor in each term is estimated by using (1.1 15), (1.1 16)
+
+(1.129)
+
+There is one possibility left yet, namely that of the terms with one factor. Then we apply the inequality (1.117) together with (1 . 11 5), (1 . 11 6) and we get
+(1.130)
+
+Gathering together all these estimates we obtain
+
+I
+
+CVGV*J
+
+||
+
+5
+
+o(i)(
+
+|
+
+clL
+
++
+
+1
+
+cI
+
+) n=0
+
+o(i)2"M0-,=(o>,... J; , eDo yeD
+
+.g-2<5o|c0-co| ..... e~20\n _1 - n\/ II j II
+
+_j_ I j | \
+
+-^(\\l+ C|)(||J|U. +|J|)
+
+0(\)2nM~n(  e-aoMowV
+
+\XeZd
+
+J
+
+(1.131)
+
+Propagators for Lattice Gauge Theories. I
+
+39
+
+Let us notice that the constant O(l) under the sum above is an absolute constant
+depending on d only, hence we can fix M0 depending on d only, such that the series is convergent. This M0 is approximately equal to the norm 0(1) in the inequalities (1.115), (1.128), thus the exponential decay we get is practically the same as in the first mentioned method.
+The proofs of the other inequalities are exactly the same, but in the estimates of GV*J we have to take a representation of G adjoint to (1.123), with the operators K(h) acting on the right.
+Thus we have to prove inequalities (1.115)-(1.117). Let us notice that the proof of inequalities (1.114), describing the decay in L2-norms, is completed because
+we have proved inequalities (1.89). This may serve as a basis of another proof of the exponential decay properties. This proof, and also a proof of (1.115)-( 1.117), makes use of the identity
+
+G -G0 + G0dPd*G,
+
+(1.132)
+
+where G0 = (A +aQ*Q)~1. This operator is similar to G', but with the different averaging operator. We will prove (1.115)-(1.117), and in fact the whole Proposition
+
+1.2, for the operator G0. This together with the properties (1.126), (1.127) of dPd* and (1.89), or (1.114) for the operator G implies immediately (1.115)-(1.117), or
+Proposition 1.2 for G.
+
+Properties of the operator G0 can be easily reduced to the corresponding properties of the operator G' by the equality
+
+G0 = G' + G'(akQ'*Q' - aQ*Q)G0.
+
+(1.133)
+
+We only have to know some weak bounds for G0, for example bounds in the L2-norm (1.89), or (1.114). This operator is given by the formula
+
+G0J = A~1J -aA~lQ*~lQA-lJ
+
+(1.134)
+
+for J orthogonal to constant functions, and G0J = a~1J for J constant, hence by the first two terms in the representation (1.81). Thus its momentum representation
+is given by (1.87) and we have Proposition 1.1 for G0. This leads also to (1.114) by the same reasoning with a random walk expansion as for G. In paper [2] we
+
+have proved all the necessary properties of G', except the second order inequalities (1.112), (1.113). Let us prove for example (1.112). We use Lemma 2.4 of that paper
+
+and the equality (2.34) with  replaced by the whole torus. Let us write this equality again,
+
+/c-l
+G'k = C(0)'^ + £ a2.(U}-*GJQ*C(^LJ«Qf.GJ,
+7=1
+where we have written explicitly indices and scales. We have
+
+(1.135)
+
+x -- x\
+
+40
+*? 
+
+T. Balaban
+
+(1.136)
+and applying the estimates (2.35)-(2.37) of Lemma 2.4 in [2] we obtain for xe3(y), supp/ c J(/)
+
+(L137)
+i.e., the inequality (1.112) with 0 = 2<5'0 The proof of (1.113) is similar. Thus we have finished the proof of Proposition 1.2.
+References
+1. Balaban, T.: (Higgs)2 3 quantum fields in a finite volume. I. A lower bound. Commun. Math. Phys. 85, 603-636 (1982), and references therein
+2. Balaban, T. : Regularity and decay of lattice Green's functions. Commun. Math. Phys. 89, 571-597 (1983)
+3. Balaban, T. : Renormalization group methods in non-Abelian gauge theories. Harvard preprint HUTMPB134
+4. Brydges, D. C., Federbush, P. : A lower bound for the mass of a random Gaussian lattice. Commun. Math. Phys. 62, 79-82 (1978)
+5. Brydges, D. C., Frhlich, J., Seiler, E. : On the construction of quantized gauge fields. I. General results. Ann. Phys. 121, 227-284 (1979)
+6. Brydges, D. C., Frhlich, J., Seiler, E. : Construction of quantised gauge fields. II. Convergence of the lattice approximation. Commun. Math. Phys. 71, 159-205 (1980).
+7. Wilson, K. G., Bell, T. L. : Finite-lattice approximations to renormalization groups. Phys. Rev. Bll, 3431-3445 (1975)
+8. Wilson, K. G. : Quantum chromodynamics on a lattice. In: Quantum Field Theory and Statistical Mechanics, Cargese 1976, M. Levy and P. Mitter (eds.). New York: Plenom Press, 1977, pp. 143-172
+Communicated by A. Jaffe
+Received November 21, 1983; in revised form April 2, 1984
+
+

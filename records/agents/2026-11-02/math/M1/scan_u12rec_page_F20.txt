@@ -1,0 +1,3 @@
+START 2026-11-02 06:19:40 engine=kp_cert_m1.awk md5=3d17b9b8cd661c6fcbdd313acbcfe8f6 dress=page F0=20 beta=[3100,3500] alpha=[10,120] extra=-v EVENTAIL=1 -v UNCOND=1 -v U12=1 -v UNCREC=1 -v NCSIG=1
+END 2026-11-02 06:21:52
+STOPPED 2026-11-02 06:22:50 by hand (M1): a 2e-4 grid over a wide range would run 1.5-2 h, past the brief's 60-minute limit for a non-decisive run; replaced by bisect.sh over single-beta scans (record bisect_*.txt). NOT a verdict.

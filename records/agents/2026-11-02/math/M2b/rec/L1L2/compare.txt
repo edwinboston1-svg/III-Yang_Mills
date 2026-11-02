@@ -1,0 +1,20 @@
+dob_n4_W2L2_planar_ordered
+  L2: L2DOB-RESULT dob_n4_W2L2_planar_ordered.txt rhoA=0.015210922 rhoB=0.015210922 sigmaH=0.015106620 Cgrid=0.026282676 rho/C=0.578743
+  L1: L2DOB-RESULT dob_n4_W2L2_planar_ordered_asL1.txt rhoA=0.015308357 rhoB=0.015308357 sigmaH=0.015088137 Cgrid=0.026801221 rho/C=0.571181
+dob_n4_W2L2_planar_cancel
+  L2: L2DOB-RESULT dob_n4_W2L2_planar_cancel.txt rhoA=0.017433784 rhoB=0.017433784 sigmaH=0.017362434 Cgrid=0.029896286 rho/C=0.583142
+  L1: L2DOB-RESULT dob_n4_W2L2_planar_cancel_asL1.txt rhoA=0.017496636 rhoB=0.017496636 sigmaH=0.017352185 Cgrid=0.030224657 rho/C=0.578886
+dob_n4_W3L2_cancel
+  L2: L2DOB-RESULT dob_n4_W3L2_cancel.txt rhoA=0.038581180 rhoB=0.038581180 sigmaH=0.038391231 Cgrid=0.066499862 rho/C=0.580169
+  L1: L2DOB-RESULT dob_n4_W3L2_cancel_asL1.txt rhoA=0.038919082 rhoB=0.038919082 sigmaH=0.038308505 Cgrid=0.068310521 rho/C=0.569738
+dob_n2_W2L2_planar_ordered
+  L2: L2DOB-RESULT dob_n2_W2L2_planar_ordered.txt rhoA=0.081207503 rhoB=0.081207503 sigmaH=0.084440622 Cgrid=0.166380055 rho/C=0.488084
+  L1: L2DOB-MARG dob_n2_W2L2_planar_ordered_asL1.txt degA=30 (7936 points): int p_A = 1.000000000000, int p_B = 1.000000000000; min p_A -2.209291e-01, min p_B -2.209291e-01 -> SIGNED: ROAD A REFUSED
+L2DOB-ROADB dob_n2_W2L2_planar_ordered_asL1.txt rho = -1.000000000 (degB=20, 2541 points) REFUSED: a marginal not positive on the rule
+dob_n2_W3L2_ordered
+  L2: L2DOB-RESULT dob_n2_W3L2_ordered.txt rhoA=0.109877830 rhoB=0.109877494 sigmaH=0.120273936 Cgrid=0.252353735 rho/C=0.435412
+  L1: L2DOB-MARG dob_n2_W3L2_ordered_asL1.txt degA=30 (7936 points): int p_A = 1.000000000000, int p_B = 1.000000000000; min p_A -5.133879e-01, min p_B -5.133879e-01 -> SIGNED: ROAD A REFUSED
+L2DOB-ROADB dob_n2_W3L2_ordered_asL1.txt rho = -1.000000000 (degB=20, 2541 points) REFUSED: a marginal not positive on the rule
+dob_n2_W3L2_cancel
+  L2: L2DOB-RESULT dob_n2_W3L2_cancel.txt rhoA=0.189480725 rhoB=0.189480725 sigmaH=0.198975076 Cgrid=0.351406872 rho/C=0.539206
+  L1: L2DOB-RESULT dob_n2_W3L2_cancel_asL1.txt rhoA=0.326352056 rhoB=0.302524902 sigmaH=0.182026332 Cgrid=8868540.372587480 rho/C=0.000000

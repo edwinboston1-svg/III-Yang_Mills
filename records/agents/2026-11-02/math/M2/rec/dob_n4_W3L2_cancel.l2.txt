@@ -1,0 +1,11 @@
+L2DOB-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+L2DOB-RECORD dob_n4_W3L2_cancel.txt: SU(2), LMAX=2, GENINV(record)=1, 196 F entries
+L2DOB-MARG dob_n4_W3L2_cancel.txt degA=30 (7936 points): int p_A = 1.000000000000, int p_B = 1.000000000000; min p_A 7.095836e-01, min p_B 7.095836e-01 -> POSITIVE
+L2DOB-ROADA dob_n4_W3L2_cancel.txt rho = 0.038581180   (next singular values 3.858e-02 3.797e-02 2.687e-02 1.807e-04)
+L2DOB-HAAR dob_n4_W3L2_cancel.txt sigma_H = 0.038391231   (next 3.839e-02 3.778e-02 2.623e-02); max|G| 1.915e-02, Frobenius 3.555e-02
+L2DOB-CENSUS dob_n4_W3L2_cancel.txt joint density on 2541 x 2541 (degB=20): min 5.831237e-01, negative at 0
+L2DOB-ROADB dob_n4_W3L2_cancel.txt rho = 0.038581180 (degB=20, 2541 points)
+L2DOB-TV dob_n4_W3L2_cancel.txt C_grid = 0.065755286 (V on the degree-12 rule, 637 points, U on degree 20) at angles 3.1416 3.9270
+L2DOB-TV-ASCENT dob_n4_W3L2_cancel.txt start 0: C = 0.066499862 at angles 3.5343 3.5343
+L2DOB-TV-ASCENT dob_n4_W3L2_cancel.txt start 1: C = 0.047117851 at angles 0.0000 6.2832
+L2DOB-RESULT dob_n4_W3L2_cancel.txt rhoA=0.038581180 rhoB=0.038581180 sigmaH=0.038391231 Cgrid=0.066499862 rho/C=0.580169

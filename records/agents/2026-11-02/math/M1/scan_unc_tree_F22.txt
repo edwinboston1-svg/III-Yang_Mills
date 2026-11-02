@@ -1,0 +1,3 @@
+START 2026-11-02 04:03:10 engine=kp_cert_m1.awk md5=5713766b45bbadd0d8aff874c57d5554 dress=tree F0=22 beta=[3100,3440] alpha=[10,200] extra=-v EVENTAIL=1 -v UNCOND=1 -v NCSIG=1
+END 2026-11-02 05:18:56
+STOPPED 2026-11-02 05:19:23 by hand (M1): superseded by scan_u712_tree_F22.txt (Corollary U' 7/12 is strictly stronger than U's 5/8); 75 min on a 171 x 191 grid, no result line flushed. NOT a verdict.

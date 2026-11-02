@@ -1,0 +1,4 @@
+COEF+LOCAL:
+KP-CERT dress=page graded=S24-table coef=supplied beta=supplied alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.131404, 0.131411] root in [0.131404, 0.131411] u in [0.11798946, 0.11798946] u~ in [0.13455855, 0.13455957] r_hi=0.696902 LHS in [0.0043826, 0.0043833] alpha=0.0043999 -> PASS mix=0.000000000291
+TABLE MODE:
+KP-CERT dress=page graded=S24-table beta=4764/10000 alpha=44/10000 gamma=6/1 F0=20: kappa_U in [0.131404, 0.131411] root in [0.131404, 0.131411] u in [0.11798946, 0.11798946] u~ in [0.13455855, 0.13455957] r_hi=0.696902 LHS in [0.0043826, 0.0043833] alpha=0.0043999 -> PASS mix=0.000000000291

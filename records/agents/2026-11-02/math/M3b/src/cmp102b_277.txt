@@ -1,0 +1,1755 @@
+Commim. Math. Phys. 102, 277-309 (1985)
+
+Communications in
+MSthItlCl
+Physics
+© Springer-Verlag 1985
+
+The Variational Problem and Background Fields in Renormalization Group Method for Lattice Gauge Theories*
+
+T. Balaban**
+Department of Mathematics, The University of Michigan, Ann Arbor, MI 48109, USA
+
+Abstract. We consider the action of a lattice gauge theory on a space of regular gauge field configurations with fixed averages, and we prove that there exists a minimum of this action. The minimum is unique up to gauge transformations. This minimal configuration is called a background field, and it serves as a basis of an expansion and perturbative methods.
+
+It was explained in [1] that the fundamental step in our renormalization group approach is to find solutions of the variational problem and to investigate their regularity properties and expansions. Let us state the problem precisely. To formulate it we recall some definitions introduced in [3,4,6]. This paper is based on the results of those papers, and we refer the reader to them for more detailed explanations of the definitions and the results.
+At first let us recall the geometric setting. We assume that a sequence of domains J9 j = 0, l,...,/c, is given, satisfying the following conditions: j<=T, 0^1 ID ··· ID k, j is a union of big block of the size M^Lj,
+
+(Ljldist(cj,j+1)>RM1,
+
+(1)
+
+where R ^ Rl9 the numbers R9 M1 are fixed in such a way that all the results of [3,5,6] hold for these numbers. We identify domains j with sets of bonds 01 plaquettes in the usual way, as sets of bonds with at least one end-point belonging to J, or sets of plaquettes with at least one corner belonging to j. This remark applies to other sets also. The sets A3 and 33k are defined as
+
+^  +1 = 0, or B\A)
+
+* Work partially supported by the National Science Foundation under Grant PHY 82-03669 and DMS 84-01989
+** Postal address: Department of Physics, Harvard University, Cambridge, MA 02138, USA
+
+278
+
+T. Balaban
+
+The space Uk({j}90) of gauge field configuration on configurations on 0 was defined in Sect. A of [6] by the conditions
+
+for
+
+\(D$dU)(b)\<0L-2S(lJl=e<)2(Ls* for bej9
+
+(2)
+
+where 0 > 0, and the space 33fe(93k, V) by the conditions
+
+Uj=Voj9 ; = 0 , l , . . . , f c ,
+
+(3)
+
+where V is a fixed gauge field configuration define on 23fe. The space Uk({j}9 0) is gauge invariant, and the space $fc(33fe, V) is invariant with respect to gauge
+transformations u satisfying
+
+u(y)=l for yE®k.
+
+(4)
+
+We consider the functional
+
+A(U) = A"(U) =  jd-4[l-Retrl7(5p)],  = L~k
+
+(5)
+
+pc20
+on the space of gauge field configurations
+
+Uk({^,0)n^(23fc,F)
+
+(6)
+
+This space and the action (5) are invariant with respect to the gauge transformations (4). These transformations form a group and the space (6)is a union of orbits of this group. Our problem is to find all critical orbits of the functional (5).We will prove that for 0 sufficiently small there is at most one critical orbit. To prove the existence we have to assume that V satisfies some additional regularity property. More precisely we assume that
+
+\(dV)(pf)-l\<1 for p'eS,
+
+(7)
+
+for 1 sufficiently small. This requires an explanation. For some j between 0 and k p'ej. If p' c  j , i.e.all four vertices of p' belong to J9 then the meaning of the symbol (dV)(p') is simple, then all four bonds of the boundary dp' belong to j and
+we have (8V)(pr) = V(Sp'\ If p' intersects the boundary oj9 then some bonds b do not belong to j and we replace Vb by Vb in the above equality. For example if p' = < x , y > u < y , z > u < z , w > u < w , x > and <.y,z> do not belong to J9 then it means that y.zej.^ and we define
+
+(dV)(p'} = V(x9 y)V(y, z)V(z, w)F(w, x).
+Let us notice that if the space (6) is non-empty and 0 is sufficiently small, then by Proposition 2 [4] the configuration V satisfies (7) with  = 0(0). Hence our assumption has a meaning only for ^^ smaller than 0. We will prove that for  sufficiently small there exists a critical orbit of the functional (5). More exactly, we will prove that there exists a minimal orbit. Elements of the minimal orbit are called minimal configurations.
+We will prove also some local regularity properties of the minimal configurations. To formulate them we have to introduce a class of cubes. This class was described in Sect. F [6]. Each cube  of this class is contained in
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+279
+
+Bj(j)vBs+1(j+) = j\j+2 for some; between 0 and fe, and is a union of big blocks of the L~ ^-lattice. More exactly we assume that  has a size 2MJJ, where M is a multiple of R^M^ , and that the cube  of the size (2M + 4RlMl)Lj and with the same center as , is contained in Bj(j)vBj+l(j \ +1 but not in Bj+1(j+l). We consider all cubes  satisfying the above conditions.
+Now let us formulate the main result of this paper.
+
+Theorem 1. There exist positive constants aQ9al9B^9B4(Q)9M(l)9B^a ^0> sucn that for an arbitrary configuration V satisfying (7) with ^^a^ there exists a minimal orbit in the space
+
+U,({J.},B31)n93,(aSt,F).
+
+(8)
+
+This orbit is a unique critical orbit in the space (6) if B31 ^0 and 05^0. The minimal configurations U have the following regularity properties:
+for an arbitrary cube  in the class described above, of a size 2MLj, M ^ M^), there exists a gauge transformation u defined on a neighborhood o/ and such that
+on ,
+
+1, \VA\ < B3M
+
+U\\t<Bt(0)Ms(lJr2- for 0 £  ^ 0 = 1, \d**d'\9\A\<B3M(Lj*.
+
+(9) (10)
+
+The constants a a B 9 l9 39 depend on d and L only, the constants B4(0)9M(l) depend on the indicated parameters also. More exactly M(1) = R1M1(1/1).
+Minimal configurations will be denoted by Uk(V)9 or Uk.
+The above theorem is the basic result of this paper. We will prove also some
+
+theorems about minimal configurations Uk(V) as functions of F; for example we will prove that they are analytic functions of V and we will find their expansions. These
+
+results are very important for an analysis of fluctuation fields, see [1], but they will
+
+be rather simple consequences of the proof of Theorem 1 and we defer their
+
+formulations to the last section. Theorem 1 will be proved by induction with respect to k. In the course of the
+
+proof the constants B3, B4 will be described explicitly. The first step of the proof, for k = 1, will be covered by the proof of a general case.
+
+A, A Reduction of the Proof of Theorem 1
+We start a proof of Theorem 1 for some k assuming that it is true for k -- 1. We have a configuration V defined on 23fc and satisfying (7). The set $$k determines the following
+fc-l
+set » i _ ! = U A';. 'j = j for 7 = 0, l,...,fc-2, /k.^=k.luB(k). We can 7=0
+easily construct a configuration F0 on S^ such that it satisfies (7)on 9$k-l9 and
+
+F 0 = F on ( j  j , V0=Vonk. j =o
+
+(11)
+
+For example we can take F0tb= Vb,9 for beB(b')9 b'ek and F05 = 1 for remaining bonds of B(k). We assume that 1 ^ a9B3 ^ 0 ^ 0 and we use the inductive
+
+280
+
+T. Balaban
+
+assumption, i.e. we apply theTheorem 1for k - 1and theconfiguration V0. We geta minimal configuration U0 = U^^VQ) belonging to the space
+
+Uk^({j}9 aeJnS^ ^Ko).
+
+(12)
+
+From the conditions (11), and from the form (2) of the regularity conditions, it follows that
+
+l/0eUfc({2J.},B3L31)n3Sfc(®fc,F),
+
+(13)
+
+hence U0 should be close to the minimal configuration we are looking for. To find this configuration we will aply perturbative methods expanding the action ^4(17)
+around l/0. Having in view future applications we will consider a little bit more general
+configuration U0 than this constructed above. We assume that we have a configuration C/0 satisfying
+
+V0eUk({J}9ClB3s1)9\Ui>-V\<Cll
+
+on J9 ; =0, l,...,fc, (14)
+
+for some absolute constant Cv. The configuration U0 constructed above satisfies (14) with C1 = L3.
+Let us notice that for k = 1 we do not have any solutions of the variational
+problem yet, and then we take simply U0 = F0, V0 constructed above. We consider the functional A(U) on the space (6). An arbitrary element of this
+space can be represented as
+
+U=U'U0, U'^UUo1.
+
+(15)
+
+A gauge transformation u applied to U implements the following transformation of
+
+CHx, x') = (x)l/'(x, x')(l/o(*, x'))u- V),
+
+(16)
+
+if U0 is fixed in the representation (15). Another point of view is that U and U0 are subject to the same gauge transformation u, and then U' transforms as follows
+
+(R(u)U')(x9 x') = K(n(x))t/'(x, x')
+
+(17)
+
+Usually we will apply the first point of view, i.e. we consider the transformations (16).
+The second point of view will be considered when we will discuss how our
+constructions depend on gauge transformations of l/0. We assume that the numbers a9a1 are so small that all the theorems of the
+papers [4,6] are valid for the configurations 17, l/0. Now we choose a gauge in the space (6). Using the transformations (16) with u
+satisfying (4) we fix the axial gauge conditions Axk(^&k, U0) (seethe definition (1.19) in [6]). The functional (5) is gauge invariant, hence it is enough to consider it on the
+
+space
+
+(8fc, UQ).
+
+(18)
+
+Next we apply the results of the paper [6], especially the Theorem 2. Configurations
+U from the space (18),and t/0, satisfy the assumptions (1.33)-(1.35) of this theorem with0 = 9(x>1 = C11.The additional regularity condition (3.35)in(l.33) is satisfied for U0 also, because of the result of Sect. F. Thus for 0,i sufficiently small, more
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+281
+
+exactly for 0 + Cl ^ c l 5 and for an arbitrary configuration U = U'U0 from (18) there exists exactly one gauge transformation u satisfying R0uj = l on J9 7 =0, l , . . . , f c ( t h u s w = 1 on 0), such that U1 = U'u~' satisfies the conditions (1.36)-(1.39) of [6]. These gauge transformations define a mapping of the space (18)into a space of gauge field configurations L^L/O with U\ satisfying the conditions
+
+17!=*"* \A\<2(U1, \Vl0A\<s2(29
+
+\D$0D10AI \l0A\<2(U* on  j 9 j = 09 I 9 . . . 9 k 9
+
+(19)
+
+Qj(UQ9A) = B
+
+on J9 j = 0, l,...,/c,
+
+(20)
+
+where B is given by the formulas (1.31) in [6], hence \B\< 2dLCl9
+
+D$0A = ^
+
+(21)
+
+with s2 ^ #(0 + Ci^i)- The projection operator R(UQ) determining the Landau gauge condition (21) was defined in [5,6].
+The above mapping is one-to-one, hence using again the gauge invariance of the functional (5), we have reduced a proof of the existence and the uniqueness of critical configurations in the space (18), to a proof of the existence and the uniqueness in the space of configurations U^U^ satisfying (19)-(21).
+Let us summarize the discussion of this section in.
+
+Proposition 2. All critical orbits of the functional (5) in the space (6), or all critical configurations of this functional in the space (18), can be obtained by taking critical configurations U of the functional A(UUQ) in the space defined by (19)-(21\ where U0 satisfies (14), and transforming them to the axial gauge Axk($k, U0) by gauge transformations u satisfying the conditions R0uj = 1 on A J9 0, 1, . . . , fc.
+In the next four sections we will study the variational problem in the space (19)(21). We will prove that for  l 5  2 sufficiently small there exists exactly one critical configuration, which is a minimum of the functional (5). This will prove Theorem 1 with worse bounds. Next we will improve the bounds and we will complete the proof of this theorem.
+
+B. An Expansion of the Action
+In this section we will study an expansion of ^(l^l/o) with respect to A = l/fylog U1. The configuration U0 and the scale  are fixed, so for simplicity let us omit these symbols in notations below, e.g. we will write R, D instead of R(U0\ DUo, etc.
+We expand the action up to fourth order in A. We take
+
+where
+
+l/1 = M e = +A+(J^:^+^.A3 + (^:A*R4(iA),
+
+(22)
+
+\Rn(iX)\ ^ 1 for arbitrary hermitian matrix X,
+
+I Rn(X) I ^ e[X{ for arbitrary matrix X.
+
+*'
+
+282
+
+T. Balaban
+
+Using (1.21), (1.22) from [6] we have
+
+trt^l/oHp) = tr a0M(p),)E(dp), where for p = <x,y,z, w>,
+
+(24)
+
+0I/((p),) = (I/o(*. w))I/!(z, w)l/,(w, x)l/i(x, y)«(t/0(x, )'))C/1(y,z) = 1 + i(R(U0(x, w))A(z, w) + A(w, x) + A(x, y) + R(U0(x, y))A(y, z)) - W\. (R(U0(x, w))A(z, w))2 + 2R(U0(x, w))A(z, w)A(w, x) + 2R(U0(x, w))A(z, w)A(x, y) + 2R(U0(x, w))A(z, w)R(U0(x, y))A(y, z) + (A(w, x))2 + 2A(w, x)A(x, y) + 2A(w, x)R(U0(x, y))A(y, z) + (A(x, y))2 + 2A(x, y)R(U0(x, y))A(y, z) + (R(U0(x, y))A(y, z))2] + · (25)
+
+The expression in parenthesis (...) on the right-hand side is equal to (DA)(p). This expansion gives
+
+pc0
+where the expansion of V0(A) hermiticity of DA we have
+
+begins
+
+with a
+
+third
+
+order
+
+^o(^), (26) polynomial. From
+
+X d~2lmtr(DA)(p)U0(dp)=
+pc0
+where
+
+£ d-2t(DA)(p)lm U0(8p) = <^>, (27)
+pc20
+
+on p (28)
+the bound holds by the assumption (14). The action A(U1 U0) is an analytic, and even an entire function of A for Aeof, or for A in the space of all complex N x N matrices, so V0(A) is such a function also. We need a bound for V0(A). To get such a bound we have to decompose further
+
+V4(A),
+
+(29)
+
+or
+
+^04) =  ndVQ(A9 dp), V0(A, dp) = V(3\A, dp) + V^A, dp),
+pcQ
+
+(30)
+
+where V(3)(A) is a third order polynomial and the expansion of V4(A) begins with a fourth order polynomial. We consider these functions for A belonging to the
+
+complexified Lie algebra. A bound for V4 can be easily obtained. We have
+
+\V4(A9dp)\^(\A\(dp))^A^\
+
+(31)
+
+Let us consider configurations A satisfying
+
+Lj\A\,(Lj)2\VA\ < 2 on p where B^BQ + C^) ^ 2,
+
+(32)
+
+and let us assume for simplicity that 322 ^ 1. Later we will have to introducemuch
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+283
+
+stronger restrictions on 2. This implies elAl(dp} < e42 < 2, hence
+
+I V4(A,dp)\
+
+(\A\(dp))4 g 25M|4 < 25*(/4.
+
+(33)
+
+In [5] we have found the explicit expressions (3.7), (3.10) for the second order
+term in expansion (26). Now we will find an explicit expression for the third order term V(3}(A, dp). Let us define field variables A'(b) for bonds b a d(p)z by the equalities
+
+and let -< denote a natural ordering among bonds of the oriented contour d(p)z = < z, w >u < w, x >u <*;, j;> u < y, z >. From the Baker-Cambell-Hausdorff formula we have
+do^i((/>)z) =exP iR(U0(x9 w))A(z, w) exp iA(w, x) exp iA(x, y) >expiR(U0(x,y))A(y,z)
+
+2 2^2 bl<b2 IX(&M'(
+
++ iV  (C^iU^^U
+
+1Z
+
+6^2
+
++ ^V  ([^i [^2X
+
+D
+
+b<b2<b2
+
+A'(b3W +...}.
+
+(34)
+
+If we write expansion (26) in the form
+
+l
+
+-
+
+R
+
+e
+
+t
+
+r
+
+
+
+0
+
+I
+
+/
+
+1
+
+(
+
+(
+
+p
+
+)
+
+I
+
+)
+
+t
+
+/
+
+0
+
+(
+
+3
+
+p
+
+)
+
+=
+
+l
+
+-
+
+R
+
+e
+
+t
+
+r
+
+l
+
+/
+
+o
+
+(
+
+3
+
+p
+
+)
+
++
+
+»4
+
+
+i=
+
+V(i\A,dp)
+
++
+
+^(A,dp),
+
+(35)
+
+then (34) yields
+
+-pj»/tr X (A'ib iA' A'(b2m
+
+1Z
+
+(.,<*!
+
+i[i\_A'(b,\ A'(b2)l A'(b2)])-2Im U0(dp)
+
+284
+
+T. Balaban
+
+i[i[_A'(b J, A'(b2)l A'(b3) ] )~2lm U0(dp) (36)
+From this representation we obtain easily the bound \V<3\A9 dp)\ ^\(DA)(p)\(\A\(dp))2
+
+%2(LJ2\(DA)(p)\
+
+2C1£31)(Z?4, pej.
+
+(37)
+
+The first trace on the right-hand side of (36) depends on the derivative (DA)(p\ the remaining expressions depend on the field variables A only, and to estimate them we need to know bounds on A, not on derivatives of A. Let us separate the term with the derivative. We have Re UQ(dp) = 1 + (Re U0(dp) - 1), and
+
+\-2(ReU0(dp)-l)\<C1Bs1(lJr29 pej9
+
+(38)
+
+so the expression with Re U0(dp) -- 1 has a hidden additional factor 2. One factor  cancels ~* in the derivative (DA)(p\ and the expression can be estimated by
+2- Thus we can write
+
+VQ(A9 dp) = ±ir(DA)(p) X ilA'(b '(&2)] 4- V'Q(A9 dp)9
+b1<b2
+where VfQ(A9 dp) is defined by this equality, and satisfies the bound
+
+(39)
+
+(40)
+
+Here we have used only the first bound (32) on the field A alone. The quadratic form ^(A,Ay was thoroughly investigated in [5]. We will use
+the results of that paper for operators defined by this form. Now we use the fact that the configurations A satisfy the Landau gauge condition RD*A = 0, and we replace the form A by  defined in [5], the formulas (3.119), (3.120). The form  is more convenient to work with because the operator H has a simpler connection with it.
+Let us formulate again the variational problem. We are looking for aminimum of the functional
+
++ <A9jy+$<A9Ay + V0(A) on the space of field configurations A satisfying
+
+(41)
+
+= 09 Q(A) = B on Sfc,|B|<2dLC1e1,
+
+(42)
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+285
+
+\A\<2(ti\ \VA\<2(Lj2 onj9j = Q9!9...9k.
+
+(43)
+
+We would like to prove that for 0,  ,2 properly restricted there exists exactly one minimal configuration and we would like to find some preliminary bounds for it.
+Our next step will be to make a change of variables such that the function Q will
+become a linear function.
+
+C. A Construction of the Linearizing Transformation
+
+This construction will be almost identical to the construction of the corresponding linearizing transformation in the Sect. E of [6]. The Proposition 4 of [4] implies
+
+QjA) = UQjA + C*A\ \ Cj(tiA) \ ^ C2(ti)2\ A\2.
+
+(44)
+
+The operators 9 Q and R define the operator H. Let us recall that it is an operator defined on configurations B and giving a minimum of the quadratic form ^(A,Ay
+under the restrictions LlQjA = B on j9j = 0, 1, . . . ,fc,RD*A = 0. Thus it has the following properties
+
+LJQjHB = B on J9 RD*HB = Q, and the Theorem 3.12from [5] implies
+
+(45)
+
+\HB\£B0(LJl\B\9 \VHB\£B0(U2\B\ on s. We will construct the linearizing transformation in the form
+
+(46)
+
+A = A'-HD(A'\
+
+(47)
+
+where D will be a mapping defined on configurations A and with values in configurations on SJfc. This mapping has to satisfy the equations
+
+jM' - HD(A')) = UQjA - LjQjHD(A ') + CJA' - LjHD(A'))
+
+= LjQjA' on J9
+
+(48)
+
+or
+
+CJA' - UHD(A)) = D(A'} on j.
+
+(49)
+
+Thus the function D(A'} is a fixed point of the transformation
+
+X -> CA' - LJHX) on j9j = 0, 1, . . . ,
+
+fc.
+
+(50)
+
+We consider configurations A\ X with values in the complexified Lie algebra gc, and
+
+satisfying
+
+\A'\<3(Ljl
+
+on p
+
+X =Q
+
+on/\0,
+
+\X\<^Bo
+
+on 33k.
+
+(51)
+
+The transformation (50)calculated at such configurations satisfies
+
+I ClA' - tiHX) \£ C2(ti \A + Lj \ HX \ )2 < 4C223 ,
+
+(52)
+
+and its value is in the set 1^:^ = 0 on 0, \X\<3/B0} if 4C2l^3/B0, i.e.
+
+286
+
+T. Balaban
+
+We prove that the transformation(50) is contractive on this set, for 3 sufficiently small. We have for Xl, X2 from the set
+
+Cj(LjA' - UHXJ - Cj(LjA' - LjHX2) =o1^dddt--t C^UA - LJH^X,
+
++ (l-)A 2))
+
+=
+
+i/ -]dt(
+
+~C(LJA'
+
+o \ oA
+
+- UH(tX
+
++ (1 - t)X2)), L1H(X1
+
+-
+
+X2]
+
+o
+
+j|=r
+
+' - L1H(tXl + (1 - t)X2) + UH(X, - X2)). (53)
+
+Taking r = 3(B0 \ X1 -X2\)~l9vte get ICjitiA-UHXJ- CJA' - LjHX2)\ ^-C2(23 + rB0\X, - X2\)2
+
+= 9C2B03\X1-X2\.
+
+(54)
+
+Hence the transformation is contractive if 9C2#03 < 1; for example we take 9C2£03 = 1/2, ie % ^ (18C2J?o)~1 The contraction maping theorem implies that for arbitrary A', satisfying Lj\A'\< 3 on 2J5 there exists exactly one fixed point of the transformation (50), thus exactly one solution of Eq. (49). This solution is a limit
+of uniformly convergent sequence of successive approximations and it is an analytic
+function of A. It satisfies the bound |D(v4')| < 3/#0, but 3 was arbitrary, so we can take it arbitrarily close to sup,- Lj sup j \ A \= \ A \( _ 1}, and we get the bound | D(A') \ ^BO  ^  - - From Eq ( ) 49 we obtain
+
+\D(A)\ = \Cj(UA -tiHD(A))\^ C2(U\A'\ + 50l^(^)i)2 ^ 4C2| A\^1}. (55)
+
+This implies that a power series expansion of D(A) begins with second order terms. We can find this expression from Eq. (49) and the expansion (136) [4] of the function Cji
+
+Cj(lJA'-LJHD(A'))= £ Cf(A'-lJH £ DTM(A')}= £ D^(A'), (56)
+
+n=2
+
+\
+
+m=2
+
+/ n=2
+
+where C("\ D(n) are homogeneous polynomials of nth order. From Eq. (56) a sequence of recursive equations for D(n) follows. It can be solved easily. For example we have
+on 
+
+D(2\A] = C(2\LjA\ D(3\A) = C(^(LjA) - 2C(2\LjA, LjHC(2\A'}\
+
+and so on. Here Cf\A',A") denotes a symmetric bilinear form obtained by
+polarization from the quadratic form C(2\A\ and C(2\A) = C(2\LjA'} on j.
+The bound (55) implies that the transformation (47) is defined and analytic on configurations A satisfying Lj\A'\ < 3 on 2y, and the values A of this transformation satisfy
+
+\A\£\A'\ + B0(Ul4C2\A'\ 1} <(3 + 4C2B0i)(L^)-1 < 23(L^)'1 on 3. (57)
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+287
+
+If we assume also \VA'\ < 3(Z/)~2, then
+I VA I ^ I VA'\ + BQ(U) ~24C2 1 X'|f_ 1} < (e3 + 4C2B02) (U) ~2 < 2,(U) ~2. (58)
+The transformation is defined for 3 satisfying 23 ^ c4 (seeProposition 4 in [4]) and 3^(18C201.
+We want to prove that for 2 sufficiently small the range of the transformation (47) contains the set (43).To solve the equation
+
+A' - HD(A'} = A
+
+(59)
+
+for a given A, we take A' = A + HX, and we get the following equation for X,
+
+D(A 4- EX) = X.
+
+(60)
+
+A solution of this equation is a fixed point of the transformation
+
+X-*D(A + HX),
+
+(61)
+
+and we can repeat the whole reasoning connected with the solution of (49), (50), the
+only change is that the constant C2 is replaced by 4C2 . Thus for 2 ?g ^3 , there exists exactly one fixed point of (61) satisfying \X\ < #o~^2, and there exists exactly one solution of Eq. (59) satisfying
+
+Lj\A'\9(Ls)2\VA'\<2 + l6C2B022 < 22 ^|3 on,.,
+
+(62)
+
+as it follows from (57),(58). This proves the statement about the range of the transformation (47).
+Let us remark that there are many linearizing transformations.Even if we specify
+them requiring that they have the form A --A -- hD(A'\ we still have many possible
+choices of the operator h. Our choice h = H is a convenient one because we have
+investigated the operator H in [5] and we know all the necessary properties, but it is
+by no means a unique choice. A second remark concerns regularity properties of D(A'}. We know that it is an
+analytic function of A' for gc valued configurations A' satisfying |^4/|(_1)<3. It is a function of the configuration 170 also, and it is easy to see that it is an analytic function of L70, because the averaging operations Qj{U9A) and the operator H(U0) are analytic in U0. The analyticity domain is smaller for H(U0) and was described in [5], so D(A') has the same analyticity domain as H(U0).
+Besides these regularity properties and the bound (55)we will also need some
+pseudo-locality property of the function D(A') and the transformation (47).A
+pseudo-locality property we are interested in means that a value of D(A') at a bond
+ceSfe depends weakly on a configuration A at bonds b far apart from c. More precisely this property can be formulated in terms of decay properties of a functional
+derivative oD(A'). The functional derivative is a kernel of the linear operator acting on functions A' and defined as
+
+,A' ' " / d
+
+=0
+
+(63)
+
+The functions A' are defined at bonds of 0, and values of this linear operator are
+
+288
+
+T. Balaban
+
+functions defined at bonds of . Let us denote
+
+3>(X';c,&)
+
+ = A'(b]
+
+D(A',c).
+
+(64)
+
+We will prove that this function has an exponential decay. It satisfies an integral equation which can be obtained by differentiation of Eq. (49):
+
+hence C
+
+'))'c)  (LJ')"H(b', c'WA'; c', b)
+
+= >(A';c,b), cej, be0,
+
+(66)
+
+where we have suppressed matrix indices of operators acting on the Lie algebra valued functions. We may write this equation in the form
+
+' - HD(A'))) - ti (LJ(A' - HD(A'))),HV(A') oA
+
+= )(Ar) on  j .
+
+(67)
+
+This gives the following equation on T>:
+
+/ 4-
+
+' - HD(AI))\H\]^(A') =
+
+' - HD(A'))) on j.
+
+(68)
+
+As it is easily seen from (66) this equation is an equation on X)as a function of the variable ce33fc. The variable b is fixed and treated as a parameter. We have the bound
+
+^(ALj(A' - HD(A'))), H )I)(c, c')|
+f
+'-HD(A') + H( ,c')\c)
+
+1/
+
+;-C2(23 + r sup
+
+'
+
+\
+
+.
+
+Lj\H(b,c') ^2
+
+where we have taken r = 3(B0(Lj') de-*o<Kc-f-)) \ Cej9 cr, (see [3] for a definition of the distance d(y, y'\ y, /eSfc). The above bound shows that the operator
+in the square bracket in (68) (without the identity operator) is of the same type as the
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+289
+
+operators R studied in [3, 5]. Let us denote it by 9?. Equation (68) is uniquely solvable by a convergent Neumann series,
+
+C\A - HD(A')),
+
+(70)
+
+where j(c) =j for cE/ij? and C(A,c) = Cj(LjA,c) for cej. A kernel of the operator (/ + 5R)"1 satisfies the bound
+
+·'->
+
+(71)
+
+for 3 sufficiently small, which follows from Lemma 2.1 [3]. Proposition 5 of [4] implies that
+
+*r
+
+HD(A')) ^ L/^(L^)~dC323.
+
+(72)
+
+Let us notice that the factor (Lf)~d comes from the change of scale: the derivative of Cj has the estimate (157) in [4] on L~j-scale, and here we consider the derivative on
+/-scale. The formula (70) and the inequalities (71), (72) give finally the following inequality,
+
+d(c->y\ beBj(y), yej.
+
+(73)
+
+Let us gather the results of this section in
+
+Proposition 3. The transformation (47) satisfying the identity (48), i.e. linearizing the
+averaging operation Q(A\ is defined and analytic for A satisfying (43) with 3 sufficiently small (e.g. \%C2B0dc1(^)3 ^ 1, 23 ^ c4). The range of this transformation contains the set (43) with 2 ^i3, and is contained in the corresponding set with 23 instead of2. The function D(A) satisfies the bound (55) and its functional derivative satisfies the bound (73).
+In the next section we will need the following remark. The operator )(A) is an
+analytic function in A\ and its expansion begins with a linear term in A', coming from the differentiation of D(2\A) = C(2\Af). If we subtract these terms from >(A')9 then we get an operator Q2(A) for which we have the bound (73) with 3 instead of
+£3-
+
+D. Equations for a Solution of the Variational Problem
+Let us come back to the variational problem (41)-(43). We make the change of variables (47) and we consider the functional
+
+' - HD(A'\ (A - HD(A)) > + VQ(A' - HD(A)) on the space of field configurations A satisfying
+LjQjA' = B on/l7 ,7-0,l,...,/c, \B\<2dLC11,
+RD*(A' - HD(A')) = RD*A = 0,
+
+(74)
+(75) (76)
+
+290
+
+T. Balaban
+
+\A'\<B3(LJl,\VA'\<3(Lj2 onj9j = Q,l,...9k.
+
+(77)
+
+We assume that 3 is so small that the range of the transformation (47) is contained in the set of configurations A for which the representations and the inequalities of the previous sections hold. We assume also that 2 ^ i3> hence by Proposition 2 it is enough to prove that the functional g considered on configurations A' satisfying
+(75)-(77) has exactly one critical configuration.
+Let us now decompose the functional *$(A') into a sum of terms of zeroth, first,
+second and higher, orders in A'. The zeroth order term is A(U0). Similarly, the first order term is the same as before and equal to </, J>. The expression (HD(A'\jy
+may be decomposed into terms of second and higher orders. Taking into account that the second order term D(2\A) in the expansion of D(A') is equal to C(2\A) = C(LjA') on J9 we have
+
+jy = <HC(2\A')9jy + (HD3(A'\jy.
+
+(78)
+
+Thus a quadratic form in the expansion of $(A') is equal to
+
+(79)
+
+where we have used again the fact that A' satisfy the Landau gauge condition RD*A = 0.
+Now let us write higher order terms. They determine the functional
+
+V(A') = - <H/>3(V> ~ <A',HD(A')y
+
++ ^HD(A\ HD(A')y + V0(A' - HD(A'}}.
+
+(80)
+
+It is analytic in A' for A' with values in the complexified algebra and satisfying (77).
+
+We consider the functional
+
+on the space of configurations A' satisfying (75)-(77). To find critical points of this functional we have to find A' in the considered space, such that the equation
+
+o
+
+(82)
+
+holds for all A in the tangent space, that is A satisfying the conditions
+
+QA = 0, RD*A = 0.
+
+(83)
+
+We have to calculate the functional derivative of 8M'). From (81) we have
+
+(84)
+
+The functional derivatives above are calculated without any restrictions on variations, these restrictions are imposed on A'. Of course we use the fact that the functional %(A') is defined on the space of all configurations A with the regularity
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+291
+
+restrictions only. Let us calculate and estimate the functional derivative of each term in V(A') separately. For the first term we have
+
+b'  (L^tJ(bf)H(bf9c^2(Af'9cl9b)9 "1 '
+and from the bound (73) it follows that
+
+(85)
+
+~3
+
+^
+
+-d+le-(l/2)60d(Cl^,y)
+(86)
+
+We have gathered together all the constants into an absolute constant0(1). For the second term we have
+
+')y = (A'9( + DRD*)HD(A'))y
+
+(87) hence the functional derivative is equal to
+
+*(G*)~ \U( '})~ 1D(A) - Q*a(Lj( '^)~ 1D(A') (88)
+
+Applying the inequalities (3.132) from [5],(55), (73), and remembering that the symbol a above represents the operator of multiplication by (Lj('})~2 (we put the constant a = 1),we can estimate this functional derivative by O(l)l(Lj)~3 on j.
+The functional derivative of the third term in V(A') is equal to
+
+%*(A')H*HD(A) = 3>*(>0(J^W
+
+(89)
+
+and can be estimated by 0(l)l(LJ)~* on j. An analysis of the last term on the right-hand side of (80) is more difficult because
+the functional V0 depends on derivatives DA also. We decompose V0 according to the formula (39), and we consider the functional V0 at first. We have
+
+pest(b)\OA(0) V'0])(A'-HD(A'),Sp)
+
+pest( )\ )
+
+\ (90)
+
+where st(b) denotes a set of plaquettes p such that b c dp. The derivative
+((d/dA(b))V'0)(A9dp) satisfies a bound similar to the bound (40) for the function V'0(A9dp)9 but with the power of \A\ lower by 1, and with a different absolute constant. This implies that the functional derivative (90) can be estimated by
+
+Finally we have to consider terms connected with the first expression on the
+
+292
+
+T. Balaban
+
+right-hand side of the equality (39). Let us notice that the "primes" in this expression have a different meaning than here, they are connected with an application of the operators R(U0). Now we denote the corresponding expressions by A" instead of A'. When we make the change of variables (47), we get many terms. The functional derivative of these terms can be easily estimated by O(l}&\(U}~^, if the covariant derivative in (39) acts on HD(A'). Let us consider the terms with the derivative acting on A'. A typical term is
+
+i\_A\ A"^ ,
+
+(91)
+
+the other terms are obtained by replacing some A' in the commutator by -- HD(A'). The functional differentiation gives three terms
+
+A"^ + [X",X"])>,
+
+(92)
+
+and the functional derivatives connected with the second and third terms are estimated easily by 0(1)|ZX4'| \A'\. We transform the first term integrating by parts, and we get the functional derivative given by
+
+iD*£/[",/l"3.
+
+(93)
+
+This expression was already investigated in Sect. C of [6]. Let us recall that for a
+plaquette p = <x, x + e,x + e + ev,x + evy,  < v, we have by (1.50) of that paper
+
+2i[A'(x),(DA'v)(x) ]
++ 2i[(DvAf)(x)9A'v(x)] - i - i[(DA'v)(x\ Av(x)-] - i2l(DA'v)(x), (DVA ;)(*)]. (94)
+If we apply the derivative D* to all the terms on the right-hand side of the above equation except the first, then we can use the factor  to replace this derivative by a simple difference operation. Thus these terms in (93) can be estimated by 0(l)|Vv4'| \A'\. Applying D* to the first term gives the expression
+
+i  (/>*IX,4J)(x)-i X (D*[4,,/v])M.
+
+v<
+
+v>
+
+Further let us recall the formula (1.52) from [6]:
+
+(95)
+
+x)].
+
+(96)
+
+From this it follows that the expression (95) can be estimated by 0(1) | VA'\ \A\ also. Gathering together all these estimates we get the following proposition.
+
+Proposition 4. Let us consider the functional V(A'} on the space of configurations A with values in the complexified Lie algebra cjc, and satisfying the inequalities (77), i.e. m a x H / l ' l j - ! ) , \VA' (-2)} <3?/or £3 =a> where 3 is a sufficiently small positive constant. The functional derivative ofV(A') is an analytic function on this space, and
+satisfies the estimate
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+293
+
+
+A' V
+
+<C4l(Lj*onp 7 = 0, 1,...,*.
+
+(97)
+
+The constants <z3, C4 depend on d and L only. The above estimate can be formulated also in the following way:
+
+, , |V') ^C4(max{Vi),(V,4(-2)})2,
+
+<^4' /
+
+(-3)
+
+(98)
+
+and it is valid /max{|^'|(_1)? |V^4'|(-2)} =az Now let us consider the variational Eq. (82). Using (84) we get the equation
+
+> + <At91Afy + \ A',o-AV(A')=Q.
+
+(99)
+
+This equation has to be satisfied for all A' satisfying
+
+QA' = 0 (i.e. Q A' = 0 on j)9 RD*A' = 0,
+
+(100)
+
+and we are looking for a solution A' satisfying the conditions (75)-(77). We take the
+operators Hl9 ^ defined by the operator A1. Let us recall that  is an orthogonal projection in a space of configurations A' with a scalar product defined by the
+operator ± + D*RD + aQ*Q, onto a subspace of A satisfying the conditions
+QA = 0, RD*A' = 0. We make the translation A = Al + H^B. Using the identity =0 following from the definitions of H1? we get the equations
+
+<A',J> + <<5',/M> + A'~ AVA, + H.B) = 0, (101)
+
+QA' = Q9 RD*A' = Q, QA=09 RD*A1=Q. Because the regularity conditions (77) hold for A', and
+
+(102)
+
+\H1B\<B02dLC1(Lj\ \VHiB\<BQ2dLC^i(Lj2 2dLB0Cl < BiC1 < 3,
+so A1 satisfies
+.
+
+on J9 (103)
+(104)
+
+Thus the set of configurations A restricted by (77) is contained in the range of the
+translation A' = Al + H±B, defined on the set of A restricted by (104). Let us notice that if we take all A satisfying (104), then the image of the translation is contained in the set of A' satisfying (77) with 3£3 instead of e3. All the representations and the estimates obtained up to now hold in this situation also, if we impose correspond-
+ingly stronger restrictions on 3 and change the constants. Now we will write equations obtained from (101) by removing the variations A'.
+We have to take into account Eqs. (102) for A'. By the definition of ^we obtain all
+the variations A' satisfying (102), if we take A' = tyA for all variations A9 without any restrictions. We get the equalities
+
+*J>,
+
+(105)
+
+294
+
+T. Balaban
+
+DRD* + aQ*Q)Ai >
+
+lAvy, (106)
+
+Applying them in (101) and using the fact that now A are arbitrary, we get the equations
+(108)
+
+QA=Q, RD*A=Q.
+
+(109)
+
+They are equivalent to Eqs. (101), (102). We denote by Gl an inverse operator to the operator Av + DRD* + aQ*Q. Obviously we have 1Al = G^lAl and Eq. (108) implies
+
++l/1B) = 0.
+
+(110)
+
+In [5] we have proved that the operator Gx* is equal to the operator (5 defined by (3.148) and satisfying the equalities Q(S = 0, RD*($> = 0. Thus any solution of (110)
+satisfies automatically Eq. (108), (109). Let us rewrite this equation using the operator (5,
+
+A
+
+(A+HlB) = 0.
+
+(Ill)
+
+Let us summarize the results of the discussion concerning the variational problem.
+
+Proposition 5. All critical configurations U1 of the functional A( ^U^) in the space
+defined by (1 9)-(21 ), U0 satisfies (1 4), can be obtained from solutions ofEq. ( I l l ) in the space (104) by the transformation
+
+17 ! - exp i [^ + H^B - HD(A1 + H^)].
+
+(1 12)
+
+Let us make some remarks about the constants 0,  l s 2, 3. In the previous sections they were independent, although restricted by the conditions:
+
+£38^80, B 1 (  0 - f C 1  1 ) g  2 , 2^i3,
+
+(113)
+
+3 sufficiently small. We get best restrictions on 0,1 (i.e. largest constants a9 aj if we take
+
+62 =^1(60 +^6!), 3 - 42 - 4^1(0 +Cl£l).
+
+(114)
+
+Restrictions on 3 are transformed into restrictions on 0, ^ In the future we will keep using different 's.
+
+E. An Analysis of Equation (111)
+Let us consider this equation for configurations Al in the space i.e. maxd^^, | V A 1 | ( _ 2 ) } <  4 . (115)
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+295
+
+We will prove that for 4 sufficiently small the equation has a unique solution, and the solution is in the space (115) with 4 = 0(1).
+A solution of Eq. (Ill) is a fixed point of the transformation
+
+A, - <5J - <S -A-
+
+At first let us investigate for which 4 this transformation maps the space (115) into
+itself. By Theorem 3.13 of [5] the norm max{| | _( 1 ) 9 |V |(_2)} of the transformation can be estimated by
+
+*,
+
+~A
+
+(-3)
+
+(117)
+
+if 4 + B0\B\ ^ 3. Further, we have the bound B\ < 2dLC11; hence thetransformation (116) transforms the space (115) into itself if
+
+4 +2dLB0C11 ^3,
+
+B0C4(4 + 2dLB0C)2 ^ 4. (118)
+
+These conditions are satisfied if e.g. 2B0C1B31 ^ 4 and 4 ^ a4 for a sufficiently small a4.
+Next, let us investigate when the transformation (1 16) is contractive. A difference of its values at configurations Al9 A2 can be written as
+
+J
+0
+
+The norm max{\ \(-}, |V |(_2)} of this expression can be estimated by
+
+-- sup sup
+
+ A'
+
+(-3)
+
+^BO^ ,
+
+(119)
+
+^2)|(-2)},
+
+(120)
+
+where we have taken r = (4 + B0\B\) (maxd^ --A2 (-D, \V(A ---42)l(-2)})"1 We have to assume also that 2(4 + B0\B\) ^ 3, in order to be able to apply Proposition 4. Thus the transformation is contractive if
+
+24
+
+450C4(4 +2dLB0C1) ^
+
+(121)
+
+Assuming 2B0ClB3l ^ 4, the above conditions are satisfied if 4 ^ 4, where a4 isa sufficiently small, absolute constant. Thus we have proved the following
+
+Proposition 6. There exists a positive, absolute constant a4 such, that for 4 ^ a4 and 1 satisfying 2B0C1B31 ^ 4 Eq. ( I l l ) has exactly one solution in the space (115). This solution satisfies the bounds (115) with 4 = 3B0ClB3l. Moreover, if we replace the configuration H^Bbyan arbitrary configuration $1 with values in the complexified Lie
+
+296
+
+T. Balaban
+
+algebra, and satisfying the same bounds asH^B, then the above statement is again true
+and the solution is an analytic function o/$. Only the last statement requires an additional comment. The first part of it is
+obvious, and the analyticity follows from the fact that the solution can be constructed as a uniform limit of a sequence of successive approximations. The
+analyticity of these approximations follows from the analyticity of /A' V(A') as a
+function of A'. Now let us draw some conclusions concerning the basic variational problems (5),
+(19)-(21), and (5), (6). Let us consider the first problem. If we take 4 = 82, and if we assume 82 ^ a*. and 2£0ClJB31 rg 82, then by Propositions 5 and 6 there is at most one critical configuration of (5) in (19)-(21). We get the same conclusion for the second problem if we take 2 -- ^(o + ^c) ^ an< assume the above restrictions. To get simpler formulations let us take 2 = B^Q + 5dLB0C1B31 (we have B± = 5dLB0), then the second condition above is satisfied automatically. The first condition gives restrictions on 0, ^ To simplify them let us use the assumption #3^1 ^0. We have
+
+82 ^ SBio + SB^fio ^ l^C^o,
+
+(122)
+
+thus ifJ31 ^ 0 and IB^C^Q ^ 4, then the functional (5) has at most one critical orbit in the space (6).
+Equation (111) has a solution belonging to the space (1 1 5) with 4 = 2B0C1B31 , if 2£0C1B31 ^4. This solution determines a critical configuration U by the transformation (112), such that A = l/i\og U1 belongs to (115) with 4 given, for example, by 4 - 2(2B0C1B3l + 2dLB0C11) ^ 5dLBQC1B31 = B1C1B31 . This gives us a critical configuration U1 satisfying almost all conditions (19)-(21), except the bounds for the second order operators in (19). Unfortunately the regularity
+properties of the operator (5 formulated in Theorem 3.13 [5] do not give us these
+second order bounds. We need them because we want to conclude that the
+configuration L^f/o belongs to the space (6)with 0 = 0(l), and then to apply the results of [6], especially those of the Sect. F. To prove the second order bounds we
+have to repeat some of the previous arguments with slight changes.
+We have constructed a critical configuration of the functional A(U <JJ^ in the
+space of field configurations satisfying (42), (43) with 2 ^ B1C1B31. We want to show that this configuration is also a critical configuration of the functional
+considered on the space of field configurations satisfying (43) and
+
+RD*A=f, /e, | / | ( _ 2 ) < y  2 ,
+
+(123)
+
+where  will be chosen as a sufficiently small, positive constant. To prove it we will
+show that configurations with/  0 can be obtained from configurations with/ = 0,
+i.e. satisfying (42), (43), by gauge transformations. Let us take a field A satisfying (42), (43), and the configuration U1 = eiA. We can consider U as obtained from some Uf satisfying the axial gauge conditions Axfc(93fc,(70) by a gauge transformation u1 satisfying the conditions (1.29) [6], i.e.
+
+j '  7=0,1,...,*.
+
+(124)
+
+The gauge transformation u± is determined uniquely by U1 and is given by the
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+297
+
+formula (106) [5]. It was investigated in [6], and satisfies the bounds (1.70)-(1.74) of that paper, with B1(0 + 1) replaced by 2. Now we are looking for a gauge transformation uf satisfying the conditions RQU'UI -- 1 on j9j = 0, 1, . . . ,fe, and such that u ' ~ l(u U) 1 = Uu~ satisfies the second condition (123), i.e. u' satisfies the following system of equations,
+
+RD*-- logt/'"1 =/, uf=RQu'u^= 1 on j.
+
+(125)
+
+It differs from the equations considered in Sect. D of [6] only by the function/ on the right-hand side above. For functions / small, e.g. satisfying the last condition in (123), all the results of that section are valid, and Eqs. (125) have a unique solution. This solution defines a configuration A = l/ilogU*'1 satisfying (123). Thus the space (43), (123) can be represented as a union of submanifolds, each submanifold intersecting the subspace (42), (43) at exactly one point, and contained in an orbit of the group of gauge transformations. This implies that the functional A(UJJ^ is constant on the submanifolds, and a critical point in the subspace (42), (43) is also a critical point in the space (43), (123). This conclusion applies to the constructed critical configuration.
+Now we apply the linearizing transformation to configurations in the space (43), (123), and we get the functional (74), with the operator  instead of 9 on the space of field configurations satisfying (77)with 3 ^ 42, and the conditions
+
+' = B on J9 j = 0, 1,. . .,fe, RD*A' =/, /eJR,
+
+(126)
+
+/in the small neighborhood of 0. The constructed critical configuration A\ is in this space. Let us notice that locally the only restriction on the configurations in the space are given by the first equations in (126), therefore we obtain the following equation on A\9
+
+^ (127)
+
+for all A' satisfying QA' = 0. The configuration A\ satisfies RD*A\ = 0, hence the above equation can be written as
+
+<(5^J> + <<5^4^>-<^
+
+(128)
+
+where a =  + DRD* + Q*aQ (the constant a = 1). For the operator ~1 = G we have proved Theorem 3.3 in [5], and especially the bounds (3.42) for the second
+order operator. This will allow us to improve the regularity properties of A\ .
+We decompose A\ = A0 + H0B, where H0B is defined as a minimum of the quadratic form j < A'9 aA >on the subspace Lj('}QA' = B. We find easily that H0B is given by
+
+and satisfies the bound (3.133) [5] with the additional inequality for the covariant Laplace operator
+
+298
+
+T. Balaban
+
+KcAvH*,/)! ^ B0(LJ3(LJ'de-od(y>y'\
+
+x(y), yej9 yfeJ,9 or \UoHB\(-3)^B0\B\.
+
+(130)
+
+By the definition of HQB and the condition QA' = 0 we have (A',aH0By =Q. Next, let us construct a projection P0 onto the subspace {A'.QA = 0} in the
+space of fields A' on20, with the scalar product ( ,zl >. It is again very easy to find that the projection is given by
+
+-1.
+
+(131)
+
+Taking A' = P0A', where A' is arbitrary, and substituting into Eq. (128), we get the following equation,
+
+= o.
+(132) By the definition of H0B we have QA0 = Q, hence POAQ = AQ, aA0 = (A -f DRD*)AQ. The above equation is satisfied for arbitrary A, hence we get
+(133)
+
+The bound (28), the inequality (3.137) [5] for the operator  \(2 the inequality (97) of Proposition 4,and the bounds | A\ \( _, | VA\ \( _2) < ^B1 C1B3s1 imply that the righthand side of (133) can be estimated by 0(\)C1B3>(Lj)~3 on j. The configuration AO =A -- H0B satisfies similar bounds as A'l9 and we have
+
+( + DRD*)A0 = (D*D + DD*)AQ + ('- DPD*)AQ, (D*DA0)(x) + (DD*A0)(x) = ( UoAQ,)(x)
+
+(134)
+
+0(x, x + e)U0(x -h f?e, x + e - ev))
+
++ nev\
+
+(135)
+
+where p'v(x) = < x + rye - ^yev, x +fye, x, x - ev > ,  ' and P were defined in [5] by (3.10), (3.25). This way we have expressed (A + DRD*)A0 as a sum of /d^^o and a bounded operator acting on A0. The bound for this operator follows from the inequality (3.49) [5] for DPD*, the inequality (3.69) [5] for , and the regularity
+condition (14) for the configuration U0. This together with (133) and the discussion following it implies the bound \UoA0\(^3} < 0(l)C1B3l, hence finally the bound
+
+\UoA'1\<0(l)C1B31(LJ* on J9 j = 0, l,...,/c.
+
+(136)
+
+Now we apply the transformation (47) to the critical configuration A\ , and we want
+
+to prove that the second term HD(A'1) in this transformation satisfies the above bound also, besides the usual bounds following from (46), (55). We have to prove that
+
+the operator H has better regularity properties than these described in (3.133) [5],
+
+especially D*DH, UoH are bounded in the norm | |(_3). Indeed, (3.126) [5] yields
+
+H = ( + DRD* + Q*aQ)H - Q*a(Li(']^
+
+l(LJ('}l- Q*a(LJ"l,
+
+(137)
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+299
+
+hence \AJB\(-^ 0(1)|B|. Above we have used the equality RD*H = Q. This equality implies also that 'H simplifies essentially, where n = A --'n is defined by the formula (3.120) [5]. From this formula we get
+
+y, (138)
+
+and G'RD* is a bounded operator in the norm | |(1). The properties of HB and J imply the bound
+
+|, hence \HB\(-3)£0(l)\B\.
+
+(139)
+
+Finally we use the decomposition (3.10) [5], i.e.  = D*D + ', ' is a local, bounded
+operator satisfying the bound |4|(_3)^0(1)|J5|. This implies the bound | ( _ 3 ) ^ 0(l)\B\, hence
+
+To get a bound for UoHB, we write - (D*D +DRD*)HB =(D*D +DD*)HB - DPD*HB,
+
+(140)
+
+and we use again the formula (135), and the fact that DPD* is a bounded operator.
+This gives the bound \UoHB\(-3) ^ O(l)\B\. Thus the transformation (47) applied to A\ yields the configuration A\
+- HD(A\) = l/i log U^ satisfying all the conditions (19)-(21) with 2 = 0(l)C1J331, where 0(1) is an absolute constant depending on d and L only. Now we take the configuration U^U0 and we apply to it a gauge transformation u satisfying the
+conditions R0u = 1 on /ij9 and such that the gauge transformed configuration (l/i/o)" satisfies the axial gauge conditions Axk($$k, l/0). Let us define Uk =(U1Uo)u. Proposition 7 [6] implies that Uk belongs to the space (18) with 0 = 0(l)C1B31. It is a critical configuration of the functional (5).To see that Uk is a minimum we apply the whole procedure with the configuration Uk instead of UQ. We get a functional ^(Ar) for which the critical configuration is equal to 0.
+This implies that a differential of g(A') at A = 0 is equal to <<5',./> and Eq. (93)
+has the form
+
+/> = 0 for all A':QA' = 0, RD*A' = 0.
+
+(141)
+
+Further, let us notice that B = Q, hence the configurations A' satisfy the same conditions as A, and we have </,J> = 0. Thus the expansion (81) for this functional has the form
+
+$(A') = A(Uk) + $<A'9A'y + V(A').
+
+(142)
+
+A second order differential atA' = 0 is given by the quadratic form above, and it is
+positive definite. Hence A' = 0 is a minimum of the functional (143) and this implies
+that Uk is a minimal configuration of the functional A(U). Let us formulate the above conclusions concerning the problem (5), (6) in
+
+Proposition 7. There exist positive, absolute constants 0, a\ such that for 0 :§ 0and #3 ^o the variational problem (5), (6)has at most one critical orbit. If^ :§ a\ , then
+there exists a minimal orbit in the space (6) with 0 = O(l)ClB3. This proposition implies Theorem 1 but with worse bounds on the minimal
+
+300
+
+T. Balaban
+
+configuration, and without the regularity results (9), (10). These regularity results and the improved bounds will be proved in the next section.
+Let us make few remarks about the alternative equation for the minimal configuration. Multiplying Eq. (133) by G = ~l we obtain
+
+A0 = - GPJ + G
+where A\ = A0 + H0B. By (131) we have the equality GP* -G - G*(G*1 = &,
+hence the above equation can be written as
+
+0 = ~ GJ +G <2>0 + H0B) - G(^-V\AO + H0B).
+
+(143)
+
+This equation has all the properties of Eq. (1 1 1) and Proposition 6 is valid for it also. In fact it has better regularity properties, which we have used in the proof of Proposition 7. However it cannot replace Eq. (Ill), for example it does not imply necessarily that solutions satisfy the Landau gauge condition, which was used in the derivation of (143). Thus we have to use both equations, (111) for proving the existence, and (143) for regularity properties. In the future we will use more frequently Eq. (143).
+
+¥. Regularity Properties of Minimal Configurations
+
+In this section we will prove all the regularity properties of minimal configurations
+Uk. We will use only the fact that they are critical configurations of the functional (5) and that they belong to the spaces (6) with 0 sufficiently small.
+Let us take a cube  intersecting j but not j+1, of a size 2ML. We are interested in two cases. To prove that Uk is in the space (8) we will take M = RMl. To prove the regularity properties (9), (10) we will admit more general M, depending
+on  . In both cases M ^ RM and we assume that M is a multiple of R^M^ , i.e. M = M'R1M1 , M' is an integer. We will use the notations and the results of the Sect. ¥ from [6], so we refer the reader for explanations to that paper. For a given  we
+construct the sequence of cubes (DM}> and the cube  Let us recall that
+
+D o ^ D i ^D^D, dist(+ ,DcB) = KM1L"/, n = 0, 1,...J, (144)
+
+and  is c Bj~ l(j_
+
+a J,
+
+cube with J c Bj(j)
+
+dis and
+
+t(, Qc
+
+Dc) Bj~
+
+= 2K l(A^
+
+M 1 1 Ju
+
+l/. Bj(j)
+
+Thus  / = D } u  J , D} c ,._ x . For simplicity of
+
+notations we assume that; =fe,a general case can be obtained by obvious rescalings.
+
+Now we repeat all the constructions of the Sect. F in [6]. Applying a gauge
+
+transformation to Uk we get a configuration Uk such, that U'kEAxk(£](k\ 1), and U'k satisfies the generalized axial gauge conditions on (k). The configuration Uk belongs to the space (2) with 0 sufficiently small, hence U'k satisfies the conditions (2) on  with L20f/2 on the right-hand side. This, Proposition 2 from [4],and the generalized axial gauge conditions imply
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+301
+
+I 7~fck(x, x') - 11 < \ - y\2L20 ^ 4d(M + R^M^L2^ ^ 8dL2M0 (145) for <x,x'> c Q(fc), y is a point of (fc) The inequality (1.65) [6] implies further
+
+0 - 0,
+for <x,x'><=D, 7 = 0,1,...,*.
+Let us notice that the gauge transformation changing Uk into U'k does not belong to the subgroup (4) leaving the space (3) invariant. In fact the configuration V defining this space is changed into a configuration V. We will be interested in V restricted to /c More exactly V is defined on (/<^c-)u(/cnc) = fc(k~^ fc(k), and if we define V\ as
+
+F; = F' on(k), F = K' onfe(fc),
+
+(147)
+
+then FI satisfies the generalized axial gauge conditions on lk) with a center at the point y.
+We define
+
+^^^(D^uDf-^ =D(k). Let us introduce a configuration V" defined on (Efc by
+
+048)
+
+F " =  /  J o n y l } , j = 0, l,...,/c, hence K" - K' on fc(/c~u f0. (149)
+
+This definition implies
+
+Efc, 1),
+
+(150)
+
+where fl}=j, 7 = 0, l,...,/c- 1, ;= The configuration U'k is a minimum of the functional (5) in the space (6) with V
+instead of F, hence it is a minimum of this functional in the space (150), because this space is defined by more restrictive functional conditions and a sufficiently small neighborhood of U'k in (150) is contained in (6). The bounds (146) imply
+
+|F"-l|<9dL2M0-c0 on(£k.
+
+(151)
+
+Now we apply Theorem 2 of the paper [6] to the pair of configurations Uk, I (in place of U'UQ9 U0 in that paper). We assume that 9dL2M0 g cl . Then there exists a unique gauge transformation u satisfying the restrictions j = 1 on 'J9 and such that
+
+Lj\A\,
+
+(LJ)2\VA\, (Lj}3\d"*d*A\, (L^)3|4M| < 9dL2BlM0
+
+on 'p ; = 0, l,...,/c;
+
+(152)
+
+Rd*A = Q9
+
+(153)
+
+where the operator R is defined for the sequence {2}};
+
+/i(x,x')= F"(x,x')for<x,x/>e/i;., x^'e},
+
+302
+
+T. Balaban
+
+,
+_ xeB(x)
+<x,x'>e/l}, xei-!, x'e},
+
+for (154)
+
+by Eqs. (1.31) in [6]. If we denote by Vl the configuration on the right-hand sides of (154), then
+
+K! = £»'* with |£|<18d2L3M0,
+
+(155)
+
+for cl sufficiently small, and the equalities (154) can be written as
+
+Qj(A) = B on 'p j = 0, 1, . . . ,/c, or simply fa) = .
+
+(156)
+
+Now we proceed as in the previous sections, i.e. we make the change of variables A = A' -- HD(A'). The configuration A' satisfies (152) with 36 instead of 9 on the right-handside. We have to assume that 36dL2B1M0 ^ 3 in order to have a welldefined functional 'ft(A'). It is much simpler now and can be written as
+
+' - HD(A!\ d**d\A' - HD(A'))y +V0(A' - HD(A'))
+
+' = Q, LjQjA' = B on 'J9 j = 0, l,...,/c.
+
+(157)
+
+Of course we can apply these transformations to all configurations in the space (150)
+and we get an open set of configurations A' satisfying (152) with the bound
+36dL2£1M0, and the above equalities. Repeating the arguments of Sect. E we extend the domain of A to configurations satisfying (123) instead of (157). The image
+of U'k is a minimum of g(A'), thus representing it as A1 -f HB, we obtain Eq. (143) for A ±. In the considered case it can be written as
+
+(e
+
+\
+
+-- V\(A1+HB) = 0.
+
+(158)
+
+The configurations HB and A1 satisfy (152) with the bounds 4dL2B1M0 and 40dL2B1M0 correspondingly. The image of U'k translated by -- HB satisfies Eq. (158). We assume that it belongs to the domain on which this equation has a unique solution, i.e. we assume that 40dL251M0 ^ 04. We can write it as an assumption on 1 using Proposition 7,more exactly the equality 0 = 0(l)C1531 . Let us notice that for the purpose of the proof of the regularity properties we can take Cl = L3, as it follows from the constructions at the beginning of the Sect. A. Thus our assumption
+is of the form O(l)B^M1 ^4. Let us notice that all the operators in this section are taken without any external
+gauge field configuration (or alternatively with the configuration equal to 1). These operators were considered in [2,3].
+We have to consider two situations. To prove that Uk belongs to the space (8) we have to prove the inequalities (2) with 0 = 531. They are local, and for a plaquette p, or a bond fe, we take a unit cube 0 c Bj(j) containing p or b. The cube 0 is contained in a big cube of the size 2R1M1Lj and we take  as this big cube. It is enough to prove the inequalities (2)for the configuration U'k, and for plaquettes and bonds belonging to 9 with 0 = B31 and j =fc.These inequalities, and the gauge invariance of the left-hand sides of (2), imply that Uk belongs to the space (8). In this
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+303
+
+case we take y as a point defining 9 i.e., 0 = Bk(y). We have to prove also the regularity conditions (9), (10) for a cube  of a size 2M. In this case y is a center of 
+We have constructed the configuration U^ = eA, and A is given by
+
+A = A + HB - HD(Al + HB),
+
+(159)
+
+where Av satisfies Eq. (158). We know also that Av + HB satisfies the bounds (152) with 36dL2BlM0 = 0(\)B^M^ on the right-hand side. Let us consider the configuration HB on the cube  Now we use the assumption (7)for K, hence for V.
+
+It implies that | V\(dp) - 11 < 1 for pe fc(f >e) and | V\(dp) - 11 < 2L2 for p c f} and 6j_ small, where the configuration V\ was defined by (147). It satisfies the
+
+generalized axial gauge conditions on [fc) with a center at the point y, hence
+
+\V\(x,x')-l <\x-y\2L21 for <x,x'> c lk) If <x,x'>e(lk), then F'^x') = F'(x, x') = V"(x, x') = Ft(x, x'), the last equality follows from the definition of V in (154) and from the assumption that V" = V on fek~1) and V'eAx^TM* 1)» hence
+
+K//(JC>X1)= 1 for x^^x), xe!t/c) Thus the above estimate implies that |(x,x')| < |x -- y|4L21. If <x,x7> c c/c)? then we apply the Lemma 1 of [6]. We consider the set  ' = B(x) u B(x'), and the assumptions of this lemma are satisfied for V = V"
+
+= V1 with a0 = L21, oc1 -- \x -- y\2L21. The lemma implies that \ V 1 ( x  , x f 1 ) -- \
+
+<4
+
+d
+
+2L
+
+2 1
+
++
+
+|x-y|2L21
+
+for
+
+<x1,x'1> c B(x)uB(xf),
+
+hence
+
+\B(x1,x')\<&d2L2
+
+-f \x -- _y|4L21. Finally we have
+
+|J5(x,x/)|<(8J2L2 + 4L2|x-j;|)1 for <x,x'>ef "  u ;/(/c). (160)
+
+This bound and the global bound (152) imply the following bounds on the cube (yl\  ( y 1 ) = 0 or
+
+\HB\9\VHB\,\d*dHB\,
+
+<dB0
+
+X
+
+e-
+
+where >e45 and M  = 1 for ^1 = 40, M^ = M for ^4 =  It is now clear how we should define B3 . Let us take
+1' (162)
+(£k J y2e^k
+It follows from the inequalities (2.47)-(2.51) of [3] that B3 depends on d and L only.
+
+304
+We may assume that R1M1 is sufficiently big, so that
+
+T. Balaban
+
+Then we get on 
+
+\HB\, \VHB\, \d*dHB\, \'B\<%Mmax{B31,$0}. This bound, the equality (159) and Eq. (158) imply
+
+(164)
+
+\A\,\VA\, |d**4|, |4M|<iM4max{B3fil,ifio} + B0C4(36dL2B1M0)2 + B04C2(36dL2B1M0)2
+^$Mmax{B3l^0}+B0(C4 + 4C2)(36dL2B1R1M1)2(M'0)2,
+
+(165)
+
+where M' = 1 in the first case, where  is a cube of the size R1M1 containing 09 and M' = (R1M1)~1M in the second case. We take a largest absolute number a5 such that M'0 ^ 5 implies all the previous restrictions on 0, and such that
+
+BQ(C4 + 4C2)(36dL2BlRiMl)2a5 ^ £.
+
+(166)
+
+If M'0 ^ a59 then we get
+
+1 4 1, |VM|, |<^*<3M|, |4M|<iM4max{B3l5i0}+iM'0 on A (167)
+
+Now let us draw conclusions concerning the regularity of U'k from the above inequality. We take  = Q9 hence M= 1,M' = 1,and we have this inequality with
+' =imax{B3lJ^-0} on the right-hand side. This and the inequality (1.54) of [6] imply
+
+I < ' + 86d'2 < 2' on 
+
+(168)
+
+for ' small, similarly for \dU1 --  . Again using the fact that U1 is a gauge transformed £/£ on 9 and that the conditions (2)are gauge invariant, we conclude that U'k satisfies (2) on 0 with max{31,|0} instead of 0. The cube 0 is an arbitrary cube (y) = Bj(y), if yej9 hence Uk belongs to the space (2) with max{B3,^0} instead of 0. If y0 ^ B31? then the required regularity is proved. If ^0 >B3l9 then we apply again the whole reasoning with ^0 instead of 0. We continue this way until we reach the bound B^^.
+Let us formulate this result in
+
+Proposition 8. There exists a positive, absolute constant a5 such, that ifU is a critical configuration of (5) in the space (6) with V satisfying (7), and ifQ ^ 5, then U belongs to the space (8).
+We have constructed the minimal configuration Uk in the space (2) with e0 = 0(l)#3l5 hence we have the additional restriction on ^ 0(l)531 ^ a5. Now we define al as a largest constant such, that the restriction ^^a^ implies all the other restrictions we have imposed on ^ . Especially it implies that Uk is in the space (8).
+Let us consider the second case, i.e.  =  with a size M. We may take
+advantage of the fact that we have proved the regularity property (8), thus we take
+0 = 531. Assuming M'531 ^ a59 we get from the inequality (167),
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+305
+
+(the left-hand side of (167)) < ^MB^ + iM'jB31 < ^MB^ . (169)
+The condition M'1 ^ a implies M'B33 rg 5, hence we have proved the regularity conditions (9), (10), and the proof of Theorem 1 is completed.
+
+G. Analyticity and an Expansion of Uk
+The minimal configuration Uk is a (multi-valued) function of the average variables V, Uk = Uk(V). We will show that it is an analytic function of V in the following sense: if V = V09 V small, l/0 = Uk(V0)9 and if we fix a gauge condition for Uk(V0)Uo \ then it is an analytic function of B = 1/ilog V and it has an expansion as a power series in B. In fact we are interested more in this expansion than in an analyticity property, because a particular example of it is the expansion in fluctuation variables. This is one of the main steps in our procedure.
+Let us make a remark concerning the minimal configurations Uk. If we take such a configuration as U0 in the expansion (74),then Eqs.(82), (99) are satisfied for A. = 0, hence we have
+
+where
+
+> = O f o r A':Q(Uk)A' = Q, R(Uk)D1j*kA' -0,
+
+(170)
+
+The above condition can be written simply as the equation
+
+*(Uk)J = Q
+
+(171)
+
+Now let us take V = V0, VQ satisfies the condition (7), V satisfies
+
+\V'-\\<Cll9 hence V' = eB'9 \Bf\<2C11 on 93fc,
+
+(172)
+
+for Si sufficiently small. We take U0 = Uk(VQ) and we consider the pair of configurations Uk(V0)9 U0. We repeat the whole procedure of Sects. A-E for this pair. At first we fix the Landau gauge for the configuration Uk(VrV0)UQ 1 = U1 ,and we have
+U1 = exp  2tf(B\ tf satisfies the conditions (19)-(21) with
+
+2 = B1(B3(1 + 4(^1 + C^O ^ 6B13C11 - B^.
+
+(173)
+
+We assume that C1 is an absolute constant, hence B5 is such a constant also. The configuration 2? is represented as
+
++ H^B\
+
+(174)
+
+where stf v satisfies the equation
+
+"5) 
+
+(175)
+
+and the regularity conditions (19) with s2 = ^B51 . The function on the right-hand side of (174) is an analytic function of ^1+ H1B, and we have discussed its expansion in Sect. C. It is generated by Eq. (56) and by recursive equations obtained
+
+306
+
+T. Balaban
+
+from it. The function stf 1 , as a solution of Eq. (175), is an analytic function of H ^B, hence of B. An expansion of stf ^ in H^B can be obtained again by taking an
+expansion o((/A')V)(A') in A', substituting it in (175) together with the unknown expansion of stf ^ , and then solving a recursive system of equations. Let us notice that
+it begins with a term of second order in H^B, more exactly we have
+
+This implies that the expansion of 2tf begins with the first order term H B. Let us write first and second order terms in it
+
+OA
+
+}+'".
+
+(Ill]
+
+We can generate this way terms of an arbitrary order in the expansion.
+Now let us write the alternative condition for the minimal configuration Uk, and the alternative equations for J^f and stf. The condition follows from Eq. (127). We
+take U0 = Uk, and then it is satisfied for A\ = 0, hence we obtain
+
+<<5,4',J> = 0 for A' .Q(Uk)A' = Q9
+
+(178)
+
+or
+
+This is obviously a more general and natural condition, because it does not involve any gauge fixing restrictions on A', and none such restrictions appear in the formulation of the variational problem either. This condition can be written in several different forms also, for example we can use the averaging operations Q instead of Q, or mix these operations. The configuration ffl can be represented as
+
+H0B\ where j/0 satisfies the equation obtained from (143),
+
+(179)
+
+We may simplify this equation including the operator -- (2) into the definition of G,
+i.e. defining G = (a - (2))~ *. From the estimate (3.137) it follows that (2) is a small perturbation of a, and the new operator Ghas exactly the same properties as ~l. Using this new operator G we obtain the equation
+
+S/Q
+
+-
+
+G(2}H0B
+
++G( ---V VM
+
+W /
+
+0
+
++ //O) - 0.
+
+(180)
+
+It is an equation of the same type as (175), and it has the same analyticty properties, and an expansion of the solution j/0 can be generated in the same way as for (175), i.e. we have the corresponding formulas (176), (177). The advantage is that the
+operators in (180) have better regularity properties than the operators in (175)-(177). Independently of the representation chosen, the function ffl(B) is an analytic
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+307
+
+function of cjc-valued configurations B defined on 23fc and satisfying (172). We make the gauge transformation inverse to the one applied previously, i.e. we transform the configuration in the Landau gauge back to the axial gauge. This transformation is an analytic function of <#? , hence of B, and we obtain a gauge field configuration in the axial gauge, which we denote also by Uk(W0). It is an analytic function of V, for V with values in a small neighborhood of the identity in Gc, and for V with values in G it coincides with the minimal configuration constructed in the previous sections. This function can be extended further using gauge transformations. For the minimal configurations in the axial gauge we have
+
+Vk(V»)=Uk(V)*9
+
+(181)
+
+where  is constant on blocks B\y\ ye/ly, and equal to v(y). This equality extends by analyticity to Gc-valued configurations V described above, and then, again by analyticity, to Gc-valued gauge transformations v in a small neighborhood of G-
+valued transformations. This means that we can prove the equality (181)for all these v for which Vv is in the analyticity domain of Uk. We can extend it to all Gc-valued vtreating the equality as a definition for the remaining v . Thus Uk(V) is defined on all orbits of the group of Gc-valued transformations, which contain elements V = V'V0 described before. It is an analytic function on the union of the set of orbits, and it
+satisfies (181). We will use these statements in a subsequent paper.
+
+Now we consider another important problem connected with the function j^f(B). In the future we will have to use decay properties of the functional derivative (/B)J^(B). We will prove that this derivative has regularity and decay properties identical to the propagator H, or HQ. The proof will be similar to the proof of the decay property (73) for the derivative (/A')D(A'). The functional derivative (/B)J^(B) satisfies a linear equation obtained by differentiations of the equations determining 3tf(B\ For example we consider Eqs. (179), (180). Differentiation of (179)
+yields
+
+~ oJb ^=O^n ^0 + H0-H(\^(s/0 + H0BO)D,~^0 + HI 0\,
+
+(182)
+
+where the last scalar product is with respect to bonds in 0 in f/-scale. Differentiation of (180) yields
+
+/ S R ~ ^  ' ~ \ l  Af ' iv^*"  ' " ~/5 £ r > ' L ' s ' ' < J | - "  / "-·<-· "
+
+H*-^/
+
+Let us denote 2l0(fe, c) = (^/(55(c))j3/0(B,ft).We may fix a bond ce93fc and consider the above equation as an equation for the function 2l0( ,c). This equation can be written as
+
+(184)
+
+where the derivative (2/A'2)V is treated as a kernel of a linear operator. For a configuration A' satisfying (77) with 3 sufficiently small we have
+
+308
+
+T. Balaban
+
+and taking
+
+r1  _-0 = -/%-. jf !2i \ .sJLI-F /(v ' + Sl7) (185)
+
+we get from Proposition 4
+
+2
+
+JA'
+
+(-3)
+
+This implies the bound
+
+2
+
+-2)J
+
+(186)
+
+(-D
+
+(-2)
+
+(187)
+
+for x sufficiently small, hence the norm of the linear operator is small also. Thus Eq. (184) can be solved by the Neumann series expansion
+
+(188) To prove an exponential decay we have to investigate more closely the kernel ((2/A'2)V)(Af). This is, unfortunately, a very awkward and complicated problem, although quite straightforward. Already the first derivative of V is complicated and given by many formulas, see (85), (88),(89),(90),(93). Now we have to differentiate those expressions second time. We do not perform these calculations here, we have obtained all necessary results to do the calculations and estimates, let us formulate a final result only. We have
+1
+2
+(189) for supp$ c (y'\ A' satisfying (77), This inequality, the formula (188) and Lemma 2.1, and finally Proposition 2 and (181), yield
+·MOT^ 'f(B>:
+v(/)
+'(B,x), lt
+
+for xe(y), or supp  c  ( y \ yej9 y'er. There is another important dependence of the function ffl. It depends on the
+gauge field configuration Uk through the functions and the operators in Eqs. (174),
+
+Variational Problem and Background Fields for Lattice Gauge Theories
+
+309
+
+(175), or (179), (180). These functions and operators can be extended to arbitrary, regular configurations (7,precise definitions are given in [4-6]. They are analytic functions of these configurations, having the properties and bounds as described above, and the equations determine an analytic function 2tf. All the above considerations and properties are valid for this function also.
+Let us formulate the results of this section.
+Proposition 9. The minimal configuration Uk(V) = Uk(V V0) in the axial gauge has an extension to an analytic function of Gc-valued small configurations V on 23. It can be extended further to all orbits of such configurations V'VQ by the equality (181). The function U^V'V^U^V^'1 transformed to the Landau gauge is, by the definition, equal to exp iJ4?(B)9 where B = 1/ilog V. The function 3f(B} is determined by Eqs. (174), (175), or (179), (180). It is an analytic function ofB, and also of the external gauge field
+configuration U satisfying the regularity conditions (3.35)-(3.38) [5], or (1.7)-(1.9) [6]. It satisfies the conditions (19)-(21) with &2= ^5& (see (^73)), and its functional derivative (182) satisfies the inequalities (190).
+
+References
+1. Balaban, T.: Renormalization group methods in non-Abelian gauge theories. Harvard preprint HUTMP B134, or: Recent results in constructing gauge fields. Physica 124A, 79-90 (1984)
+2. Balaban, T.: Propagators and renormalization transformations for lattice gauge theories. I. Commun. Math. Phys. 95, 17-40 (1984)
+3. Balaban, T.: Propagators and renormalization transformations for lattice gauge theories. II. Commun. Math. Phys. 96, 223-250 (1984)
+4. Balaban, T.: Averaging operations for lattice gauge theories. Commun. Math. Phys. 98,17-52(1985) 5. Balaban, T.: Propagators for lattice gauge theories in a background field. Commun Math. Phys. 99,
+389-434 (1985) 6. Balaban, T.: Spaces of regular gauge field configurations on a lattice and gauge fixing conditions.
+Commun. Math. Phys. 99, 75-102 (1985) 7. Brydges, D., Frhlich, J., Seiler, E.: On the construction of quantized gauge fields. I. General results.
+Ann. Phys. 121, 227-284 (1979) 8. Osterwalder, K., Seiler, E.: Gauge field theories on a lattice. Ann. Phys. 110, 440-471 (1978). 9. Seiler, E.: Gauge theories as a problem of constructive quantum field theory and statistical
+mechanics. Lecture Notes in Physics. Vol. 159, Berlin, Heidelberg, New York: Springer 1982 10. Wilson, K. G.: Quantum chromodynamics on a lattice. In Quantum field theory and statistical
+mechanics. Cargese 1976. pp. 143-172. Levy, M. Mitter, P. (eds.) New York: Plenum Press 1977
+Communicated by A. JaTe
+Received March 11, 1985
+
+

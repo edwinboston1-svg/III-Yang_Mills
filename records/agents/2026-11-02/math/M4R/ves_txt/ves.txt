@@ -1,0 +1,530 @@
+arXiv:cond-mat/0306362v1 [cond-mat.stat-mech] 13 Jun 2003     Provable first-order transitions for liquid
+                                                                crystal and lattice gauge models with
+                                                                         continuous symmetries.
+
+                                                                                   Aernout C. D. van Enter
+                                                                               Institute for Theoretical Physics
+
+                                                                                  Rijksuniversiteit Groningen
+                                                                                           P.O. Box 800
+
+                                                                                       9747 AG Groningen
+                                                                                         the Netherlands
+
+                                                                                       aenter@phys.rug.nl
+
+                                                                                       Senya. B. Shlosman
+                                                                               CPT, CNRS Luminy, Case 907
+                                                                              F13288 Marseille Cedex 9 France
+                                                                                 shlosman@cptsu5.univ-mrs.fr
+
+                                                                                        October 29, 2018
+
+                                                               Abstract: We consider various sufficiently nonlinear sigma mod-
+                                                           els for nematic liquid crystal ordering of RP N-1 type and of lattice
+                                                           gauge type with continuous symmetries. We rigorously show that
+                                                           they exhibit a first-order transition in the temperature. The re-
+                                                           sult holds in dimension 2 or more for the RP N-1 models and in
+                                                           dimension 3 or more for the lattice gauge models. In the two-
+                                                           dimensional case our results clarify and solve a recent controversy
+                                                           about the possibility of such transitions. For lattice gauge models
+                                                           our methods provide the first proof of a first-order transition in a
+                                                           model with a continuous gauge symmetry.
+
+                                                                                                           1
+    In [10], it was shown that a class of ferromagnetic N-vector models with a
+sufficiently nonlinear nearest-neighbour interaction ­ meaning that the near-
+est neighbour interaction has the shape of a deep and narrow well ­ show a
+first-order transition in temperature. An example of a model which could be
+treated is given by the Hamiltonian
+
+H = -J            1 + cos (i - j)  p
+
+                     2              ,
+
+        <i,j >Z2
+
+with p large. These results confirmed earlier numerical work [9, 6]. The main
+ingredient of the proof was a similarity between such models and high-q Potts
+models, which allows one to adapt proofs for Potts models, first developed
+in [17], and based on [8], to prove first-order transitions in the temperature
+parameter for these N-vector models.
+
+    In this paper we extend our analysis to include RP N-1 (liquid-crystal)
+models (such as were first introduced by Lasher and Lebwohl [23, 22]) and
+lattice gauge models. We can then employ techniques for showing the exis-
+tence of first-order transitions, such as have been used for Potts ferromagnets
+in d at least 2, as well as for Potts lattice gauge models in d at least 3 [17],
+to conclude that the corresponding nonlinear liquid-crystal and lattice gauge
+models, (with either abelian or non-abelian symmetries) have 1st order tran-
+sitions.
+
+    The standard N-vector models are either believed or sometimes rigor-
+ously known to have 2nd order transitions in d = 3 or higher, a "Kosterlitz-
+Thouless" transition in d = 2, N = 2, and no transition for d = 2 and higher
+N [1]. In the XY-model (N = 2) for either d = 2 or high d these results are
+rigorous, for the other models there is a consensus based on both numerics
+and heuristic arguments.
+
+    In contrast, for the standard versions of the liquid crystal and lattice
+gauge models, as well as for very non-linear -models, both numerics and high
+temperature series suggested the existence of 1st order transitions, despite
+some theoretical analyses originally either suggesting 2nd order transitions,
+no transitions at all, or Kosterlitz-Thouless type transitions. For some of
+this literature, see e.g. [20, 23, 22, 11, 2, 32, 26, 28, 31] and references
+therein. Moreover, in the limit where N approaches infinity (the spherical
+limit) 1st order transitions were found, in dimension 2 or more [19, 33, 31].
+This spherical limit result also holds for our nonlinear interactions in the
+ferromagnetic case [7]. Whether such a first-order transition can also occur
+
+                  2
+for finite N larger than 3 in d = 2, or whether it might be an artefact of
+the spherical limit has for a long time been a matter of controversy (see for
+example [31, 33]). In fact, Sokal and Starinets described the existence of
+such a first-order transition as a "pathology". Our result finally settles this
+question: first-order phase transitions for models with continuous symmetry
+in d = 2 can occur, despite the conjecture to the contrary of [31]. Our results
+are essentially in agreement with the analysis of [33]. In contrast to what
+was suggested in most earlier analyses, the symmetry or the low-temperature
+properties of the model do not play a role of any great importance, and in
+fact for our nonlinear choice of interaction the spin-dimensionality N does
+not need to be large and can be as small as 2. The lattice dependence of the
+phenomenon found in [33] seems somewhat of an artifact, however, which
+disappears if one varies the nonlinearity parameter.
+
+    The fact that our proofs are insensitive to the nature of the phases be-
+tween which the transition takes place implies that, similarly to the ferro-
+magnetic cases, one might have in the liquid-crystal models a transition be-
+tween a disordered high-temperature phase and either a nematically-ordered,
+a Kosterlitz-Touless or a disordered phase at low temperatures. Similarly
+one might find a transition either between a confining and a nonconfining ­
+Coulomb-like ­ phase or between two confining phases in the lattice gauge
+models. Which one occurs in a particular case should depend on dimension
+and/or symmetry of the system.
+
+    In particular, we emphasize that our proof is also insensitive as to whether
+the symmetry group of the lattice gauge model is abelian ­ in which case
+it is expected that in 4 dimensions a transition between a confined and a
+Coulomb-like phase occurs [16, 12] ­, or nonabelian, in which case both
+states are expected to confining, (this is also expected in general in d = 3).
+For a heterodox discussion on the difference between what is to be expected
+in abelian and nonabelian models, including some history of this problem cf
+[25].
+
+    We consider a lattice Zd, and either spin models in which the random
+variables live on the sites, or lattice gauge models where the variables live
+on the bonds (or links) of the lattice. The parameters of our models are the
+spatial dimension d, the spin-dimension N, and the nonlinearity parameter
+p. The "standard" versions of the models are obtained by taking p = 1.
+
+    For ferromagnetic models the variables are N-component unit vectors
+living on the N-sphere. We will discuss the argument in the 2-component
+case, in the general case the proof is essentially the same. The ferromagnetic
+
+                                                3
+models treated in [10] were given by
+
+H = -J                                1 + cos (i - j)   p   (1)
+
+                                         2               .
+
+        <i,j >Z2
+
+    For liquid crystal RP N-1 models either one considers variables ­ usually
+denoted ni ­ which live on the projective manifold obtained by identifying a
+point on the N-sphere with its reflection through the origin, or equivalently
+one can consider ordinary spins on the N-sphere, and divide out this "local
+gauge symmetry" afterwards. The last approach is the route we will pursue,
+as it allows us to literally transcribe the proof of [10]. Thus we consider
+Hamiltonians of the form
+
+H = -J                                1 + cos2 (i - j)  p   (2)
+
+                                         2               .
+
+        <i,j >Z2
+
+In [10] we call a bond "ordered" if the angle  between two neighboring sites
+is small enough. Here we call it ordered if the angle mod is small enough.
+Then the argument of [10], based on [29] and [17] goes through without any
+changes. There is a first-order phase transition for p chosen large enough
+(in general the values of p for which the proof works depend on N and d)
+between a high-temperature regime in which most nearest neighbor bonds
+are disordered, and a low-temperature regime in which most nearest neighbor
+bonds are ordered. This holds for each dimension at least 2, and whereas the
+Mermin-Wagner theorem excludes nematic long-range order in d = 2 [24], in
+d = 3 and higher long-range order will occur [3]. Between the ordered and
+the disordered phase(s) free energy contours occur, whose probabilities are
+estimated to be uniformly small via a contour estimate valid over a whole
+temperature interval. In the contour estimate use is made of the Reflection
+Positivity [27] of the model. We remark that at low temperatures percolation
+of ordered bonds holds [14]; it follows from our results that the associated
+percolation transition is first order.
+
+    For lattice gauge models the variables are elements of a unitary repre-
+sentation of a compact continuous gauge group, e.g. U(1), SU(n), or sums
+thereof [30]. Here we present the argument in the simplest case of a U(1)-
+invariant interaction in 3 dimensions.
+
+H = -J                                   L (UP ) ,          (3)
+
+        plaquettes P Z3
+
+                                      4
+with L(UP ) =       ( ) 1+cos e1 +e2 -e3 -e4  p
+
+                                      2        . Here the ei denote the 4 edges
+
+making up the plaquette P .
+
+    The effect of choosing the nonlinearity parameter p high is that the po-
+tential, although it still has quadratic minima, becomes much steeper and
+narrower. In this way one constructs in a certain sense a "free energy barrier"
+
+between ordered and disordered phases.
+    The lattice gauge model proof becomes similar to the arguments from
+
+[17]. When the product over the link variables is sufficiently close to unity,
+we'll call the plaquette "ordered", "disordered" otherwise. This distinction
+corresponds to unfrustrated and frustrated plaquettes in the Potts case. We
+
+will sketch the argument for the toy model where the potential L(U) is chosen
+
+to be 1 if the sum P of the oriented angles along the plaquette P is between
+
+-     and  +     and zero otherwise.  The generalization to the non-square well
+   2          2
+potentials can then be done in the same way as in [10]. The correspondence,
+
+as in [10], is that  is of order O( 1p ).
+    Our strategy is to find bounds for free energy contours between ordered
+
+phases, in which one has mainly cubes with 6 ordered plaquettes, and dis-
+
+ordered phases, in which most cubes have 6 disordered plaquettes. We need
+
+thus to estimate the weights of contours consisting of cubes which are neither
+
+ordered nor disordered. The number of possibilities for such cubes includes
+the 7 possibilities given in [17], except that now we have the additional 8th
+possibility of having cubes with one disordered plaquette on one side, and
+
+five ordered ones.
+
+      For the partition function ZL on a cube BL of size L3 we use the (quite
+
+rough) lower bound
+
+                             ZL  max(ZLd , ZLo ),  (4)
+
+where ZLd (resp., ZLo ) is part of the partition function, calculated over all con-
+figurations which have all plaquettes disordered (resp., mostly ordered). For
+the disordered partition function ZLd we obtain the lower bound (1 - 4)3L3
+(we take a normalized reference measure, giving a weight 1 to each link).
+
+    For the ordered partition function ZLo we proceed as follows: we first
+choose a set of bonds TL in BL, which is a tree, passing through every site.
+
+For example, we can put into TL all vertical bonds ­ z-bonds ­ except these
+
+connecting sites with z-coordinates 0 and 1, plus all y-bonds in the plane
+
+z = 0, except these connecting the sites with y-coordinates 0 and 1, plus
+
+all x-bonds of the line y = z = 0, except the one between the sites (0, 0, 0)
+
+                                      5
+and (1, 0, 0) . The site (0, 0, 0) can be taken as a root of TL. Note that the
+number of bonds in TL is L3 - 1. Therefore it is not surprising (and easy to
+see) that for every edge configuration  = {b, b  TL} there exists a unique
+site configuration  =  = {x, x  BL} , such that the following holds:
+
+   1. Let g denote the gauge transformation, defined by the configuration
+       . Then g   = 1 for every bond b  TL;
+
+                                               b
+
+   2. (0,0,0) = 1.
+
+For every family of bonds S  BL let us define a bigger family C (S) , by the
+rules:
+
+1. S  C (S) ,
+
+2. for every four bonds {b1, ..., b4} , making a plaquette, such that three
+   of them are in S, we have {b1, ..., b4}  C (S) .
+
+Then we can consider also the sets C2 (S) = C (C (S)) , C3 (S) , and so on.
+
+Define C (S) = kCk (S) . Note that the number of plaquettes in C (TL) is
+3L3 - O (L2) . We claim now that for every configuration TL = {b, b  TL}
+
+one can specify (in a continuous way) a collection of arcs
+
+Ib  = Ib (TL)  S1, b  C (TL)  \  TL, |Ib| =     , such that for every configu-
+                                             4
+ration  on BL, which coincides with TL on TL, and for which the values
+
+b on the bonds b  C (TL) \ TL belong to the above segments Ib, all the
+
+plaquettes that fall into C (TL) are non-frustrated. That would imply that
+
+               ZLo      2L3         3J  L3 - O      L2
+
+                     4      exp
+
+by Fubini's theorem. To see the validity of our claim, consider first the
+
+case when the configuration TL  1  S1 (here 1 is the neutral element).
+
+Then the choice of the segments Ib is easy: Ib (1) =        -     ,     for every
+                                                               8     8
+b  C (TL) \ TL. For a general TL let us take the corresponding gauge
+
+transformation gTL (which is the identity for TL  1), and we define our
+
+segments by          Ib (TL) = gTL -1 Ib (1) .
+
+    This provides a lower bound
+
+    ZL  max    (1 - 4)3L3 ,         2L3         3J  L3 - O L2           .  (5)
+                                 4
+                                        exp
+
+                                    6
+   This bound on the partition function as the maximum of the ordered and
+
+disordered term is similar to the argument in [10]. It plays the same role as
+
+the bound in terms of a fixed energy partition function given in [17].
+
+   To obtain our contour estimates, by Reflection Positivity we need to esti-
+
+mate the partition functions of configurations constrained to have a "univer-
+
+sal contour". The estimates of the 7 types of universal contours mentioned
+
+in [17] are of a similar form as in that paper with the number of Potts states
+
+q  up  to  some  constants  replaced  by  1  .  The universal contour due to the
+                                          
+new case of cubes with one disordered plaquette consists of configurations
+
+in which the horizontal plaquettes in every other plane are disordered, and
+
+all the other ones are ordered. These configurations have a similar entropy
+
+contribution to the partition function as the ordered configurations, but the
+
+energy per cube is  5  of that of a cube in the fully ordered situation.  For
+                    6
+ small enough (which corresponds to p large enough) also such a contour
+
+is suppressed exponentially in the volume. The combinatorial factor in the
+
+contour estimate changes by some finite constant, which choosing  small
+
+enough takes care of.
+
+   To summarize we have obtained the following results:
+
+Theorem 1 For any nonlinear RP N-1 model in dimension 2 or more and
+
+p high enough, there is a first order transition, that is, there exists a temper-
+
+ature at which the free energy is not differentiable in the temperature param-
+
+eter.
+
+Theorem 2 For lattice gauge models with plaquette action    1+L(UP )  p
+                                                                 2
+                                                                       , (where
+
+L(UP ) = T r(UP + UP )) in dimension 3 and more and p high enough, there
+
+is a first order transition, that is there exists a temperature at which the free
+
+energy is not differentiable in the temperature parameter.
+
+    Here UP denotes the adjoint operator of UP .
+    This seems to be the first case in which a first order transition for a lattice
+gauge model with a continuous gauge symmetry group is rigorously obtained.
+Whereas the example of the Potts lattice gauge model in d = 3 or higher is
+between a confining and a nonconfining phase [18, 21], in our theorem this
+is to be expected in d = 4, with U(1) symmetry only. For d = 3 and also for
+SU(n) in d = 4 we conjecture that confined phases exist on both sides of the
+phase transition.
+    Our proof only gives results for very high p. We will discuss some further
+aspects of what may actually be the p-values for which to expect first-order
+
+                                          7
+transitions, and what one might hope to prove. The recent work of Biskup
+and Chayes [4] shows that if a reflection positive model has a phase transition
+in mean field theory, then also at sufficiently high dimension a first-order
+transition occurs. They include in their discussion the RP N-1 model for
+N = 3, for which even for p = 1, a first-order transition is derived. The
+mean field analysis of [5] indicates that a similar result for the ferromagnetic
+case holds if p = 3. For lattice gauge models also the standard actions lead to
+first order transitions in mean-field theory [35], section 34.4, which indicates
+a first order transition in sufficiently high dimension.
+
+    If one believes that here the spherical (N to infinity) limit is not singular
+(which has been a matter of controversy itself), then for the square lattice, N
+large and p larger than 6 the ferromagnet might have a first order transition,
+while for the RP N-1 case on the square or triangular lattice even for p = 1 a
+first order transition occurs, while for the hexagonal lattice one presumably
+needs a higher value of p [31, 33].
+
+    As mentioned before, numerical work suggests that in the standard (p =
+1) Lebwohl-Lasher model with N = 3 as well as in the U(1)-lattice-gauge
+model a first order transition should occur; however, this seems far away
+from any provable result.
+
+Acknowledgement 3 We thank in particular E. Domany and A. Schwim-
+mer who suggested to us to consider lattice gauge models, and also D. v.d.
+Marel, A. Messager, K. Netocn´y and A. Sokal for stimulating discussions
+and/or correspondence.
+
+References
+
+ [1] The rigorous results about ferromagnetic 2-component models are de-
+      scribed for example in Random Walks, Critical Phenomena and Triv-
+      iality in Quantum Field Theory by R. Fern´andez, J. Fr¨ohlich and
+      A. D. Sokal, Springer, 1992. A more recent result on the Kosterlitz-
+      Thouless point of the 2-dimensional XY model can be found in L.
+      Chayes, Comm. Math.Phys. 197, 623­640, 1998.
+
+      The description of critical (2nd-order transition) points and the be-
+      haviour of their exponents as is expected in the physics literature can
+      be found for example in various contributions to Phase Transitions and
+
+                                                8
+      Critical Phenomena, Vol 6, Eds C. Domb and M. S. Green, Academic
+      Press, 1976.
+
+ [2] G. Arnold, B. Bunk,T. Lippert and K.Schilling. Compact QED under
+      scrutiny: it's first order. arXiv:hep-lat/0210010, 2002.
+
+ [3] N. Angelescu and V. A. Zagrebnov A lattice model of liquid crystals
+      with matrix order parameter. J.Phys. A, Math. Gen., 15:L639­L643,
+      1982.
+
+ [4] M. Biskup and L. Chayes. Rigorous analysis of discontinuous phase
+      transitions via mean-field bounds. Comm. Math. Phys. to appear, mp-
+      arc 02-325, arXiv Math.PR/0206232
+
+ [5] H. W. J. Blo¨te and W. N. Guo. Phase transitions in the two-dimensional
+      O(3) model. Int.J.Mod. Phys. B,16:1891­1897, 2002.
+
+ [6] H. W. J. Blo¨te, W. N. Guo and H. J. Hilhorst. Phase transition in a
+      Two-Dimensional Heisenberg Model. Phys. Rev. Lett., 88:047203, 2002.
+
+ [7] S. Caracciolo and A. Pelissetto. Two-dimensional Heisenberg model with
+      nonlinear interaction. Phys. Rev. E, 66: 016120, 2002.
+
+ [8] R. L. Dobrushin and S. B. Shlosman. Phases corresponding to the local
+      minima of the energy. Selecta Math. Soviet. 1, 317­338, 1981.
+
+ [9] E. Domany, M. Schick and R. H. Swendsen. First Order Transition in
+      an XY model with Nearest-Neighbor Interactions. Phys. Rev. Lett 52,
+      1535­1538, 1984.
+
+[10] A. C. D. van Enter and S. B. Shlosman. First-Order Transitions for
+      n-Vector models in Two and More Dimensions: Rigorous Proof. Phys.
+      Rev. Lett, 89: 285702, 2002.
+
+[11] D. Espriu and L .Tagliacozzo. Compact lattice U(1) and Seiberg-Witten
+      duality. arXiv:hep-th/0301086, 2003.
+
+[12] J. Fr¨ohlich and T. Spencer. Massless Phases and Symmetry Restoration
+      in Abelian Gauge Theories. Comm.Math.Phys.,83:411­468, 1983.
+
+                                                9
+[13] H.-O. Georgii. Gibbs Measures and Phase Transitions. Walter de
+      Gruyter (de Gruyter Studies in Mathematics, Vol. 9), Berlin­New York,
+      1988.
+
+[14] H.-O. Georgii. Percolation for Low Energy Clusters and Discrete Sym-
+      metry Breaking in Classical Spin Systems. Comm.Math.Phys.,81:455­
+      473, 1981.
+
+[15] H.-O. Georgii, O. H¨aggstro¨m and C. Maes. The random geometry of
+      equilibrium phases. Phase transitions and critical phenomena (C. Domb
+      and J.L. Lebowitz, Eds.), Academic Press, London, to appear.
+
+[16] A. H. Guth. Existence proof of a nonconfining phase in four-dimensional
+      U(1) lattice gauge theory. Phys. Rev. D,21:2291­2307, 1980.
+
+[17] R. Kotecky´ and S. B. Shlosman. First-order transitions in large entropy
+      lattice models. Comm.Math. Phys., 83:493­515, 1982.
+
+[18] R. Kotecky´, L. Laanait,A. Messager and J. Ruiz. The q-state Potts
+      model in the standard Pirogov-Sinai Theory: surface tensions and Wil-
+      son loops J. Stat. Phys., 58:199­248, 1990.
+
+[19] H. Kunz and G. Zumbach. First-order phase transitions in the two-
+      and three-dimensional RP n-1 and CP n-1 models, in the large-n limit.
+      J.Phys. A, Math. Gen., 22:L1043­L1048, 1982.
+
+[20] H. Kunz and G. Zumbach. Topological phase transitions in a two-
+      dimensional nematic n-vector model: A numerical study. Phys. Rev.
+      B, 46:662­673, 1992.
+
+[21] L. Laanait,A. Messager and J. Ruiz. Discontinuity of the Wilson string
+      tension in the 4-dimensional lattice pure gauge model. Comm. Math.
+      Phys., 126: 103­131, 1989.
+
+[22] G. Lasher. Monte Carlo Results for a Discrete-Lattice Model of Nematic
+      Ordering Phys. Rev. A, 5:1350­1354, 1972.
+
+[23] P. A .Lebwohl and G .Lasher. Nematic-Liquid-Crystal Order-A Monte
+      Carlo Calculation. Phys Rev A, 6:426­429, 1972 and 7:2222, 1973.
+
+                                               10
+[24] N. D. Mermin and H. Wagner. Absence of Ferromagnetism or Antiferro-
+      magnetism in One- or Two-Dimensional Heisenberg Models. Phys. Rev.
+      Lett., 17:1133­136, 1966.
+
+[25] A. Patrascioiu and E. Seiler. The Difference between Abelian and Non-
+      Abelian Models: Fact and Fancy. arXiv:math-ph/9903038, 1999.
+
+[26] M. Peskin. Mandelstam-'t Hooft duality in abelian lattice models. Ann.
+      Phys., 113:122­152, 1978.
+
+[27] The method of reflection positivity was developed by F. J. Dyson,
+      J. Fr¨ohlich, R. B. Israel, E. H. Lieb, B. Simon and T. S. Spencer in
+      a series of papers. It is described in the last chapters of [14] or in [29].
+
+[28] R. Savit. Topological Excitations in U(1) Invariant Theories. Phys. Rev.
+      Lett. 39:55­58, 1977.
+
+[29] S. B. Shlosman. The method of reflection positivity in the mathematical
+      theory of first-order phase transitions. Russian Mathematical Surveys,
+      41: 83­145, 1986.
+
+[30] J. Smit. Introduction to quantum fields on a lattice. Cambridge Lecture
+      Notes in Physics, 15, CUP, Cambridge, 2002. See in particular Chapters
+      4 and 5.
+
+[31] A. D. Sokal and A. O. Starinets. Pathologies of the large-N limit for
+      RP N-1, CP N-1, QP N-1 and mixed isovector/isotensor sigma-models.
+      Nucl. Phys. B, 601: 425­502, 2001.
+
+[32] S. Solomon. Vortices and phase transitions in nonabelian spin models.
+      Phys. Lett. B, 100:492­496, 1981.
+
+[33] O. Tchernyshyov and S. L. Sondhi. Liquid-gas and other unusual ther-
+      mal phase transitions in some large-N magnets. Nucl.Phys. B, 639:429­
+      449, 2002.
+
+[34] A. C. D. van Enter, R. Ferna´ndez, and A. D. Sokal. Regularity proper-
+      ties and pathologies of position-space renormalization-group transforma-
+      tions: Scope and limitations of Gibbsian theory. J. Stat. Phys., 72:879­
+      1167, 1993.
+
+                                               11
+[35] J. Zinn-Justin Quantum Field Theory and Critical Phenomena, 4th
+      edition. Clarendon Press, Oxford 2002.
+
+                                               12
+

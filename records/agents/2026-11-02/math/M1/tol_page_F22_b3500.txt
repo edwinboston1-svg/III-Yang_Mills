@@ -1,0 +1,17 @@
+START 2026-11-02 06:34:51 engine md5=3d17b9b8cd661c6fcbdd313acbcfe8f6 dress=page F0=22 beta=0.3500
+K=1.0000 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=4.0000 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=2.5000 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=1.7500 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.3750 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=1.5625 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=1.6562 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: PASS for alpha in [0.0020, 0.0081]
+K=1.7031 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.6796 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.6679 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: PASS for alpha in [0.0030, 0.0060]
+K=1.6737 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.6708 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: PASS for alpha in [0.0037, 0.0051]
+K=1.6722 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.6715 KP-CERT SCAN dress=page graded=S24-table beta=0.3500 gamma=6/1 F0=22: PASS for alpha in [0.0040, 0.0047]
+TOL beta=0.3500 kappa* in [1.6715, 1.6722) (PASS at the lower, FAIL at the upper)
+END 2026-11-02 06:40:40

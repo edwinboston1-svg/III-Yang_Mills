@@ -1,0 +1,27 @@
+planar CLAMP=0:
+  196 entries, max |dF| relative to max|F| = 3.814e-16
+planar CLAMP=4:
+  196 entries, max |dF| relative to max|F| = 4.768e-17
+planar CLAMP=0,5:
+  196 entries, max |dF| relative to max|F| = 1.907e-16
+planar CLAMP=1,4:
+  196 entries, max |dF| relative to max|F| = 1.907e-16
+planar WEIGHT0:
+  196 entries, max |dF| relative to max|F| = 1.305e-17
+planar WEIGHT0+CLAMP 0,5:
+  196 entries, max |dF| relative to max|F| = 1.907e-16
+bent CLAMP=0:
+  196 entries, max |dF| relative to max|F| = 3.814e-16
+bent CLAMP=4:
+  196 entries, max |dF| relative to max|F| = 4.768e-17
+bent CLAMP=0,5:
+  196 entries, max |dF| relative to max|F| = 1.907e-16
+bent CLAMP=1,4:
+  196 entries, max |dF| relative to max|F| = 1.907e-16
+bent WEIGHT0:
+  196 entries, max |dF| relative to max|F| = 1.294e-17
+bent WEIGHT0+CLAMP 0,5:
+  196 entries, max |dF| relative to max|F| = 1.907e-16
+SIGHTED: WEIGHT0 at the random datum must FAIL (no U(1) invariance there)
+  196 entries, max |dF| relative to max|F| = 2.120e-02
+T2-DONE

@@ -1,0 +1,17 @@
+START 2026-11-02 06:34:50 engine md5=3d17b9b8cd661c6fcbdd313acbcfe8f6 dress=page F0=22 beta=0.3000
+K=1.0000 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=4.0000 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=2.5000 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=1.7500 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=2.1250 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.9375 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: PASS for alpha in [0.0013, 0.0108]
+K=2.0312 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.9843 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.9609 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: PASS for alpha in [0.0021, 0.0082]
+K=1.9726 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: PASS for alpha in [0.0029, 0.0064]
+K=1.9784 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: PASS for alpha in [0.0039, 0.0049]
+K=1.9813 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.9798 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.9791 KP-CERT SCAN dress=page graded=S24-table beta=0.3000 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+TOL beta=0.3000 kappa* in [1.9784, 1.9791) (PASS at the lower, FAIL at the upper)
+END 2026-11-02 06:40:30

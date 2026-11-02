@@ -1,0 +1,39 @@
+== frame 1,1,0,0 n=2 W2L2 cancel
+ production path against unsliced:
+  196 entries, max |dF| relative to max|F| = 1.303e-17
+ full slices (no WEIGHT0) against unsliced, and Lemma 0.1:
+  196 entries, max |dF| relative to max|F| = 0.000e+00
+  Lemma 0.1: largest nonzero-weight entry / largest entry = 1.298e-17
+== frame 1,1,0,0 n=2 W2L2 ordered
+ production path against unsliced:
+  196 entries, max |dF| relative to max|F| = 2.624e-17
+ full slices (no WEIGHT0) against unsliced, and Lemma 0.1:
+  196 entries, max |dF| relative to max|F| = 0.000e+00
+  Lemma 0.1: largest nonzero-weight entry / largest entry = 2.614e-17
+== frame 1,0,0,0 n=4 W2L1 cancel (two steps)
+ production path against unsliced:
+  25 entries, max |dF| relative to max|F| = 2.465e-18
+ full slices (no WEIGHT0) against unsliced, and Lemma 0.1:
+  25 entries, max |dF| relative to max|F| = 0.000e+00
+  Lemma 0.1: largest nonzero-weight entry / largest entry = 2.147e-18
+== corner n=2 W2L2 cancel
+ production path against unsliced:
+  196 entries, max |dF| relative to max|F| = 1.245e-17
+ full slices (no WEIGHT0) against unsliced, and Lemma 0.1:
+  196 entries, max |dF| relative to max|F| = 0.000e+00
+  Lemma 0.1: largest nonzero-weight entry / largest entry = 1.237e-17
+== corner n=2 W2L2 ordered
+ production path against unsliced:
+  196 entries, max |dF| relative to max|F| = 2.564e-17
+ full slices (no WEIGHT0) against unsliced, and Lemma 0.1:
+  196 entries, max |dF| relative to max|F| = 0.000e+00
+  Lemma 0.1: largest nonzero-weight entry / largest entry = 2.547e-17
+== corner n=4 W2L1 cancel (two steps)
+ production path against unsliced:
+  25 entries, max |dF| relative to max|F| = 2.301e-18
+ full slices (no WEIGHT0) against unsliced, and Lemma 0.1:
+  25 entries, max |dF| relative to max|F| = 0.000e+00
+  Lemma 0.1: largest nonzero-weight entry / largest entry = 1.776e-18
+== the frame's weight-level check: reversed order against forward, unsliced (n=2 W2L2, frame 1,1,0,0 and 1,1,1,1; random datum)
+ frame 1,1,0,0:
+  196 entries, max |dF| relative to max|F| = 2.832e-16

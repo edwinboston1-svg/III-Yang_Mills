@@ -1,0 +1,8 @@
+M4R-IRR homomorphism and characters of D^1, D^2 to 4.0e-15 [MET]
+M4R-LAW u1_n4_b1.2_N6_L6_ordered.txt[N512] n=512 total mass 0.999999999999978, min pi_ij 8.506e-07
+M4R-TOP u1_n4_b1.2_N6_L6_ordered.txt[N512] the marginal pair is a singular pair of value 1: |Mv-u| 1.11e-16, |M^T u - v| 1.18e-16
+M4R-RHO u1_n4_b1.2_N6_L6_ordered.txt[N512] rho (all functions) = 0.120240908   next singular values 0.041579012 0.000284878 0.000161526
+M4R-CHAN u1_n4_b1.2_N6_L6_ordered.txt[N512] rho_EE = 0.000737625 | rho_OO = 0.119762669 rho_EO = 0.007560274 rho_OE = 0.007560274 rho_O. = 0.120001033 | half-integer rho_oo = 0.112635694
+M4R-SHARE u1_n4_b1.2_N6_L6_ordered.txt[N512] rho_EE/rho = 0.006135 rho_OO/rho = 0.996023 rho_EE/rho_OO^2 = 0.0514272 | exact block bound 0.120241215 (ratio 1.0000026) [MET]
+M4R-TAU u1_n4_b1.2_N6_L6_ordered.txt[N512] side A: sup over 4096 points = 0.166399215 at phi = 1.57080 | on M4's 256-point grid: 0.166399215 | osc F = 1.083029 max|F| = 1.492272
+M4R-TAU u1_n4_b1.2_N6_L6_ordered.txt[N512] side B: sup over 4096 points = 0.166399215 at phi = 1.57080 | on M4's 256-point grid: 0.166399215 | osc F = 1.083029 max|F| = 1.492272

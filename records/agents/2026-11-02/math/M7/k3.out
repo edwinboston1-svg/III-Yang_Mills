@@ -1,0 +1,1 @@
+KP-CERT dress=page coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.019543, 0.019543] root in [0.019543, 0.019543] u in [0.06233787, 0.06233787] u~ in [0.06356816, 0.06356816] r_hi=0.320393 LHS in [0.0000033, 0.0000033] alpha=0.0009999 -> PASS mix=0.000000000000

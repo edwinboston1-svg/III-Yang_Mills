@@ -1,0 +1,17 @@
+START 2026-11-02 06:34:50 engine md5=3d17b9b8cd661c6fcbdd313acbcfe8f6 dress=page F0=22 beta=0.2500
+K=1.0000 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=4.0000 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: rK >= 1: the even tail does not close)
+K=2.5000 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=1.7500 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=2.1250 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=2.3125 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+K=2.4062 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=2.3593 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: PASS for alpha in [0.0015, 0.0100]
+K=2.3827 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: PASS for alpha in [0.0024, 0.0076]
+K=2.3944 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: PASS for alpha in [0.0033, 0.0059]
+K=2.4003 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=2.3973 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: PASS for alpha in [0.0038, 0.0052]
+K=2.3988 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: the inequality's upper end is above alpha)
+K=2.3980 KP-CERT SCAN dress=page graded=S24-table beta=0.2500 gamma=6/1 F0=22: PASS for alpha in [0.0040, 0.0050]
+TOL beta=0.2500 kappa* in [2.3980, 2.3988) (PASS at the lower, FAIL at the upper)
+END 2026-11-02 06:40:21

@@ -1,0 +1,3 @@
+PROJGAP 4000 families (1137 with rho(C) < 1): worst (1 - rho(C)) / gap = 1.000000000070 at rho(C) = 0.999997 (n=7 N=2 gap=0.000003 planted common dim 0) [HELD]
+PROJGAP 4000 families (1142 with rho(C) < 1): worst (1 - rho(C)) / gap = 1.000000000074 at rho(C) = 0.999990 (n=10 N=2 gap=0.000010 planted common dim 0) [HELD]
+PROJGAP 4000 families (1141 with rho(C) < 1): worst (1 - rho(C)) / gap = 1.000000000012 at rho(C) = 0.999976 (n=6 N=2 gap=0.000024 planted common dim 2) [HELD]

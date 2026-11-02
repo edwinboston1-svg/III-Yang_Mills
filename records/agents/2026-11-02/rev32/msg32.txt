@@ -1,0 +1,15 @@
+THE GROUND, revision 32 (Edwin Boston III, 2026-11-02 06:23 EST): the reduction for every block map and every L, its example map corrected, the supremum it demands proved necessary, and Theorem 8.9's condition list completed
+
+§8.3 now fixes the coarse scale a_c = L^{k₀}a₀ for the fixed integer L of Theorem 7.4's construction, which the theorem always allowed; L = 2 is no longer singled out. For odd L the time extent is an even multiple of a_c, so that the half period lies on the lattice.
+
+The block map's example is corrected. The holonomy of a block along a fixed path is a block map, and one on which the reduction is empty. For the Gaussian field (covariance g²(−Δ)⁻¹, Feynman gauge) the flux through an n × n square has variance g²(4G₃(0)n + o(n)), with 4G₃(0) = 2W/3 and W = √6 Γ(1/24)Γ(5/24)Γ(7/24)Γ(11/24)/(32π³); the proof is given in the text. Along the asymptotically free sequence this diverges, so at one loop every character mean of the path holonomy tends to zero. Hypothesis I then holds trivially, and Hypothesis II(a) becomes the clustering of the Wilson measure itself. Beyond one loop this is the standard self-energy divergence, not proved here for that map. The block average over the n³ parallel fine paths of a block has a finite limiting variance.
+
+Theorem 8.5's proof uses the block map only through the disintegration of μ_j along the coarse configuration and through versions of the conditional laws defined for every coarse configuration. It therefore holds unchanged for any measurable coarse map with values in a fixed compact space. That admits Bałaban's averaged variables on centred blocks of odd side, extended measurably where an average vanishes, so the reduction applies to the coarse variables of the ultraviolet analysis itself.
+
+The demand that Hypothesis I hold at every coarse configuration is shown necessary. The low-temperature Ising model satisfies every typical-configuration form of a single-site criterion, with the frustrated configurations priced by their chessboard weight, and it has long-range order. No condition that depends on a measure only through the joint law of its single-pair conditional coefficients implies decay, because μ⁺ and ½(μ⁺ + μ⁻) give that law the same distribution.
+
+Theorem 8.9's list of proved classes adds the planar cycles whose interior links at straight vertices have multiplicity two (S12-c′ as corrected in scope on the companion page). The 1 × n rectangles and the 2 × 2 square are cases of it.
+
+The open part's "nothing above 0.4764 is proved at all" is corrected against the theorem's own tree-dressing 0.4816.
+
+README and ARXIV follow (47 pages).

@@ -1,0 +1,6 @@
+TILT (a) Holley-Stroock: worst rho(h pi) / (1 - e^{-o}(1 - rho(pi))) = 0.999998692009 [HELD]
+TILT (b) product tilts: worst log(rho'/rho)/(oa + ob) = 0.493056 (at rho 0.057871 -> 0.060416, oa 0.087 ob 0.000); a multiplicative bound rho' <= e^{c(oa+ob)} rho holds on the sample with c = this value
+TILT (c) nearly independent laws (rho small): worst log(rho'/rho)/(oa + ob) = 0.485463
+TILT (a) Holley-Stroock: worst rho(h pi) / (1 - e^{-o}(1 - rho(pi))) = 0.999995463385 [HELD]
+TILT (b) product tilts: worst log(rho'/rho)/(oa + ob) = 0.498159 (at rho 0.005090 -> 0.006238, oa 0.385 ob 0.023); a multiplicative bound rho' <= e^{c(oa+ob)} rho holds on the sample with c = this value
+TILT (c) nearly independent laws (rho small): worst log(rho'/rho)/(oa + ob) = 0.481380

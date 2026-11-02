@@ -1,0 +1,8 @@
+S2 ordered page:
+KP-CERT dress=page coef=supplied half=1004952559825/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.005676, 0.005676] root in [0.005676, 0.005676] u in [0.07314411, 0.07314411] u~ in [0.07356049, 0.07356049] r_hi=0.370756 LHS in [0.0000079, 0.0000079] alpha=0.0009999 -> PASS mix=0.000000000000
+S2 ordered local:
+KP-CERT dress=page graded=S24-table coef=supplied half=1004952559825/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.005785, 0.005785] root in [0.005785, 0.005785] u in [0.07314411, 0.07314411] u~ in [0.07356848, 0.07356848] r_hi=0.370796 LHS in [0.0000079, 0.0000079] alpha=0.0009999 -> PASS mix=0.000000000000
+S2 cancel page:
+KP-CERT dress=page coef=supplied half=1005026545648/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.003308, 0.003308] root in [0.003308, 0.003308] u in [0.05563173, 0.05563173] u~ in [0.05581612, 0.05581612] r_hi=0.281322 LHS in [0.0000015, 0.0000015] alpha=0.0009999 -> PASS mix=0.000000000000
+S2 cancel local:
+KP-CERT dress=page graded=S24-table coef=supplied half=1005026545648/1000000000000 beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.003360, 0.003360] root in [0.003360, 0.003360] u in [0.05563173, 0.05563173] u~ in [0.05581900, 0.05581900] r_hi=0.281336 LHS in [0.0000015, 0.0000015] alpha=0.0009999 -> PASS mix=0.000000000000

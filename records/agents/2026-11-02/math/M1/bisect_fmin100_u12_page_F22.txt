@@ -1,0 +1,14 @@
+START 2026-11-02 06:23:42 engine=kp_cert_m1.awk md5=3d17b9b8cd661c6fcbdd313acbcfe8f6 dress=page F0=22 lo=3600 hi=4400 extra=-v EVENTAIL=1 -v UNCOND=1 -v U12=1 -v NCSIG=1 -v FMIN1=100
+KP-CERT SCAN dress=page graded=S24-table beta=0.3600 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4400 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: r K1 >= 1: the unconditional tail does not close)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4000 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0120]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4200 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0051]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4300 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: r K1 >= 1: the unconditional tail does not close)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4250 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0025]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4274 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: r K1 >= 1: the unconditional tail does not close)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4262 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0016]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4268 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: r K1 >= 1: the unconditional tail does not close)
+KP-CERT SCAN dress=page graded=S24-table beta=0.4264 gamma=6/1 F0=22: PASS for alpha in [0.0010, 0.0013]
+KP-CERT SCAN dress=page graded=S24-table beta=0.4266 gamma=6/1 F0=22: no passing alpha in [0.0010, 0.0120] (last: r K1 >= 1: the unconditional tail does not close)
+BISECT beta* = 0.4264 (PASS), refused at 0.4266
+END 2026-11-02 06:28:04

@@ -1,0 +1,7 @@
+THE CROSSING CAMPAIGN §18 — the bent object was never computed: every "bent" W2 reading at a named datum is the planar geometry; (D1)'s verdict and §17 item 3's "adjacent sum at least 1.33" withdrawn (2026-11-02 05:37 EST; the trunk seat iii-43)
+
+Found by the proof agent M2 and confirmed line by line by the second reader M2R. In w2_strip.c and w2_strip_n.c the staple loop skips only the face plaquettes, and okey registers every link as an outside link without consulting the object-link table. Each of the bent object's n + 1 corner plaquettes is therefore entered twice as a staple, with the other face's object link read from the datum: 6 staples at n = 2, 10 at n = 4, none for the planar object. At the ordered and cancelling data, bent = planar exactly; §14's (D6) "to the digit" is the defect's signature. The planar readings stand. The four coplanar pairs alone give an adjacent sum of at least 0.2659 (cancelling) and 0.2226 (ordered). The next instrument, with its two-sided control, is named.
+
+Also: this seat's memory note of the operator's 11-01 19:5x correction (naming a lemma "owed" is scope minimization) is landed. It had been untracked and unindexed, and it now carries a dated correction of the 1.6–3 figure it quoted.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

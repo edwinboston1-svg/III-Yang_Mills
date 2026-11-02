@@ -1,0 +1,3 @@
+TILT2 rho(e^delta pi) <= e^{(oX+oY)/2} rho(pi) + 1 - e^{-2 Delta}: 300000 laws (q = 2..5), worst ratio 0.999884702626 (rho 0.062767 -> 0.062837, bound 0.062844), 121 within 1% of the bound [HELD]
+TILT2 rho(e^delta pi) <= e^{(oX+oY)/2} rho(pi) + 1 - e^{-2 Delta}: 300000 laws (q = 2..5), worst ratio 0.999771952491 (rho 0.002190 -> 0.002239, bound 0.002240), 120 within 1% of the bound [HELD]
+TILT2 rho(e^delta pi) <= e^{(oX+oY)/2} rho(pi) + 1 - e^{-2 Delta}: 300000 laws (q = 2..5), worst ratio 0.999611937221 (rho 0.074524 -> 0.075125, bound 0.075154), 123 within 1% of the bound [HELD]

@@ -1,0 +1,9 @@
+M4CHAN-KAT KR homomorphism: GENINV=0 fails, GENINV=1 MET -> GENINV=1
+M4CHAN-RECORD u1_n2_b1.2_N6_L6_ordered.txt: U(1), LMAX=6, 91 moments read
+M4CHAN-KAT u1_n2_b1.2_N6_L6_ordered.txt K-real: P(0,0) = 0.999999999999999, max|Im p| on the grid = 3.564e-16 [MET]; basis 13 real functions to charge 6
+M4CHAN-KAT u1_n2_b1.2_N6_L6_ordered.txt[NG2048,NT256] K-sum: max|Phi - E - K| = 1.332e-14 [MET]
+M4CHAN-POS u1_n2_b1.2_N6_L6_ordered.txt[NG2048,NT256] min joint density on the tau rule 8.6685e-03; min p_A 5.7247e-02, min p_B 5.7247e-02; min eigenvalue of Phi_A 4.634e-01
+M4CHAN-RHO u1_n2_b1.2_N6_L6_ordered.txt[NG2048,NT256] rho = 0.204193924 | SO(3) channel rho_EE = 0.028933711 | O-channel: rho_OO = 0.179354415 rho_EO = 0.066014806 rho_OE = 0.066014806 rho_O. = 0.191105651 rho_.O = 0.191105651 | half-integer PW rho_oo = 0.184967947
+M4CHAN-SHARE u1_n2_b1.2_N6_L6_ordered.txt[NG2048,NT256] rho_EE/rho = 0.141697   rho_OO/rho = 0.878353   rho_EE/rho_OO^2 = 0.899456
+M4CHAN-TAU u1_n2_b1.2_N6_L6_ordered.txt[NG2048,NT256] tau_A = 0.312206287 tau_B = 0.312206287 | Delta_A = osc_V F = 2.95815 (max|F| 3.97967) -> bound 2.75516 | Delta_B = 2.95815 (max|F| 3.97967) -> bound 2.75516 [tau <= bound: MET]
+M4CHAN-BOUND u1_n2_b1.2_N6_L6_ordered.txt[NG2048,NT256] Lemma 3.1: (rho_EE^2 + tau_A^2 + tau_B^2)^(1/2) = 0.442473378, ratio to rho 2.1669 [MET]; exact blocks (rho_EE^2 + rho_EO^2 + rho_O.^2)^(1/2) = 0.204246136 [MET]

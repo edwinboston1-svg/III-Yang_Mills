@@ -1,0 +1,45 @@
+=== w2n4_W2L2.2026-11-01a.ordered  COEF(zero tail) = 72783647699/1000000000000,900145963/1000000000000,0/10000000...
+T1 LOCAL page : KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+T1 LOCAL tree : KP-CERT SCAN dress=tree graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+T1 GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.005580, 0.005580] root in [0.005580, 0.005580] u in [0.07278364, 0.07278364] u~ in [0.07319093, 0.07319093] r_hi=0.368894 LHS in [0.0000077, 0.0000077] alpha=0.0009999 -> PASS mix=0.000000000000
+T1 LOCAL  a=4/1000: KP-CERT dress=page graded=S24-table coef=supplied beta=supplied alpha=4/1000 gamma=6/1 F0=20: kappa_U in [0.005934, 0.005934] root in [0.005934, 0.005934] u in [0.07278364, 0.07278364] u~ in [0.07321686, 0.07321686] r_hi=0.377988 LHS in [0.0000089, 0.0000089] alpha=0.0039999 -> PASS mix=0.000000000000
+T2 sat tail LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+T2 sat tail GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.006970, 0.006970] root in [0.006970, 0.006970] u in [0.07278364, 0.07278364] u~ in [0.07329277, 0.07329278] r_hi=0.369407 LHS in [0.0000078, 0.0000078] alpha=0.0009999 -> PASS mix=0.000000037046
+E GRADED page a=1/1000 eps (x1/1000, PASS end) zero tail: 559
+E GRADED page a=4/1000 eps (x1/1000, PASS end) zero tail: 602
+E LOCAL page alpha-scanned eps (x1/1000, PASS end) zero tail: 604
+E GRADED page a=1/1000 eps (x1/1000) sat tail: 557
+=== w2n4_W2L2.2026-11-01a.cancel  COEF(zero tail) = 55353498177/1000000000000,536017178/1000000000000,0/10000000...
+T1 LOCAL page : KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+T1 LOCAL tree : KP-CERT SCAN dress=tree graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+T1 GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.003289, 0.003289] root in [0.003289, 0.003289] u in [0.05535349, 0.05535349] u~ in [0.05553585, 0.05553585] r_hi=0.279909 LHS in [0.0000014, 0.0000014] alpha=0.0009999 -> PASS mix=0.000000000000
+T1 LOCAL  a=4/1000: KP-CERT dress=page graded=S24-table coef=supplied beta=supplied alpha=4/1000 gamma=6/1 F0=20: kappa_U in [0.003445, 0.003445] root in [0.003445, 0.003445] u in [0.05535349, 0.05535349] u~ in [0.05554453, 0.05554453] r_hi=0.286753 LHS in [0.0000017, 0.0000017] alpha=0.0039999 -> PASS mix=0.000000000000
+T2 sat tail LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+T2 sat tail GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.004112, 0.004112] root in [0.004112, 0.004112] u in [0.05535349, 0.05535349] u~ in [0.05558158, 0.05558158] r_hi=0.280140 LHS in [0.0000014, 0.0000014] alpha=0.0009999 -> PASS mix=0.000000010902
+E GRADED page a=1/1000 eps (x1/1000, PASS end) zero tail: 835
+E GRADED page a=4/1000 eps (x1/1000, PASS end) zero tail: 878
+E LOCAL page alpha-scanned eps (x1/1000, PASS end) zero tail: 880
+E GRADED page a=1/1000 eps (x1/1000) sat tail: 834
+=== w2n4_W3L2.2026-11-01b.ordered  COEF(zero tail) = 121625616109/1000000000000,3643763670/1000000000000,0/100000...
+T1 LOCAL page : KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0006, 0.0080]
+T1 LOCAL tree : KP-CERT SCAN dress=tree graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0006, 0.0080]
+T1 GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.024728, 0.024728] root in [0.024728, 0.024728] u in [0.12162561, 0.12162561] u~ in [0.12467074, 0.12467074] r_hi=0.628360 LHS in [0.0005634, 0.0005634] alpha=0.0009999 -> PASS mix=0.000000000000
+T1 LOCAL  a=4/1000: KP-CERT dress=page graded=S24-table coef=supplied beta=supplied alpha=4/1000 gamma=6/1 F0=20: kappa_U in [0.029418, 0.029418] root in [0.029418, 0.029418] u in [0.12162561, 0.12162561] u~ in [0.12525683, 0.12525683] r_hi=0.646649 LHS in [0.0009434, 0.0009434] alpha=0.0039999 -> PASS mix=0.000000000000
+T2 sat tail LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0007, 0.0080]
+T2 sat tail GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.030656, 0.030657] root in [0.030656, 0.030657] u in [0.12162561, 0.12162561] u~ in [0.12541202, 0.12541208] r_hi=0.632097 LHS in [0.0006242, 0.0006242] alpha=0.0009999 -> PASS mix=0.000003090130
+E GRADED page a=1/1000 eps (x1/1000, PASS end) zero tail: 30
+E GRADED page a=4/1000 eps (x1/1000, PASS end) zero tail: 72
+E LOCAL page alpha-scanned eps (x1/1000, PASS end) zero tail: 69
+E GRADED page a=1/1000 eps (x1/1000) sat tail: 24
+=== w2n4_W3L2.2026-11-01b.cancel  COEF(zero tail) = 75944580430/1000000000000,954458429/1000000000000,0/10000000...
+T1 LOCAL page : KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+T1 LOCAL tree : KP-CERT SCAN dress=tree graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+T1 GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.005926, 0.005926] root in [0.005926, 0.005926] u in [0.07594458, 0.07594458] u~ in [0.07639598, 0.07639598] r_hi=0.385047 LHS in [0.0000100, 0.0000100] alpha=0.0009999 -> PASS mix=0.000000000000
+T1 LOCAL  a=4/1000: KP-CERT dress=page graded=S24-table coef=supplied beta=supplied alpha=4/1000 gamma=6/1 F0=20: kappa_U in [0.006316, 0.006316] root in [0.006316, 0.006316] u in [0.07594458, 0.07594458] u~ in [0.07642581, 0.07642581] r_hi=0.394554 LHS in [0.0000116, 0.0000116] alpha=0.0039999 -> PASS mix=0.000000000000
+T2 sat tail LOCAL page: KP-CERT SCAN dress=page graded=S24-table beta=0.4764 gamma=6/1 F0=20: PASS for alpha in [0.0001, 0.0080]
+T2 sat tail GRADED a=1/1000: KP-CERT dress=page graded=S21-J6prime+S24-table coef=supplied beta=supplied alpha=1/1000 gamma=6/1 F0=20: kappa_U in [0.007401, 0.007402] root in [0.007401, 0.007402] u in [0.07594458, 0.07594458] u~ in [0.07650880, 0.07650881] r_hi=0.385616 LHS in [0.0000101, 0.0000101] alpha=0.0009999 -> PASS mix=0.000000040146
+E GRADED page a=1/1000 eps (x1/1000, PASS end) zero tail: 517
+E GRADED page a=4/1000 eps (x1/1000, PASS end) zero tail: 560
+E LOCAL page alpha-scanned eps (x1/1000, PASS end) zero tail: 561
+E GRADED page a=1/1000 eps (x1/1000) sat tail: 514
+MAIN-END rc=0

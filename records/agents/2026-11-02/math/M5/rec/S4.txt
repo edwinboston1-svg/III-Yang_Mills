@@ -1,0 +1,8 @@
+S4 H1 ordered page r=+3.924877e-01: a'_1/2 x (1+2r) = 129917020663 e-12: u=0.13056044 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000000
+S4 r* ordered page: the largest passing r in [3747, 3748]e-4 (a'_1/2 = 72783647698 e-12, HALF as recorded, WALL off)
+S4 H1 ordered local r=+3.924877e-01: a'_1/2 x (1+2r) = 129917020663 e-12: u=0.13056044 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000000
+S4 r* ordered local: the largest passing r in [3746, 3747]e-4 (a'_1/2 = 72783647698 e-12, HALF as recorded, WALL off)
+S4 H1 cancel page r=+1.045870e+00: a'_1/2 x (1+2r) = 171138624454 e-12: u=0.17199886 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000000
+S4 r* cancel page: the largest passing r in [6528, 6529]e-4 (a'_1/2 = 55353498177 e-12, HALF as recorded, WALL off)
+S4 H1 cancel local r=+1.045870e+00: a'_1/2 x (1+2r) = 171138624454 e-12: u=0.17199886 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000000
+S4 r* cancel local: the largest passing r in [6527, 6528]e-4 (a'_1/2 = 55353498177 e-12, HALF as recorded, WALL off)

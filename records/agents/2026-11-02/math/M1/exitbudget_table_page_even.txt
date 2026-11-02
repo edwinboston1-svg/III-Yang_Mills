@@ -1,0 +1,13 @@
+START 2026-11-02 04:19:07 dress=page extra=-v NCSIG=1 -v EVENTAIL=1
+beta=0.0500 eps in [2.420, 2.421) (PASS at tilt 2420/1000, FAIL at 2421/1000)
+beta=0.1000 eps in [1.718, 1.719) (PASS at tilt 1718/1000, FAIL at 1719/1000)
+beta=0.1500 eps in [1.303, 1.304) (PASS at tilt 1303/1000, FAIL at 1304/1000)
+beta=0.2000 eps in [1.004, 1.005) (PASS at tilt 1004/1000, FAIL at 1005/1000)
+beta=0.2500 eps in [0.769, 0.770) (PASS at tilt 769/1000, FAIL at 770/1000)
+beta=0.3000 eps in [0.573, 0.574) (PASS at tilt 573/1000, FAIL at 574/1000)
+beta=0.3500 eps in [0.403, 0.404) (PASS at tilt 403/1000, FAIL at 404/1000)
+beta=0.4000 eps in [0.252, 0.253) (PASS at tilt 252/1000, FAIL at 253/1000)
+beta=0.4500 eps in [0.114, 0.115) (PASS at tilt 114/1000, FAIL at 115/1000)
+beta=0.4764 eps in [0.045, 0.046) (PASS at tilt 45/1000, FAIL at 46/1000)
+beta=0.5000 eps: no PASS at tilt 0 (alpha = 0.001)
+END 2026-11-02 04:22:20

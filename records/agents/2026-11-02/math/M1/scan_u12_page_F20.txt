@@ -1,0 +1,3 @@
+START 2026-11-02 06:19:40 engine=kp_cert_m1.awk md5=3d17b9b8cd661c6fcbdd313acbcfe8f6 dress=page F0=20 beta=[3500,3680] alpha=[10,120] extra=-v EVENTAIL=1 -v UNCOND=1 -v U12=1 -v NCSIG=1
+END 2026-11-02 06:44:30
+STOPPED 2026-11-02 06:45:03 by hand (M1): superseded by bisect_u12_*.txt (tree) / not needed for the headline (page F0=20); NOT a verdict.

@@ -1,0 +1,14 @@
+START 2026-11-02 05:23:37 engine md5=854dc6fc414c2821f23673b0a9d2643e U-c stake read: the first failing grid point above each page beta*_u, F0=22, alpha=0.0045
+-- 5/8 beta=0.3248 (first FAIL above 0.3246)
+KP-CERT dress=page graded=S24-table eventail K=1/1 C=1/1 beta=3248/10000 alpha=45/10000 gamma=6/1 F0=22: kappa_U in [0.037613, 0.037613] root in [0.037613, 0.037613] u in [0.08084541, 0.08084541] u~ in [0.08394422, 0.08394423] r_hi=0.435106 LHS in [0.0000208, 0.0045911] alpha=0.0044999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000006
+KP-CERT M1-TAIL enum_hi=0.0000208 tail_hi=0.0045703 rK_hi=0.435106
+KP-CERT M1-UNCOND delta1_hi=0.14044438 eps1_hi=0.12197799 K1_hi=1.67422979 C1_hi=8.960544 KI_hi=0.29011419 rK1_hi=0.728468
+-- 7/12 beta=0.3350 (first FAIL above 0.3348)
+KP-CERT dress=page graded=S24-table eventail K=1/1 C=1/1 beta=3350/10000 alpha=45/10000 gamma=6/1 F0=22: kappa_U in [0.040919, 0.040919] root in [0.040919, 0.040919] u in [0.08336110, 0.08336110] u~ in [0.08684291, 0.08684292] r_hi=0.450131 LHS in [0.0000255, 0.0045851] alpha=0.0044999 -> FAIL (the inequality's upper end is above alpha) mix=0.000000000008
+KP-CERT M1-TAIL enum_hi=0.0000255 tail_hi=0.0045596 rK_hi=0.450131
+KP-CERT M1-UNCOND delta1_hi=0.14938932 eps1_hi=0.12582026 K1_hi=1.62507474 C1_hi=8.016051 KI_hi=0.28245693 rK1_hi=0.731496
+-- 7/12 beta=0.3348 (the PASS)
+KP-CERT dress=page graded=S24-table eventail K=1/1 C=1/1 beta=3348/10000 alpha=45/10000 gamma=6/1 F0=22: kappa_U in [0.040851, 0.040852] root in [0.040851, 0.040852] u in [0.08331180, 0.08331180] u~ in [0.08678572, 0.08678573] r_hi=0.449834 LHS in [0.0000254, 0.0044938] alpha=0.0044999 -> PASS mix=0.000000000008
+KP-CERT M1-TAIL enum_hi=0.0000254 tail_hi=0.0044683 rK_hi=0.449834
+KP-CERT M1-UNCOND delta1_hi=0.14921129 eps1_hi=0.12574491 K1_hi=1.62492790 C1_hi=8.011913 KI_hi=0.28228778 rK1_hi=0.730948
+END 2026-11-02 05:23:52

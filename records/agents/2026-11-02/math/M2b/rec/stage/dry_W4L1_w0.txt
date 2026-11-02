@@ -1,0 +1,6 @@
+W2-DRY mode: every state counted, nothing allocated or computed (the values printed below are not read)
+W2-DRY a=0 c=0: max state 9150625 entries, open plaquettes at most 4, 1 slice sweeps; peak memory 0.439 GB (S + N + snapshot); multiply-adds so far 1.8385e+10
+W2-DRY a=0 c=1: max state 36602500 entries, open plaquettes at most 4, 2 slice sweeps; peak memory 1.318 GB (S + N + snapshot); multiply-adds so far 1.1625e+11
+W2-DRY a=1 c=0: max state 36602500 entries, open plaquettes at most 4, 2 slice sweeps; peak memory 1.318 GB (S + N + snapshot); multiply-adds so far 1.8069e+11
+W2-DRY a=1 c=1: max state 73205000 entries, open plaquettes at most 4, 6 slice sweeps; peak memory 2.928 GB (S + N + snapshot); multiply-adds so far 6.7697e+11
+W2-DRY-TOTAL peak memory 2.928 GB, multiply-adds 6.7697e+11 (a dry run reads no values)

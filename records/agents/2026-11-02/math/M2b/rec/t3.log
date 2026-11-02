@@ -1,0 +1,32 @@
+U1: unset, the modified engine against the original (n = 2, W2L2, planar and bent, cancelling, sliced and not)
+  IDENTICAL plain planar
+  IDENTICAL plain bent
+  IDENTICAL slice planar
+  IDENTICAL slice bent
+L1: n = 2 W2L2 planar cancel, sliced: LEAN / NOSNAP / LEAN+NOSNAP / LEAN+NOSNAP+WEIGHT0+CLAMP 0,5 against the standard
+ W2_LEAN=1:
+  196 entries, max |dF| relative to max|F| = 0.000e+00
+ W2_NOSNAP=1:
+  196 entries, max |dF| relative to max|F| = 0.000e+00
+ W2_LEAN=1 W2_NOSNAP=1:
+  196 entries, max |dF| relative to max|F| = 0.000e+00
+ W2_LEAN=1 W2_NOSNAP=1 W2_WEIGHT0=1 W2_CLAMP=0,5:
+  196 entries, max |dF| relative to max|F| = 1.907e-16
+W2-M2b peak memory 0.000 GB (S + N + snapshot), multiply-adds 8.1298e+07
+L2: n = 4 W3L1 planar cancel (two steps), sliced, standard against LEAN+NOSNAP+WEIGHT0
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +4.919035096483e-02 (imag 2.0e-20; max state 6480000, open plaquettes at most 4; 153.4 s; 16 slices)
+W2-DONE 219.9 s
+W2-CLASS a=1 c=1 E[chi_a(A) chi_c(B)] = +4.919035096483e-02 (imag 2.0e-20; max state 6480000, open plaquettes at most 4; 100.1 s; 6 slices, 10 skipped by weight)
+W2-M2b peak memory 0.119 GB (S + N + snapshot), multiply-adds 4.5062e+10
+W2-DONE 169.4 s
+  25 entries, max |dF| relative to max|F| = 4.523e-18
+L3: the L1 identity -- the direct W2L1 two-step dump against the W2L2 dump truncated to a, c <= 1 (planar, cancelling)
+  25 entries, max |dF| relative to max|F| = 3.341e-15
+D: W4L1 n = 4 planar staged dry under LEAN+NOSNAP+WEIGHT0
+W2-DRY mode: every state counted, nothing allocated or computed (the values printed below are not read)
+W2-DRY a=0 c=0: max state 9150625 entries, open plaquettes at most 4, 1 slice sweeps; peak memory 0.160 GB (S + N + snapshot); multiply-adds so far 1.8385e+10
+W2-DRY a=0 c=1: max state 36602500 entries, open plaquettes at most 4, 2 slice sweeps; peak memory 0.641 GB (S + N + snapshot); multiply-adds so far 1.2444e+11
+W2-DRY a=1 c=0: max state 36602500 entries, open plaquettes at most 4, 2 slice sweeps; peak memory 0.641 GB (S + N + snapshot); multiply-adds so far 2.2256e+11
+W2-DRY a=1 c=1: max state 73205000 entries, open plaquettes at most 4, 6 slice sweeps; peak memory 1.281 GB (S + N + snapshot); multiply-adds so far 8.8783e+11
+W2-DRY-TOTAL peak memory 1.281 GB, multiply-adds 8.8783e+11 (a dry run reads no values)
+T3-DONE

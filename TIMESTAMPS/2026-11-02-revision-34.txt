@@ -1,0 +1,12 @@
+THE GROUND, revision 34, through 53d1f3d (Edwin Boston III)
+Manifest written 2026-11-02T19:57:47Z.
+
+  53d1f3d801a9ceabd9adfe8608d00b3d0827387e  2026-11-02 14:48:05 -0500  THE GROUND, revision 34 — the sentences revision 33's second reading (M1R) found false, replaced 
+  eaf792fc88b3709e78977a75bfd980a43c2c465f  2026-11-02 14:54:30 -0500  THE CROSSING CAMPAIGN §29 — the crossing theorem stated as the chain's spine with every input na
+  0359de0aa042c66e25e282ebdeeb79c0544f0fc0  2026-11-02 14:36:08 -0500  THE CROSSING CAMPAIGN'S AGENT RECORDS OF 2026-11-02, THE PUBLIC COPY REFRESHED — every proof agen
+
+f3bd34b8d2b7c5d01fb73e93998ed69d8d904fceacddd6ebaf588e7221e66806 *THE-GROUND-Edwin-Boston-III.pdf
+f090ebc1f383c1e20360927975b84ebea3ac6a988f8170ca5e23606a968b1779 *THE-GROUND-Edwin-Boston-III.docx
+485110ed97518f9af69261856d705ec09f7c7ea5144463f0ebe9a5b4995f70ac *source/ground/content4.js
+cd8af05f103876fda77876c7d802476421db2796d409c95ea56d3f0435c34dda *README.md
+8b76ab1af313c8273bf25d278a1f12895bd94191596aaec1a8d0487884103fcb *ARXIV.md

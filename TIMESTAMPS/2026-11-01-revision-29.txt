@@ -1,0 +1,10 @@
+THE GROUND, revision 29 and the OPEN pages through 8adcd6c (Edwin Boston III)
+Manifest written 2026-11-02T01:17:54Z.
+
+  8adcd6ce4fcda11b5caf03f273a23f44088e9d67  2026-11-01 20:17:51 -0500  THE GROUND, revision 29 (Edwin Boston III, 2026-11-01 20:2x EST): the two passages outside Theorem 8.9 that still stated 0.4764 u
+  c75139607a60fc5ad204e4ad043ff8c707de1b4f  2026-11-01 20:16:05 -0500  TIMESTAMPS: revision 28's manifest and its OpenTimestamps proof (2026-11-01 20:1x EST; four calendars answered, pending Bitcoin; 
+  c64779e035374993291700c8226cb739a006c963  2026-11-01 20:10:01 -0500  THE GROUND, revision 28 (Edwin Boston III, 2026-11-01 20:1x EST): Theorem 8.9's STATEMENT carries its own condition
+
+  c6e0b22e3e4a6f89f85bae4583e63b921c084f4d3dc5afc14b347d97157d88ea  THE-GROUND-Edwin-Boston-III.pdf
+  1ea161e30403833545e165c8b4e0ddb46c392303bafa2242a4d9c1c9a11b44e6  THE-GROUND-Edwin-Boston-III.docx
+  c981e7bdf54055c52211fb2cd75326c1ba3c3cb967e808f6567b7d5f3ebff021  source/ground/content4.js

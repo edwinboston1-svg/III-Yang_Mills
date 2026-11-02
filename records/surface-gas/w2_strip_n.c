@@ -240,6 +240,16 @@ int main(int argc, char **argv) {
      rotation by the angle about the x-axis of su(2) (the quaternion (cos a/2, sin a/2, 0, 0)); W2_LIST=1 prints every outside link's
      coordinates and direction once, so a reader can group them by distance and class */
   if (getenv("W2_LIST")) for (int i = 0; i < NOUT; i++) printf("W2-OUT %d %d %d %d %d %d\n", i, OB[i][0], OB[i][1], OB[i][2], OB[i][3], OD[i]);
+  /* THE WHOLE DATUM FROM A FILE (the campaign's §16, 19:4x): W2_DATUM=<file> with one line per outside link, "<index> <w> <x> <y> <z>" in the
+     engine's own W2-OUT index order (the index checked, the quaternion normalised, a missing or repeated index REFUSED), replacing the named
+     datum's values link by link after the named datum is built -- so the worst-configuration ascent can hand the engine any outside */
+  if (getenv("W2_DATUM")) { FILE *df = fopen(getenv("W2_DATUM"), "r"); if (!df) { fprintf(stderr, "W2_DATUM: cannot open %s\n", getenv("W2_DATUM")); return 1; }
+    int seen[MAXOUT]; memset(seen, 0, sizeof seen); int idx; double dw, dx, dy, dz; int nread = 0;
+    while (fscanf(df, "%d %lf %lf %lf %lf", &idx, &dw, &dx, &dy, &dz) == 5) { if (idx < 0 || idx >= NOUT) { fprintf(stderr, "W2_DATUM: index %d outside 0..%d\n", idx, NOUT - 1); return 1; }
+      if (seen[idx]) { fprintf(stderr, "W2_DATUM: index %d repeated\n", idx); return 1; } double nn = sqrt(dw * dw + dx * dx + dy * dy + dz * dz); if (nn < 1e-12) { fprintf(stderr, "W2_DATUM: a zero quaternion at %d\n", idx); return 1; }
+      quat q = { dw / nn, dx / nn, dy / nn, dz / nn }; DATA[idx] = q; seen[idx] = 1; nread++; }
+    fclose(df); if (nread != NOUT) { fprintf(stderr, "W2_DATUM: %d of %d outside links given\n", nread, NOUT); return 1; }
+    printf("W2-DATUM %s: all %d outside links set from the file (the named datum %s overridden link by link)\n", getenv("W2_DATUM"), NOUT, datum); }
   int ROTL = -1; double ROTA = 0; if (getenv("W2_ROT")) { if (sscanf(getenv("W2_ROT"), "%d:%lf", &ROTL, &ROTA) != 2 || ROTL < 0 || ROTL >= NOUT) { fprintf(stderr, "W2_ROT must be <index 0..%d>:<angle>\n", NOUT - 1); return 1; }
     quat r = { cos(ROTA / 2), sin(ROTA / 2), 0, 0 }; DATA[ROTL] = qmul(r, DATA[ROTL]); printf("W2-ROT link %d (%d,%d,%d,%d dir %d) by %.6f\n", ROTL, OB[ROTL][0], OB[ROTL][1], OB[ROTL][2], OB[ROTL][3], OD[ROTL], ROTA); }
   /* THE OSCILLATION INSTRUMENT (§9 ADDENDUM, 10:5x): W2_SET="<outside link index>:<w>:<x>:<y>:<z>" left-multiplies that one link by the unit

@@ -730,3 +730,42 @@ THE INTEGRAND BEING EXACTLY THE TWO QUANTITIES THE OBJECTS READ POINTWISE — §
    - **A target to verify:** the claim, in work by Alpöge and Sussman not yet checked by anyone here, that O(d) invariance follows from reflection positivity across coordinate and diagonal hyperplanes plus a growth bound. With Theorem 9.1 it would remove all infrared input, but its growth hypothesis fails for tr F² in d = 4 as stated, so it needs a version for the program's renormalised observables.
 
 9. **THE GROUND, revision 34,** is being drafted by the agent R34. It corrects M1R's two false sentences ("the one input not yet proved"; the spin-½ "4u^F"), carries T2's factor of 5 and the Lemma R renaming, and fixes any statement §§22–25 show false. It lands after a second reading.
+
+
+## §26 — THE LADDER'S INEQUALITY IS FALSE BY A FACTOR OF TWO: MOMENT INFLUENCE ≤ 2·TV, NOT ≤ TV; THE CORRECTED ONE-STEP ROWS; THE β = 3.0 FLIPS ARE NOT THE SIGNED WEIGHT'S; THE SHARED BRIEF CORRECTED; CMP 99'S (3.132) PROVED GIVEN NAMED INPUTS (M3g) (2026-11-02 10:2x EST, read from `date` before this header; the trunk seat, with the reader 048_R; nothing above edited)
+
+1. **The claim this page made at its lines 198 and 221 is FALSE** (proved by the reader 048_R). The claim was: "the ladder's moment influence |ΔE[χ_a(A)]|/d_a … is at most the total-variation distance". The total-variation distance is TV = sup_E |·| = ½‖·‖₁ (this page's own line 316). With |χ_a|/d_a ≤ 1, the true bound is |ΔE[χ_a(A)]|/d_a ≤ ‖·‖₁ = 2·TV, and it is attained: δ₁ against δ₋₁ gives moment influence 2 and TV 1. Every TV lower bound this page read from moment influences must therefore be halved. This page's line 376, "3.2", becomes 2.17 (over twenty pairs), and its line 383 (i), "1.6 over twenty", becomes 1.05, in 048_R's normalization.
+   - **Confirmed independently by the reader 049_R:** the measured ratio tv(A)/|dE₁(A)| lies in [0.7304, 0.7621] over all 174 rows. C_ω's 1.12 is unmoved, because `w2_dob.c:149` already computes half the L1 norm, and so are the U(1) verdicts.
+   - **049_R also sharpens the §18 corner defect:** the phantom share is 1.74 % of U(1)'s row sum 2.615992 and the corner share 5.54 %, together 7.28 % (3.82–7.84 % on the SU(2) ladders).
+   - **A caution for deciders:** 049_R's idea of reorganising the ladder by its forest (which carries 53–85 % of every ladder) takes the U(1) Coulomb control to 0.888, below one. Such a criterion would ACCEPT U(1) and fails the gate of §25 item 5.
+
+2. **The corrected one-step TV-row LOWER bounds** (ROWSUM/2; the inequality PROVED, the sums MEASURED, and every row sum the page quotes MET from the raw records):
+
+   | Object | lower bound |
+   |---|---|
+   | β = 1.5, W2 | 0.428667 |
+   | β = 3.0, W2 | 0.614757 |
+   | β = 2.2, W3 | 0.595204 (a signed weight, §25 item 1) |
+   | β = 2.2, W2, cancelling | 0.814780 / 0.906378 |
+   | W3L2, cancelling | 0.913819 (signed) |
+   | **U(1), β = 1.2** | **1.307996** |
+
+   **Reading:** no SU(2) one-step row at 2.2 or 3.0 has a lower bound above one, and the U(1) control's does. A lower bound below one does not establish a row below one, so nothing here certifies or refutes Hypothesis I. But the one-step objects, read in total variation, no longer fail to separate the groups: U(1)'s Dobrushin row at 1.2 provably exceeds one at this truncation.
+
+3. **THE EXACT TV, named** (048_R's IDEA). By Haar orthogonality, E[χ_a(A)] = 0 above a_max (≤ 12 at W2, ≤ 18 at W3). So the TV instrument (w2_tv.awk) run at L = a_max gives the EXACT total variation at each datum, which is the upper bound Hypothesis I needs rather than a moment-based lower bound. The first case is link 33 of the cancelling datum. It is with the proof agents M2c (the Hypothesis I row) and M7b (the exit form).
+
+4. **The β = 3.0 sign flips are NOT the signed weight's** (correcting the trunk seat's suggestion to M7b this hour). In n2_W2L1_b3.0, a π-rotation of an outside link at the ORDERED datum RAISES the loop's first moment at 60 of 174 links (minimum over the angle −0.1712). That record is W2, which is positive at β = 3 (+0.913 at U = −1). So the flips are the truncation's (spins ≤ 1) or the theory's, and which one is open.
+
+5. **THE UV HALF'S DEEPEST BLACK BOX, CMP 99's (3.132), PROVED GIVEN NAMED INPUTS** (the proof agent M3g; a second reader, M3gR, is assigned).
+   - **Theorem L′:** QGQ* ≥ C₁′⁻¹ℓ², uniformly in the scale k, the regions {Ω_j}, every real regular U and every compact G ⊂ U(N). It excludes M3e's falsifier, a near-zero mode uniform in k.
+     - *Proof:* ⟨B, T⁻¹B⟩ = min_{QA=B}⟨A, G⁻¹A⟩ (CMP 99 p. 420), with the competitor A_B = SQ*(QSQ*)⁻¹B, a smoothed Gram preimage. The minimal-norm preimage Q*(QQ*)⁻¹B fails as a competitor, with energy ratio L^j.
+     - *Inputs:* Theorem 3.1, (3.69), (3.80)–(3.81) ⟸ CMP 98 Prop. 5 (in print; read on its text layer only), (3.120), and G > 0.
+     - *Owed:* Lemma R (the Riesz bound of Q across scales) is proved at U = 1 by exact truncated-chain Grams (needing M ≥ 3), but at regular U it holds given the coefficient-wise (3.81) with the IMS step not written out. Lemma S's two constants are bookkeeping, not computed.
+   - **(3.132) assembled:** constant 2C₁′L^{d/2−1}, rate δ₁ = s*κ₁ − (d − 2) ln L/(2RM), by Combes–Thomas on block operators. The complexified domain follows by Lax–Milgram (given Theorem 3.4).
+   - **The walk expansion** of (QGQ*)⁻¹ that CMP 116 decouples is built from compressions P_□TP_□, losing O(M⁻¹) per step.
+   - **The other boxes:** Theorem 3.10 is COMPLETED (given Corollary 3.6, Theorems 3.7 and 3.9, and (3.49)). Corollary D derives (3.97) and Theorem 3.14 from two walk expansions, so CMP 89 is NOT needed. The trees are caterpillars.
+   - **Computed:** the reading "block bonds lie inside one scale region" is REFUTED (the Laplacian is then singular, with #regions − 1 gauge zero modes); the convention is CMP 96 p. 224's. Across scales λ_min(T̂) is 0.0019 (L = 2) and 0.0029 (L = 4), independent of volume, and the competitor's energy is within 20 % of the minimiser's.
+   - **The next object:** positivity with mass of Δ_a(1) = d*d + dRd* + Q*aQ in the multiscale geometry (a slice Poincaré inequality, G(1) ≤ c_P⁻¹ℓ²). It would give G's decay by the same Combes–Thomas step, without Theorem 3.10.
+   - **The unification:** Bałaban's averaging is a multilevel splitting, and uniform invertibility across scales is hierarchical multigrid's strengthened Cauchy–Schwarz constant (measured γ ≈ 0.93).
+
+6. **The shared brief the proof agents read is corrected.** It still carried "the worst-case (sup) form of (8.5) two blocking steps up from β = 2.2 has adjacent sum ≥ 1.33", which this page withdrew at §18 (line 414). That line rested on a W3 reading (signed) and on item 1's false inequality. It also still called the certificate copy in HEAD stale, which 88e069862 fixed. Seven integrity facts were added: the signed W3, moment influence ≤ 2·TV, the pre-climb .dob records, the U(1) gate at 1.2 and in a proved Coulomb regime, PI-4 only at small or real d, generating functionals for E1 and (E2), and §19's landing not established. Agents launched before 10:2x read the old brief, and the facts that bind their work were sent to each of them directly.

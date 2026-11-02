@@ -1,0 +1,12 @@
+THE GROUND, revision 30 and the OPEN pages through c89fadf (Edwin Boston III)
+Manifest written 2026-11-02T01:31:46Z.
+
+  c89fadfa64c49a807c6d1711fb8be2c016d5ee1b  2026-11-01 20:31:44 -0500  THE GROUND, revision 30 (Edwin Boston III, 2026-11-01 20:4x EST): Theorem 8.9's condition stated at today's strength — revision
+  1c1cf8cf2e3c06fd9d3d0afbce7defb834c24326  2026-11-01 20:18:04 -0500  TIMESTAMPS: revision 29's manifest and its OpenTimestamps proof (2026-11-01 20:2x EST)
+  8adcd6ce4fcda11b5caf03f273a23f44088e9d67  2026-11-01 20:17:51 -0500  THE GROUND, revision 29 (Edwin Boston III, 2026-11-01 20:2x EST): the two passages outside Theorem 8.9 that still stated 0.4764 u
+
+  e09b3c600e31432345b9f466aee4bfc7f3cb60f4d4b984bdaf5e8781e8669332  THE-GROUND-Edwin-Boston-III.pdf
+  62297ebbb5b8b02435d5e330a6027ae201a026be97fb10995fe9bdfe97cba4c3  THE-GROUND-Edwin-Boston-III.docx
+  72adfade2dd043c7c9a5e36b2c725284c6aabfbbb0991d3bf7909ac25e4f319a  source/ground/content4.js
+  ce72778a85d0a8ffceb05a2b19b64a3a06580ea6521a5c170afa7339ede5f41d  OPEN/ledger/s1-the-flux-surface-gas.md
+  1694ab2ae7541c848e0f7c2716e2a591d5c8e379b5b7b3220b8165a2b2f7150e  OPEN/the-crossing-campaign.md

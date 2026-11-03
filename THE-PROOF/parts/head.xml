@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+<w:body>
+<w:p><w:pPr><w:pStyle w:val="Title"/></w:pPr><w:r><w:t>THE PROOF</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Meta"/><w:jc w:val="center"/></w:pPr><w:r><w:t xml:space="preserve">The Yang–Mills mass gap in four dimensions. Edwin Boston III. Begun 2026-11-03.</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading1"/></w:pPr><w:r><w:t>Step 1 — One and one are two</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Meta"/></w:pPr><w:r><w:t xml:space="preserve">DATE: 1888–1889 (Dedekind; Peano). STATUS: PROVED.</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/></w:pPr><w:r><w:t>The mathematics</w:t></w:r></w:p>
+<w:p><w:r><w:t xml:space="preserve">The natural numbers are the structure (ℕ, 0, S) satisfying the Dedekind–Peano axioms (Dedekind, Was sind und was sollen die Zahlen?, 1888; Peano, Arithmetices principia, 1889): (P1) 0 ∈ ℕ; (P2) S : ℕ → ℕ, the successor, is a function on ℕ; (P3) S is injective — S(a) = S(b) implies a = b; (P4) 0 is not a successor — S(a) ≠ 0 for every a; (P5) induction — a subset of ℕ that contains 0 and is closed under S is all of ℕ. Addition is the unique function + : ℕ × ℕ → ℕ defined by primitive recursion on its second argument (Dedekind's theorem of definition by induction, 1888, §126):</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Math"/></w:pPr><w:r><w:t xml:space="preserve">a + 0 = a,        a + S(b) = S(a + b).</w:t></w:r></w:p>
+<w:p><w:r><w:t xml:space="preserve">The numerals are the iterated successors of 0: 1 := S(0) and 2 := S(1) = S(S(0)). Then</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Math"/></w:pPr><w:r><w:t xml:space="preserve">1 + 1 = 1 + S(0) = S(1 + 0) = S(1) = 2,</w:t></w:r></w:p>
+<w:p><w:r><w:t xml:space="preserve">each equality one clause: the definition of 1, the second clause of addition with b = 0, the first clause of addition, the definition of 2. Nothing beyond the five axioms and the two clauses is used. In the kernel of Lean 4 the statement and its proof are one line — the two sides reduce to one and the same term:</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Code"/></w:pPr><w:r><w:t xml:space="preserve">theorem one_plus_one : (1 : ℕ) + 1 = 2 := rfl</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/></w:pPr><w:r><w:t>The explanation</w:t></w:r></w:p>
+<w:p><w:r><w:t xml:space="preserve">Every quantity this proof measures is a count — a dimension, a rank, a number of lattice configurations, an index, a coefficient of an integer polynomial — and every count in it is exact: an integer, a ratio of integers, or a real number enclosed between two such ratios with the width of the enclosure stated. The arithmetic of such counts rests on the five axioms above and on nothing else; a theorem of this document that reads "the gap is strictly positive" is, at its root, the statement that one integer is greater than another. That is why the first step is the simplest step there is, and why it is a theorem and not an assumption.</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/></w:pPr><w:r><w:t>Consistency</w:t></w:r></w:p>
+<w:p><w:r><w:t xml:space="preserve">Used by every later step.</w:t></w:r></w:p>

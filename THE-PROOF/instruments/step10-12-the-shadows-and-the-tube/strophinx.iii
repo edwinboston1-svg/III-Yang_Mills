@@ -1,0 +1,1197 @@
+/* STDLIB/iii/aether/strophinx.iii -- ΣΤΡΟΦΙΓΞ, THE HINGE: THE FIRST NONABELIAN 't HOOFT SECTORS, EXACT.
+ *   Page first: DOCS/III-STROPHINX-THE-HINGE-PREREGISTRATION.md (2df888496, 2026-10-27 03:4x), ΞΕΝΟΔΟΧΙΑ §13.5 rung R8's first carrier.
+ *   THE OBJECT.  Finite-group lattice gauge theory on the Euclidean 3-torus 2 x 2 x L, time z, Wilson weight a class function with
+ *   INTEGER values (the faithful character rescaled at y = e^-2beta in {1/2, 1/4}); G in {Z2 (the abelian control, the whole of the
+ *   §13.4-§13.9 record), S3 (the trivial-centre control), Q8 (the subject)}, the groups ΕΛΙΓΜΟΣ' tables (Z2 = {+1, -1} inside its Q8:
+ *   indices 0 and 1 of the quaternion table, p*2+s).
+ *   THE ROAD.  Temporal gauge with one spanning tree of the 2 x 2 spatial torus fixed to the identity in every slice (the x-link at (0,0),
+ *   the y-links at (0,0) and (1,0)); five free links carry the state; the residual gauge group is G by simultaneous conjugation, so the
+ *   Gauss-law sector is the set of conjugation orbits on G^5 -- Burnside: N = |G|^4 sum_c |c|^-4 = 32 / 1393 / 8960.  The transfer matrix
+ *   between slices sums the four temporal links over G^4 of the eight temporal-plaquette weights, a four-node eight-edge contraction done
+ *   as a trace of 8 x 8 matrix products; it is bi-invariant under gauge transformations of either slice, so on orbits
+ *   M(O, O') = D(O) sum_{g' in O'} K(g_O, g') with D the product of the four spatial plaquette weights, and Z(L) = |G|^3L Tr(M^L).  Every
+ *   weight is e^{beta chi} for a faithful character, a positive-definite class function, so M is similar to P K_0 P with K_0 a product
+ *   of positive-definite kernels: M >= 0 on the Gauss-law sector (Osterwalder-Seiler), every trace below a nonnegative integer.
+ *   The centre shifts U_x, U_y (the free x-links across the vertical cut, the free y-links across the horizontal cut, times the central
+ *   element) and the translations (re-fixed along the tree) permute the orbits and commute with M: S = Z2^4, sixteen character blocks
+ *   chi = (e_x, e_y, k_x, k_y); the electric flux e is 't Hooft's ('t Hooft 1979), Z_e(L) = sum_k Tr(M_(e,k)^L).  A block's rows are the
+ *   S-orbit representatives on which chi is trivial on the stabiliser, its entries (1/|Stab_j|) sum_s chi(s) D(r_i) Ksum(r_i, s r_j) --
+ *   integers, the traces the true isotypic traces with no spurious factor.  Traces modulo sixteen verified primes below 2^30, the modulus
+ *   PROVED sufficient against the row-sum bound N (max D)^L (max sum_O' Ksum)^L before any reconstruction (a sentinel is a claim about a
+ *   key space, law 13), reconstructed exactly by Garner through ΜΕΓΕΘΟΣ; ratios Z_e / Z_0 as reduced fractions and to nine decimals.
+ *   On S3 the centre is trivial: the shifts REFUSED by name, one electric sector.  The kernel's gauge invariance is checked on every
+ *   orbit of the first row against a non-central conjugate (SFX_ERR 10 refuses the run).
+ *   THE KNOWN ANSWERS are the page's K1-K4; THE STAKES its P1-P6.  What is classical is named on the page (§5); the exact instances are
+ *   III's.  Nothing here is a continuum, nothing here is SU(N): the hinge is the finite shadow where the centre's sectors can be read whole.
+ *   The functions are kept small on purpose: the compiler refuses a function past 64 local slots with exit 14 (§4).
+ *   ADDENDUM I (10-27, the carrier widened): the lattice is an L1 x L2 torus, 2 <= L1, L2 with 2 L1 L2 <= 24 links and L1 L2 <= 12 sites (3 x 3 until 2026-10-28; the 2x4 and 3x4 boxes of ΠΕΝΤΑΠΥΛΟΝ G7 since), set by sfx_setlattice before the group; the
+ *   tree, the free links, the shifts, the translations (their involutive powers only), the swap (L1 = L2 only) and the kernel (the row
+ *   transfer over G^L1, the pair contraction kept at 2 x 2 and read against it) follow the size; the 2 x 2 is the default and reproduces
+ *   every committed record byte for byte. */
+module aether_strophinx
+
+extern @abi(c-msvc-x64) fn krx_s(s: u64) -> u64 from "keryx.iii"
+extern @abi(c-msvc-x64) fn krx_u(v: u64) -> u64 from "keryx.iii"
+extern @abi(c-msvc-x64) fn krx_nl() -> u64 from "keryx.iii"
+extern @abi(c-msvc-x64) fn hlg_setg(gk: u64) -> u64 from "heligmos.iii"
+extern @abi(c-msvc-x64) fn hlg_mul(x: u64, y: u64) -> u64 from "heligmos.iii"
+extern @abi(c-msvc-x64) fn hlg_inv(x: u64) -> u64 from "heligmos.iii"
+extern @abi(c-msvc-x64) fn mgs_setu(r: u64, v: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_zero(r: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_add(d: u64, a: u64, b: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_mul(d: u64, a: u64, b: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_divmod(q: u64, r: u64, a: u64, b: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_gcd(d: u64, a: u64, b: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_copy(d: u64, s: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_bits(r: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_get64(r: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_todec(r: u64, buf: u64, cap: u64) -> u64 from "megethos.iii"
+
+const SFX_NONE : u64 = 18446744073709551615u64
+const SFX_OCAP : u64 = 16384u64              /* orbits (Q8 on 2x2 has 8960; Z4 on 2x3 exactly 16384 -- Addendum I, the carrier widened) */
+const SFX_RCAP : u64 = 2048u64               /* S-orbit representatives (the block rows) */
+const SFX_TCAP : u64 = 32768u64              /* configurations N^(V+1) at most this (the code table); a larger carrier is refused by name (err 18) */
+const SFX_ECAP : u64 = 24u64                 /* links 2 L1 L2, at most 24 (the 3x4 torus; 18 the 3x3 until 2026-10-28: ΠΕΝΤΑΠΥΛΟΝ STAKE 5 widened it) */
+const SFX_FCAP : u64 = 13u64                 /* free links L1 L2 + 1, at most 13 (10 until 2026-10-28) */
+const SFX_VCAP : u64 = 12u64                 /* sites L1 L2, at most 12 (the gauge transformation SFX_A; 9 until 2026-10-28) */
+const SFX_NP : u64 = 16u64                   /* primes: 16 x 30 bits = 480 bits of modulus */
+const SFX_LMAX : u64 = 6u64
+/* ΜΕΓΕΘΟΣ registers: the sector sums at 8e + L (e = 0..3, L = 1..6), the full-mode sums at 32 + 8e + L, saved copies at 70 + L; scratch at 100.. */
+const SFX_T0 : u64 = 100u64
+const SFX_T1 : u64 = 101u64
+const SFX_T2 : u64 = 102u64
+const SFX_T3 : u64 = 103u64
+const SFX_T4 : u64 = 104u64
+const SFX_T5 : u64 = 105u64
+const SFX_T6 : u64 = 106u64
+
+var SFX_GK : u64 = 0u64                      /* 0 Z2, 1 S3, 2 Q8 */
+var SFX_N : u64 = 2u64                       /* group order in use */
+var SFX_Z : u64 = 0u64                       /* the central element, SFX_NONE when the centre is trivial; set by centre(); a const-named initialiser beside a 113 MB static is refused by the codegen (exit 14, §4) */
+var SFX_YK : u64 = 2u64                      /* 1/y: 2 or 4 */
+var SFX_CLS : [u64; 8]                       /* class index per element */
+var SFX_ORD : [u64; 8]                       /* element order */
+var SFX_NCLS : u64 = 0u64
+var SFX_W : [u64; 8]                         /* the SPATIAL plaquette weight per class */
+var SFX_WT : [u64; 8]                        /* the TEMPORAL link weight per class (equal to SFX_W under setcoupling; parted by sfx_setw) */
+/* the carrier (Addendum I): an L1 x L2 torus, 2 <= L1, L2 <= 3; the 2x2 of the page is the default and every committed record's lattice */
+var SFX_LX : u64 = 2u64
+var SFX_LY : u64 = 2u64
+var SFX_V : u64 = 4u64                       /* sites L1 L2 */
+var SFX_E : u64 = 8u64                       /* links 2 L1 L2 */
+var SFX_NF : u64 = 5u64                      /* free links V + 1 */
+var SFX_HASTX : u64 = 1u64                   /* the involutive translation T_x^(L1/2) exists iff L1 is even */
+var SFX_HASTY : u64 = 1u64
+var SFX_HASW : u64 = 1u64                    /* the swap W exists iff L1 = L2 */
+var SFX_RS : u64 = 4u64                      /* the row state space N^L1 of the row-transfer kernel */
+var SFX_SRC : [u64; 24]
+var SFX_DST : [u64; 24]
+var SFX_FREE : [u64; 13]
+var SFX_C : [u64; 24]                        /* a working configuration on the links */
+var SFX_C2 : [u64; 24]
+var SFX_C3 : [u64; 24]
+var SFX_A : [u64; 12]                        /* a gauge transformation per site (12 sites, the 3x4 torus) */
+var SFX_ORBOF : [u64; 32768]
+var SFX_OREP : [u64; 16384]
+var SFX_OSZ : [u64; 16384]
+var SFX_OD : [u64; 16384]                    /* D(O): the spatial plaquette weights' product */
+var SFX_OFLAT : [u64; 16384]
+var SFX_NORB : u64 = 0u64
+var SFX_NFLAT : u64 = 0u64
+var SFX_ISFLAT : u64 = 0u64
+var SFX_SACT : [u64; 262144]                 /* S-action: orbit * 16 + s -> orbit */
+var SFX_SREP : [u64; 2048]                   /* S-orbit representatives (orbit ids) */
+var SFX_SSTAB : [u64; 2048]                  /* stabiliser as a 16-bit mask */
+var SFX_SORB : [u64; 16384]                  /* each orbit's S-representative index */
+var SFX_NREP : u64 = 0u64
+var SFX_KS : [u64; 33554432]                 /* Ksum(rep, orbit): 2048 x 16384 */
+var SFX_WL : [u64; 1536]                     /* per-link 8 x 8 temporal-plaquette weights, 24 links */
+var SFX_RM : [u64; 4096]                     /* the row-transfer kernel (Addendum I): one row's matrix M_y over G^L1, at most 64 x 64 */
+var SFX_RP : [u64; 4096]                     /* the running product */
+var SFX_RQ : [u64; 4096]
+var SFX_PA : [u64; 64]
+var SFX_PB : [u64; 64]
+var SFX_PC : [u64; 64]
+var SFX_PD : [u64; 64]
+var SFX_Q : [u64; 64]
+var SFX_B1 : [u64; 4194304]                  /* a block modulo a prime, 2048 x 2048 */
+var SFX_B2 : [u64; 4194304]
+var SFX_B3 : [u64; 4194304]
+var SFX_BIDX : [u64; 2048]
+var SFX_BDIM : u64 = 0u64
+var SFX_TRC : [u64; 2048]                    /* traces mod prime: (chi * 8 + L) * NP + pi */
+var SFX_PR : [u64; 16]
+var SFX_RES : [u64; 16]
+var SFX_XM : [u64; 16]
+var SFX_PM : [u64; 16]
+var SFX_DEC : [u8; 512]
+var SFX_ERR : u64 = 0u64
+var SFX_MISS : u64 = 0u64
+var SFX_MAXD : u64 = 0u64
+var SFX_MAXSUM : u64 = 0u64
+var SFX_KERN : u64 = 0u64
+/* full-mode (N <= 64) state: the whole orbit matrix, for the magnetic twist and the law-6 check against the blocks */
+var SFX_FM : [u64; 4096]
+var SFX_FM2 : [u64; 4096]
+var SFX_FM3 : [u64; 4096]
+var SFX_FK : [u64; 4096]
+var SFX_FD : [u64; 64]
+var SFX_FTR : [u64; 512]                     /* (e * 8 + L) * NP + pi */
+/* the diagonal swap W (the one point symmetry of the 2x2 torus beyond its translations; the axis reflections ARE translations on Z2):
+ * W on orbits, W on the S-orbit representatives, and the W-split blocks for ΤΟΜΕΥΣ (wpar 0 whole, 1 W-even, 2 W-odd) */
+var SFX_SWAP : [u64; 16384]
+var SFX_WREP : [u64; 2048]
+var SFX_WIDX : [u64; 2048]                   /* per block row: the partner rep, or SFX_NONE (a fixed point, or the whole block) */
+var SFX_WS0 : [u64; 2048]                    /* per rep r: the S element s0 with W rep_r = s0 rep_{Wr}, so W v_r = chi(s0) v_{Wr} (10-27) */
+var SFX_WSGN : [u64; 2048]                   /* per block column j: 0 for chi(s0_j) = +1, 1 for -1 */
+var SFX_WPAR : u64 = 0u64
+var SFX_WCHI : u64 = 0u64
+var SFX_WTRC : [u64; 128]                    /* the W-block traces mod prime: L * NP + pi */
+
+fn s(x: u64) -> u64 { krx_s(x)   return 0u64 }
+fn u(v: u64) -> u64 { krx_u(v)   return 0u64 }
+fn nl() -> u64 { krx_nl()   return 0u64 }
+fn met(ok: u64) -> u64 { if ok == 1u64 { s("  [MET]" as u64) } else { s("  [MISS]" as u64)   SFX_MISS = SFX_MISS + 1u64 }   nl()   return ok }
+fn popc(m: u64) -> u64 { let mut x : u64 = m   let mut n : u64 = 0u64   while x != 0u64 { n = n + (x & 1u64)   x = x >> 1u64 }   return n }
+fn bit(k: u64) -> u64 { return 1u64 << k }
+fn sfx_err() -> u64 @export { return SFX_ERR }
+fn sfx_miss() -> u64 @export { return SFX_MISS }
+fn sfx_norb() -> u64 @export { return SFX_NORB }
+fn sfx_nflat() -> u64 @export { return SFX_NFLAT }
+fn sfx_nrep() -> u64 @export { return SFX_NREP }
+fn sfx_w0() -> u64 @export { return 0u64 }
+fn sfx_selfprove() -> u64 @export { return 0u64 }
+fn gmul(a: u64, b: u64) -> u64 { if SFX_GK == 3u64 { return (a + b) % 4u64 }   if SFX_GK == 4u64 { return (a + b) % 6u64 }   return hlg_mul(a, b) }
+fn ginv(a: u64) -> u64 { if SFX_GK == 3u64 { return (4u64 - a) % 4u64 }   if SFX_GK == 4u64 { return (6u64 - a) % 6u64 }   return hlg_inv(a) }
+
+/* ---- the group: ΕΛΙΓΜΟΣ' tables; Z2 is {0, 1} inside its Q8 (index p*2+s: 0 = +1, 1 = -1) ---- */
+fn classes() -> u64 {
+    let mut g : u64 = 0u64
+    while g < 8u64 { SFX_CLS[g] = SFX_NONE   SFX_ORD[g] = 0u64   g = g + 1u64 }
+    SFX_NCLS = 0u64
+    g = 0u64
+    while g < SFX_N {
+        if SFX_CLS[g] == SFX_NONE {
+            let mut c : u64 = 0u64
+            while c < SFX_N { let h : u64 = gmul(gmul(c, g), ginv(c))   SFX_CLS[h] = SFX_NCLS   c = c + 1u64 }
+            SFX_NCLS = SFX_NCLS + 1u64
+        }
+        let mut p : u64 = g
+        let mut o : u64 = 1u64
+        while p != 0u64 { p = gmul(p, g)   o = o + 1u64   if o > 16u64 { SFX_ERR = 2u64   return 0u64 } }
+        SFX_ORD[g] = o
+        g = g + 1u64
+    }
+    return 1u64
+}
+fn centre() -> u64 {
+    SFX_Z = SFX_NONE
+    let mut g : u64 = 1u64
+    while g < SFX_N {
+        let mut central : u64 = 1u64
+        let mut h : u64 = 0u64
+        while h < SFX_N { if gmul(g, h) != gmul(h, g) { central = 0u64 }   h = h + 1u64 }
+        if central == 1u64 { if SFX_ORD[g] == 2u64 { if SFX_Z == SFX_NONE { SFX_Z = g } } }
+        g = g + 1u64
+    }
+    return 0u64
+}
+/* the L1 x L2 torus (Addendum I): site (x, y) = x + L1 y, x-link 2 st to (x+1, y), y-link 2 st + 1 to (x, y+1); THE TREE is the x-links of
+ *   row 0 at x <= L1 - 2 and the y-links of every column at y <= L2 - 2 (V - 1 links), fixed to the identity; the V + 1 free links in
+ *   ascending order are the digits of a configuration code.  At 2 x 2 this is the page's tree (links 0, 1, 3 fixed; 2, 4, 5, 6, 7 free). */
+fn site(x: u64, y: u64) -> u64 { return x + SFX_LX * y }
+fn istree(l: u64) -> u64 {
+    let st : u64 = l / 2u64
+    let x : u64 = st % SFX_LX
+    let y : u64 = st / SFX_LX
+    if (l & 1u64) == 0u64 { if y == 0u64 { if x + 2u64 <= SFX_LX { return 1u64 } }   return 0u64 }
+    if y + 2u64 <= SFX_LY { return 1u64 }
+    return 0u64
+}
+fn lattice() -> u64 {
+    SFX_V = SFX_LX * SFX_LY   SFX_E = 2u64 * SFX_V
+    SFX_HASTX = 0u64   if (SFX_LX & 1u64) == 0u64 { SFX_HASTX = 1u64 }
+    SFX_HASTY = 0u64   if (SFX_LY & 1u64) == 0u64 { SFX_HASTY = 1u64 }
+    SFX_HASW = 0u64   if SFX_LX == SFX_LY { SFX_HASW = 1u64 }
+    let mut st : u64 = 0u64
+    while st < SFX_V {
+        let x : u64 = st % SFX_LX
+        let y : u64 = st / SFX_LX
+        SFX_SRC[2u64 * st] = st   SFX_DST[2u64 * st] = site((x + 1u64) % SFX_LX, y)
+        SFX_SRC[2u64 * st + 1u64] = st   SFX_DST[2u64 * st + 1u64] = site(x, (y + 1u64) % SFX_LY)
+        st = st + 1u64
+    }
+    SFX_NF = 0u64
+    let mut l : u64 = 0u64
+    while l < SFX_E { if istree(l) == 0u64 { SFX_FREE[SFX_NF] = l   SFX_NF = SFX_NF + 1u64 }   l = l + 1u64 }
+    SFX_RS = 1u64
+    let mut i : u64 = 0u64
+    while i < SFX_LX { SFX_RS = SFX_RS * SFX_N   i = i + 1u64 }
+    return 0u64
+}
+/* the carrier door: 2 <= L1, L2 and the stores (SFX_ECAP links, SFX_FCAP free links, SFX_VCAP sites; N^(V+1) <= SFX_TCAP codes checked where the code table is built), set BEFORE the group; refused by name otherwise (err 18).  2026-10-28 (ΠΕΝΤΑΠΥΛΟΝ STAKE 5): the literal 3 retired, the door reads its caps -- 2x4 and 3x4 admitted, 4x4 refused at the link cap (its dense Ksum would be two gigabytes) */
+fn sfx_setlattice(lx: u64, ly: u64) -> u64 @export {
+    if lx < 2u64 { SFX_ERR = 18u64   return 0u64 }
+    if ly < 2u64 { SFX_ERR = 18u64   return 0u64 }
+    if 2u64 * lx * ly > SFX_ECAP { SFX_ERR = 18u64   return 0u64 }
+    if lx * ly + 1u64 > SFX_FCAP { SFX_ERR = 18u64   return 0u64 }
+    if lx * ly > SFX_VCAP { SFX_ERR = 18u64   return 0u64 }
+    SFX_LX = lx   SFX_LY = ly
+    lattice()
+    return 1u64
+}
+fn sfx_lx() -> u64 @export { return SFX_LX }
+fn sfx_ly() -> u64 @export { return SFX_LY }
+fn sfx_hasw() -> u64 @export { return SFX_HASW }
+fn sfx_setgroup(gk: u64) -> u64 @export {
+    SFX_GK = gk   SFX_ERR = 0u64
+    if gk == 0u64 { hlg_setg(2u64)   SFX_N = 2u64 }
+    if gk == 1u64 { hlg_setg(0u64)   SFX_N = 6u64 }
+    if gk == 2u64 { hlg_setg(2u64)   SFX_N = 8u64 }
+    if gk == 3u64 { SFX_N = 4u64 }                        /* Z4 by addition mod 4: the Wilson weight (yk^2, yk, 1, yk) on the locus of Addendum I */
+    if gk == 4u64 { SFX_N = 6u64 }                        /* Z6 by addition mod 6: the locus weights by element k <-> zeta^k (ΤΟΜΕΥΣ Addendum I) */
+    if gk > 4u64 { SFX_ERR = 1u64   return 0u64 }
+    if classes() == 0u64 { return 0u64 }
+    centre()
+    lattice()
+    return 1u64
+}
+/* the weights by class at 1/y = yk: Z2 (yk, 1) on (+1, -1); Q8 (yk^2, 1, yk) on (1, -1, the rest); S3 at yk = 4 only: (8, 2, 1) on (e, reflections, rotations) */
+fn sfx_setcoupling(yk: u64) -> u64 @export {
+    SFX_YK = yk
+    let mut g : u64 = 0u64
+    while g < SFX_N {
+        let c : u64 = SFX_CLS[g]
+        let o : u64 = SFX_ORD[g]
+        let mut w : u64 = 0u64
+        if SFX_GK == 0u64 { if o == 1u64 { w = yk } else { w = 1u64 } }
+        if SFX_GK == 2u64 { if o == 1u64 { w = yk * yk }   if o == 2u64 { w = 1u64 }   if o == 4u64 { w = yk } }
+        if SFX_GK == 1u64 {
+            if yk != 4u64 { SFX_ERR = 3u64   return 0u64 }
+            if o == 1u64 { w = 8u64 }   if o == 2u64 { w = 2u64 }   if o == 3u64 { w = 1u64 }
+        }
+        if SFX_GK == 3u64 { if o == 1u64 { w = yk * yk }   if o == 4u64 { w = yk }   if o == 2u64 { w = 1u64 } }
+        if w == 0u64 { SFX_ERR = 3u64   return 0u64 }
+        SFX_W[c] = w   SFX_WT[c] = w
+        g = g + 1u64
+    }
+    return 1u64
+}
+/* ---- configurations: the five free links as digits base N; the tree links identity ---- */
+fn decode(code: u64) -> u64 {
+    let mut i : u64 = 0u64
+    let mut c : u64 = code
+    while i < SFX_E { SFX_C[i] = 0u64   i = i + 1u64 }
+    i = 0u64
+    while i < SFX_NF { SFX_C[SFX_FREE[i]] = c % SFX_N   c = c / SFX_N   i = i + 1u64 }
+    return 0u64
+}
+fn xlink(st: u64) -> u64 { return 2u64 * st }
+fn ylink(st: u64) -> u64 { return 2u64 * st + 1u64 }
+fn stepx(st: u64) -> u64 { return site(((st % SFX_LX) + 1u64) % SFX_LX, st / SFX_LX) }
+fn stepy(st: u64) -> u64 { return site(st % SFX_LX, ((st / SFX_LX) + 1u64) % SFX_LY) }
+/* the holonomy of plaquette p (lowest corner p): g_x(p) g_y(p+x) g_x(p+y)^-1 g_y(p)^-1 */
+fn hol(p: u64) -> u64 {
+    let a : u64 = SFX_C[xlink(p)]
+    let b : u64 = SFX_C[ylink(stepx(p))]
+    let c : u64 = ginv(SFX_C[xlink(stepy(p))])
+    let d : u64 = ginv(SFX_C[ylink(p)])
+    return gmul(gmul(gmul(a, b), c), d)
+}
+fn conjcode(c: u64) -> u64 {
+    let ci : u64 = ginv(c)
+    let mut code : u64 = 0u64
+    let mut i : u64 = SFX_NF
+    while i > 0u64 { i = i - 1u64   code = code * SFX_N + gmul(gmul(c, SFX_C[SFX_FREE[i]]), ci) }
+    return code
+}
+fn canon() -> u64 {
+    let mut best : u64 = SFX_NONE
+    let mut c : u64 = 0u64
+    while c < SFX_N { let k : u64 = conjcode(c)   if k < best { best = k }   c = c + 1u64 }
+    return best
+}
+/* D(SFX_C) with an optional centre twist on plaquette 0; SFX_ISFLAT = 1 when every holonomy is trivial */
+fn dweight(mtw: u64) -> u64 {
+    let mut d : u64 = 1u64
+    let mut flat : u64 = 1u64
+    let mut p : u64 = 0u64
+    while p < SFX_V {
+        let mut h : u64 = hol(p)
+        if h != 0u64 { flat = 0u64 }
+        if mtw == 1u64 { if p == 0u64 { h = gmul(SFX_Z, h) } }
+        d = d * SFX_W[SFX_CLS[h]]
+        p = p + 1u64
+    }
+    SFX_ISFLAT = flat
+    return d
+}
+/* ---- the orbits, D, the flat sector ---- */
+fn orbitreps(total: u64) -> u64 {
+    let mut code : u64 = 0u64
+    SFX_NORB = 0u64
+    while code < total {
+        decode(code)
+        let k : u64 = canon()
+        if k == code {
+            if SFX_NORB >= SFX_OCAP { SFX_ERR = 4u64   return 0u64 }
+            SFX_OREP[SFX_NORB] = code   SFX_ORBOF[code] = SFX_NORB   SFX_OSZ[SFX_NORB] = 0u64
+            SFX_NORB = SFX_NORB + 1u64
+        }
+        code = code + 1u64
+    }
+    return 1u64
+}
+fn orbitsizes(total: u64) -> u64 {
+    let mut code : u64 = 0u64
+    while code < total {
+        decode(code)
+        let k : u64 = canon()
+        let o : u64 = SFX_ORBOF[k]
+        SFX_ORBOF[code] = o   SFX_OSZ[o] = SFX_OSZ[o] + 1u64
+        code = code + 1u64
+    }
+    return 0u64
+}
+fn sfx_orbits() -> u64 @export {
+    let mut total : u64 = 1u64
+    let mut i : u64 = 0u64
+    while i < SFX_NF { total = total * SFX_N   i = i + 1u64 }
+    if total > SFX_TCAP { SFX_ERR = 18u64   return 0u64 }                /* the carrier past the code table: refused by name */
+    if orbitreps(total) == 0u64 { return 0u64 }
+    orbitsizes(total)
+    SFX_NFLAT = 0u64
+    SFX_MAXD = 0u64
+    let mut o : u64 = 0u64
+    while o < SFX_NORB {
+        decode(SFX_OREP[o])
+        SFX_OD[o] = dweight(0u64)
+        if SFX_OD[o] > SFX_MAXD { SFX_MAXD = SFX_OD[o] }
+        SFX_OFLAT[o] = SFX_ISFLAT
+        if SFX_ISFLAT == 1u64 { SFX_NFLAT = SFX_NFLAT + 1u64 }
+        o = o + 1u64
+    }
+    return SFX_NORB
+}
+/* ---- the symmetries on SFX_C: centre shifts, translations re-fixed along the tree ---- */
+/* U_x multiplies the x-links at x = L1 - 1 (one per row, all free) by z; U_y the y-links at y = L2 - 1 */
+fn shiftx() -> u64 { let mut y : u64 = 0u64   while y < SFX_LY { let l : u64 = xlink(site(SFX_LX - 1u64, y))   SFX_C[l] = gmul(SFX_Z, SFX_C[l])   y = y + 1u64 }   return 0u64 }
+fn shifty() -> u64 { let mut x : u64 = 0u64   while x < SFX_LX { let l : u64 = ylink(site(x, SFX_LY - 1u64))   SFX_C[l] = gmul(SFX_Z, SFX_C[l])   x = x + 1u64 }   return 0u64 }
+/* re-fixing along the tree from (0, 0): along row 0 by the x-links, then up every column by the y-links; every tree link must read the identity */
+fn refix() -> u64 {
+    SFX_A[0u64] = 0u64
+    let mut x : u64 = 1u64
+    while x < SFX_LX { SFX_A[site(x, 0u64)] = gmul(SFX_A[site(x - 1u64, 0u64)], SFX_C[xlink(site(x - 1u64, 0u64))])   x = x + 1u64 }
+    let mut y : u64 = 1u64
+    while y < SFX_LY {
+        x = 0u64
+        while x < SFX_LX { SFX_A[site(x, y)] = gmul(SFX_A[site(x, y - 1u64)], SFX_C[ylink(site(x, y - 1u64))])   x = x + 1u64 }
+        y = y + 1u64
+    }
+    let mut l : u64 = 0u64
+    while l < SFX_E { SFX_C[l] = gmul(gmul(SFX_A[SFX_SRC[l]], SFX_C[l]), ginv(SFX_A[SFX_DST[l]]))   l = l + 1u64 }
+    l = 0u64
+    while l < SFX_E { if istree(l) == 1u64 { if SFX_C[l] != 0u64 { SFX_ERR = 5u64 } }   l = l + 1u64 }
+    return 0u64
+}
+fn translate(dir: u64) -> u64 {
+    let mut st : u64 = 0u64
+    while st < SFX_V {
+        let mut t : u64 = stepx(st)
+        if dir == 1u64 { t = stepy(st) }
+        SFX_C2[xlink(t)] = SFX_C[xlink(st)]   SFX_C2[ylink(t)] = SFX_C[ylink(st)]
+        st = st + 1u64
+    }
+    let mut l : u64 = 0u64
+    while l < SFX_E { SFX_C[l] = SFX_C2[l]   l = l + 1u64 }
+    refix()
+    return 0u64
+}
+/* W, the diagonal swap (L1 = L2 only): the x-link at (x, y) becomes the y-link at (y, x), the y-link at (x, y) the x-link at (y, x); re-fixed */
+fn swap() -> u64 {
+    let mut st : u64 = 0u64
+    while st < SFX_V {
+        let t : u64 = site(st / SFX_LX, st % SFX_LX)
+        SFX_C2[ylink(t)] = SFX_C[xlink(st)]
+        SFX_C2[xlink(t)] = SFX_C[ylink(st)]
+        st = st + 1u64
+    }
+    let mut l : u64 = 0u64
+    while l < SFX_E { SFX_C[l] = SFX_C2[l]   l = l + 1u64 }
+    refix()
+    return 0u64
+}
+/* W on orbits and on the S-orbit representatives; W is an involution on both (SFX_ERR 12 refuses a swap that is not) */
+fn wsym() -> u64 {
+    let mut o : u64 = 0u64
+    if SFX_HASW == 0u64 {                                    /* no swap on L1 != L2: W the identity, every representative its own even fixed point */
+        while o < SFX_NORB { SFX_SWAP[o] = o   o = o + 1u64 }
+        let mut r0 : u64 = 0u64
+        while r0 < SFX_NREP { SFX_WREP[r0] = r0   SFX_WS0[r0] = 0u64   r0 = r0 + 1u64 }
+        return 1u64
+    }
+    while o < SFX_NORB { decode(SFX_OREP[o])   swap()   let k : u64 = canon()   SFX_SWAP[o] = SFX_ORBOF[k]   o = o + 1u64 }
+    o = 0u64
+    while o < SFX_NORB { if SFX_SWAP[SFX_SWAP[o]] != o { SFX_ERR = 12u64   return 0u64 }   o = o + 1u64 }
+    let mut r : u64 = 0u64
+    while r < SFX_NREP { SFX_WREP[r] = SFX_SORB[SFX_SWAP[SFX_SREP[r]]]   r = r + 1u64 }
+    r = 0u64
+    while r < SFX_NREP { if SFX_WREP[SFX_WREP[r]] != r { SFX_ERR = 12u64   return 0u64 }   r = r + 1u64 }
+    /* the carrier s0: W rep_r lies in the S-orbit of rep_{Wr} as s0 rep_{Wr}; W v_r = chi(s0) v_{Wr}, the sign a block needs (10-27: the
+     *   split assumed +1, and on Z4 at k = (1,1) the W-even half was no invariant subspace -- its charpoly read V = n - 1); refused if absent */
+    r = 0u64
+    while r < SFX_NREP {
+        let target : u64 = SFX_SWAP[SFX_SREP[r]]
+        let ow : u64 = SFX_SREP[SFX_WREP[r]]
+        let mut found : u64 = SFX_NONE
+        let mut sb : u64 = 0u64
+        while sb < 16u64 { if found == SFX_NONE { if SFX_SACT[ow * 16u64 + sb] == target { found = sb } }   sb = sb + 1u64 }
+        if found == SFX_NONE { SFX_ERR = 12u64   return 0u64 }
+        SFX_WS0[r] = found
+        r = r + 1u64
+    }
+    return 1u64
+}
+/* the sign chi(s0) of rep r under W, as a bit: 0 for +1, 1 for -1; well defined since chi is trivial on Stab(rep_{Wr}) (chiok) */
+fn wsign(chi: u64, r: u64) -> u64 { return chisign(chi, SFX_WS0[r]) }
+fn sfx_wsign(chi: u64, r: u64) -> u64 @export { return wsign(chi, r) }
+fn sfx_oswap(o: u64) -> u64 @export { return SFX_SWAP[o] }
+fn sfx_wrep(r: u64) -> u64 @export { return SFX_WREP[r] }
+fn act(sb: u64, o: u64) -> u64 {
+    decode(SFX_OREP[o])
+    if (sb & 1u64) != 0u64 { if SFX_Z == SFX_NONE { SFX_ERR = 6u64   return SFX_NONE }   shiftx() }
+    if (sb & 2u64) != 0u64 { if SFX_Z == SFX_NONE { SFX_ERR = 6u64   return SFX_NONE }   shifty() }
+    /* the involutive translations T_x^(L1/2), T_y^(L2/2); on an odd side the generator is absent and its bit acts as the identity, so every
+     *   stabiliser carries it and chiok excludes every chi odd on it: those blocks are empty, the decomposition is the coarser one (Addendum I) */
+    if (sb & 4u64) != 0u64 { if SFX_HASTX == 1u64 { let mut t : u64 = 0u64   while t < SFX_LX / 2u64 { translate(0u64)   t = t + 1u64 } } }
+    if (sb & 8u64) != 0u64 { if SFX_HASTY == 1u64 { let mut t : u64 = 0u64   while t < SFX_LY / 2u64 { translate(1u64)   t = t + 1u64 } } }
+    let k : u64 = canon()
+    return SFX_ORBOF[k]
+}
+fn symact() -> u64 {
+    let mut o : u64 = 0u64
+    while o < SFX_NORB {
+        let mut sb : u64 = 0u64
+        while sb < 16u64 {
+            let mut r : u64 = o
+            if SFX_Z == SFX_NONE { if (sb & 3u64) != 0u64 { r = SFX_NONE } }
+            if r != SFX_NONE { r = act(sb, o) }
+            SFX_SACT[o * 16u64 + sb] = r
+            sb = sb + 1u64
+        }
+        o = o + 1u64
+    }
+    return 0u64
+}
+fn symrep(o: u64) -> u64 {
+    if SFX_NREP >= SFX_RCAP { SFX_ERR = 7u64   return 0u64 }
+    let r : u64 = SFX_NREP
+    SFX_SREP[r] = o
+    let mut stab : u64 = 0u64
+    let mut sb : u64 = 0u64
+    while sb < 16u64 {
+        let t : u64 = SFX_SACT[o * 16u64 + sb]
+        if t != SFX_NONE { SFX_SORB[t] = r   if t == o { stab = stab | bit(sb) } }
+        sb = sb + 1u64
+    }
+    SFX_SSTAB[r] = stab
+    SFX_NREP = SFX_NREP + 1u64
+    return 1u64
+}
+fn sfx_sym() -> u64 @export {
+    let mut o : u64 = 0u64
+    while o < SFX_NORB { SFX_SORB[o] = SFX_NONE   o = o + 1u64 }
+    symact()
+    SFX_NREP = 0u64
+    o = 0u64
+    while o < SFX_NORB {
+        if SFX_SORB[o] == SFX_NONE { if symrep(o) == 0u64 { return 0u64 } }
+        o = o + 1u64
+    }
+    if wsym() == 0u64 { return 0u64 }
+    return SFX_NREP
+}
+/* ---- the kernel K(SFX_C, SFX_C3): the four temporal links summed, a trace of 8 x 8 products ---- */
+fn wlfill() -> u64 {
+    let n : u64 = SFX_N
+    let mut l : u64 = 0u64
+    while l < SFX_E {
+        let gi : u64 = ginv(SFX_C3[l])
+        let mut hs : u64 = 0u64
+        while hs < n {
+            let his : u64 = ginv(hs)
+            let mut hd : u64 = 0u64
+            while hd < n { SFX_WL[l * 64u64 + hs * 8u64 + hd] = SFX_WT[SFX_CLS[gmul(gmul(gmul(SFX_C[l], hd), gi), his)]]   hd = hd + 1u64 }
+            hs = hs + 1u64
+        }
+        l = l + 1u64
+    }
+    return 0u64
+}
+/* pairs: A = sites (0,1) links 0: 0->1, 2: 1->0; C = sites (1,3) links 3: 1->3, 7: 3->1; D = sites (2,3) links 4: 2->3, 6: 3->2; B = sites (0,2) links 1: 0->2, 5: 2->0 */
+fn pairfill() -> u64 {
+    let n : u64 = SFX_N
+    let mut a : u64 = 0u64
+    while a < n {
+        let mut b : u64 = 0u64
+        while b < n {
+            SFX_PA[a * 8u64 + b] = SFX_WL[a * 8u64 + b] * SFX_WL[128u64 + b * 8u64 + a]
+            SFX_PC[a * 8u64 + b] = SFX_WL[192u64 + a * 8u64 + b] * SFX_WL[448u64 + b * 8u64 + a]
+            SFX_PD[a * 8u64 + b] = SFX_WL[256u64 + a * 8u64 + b] * SFX_WL[384u64 + b * 8u64 + a]
+            SFX_PB[a * 8u64 + b] = SFX_WL[64u64 + a * 8u64 + b] * SFX_WL[320u64 + b * 8u64 + a]
+            b = b + 1u64
+        }
+        a = a + 1u64
+    }
+    return 0u64
+}
+/* Q[h0][h3] = sum_h1 PA[h0][h1] PC[h1][h3];  K = sum_{h0,h2} (sum_h3 Q[h0][h3] PD[h2][h3]) PB[h0][h2] */
+fn contractq() -> u64 {
+    let n : u64 = SFX_N
+    let mut h0 : u64 = 0u64
+    while h0 < n {
+        let mut h3 : u64 = 0u64
+        while h3 < n {
+            let mut acc : u64 = 0u64
+            let mut h1 : u64 = 0u64
+            while h1 < n { acc = acc + SFX_PA[h0 * 8u64 + h1] * SFX_PC[h1 * 8u64 + h3]   h1 = h1 + 1u64 }
+            SFX_Q[h0 * 8u64 + h3] = acc
+            h3 = h3 + 1u64
+        }
+        h0 = h0 + 1u64
+    }
+    return 0u64
+}
+fn contractk() -> u64 {
+    let n : u64 = SFX_N
+    let mut k : u64 = 0u64
+    let mut h0 : u64 = 0u64
+    while h0 < n {
+        let mut h2 : u64 = 0u64
+        while h2 < n {
+            let mut acc : u64 = 0u64
+            let mut h3 : u64 = 0u64
+            while h3 < n { acc = acc + SFX_Q[h0 * 8u64 + h3] * SFX_PD[h2 * 8u64 + h3]   h3 = h3 + 1u64 }
+            k = k + acc * SFX_PB[h0 * 8u64 + h2]
+            h2 = h2 + 1u64
+        }
+        h0 = h0 + 1u64
+    }
+    SFX_KERN = k
+    return k
+}
+/* ---- the kernel on any torus (Addendum I): THE ROW TRANSFER over the row state space G^L1 -- R_y(s) the product of the row's x-link
+ *      weights (a cycle of length L1 within the row), Q_y(s, t) the product of the y-link weights from row y to row y + 1; K = tr prod_y
+ *      diag(R_y) Q_y.  At 2 x 2 the pair contraction above is the same sum in other clothes, and sfx_fillks reads both on the first row
+ *      (SFX_ERR 17 refuses a disagreement: two roads, no shared line). ---- */
+fn rdig(st: u64, x: u64) -> u64 { let mut v : u64 = st   let mut i : u64 = 0u64   while i < x { v = v / SFX_N   i = i + 1u64 }   return v % SFX_N }
+fn rowr(y: u64, st: u64) -> u64 {
+    let mut v : u64 = 1u64
+    let mut x : u64 = 0u64
+    while x < SFX_LX { let l : u64 = xlink(site(x, y))   v = v * SFX_WL[l * 64u64 + rdig(st, x) * 8u64 + rdig(st, (x + 1u64) % SFX_LX)]   x = x + 1u64 }
+    return v
+}
+fn rowq(y: u64, st: u64, tt: u64) -> u64 {
+    let mut v : u64 = 1u64
+    let mut x : u64 = 0u64
+    while x < SFX_LX { let l : u64 = ylink(site(x, y))   v = v * SFX_WL[l * 64u64 + rdig(st, x) * 8u64 + rdig(tt, x)]   x = x + 1u64 }
+    return v
+}
+fn rowmat(y: u64) -> u64 {                                /* RM = diag(R_y) Q_y */
+    let ss : u64 = SFX_RS
+    let mut a : u64 = 0u64
+    while a < ss { let r : u64 = rowr(y, a)   let mut b : u64 = 0u64   while b < ss { SFX_RM[a * ss + b] = r * rowq(y, a, b)   b = b + 1u64 }   a = a + 1u64 }
+    return 0u64
+}
+fn rowmul() -> u64 {                                      /* RP = RP RM */
+    let ss : u64 = SFX_RS
+    let mut a : u64 = 0u64
+    while a < ss {
+        let mut b : u64 = 0u64
+        while b < ss { let mut acc : u64 = 0u64   let mut k : u64 = 0u64   while k < ss { acc = acc + SFX_RP[a * ss + k] * SFX_RM[k * ss + b]   k = k + 1u64 }   SFX_RQ[a * ss + b] = acc   b = b + 1u64 }
+        a = a + 1u64
+    }
+    a = 0u64
+    while a < ss * ss { SFX_RP[a] = SFX_RQ[a]   a = a + 1u64 }
+    return 0u64
+}
+fn kernrows() -> u64 {
+    let ss : u64 = SFX_RS
+    let mut i : u64 = 0u64
+    while i < ss * ss { SFX_RP[i] = 0u64   i = i + 1u64 }
+    i = 0u64
+    while i < ss { SFX_RP[i * ss + i] = 1u64   i = i + 1u64 }
+    let mut y : u64 = 0u64
+    while y < SFX_LY { rowmat(y)   rowmul()   y = y + 1u64 }
+    let mut k : u64 = 0u64
+    i = 0u64
+    while i < ss { k = k + SFX_RP[i * ss + i]   i = i + 1u64 }
+    SFX_KERN = k
+    return k
+}
+fn kernpairs() -> u64 { pairfill()   contractq()   return contractk() }
+fn kern() -> u64 { wlfill()   if SFX_LX == 2u64 { if SFX_LY == 2u64 { return kernpairs() } }   return kernrows() }
+/* SFX_C3 = the conjugate by c of the orbit representative rep, tree links identity */
+fn setc3(rep: u64, c: u64) -> u64 {
+    let mut i : u64 = 0u64
+    let mut code : u64 = rep
+    while i < SFX_E { SFX_C3[i] = 0u64   i = i + 1u64 }
+    i = 0u64
+    while i < SFX_NF { SFX_C3[SFX_FREE[i]] = gmul(gmul(c, code % SFX_N), ginv(c))   code = code / SFX_N   i = i + 1u64 }
+    return 0u64
+}
+/* Ksum(SFX_C, orbit o2) = sum_{g' in O'} K(C, g') = |O'| K(C, rep), K constant on the orbit by gauge invariance */
+fn ksum(o2: u64) -> u64 {
+    setc3(SFX_OREP[o2], 0u64)
+    return kern() * SFX_OSZ[o2]
+}
+/* the gauge invariance of K checked on one row: K(C, rep) against K(C, c rep c^-1) at the last element c (non-central for S3 and Q8) */
+fn kcheck(o2: u64) -> u64 {
+    setc3(SFX_OREP[o2], 0u64)
+    let k0 : u64 = kern()
+    setc3(SFX_OREP[o2], SFX_N - 1u64)
+    let k1 : u64 = kern()
+    if k0 != k1 { SFX_ERR = 10u64   return 0u64 }
+    return 1u64
+}
+fn sfx_fillks() -> u64 @export {
+    SFX_MAXSUM = 0u64
+    let mut r : u64 = 0u64
+    while r < SFX_NREP {
+        decode(SFX_OREP[SFX_SREP[r]])
+        let mut sum : u64 = 0u64
+        let mut o2 : u64 = 0u64
+        while o2 < SFX_NORB {
+            if r == 0u64 { if kcheck(o2) == 0u64 { s("SFX-REFUSED kernel not gauge invariant at orbit " as u64)   u(o2)   nl()   return 0u64 } }
+            /* at 2 x 2 the pair contraction and the row transfer are two roads to one sum: read both on the first row (Addendum I) */
+            if r == 0u64 { if SFX_LX == 2u64 { if SFX_LY == 2u64 {
+                setc3(SFX_OREP[o2], 0u64)   wlfill()   let ka : u64 = kernpairs()   let kb : u64 = kernrows()
+                if ka != kb { SFX_ERR = 17u64   s("SFX-REFUSED the two kernel roads part at orbit " as u64)   u(o2)   nl()   return 0u64 }
+            } } }
+            let v : u64 = ksum(o2)
+            SFX_KS[r * SFX_OCAP + o2] = v
+            sum = sum + v
+            o2 = o2 + 1u64
+        }
+        if sum > SFX_MAXSUM { SFX_MAXSUM = sum }
+        r = r + 1u64
+    }
+    return 1u64
+}
+/* ---- primes, the modulus bound, residues, Garner ---- */
+fn isprime(p: u64) -> u64 {
+    if p < 2u64 { return 0u64 }
+    let mut d : u64 = 2u64
+    while d * d <= p { if p % d == 0u64 { return 0u64 }   d = d + 1u64 }
+    return 1u64
+}
+fn sfx_primes() -> u64 @export {                         /* the sixteen largest primes below 2^30, found by trial division; every modulus re-verified */
+    let mut cand : u64 = 1073741823u64
+    let mut n : u64 = 0u64
+    while n < SFX_NP { if isprime(cand) == 1u64 { SFX_PR[n] = cand   n = n + 1u64 }   cand = cand - 1u64 }
+    let mut i : u64 = 0u64
+    while i < SFX_NP { if isprime(SFX_PR[i]) == 0u64 { s("SFX-REFUSED modulus " as u64)   u(SFX_PR[i])   s(" is composite" as u64)   nl()   SFX_ERR = 8u64   return 0u64 }   i = i + 1u64 }
+    return 1u64
+}
+fn sfx_plant_composite() -> u64 @export {                /* K4: a composite planted in the last slot must be refused by name; the slot restored */
+    let keep : u64 = SFX_PR[SFX_NP - 1u64]
+    SFX_PR[SFX_NP - 1u64] = 1073741824u64
+    let mut refused : u64 = 0u64
+    let mut i : u64 = 0u64
+    while i < SFX_NP { if isprime(SFX_PR[i]) == 0u64 { refused = 1u64 }   i = i + 1u64 }
+    SFX_PR[SFX_NP - 1u64] = keep
+    return refused
+}
+/* the modulus against the row-sum bound: every trace <= N (maxD maxSum)^L, read at L = LMAX; the product of the primes must have MORE bits */
+fn sfx_bound() -> u64 @export {
+    mgs_setu(SFX_T0, SFX_MAXD)   mgs_setu(SFX_T1, SFX_MAXSUM)   mgs_mul(SFX_T2, SFX_T0, SFX_T1)
+    mgs_setu(SFX_T3, SFX_NORB)
+    let mut l : u64 = 0u64
+    while l < SFX_LMAX { mgs_mul(SFX_T4, SFX_T3, SFX_T2)   mgs_copy(SFX_T3, SFX_T4)   l = l + 1u64 }
+    mgs_setu(SFX_T5, 1u64)
+    let mut i : u64 = 0u64
+    while i < SFX_NP { mgs_setu(SFX_T0, SFX_PR[i])   mgs_mul(SFX_T6, SFX_T5, SFX_T0)   mgs_copy(SFX_T5, SFX_T6)   i = i + 1u64 }
+    let bb : u64 = mgs_bits(SFX_T3)
+    let mb : u64 = mgs_bits(SFX_T5)
+    s("SFX-BOUND N=" as u64)   u(SFX_NORB)   s(" maxD=" as u64)   u(SFX_MAXD)   s(" maxSum=" as u64)   u(SFX_MAXSUM)   s(" bound_bits=" as u64)   u(bb)   s(" modulus_bits=" as u64)   u(mb)
+    if mb > bb { s("  modulus SUFFICIENT" as u64)   nl()   return 1u64 }
+    s("  SFX-REFUSED modulus insufficient" as u64)   nl()   SFX_ERR = 11u64
+    return 0u64
+}
+fn mulmod(a: u64, b: u64, p: u64) -> u64 { return (a * b) % p }
+fn powmod(a: u64, e: u64, p: u64) -> u64 {
+    let mut r : u64 = 1u64
+    let mut b : u64 = a % p
+    let mut k : u64 = e
+    while k > 0u64 { if (k & 1u64) == 1u64 { r = mulmod(r, b, p) }   b = mulmod(b, b, p)   k = k >> 1u64 }
+    return r
+}
+fn invmod(a: u64, p: u64) -> u64 { return powmod(a, p - 2u64, p) }
+/* Garner: SFX_RES[0..NP) -> the register dst, the residues of the running value kept modulo every later prime */
+fn garnerstep(dst: u64, i: u64) -> u64 {
+    let p : u64 = SFX_PR[i]
+    let diff : u64 = (SFX_RES[i] + p - SFX_XM[i]) % p
+    let t : u64 = mulmod(diff, invmod(SFX_PM[i], p), p)
+    mgs_setu(SFX_T2, t)   mgs_mul(SFX_T3, SFX_T1, SFX_T2)   mgs_add(SFX_T4, dst, SFX_T3)   mgs_copy(dst, SFX_T4)
+    let mut j : u64 = i + 1u64
+    while j < SFX_NP { SFX_XM[j] = (SFX_XM[j] + mulmod(SFX_PM[j], t, SFX_PR[j])) % SFX_PR[j]   SFX_PM[j] = mulmod(SFX_PM[j], p % SFX_PR[j], SFX_PR[j])   j = j + 1u64 }
+    mgs_setu(SFX_T2, p)   mgs_mul(SFX_T3, SFX_T1, SFX_T2)   mgs_copy(SFX_T1, SFX_T3)
+    return 0u64
+}
+fn garner(dst: u64) -> u64 {
+    mgs_setu(dst, SFX_RES[0u64])
+    mgs_setu(SFX_T1, SFX_PR[0u64])
+    let mut j : u64 = 1u64
+    while j < SFX_NP { SFX_XM[j] = SFX_RES[0u64] % SFX_PR[j]   SFX_PM[j] = SFX_PR[0u64] % SFX_PR[j]   j = j + 1u64 }
+    let mut i : u64 = 1u64
+    while i < SFX_NP { garnerstep(dst, i)   i = i + 1u64 }
+    return 0u64
+}
+/* ---- the blocks: chi = e_x + 2 e_y + 4 k_x + 8 k_y; a block holds the reps whose stabiliser chi is trivial on ---- */
+fn chisign(chi: u64, sb: u64) -> u64 { return popc(chi & sb) & 1u64 }
+fn chiok(chi: u64, r: u64) -> u64 {
+    let stab : u64 = SFX_SSTAB[r]
+    let mut ok : u64 = 1u64
+    let mut sb : u64 = 0u64
+    while sb < 16u64 { if (stab & bit(sb)) != 0u64 { if chisign(chi, sb) == 1u64 { ok = 0u64 } }   sb = sb + 1u64 }
+    return ok
+}
+/* chi is W-stable iff e_x = e_y and k_x = k_y: only then does W act within the (e, k) sector and split it */
+fn wstable(chi: u64) -> u64 {
+    if SFX_HASW == 0u64 { return 0u64 }                      /* no swap on L1 != L2: no sector is split */
+    if (chi & 1u64) != ((chi >> 1u64) & 1u64) { return 0u64 }
+    if ((chi >> 2u64) & 1u64) != ((chi >> 3u64) & 1u64) { return 0u64 }
+    return 1u64
+}
+fn sfx_wstable(chi: u64) -> u64 @export { return wstable(chi) }
+/* the W image of a sector: e_x <-> e_y, k_x <-> k_y */
+fn sfx_wchi(chi: u64) -> u64 @export { return ((chi & 1u64) << 1u64) | ((chi >> 1u64) & 1u64) | (((chi >> 2u64) & 1u64) << 3u64) | (((chi >> 3u64) & 1u64) << 2u64) }
+/* the block's rows: wpar 0 every rep of the (e, k) sector; 1 the W-even part (pairs r < Wr once, and the fixed points); 2 the W-odd part (pairs only) */
+fn sfx_wblockdim(chi: u64, wpar: u64) -> u64 @export {
+    SFX_BDIM = 0u64   SFX_WCHI = chi   SFX_WPAR = wpar
+    if wpar != 0u64 { if wstable(chi) == 0u64 { SFX_ERR = 13u64   return 0u64 } }
+    let mut r : u64 = 0u64
+    while r < SFX_NREP {
+        if chiok(chi, r) == 1u64 {
+            let w : u64 = SFX_WREP[r]
+            let mut take : u64 = 0u64
+            if wpar == 0u64 { take = 1u64   SFX_WIDX[SFX_BDIM] = SFX_NONE }
+            /* a pair r < Wr sits in both halves (even: v_r + s v_Wr, odd: v_r - s v_Wr, s = chi(s0)); a fixed point W v_r = s v_r is even iff s = +1 */
+            if wpar == 1u64 { if r < w { take = 1u64   SFX_WIDX[SFX_BDIM] = w }   if w == r { if wsign(chi, r) == 0u64 { take = 1u64   SFX_WIDX[SFX_BDIM] = SFX_NONE } } }
+            if wpar == 2u64 { if r < w { take = 1u64   SFX_WIDX[SFX_BDIM] = w }   if w == r { if wsign(chi, r) == 1u64 { take = 1u64   SFX_WIDX[SFX_BDIM] = SFX_NONE } } }
+            if wpar != 0u64 { if chiok(chi, w) == 0u64 { SFX_ERR = 14u64   return 0u64 } }
+            if take == 1u64 { SFX_BIDX[SFX_BDIM] = r   SFX_WSGN[SFX_BDIM] = wsign(chi, r)   SFX_BDIM = SFX_BDIM + 1u64 }
+        }
+        r = r + 1u64
+    }
+    return SFX_BDIM
+}
+fn sfx_blockdim(chi: u64) -> u64 @export { return sfx_wblockdim(chi, 0u64) }
+/* one block entry modulo p: (1/|Stab(r_j)|) sum_s chi(s) D(r_i) Ksum(r_i, s·rep_j) -- an integer, the |Stab_j| exact on the s-sum */
+/* B(r_i, r_j) mod p on rep ids: (1/|Stab_j|) sum_s chi(s) D(r_i) Ksum(r_i, s·rep_j) -- an integer, the |Stab_j| exact on the s-sum */
+fn bent(chi: u64, ri: u64, rj: u64, p: u64) -> u64 {
+    let oj : u64 = SFX_SREP[rj]
+    let d : u64 = SFX_OD[SFX_SREP[ri]] % p
+    let mut acc : u64 = 0u64
+    let mut sb : u64 = 0u64
+    while sb < 16u64 {
+        let t : u64 = SFX_SACT[oj * 16u64 + sb]
+        if t != SFX_NONE {
+            let v : u64 = mulmod(d, SFX_KS[ri * SFX_OCAP + t] % p, p)
+            if chisign(chi, sb) == 0u64 { acc = (acc + v) % p } else { acc = (acc + p - v) % p }
+        }
+        sb = sb + 1u64
+    }
+    return mulmod(acc, invmod(popc(SFX_SSTAB[rj]) % p, p), p)
+}
+fn blockentry(chi: u64, i: u64, j: u64, p: u64) -> u64 { return bent(chi, SFX_BIDX[i], SFX_BIDX[j], p) }
+/* the W-block entry mod p: B(i, j) + B(i, Wj) on the even part, B(i, j) - B(i, Wj) on the odd part, B(i, j) at a fixed point or on the whole block */
+fn wentry(i: u64, j: u64, p: u64) -> u64 {
+    let a : u64 = bent(SFX_WCHI, SFX_BIDX[i], SFX_BIDX[j], p)
+    let w : u64 = SFX_WIDX[j]
+    if w == SFX_NONE { return a }
+    let b : u64 = bent(SFX_WCHI, SFX_BIDX[i], w, p)
+    let mut minus : u64 = 0u64                               /* even: a + s b; odd: a - s b; s the column's sign chi(s0_j) */
+    if SFX_WPAR == 2u64 { minus = 1u64 }
+    if SFX_WSGN[j] == 1u64 { minus = 1u64 - minus }
+    if minus == 1u64 { return (a + p - b) % p }
+    return (a + b) % p
+}
+fn sfx_wblockfill(p: u64) -> u64 @export {
+    let dim : u64 = SFX_BDIM
+    let mut i : u64 = 0u64
+    while i < dim {
+        let mut j : u64 = 0u64
+        while j < dim { SFX_B1[i * dim + j] = wentry(i, j, p)   j = j + 1u64 }
+        i = i + 1u64
+    }
+    return 0u64
+}
+fn sfx_blockfill(chi: u64, p: u64) -> u64 @export {
+    let dim : u64 = SFX_BDIM
+    let mut i : u64 = 0u64
+    while i < dim {
+        let mut j : u64 = 0u64
+        while j < dim { SFX_B1[i * dim + j] = blockentry(chi, i, j, p)   j = j + 1u64 }
+        i = i + 1u64
+    }
+    return 0u64
+}
+fn sfx_b1(i: u64, j: u64) -> u64 @export { return SFX_B1[i * SFX_BDIM + j] }
+fn mm11(dim: u64, p: u64) -> u64 {                      /* B2 = B1 B1 mod p; products below 2^60, fifteen summed before a reduction */
+    let mut i : u64 = 0u64
+    while i < dim {
+        let mut j : u64 = 0u64
+        while j < dim {
+            let mut acc : u64 = 0u64
+            let mut k : u64 = 0u64
+            let mut cnt : u64 = 0u64
+            while k < dim { acc = acc + SFX_B1[i * dim + k] * SFX_B1[k * dim + j]   cnt = cnt + 1u64   if cnt == 15u64 { acc = acc % p   cnt = 0u64 }   k = k + 1u64 }
+            SFX_B2[i * dim + j] = acc % p
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    return 0u64
+}
+fn mm21(dim: u64, p: u64) -> u64 {                      /* B3 = B2 B1 mod p */
+    let mut i : u64 = 0u64
+    while i < dim {
+        let mut j : u64 = 0u64
+        while j < dim {
+            let mut acc : u64 = 0u64
+            let mut k : u64 = 0u64
+            let mut cnt : u64 = 0u64
+            while k < dim { acc = acc + SFX_B2[i * dim + k] * SFX_B1[k * dim + j]   cnt = cnt + 1u64   if cnt == 15u64 { acc = acc % p   cnt = 0u64 }   k = k + 1u64 }
+            SFX_B3[i * dim + j] = acc % p
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    return 0u64
+}
+fn tr11(dim: u64, p: u64) -> u64 { let mut acc : u64 = 0u64   let mut i : u64 = 0u64   while i < dim { let mut j : u64 = 0u64   while j < dim { acc = (acc + SFX_B1[i * dim + j] * SFX_B1[j * dim + i]) % p   j = j + 1u64 }   i = i + 1u64 }   return acc }
+fn tr12(dim: u64, p: u64) -> u64 { let mut acc : u64 = 0u64   let mut i : u64 = 0u64   while i < dim { let mut j : u64 = 0u64   while j < dim { acc = (acc + SFX_B1[i * dim + j] * SFX_B2[j * dim + i]) % p   j = j + 1u64 }   i = i + 1u64 }   return acc }
+fn tr22(dim: u64, p: u64) -> u64 { let mut acc : u64 = 0u64   let mut i : u64 = 0u64   while i < dim { let mut j : u64 = 0u64   while j < dim { acc = (acc + SFX_B2[i * dim + j] * SFX_B2[j * dim + i]) % p   j = j + 1u64 }   i = i + 1u64 }   return acc }
+fn tr23(dim: u64, p: u64) -> u64 { let mut acc : u64 = 0u64   let mut i : u64 = 0u64   while i < dim { let mut j : u64 = 0u64   while j < dim { acc = (acc + SFX_B2[i * dim + j] * SFX_B3[j * dim + i]) % p   j = j + 1u64 }   i = i + 1u64 }   return acc }
+fn tr33(dim: u64, p: u64) -> u64 { let mut acc : u64 = 0u64   let mut i : u64 = 0u64   while i < dim { let mut j : u64 = 0u64   while j < dim { acc = (acc + SFX_B3[i * dim + j] * SFX_B3[j * dim + i]) % p   j = j + 1u64 }   i = i + 1u64 }   return acc }
+fn trone(dim: u64, p: u64) -> u64 { let mut acc : u64 = 0u64   let mut i : u64 = 0u64   while i < dim { acc = (acc + SFX_B1[i * dim + i]) % p   i = i + 1u64 }   return acc }
+/* the six traces of one block at one prime into TRC[(chi*8+L)*NP+pi] */
+fn blocktraces(chi: u64, dim: u64, pi: u64) -> u64 {
+    let p : u64 = SFX_PR[pi]
+    let base : u64 = chi * 8u64
+    sfx_blockfill(chi, p)
+    SFX_TRC[(base + 1u64) * SFX_NP + pi] = trone(dim, p)
+    SFX_TRC[(base + 2u64) * SFX_NP + pi] = tr11(dim, p)
+    mm11(dim, p)
+    SFX_TRC[(base + 3u64) * SFX_NP + pi] = tr12(dim, p)
+    SFX_TRC[(base + 4u64) * SFX_NP + pi] = tr22(dim, p)
+    mm21(dim, p)
+    SFX_TRC[(base + 5u64) * SFX_NP + pi] = tr23(dim, p)
+    SFX_TRC[(base + 6u64) * SFX_NP + pi] = tr33(dim, p)
+    return 0u64
+}
+fn sfx_traces() -> u64 @export {
+    let mut chi : u64 = 0u64
+    while chi < 16u64 {
+        let mut skip : u64 = 0u64
+        if SFX_Z == SFX_NONE { if (chi & 3u64) != 0u64 { skip = 1u64 } }
+        if skip == 0u64 {
+            let dim : u64 = sfx_blockdim(chi)
+            let mut pi : u64 = 0u64
+            while pi < SFX_NP { blocktraces(chi, dim, pi)   pi = pi + 1u64 }
+            s("SFX-BLOCK chi=" as u64)   u(chi)   s(" dim=" as u64)   u(dim)   nl()
+        }
+        chi = chi + 1u64
+    }
+    return 1u64
+}
+/* the sector sums Z_e(L) = sum_k Tr(M_(e,k)^L) into the registers 8e + L */
+fn sectorsum(e: u64, l: u64) -> u64 {
+    mgs_zero(8u64 * e + l)
+    let mut k : u64 = 0u64
+    while k < 4u64 {
+        let chi : u64 = e + 4u64 * k
+        let mut pi : u64 = 0u64
+        while pi < SFX_NP { SFX_RES[pi] = SFX_TRC[(chi * 8u64 + l) * SFX_NP + pi]   pi = pi + 1u64 }
+        garner(SFX_T0)
+        mgs_add(SFX_T5, 8u64 * e + l, SFX_T0)   mgs_copy(8u64 * e + l, SFX_T5)
+        k = k + 1u64
+    }
+    return 0u64
+}
+fn sfx_sectors() -> u64 @export {
+    let mut emax : u64 = 4u64
+    if SFX_Z == SFX_NONE { emax = 1u64 }
+    let mut e : u64 = 0u64
+    while e < emax {
+        let mut l : u64 = 1u64
+        while l <= SFX_LMAX { sectorsum(e, l)   l = l + 1u64 }
+        e = e + 1u64
+    }
+    return 1u64
+}
+fn say(r: u64) -> u64 { let n : u64 = mgs_todec(r, (&SFX_DEC) as u64, 500u64)   SFX_DEC[n] = 0u8   s((&SFX_DEC) as u64)   return 0u64 }
+/* the ratio a/b to nine decimals: integer part, point, nine digits */
+fn ratio9(a: u64, b: u64) -> u64 {
+    mgs_setu(SFX_T2, 1000000000u64)   mgs_mul(SFX_T3, a, SFX_T2)   mgs_divmod(SFX_T4, SFX_T5, SFX_T3, b)
+    let q : u64 = mgs_get64(SFX_T4)
+    u(q / 1000000000u64)   s("." as u64)
+    let mut pw : u64 = 100000000u64
+    let mut fr : u64 = q % 1000000000u64
+    while pw > 0u64 { u(fr / pw)   fr = fr % pw   pw = pw / 10u64 }
+    return q
+}
+fn reduce(a: u64, b: u64) -> u64 { mgs_gcd(SFX_T2, a, b)   mgs_divmod(SFX_T3, SFX_T4, a, SFX_T2)   mgs_divmod(SFX_T5, SFX_T6, b, SFX_T2)   return 0u64 }
+fn gname() -> u64 { if SFX_GK == 0u64 { s("Z2" as u64) }   if SFX_GK == 1u64 { s("S3" as u64) }   if SFX_GK == 2u64 { s("Q8" as u64) }   if SFX_GK == 3u64 { s("Z4" as u64) }   if SFX_GK == 4u64 { s("Z6" as u64) }   return 0u64 }
+fn reportline(e: u64, l: u64) -> u64 {
+    s("SFX G=" as u64)   gname()   s(" y=1/" as u64)   u(SFX_YK)   s(" e=" as u64)   u(e % 2u64)   u(e / 2u64)   s(" L=" as u64)   u(l)
+    s(" Z=" as u64)   say(8u64 * e + l)
+    s(" ratio=" as u64)   ratio9(8u64 * e + l, l)
+    reduce(8u64 * e + l, l)
+    s(" frac=" as u64)   say(SFX_T3)   s("/" as u64)   say(SFX_T5)
+    nl()
+    return 0u64
+}
+fn sfx_report() -> u64 @export {
+    let mut emax : u64 = 4u64
+    if SFX_Z == SFX_NONE { emax = 1u64 }
+    let mut e : u64 = 0u64
+    while e < emax {
+        let mut l : u64 = 1u64
+        while l <= SFX_LMAX { reportline(e, l)   l = l + 1u64 }
+        e = e + 1u64
+    }
+    return 0u64
+}
+/* the reduced fraction of registers a over b against a known answer (both parts below 2^64) */
+fn fraccheck(a: u64, b: u64, num: u64, den: u64) -> u64 {
+    reduce(a, b)
+    let mut ok : u64 = 1u64
+    if mgs_bits(SFX_T3) > 64u64 { ok = 0u64 }
+    if mgs_bits(SFX_T5) > 64u64 { ok = 0u64 }
+    if ok == 1u64 { if mgs_get64(SFX_T3) != num { ok = 0u64 }   if mgs_get64(SFX_T5) != den { ok = 0u64 } }
+    s(" frac=" as u64)   say(SFX_T3)   s("/" as u64)   say(SFX_T5)   s(" against " as u64)   u(num)   s("/" as u64)   u(den)
+    return met(ok)
+}
+fn sfx_check(e: u64, l: u64, num: u64, den: u64) -> u64 @export { s("SFX-KAT e=" as u64)   u(e % 2u64)   u(e / 2u64)   s(" L=" as u64)   u(l)   return fraccheck(8u64 * e + l, l, num, den) }
+fn sfx_q9(e: u64, l: u64) -> u64 @export { mgs_setu(SFX_T2, 1000000000u64)   mgs_mul(SFX_T3, 8u64 * e + l, SFX_T2)   mgs_divmod(SFX_T4, SFX_T5, SFX_T3, l)   return mgs_get64(SFX_T4) }
+/* ---- FULL MODE (N <= 64): the whole orbit matrix with an optional magnetic twist on plaquette 0 ---- */
+fn fullmatrix(mtw: u64) -> u64 {
+    let n : u64 = SFX_NORB
+    let mut o : u64 = 0u64
+    while o < n { decode(SFX_OREP[o])   SFX_FD[o] = dweight(mtw)   o = o + 1u64 }
+    o = 0u64
+    while o < n {
+        decode(SFX_OREP[o])
+        let dv : u64 = SFX_FD[o]
+        let mut o2 : u64 = 0u64
+        while o2 < n { SFX_FM[o * 64u64 + o2] = dv * ksum(o2)   o2 = o2 + 1u64 }
+        o = o + 1u64
+    }
+    return 0u64
+}
+/* FM3 = FM3 FM2 mod p, FK the row buffer */
+fn fullstep(n: u64, p: u64) -> u64 {
+    let mut a : u64 = 0u64
+    while a < n {
+        let mut b : u64 = 0u64
+        while b < n {
+            let mut acc : u64 = 0u64
+            let mut k : u64 = 0u64
+            while k < n { acc = acc + mulmod(SFX_FM3[a * 64u64 + k], SFX_FM2[k * 64u64 + b], p)   k = k + 1u64 }
+            SFX_FK[b] = acc % p
+            b = b + 1u64
+        }
+        b = 0u64
+        while b < n { SFX_FM3[a * 64u64 + b] = SFX_FK[b]   b = b + 1u64 }
+        a = a + 1u64
+    }
+    return 0u64
+}
+/* Tr(P_e M^L) mod p up to the 1/4 common to every sector: sum_c chi_e(c) sum_o (M^L)[c·o][o] over the four centre shifts */
+fn fullsector(n: u64, p: u64, e: u64) -> u64 {
+    let mut acc : u64 = 0u64
+    let mut c : u64 = 0u64
+    while c < 4u64 {
+        let mut t : u64 = 0u64
+        let mut oo : u64 = 0u64
+        while oo < n { let co : u64 = SFX_SACT[oo * 16u64 + c]   if co != SFX_NONE { t = (t + SFX_FM3[co * 64u64 + oo]) % p }   oo = oo + 1u64 }
+        if chisign(e, c) == 0u64 { acc = (acc + t) % p } else { acc = (acc + p - t) % p }
+        c = c + 1u64
+    }
+    return acc
+}
+fn fullprime(n: u64, pi: u64) -> u64 {
+    let p : u64 = SFX_PR[pi]
+    let mut i : u64 = 0u64
+    while i < n * 64u64 { SFX_FM2[i] = SFX_FM[i] % p   SFX_FM3[i] = SFX_FM2[i]   i = i + 1u64 }
+    let mut l : u64 = 1u64
+    while l <= SFX_LMAX {
+        if l > 1u64 { fullstep(n, p) }
+        let mut e : u64 = 0u64
+        while e < 4u64 { SFX_FTR[(e * 8u64 + l) * SFX_NP + pi] = fullsector(n, p, e)   e = e + 1u64 }
+        l = l + 1u64
+    }
+    return 0u64
+}
+fn fullgarner(e: u64, l: u64) -> u64 {
+    let mut pi : u64 = 0u64
+    while pi < SFX_NP { SFX_RES[pi] = SFX_FTR[(e * 8u64 + l) * SFX_NP + pi]   pi = pi + 1u64 }
+    garner(32u64 + 8u64 * e + l)
+    return 0u64
+}
+fn sfx_full(mtw: u64) -> u64 @export {
+    let n : u64 = SFX_NORB
+    if n > 64u64 { SFX_ERR = 9u64   return 0u64 }
+    fullmatrix(mtw)
+    let mut pi : u64 = 0u64
+    while pi < SFX_NP { fullprime(n, pi)   pi = pi + 1u64 }
+    let mut e : u64 = 0u64
+    while e < 4u64 {
+        let mut l : u64 = 1u64
+        while l <= SFX_LMAX { fullgarner(e, l)   l = l + 1u64 }
+        e = e + 1u64
+    }
+    return 1u64
+}
+fn sfx_fullcheck(e: u64, l: u64, base: u64, num: u64, den: u64) -> u64 @export { s("SFX-FULL e=" as u64)   u(e % 2u64)   u(e / 2u64)   s(" L=" as u64)   u(l)   return fraccheck(32u64 + 8u64 * e + l, base, num, den) }
+fn sfx_fullsave(e: u64, l: u64, dst: u64) -> u64 @export { mgs_copy(dst, 32u64 + 8u64 * e + l)   return 0u64 }
+/* the block road against the full road on the untwisted theory, as reduced ratios */
+fn sfx_fullvsblock(e: u64, l: u64) -> u64 @export {
+    reduce(32u64 + 8u64 * e + l, 32u64 + l)
+    mgs_copy(SFX_T0, SFX_T3)   mgs_copy(SFX_T1, SFX_T5)
+    reduce(8u64 * e + l, l)
+    let mut ok : u64 = 1u64
+    if mgs_bits(SFX_T0) > 64u64 { ok = 0u64 }
+    if mgs_bits(SFX_T3) > 64u64 { ok = 0u64 }
+    if ok == 1u64 { if mgs_get64(SFX_T0) != mgs_get64(SFX_T3) { ok = 0u64 }   if mgs_get64(SFX_T1) != mgs_get64(SFX_T5) { ok = 0u64 } }
+    s("SFX-ROADS e=" as u64)   u(e % 2u64)   u(e / 2u64)   s(" L=" as u64)   u(l)   s(" blocks " as u64)   say(SFX_T3)   s("/" as u64)   say(SFX_T5)   s(" full " as u64)   say(SFX_T0)   s("/" as u64)   say(SFX_T1)
+    return met(ok)
+}
+/* ---- the doors for ΤΟΜΕΥΣ: the current W-block's six traces, its entry and row bounds, its integer entries ---- */
+fn sfx_wtraces() -> u64 @export {
+    let dim : u64 = SFX_BDIM
+    let mut pi : u64 = 0u64
+    while pi < SFX_NP {
+        let p : u64 = SFX_PR[pi]
+        sfx_wblockfill(p)
+        SFX_WTRC[1u64 * SFX_NP + pi] = trone(dim, p)
+        SFX_WTRC[2u64 * SFX_NP + pi] = tr11(dim, p)
+        mm11(dim, p)
+        SFX_WTRC[3u64 * SFX_NP + pi] = tr12(dim, p)
+        SFX_WTRC[4u64 * SFX_NP + pi] = tr22(dim, p)
+        mm21(dim, p)
+        SFX_WTRC[5u64 * SFX_NP + pi] = tr23(dim, p)
+        SFX_WTRC[6u64 * SFX_NP + pi] = tr33(dim, p)
+        pi = pi + 1u64
+    }
+    let mut l : u64 = 1u64
+    while l <= SFX_LMAX {
+        pi = 0u64
+        while pi < SFX_NP { SFX_RES[pi] = SFX_WTRC[l * SFX_NP + pi]   pi = pi + 1u64 }
+        garner(80u64 + l)
+        l = l + 1u64
+    }
+    return 1u64
+}
+/* bits of D(r_i) · (the sum over every orbit of Ksum(r_i, ·)), the largest over the block's rows: the block's infinity norm is below 2^rowbits */
+fn sfx_wrowbits() -> u64 @export {
+    let mut best : u64 = 0u64
+    let mut i : u64 = 0u64
+    while i < SFX_BDIM {
+        let ri : u64 = SFX_BIDX[i]
+        let mut sum : u64 = 0u64
+        let mut o : u64 = 0u64
+        while o < SFX_NORB { sum = sum + SFX_KS[ri * SFX_OCAP + o]   o = o + 1u64 }
+        mgs_setu(SFX_T0, SFX_OD[SFX_SREP[ri]])   mgs_setu(SFX_T1, sum)   mgs_mul(SFX_T2, SFX_T0, SFX_T1)
+        let b : u64 = mgs_bits(SFX_T2)
+        if b > best { best = b }
+        i = i + 1u64
+    }
+    return best
+}
+fn sfx_wentbits() -> u64 @export { return sfx_wrowbits() + 1u64 }
+/* the signed integer entry on rep ids, exact when every D·Ksum product and sum is below 2^62 (the caller checks sfx_wentbits() <= 60) */
+fn bentint(chi: u64, ri: u64, rj: u64) -> u64 {
+    let oj : u64 = SFX_SREP[rj]
+    let d : u64 = SFX_OD[SFX_SREP[ri]]
+    let mut pos : u64 = 0u64
+    let mut neg : u64 = 0u64
+    let mut sb : u64 = 0u64
+    while sb < 16u64 {
+        let t : u64 = SFX_SACT[oj * 16u64 + sb]
+        if t != SFX_NONE { if chisign(chi, sb) == 0u64 { pos = pos + d * SFX_KS[ri * SFX_OCAP + t] } else { neg = neg + d * SFX_KS[ri * SFX_OCAP + t] } }
+        sb = sb + 1u64
+    }
+    let st : u64 = popc(SFX_SSTAB[rj])
+    if pos >= neg { return (pos - neg) / st }
+    return 0u64 - ((neg - pos) / st)
+}
+fn sfx_wblockint() -> u64 @export {
+    if sfx_wentbits() > 60u64 { SFX_ERR = 15u64   return 0u64 }
+    let dim : u64 = SFX_BDIM
+    let mut i : u64 = 0u64
+    while i < dim {
+        let mut j : u64 = 0u64
+        while j < dim {
+            let a : u64 = bentint(SFX_WCHI, SFX_BIDX[i], SFX_BIDX[j])
+            let w : u64 = SFX_WIDX[j]
+            let mut v : u64 = a
+            if w != SFX_NONE {
+                let b : u64 = bentint(SFX_WCHI, SFX_BIDX[i], w)
+                let mut minus : u64 = 0u64
+                if SFX_WPAR == 2u64 { minus = 1u64 }
+                if SFX_WSGN[j] == 1u64 { minus = 1u64 - minus }
+                if minus == 1u64 { v = a - b } else { v = a + b }
+            }
+            SFX_B1[i * dim + j] = v
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    return 1u64
+}
+fn sfx_maxd() -> u64 @export { return SFX_MAXD }
+fn sfx_maxsum() -> u64 @export { return SFX_MAXSUM }
+fn sfx_np() -> u64 @export { return SFX_NP }
+fn sfx_bdim() -> u64 @export { return SFX_BDIM }
+/* ---- the locus door (ΤΟΜΕΥΣ Addendum I): the spatial and the temporal weight of one class, set apart; the gauge-fixing, the orbits and the
+ *      blocks follow as for any class function.  Class indices are in order of first appearance: Z2 (+1, -1); Q8 (1, -1, +-i, +-j, +-k);
+ *      Z4 (0, 1, 2, 3); Z6 (0, 1, 2, 3, 4, 5); S3 (e, rotations, reflections). ---- */
+fn sfx_setw(c: u64, ds: u64, kt: u64) -> u64 @export { if c >= SFX_NCLS { SFX_ERR = 3u64   return 0u64 }   SFX_W[c] = ds   SFX_WT[c] = kt   return 1u64 }
+fn sfx_ncls() -> u64 @export { return SFX_NCLS }
+fn sfx_wt(c: u64) -> u64 @export { return SFX_WT[c] }
+fn sfx_ws(c: u64) -> u64 @export { return SFX_W[c] }
+/* ---- the doors for the inversion law's kernel instance (the author, 06:4x): the orbit basis itself, for N <= 64 after sfx_full(0) ---- */
+fn sfx_orep(o: u64) -> u64 @export { return SFX_OREP[o] }
+fn sfx_od(o: u64) -> u64 @export { return SFX_OD[o] }
+fn sfx_fm(o: u64, o2: u64) -> u64 @export { return SFX_FM[o * 64u64 + o2] }
+/* chi_all on the orbit: the product of the free links' signs (Z2 only: element 0 is +1, element 1 is -1; refused by name otherwise) */
+fn sfx_chiall(o: u64) -> u64 @export {
+    if SFX_GK != 0u64 { SFX_ERR = 16u64   return 0u64 }
+    decode(SFX_OREP[o])
+    let mut sg : u64 = 0u64
+    let mut i : u64 = 0u64
+    while i < SFX_NF { sg = sg + SFX_C[SFX_FREE[i]]   i = i + 1u64 }
+    if (sg & 1u64) == 0u64 { return 1u64 }
+    return 2u64                                            /* 1 = +1, 2 = -1 */
+}
+/* R_f on the orbit: the representative translated by f = the x-links of row 0 (links 0 and 2 at 2x2) negated, re-fixed along the tree, canonised */
+fn sfx_rf(o: u64) -> u64 @export {
+    if SFX_GK != 0u64 { SFX_ERR = 16u64   return 0u64 }
+    decode(SFX_OREP[o])
+    let mut x : u64 = 0u64
+    while x < SFX_LX { let l : u64 = xlink(site(x, 0u64))   SFX_C[l] = gmul(1u64, SFX_C[l])   x = x + 1u64 }
+    refix()
+    let k : u64 = canon()
+    return SFX_ORBOF[k]
+}
+/* ---- read-only doors for a block-road audit (ΤΟΜΕΥΣ, 10-27): the S-action table, the block rows, the stabilisers, one kernel entry ---- */
+fn sfx_sact(o: u64, sb: u64) -> u64 @export { return SFX_SACT[o * 16u64 + sb] }
+fn sfx_bidx(i: u64) -> u64 @export { return SFX_BIDX[i] }
+fn sfx_srep(r: u64) -> u64 @export { return SFX_SREP[r] }
+fn sfx_sstab(r: u64) -> u64 @export { return SFX_SSTAB[r] }
+fn sfx_osz(o: u64) -> u64 @export { return SFX_OSZ[o] }
+/* K(rep o, orbit o2) summed over o2: the kernel evaluated afresh (never the stored row) */
+fn sfx_kof(o: u64, o2: u64) -> u64 @export { decode(SFX_OREP[o])   return ksum(o2) }

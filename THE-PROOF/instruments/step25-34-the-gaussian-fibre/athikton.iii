@@ -1,0 +1,1108 @@
+/* STDLIB/iii/aether/athikton.iii -- ΑΘΙΚΤΟΝ, THE UNTOUCHED.
+ *
+ * IT REPORTS THE NUMBER OF HOMOMORPHISMS FROM A CLOSED ORIENTABLE SURFACE GROUP INTO A FINITE
+ * GROUP WITHOUT VISITING ONE OF THEM.  The name is what it does not do.
+ *
+ * WHAT IT PROVES.  Frobenius 1896: for the genus-g surface group
+ *
+ *     pi_1(Sigma_g) = < a1,b1,...,ag,bg | product of [ai,bi] >
+ *
+ *     |Hom(pi_1(Sigma_g), G)|  =  |G|^(2g-1) * SUM over irreducible chi of chi(1)^(2-2g)
+ *
+ * The right side is a sum of RATIONALS and this organ evaluates no rational.  It does not have to.
+ * Every irreducible degree DIVIDES the group order (Frobenius' divisibility theorem), so |G|/d is
+ * an integer and the identity rearranges to
+ *
+ *     |Hom(pi_1(Sigma_g), G)|  =  |G| * SUM over i of (|G|/d_i)^(2g-2)
+ *
+ * ALL INTEGER.  NO RATIONAL, NO FLOAT, NO DIVISION THAT IS NOT EXACT.  This is the move ΑΝΕΛΙΞΙΣ
+ * made against the DFT and ΚΥΚΛΟΤΟΜΙΑ against the root of unity: the field spends precision
+ * approximating a number the integers already contain exactly.
+ *
+ * WHAT IT REFUSES.  It refuses to claim that counting is certifiable.  #P is #P and the permanent
+ * is #P-hard.  ΑΘΙΚΤΟΝ moves ONE MORE MEMBER through a door the class does not have -- the third
+ * after Kirchhoff's spanning trees and Kasteleyn's matchings -- and the refused class stays intact.
+ * It refuses a group whose irrational rows it cannot FORCE BY NAME rather than approximating them --
+ * and it never needed their values, only their degrees (the completion, below).
+ * It refuses a genus whose answer would not fit BY NAME rather than wrapping.
+ *
+ * WHY THE DEGREE VECTOR ALONE WOULD NOT BE A CERTIFICATE, WHICH IS THE WHOLE DESIGN.
+ * A degree vector is forgeable.  SUM d_i^2 = |G| holds for ANY orthonormal basis of class
+ * functions by Parseval, so it carries no information beyond orthonormality; and at |G| = 6 both
+ * (1,1,2) and (1,1,1,1,1,1) satisfy it, which is S3 against Z6 -- two different counts.  So the
+ * certificate is the group, its conjugacy structure and its table, IN THAT ORDER, each link
+ * verified from the one before:
+ *
+ *   1. THE GROUP        the multiplication table; closure, identity, inverses, associativity.
+ *   2. THE CLASSES      every element's class and a conjugator to the representative, plus each
+ *                       representative's CENTRALISER ORDER.  |B_c| = |G|/|Z(rep)| forces B_c to be
+ *                       EXACTLY the class of rep, so the blocks ARE the classes, so the k
+ *                       representatives are pairwise non-conjugate and k is certified.
+ *   3. THE TABLE        integer, k x k, against the certified class sizes: both orthogonalities.
+ *   4. THE BINDING      the class-algebra homomorphism identity, with denominators cleared:
+ *
+ *                         (s_i X_i)(s_j X_j) = d * SUM_k a_ijk (s_k X_k)
+ *
+ *                       where a_ijk = #{(x,y) : x in C_i, y in C_j, xy = g_k} is computed FROM THE
+ *                       MULTIPLICATION TABLE.  The algebra homomorphisms Z(CG) -> C are EXACTLY the
+ *                       k irreducible characters, so a row satisfying this IS an irreducible
+ *                       character and nothing else can be.  A CHECKER THAT SKIPPED STEP 4 WOULD
+ *                       CERTIFY NOTHING.
+ *
+ * AND THAT IS WHY THE PRODUCER NEVER GUESSES THE DEGREE MULTISET.  It sweeps every divisor d of
+ * |G| with d*d <= |G|, searches the box [-d,d] over the non-identity classes, and keeps exactly the
+ * rows that satisfy orthonormality AND the class-algebra identity.  SUM d_i^2 = |G| is then a
+ * DERIVED CHECK on what the sweep found rather than a constraint fed into it -- which is strictly
+ * stronger, and it is what lets the rows the sweep cannot write be FORCED instead of guessed.
+ *
+ * THE TWO ROADS AND THE REFUSAL, named in the preregistration before any of this ran:
+ *   - abelian G: every degree is 1 and k = |G|, so |Hom| = |G|^(2g) and the certificate is a
+ *     commutativity check.  No character theory is invoked at all.
+ *   - non-abelian with an integer table: the four-step certificate above.
+ *   - anything else: REFUSED BY NAME.  Entries in Z[zeta_n] are ΚΥΚΛΟΤΟΜΙΑ's territory.
+ * Where BOTH roads can speak they are REQUIRED TO AGREE, which is the two-sided lock: Z2xZ2 is
+ * abelian AND has an integer table, so a disagreement there convicts one of the two roads.
+ *
+ * THE THIRD BULLET WAS BELIEF, AND A LATER ACT PULLED IT DOWN (2026-09-25, preregistered strictly
+ * first at DOCS/III-KATHAIRESIS-THE-PULLING-DOWN-PREREGISTRATION.md; law 37's fifth firing).  The count
+ * reads DEGREES.  A row whose values live in Z[zeta_n] still has an integer degree, and the missing
+ * degrees are constrained by two numbers this organ already certifies: k (the class certificate) and
+ * SUM d^2 over the rows it found.  If the residue R = |G| - SUM d^2 equals the number m = k - NR of
+ * rows it could not write, every one of them is LINEAR -- each has d^2 >= 1 and they sum to m.  So:
+ *   - irrational rows FORCED by that positivity (A4: m = 2, R = 2): the certificate, COMPLETED with m
+ *     linear rows.  Not one value of a missing row is written, here or anywhere.
+ *   - irrational rows positivity does NOT force (R > m): REFUSED BY NAME, E_UNFORCED.  The divisor
+ *     forcing that would decide them is ΜΟΝΑΧΟΣ', composed one organ up; this organ stays R-1.
+ * R < m cannot happen for distinct irreducibles, so it is read as a corrupt sweep (E_GRP), never
+ * as a count.  The rational character set and its row count keep their meanings (akt_rational,
+ * akt_nr); the completion has its own doors.
+ *
+ * CREDIT, W = 0.  Frobenius 1896 (the commutator-count formula), Burnside (the class algebra),
+ * Frobenius again (degree divisibility), Mednykh (the surface-group reading).  ΗΛΙΓΜΟΣ owns the
+ * enumeration road and hand-derived 486 / 1296 / 2176 in its own preregistration -- THOSE THREE
+ * NUMBERS ARE A REGRESSION GUARD HERE AND THIS ORGAN CLAIMS NO FORESIGHT FOR THEM.  ΠΙΝΑΞ owns the
+ * character tables by Dixon and measured that Q8 and D4 have equal tables up to a class
+ * permutation; ΚΥΚΛΟΤΟΜΙΑ owns Z[zeta_n].  The earning here is the BINDING and the REFUSALS.
+ *
+ * PREREGISTERED at DOCS/III-PERASMA-THE-CROSSING-PREREGISTRATION.md, committed strictly before one
+ * line of this file existed.  A prediction made after the number is a postdiction.
+ */
+module aether_athikton
+
+extern @abi(c-msvc-x64) fn putchar(c: i32) -> i32 from "msvcrt"
+
+const AKT_GCAP : u64 = 96u64          /* the largest group order carried -- an ADMITTED CLASS */
+const AKT_KCAP : u64 = 24u64           /* the largest class count carried */
+const AKT_BCAP : u64 = 2000000u64     /* the brute-force wall: tuples we will actually walk.
+                                       * A CAP IS AN ADMITTED CLASS (ΥΠΕΡΧΥΣΙΣ), so it is a
+                                       * constant with a name and a refusal, never a silent stop. */
+
+const AKT_OK      : u64 = 0u64
+const AKT_E_ORD   : u64 = 1u64        /* a group order past AKT_GCAP */
+const AKT_E_GRP   : u64 = 2u64        /* the table is not a group */
+const AKT_E_KCAP  : u64 = 3u64        /* more classes than AKT_KCAP */
+/* code 4 was E_IRRAT, "the character table is not rational".  The completion made it unreachable --
+ * an irrational table is no longer a reason -- so it is DELETED (law 20(ii)) and never reused: an old
+ * run file reading 4 still means what it meant. */
+const AKT_E_OVF   : u64 = 5u64        /* the count would not fit in u64 -- REFUSED, not wrapped */
+const AKT_E_WALL  : u64 = 6u64        /* the brute-force road is past AKT_BCAP -- REFUSED, not run */
+const AKT_E_GID   : u64 = 7u64        /* no such group id */
+const AKT_E_PWALL : u64 = 8u64        /* the TABLE search is past AKT_PCAP -- REFUSED, not run */
+const AKT_E_UNFORCED : u64 = 9u64     /* irrational rows whose degrees POSITIVITY does not force (R > m):
+                                       * the divisor forcing is ΜΟΝΑΧΟΣ', one organ up -- REFUSED BY NAME */
+
+/* THE TABLE SEARCH'S WALL, AND WHY IT DID NOT EXIST UNTIL NOW.
+ *
+ * akt_chartab is a BRUTE-FORCE ODOMETER: for every divisor d of |G| with d^2 <= |G| it walks every
+ * row in [-d, d]^(k-1), which is (2d+1)^(k-1) boxes.  IT COUNTS THEM in AKT_PNODE and EXPORTS the
+ * count -- so the cost was always visible -- BUT NOTHING EVER COMPARED IT TO ANYTHING.
+ *
+ * IT DID NOT NEED TO WHILE AKT_KCAP WAS 8.  The class count bounds the exponent, so the worst case
+ * this organ could ever reach was 9^7 = 4,782,969 boxes: finite, fast, and safe by accident of a
+ * constant.  ΕΥΡΥΧΩΡΙΑ raised KCAP to 24 for a caller that needed order-96 centralisers, AND THAT
+ * REMOVED THE IMPLICIT BOUND WITHOUT ADDING AN EXPLICIT ONE.  At |Z| = 96 with k = 12 the d = 8
+ * sweep is 17^11 = 34,271,896,307,633 boxes -- the organ does not refuse, it HANGS.
+ *
+ * A CAP IS AN ADMITTED CLASS, AND RAISING ONE CAN TURN A STRUCTURAL SAFETY INTO A HANG.  The prereg
+ * priced this as 27x (the K^3 arrays) and the truth is EXPONENTIAL IN K, which is a correction to
+ * that page and not to this code.  The organ's own brute road already carries AKT_BCAP and refuses
+ * by name past it; the table road now carries the same discipline, so a search too large is a
+ * REFUSAL a caller can read rather than a run nobody can end. */
+const AKT_PCAP : u64 = 8000000u64     /* boxes the table search will actually walk.  Chosen ABOVE the
+                                       * 4,782,969 that KCAP = 8 could reach, so no group that worked
+                                       * before can refuse now -- the wall admits the whole old
+                                       * admitted class and nothing that worked has moved. */
+
+var AKT_ERR : u64 = 0u64
+
+/* ---- the group ---- */
+var AKT_N  : u64 = 0u64               /* |G| */
+var AKT_M  : [u64; 9216]               /* AKT_GCAP^2 -- the multiplication table */
+var AKT_AB : u64 = 0u64               /* 1 iff abelian */
+
+/* ---- the conjugacy structure ---- */
+var AKT_K   : u64 = 0u64              /* number of classes */
+var AKT_CL  : [u64; 96]               /* class index of each element */
+var AKT_CJ  : [u64; 96]               /* a conjugator carrying the element to its representative */
+var AKT_REP : [u64; 24]                /* class representatives */
+var AKT_SZ  : [u64; 24]                /* class sizes */
+var AKT_ZC  : [u64; 24]                /* centraliser order of each representative */
+
+/* ---- the class algebra ---- */
+var AKT_A : [u64; 13824]                /* AKT_KCAP^3 -- structure constants a_ijk */
+
+/* ---- the character table ---- */
+var AKT_NR  : u64 = 0u64              /* rows found */
+var AKT_X   : [i64; 576]               /* AKT_KCAP^2 -- the integer table */
+var AKT_D   : [u64; 24]                /* degrees */
+var AKT_ROW : [i64; 24]                /* search scratch */
+var AKT_DIG : [u64; 24]                /* odometer scratch for the row search */
+
+/* ---- cost registers: DISTINCT QUESTIONS, never a running total (law 43) ---- */
+var AKT_PNODE : u64 = 0u64            /* boxes tested by the table search -- the PRODUCE cost */
+var AKT_VOPS  : u64 = 0u64            /* operations a verifier spends -- the VERIFY cost */
+var AKT_BRUTE : u64 = 0u64            /* tuples actually walked on the enumeration road */
+
+var AKT_W0 : u64 = 0u64
+
+fn akt_err() -> u64 @export { return AKT_ERR }
+fn akt_clear() -> u64 @export { AKT_ERR = 0u64   return 0u64 }
+fn akt_w0() -> u64 @export { return AKT_W0 }
+fn akt_n() -> u64 @export { return AKT_N }
+fn akt_k() -> u64 @export { return AKT_K }
+fn akt_nr() -> u64 @export { return AKT_NR }
+fn akt_ab() -> u64 @export { return AKT_AB }
+fn akt_deg(i: u64) -> u64 @export { if i >= AKT_KCAP { return 0u64 }   return AKT_D[i] }
+fn akt_sz(i: u64) -> u64 @export { if i >= AKT_KCAP { return 0u64 }   return AKT_SZ[i] }
+fn akt_rep(i: u64) -> u64 @export { if i >= AKT_KCAP { return 0u64 }   return AKT_REP[i] }
+fn akt_cl(g: u64) -> u64 @export { if g >= AKT_GCAP { return 0u64 }   return AKT_CL[g] }
+fn akt_cj(g: u64) -> u64 @export { if g >= AKT_GCAP { return 0u64 }   return AKT_CJ[g] }
+fn akt_zc(i: u64) -> u64 @export { if i >= AKT_KCAP { return 0u64 }   return AKT_ZC[i] }
+fn akt_mul(a: u64, b: u64) -> u64 @export { if a >= AKT_N { return 0u64 }   if b >= AKT_N { return 0u64 }   return AKT_M[a*AKT_GCAP + b] }
+fn akt_x(r: u64, c: u64) -> i64 @export { if r >= AKT_KCAP { return 0i64 }   if c >= AKT_KCAP { return 0i64 }   return AKT_X[r*AKT_KCAP + c] }
+fn akt_pnode() -> u64 @export { return AKT_PNODE }
+fn akt_vops() -> u64 @export { return AKT_VOPS }
+fn akt_brute() -> u64 @export { return AKT_BRUTE }
+
+/* ================================================================= THE GROUPS
+ * Built from RULES, never transcribed.  A transcribed table is a place for a typo to become a
+ * theorem; a rule is checkable by reading it.  Element 0 is the identity in every construction.
+ */
+
+/* Z_n: the element IS its residue. */
+fn akt_build_cyclic(n: u64) -> u64 {
+    let mut i : u64 = 0u64
+    while i < n {
+        let mut j : u64 = 0u64
+        while j < n { AKT_M[i*AKT_GCAP + j] = (i + j) % n   j = j + 1u64 }
+        i = i + 1u64
+    }
+    AKT_N = n
+    return 0u64
+}
+
+/* Z_a x Z_b: index = x*b + y. */
+fn akt_build_prod(a: u64, b: u64) -> u64 {
+    let n : u64 = a * b
+    let mut i : u64 = 0u64
+    while i < n {
+        let xi : u64 = i / b
+        let yi : u64 = i % b
+        let mut j : u64 = 0u64
+        while j < n {
+            let xj : u64 = j / b
+            let yj : u64 = j % b
+            AKT_M[i*AKT_GCAP + j] = ((xi + xj) % a) * b + ((yi + yj) % b)
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    AKT_N = n
+    return 0u64
+}
+
+/* S_m as permutations in LEHMER order.  Element = the rank of a permutation of {0..m-1}; the
+ * product is composition.  Decoded and re-encoded on the fly so the table is a consequence of the
+ * permutation law and not of a hand-written array. */
+var AKT_PA : [u64; 6]
+var AKT_PB : [u64; 6]
+var AKT_PC : [u64; 6]
+var AKT_AV : [u64; 6]                 /* the shrinking available-symbol list, module level because
+                                       * a local array in a function that calls another is the
+                                       * frame-corruption trap this tree has recorded */
+
+fn akt_unrank(r: u64, m: u64, which: u64) -> u64 {
+    /* which = 0 writes AKT_PA, 1 writes AKT_PB, 2 writes AKT_PC */
+    let mut q : u64 = 0u64
+    while q < 6u64 { AKT_AV[q] = q   q = q + 1u64 }
+    let mut navail : u64 = m
+    let mut rr : u64 = r
+    let mut f : u64 = 1u64
+    let mut t : u64 = 1u64
+    while t < m { f = f * t   t = t + 1u64 }          /* f = (m-1)! */
+    let mut pos : u64 = 0u64
+    while pos < m {
+        let idx : u64 = rr / f
+        let v : u64 = AKT_AV[idx]
+        if which == 0u64 { AKT_PA[pos] = v }
+        if which == 1u64 { AKT_PB[pos] = v }
+        if which == 2u64 { AKT_PC[pos] = v }
+        let mut s : u64 = idx
+        while s + 1u64 < navail { AKT_AV[s] = AKT_AV[s+1u64]   s = s + 1u64 }
+        navail = navail - 1u64
+        rr = rr % f
+        if navail > 0u64 { f = f / navail }
+        pos = pos + 1u64
+    }
+    return 0u64
+}
+
+fn akt_rank(m: u64) -> u64 {
+    /* rank AKT_PC back to an index, same Lehmer order */
+    let mut q : u64 = 0u64
+    while q < 6u64 { AKT_AV[q] = q   q = q + 1u64 }
+    let mut navail : u64 = m
+    let mut f : u64 = 1u64
+    let mut t : u64 = 1u64
+    while t < m { f = f * t   t = t + 1u64 }
+    let mut acc : u64 = 0u64
+    let mut pos : u64 = 0u64
+    while pos < m {
+        let v : u64 = AKT_PC[pos]
+        let mut idx : u64 = 0u64
+        let mut s : u64 = 0u64
+        while s < navail { if AKT_AV[s] == v { idx = s }   s = s + 1u64 }
+        acc = acc + idx * f
+        s = idx
+        while s + 1u64 < navail { AKT_AV[s] = AKT_AV[s+1u64]   s = s + 1u64 }
+        navail = navail - 1u64
+        if navail > 0u64 { f = f / navail }
+        pos = pos + 1u64
+    }
+    return acc
+}
+
+fn akt_build_sym(m: u64) -> u64 {
+    let mut n : u64 = 1u64
+    let mut t : u64 = 2u64
+    while t <= m { n = n * t   t = t + 1u64 }
+    let mut i : u64 = 0u64
+    while i < n {
+        let mut j : u64 = 0u64
+        while j < n {
+            akt_unrank(i, m, 0u64)
+            akt_unrank(j, m, 1u64)
+            /* (i*j)(x) = i(j(x)) -- composition, i applied second */
+            let mut x : u64 = 0u64
+            while x < m { AKT_PC[x] = AKT_PA[AKT_PB[x]]   x = x + 1u64 }
+            AKT_M[i*AKT_GCAP + j] = akt_rank(m)
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    AKT_N = n
+    return 0u64
+}
+
+/* Q8.  Element = basis*2 + sign, basis 0..3 = 1,i,j,k and sign 0 = +, 1 = -.
+ * The quaternion law i*i = j*j = k*k = ijk = -1 is written once, as a rule. */
+fn akt_qnext(b: u64) -> u64 {
+    if b == 1u64 { return 2u64 }
+    if b == 2u64 { return 3u64 }
+    return 1u64
+}
+
+fn akt_qmul(ba: u64, bb: u64, which: u64) -> u64 {
+    /* returns basis if which==0, sign if which==1 */
+    if ba == 0u64 { if which == 0u64 { return bb }   return 0u64 }
+    if bb == 0u64 { if which == 0u64 { return ba }   return 0u64 }
+    if ba == bb { if which == 0u64 { return 0u64 }   return 1u64 }
+    /* i*j=k, j*k=i, k*i=j is the CYCLIC order and carries sign +; the reverse carries sign -.
+     * Both land on the third basis element, and which third it is differs between the two cases,
+     * which is the whole content of the quaternion law. */
+    let nxt : u64 = akt_qnext(ba)
+    if bb == nxt {
+        if which == 0u64 { return akt_qnext(bb) }
+        return 0u64
+    }
+    if which == 0u64 { return nxt }
+    return 1u64
+}
+
+fn akt_build_q8() -> u64 {
+    let mut i : u64 = 0u64
+    while i < 8u64 {
+        let bi : u64 = i / 2u64
+        let si : u64 = i % 2u64
+        let mut j : u64 = 0u64
+        while j < 8u64 {
+            let bj : u64 = j / 2u64
+            let sj : u64 = j % 2u64
+            let bb : u64 = akt_qmul(bi, bj, 0u64)
+            let ss : u64 = (akt_qmul(bi, bj, 1u64) + si + sj) % 2u64
+            AKT_M[i*AKT_GCAP + j] = bb*2u64 + ss
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    AKT_N = 8u64
+    return 0u64
+}
+
+/* D_m, the dihedral group of order 2m.  Element = r*2 + f, r in 0..m-1, f in {0,1}.
+ * (r1,f1)*(r2,f2) = (r1 + (-1)^f1 r2, f1 xor f2). */
+fn akt_build_dih(m: u64) -> u64 {
+    let n : u64 = 2u64 * m
+    let mut i : u64 = 0u64
+    while i < n {
+        let r1 : u64 = i / 2u64
+        let f1 : u64 = i % 2u64
+        let mut j : u64 = 0u64
+        while j < n {
+            let r2 : u64 = j / 2u64
+            let f2 : u64 = j % 2u64
+            let mut rr : u64 = (r1 + r2) % m
+            if f1 != 0u64 { rr = (r1 + m - r2) % m }
+            AKT_M[i*AKT_GCAP + j] = rr*2u64 + ((f1 + f2) % 2u64)
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    AKT_N = n
+    return 0u64
+}
+
+/* A4: the even permutations of S4, re-indexed 0..11 keeping composition. */
+var AKT_EV : [u64; 12]
+
+fn akt_parity(r: u64) -> u64 {
+    akt_unrank(r, 4u64, 0u64)
+    let mut inv : u64 = 0u64
+    let mut a : u64 = 0u64
+    while a < 4u64 {
+        let mut b : u64 = a + 1u64
+        while b < 4u64 { if AKT_PA[a] > AKT_PA[b] { inv = inv + 1u64 }   b = b + 1u64 }
+        a = a + 1u64
+    }
+    return inv % 2u64
+}
+
+fn akt_build_a4() -> u64 {
+    /* collect the even elements of S4 in Lehmer order */
+    let mut cnt : u64 = 0u64
+    let mut r : u64 = 0u64
+    while r < 24u64 {
+        if akt_parity(r) == 0u64 { AKT_EV[cnt] = r   cnt = cnt + 1u64 }
+        r = r + 1u64
+    }
+    let mut i : u64 = 0u64
+    while i < 12u64 {
+        let mut j : u64 = 0u64
+        while j < 12u64 {
+            akt_unrank(AKT_EV[i], 4u64, 0u64)
+            akt_unrank(AKT_EV[j], 4u64, 1u64)
+            let mut x : u64 = 0u64
+            while x < 4u64 { AKT_PC[x] = AKT_PA[AKT_PB[x]]   x = x + 1u64 }
+            let prod : u64 = akt_rank(4u64)
+            let mut w : u64 = 0u64
+            let mut found : u64 = 0u64
+            while w < 12u64 { if AKT_EV[w] == prod { found = w }   w = w + 1u64 }
+            AKT_M[i*AKT_GCAP + j] = found
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    AKT_N = 12u64
+    return 0u64
+}
+
+/* ================================================================= THE GROUP LAW, VERIFIED
+ * The organ does not trust its own builders.  A table that is not a group would make every number
+ * downstream a fiction, and an internal identity cannot see a wrong table (law 3) -- so the law is
+ * checked from the table itself, exhaustively, before anything reads it.
+ */
+fn akt_isgroup() -> u64 {
+    let n : u64 = AKT_N
+    /* identity: element 0 */
+    let mut i : u64 = 0u64
+    while i < n {
+        if AKT_M[0u64*AKT_GCAP + i] != i { return 1u64 }
+        if AKT_M[i*AKT_GCAP + 0u64] != i { return 1u64 }
+        i = i + 1u64
+    }
+    /* closure and inverses */
+    i = 0u64
+    while i < n {
+        let mut inv : u64 = n
+        let mut j : u64 = 0u64
+        while j < n {
+            let p : u64 = AKT_M[i*AKT_GCAP + j]
+            if p >= n { return 1u64 }
+            if p == 0u64 { inv = j }
+            j = j + 1u64
+        }
+        if inv == n { return 1u64 }
+        i = i + 1u64
+    }
+    /* associativity, all n^3 triples */
+    i = 0u64
+    while i < n {
+        let mut j : u64 = 0u64
+        while j < n {
+            let ij : u64 = AKT_M[i*AKT_GCAP + j]
+            let mut k : u64 = 0u64
+            while k < n {
+                let jk : u64 = AKT_M[j*AKT_GCAP + k]
+                if AKT_M[ij*AKT_GCAP + k] != AKT_M[i*AKT_GCAP + jk] { return 1u64 }
+                k = k + 1u64
+            }
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    return 0u64
+}
+
+fn akt_isabelian() -> u64 {
+    let n : u64 = AKT_N
+    let mut i : u64 = 0u64
+    while i < n {
+        let mut j : u64 = 0u64
+        while j < n {
+            if AKT_M[i*AKT_GCAP + j] != AKT_M[j*AKT_GCAP + i] { return 0u64 }
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    return 1u64
+}
+
+fn akt_inv(a: u64) -> u64 {
+    let mut j : u64 = 0u64
+    while j < AKT_N {
+        if AKT_M[a*AKT_GCAP + j] == 0u64 { return j }
+        j = j + 1u64
+    }
+    return 0u64
+}
+
+/* ================================================================= THE CLASSES
+ * Step 2 of the certificate.  For every element a conjugator to its representative, and for every
+ * representative its CENTRALISER ORDER.  The size identity |B_c| = |G|/|Z(rep)| is what forces the
+ * block to be EXACTLY the class -- a cover alone would not, since two conjugate representatives
+ * would still cover.
+ */
+fn akt_classes() -> u64 @export {
+    let n : u64 = AKT_N
+    let mut g : u64 = 0u64
+    while g < n { AKT_CL[g] = AKT_GCAP   g = g + 1u64 }
+    AKT_K = 0u64
+    g = 0u64
+    while g < n {
+        if AKT_CL[g] == AKT_GCAP {
+            if AKT_K >= AKT_KCAP { AKT_ERR = AKT_E_KCAP   return 0u64 }
+            let c : u64 = AKT_K
+            AKT_REP[c] = g
+            AKT_CL[g] = c
+            AKT_CJ[g] = 0u64
+            let mut sz : u64 = 1u64
+            let mut z : u64 = 0u64
+            let mut h : u64 = 0u64
+            while h < n {
+                let hi : u64 = akt_inv(h)
+                let cg : u64 = AKT_M[AKT_M[h*AKT_GCAP + g]*AKT_GCAP + hi]
+                if cg == g { z = z + 1u64 }
+                if AKT_CL[cg] == AKT_GCAP {
+                    AKT_CL[cg] = c
+                    /* the conjugator recorded carries the ELEMENT to the REPRESENTATIVE, so it is
+                     * h^-1: (h^-1) cg (h) = g.  A checker verifies exactly that. */
+                    AKT_CJ[cg] = hi
+                    sz = sz + 1u64
+                }
+                h = h + 1u64
+            }
+            AKT_SZ[c] = sz
+            AKT_ZC[c] = z
+            AKT_K = AKT_K + 1u64
+        }
+        g = g + 1u64
+    }
+    /* the size identity, checked here as well as by the stranger */
+    let mut c : u64 = 0u64
+    let mut tot : u64 = 0u64
+    while c < AKT_K {
+        if AKT_ZC[c] == 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+        if AKT_SZ[c] * AKT_ZC[c] != n { AKT_ERR = AKT_E_GRP   return 0u64 }
+        tot = tot + AKT_SZ[c]
+        c = c + 1u64
+    }
+    if tot != n { AKT_ERR = AKT_E_GRP   return 0u64 }
+    return AKT_K
+}
+
+/* ================================================================= THE CLASS ALGEBRA
+ * a_ijk = #{(x,y) : x in C_i, y in C_j, xy = g_k}.  Computed by direct counting from the
+ * multiplication table -- the same way the stranger will compute it, by a different engine.
+ */
+fn akt_struct() -> u64 @export {
+    let n : u64 = AKT_N
+    let k : u64 = AKT_K
+    /* THE WHOLE ARRAY IS CLEARED, NOT k^3 OF IT.  The index stride is AKT_KCAP and not k, so
+     * clearing k^3 entries leaves live cells from the PREVIOUS group's load standing exactly
+     * where this one will read them -- a stale-slot leak, and this tree has recorded that trap
+     * twice already.  It cost one run here and it was the first thing the numbers showed. */
+    let mut i : u64 = 0u64
+    while i < AKT_KCAP*AKT_KCAP*AKT_KCAP { AKT_A[i] = 0u64   i = i + 1u64 }
+    let mut x : u64 = 0u64
+    while x < n {
+        let ci : u64 = AKT_CL[x]
+        let mut y : u64 = 0u64
+        while y < n {
+            let cj : u64 = AKT_CL[y]
+            let ck : u64 = AKT_CL[AKT_M[x*AKT_GCAP + y]]
+            AKT_A[(ci*AKT_KCAP + cj)*AKT_KCAP + ck] = AKT_A[(ci*AKT_KCAP + cj)*AKT_KCAP + ck] + 1u64
+            y = y + 1u64
+        }
+        x = x + 1u64
+    }
+    /* a_ijk counted this way is per-CLASS-PAIR but summed over all k in C_k, so divide by |C_k|.
+     * The division is EXACT by the theorem, and the organ verifies that rather than assuming it. */
+    let mut a : u64 = 0u64
+    while a < k {
+        let mut b : u64 = 0u64
+        while b < k {
+            let mut c : u64 = 0u64
+            while c < k {
+                let idx : u64 = (a*AKT_KCAP + b)*AKT_KCAP + c
+                if AKT_A[idx] % AKT_SZ[c] != 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+                AKT_A[idx] = AKT_A[idx] / AKT_SZ[c]
+                c = c + 1u64
+            }
+            b = b + 1u64
+        }
+        a = a + 1u64
+    }
+    return 0u64
+}
+
+fn akt_a(i: u64, j: u64, k: u64) -> u64 @export {
+    if i >= AKT_KCAP { return 0u64 }
+    if j >= AKT_KCAP { return 0u64 }
+    if k >= AKT_KCAP { return 0u64 }
+    return AKT_A[(i*AKT_KCAP + j)*AKT_KCAP + k]
+}
+
+/* ================================================================= THE TABLE SEARCH
+ * THE PRODUCER.  It never guesses the degree multiset.  Every divisor d of |G| with d*d <= |G| is
+ * swept, the box [-d,d] over the k-1 non-identity classes is walked, and a row is KEPT exactly
+ * when it satisfies BOTH the orthonormality condition and the class-algebra identity.  SUM d^2 =
+ * |G| is then a check on what was found, not a constraint fed in.
+ */
+fn akt_orthonormal(d: u64) -> u64 {
+    /* <chi,chi> = (1/|G|) SUM_c s_c chi(c)^2 must be 1, i.e. SUM_c s_c chi(c)^2 = |G| */
+    let mut acc : i64 = 0i64
+    let mut c : u64 = 0u64
+    while c < AKT_K {
+        acc = acc + (AKT_SZ[c] as i64) * AKT_ROW[c] * AKT_ROW[c]
+        c = c + 1u64
+    }
+    if acc != AKT_N as i64 { return 0u64 }
+    return 1u64
+}
+
+fn akt_isalg(d: u64) -> u64 {
+    /* (s_i X_i)(s_j X_j) = d * SUM_k a_ijk (s_k X_k), all i, j -- THE BINDING */
+    let k : u64 = AKT_K
+    let mut i : u64 = 0u64
+    while i < k {
+        let mut j : u64 = 0u64
+        while j < k {
+            let lhs : i64 = (AKT_SZ[i] as i64) * AKT_ROW[i] * (AKT_SZ[j] as i64) * AKT_ROW[j]
+            let mut acc : i64 = 0i64
+            let mut t : u64 = 0u64
+            while t < k {
+                acc = acc + (AKT_A[(i*AKT_KCAP + j)*AKT_KCAP + t] as i64) * (AKT_SZ[t] as i64) * AKT_ROW[t]
+                t = t + 1u64
+            }
+            if lhs != (d as i64) * acc { return 0u64 }
+            j = j + 1u64
+        }
+        i = i + 1u64
+    }
+    return 1u64
+}
+
+fn akt_rowseen(d: u64) -> u64 {
+    let mut r : u64 = 0u64
+    while r < AKT_NR {
+        let mut same : u64 = 1u64
+        let mut c : u64 = 0u64
+        while c < AKT_K {
+            if AKT_X[r*AKT_KCAP + c] != AKT_ROW[c] { same = 0u64 }
+            c = c + 1u64
+        }
+        if same == 1u64 { return 1u64 }
+        r = r + 1u64
+    }
+    return 0u64
+}
+
+fn akt_chartab() -> u64 @export {
+    let n : u64 = AKT_N
+    let k : u64 = AKT_K
+    AKT_NR = 0u64
+    AKT_PNODE = 0u64
+    let mut d : u64 = 1u64
+    while d * d <= n {
+        if n % d == 0u64 {
+            /* odometer over the k-1 non-identity classes, each in [-d, d] */
+            let base : u64 = 2u64*d + 1u64
+            let mut c : u64 = 0u64
+            while c < k { AKT_DIG[c] = 0u64   c = c + 1u64 }
+            let mut running : u64 = 1u64
+            while running == 1u64 {
+                AKT_PNODE = AKT_PNODE + 1u64
+                /* the wall, read at every box: a search too large is a REFUSAL, not a hang */
+                if AKT_PNODE > AKT_PCAP { AKT_ERR = AKT_E_PWALL   return 0u64 }
+                AKT_ROW[0] = d as i64
+                c = 1u64
+                while c < k { AKT_ROW[c] = (AKT_DIG[c] as i64) - (d as i64)   c = c + 1u64 }
+                if akt_orthonormal(d) == 1u64 {
+                    if akt_isalg(d) == 1u64 {
+                        if akt_rowseen(d) == 0u64 {
+                            if AKT_NR >= AKT_KCAP { AKT_ERR = AKT_E_KCAP   return 0u64 }
+                            let mut w : u64 = 0u64
+                            while w < k { AKT_X[AKT_NR*AKT_KCAP + w] = AKT_ROW[w]   w = w + 1u64 }
+                            AKT_D[AKT_NR] = d
+                            AKT_NR = AKT_NR + 1u64
+                        }
+                    }
+                }
+                /* advance the odometer over positions 1..k-1 */
+                let mut p : u64 = 1u64
+                let mut carry : u64 = 1u64
+                while p < k {
+                    if carry == 1u64 {
+                        AKT_DIG[p] = AKT_DIG[p] + 1u64
+                        if AKT_DIG[p] < base { carry = 0u64 } else { AKT_DIG[p] = 0u64 }
+                    }
+                    p = p + 1u64
+                }
+                if carry == 1u64 { running = 0u64 }
+                if k == 1u64 { running = 0u64 }
+            }
+        }
+        d = d + 1u64
+    }
+    return AKT_NR
+}
+
+/* SUM d^2 = |G| and the row count -- DERIVED CHECKS on what the sweep found. */
+fn akt_rational() -> u64 @export {
+    if AKT_NR != AKT_K { return 0u64 }
+    let mut acc : u64 = 0u64
+    let mut r : u64 = 0u64
+    while r < AKT_NR { acc = acc + AKT_D[r]*AKT_D[r]   r = r + 1u64 }
+    if acc != AKT_N { return 0u64 }
+    return 1u64
+}
+
+fn akt_degsum() -> u64 @export {
+    let mut acc : u64 = 0u64
+    let mut r : u64 = 0u64
+    while r < AKT_NR { acc = acc + AKT_D[r]*AKT_D[r]   r = r + 1u64 }
+    return acc
+}
+
+/* ================================================================= THE LOAD
+ *   0 = Z2xZ2   1 = S3   2 = Z6   3 = Q8   4 = D4   5 = Z8   6 = A4   7 = S4   8 = Z2
+ */
+fn akt_load(gid: u64) -> u64 @export {
+    AKT_ERR = AKT_OK
+    AKT_N = 0u64
+    AKT_K = 0u64
+    AKT_NR = 0u64
+    let mut i : u64 = 0u64
+    while i < 576u64 { AKT_M[i] = 0u64   i = i + 1u64 }
+    if gid == 0u64 { akt_build_prod(2u64, 2u64) }
+    if gid == 1u64 { akt_build_sym(3u64) }
+    if gid == 2u64 { akt_build_cyclic(6u64) }
+    if gid == 3u64 { akt_build_q8() }
+    if gid == 4u64 { akt_build_dih(4u64) }
+    if gid == 5u64 { akt_build_cyclic(8u64) }
+    if gid == 6u64 { akt_build_a4() }
+    if gid == 7u64 { akt_build_sym(4u64) }
+    if gid == 8u64 { akt_build_cyclic(2u64) }
+    if gid > 8u64 { AKT_ERR = AKT_E_GID   return 0u64 }
+    if AKT_N == 0u64 { AKT_ERR = AKT_E_GID   return 0u64 }
+    if AKT_N > AKT_GCAP { AKT_ERR = AKT_E_ORD   return 0u64 }
+    if akt_isgroup() != 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+    AKT_AB = akt_isabelian()
+    akt_classes()
+    if AKT_ERR != AKT_OK { return 0u64 }
+    akt_struct()
+    if AKT_ERR != AKT_OK { return 0u64 }
+    akt_chartab()
+    if AKT_ERR != AKT_OK { return 0u64 }
+    return AKT_N
+}
+
+/* ================================================================= THE COUNT
+ *   |Hom| = |G| * SUM_i (|G|/d_i)^(2g-2)
+ * Every multiplication is guarded.  An answer that would not fit is REFUSED BY NAME, never wrapped
+ * -- a width of zero is a value, not a licence to read.
+ */
+const AKT_U64MAX : u64 = 18446744073709551615u64
+
+fn akt_ipow(b: u64, e: u64) -> u64 {
+    let mut acc : u64 = 1u64
+    let mut i : u64 = 0u64
+    while i < e {
+        if b != 0u64 { if acc > AKT_U64MAX / b { AKT_ERR = AKT_E_OVF   return 0u64 } }
+        acc = acc * b
+        i = i + 1u64
+    }
+    return acc
+}
+
+fn akt_hom(g: u64) -> u64 @export {
+    if AKT_N == 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+    if g == 0u64 { AKT_ERR = AKT_E_GID   return 0u64 }
+    AKT_VOPS = 0u64
+    let e : u64 = 2u64*g - 2u64
+    /* the ABELIAN ROAD: every degree is 1, k = |G|, so the sum is |G| * |G|^(2g-2) */
+    if AKT_AB == 1u64 {
+        if akt_rational() != 1u64 {
+            let t : u64 = akt_ipow(AKT_N, e)
+            if AKT_ERR != AKT_OK { return 0u64 }
+            AKT_VOPS = AKT_N * AKT_N
+            if AKT_N != 0u64 { if t > AKT_U64MAX / (AKT_N * AKT_N) { AKT_ERR = AKT_E_OVF   return 0u64 } }
+            return AKT_N * AKT_N * t
+        }
+    }
+    /* the TABLE ROAD, completed where positivity forces the rows the sweep could not write */
+    return akt_table(e)
+}
+
+/* ---- THE COMPLETION'S DOORS.  Each is read off state the sweep already certified -- nothing new is
+ * stored, so a door cannot disagree with the table it describes.  m = the rows the sweep could not
+ * write; R = what their squared degrees must sum to; forced iff R == m.  A full table reads R = m = 0,
+ * forced trivially, so every rational group passes through the completion unchanged. */
+fn akt_nmiss() -> u64 @export {
+    if AKT_NR > AKT_K { return 0u64 }
+    return AKT_K - AKT_NR
+}
+fn akt_resid() -> u64 @export {
+    let s : u64 = akt_degsum()
+    if s > AKT_N { return 0u64 }
+    return AKT_N - s
+}
+fn akt_forced() -> u64 @export {
+    if AKT_NR > AKT_K { return 0u64 }
+    let s : u64 = akt_degsum()
+    if s > AKT_N { return 0u64 }
+    if AKT_N - s == AKT_K - AKT_NR { return 1u64 }
+    return 0u64
+}
+
+/* THE TABLE ROAD, one body behind both count doors: the found rows, then the forced ones. */
+fn akt_table(e: u64) -> u64 {
+    if AKT_NR > AKT_K { AKT_ERR = AKT_E_GRP   return 0u64 }
+    let sd : u64 = akt_degsum()
+    if sd > AKT_N { AKT_ERR = AKT_E_GRP   return 0u64 }
+    /* R < m: rows squaring past what distinct irreducibles allow -- a corrupt sweep, never a count */
+    if AKT_N - sd < AKT_K - AKT_NR { AKT_ERR = AKT_E_GRP   return 0u64 }
+    if akt_forced() != 1u64 { AKT_ERR = AKT_E_UNFORCED   return 0u64 }
+    let mut acc : u64 = 0u64
+    let mut r : u64 = 0u64
+    while r < AKT_NR {
+        if AKT_N % AKT_D[r] != 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+        let t : u64 = akt_ipow(AKT_N / AKT_D[r], e)
+        if AKT_ERR != AKT_OK { return 0u64 }
+        if acc > AKT_U64MAX - t { AKT_ERR = AKT_E_OVF   return 0u64 }
+        acc = acc + t
+        AKT_VOPS = AKT_VOPS + 1u64
+        r = r + 1u64
+    }
+    /* the m forced LINEAR rows, each contributing (|G|/1)^e -- their values are never written */
+    let m : u64 = AKT_K - AKT_NR
+    if m > 0u64 {
+        let tl : u64 = akt_ipow(AKT_N, e)
+        if AKT_ERR != AKT_OK { return 0u64 }
+        if tl > AKT_U64MAX / m { AKT_ERR = AKT_E_OVF   return 0u64 }
+        if acc > AKT_U64MAX - m * tl { AKT_ERR = AKT_E_OVF   return 0u64 }
+        acc = acc + m * tl
+        AKT_VOPS = AKT_VOPS + m
+    }
+    if AKT_N != 0u64 { if acc > AKT_U64MAX / AKT_N { AKT_ERR = AKT_E_OVF   return 0u64 } }
+    AKT_VOPS = AKT_VOPS + AKT_N * AKT_N
+    return AKT_N * acc
+}
+
+/* THE COMPLETED ROAD ALONE, the abelian road bypassed -- so the two can be held against each other
+ * where both speak: Z6 and Z8 are abelian AND their tables are irrational (the lock's second pair). */
+fn akt_hom_comp(g: u64) -> u64 @export {
+    if AKT_N == 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+    if g == 0u64 { AKT_ERR = AKT_E_GID   return 0u64 }
+    AKT_VOPS = 0u64
+    return akt_table(2u64*g - 2u64)
+}
+
+/* ================================================================= THE ENUMERATION ROAD
+ * GROUND TRUTH, AND THE WALL.  It walks every one of the |G|^(2g) tuples and multiplies out the
+ * commutator product.  This is what the certificate replaces, and its cost is what makes the
+ * replacement worth naming.  Past AKT_BCAP it REFUSES BY NAME rather than running for an hour --
+ * and THAT REFUSAL IS THE CROSSING, DRIVEN: the enumeration hits a wall and the certificate does
+ * not even slow down.
+ */
+var AKT_TUP : [u64; 16]
+var AKT_CM  : [u64; 9216]              /* the commutator table, built once per load.  Tabulating
+                                       * [a,b] does NOT make this a cleverer counter -- every one
+                                       * of the |G|^(2g) tuples is still visited.  It only stops
+                                       * the ground-truth road from being slower than it has to be. */
+
+fn akt_comm(a: u64, b: u64) -> u64 {
+    let ai : u64 = akt_inv(a)
+    let bi : u64 = akt_inv(b)
+    return AKT_M[AKT_M[AKT_M[a*AKT_GCAP + b]*AKT_GCAP + ai]*AKT_GCAP + bi]
+}
+
+fn akt_commtab() -> u64 {
+    let n : u64 = AKT_N
+    let mut a : u64 = 0u64
+    while a < n {
+        let mut b : u64 = 0u64
+        while b < n { AKT_CM[a*AKT_GCAP + b] = akt_comm(a, b)   b = b + 1u64 }
+        a = a + 1u64
+    }
+    return 0u64
+}
+
+fn akt_brutehom(g: u64) -> u64 @export {
+    if AKT_N == 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+    let d : u64 = 2u64*g
+    if d > 16u64 { AKT_ERR = AKT_E_WALL   return 0u64 }
+    let tot : u64 = akt_ipow(AKT_N, d)
+    if AKT_ERR != AKT_OK { return 0u64 }
+    if tot > AKT_BCAP { AKT_ERR = AKT_E_WALL   return 0u64 }
+    akt_commtab()
+    AKT_BRUTE = 0u64
+    let mut i : u64 = 0u64
+    while i < d { AKT_TUP[i] = 0u64   i = i + 1u64 }
+    let mut hits : u64 = 0u64
+    let mut running : u64 = 1u64
+    while running == 1u64 {
+        AKT_BRUTE = AKT_BRUTE + 1u64
+        let mut prod : u64 = 0u64
+        let mut t : u64 = 0u64
+        while t < g {
+            prod = AKT_M[prod*AKT_GCAP + AKT_CM[AKT_TUP[2u64*t]*AKT_GCAP + AKT_TUP[2u64*t + 1u64]]]
+            t = t + 1u64
+        }
+        if prod == 0u64 { hits = hits + 1u64 }
+        let mut p : u64 = 0u64
+        let mut carry : u64 = 1u64
+        while p < d {
+            if carry == 1u64 {
+                AKT_TUP[p] = AKT_TUP[p] + 1u64
+                if AKT_TUP[p] < AKT_N { carry = 0u64 } else { AKT_TUP[p] = 0u64 }
+            }
+            p = p + 1u64
+        }
+        if carry == 1u64 { running = 0u64 }
+    }
+    return hits
+}
+
+/* ================================================================= THE SELFPROVE
+ * IT RUNS THE ORGAN.  IT PROVES NOTHING.  The known answers live in the gate's pins and in the
+ * independent checker; this returns 0 when nothing refused and a nonzero code when something did.
+ */
+fn akt_selfprove() -> u64 @export {
+    AKT_W0 = 0u64
+    AKT_ERR = AKT_OK
+    let mut bad : u64 = 0u64
+    let mut gid : u64 = 0u64
+    while gid < 9u64 {
+        akt_load(gid)
+        if AKT_ERR != AKT_OK { if gid != 6u64 { bad = bad + 1u64 } }
+        AKT_ERR = AKT_OK
+        gid = gid + 1u64
+    }
+    akt_load(1u64)
+    if AKT_ERR != AKT_OK { bad = bad + 1u64 }
+    if akt_hom(2u64) != 486u64 { bad = bad + 1u64 }
+    AKT_ERR = AKT_OK
+    return bad
+}
+
+/* ================================================================= THE STAGED DOOR
+ * akt_load builds nine groups FROM RULES, so akt_hom could only ever count for those nine.  That is
+ * not a property of Frobenius -- the formula is about ANY finite group -- it is a property of how
+ * the object gets in.  A consumer holding a group this organ did not build (a CENTRALISER, say) had
+ * no way to spend the engine and would have to reimplement Mednykh, which is law 26-bis's defect by
+ * construction: a copied engine drifts and nothing in a copy-pasted world ever compares two copies.
+ *
+ * THIS DOOR ADDS NO EXTERN AND COMPOSES NOTHING.  R-1 stands: the organ still reaches zero organs
+ * and its own enumeration still checks its own certificate.  What changes is only WHERE THE TABLE
+ * COMES FROM, and every guard the rule-built path runs -- isgroup, abelian, classes, struct, chartab
+ * -- runs here identically, in the same order, refusing by the same names.  A staged table that is
+ * not a group dies at AKT_E_GRP exactly as a mis-built one would.
+ *
+ * The caller owns the INDEXING and must place the identity at 0, which is this organ's standing
+ * convention and is checked by akt_isgroup rather than assumed.
+ */
+var AKT_STN : u64 = 0u64
+
+fn akt_stage(n: u64) -> u64 @export {
+    AKT_ERR = AKT_OK
+    AKT_N = 0u64
+    AKT_K = 0u64
+    AKT_NR = 0u64
+    AKT_STN = 0u64
+    let mut i : u64 = 0u64
+    while i < 576u64 { AKT_M[i] = 0u64   i = i + 1u64 }
+    if n == 0u64 { AKT_ERR = AKT_E_GID   return 0u64 }
+    if n > AKT_GCAP { AKT_ERR = AKT_E_ORD   return 0u64 }
+    AKT_STN = n
+    return 0u64
+}
+
+fn akt_put(i: u64, j: u64, v: u64) -> u64 @export {
+    if AKT_STN == 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+    if i >= AKT_STN { AKT_ERR = AKT_E_ORD   return 0u64 }
+    if j >= AKT_STN { AKT_ERR = AKT_E_ORD   return 0u64 }
+    if v >= AKT_STN { AKT_ERR = AKT_E_ORD   return 0u64 }
+    AKT_M[i*AKT_GCAP + j] = v
+    return 0u64
+}
+
+fn akt_seal() -> u64 @export {
+    if AKT_STN == 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+    AKT_N = AKT_STN
+    if akt_isgroup() != 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+    AKT_AB = akt_isabelian()
+    akt_classes()
+    if AKT_ERR != AKT_OK { return 0u64 }
+    akt_struct()
+    if AKT_ERR != AKT_OK { return 0u64 }
+    akt_chartab()
+    if AKT_ERR != AKT_OK { return 0u64 }
+    return AKT_N
+}
+
+/* ================================================================= ΟΛΟΚΛΗΡΩΣΙΣ Ο2 (2026-11-02, the author the author):
+ * THE CROSS-CAP IS THE FROBENIUS-SCHUR INDICATOR.  The non-orientable closed surface N_k (k cross-caps, chi = 2 - k,
+ * pi_1 = <a_1..a_k | a_1^2 ... a_k^2 = 1>) counts
+ *     |Hom(pi_1(N_k), G)| = |G|^(k-1) sum_rho nu(rho)^k d_rho^(2-k),    nu(rho) = (1/|G|) sum_g chi_rho(g^2) in {1, 0, -1},
+ * the k-fold convolution at the identity of the class function #{a : a^2 = g} = sum_rho nu(rho) chi_rho(g) (chi_rho * chi_sigma =
+ * delta (|G|/d_rho) chi_rho).  With Frobenius' orientable count this is ONE formula, |G|^(1-chi) sum_rho nu^c d^chi, c the number
+ * of cross-caps: the S1 page's A1 (the epsilon-conjugated word on a non-orientable rest) is its SU(2) instance, nu(j) = (-1)^(2j).
+ * The indicator needs the VALUES of every row, so a non-abelian table the completion only FORCES (rows unwritten) is REFUSED by
+ * name (AKT_E_NOVAL); an abelian group has every degree 1 and counts |G|^(k-1) #{g : g^2 = e} with no table.  The brute road walks
+ * every k-tuple as akt_brutehom does and refuses past the same wall.  Known answers at the desk: k = 1 is #{g : g^2 = e};
+ * k = 2 (the Klein bottle) is |G| x the number of self-dual irreducibles -- Q8: 40, S3: 18.  W = 0 (Frobenius-Schur 1906);
+ * the earning is the two roads meeting on every group of akt_load, gated.
+ * Page: DOCS/III-HOLOKLEROSIS-THE-COMPLETION-PREREGISTRATION.md (e6c1349a9), strictly first. */
+const AKT_E_NOVAL : u64 = 10u64       /* the indicator needs a row's values and the row is only forced -- REFUSED, not guessed */
+
+fn akt_fs(r: u64) -> i64 @export {
+    if AKT_N == 0u64 { AKT_ERR = AKT_E_GRP   return 0i64 - 2i64 }
+    if r >= AKT_NR { AKT_ERR = AKT_E_NOVAL   return 0i64 - 2i64 }
+    let mut acc : i64 = 0i64
+    let mut g : u64 = 0u64
+    while g < AKT_N {
+        let sq : u64 = AKT_M[g*AKT_GCAP + g]
+        acc = acc + AKT_X[r*AKT_KCAP + AKT_CL[sq]]
+        g = g + 1u64
+    }
+    let n : i64 = AKT_N as i64
+    if acc % n != 0i64 { AKT_ERR = AKT_E_GRP   return 0i64 - 2i64 }
+    let v : i64 = acc / n
+    if v > 1i64 { AKT_ERR = AKT_E_GRP   return 0i64 - 2i64 }
+    if v < 0i64 - 1i64 { AKT_ERR = AKT_E_GRP   return 0i64 - 2i64 }
+    return v
+}
+
+fn akt_sqcount() -> u64 @export {
+    let mut c : u64 = 0u64
+    let mut g : u64 = 0u64
+    while g < AKT_N {
+        if AKT_M[g*AKT_GCAP + g] == 0u64 { c = c + 1u64 }
+        g = g + 1u64
+    }
+    return c
+}
+
+fn akt_nhom(k: u64) -> u64 @export {
+    if AKT_N == 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+    if k == 0u64 { AKT_ERR = AKT_E_GID   return 0u64 }
+    AKT_VOPS = 0u64
+    if AKT_AB == 1u64 {
+        let t : u64 = akt_ipow(AKT_N, k - 1u64)
+        if AKT_ERR != AKT_OK { return 0u64 }
+        let s2 : u64 = akt_sqcount()
+        if t > AKT_U64MAX / s2 { AKT_ERR = AKT_E_OVF   return 0u64 }
+        AKT_VOPS = AKT_N
+        return t * s2
+    }
+    if akt_rational() != 1u64 { AKT_ERR = AKT_E_NOVAL   return 0u64 }
+    let mut acc : i64 = 0i64
+    let mut r : u64 = 0u64
+    while r < AKT_NR {
+        let nu : i64 = akt_fs(r)
+        if AKT_ERR != AKT_OK { return 0u64 }
+        let d : u64 = AKT_D[r]
+        let mut term : i64 = 0i64
+        if k == 1u64 { term = nu * (d as i64) }
+        if k == 2u64 { term = nu * nu * (AKT_N as i64) }
+        if k >= 3u64 {
+            let p : u64 = akt_ipow(AKT_N / d, k - 2u64)
+            if AKT_ERR != AKT_OK { return 0u64 }
+            if p > AKT_U64MAX / (2u64 * AKT_N) { AKT_ERR = AKT_E_OVF   return 0u64 }
+            let base : i64 = (AKT_N * p) as i64
+            if k % 2u64 == 1u64 { term = nu * base } else { term = nu * nu * base }
+        }
+        acc = acc + term
+        AKT_VOPS = AKT_VOPS + 1u64
+        r = r + 1u64
+    }
+    if acc < 0i64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+    return acc as u64
+}
+
+fn akt_brutenhom(k: u64) -> u64 @export {
+    if AKT_N == 0u64 { AKT_ERR = AKT_E_GRP   return 0u64 }
+    if k == 0u64 { AKT_ERR = AKT_E_GID   return 0u64 }
+    if k > 16u64 { AKT_ERR = AKT_E_WALL   return 0u64 }
+    let tot : u64 = akt_ipow(AKT_N, k)
+    if AKT_ERR != AKT_OK { return 0u64 }
+    if tot > AKT_BCAP { AKT_ERR = AKT_E_WALL   return 0u64 }
+    AKT_BRUTE = 0u64
+    let mut i : u64 = 0u64
+    while i < k { AKT_TUP[i] = 0u64   i = i + 1u64 }
+    let mut hits : u64 = 0u64
+    let mut running : u64 = 1u64
+    while running == 1u64 {
+        AKT_BRUTE = AKT_BRUTE + 1u64
+        let mut prod : u64 = 0u64
+        let mut t : u64 = 0u64
+        while t < k {
+            let a : u64 = AKT_TUP[t]
+            prod = AKT_M[prod*AKT_GCAP + AKT_M[a*AKT_GCAP + a]]
+            t = t + 1u64
+        }
+        if prod == 0u64 { hits = hits + 1u64 }
+        let mut p : u64 = 0u64
+        let mut carry : u64 = 1u64
+        while p < k {
+            if carry == 1u64 {
+                AKT_TUP[p] = AKT_TUP[p] + 1u64
+                if AKT_TUP[p] < AKT_N { carry = 0u64 } else { AKT_TUP[p] = 0u64 }
+            }
+            p = p + 1u64
+        }
+        if carry == 1u64 { running = 0u64 }
+    }
+    return hits
+}

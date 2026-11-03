@@ -1,0 +1,1 @@
+  if (getenv("ORD_SUBST")) { substitute_exact(); printf("ORD-SUBST: %d coarse edges substituted, %d links eliminated, %d links remain; loop A %d steps, loop B %d steps\n", NELIM, NELIM, NL, NS[NP], NS[NP + 1]); }

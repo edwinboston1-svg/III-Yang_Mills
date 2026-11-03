@@ -1,0 +1,221 @@
+/* STDLIB/build/aperanton/photon_carried/fibre_pole_z.iii -- THE FIBRE'S POLE AS AN ALGEBRAIC FACT, IN III'S OWN LANGUAGE
+ * (the author's order of 14:5x: no Python, .iii or awk; the author, 2026-11-02 15:5x).
+ *
+ * THE CLAIM (MF, Theorem 3.1; read on two floating roads at nine digits in the record): the averaging block map's Gaussian
+ * fibre at L = 2 -- the free field on Z^4 given every 2^4-block average -- clusters along an axis at the rate kappa with
+ * cosh kappa = 3, i.e. the block precision A(K) = P0 J(K) P0 restricted to the block-zero-mean subspace is SINGULAR at
+ * K = (pi + i kappa, 0, 0, 0), z = e^kappa = 3 + 2 sqrt2.  HERE THAT IS DECIDED EXACTLY: the 16 x 16 matrix
+ *     A'(z) = z (Q J0' Q + 16 11^T) + Q TP Q + z^2 Q TM Q,   Q = 16 I - 11^T  (so A' = 256 z (P0 J(z) P0 + Pi), Pi the
+ *     block-average projector, added so the matrix is invertible exactly when A is on the zero-mean subspace),
+ * with J0' the in-block precision (diagonal 8; -1 on the direction-0 pairs, -2 on the direction 1..3 pairs, the wrap and the
+ * in-block hop coinciding at L = 2 with k_perp = 0), TP / TM the +1 patterns of the forward / backward wraps in direction 0
+ * (e^{i K0} = -1/z, e^{-i K0} = -z on the line Re K0 = pi), is evaluated at z = 3 + 2 sqrt2 in the ring Z[sqrt2] with
+ * MEGETHOS magnitudes and its determinant taken by fraction-free Bareiss elimination over Z[sqrt2] (the exact division
+ * (u + v sqrt2)/(c + d sqrt2) = ((uc - 2vd) + (vc - ud) sqrt2)/(c^2 - 2d^2), exact because Bareiss' quotient lies in the
+ * ring; a nonzero remainder is a REFUSAL by name).  det = 0 <=> the pole.  No float anywhere.
+ * TWO-SIDED: (i) at z = 1 (kappa = 0) the determinant is NONZERO (the fibre has no zero mode at Re K0 = pi, x = 0);
+ * (ii) with a mass m^2 = 1 on the diagonal the determinant at z = 3 + 2 sqrt2 is NONZERO (the pole moves to 2.063, the record);
+ * (iii) the UNCONSTRAINED precision J(z) (no Q) at z = 3 + 2 sqrt2 is NONZERO (its poles lie on Re K0 = 0).
+ * Registers: element (i, j), component c (0 the rational part, 1 the sqrt2 part) at 2 (16 i + j) + c; temporaries from 600. */
+module fibre_pole_z
+
+extern @abi(c-msvc-x64) fn putchar(c: i32) -> i32 from "msvcrt"
+extern @abi(c-msvc-x64) fn mgs_zero(r: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_set64(r: u64, v: i64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_copy(d: u64, s: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_iszero(r: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_sign(r: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_add(d: u64, a: u64, b: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_sub(d: u64, a: u64, b: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_mul(d: u64, a: u64, b: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_divmod(q: u64, r: u64, a: u64, b: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_todec(r: u64, buf: u64, cap: u64) -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_err() -> u64 from "megethos.iii"
+extern @abi(c-msvc-x64) fn mgs_selfprove() -> u64 from "megethos.iii"
+
+var DEC : [u8; 1000]
+var J0M : [i64; 256]          /* the in-block precision J0' (diagonal 8 + the mass) */
+var TPM : [i64; 256]          /* the forward-wrap pattern in direction 0 (+1) */
+var TMM : [i64; 256]          /* the backward-wrap pattern in direction 0 (+1) */
+var QM  : [i64; 256]          /* Q = 16 I - 11^T */
+var XM  : [i64; 256]          /* Q J0' Q + 16 11^T */
+var YM  : [i64; 256]          /* Q TP Q */
+var WM  : [i64; 256]          /* Q TM Q */
+var T1  : [i64; 256]
+var REFUSED : u64 = 0u64
+var RANK : u64 = 0u64
+var SIGNFLIPS : u64 = 0u64
+
+fn ps(s: u64) -> u64 { let p:*u8=s as *u8   let mut i:u64=0u64   while p[i]!=0u8 { putchar(p[i] as i32)   i=i+1u64 }   return 0u64 }
+fn pu(v: u64) -> u64 { if v>=10u64 { pu(v/10u64) }   putchar((48u64+(v%10u64)) as i32)   return 0u64 }
+fn nl() -> u64 { putchar(10i32)   return 0u64 }
+fn pdec(r: u64) -> u64 {
+    if mgs_sign(r) == 1u64 { putchar(45i32) }
+    let n:u64=mgs_todec(r,(&DEC) as u64,1000u64)   let mut i:u64=0u64   while i<n { putchar(DEC[i] as i32)   i=i+1u64 }   return 0u64 }
+
+/* ---- the integer matrices (16 x 16, row-major i*16+j) ---- */
+fn flipbit(s: u64, mu: u64) -> u64 {
+    let w : u64 = 1u64 << mu
+    if (s / w) % 2u64 == 0u64 { return s + w }
+    return s - w
+}
+fn build_hops(m2: i64) -> u64 {
+    let mut i : u64 = 0u64
+    while i < 256u64 { J0M[i] = 0i64   TPM[i] = 0i64   TMM[i] = 0i64   QM[i] = 0i64   i = i + 1u64 }
+    let mut s : u64 = 0u64
+    while s < 16u64 {
+        J0M[s*16u64 + s] = 8i64 + m2
+        let mut mu : u64 = 0u64
+        while mu < 4u64 {
+            let t : u64 = flipbit(s, mu)
+            if mu == 0u64 {
+                J0M[s*16u64 + t] = J0M[s*16u64 + t] - 1i64          /* the in-block hop */
+                if (s / 1u64) % 2u64 == 1u64 { TPM[s*16u64 + t] = TPM[s*16u64 + t] + 1i64 }   /* bit 1: forward wraps */
+                if (s / 1u64) % 2u64 == 0u64 { TMM[s*16u64 + t] = TMM[s*16u64 + t] + 1i64 }   /* bit 0: backward wraps */
+            }
+            if mu > 0u64 { J0M[s*16u64 + t] = J0M[s*16u64 + t] - 2i64 }   /* in-block and wrap coincide at k_perp = 0 */
+            mu = mu + 1u64
+        }
+        s = s + 1u64
+    }
+    i = 0u64
+    while i < 16u64 { let mut j : u64 = 0u64   while j < 16u64 { QM[i*16u64 + j] = 0i64 - 1i64   if i == j { QM[i*16u64 + j] = 15i64 }   j = j + 1u64 }   i = i + 1u64 }
+    return 0u64
+}
+/* OUT = Q * M * Q, integer, 16 x 16 (M given as an array name selector: 0 = J0M, 1 = TPM, 2 = TMM) */
+fn pick(sel: u64, k: u64) -> i64 { if sel == 0u64 { return J0M[k] }   if sel == 1u64 { return TPM[k] }   return TMM[k] }
+fn qmq(sel: u64, out: u64) -> u64 {
+    let mut i : u64 = 0u64
+    while i < 16u64 { let mut j : u64 = 0u64
+        while j < 16u64 { let mut acc : i64 = 0i64   let mut k : u64 = 0u64
+            while k < 16u64 { acc = acc + QM[i*16u64 + k] * pick(sel, k*16u64 + j)   k = k + 1u64 }
+            T1[i*16u64 + j] = acc   j = j + 1u64 }
+        i = i + 1u64 }
+    i = 0u64
+    while i < 16u64 { let mut j : u64 = 0u64
+        while j < 16u64 { let mut acc : i64 = 0i64   let mut k : u64 = 0u64
+            while k < 16u64 { acc = acc + T1[i*16u64 + k] * QM[k*16u64 + j]   k = k + 1u64 }
+            if out == 0u64 { XM[i*16u64 + j] = acc }   if out == 1u64 { YM[i*16u64 + j] = acc }   if out == 2u64 { WM[i*16u64 + j] = acc }
+            j = j + 1u64 }
+        i = i + 1u64 }
+    return 0u64
+}
+
+/* ---- Z[sqrt2] in registers: element e at registers (e, e+1) = (a, b) meaning a + b sqrt2 ---- */
+fn reg(i: u64, j: u64, c: u64) -> u64 { return 2u64 * (i*16u64 + j) + c }
+fn zmul(d: u64, x: u64, y: u64) -> u64 {   /* d = x*y; d may not alias x or y; temporaries 700.. */
+    mgs_mul(700u64, x, y)   mgs_mul(701u64, x+1u64, y+1u64)   mgs_add(701u64, 701u64, 701u64)   mgs_add(d, 700u64, 701u64)        /* ac + 2bd */
+    mgs_mul(702u64, x, y+1u64)   mgs_mul(703u64, x+1u64, y)   mgs_add(d+1u64, 702u64, 703u64)                                   /* ad + bc */
+    return 0u64
+}
+fn zsub(d: u64, x: u64, y: u64) -> u64 { mgs_sub(d, x, y)   mgs_sub(d+1u64, x+1u64, y+1u64)   return 0u64 }
+fn ziszero(x: u64) -> u64 { if mgs_iszero(x) == 1u64 { if mgs_iszero(x+1u64) == 1u64 { return 1u64 } }   return 0u64 }
+fn zdiv_exact(d: u64, x: u64, p: u64) -> u64 {   /* d = x / p in Z[sqrt2], exact or REFUSED; temporaries 710.. */
+    /* numerator x * conj(p): (uc - 2vd) + (vc - ud) sqrt2 ; norm N = c^2 - 2 d^2 */
+    mgs_mul(710u64, x, p)   mgs_mul(711u64, x+1u64, p+1u64)   mgs_add(711u64, 711u64, 711u64)   mgs_sub(712u64, 710u64, 711u64)   /* uc - 2vd */
+    mgs_mul(713u64, x+1u64, p)   mgs_mul(714u64, x, p+1u64)   mgs_sub(715u64, 713u64, 714u64)                                   /* vc - ud */
+    mgs_mul(716u64, p, p)   mgs_mul(717u64, p+1u64, p+1u64)   mgs_add(717u64, 717u64, 717u64)   mgs_sub(718u64, 716u64, 717u64)   /* N */
+    if mgs_iszero(718u64) == 1u64 { REFUSED = 2u64   return 1u64 }
+    mgs_divmod(720u64, 721u64, 712u64, 718u64)   if mgs_iszero(721u64) == 0u64 { REFUSED = 3u64   return 1u64 }
+    mgs_divmod(722u64, 723u64, 715u64, 718u64)   if mgs_iszero(723u64) == 0u64 { REFUSED = 3u64   return 1u64 }
+    mgs_copy(d, 720u64)   mgs_copy(d+1u64, 722u64)
+    return 0u64
+}
+
+/* load A'(z) = z X + Y + z^2 W with z = (za, zb), z^2 = (z2a, z2b): A' = (za X + Y + z2a W) + (zb X + z2b W) sqrt2 */
+fn load_matrix(za: i64, zb: i64, z2a: i64, z2b: i64, unconstrained: u64) -> u64 {
+    let mut i : u64 = 0u64
+    while i < 16u64 { let mut j : u64 = 0u64
+        while j < 16u64 {
+            let mut x : i64 = XM[i*16u64 + j]   let mut y : i64 = YM[i*16u64 + j]   let mut w : i64 = WM[i*16u64 + j]
+            if unconstrained == 1u64 { x = J0M[i*16u64 + j]   y = TPM[i*16u64 + j]   w = TMM[i*16u64 + j] }   /* z J0' + TP + z^2 TM = z J(z) */
+            mgs_set64(reg(i, j, 0u64), za * x + y + z2a * w)
+            mgs_set64(reg(i, j, 1u64), zb * x + z2b * w)
+            j = j + 1u64 }
+        i = i + 1u64 }
+    return 0u64
+}
+fn swap_rows(r1: u64, r2: u64) -> u64 {
+    let mut j : u64 = 0u64
+    while j < 16u64 { let mut c : u64 = 0u64
+        while c < 2u64 { mgs_copy(730u64, reg(r1, j, c))   mgs_copy(reg(r1, j, c), reg(r2, j, c))   mgs_copy(reg(r2, j, c), 730u64)   c = c + 1u64 }
+        j = j + 1u64 }
+    SIGNFLIPS = SIGNFLIPS + 1u64
+    return 0u64
+}
+/* fraction-free Bareiss over Z[sqrt2]; the determinant lands at element (15,15); RANK counts the nonzero pivots found */
+fn bareiss() -> u64 {
+    REFUSED = 0u64   RANK = 0u64   SIGNFLIPS = 0u64
+    mgs_set64(740u64, 1i64)   mgs_set64(741u64, 0i64)            /* prev pivot = 1 */
+    let mut k : u64 = 0u64
+    while k < 16u64 {
+        if ziszero(reg(k, k, 0u64)) == 1u64 {
+            let mut r : u64 = k + 1u64   let mut found : u64 = 0u64
+            while r < 16u64 { if found == 0u64 { if ziszero(reg(r, k, 0u64)) == 0u64 { swap_rows(k, r)   found = 1u64 } }   r = r + 1u64 }
+            if found == 0u64 { return 0u64 }                      /* a zero column below the diagonal: singular, rank = k */
+        }
+        RANK = RANK + 1u64
+        if k == 15u64 { return 0u64 }
+        let mut i : u64 = k + 1u64
+        while i < 16u64 { let mut j : u64 = k + 1u64
+            while j < 16u64 {
+                zmul(750u64, reg(k, k, 0u64), reg(i, j, 0u64))    /* M[k][k] M[i][j] */
+                zmul(752u64, reg(i, k, 0u64), reg(k, j, 0u64))    /* M[i][k] M[k][j] */
+                zsub(754u64, 750u64, 752u64)
+                zdiv_exact(reg(i, j, 0u64), 754u64, 740u64)
+                if REFUSED != 0u64 { return 1u64 }
+                j = j + 1u64 }
+            i = i + 1u64 }
+        mgs_copy(740u64, reg(k, k, 0u64))   mgs_copy(741u64, reg(k, k, 1u64))
+        k = k + 1u64
+    }
+    return 0u64
+}
+fn report(label: u64) -> u64 {
+    ps(label)   ps(" rank=" as u64) pu(RANK)
+    if RANK < 16u64 { ps(" det=0 (a zero column at pivot " as u64) pu(RANK) ps(")" as u64) }
+    if RANK == 16u64 { ps(" det=" as u64) pdec(reg(15u64, 15u64, 0u64)) ps(" + " as u64) pdec(reg(15u64, 15u64, 1u64)) ps(" sqrt2" as u64) }
+    if REFUSED != 0u64 { ps(" REFUSED(" as u64) pu(REFUSED) ps(")" as u64) }
+    if mgs_err() != 0u64 { ps(" MGS-ERR" as u64) }
+    nl()
+    return 0u64
+}
+fn verdict(label: u64, expect_zero: u64) -> u64 {
+    let mut zero : u64 = 0u64
+    if RANK < 16u64 { zero = 1u64 }
+    if RANK == 16u64 { zero = ziszero(reg(15u64, 15u64, 0u64)) }
+    ps(label)
+    if zero == expect_zero { ps(" HELD" as u64) }
+    if zero != expect_zero { ps(" REFUTED" as u64)   REFUSED = 9u64 }
+    if REFUSED != 0u64 { if REFUSED != 9u64 { ps(" (refused by name)" as u64) } }
+    nl()
+    return 0u64
+}
+
+fn main(argc: i32, argv: u64) -> i64 {
+    let msp : u64 = mgs_selfprove()
+    ps("FIBRE-POLE-Z|megethos-selfprove=" as u64) pu(msp) nl()
+    if msp != 0u64 { ps("FIBRE-POLE-Z|REFUSED the magnitude does not stand" as u64) nl()   return 8i64 }
+    /* the claim: massless, constrained, z = 3 + 2 sqrt2 (z^2 = 17 + 12 sqrt2) */
+    build_hops(0i64)   qmq(0u64, 0u64)   qmq(1u64, 1u64)   qmq(2u64, 2u64)
+    let mut i : u64 = 0u64
+    while i < 256u64 { XM[i] = XM[i] + 16i64   i = i + 1u64 }       /* + 16 11^T */
+    load_matrix(3i64, 2i64, 17i64, 12i64, 0u64)   bareiss()   report("FIBRE-POLE-Z|claim massless constrained z=3+2sqrt2:" as u64)
+    let mut bad : u64 = 0u64
+    verdict("FIBRE-POLE-Z|CLAIM cosh kappa_2 = 3 (det A'(3+2sqrt2) = 0):" as u64, 1u64)   if REFUSED != 0u64 { bad = 1u64 }
+    /* control (i): z = 1, kappa = 0 */
+    load_matrix(1i64, 0i64, 1i64, 0i64, 0u64)   bareiss()   report("FIBRE-POLE-Z|control z=1 constrained:" as u64)
+    verdict("FIBRE-POLE-Z|CONTROL (i) no zero mode at kappa = 0 (det != 0):" as u64, 0u64)   if REFUSED != 0u64 { bad = 1u64 }
+    /* control (iii): unconstrained J(z) at z = 3 + 2 sqrt2 */
+    load_matrix(3i64, 2i64, 17i64, 12i64, 1u64)   bareiss()   report("FIBRE-POLE-Z|control unconstrained z=3+2sqrt2:" as u64)
+    verdict("FIBRE-POLE-Z|CONTROL (iii) the unconstrained field is regular there (det != 0):" as u64, 0u64)   if REFUSED != 0u64 { bad = 1u64 }
+    /* control (ii): mass m^2 = 1, constrained, the same z */
+    build_hops(1i64)   qmq(0u64, 0u64)   qmq(1u64, 1u64)   qmq(2u64, 2u64)
+    i = 0u64
+    while i < 256u64 { XM[i] = XM[i] + 16i64   i = i + 1u64 }
+    load_matrix(3i64, 2i64, 17i64, 12i64, 0u64)   bareiss()   report("FIBRE-POLE-Z|control massive m^2=1 constrained z=3+2sqrt2:" as u64)
+    verdict("FIBRE-POLE-Z|CONTROL (ii) the pole moves with the mass (det != 0):" as u64, 0u64)   if REFUSED != 0u64 { bad = 1u64 }
+    if bad == 0u64 { ps("FIBRE-POLE-Z-VERDICT|THE-FIBRE-POLE-IS-ALGEBRAIC-COSH-KAPPA-2-EQUALS-3-EXACTLY-IN-Z-SQRT2-TWO-SIDED" as u64) nl()   return 0i64 }
+    ps("FIBRE-POLE-Z-VERDICT|RED" as u64) nl()
+    return 8i64
+}

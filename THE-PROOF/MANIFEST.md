@@ -19,6 +19,7 @@ Every file below is a copy of the instrument or kernel module the step names, ta
 - instruments/step28-the-constrained-exact-integrator/ — 32 files
 - instruments/step29-the-two-edges/ — 71 files
 - instruments/step31-the-gates-of-the-kernel/ — 5 files
+- instruments/step35-the-coarse-point-reading/ — 2 files (the score-matching fit in C; the first-order bundle row engine); the register's ladder (ladder_house.awk) under step29
 
 ## Every file
 
@@ -324,6 +325,7 @@ Every file below is a copy of the instrument or kernel module the step names, ta
 - instruments/step29-the-two-edges/alpha_su2.c
 - instruments/step29-the-two-edges/dobrush1.c
 - instruments/step29-the-two-edges/ising_torus.awk
+- instruments/step29-the-two-edges/ladder_house.awk
 - instruments/step29-the-two-edges/M3g/bin__chain_kappa.py
 - instruments/step29-the-two-edges/M3g/bin__gram_exact.py
 - instruments/step29-the-two-edges/M3g/bin__toy2d.py
@@ -396,6 +398,8 @@ Every file below is a copy of the instrument or kernel module the step names, ta
 - instruments/step31-the-gates-of-the-kernel/fibre_block_lean.sh
 - instruments/step31-the-gates-of-the-kernel/holoklerosis_gate.sh
 - instruments/step31-the-gates-of-the-kernel/lean_record.sh
+- instruments/step35-the-coarse-point-reading/cp_fit.c
+- instruments/step35-the-coarse-point-reading/cp_row.c
 - kernel/aperanton/Aperanton.lean
 - kernel/aperanton/Aperanton/Anaklasis.lean
 - kernel/aperanton/Aperanton/Anaklasis.lean.lean

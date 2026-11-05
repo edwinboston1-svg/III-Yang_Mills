@@ -1,0 +1,12 @@
+THE GROUND, revision 36, through 39411ff (Edwin Boston III)
+Manifest written 2026-11-05T09:19:08Z.
+
+  39411ffd58b6c1a9bf7b1ea68829ae3b46369de9  2026-11-05 04:19:02 -0500  THE GROUND, revision 36 — Theorem 8.9's gluing input stated in the form that holds: an L2 bound on a leaf's amplitude along the gluing cycle, prove
+  a3bae2349fecb964c03b46132fdaec4b71b018a0  2026-11-05 04:01:02 -0500  THE CROSSING CAMPAIGN §35 RESULTS 10 ADDENDUM VI-b — whose radius 0.426 is, corrected
+
+ab7f3206b6ee1730359b4e2230474e980b32a026916e5ddf47a165829dfb3516 *THE-GROUND-Edwin-Boston-III.pdf
+a22803b07777ca3e037c51b5407957eecc4b9122935cd81cd69e4bce5c642ea1 *THE-GROUND-Edwin-Boston-III.docx
+1c71f59d200fe9a09a05ba4548b7554ee023016cb2426485ec9bba00c7f6faa5 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

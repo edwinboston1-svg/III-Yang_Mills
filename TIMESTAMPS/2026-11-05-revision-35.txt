@@ -1,0 +1,14 @@
+THE GROUND, revision 35, through d28437c (Edwin Boston III)
+Manifest written 2026-11-05T08:27:14Z.
+
+  d28437cb7367b99e46fc6fc4cfdf382354a81013  2026-11-05 03:26:50 -0500  THE GROUND, revision 35 — Theorem 8.9 restated at the coupling free of the contact-leaf bound, 0.3650: the bound of 4 on every contact leaf is fals
+  2b43de8390de4c2f45742a55ea2e5ded5e71160e  2026-11-05 03:05:11 -0500  CORRECTION OF RECORD — the bound of 4 on every contact leaf is false: a Z2-minimal contact leaf of 46 plaquettes reads S = 20/3; Theorem 8.9's coup
+  5642af91df87a8023628d893ad128ec2b29eb9be  2026-11-05 02:19:00 -0500  THE CROSSING CAMPAIGN §35 RESULTS 10 ADDENDUM VI-a — the seventeen-term mixed certificate on the 2,000 line: pass at alpha = 0.015 by a bound's ma
+
+3e3c5ffad5188cda2c87c8f7110a8ca6f802aaaeafb11a484abbf01cd5ba5710 *THE-GROUND-Edwin-Boston-III.pdf
+20d913d9c7e2fa482e70f6ee8742a4e950e308ab7d19b3429b149e4076d545f5 *THE-GROUND-Edwin-Boston-III.docx
+6afdef3888afcb0b2af62f14450be373e61fd872faf33857067c37c64df8d1cc *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md
+e18f9066695b9fd4c34ffd0cca621c20921f89db60e938de95201952859b0d6d *OPEN/ledger/s1-the-flux-surface-gas.md

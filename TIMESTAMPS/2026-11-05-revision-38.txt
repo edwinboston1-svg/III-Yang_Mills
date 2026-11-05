@@ -1,0 +1,12 @@
+THE GROUND, revision 38, through dc47029 (Edwin Boston III)
+Manifest written 2026-11-05T15:55:36Z.
+
+  dc47029d3707dce287226bd94625abb0e672ab4f  2026-11-05 10:55:04 -0500  THE GROUND, revision 38 — Theorem 8.9: what a proved rate of the leaf bound buys back, and the least areas of a contact cycle
+  f22a528e0fe0b7774f3684295a846e73d1557758  2026-11-05 10:52:08 -0500  THE CROSSING CAMPAIGN §35 RESULTS 10 ADDENDUM VI-r — the sets with a closed part holding one eight-link face
+
+2da8f71b1b5484db1eb287ce7d75ef4b80e384bde499d4fa74071de60172dd84 *THE-GROUND-Edwin-Boston-III.pdf
+bd5878a18d7a556038e104c72b88b3e8ea1f3f72e15a8dd0b3fd0b6d86ad8f27 *THE-GROUND-Edwin-Boston-III.docx
+b75c3c223003ff944f5cd55fd62afa3dd958b9f2adeb3aba3efc098f9d84e412 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

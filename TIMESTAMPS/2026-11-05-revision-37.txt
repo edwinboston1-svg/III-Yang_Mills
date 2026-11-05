@@ -1,0 +1,12 @@
+THE GROUND, revision 37, through 3cc15ee (Edwin Boston III)
+Manifest written 2026-11-05T11:06:18Z.
+
+  3cc15ee819bf8d537e4f77fece0845d6ae664371  2026-11-05 06:06:15 -0500  THE GROUND, revision 37 — Theorem 8.9: the leaf bound proved to contact cycle rank three, and the gluing input's proved region as the censuses now 
+  2d4e42fcc2d36c6b1fd30357869b4bee7e1461dd  2026-11-05 05:54:50 -0500  THE CROSSING CAMPAIGN §35 RESULTS 10 ADDENDUM VI-i — a last digit: 2^(75/153) = 1.404636, written 1.4046
+
+bb32343f1d273f2323b7438f5d95cedc5b2747e06a9a192393d2f6fcb8307386 *THE-GROUND-Edwin-Boston-III.pdf
+9468b8b5fee71be84e9f96a716866de12d7692747d57233b6173bdf26cd6d93d *THE-GROUND-Edwin-Boston-III.docx
+6dfa60e949b48652a93e09f1d00792864175f9074f55045ccae8ee069c1b2fe7 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

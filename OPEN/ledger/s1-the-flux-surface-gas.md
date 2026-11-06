@@ -213,7 +213,7 @@ where X̂ is X cut open along F, with every resulting boundary curve capped by a
 
 So an irreducible pinch weighs at most 4u^F when X̂ is connected, the same as a sphere: a contact along a forest costs nothing beyond the surface's own d^χ.
 
-**Lemma S7 (the lone wall; proved).** Let S be a branch-free surface at spin ½, and w a plaquette not in S whose four links lie in S, its boundary meeting no other wall. Then, exactly,
+**Lemma S7 (the lone wall; proved).** Let S be a branch-free surface at spin ½, and w a plaquette not in S whose four links lie in S, its boundary meeting no other wall. Then, exactly, [READ ON FACES OF ANY LENGTH 2026-11-06 01:15: the proof uses of a face only that it is a disc bounded by a closed self-avoiding walk, so the lemma holds for a wall of any polygon shape on a branch-free rest of polygon faces, 3a₁ at the wall’s own coupling — campaign §35 RESULTS 10 ADDENDUM VI-v, sent for a second reading.]
 
   |W(S ∪ w)| = 3a₁ · W(S),
 
@@ -282,7 +282,7 @@ a spin-network evaluation on T embedded in S, at leading order in the spins. Sta
 
 **The orientability census (iii-38, B6).** Every branch-free closed surface through a plaquette of ℤ⁴ with F ≤ 20 is orientable (27,472 at F ≤ 18; 80,480 at F = 20; records `5a933d43`, `cde192a9`). F = 22 is running. The tail (F > 22) assumes nothing: Lemma S11.
 
-**Lemma S8 (THE VERTEX LAW; proved on three roads).** Let S be an orientable branch-free closed surface at spin ½ and w₁, …, w_k lone walls whose boundary cycles C_i ⊂ S are pairwise link-disjoint. Then
+**Lemma S8 (THE VERTEX LAW; proved on three roads).** Let S be an orientable branch-free closed surface at spin ½ and w₁, …, w_k lone walls whose boundary cycles C_i ⊂ S are pairwise link-disjoint. Then [READ ON FACES OF ANY LENGTH 2026-11-06 01:15: the locality and the vertex sums are face-shape free — a wall of n links has two spokes at each of its n vertices and pays its link factor back exactly — so the law holds on a branch-free rest of polygon faces with each wall at its own 3a₁; campaign ADDENDUM VI-v, sent for a second reading.]
 
   W(S ∪ {w_i}) = (3a₁)^k · W(S) · Π_{v} c(D_v),
 

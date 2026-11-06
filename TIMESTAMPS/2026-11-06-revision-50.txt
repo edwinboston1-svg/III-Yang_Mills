@@ -1,0 +1,12 @@
+THE GROUND, revision 50, through b465cf5 (Edwin Boston III)
+Manifest written 2026-11-06T12:43:28Z.
+
+  b465cf58c8a1b0de3d214e8c945d05827d9b021c  2026-11-06 07:43:28 -0500  THE GROUND, revision 50 — Theorem 8.9: the 0.3620 and 0.3628 said as the certificate under an assumed weight at the double-contact vertices, neither a reading nor a bound (2026-11-06 07:43 EST)
+  1122f959740edb0c008963744010ea1d9f571379  2026-11-06 07:19:09 -0500  The open ledger and the campaign page at III's f750afcda and 1bd2e92ea: the criterion's exact form, the corners, the one-sided readings on plaquettes (2026-11-06 07:19 EST)
+
+4a82ae78dc846a48852768f63647abb11a2a19ea9b117b12f76d51ef40c66963 *THE-GROUND-Edwin-Boston-III.pdf
+08bec706257687475d10983e49e587add117082907436246e7c22eb2b83e2a5a *THE-GROUND-Edwin-Boston-III.docx
+25d2198beb94aaa09845b391b791de9d073ebb4c694843bb338a0f6c80f72163 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

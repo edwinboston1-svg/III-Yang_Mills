@@ -1,0 +1,12 @@
+THE GROUND, revision 53, through 90e1950 (Edwin Boston III)
+Manifest written 2026-11-06T20:25:55Z.
+
+  90e195028518b23726ebcc685392a37598d570b4  2026-11-06 15:25:54 -0500  THE GROUND, revision 53 — Theorem 8.9: the double-contact clause narrowed by the exhaustion of the vertex's chord diagrams — for walls and pieces at the vertex's two-fold links, pairwise link-disjoint, the channel sum never exceeds the bracket, the channel matrix of spectral radius at most one on every diagram; a wall on a contact link there and two walls on one link remain (2026-11-06 15:2x EST)
+  4157dbf8a1ba48134829acb731bbef5f15f2c1e0  2026-11-06 15:24:29 -0500  The open ledger's flux-surface-gas page at III's 6d74171fe: the vertex law by exhaustion — the spoiled double contact's matrix of spectral radius one, B's 4/3 one for the link-disjoint class (2026-11-06 15:24 EST)
+
+b711b04bbe986e24fb79bbaef45312f1a8d5a8f69db61bbfb8e8dfd0036836af *THE-GROUND-Edwin-Boston-III.pdf
+5b1621846a97a039965af7d88f935d94828f5d68a64c3d8295e3512a151196b3 *THE-GROUND-Edwin-Boston-III.docx
+23f1b9f86f788e13bdd4782d565dff4f42a7c2defb3ae2fdd392fbb07be0e49e *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

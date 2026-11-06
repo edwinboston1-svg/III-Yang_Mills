@@ -1,0 +1,12 @@
+THE GROUND, revision 51, through 8e96453 (Edwin Boston III)
+Manifest written 2026-11-06T13:11:19Z.
+
+  8e96453b8331401f364ea03396414f8fd1c04108  2026-11-06 08:11:18 -0500  THE GROUND, revision 51 — Theorem 8.9: the census' creases read at twenty plaquettes as two slots of the eight and none framed, a quarter of the proved weight, the grid points unchanged; the assumed-weight numbers withdrawn (2026-11-06 08:1x EST)
+  2285dd933fea344ee4b7e4196fe76ded8dd5155d  2026-11-06 08:08:37 -0500  The open ledger's flux-surface-gas page at III's 0c0b12dc7: the creases read — the corner face and three two-face detours at every census crease, three layerings of nine, two slots at most and none framed, the certificate under the read weight at the same grid points (2026-11-06 08:08 EST, read from date)
+
+ee91f9493042411134c6f52b31a1c113207693272ffbcb52e36e2b063fe5cd6f *THE-GROUND-Edwin-Boston-III.pdf
+a8adb0803e45a18daf7d4b08194aa2bfaeb2d1adb4e24b5bba0883def31d3ee2 *THE-GROUND-Edwin-Boston-III.docx
+29089a029981b0b10d9b7d4e41c063b259232e455f86fc9962ef9ea4354a6a79 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

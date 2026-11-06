@@ -1,0 +1,12 @@
+THE GROUND, revision 54, through 30f5861 (Edwin Boston III)
+Manifest written 2026-11-06T20:57:55Z.
+
+  30f58611bc19445738a644be385ab2df5ab8861d  2026-11-06 15:57:54 -0500  THE GROUND, revision 54 — Theorem 8.9: the double-contact clause closed for walls and pieces pairwise link-disjoint, at the vertex's two-fold links or on its contact links, by the exhaustion of the vertex's chord diagrams — the channel matrix of spectral radius at most one on every diagram, exactly one at the extremal diagrams and at the wall spanning the contact links, under the star bound's price for a chord; two walls on one link of the sheet remain (2026-11-06 15:5x EST)
+  c0c61d090e19f0dee447d72e6af17283d2715d09  2026-11-06 15:57:06 -0500  The open ledger's flux-surface-gas page at III's 1f1ee3479: the wall on a contact link at a double contact by exhaustion, the clause closed for R4's class; the branched class as read (2026-11-06 15:57 EST)
+
+bbe0ffef3b1ed06c1d691ba644ef4d551ed68c27ff11cf52173b147ec7e23558 *THE-GROUND-Edwin-Boston-III.pdf
+0e9f9851720623878ffd74486afb21aceb9c9e85b24c3f8a94afd090f872864a *THE-GROUND-Edwin-Boston-III.docx
+5ca85db56c5c9140b281f072756de0733f528a2a4ec94a0e3d0d0dfc9308288c *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

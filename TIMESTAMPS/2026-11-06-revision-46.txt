@@ -1,0 +1,12 @@
+THE GROUND, revision 46, through 15de9f3 (Edwin Boston III)
+Manifest written 2026-11-06T10:38:44Z.
+
+  15de9f36fbfd7f8e683d0f18a787ffbed3b44f60  2026-11-06 05:38:44 -0500  THE GROUND, revision 46 — Theorem 8.9: the third input restated on the channel expansion — the contact rests at the allotment for a forest contact graph without a double-contact vertex, decorations and raised regions anywhere, none joining two sheets at a contact vertex; the resolution-road clause of revisions 44 and 45 corrected (2026-11-06 05:38 EST)
+  43b55ab1649edd1af0311b0ad25b7effa166699c  2026-11-06 04:53:59 -0500  The open ledger and the campaign page at III's 5f323240e and 51fa02ab3: the bouquet lemma, the vertex law read by machine on 4,956 pairs, the pinch's third road (2026-11-06 04:53 EST)
+
+561677dc92c62d4bdd119c60ce32bc6b2695ea33c216b3204095e2cb83ca05ad *THE-GROUND-Edwin-Boston-III.pdf
+4bedbf552a748747262206b68cfef43a4a6def92c36a6e28278b4f7327114664 *THE-GROUND-Edwin-Boston-III.docx
+9dcccc3e874e7992a4a1bfe7a4a505d93989304213b770659e1b41bc123f66bf *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

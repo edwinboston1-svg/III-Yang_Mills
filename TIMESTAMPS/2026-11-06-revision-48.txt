@@ -1,0 +1,12 @@
+THE GROUND, revision 48, through 4cd06ad (Edwin Boston III)
+Manifest written 2026-11-06T11:50:01Z.
+
+  4cd06ad87071660d55cede30697ee1a158832862  2026-11-06 06:50:01 -0500  THE GROUND, revision 48 — Theorem 8.9: the contact rests to twenty-two plaquettes, proved for every decoration on every rest without a double-contact vertex; the charge at the double-contact vertices of the tail's leaves and the certificate under it, 0.3548 and 0.3560 beside 0.3650 and 0.3656 (2026-11-06 06:50 EST)
+  f002a537dcd236a5fab11fe073d34f0a980e6d21  2026-11-06 05:57:11 -0500  The open ledger's flux-surface-gas page at III's 1ec853d00: the census read by member, the bridge-end criterion (2026-11-06 05:57 EST)
+
+451dd8efdd94af60e2af377689886d2287f8b3fd031b116eded0e38facdbad53 *THE-GROUND-Edwin-Boston-III.pdf
+9bed69b78c6db6435f9c9aeef880dc1f29ad3ebbe2e0f9256b249c4a77209a07 *THE-GROUND-Edwin-Boston-III.docx
+408b2b8d112ae34e1a35537780bb91bf363624859937139e1822d3320ff36306 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

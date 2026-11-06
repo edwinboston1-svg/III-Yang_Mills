@@ -1,0 +1,12 @@
+THE GROUND, revision 41, through 98f35f9 (Edwin Boston III)
+Manifest written 2026-11-06T09:01:55Z.
+
+  98f35f9834a1e1f7fa9ad8b779c06c3b4aba3296  2026-11-06 04:01:54 -0500  THE GROUND, revision 41 — Theorem 8.9: the first input, the neck lemma, proved for every decoration by walls and branch-free surface pieces — the second half, where the attachment cycles meet at a vertex or a pinch, by the mixed star bound along a Hamiltonian path and the payment lemma; the certificate's numbers standing on a bracket bisected to the engine's own test (2026-11-06 04:01 EST)
+  bc420d5d681424afc842069e1c2885f1a07ee1a6  2026-11-06 03:54:39 -0500  The open ledger's flux-surface-gas page at III's 1fb1593bc: the neck lemma proved for every decoration by walls and surface pieces — the second half by the mixed star bound, the payment lemma and the region factors; the certificate's numbers standing on a refined bracket (2026-11-06 03:54 EST)
+
+39bcef578e25301bde599375f868269a3d6f271a15ee8350d02591c4fb4e3591 *THE-GROUND-Edwin-Boston-III.pdf
+e323de3270d8508d9b13d9f66f036af37d46fb0bd0e3ef7e9b409a893c9de5f1 *THE-GROUND-Edwin-Boston-III.docx
+354bfeafe5e9c587f799821b0375db1679881ab5fe2b536d94f897eef8a31a64 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

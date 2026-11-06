@@ -1,0 +1,12 @@
+THE GROUND, revision 47, through d7f4cd3 (Edwin Boston III)
+Manifest written 2026-11-06T10:57:00Z.
+
+  d7f4cd39234e375c8ad7e6a966c425adfad6b284  2026-11-06 05:57:00 -0500  THE GROUND, revision 47 — Theorem 8.9: the contact rests at the bridge-end criterion, every contact leaf the census counts to twenty plaquettes read into the class one by one (2026-11-06 05:56 EST)
+  40db727f9f6448292ede7bb8a7733c9be0d1a04b  2026-11-06 05:38:56 -0500  The open ledger and the campaign page at III's 3c4772436 and 481d41d62: the correction of (t) and (u), the channel expansion, the touching cell corrected (2026-11-06 05:38 EST)
+
+defb0bc668590683f86e99382d61bd02728a2baddfe860f5137efdc95221d81b *THE-GROUND-Edwin-Boston-III.pdf
+f0f3a3b79f46095a3e9d7bfd48718d1fd09309891271556bd986d188c894bf54 *THE-GROUND-Edwin-Boston-III.docx
+3d763b8ce94b8316720cc3cd423808aa8d57f16cea48010db43c1fb30dbaa58a *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

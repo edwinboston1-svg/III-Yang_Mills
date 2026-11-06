@@ -1,0 +1,12 @@
+THE GROUND, revision 40, through cc7855e (Edwin Boston III)
+Manifest written 2026-11-06T07:19:44Z.
+
+  cc7855e964562f520a69e4bf0b8b5be80611035e  2026-11-06 02:19:41 -0500  THE GROUND, revision 40 — Theorem 8.9: the first input proved for every decoration by walls and surface pieces with vertex-disj
+  01671d61518ee5a339315f17c97cad108af0b58c  2026-11-06 02:18:09 -0500  The open ledger's flux-surface-gas page: the regions' sizes read and signed by a second seat
+
+0c6156498520ac64032d5d2ab7fa55dbefc8e7694ee26e36d37bd352914ddbbf *THE-GROUND-Edwin-Boston-III.pdf
+09a454fe2a7c9b5f5e573f315871f7586dee72b17a8b55fbf7616daffdcbbefc *THE-GROUND-Edwin-Boston-III.docx
+df82c54cd9567e3c51c9772f81309b6cc7a56ea18b8ee2628fa38b61ae0bc28c *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

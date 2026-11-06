@@ -1,0 +1,12 @@
+THE GROUND, revision 44, through f9ca03a (Edwin Boston III)
+Manifest written 2026-11-06T09:44:33Z.
+
+  f9ca03a4f79873ab8dd0b7c857033f7e8f12c605  2026-11-06 04:44:33 -0500  THE GROUND, revision 44 — Theorem 8.9: the third input narrowed again — the dressing bound proved for a contact rest with its walls and branch-free surface pieces off its contact links, by the resolution formula at those links and the branch-free bound on each resolved surface (2026-11-06 04:44 EST)
+  a6d9dd1f54e73a7588e683450271ab16f1e06346  2026-11-06 04:43:47 -0500  The open ledger's flux-surface-gas page at III's ab9d97200: the third input's contact rests — the dressing of a contact leaf by the resolution formula and the branch-free bracket, decorations off the contact links (2026-11-06 04:43 EST)
+
+738a5f6ca774ab7d67c1ef5938acb7683a8ed3f040b6c0c2fa1dbf4ac678f483 *THE-GROUND-Edwin-Boston-III.pdf
+1f4f366be6256f1643a7c2d578a6c1ee7a059e08f9ff5b9e936431d669033713 *THE-GROUND-Edwin-Boston-III.docx
+d1f65eb4344157ca27072d45701da0cf72117c5992831895919879ff2f2db75b *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

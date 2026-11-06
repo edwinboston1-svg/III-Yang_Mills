@@ -1,0 +1,12 @@
+THE GROUND, revision 55, through a77b54d (Edwin Boston III)
+Manifest written 2026-11-06T21:29:55Z.
+
+  a77b54dd4ae2b1794eb4aa4f0dccb5868b68754f  2026-11-06 16:29:55 -0500  THE GROUND, revision 55 — Theorem 8.9: the between-sheet charge withdrawn whole — at a double contact the channel sum never exceeds the bracket for walls and pieces pairwise link-disjoint, by exhaustion, and for two walls on one link the star bound's price is not the bracket's (the exhaustion at 1.653, 2.338, 4.113 on one, two, three shared links), that clause remaining; the couplings 0.3650 and 0.3656 rest on the four inputs with the third's double-contact clause closed for the link-disjoint class (2026-11-06 16:3x EST)
+  22b9c8087b592b2a0b9c82886119a656c6990196  2026-11-06 16:27:57 -0500  The open ledger's flux-surface-gas page at III's 73bf342ad: the branched exhaustion, the stake refuted, the charge withdrawn whole (2026-11-06 16:27 EST)
+
+a129b2de5769870b16a4946419ccb1f5b6fcfb2072ea25db1ee5ee8932ac2c4c *THE-GROUND-Edwin-Boston-III.pdf
+f643f2239def3b3b9af78e8192c62d64430597e02feff6679e2c7f11836f52f0 *THE-GROUND-Edwin-Boston-III.docx
+e64ff5ec754c77915112a27933ae7105f79477bf69d329d0c878e75a8d51b2f6 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

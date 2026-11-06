@@ -1,0 +1,12 @@
+THE GROUND, revision 42, through 801c7a3 (Edwin Boston III)
+Manifest written 2026-11-06T09:11:23Z.
+
+  801c7a38f2375b7e4b0abba7ac62856b4f9b2406  2026-11-06 04:11:22 -0500  THE GROUND, revision 42 — Theorem 8.9: the neck clause without its reading of a coarser bracket, and the leaf's raised spins named half-odd (2026-11-06 04:11 EST)
+  4fc476cc6e6a78bec5a537ecdab0d3aeebf31037  2026-11-06 04:03:36 -0500  The open ledger's flux-surface-gas page at III's 3b95c4b53: the second half's lemmas read and signed by a second seat, the regions' spins half-odd stated (2026-11-06 04:03 EST)
+
+ddd0ed42d65ab2199c0c87b870e07981bde0453e76bc4d2d38cb4a3111b4d659 *THE-GROUND-Edwin-Boston-III.pdf
+8ee1c90d2a3265cd42af74511357d55683a584fe284fc410231c8cf31967af91 *THE-GROUND-Edwin-Boston-III.docx
+793cb1b018e85b894b0ae8e7543a802ff50e2f847bc9f6a01a68f2c51dcfc0cd *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

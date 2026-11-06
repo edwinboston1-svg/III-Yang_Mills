@@ -1,0 +1,12 @@
+THE GROUND, revision 52, through 9959d7b (Edwin Boston III)
+Manifest written 2026-11-06T13:38:29Z.
+
+  9959d7bdd56f39f1d9eac97587965cb927e4aab1  2026-11-06 08:38:28 -0500  THE GROUND, revision 52 — Theorem 8.9: the double-contact vertices counted by their plaquettes, at least seven at each and at most four sevenths of the leaf's in number, with no hypothesis on the contact graph; the charged certificate at 0.3470 in the dressing of the page and 0.3480 in the tree dressing (2026-11-06 08:4x EST)
+  87b55117867c10834a016dc6155d6edc23d56ad5  2026-11-06 08:11:26 -0500  TIMESTAMPS: revision 51's manifest and its OpenTimestamps proof
+
+da8c91609ac161669cbfd0b3d737dfe1fa348ad3411ca7299191eb5b0b100b0f *THE-GROUND-Edwin-Boston-III.pdf
+20fedbb3d81dccbafc7819e693b3e9b5d36da7484befbddf972d90ca26e61cb5 *THE-GROUND-Edwin-Boston-III.docx
+d07e5db3c4ad1389f39f0595fe6d0e35d4adf1de1fece87299ac70c086c602e1 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

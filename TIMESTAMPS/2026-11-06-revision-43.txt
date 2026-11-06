@@ -1,0 +1,12 @@
+THE GROUND, revision 43, through 9b6ae3a (Edwin Boston III)
+Manifest written 2026-11-06T09:33:55Z.
+
+  9b6ae3a2e0d34874a89a455cfe3c79c58559e4c6  2026-11-06 04:33:55 -0500  THE GROUND, revision 43 — Theorem 8.9: the third input narrowed — the dressing bound proved at every single spin of a branch-free rest with its walls and branch-free surface pieces and at every assignment of that spin's parity, the one root dressing every spin; contact rests, branched decorations at higher spin and the junction bound's pinched rows remain (2026-11-06 04:33 EST)
+  d45ee372f228f2d45b38f4d189a52320d3c02ebc  2026-11-06 04:32:34 -0500  The open ledger's flux-surface-gas page at III's 0e819f61a: the third input's raised rests — the dressing of a leaf at any single spin bounded by the dressing at ½, the mixed assignments at every base inside the second half's factors (2026-11-06 04:32 EST)
+
+62fce3415900ece46e61f8507bf35756cde6ead4af17468476785b4de7074243 *THE-GROUND-Edwin-Boston-III.pdf
+0f95ef6aac30e4e217be98bdc2adab60da309e471ce7830e8e34122c0fd6f410 *THE-GROUND-Edwin-Boston-III.docx
+5b435ff1e07f1df61a9430e837edd56455c582235f382759996baf2682568752 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

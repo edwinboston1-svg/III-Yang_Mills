@@ -1,0 +1,12 @@
+THE GROUND, revision 49, through b92b105 (Edwin Boston III)
+Manifest written 2026-11-06T12:09:32Z.
+
+  b92b1051476db6d907fa69c51dae6d7649e8e0b9  2026-11-06 07:09:32 -0500  THE GROUND, revision 49 — Theorem 8.9: the charge at the double-contact vertices at its first order — under the proved weight 0.3420 and 0.3430, under the weight read on the census 0.3620 and 0.3628 as readings (2026-11-06 07:09 EST)
+  0e6f75e224407f1bdcc4f6af4190e45b70f33f31  2026-11-06 06:50:46 -0500  The open ledger's flux-surface-gas page at III's 3d7ba1a48: the between-sheet term and the charged couplings (2026-11-06 06:50 EST)
+
+06665889602a1cfda6195de481582c01c776be18c4db9263fcea5078ee9a4d10 *THE-GROUND-Edwin-Boston-III.pdf
+ec4788a0f3b3bd16c8d40eb610c4f9f63bab8c12af124e4ceac82bee487f17df *THE-GROUND-Edwin-Boston-III.docx
+2aadb8bb43db92cf89235b65d3c6bd249c33a0953798a4a90939c00f8493a099 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

@@ -1,0 +1,12 @@
+THE GROUND, revision 45, through 808d73c (Edwin Boston III)
+Manifest written 2026-11-06T09:53:51Z.
+
+  808d73c16850c57db3a61a9693f42172c4ddf23b  2026-11-06 04:53:51 -0500  THE GROUND, revision 45 — Theorem 8.9: the third input narrowed by the bouquet lemma — a piece on a link where two sheets meet once costs its activity and no more; what remains named (2026-11-06 04:53 EST)
+  0e6eedb9d4ba5ffe97ec97c57b8930e4184381a2  2026-11-06 04:44:50 -0500  TIMESTAMPS: revision 44's manifest and its OpenTimestamps proof
+
+54501d558053cf8be002e36030a3b056d4a10f827782ed172215494523e707b8 *THE-GROUND-Edwin-Boston-III.pdf
+4d897a571cd0675a0e7ab4d51dde3f68b0985b07d377f330b13797b87b143f90 *THE-GROUND-Edwin-Boston-III.docx
+cd270c8719325e340954b22d3e499563b9833e90f6f7b7736b29e9bd887faa69 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

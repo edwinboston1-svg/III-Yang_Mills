@@ -1,0 +1,12 @@
+THE GROUND, revision 58, through 3bc59b0 (Edwin Boston III)
+Manifest written 2026-11-07T02:19:09Z.
+
+  3bc59b0e6d4829f48304a14a4d895d4d6d7972e3  2026-11-06 21:19:08 -0500  THE GROUND, revision 58 — Theorem 8.9: the pinch added to the branched clause's star sentence (two disjoint cycles at a vertex, every set of up to four chords read: every acyclic set at most the bare, a lone chord joining the two cycles zero); the couplings 0.3648 / 0.3654 unchanged (2026-11-06 21:19 EST)
+  12c967a4028f3c73abd96d1311c30d9b109ae0df  2026-11-06 21:18:26 -0500  The open ledger's flux-surface-gas page at III's 4660abcc4: the true pinch read, the gate's red reported (2026-11-06 21:18 EST)
+
+b34dea8059a2258d3b256f0c4dfb5ae908a0659c451a6c66a59e72a4a6a72dcb *THE-GROUND-Edwin-Boston-III.pdf
+f5fe9903e8a1ec59c9c729ba5476e1d0459a174fc9cc84741ab978ef50838428 *THE-GROUND-Edwin-Boston-III.docx
+1380e2880d06e1ba65e04b0c2cc9040bb7e6aa92cc9836164762874140309879 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

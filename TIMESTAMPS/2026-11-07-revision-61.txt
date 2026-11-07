@@ -1,0 +1,12 @@
+THE GROUND, revision 61, through 71d3537 (Edwin Boston III)
+Manifest written 2026-11-07T05:35:50Z.
+
+  71d3537968f4c221afd6a4c71000f52e89c1cc24  2026-11-07 00:35:48 -0500  THE GROUND, revision 61 — Theorem 8.9: the raised corner read per placement of its two bounding walls on 7 November (the worst 
+  5b64c069c422cfbe64ff4b480bbd54ad9b44a160  2026-11-06 23:07:14 -0500  The open ledger's campaign page at III's 8e4bc3dad: the three-wall class whole at five chords; the stops of 22:59 (2026-11-06 23:
+
+f73d5c2170b3511f52ed7d47b3fda1199d416715b2509ba13fd3a6cb668a9def *THE-GROUND-Edwin-Boston-III.pdf
+0c393d9c904229b1d4ddc0607c074c77a3a310804407f0a3a5e7ed354c3b6f00 *THE-GROUND-Edwin-Boston-III.docx
+1c8915b0460caa73b8056eaeabf76ac6696b78ab161748790decf49f8cfd2c3c *source/content4.js
+00f311cb958a383f16096a285693a4e4e9a9f7334cd272b51b7b8c150573e5ae *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

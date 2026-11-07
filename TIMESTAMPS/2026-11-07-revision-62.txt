@@ -1,0 +1,12 @@
+THE GROUND, revision 62, through a5fe8a2 (Edwin Boston III)
+Manifest written 2026-11-07T20:43:46Z.
+
+  a5fe8a2c7cfb9c2d9d37bc644564feb6bde687b8  2026-11-07 15:43:45 -0500  THE GROUND, revision 62 — Theorem 8.9: the cycle term's reading ends at eight chords on the vertex's sixteen free plaquettes (t
+  304c89bc8a83789e2be1dbd821a577f7a4ab6f85  2026-11-07 15:38:16 -0500  The open ledger's pages at III's 839f86d5c and 96587860c: the plain vertex's geometric classes meet the local table; the double c
+
+7cbfcc101c699f1c0521aea8feda4cfb07a181840649129a6bb87df1257cea7e *THE-GROUND-Edwin-Boston-III.pdf
+670352267b527100c2b388a8bc806260ae9a7aa62580dd290473a047b8e0d855 *THE-GROUND-Edwin-Boston-III.docx
+97072e528a88ff3cd86a3d5eafacef06b89f12475f4f94ab426d1657a2a709ce *source/content4.js
+00f311cb958a383f16096a285693a4e4e9a9f7334cd272b51b7b8c150573e5ae *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

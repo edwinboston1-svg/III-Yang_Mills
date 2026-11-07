@@ -1,0 +1,12 @@
+THE GROUND, revision 57, through 7046aa5 (Edwin Boston III)
+Manifest written 2026-11-07T00:52:25Z.
+
+  7046aa53805461b5efe3e73cd058a89f4e3ce43f  2026-11-06 19:52:25 -0500  THE GROUND, revision 57 — Theorem 8.9: the branched clause's star sentence scoped to the branch-free leaf's vertices (the vertex of a contact link read as at most the bare on every acyclic set of chords) and the bound on the star beyond six chords nine; the couplings 0.3648 / 0.3654 unchanged (2026-11-06 19:52 EST)
+  cc4a9d1487ab08b63f8b66e913650cb31950b760  2026-11-06 19:04:26 -0500  TIMESTAMPS: revision 56's manifest and its OpenTimestamps proof
+
+8d04fb4f7e1de021f882b780297529f7b34da9c8f4851fca34a0f4f4f92b4846 *THE-GROUND-Edwin-Boston-III.pdf
+106c19b981cc99970fe3dcf72023ff2e1bccd890727b8b6bf9ab87d71fb4dac9 *THE-GROUND-Edwin-Boston-III.docx
+062b25c544393c510e064c1349c3b263d3b6e812ffc772839d271a4be41b2c81 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

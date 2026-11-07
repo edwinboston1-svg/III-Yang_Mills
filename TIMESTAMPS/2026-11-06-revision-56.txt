@@ -1,0 +1,12 @@
+THE GROUND, revision 56, through f59f715 (Edwin Boston III)
+Manifest written 2026-11-07T00:04:19Z.
+
+  f59f715d8692847a3a0df1a596d673515d5f5209  2026-11-06 19:04:19 -0500  THE GROUND, revision 56 — Theorem 8.9: the branched clause of the third input priced at the base spin — a vertex's star unchanged by every non-crossing forest of wall chords, at most the bare on crossing ones, moving only on cycles of chords (three halves at a triangle, five quarters at a four-cycle, the longer cycles read below one) and on a piece's corner closed by the one wall spanning its two sheet links (a factor two) — and the couplings under that pricing 0.3648 (the page dressing) and 0.3654 (the tree dressing), one step of the grid below revision 55's 0.3650 and 0.3656, the closed corner the cost; the clause beside a raised region open (2026-11-06 19:04 EST)
+  760562fe4b0803fb2890b2018ab6911c0812b933  2026-11-06 19:03:33 -0500  The open ledger's flux-surface-gas page at III's 050196135 and the campaign page at 943da7859: the branched clause read on the full star and priced at both spins, the couplings 0.3648 / 0.3654; the fourth site's two roads; the branched exhaustion's round 2 (2026-11-06 19:03 EST)
+
+738bac826b59877f83a7afe99299d36e14d466cfaf10f3ec3e2468cd021ccac5 *THE-GROUND-Edwin-Boston-III.pdf
+c5abacc4994f148ebed0c5036ca1106d3c22a5c7faac760e5d111b717eb4f130 *THE-GROUND-Edwin-Boston-III.docx
+3a0353b87b3347f3eddfd65de44ebe762447625ccded7598d0bbf9f5348608e4 *source/content4.js
+50a32b8ab00d7665123086e1d0354aaab53516d14ccbd35e20acf9cbe9c632ec *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

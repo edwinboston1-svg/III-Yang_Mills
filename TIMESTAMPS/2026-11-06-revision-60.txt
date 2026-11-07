@@ -1,0 +1,12 @@
+THE GROUND, revision 60, through 111ff31 (Edwin Boston III)
+Manifest written 2026-11-07T03:13:14Z.
+
+  111ff313dce040b6b4517d04fe841e8c93cf2984  2026-11-06 22:13:14 -0500  THE GROUND, revision 60 — Theorem 8.9: the leafless class's Finner pricing read by a second reader on 6 November (the hypothesis a fractional cover, the constant met on two roads sharing no line, the count and the census read) and its term carried inside the certificate of record; the couplings 0.3648 / 0.3654 unchanged (2026-11-06 22:13 EST)
+  59767c6a7dc96142bacb3ad4be6a9226bfb30464  2026-11-06 22:12:20 -0500  The open ledger's flux-surface-gas page at III's 9801b71b3: the leafless class read by a second reader (2026-11-06 22:12 EST)
+
+ae6a87e1859086cb9129db541bdd8a7e54b5833b15df681cf019989c7ca1f290 *THE-GROUND-Edwin-Boston-III.pdf
+0df229ec351c96b3fc544e62d5eaca35fe7c1a34634143a18b335bb0412de5fa *THE-GROUND-Edwin-Boston-III.docx
+d1dd4b0d6c026982611ee120f7e06ac3c8838a12f782f8746cc2e8dd9bad34d1 *source/content4.js
+7bcc718d4ccd1062f0cbf66ffbabc67f1f8a40aaa73c95bf6d10f011bbf83043 *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

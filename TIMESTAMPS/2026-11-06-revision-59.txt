@@ -1,0 +1,12 @@
+THE GROUND, revision 59, through 759844a (Edwin Boston III)
+Manifest written 2026-11-07T02:33:33Z.
+
+  759844ae341b01f489b5b290bba4c0b769e6cc5e  2026-11-06 21:33:33 -0500  THE GROUND, revision 59 — Theorem 8.9: the raised region beside decorations sharing a link keeps the payment lemma's price (the corner's star exceeds the two payments at some corners and meets them in the sum under the walls' weights by a factor near eight; revision 58's 'scaled accordingly' corrected), the pinch read on every shape a vertex of eight links admits; the title page's revision date (2026-11-06 21:33 EST)
+  c96a0c3786e3e930a6d4f7978dec37b3dce07abb  2026-11-06 21:32:36 -0500  The open ledger's flux-surface-gas page at III's 764e9214c: the raised corner in aggregate, the pinch's four shapes, the second road on the four-chord class (2026-11-06 21:32 EST)
+
+a55d72ff579f1c797c9d080e9a3ee161e1add72e31e749869ac2f8817e9b90a9 *THE-GROUND-Edwin-Boston-III.pdf
+3a8375e31c26b4418c48928c68d56067445a64a87df3772d2f6482ff4fbb95a6 *THE-GROUND-Edwin-Boston-III.docx
+bdf24388bcc269b8f772dbeaac08dc427d8347dcdba9b02836a92a9beabf3971 *source/content4.js
+7bcc718d4ccd1062f0cbf66ffbabc67f1f8a40aaa73c95bf6d10f011bbf83043 *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

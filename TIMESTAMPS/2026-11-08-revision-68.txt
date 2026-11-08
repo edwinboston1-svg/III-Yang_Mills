@@ -1,0 +1,12 @@
+THE GROUND, revision 68, through f2a4ca0 (Edwin Boston III)
+Manifest written 2026-11-08T12:47:41Z.
+
+  f2a4ca0d2e0175809ec643ef73d60d534f9919d6  2026-11-08 07:47:40 -0500  THE GROUND, revision 68 — the tools of the open interval, the Griffiths sentence at the certified census: the negatives at β =
+  712ef035c54d774977c1929b7ac98dc9140d9c33  2026-11-08 07:08:32 -0500  The open ledger's pages at III's e55687d5a and 468220505: the contraction theorem's two roads on 37,664 configurations, every sta
+
+179b8bee7b3ff18f61a5d25b89c5d89ae89c8106708024b675bf716c4bdf1d45 *THE-GROUND-Edwin-Boston-III.pdf
+1f4cfd0dcaa1c35c46ca209ad9f666732824b1bf182fc3c7a082c86f58bcc709 *THE-GROUND-Edwin-Boston-III.docx
+a1439520ebef41230882aff71c51735df9ac9a9a60f4b2deb81cf1331f718e5c *source/content4.js
+0df01963e8a8b1576e3621ca8943382440b1f058414999a760a3d7481ec84ec3 *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

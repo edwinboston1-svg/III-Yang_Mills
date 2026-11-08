@@ -1,0 +1,12 @@
+THE GROUND, revision 63, through a1cd69d (Edwin Boston III)
+Manifest written 2026-11-08T04:02:35Z.
+
+  a1cd69df9444efa3a965df23b40a829f1743bfb5  2026-11-07 23:02:35 -0500  THE GROUND, revision 63 — Theorem 8.9: the character bound's constant read for every vertex figure of the sheet (the hundredfol
+  3bec3ca3cab1e72c0c6c6304e72f51109c84dc31  2026-11-07 22:57:52 -0500  The open ledger's pages at III's b90b67410 and 6611ef624: the vertex figures' constants and classes on record, the path corner's 
+
+9674cebd4a2c711f0d44b032a545456b6143be2586042ba033357947d4d568db *THE-GROUND-Edwin-Boston-III.pdf
+5531e4f671cedab3b45f96810f854821ac871550a46b5d173d2f54fad428e015 *THE-GROUND-Edwin-Boston-III.docx
+1c9ac71299dd9d7bd51d6df2bc71c67a43970a747b0010a1e99ad347c05e0012 *source/content4.js
+00f311cb958a383f16096a285693a4e4e9a9f7334cd272b51b7b8c150573e5ae *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

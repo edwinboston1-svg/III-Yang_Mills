@@ -1,0 +1,12 @@
+THE GROUND, revision 69, through 3b69ab2 (Edwin Boston III)
+Manifest written 2026-11-08T14:11:16Z.
+
+  3b69ab267657001fc2e0f8bd323c907d3f3bf144  2026-11-08 09:11:16 -0500  THE GROUND, revision 69 — the tools of the open interval: the leading coefficient −2^{−(2k+1)} of the 248 pairs negative ne
+  a89687ed3244b8762635e263f34735a70b697e9d  2026-11-08 07:55:04 -0500  The open ledger's pages at III's c00b7aee4: the certified census in the public texts, the contraction theorem's corollary, the ow
+
+312727b3acf03659c20884571e55182071792056ba8cb1a2ee18c5f5188e0de5 *THE-GROUND-Edwin-Boston-III.pdf
+e6d4f67e59afb78f2b59033c181a44acce196dd08b3a28dc4932a5a52bf7f0f6 *THE-GROUND-Edwin-Boston-III.docx
+d50cdd352eeb45093471956bf59da82ded95d6c1be32b81c1a8da446d9d56a1c *source/content4.js
+0df01963e8a8b1576e3621ca8943382440b1f058414999a760a3d7481ec84ec3 *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

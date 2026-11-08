@@ -1,0 +1,12 @@
+THE GROUND, revision 65, through 3648993 (Edwin Boston III)
+Manifest written 2026-11-08T05:50:50Z.
+
+  364899388bcdc0de3dadba2b892b05c87d7018f3  2026-11-08 00:50:49 -0500  THE GROUND, revision 65 — Theorem 8.9: the count beside the constant — a corner whose ring is shorter than eight has free pla
+  4d41d52269f676a7db35b2bb83e9bc887fa46c17  2026-11-07 23:18:37 -0500  The open ledger's pages at III's 21dbb9e11 and 210900ed4: the complete census of vertex figures on record, the double contact's w
+
+828833c95b66acb5a92f628dc8f9c13aef5f4eba5daaee2bc7b7c76f8942011c *THE-GROUND-Edwin-Boston-III.pdf
+e762ca4739f148fcfed745cd40b9dd2fda3d459f68638c3910b4665f846c7e41 *THE-GROUND-Edwin-Boston-III.docx
+5f45280d69ee1b3f2b5f653edd16f5251ddaec856c753188e12e6c02dc2cd0d2 *source/content4.js
+0df01963e8a8b1576e3621ca8943382440b1f058414999a760a3d7481ec84ec3 *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

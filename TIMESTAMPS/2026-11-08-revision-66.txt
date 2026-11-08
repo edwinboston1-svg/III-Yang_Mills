@@ -1,0 +1,12 @@
+THE GROUND, revision 66, through ab59db2 (Edwin Boston III)
+Manifest written 2026-11-08T10:34:31Z.
+
+  ab59db260b49c6f5db7a90eb16134d14ed4a3827  2026-11-08 05:34:31 -0500  THE GROUND, revision 66 — the tools of the open interval: Griffiths' second inequality for untruncated SU(2) Wilson loops is fa
+  d8f55da5b4209163e62ee02ebcada97a0c0dba76  2026-11-08 05:10:38 -0500  The open ledger's pages at III's 43e64bcc5 and 49048fc32: the vertex law at every s proved, the plain vertex's chord sets by the 
+
+6d54a6768dbfcbcdd0667f69a116d468a46c415816d22c62752faae67aa1e807 *THE-GROUND-Edwin-Boston-III.pdf
+d4018adec3bf744acdc0d0beb4515c2890c086163dd154f3fe9f33c9201cfcb3 *THE-GROUND-Edwin-Boston-III.docx
+4170817e939dba9790b6bb7d24da29aef8d5e07313d326af2588dec2a0de8b40 *source/content4.js
+0df01963e8a8b1576e3621ca8943382440b1f058414999a760a3d7481ec84ec3 *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

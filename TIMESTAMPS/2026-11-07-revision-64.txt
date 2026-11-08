@@ -1,0 +1,12 @@
+THE GROUND, revision 64, through 99fc56c (Edwin Boston III)
+Manifest written 2026-11-08T04:17:00Z.
+
+  99fc56cd2b6259f6b1ff0fb94bc0ec603d59d6e1  2026-11-07 23:16:58 -0500  THE GROUND, revision 64 — Theorem 8.9: the vertex-figure coverage stated as the complete census reads it (every even subgraph o
+  caed5359158df42f337df5b672d1488e32d62372  2026-11-07 23:02:46 -0500  TIMESTAMPS: revision 63's manifest and its OpenTimestamps proof
+
+448203e1f42a271ef6530c9bfb1bf0e9941d2b7578001b2119a680dd2995504b *THE-GROUND-Edwin-Boston-III.pdf
+a342d6dbff5ba241d65edebea57f280adf2639aa6fb8919bbd7b6660bb62c51b *THE-GROUND-Edwin-Boston-III.docx
+fac9e2f25ebea52da1a0de6390675640a73ffc830b1d73f7b13c21aec59d806d *source/content4.js
+00f311cb958a383f16096a285693a4e4e9a9f7334cd272b51b7b8c150573e5ae *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

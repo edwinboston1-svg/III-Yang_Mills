@@ -1,0 +1,12 @@
+THE GROUND, revision 67, through f16e4e7 (Edwin Boston III)
+Manifest written 2026-11-08T12:00:19Z.
+
+  f16e4e7c3941f17e761a8afb5697589f780d6a99  2026-11-08 07:00:17 -0500  THE GROUND, revision 67 — the tools of the open interval, the Griffiths sentence at the final census: the two Haar constants ex
+  d16e98a281a8fb5c5853cf79ae0160f75d72bf67  2026-11-08 05:34:37 -0500  TIMESTAMPS: revision 66's manifest and its OpenTimestamps proof
+
+6a9618b6eaf48d12df3b98b3985d1c0e1356bc244999e593ef4c7846cf6dbbf2 *THE-GROUND-Edwin-Boston-III.pdf
+c069ef574ab99bf7877f73812c14bacbff27d3cf519b0aa9b61080de113303b8 *THE-GROUND-Edwin-Boston-III.docx
+60f897b9b02ba279e62010ce3b216a1f4d94d0f75f8a91d6afe4cdaa43043bff *source/content4.js
+0df01963e8a8b1576e3621ca8943382440b1f058414999a760a3d7481ec84ec3 *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md

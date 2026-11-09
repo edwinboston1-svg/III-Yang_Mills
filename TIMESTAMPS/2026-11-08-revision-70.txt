@@ -1,0 +1,12 @@
+THE GROUND, revision 70, through 830bf96 (Edwin Boston III)
+Manifest written 2026-11-09T04:40:27Z.
+
+  830bf96d29ec3a344d604de298e50af415a4b84c  2026-11-08 23:40:27 -0500  THE GROUND, revision 70 — the tools of the open interval: on the 2 × 1 × 1 box the pairs negative at finite coupling are nega
+  85ba4a802b9f588cca36efbe952761d1dbb09360  2026-11-08 19:51:57 -0500  The open ledger's pages at III's afe9aa575: the wall's return, the landing engine's rule closed at its blind spot, the link-shari
+
+58495fe6c7c59cb0d36e4e790ba443e8ab481ecb1c005b1e1c0f6341b89b724a *THE-GROUND-Edwin-Boston-III.pdf
+851cb15701950279f2515380b1ec500a65bbad2439dea4b1baf2698a5b5d5d49 *THE-GROUND-Edwin-Boston-III.docx
+e2167bc94fde89f6aa2c23c0d211fe10e4b2800e28d1415896794ccf4890b2b7 *source/content4.js
+0df01963e8a8b1576e3621ca8943382440b1f058414999a760a3d7481ec84ec3 *source/build.js
+6b7e299e8b2599dca6fcca641a6940ed2194186c658bc01596b98e652ce544ea *README.md
+52b70809cf5ead8b914b139694f72998773aa5d4cddad98d21c0f4dea9148c7e *ARXIV.md
